@@ -8,7 +8,7 @@
 * XSD Schemas 
     * View the Tax Credit Donation [XSD schema](xsd/ReturREB.v1.xsd) directory
     * View and download the [return service common XSD](../Service%20-%20Return/Latest/)
-    * View and download the [common XSD](../Schema%20-%20Common/)
+    * View and download the [common XSD](../Common XSDs/)
 	
 * Returns Service 
 	* Download and view the [Return Service Income Tax build pack](Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20INC.pdf) to view data definitions of each operation and response status code definitions		

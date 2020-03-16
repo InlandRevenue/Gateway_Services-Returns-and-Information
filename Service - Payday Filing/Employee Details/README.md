@@ -33,7 +33,7 @@ Key Documentation:
 
 ## Supporting Services:
 
-* [Service: Identity and Access – view how to integrate, OAuth requests and responses message sample and build pack](../../Service%20-%20Identity%20and%20Access/Latest/) 
+* [Service: Identity and Access – view how to integrate, OAuth requests and responses message sample and build pack](https://github.com/InlandRevenue/Gateway_Services-Access) 
 * [Service: Intermediation – view schemas, WSDLs, and build pack](../Service%20-%20Intermediation)
 
 Message samples:

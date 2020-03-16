@@ -23,7 +23,7 @@
 	
 - Schemas and WSDLs
 	- View and download the [common v2 xsd](../Schema%20-%20Common/)
-	- View and download the [return service common v2 xsd](../Service%20-%20Return/Latest/)
+	- View and download the [return service common v2 xsd](../Service%20-%20XSD)
 	- View and download the AIM return [XSD](ReturnAIM.v2.xsd) and [WSDL](ReturnsAIMDevWsdl.v2.wsdl) from this current directory
 	
 - Return Service 

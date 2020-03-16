@@ -9,8 +9,7 @@
 	- [view on IR website](https://www.classic.ird.govt.nz/resources/8/9/89938b0d-09d4-49c9-8e4b-ad30527a9d56/GST+Business+use+cases.pdf)
 	
 - Schemas and WSDLs
-	- View and download the [common xsd](../Schema%20-%20Common/)
-	- View and download the [return service common xsd](../Service%20-%20Return/Latest/)
+	- View and download the [common XSD](../Schema%20-%20Common/)
 	- View and download the GST return [XSD](ReturnGST.v1.xsd) and [WSDL](ReturnsGSTDevWsdl.v1.wsdl) from this current directory
 
 - Returns Service 
@@ -29,7 +28,7 @@
 
 ## Supporting Services:
 
-* Service: Identity and Access – view [How to integrate, OAuth requests and responses message sample and build pack](../Service%20-%20Identity%20and%20Access/Latest/) 
+* Service: Identity and Access – view [How to integrate, OAuth requests and responses message sample and build pack](https://github.com/InlandRevenue/Gateway_Services-Access) 
 * Service: Intermediation – view [Schemas, WSDLs, and build pack](../Service%20-%20Intermediation/)
 
 ## Message Samples:

@@ -18,7 +18,7 @@ Key Features:
 
 Supporting schema
 -------------
-* [view Common schema v.2](../../../Schema%20-%20Common/Common.v2.xsd)
+* [view Common schema v.2](../../Schema%20-%20XSD/)
 
 Products using this service:
 -------------
