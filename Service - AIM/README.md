@@ -3,7 +3,7 @@
 
 # AIM Returns Software Development Kit (SDK)
 
-#### Release version 1.0
+#### Release version 2.0
 
 ## New Features:
 
@@ -16,10 +16,12 @@
 	* If the company is deciding to enter AIM mid-year 
 	* Declare any shareholders that the AIM company is paying provisional tax for.
 
+* [Archive Release version 1.0](./archive/v1/)
+	
 ## Key Documentation:
 
 - Business use cases and worked examples
-	- [view on IR website](https://www.classic.ird.govt.nz/resources/5/0/50d56274-2a12-46ac-a9e3-a4a84d3f47bc/aim-business-use-cases-worked-examples.pdf)
+	- [view on IR website](https://www.ird.govt.nz/digital-service-providers/services-catalogue/returns-and-information/accounting-income-method)
 	
 - Schemas and WSDLs
 	- View and download the [common v2 xsd](../Common%20XSD/Common.v2.xsd)
@@ -27,7 +29,7 @@
 	- View and download the AIM return [XSD](ReturnAIM.v2.xsd) and [WSDL](ReturnsAIMDevWsdl.v2.wsdl) from this current directory
 	
 - Return Service 
-	- [Download the Return Service AIM v2.0 build pack](../Service%20-%20Return/Latest/Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20AIM%20-%20V2.0.pdf) to view data definitions of each operation and response status code definitions
+	- [Download the Return Service AIM v2.0 build pack](../Service%20-%20Return/Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20AIM%20-%20V2.0.pdf) to view data definitions of each operation and response status code definitions
 
 - Message Samples
     - [View Message samples for requests and positive responses](#message-samples)		
