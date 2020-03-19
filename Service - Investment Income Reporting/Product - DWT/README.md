@@ -34,7 +34,7 @@
 
 ## Supporting services:
 
-- Service - Identity and Access – view [how to integrate, OAuth requests and responses message sample and build pack](../Service%20-%20Return%20III/Latest/)
+- Service - Identity and Access – view [how to integrate, OAuth requests and responses message sample and build pack](https://github.com/InlandRevenue/Gateway_Services-Access)
 
 ## Message Samples:
 -----------------

@@ -12,13 +12,12 @@ The Return Service provided through gateway services supports the business proce
 
 Key Features:
 -------------
-
-* [view Return schema for Investment Income Reporting](ReturnCommon.v2.xsd)
 * [view Return service build pack Investment Income Reporting](Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20III.pdf)
 
-Supporting schema
+Supporting XSD schema:
 -------------
-* [view Common schema v.2](../../Schema%20-%20XSD/)
+* [view Common XSD schema v2](../../Schema%20-%20XSD/Common.v2.xsd)
+* [view Return Common XSD schema v2 ](../../Schema%20-%20XSD/ReturnCommon.v2.xsd)
 
 Products using this service:
 -------------
@@ -31,4 +30,4 @@ Products using this service:
 
 Supporting services
 -------------
-* [Service - Identity and Access](../../../Service%20-%20Identity%20and%20Access/Latest/)
+* [Service - Identity and Access](https://github.com/InlandRevenue/Gateway_Services-Access)

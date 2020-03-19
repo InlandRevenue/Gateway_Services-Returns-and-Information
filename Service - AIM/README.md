@@ -22,8 +22,8 @@
 	- [view on IR website](https://www.classic.ird.govt.nz/resources/5/0/50d56274-2a12-46ac-a9e3-a4a84d3f47bc/aim-business-use-cases-worked-examples.pdf)
 	
 - Schemas and WSDLs
-	- View and download the [common v2 xsd](../Schema%20-%20Common/)
-	- View and download the [return service common v2 xsd](../Service%20-%20XSD)
+	- View and download the [common v2 xsd](../Common%20XSD/Common.v2.xsd)
+	- View and download the [return service common v2 xsd](../Common%20XSD/ReturnCommon.v2.xsd)
 	- View and download the AIM return [XSD](ReturnAIM.v2.xsd) and [WSDL](ReturnsAIMDevWsdl.v2.wsdl) from this current directory
 	
 - Return Service 
@@ -42,7 +42,7 @@
 	
 ## Supporting services
 
-* Service: Identity and Access – view [How to integrate, OAuth requests and responses message sample and build pack](../Service%20-%20Identity%20and%20Access/Latest/) 
+* Service: Identity and Access – view [How to integrate, OAuth requests and responses message sample and build pack](https://github.com/InlandRevenue/Gateway_Services-Access) 
 * Service: Intermediation – view [Schemas, WSDLs, and build pack](../Service%20-%20Intermediation/)
 
 ## Message samples:
