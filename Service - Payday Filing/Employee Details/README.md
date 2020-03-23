@@ -11,8 +11,8 @@ Key Documentation:
 	- [view on IR website](https://www.ird.govt.nz/resources/e/2/e2d9e606-76d3-44f7-9127-2584666b5f09/Payday+filing+-+Employee+details+business+use+cases.pdf)
 	
 - Schemas and WSDLs
-	- View and download the [common xsd](../../Schema%20-%20Common/)
-	- View and download the [return service common xsd](../../Service%20-%20Return/Latest/)
+	- View and download the [Common XSD](../../Common%20XSD/Common.v1.xsd)
+	- View and download the [Return Service Common XSD](../../Common%20XSD/ReturnCommon.v1.xsd)
 	- View and download the Employee Details (ED) [XSD](Employment.xsd) and [WSDL](EmploymentDevWsdl.wsdl) from this current directory
 	
 - Employment Service 
