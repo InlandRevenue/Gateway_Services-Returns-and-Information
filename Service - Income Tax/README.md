@@ -24,8 +24,8 @@ Find out about:
 ## Supporting Services:
 
 * Service: Identity and Access – view [How to integrate, OAuth requests and responses message sample and build pack](https://github.com/InlandRevenue/Gateway_Services-Access) 
-* Service: Intermediation – view [Schemas, WSDLs, and build pack](../Service%20-%20Intermediation/)
-* Service: Return Status Push Notification - view [Schemas and build pack](../Service%20-%20Push%20Notification/)
+* Service: Intermediation – view [Schemas, WSDLs, and build pack](https://github.com/InlandRevenue/Gateway_Services-Access/tree/master/Service%20-%20Intermediation)
+* Service: Return Status Push Notification - view [Schemas and build pack](../Service%20-%20Push%20Notification)
 
 
 
