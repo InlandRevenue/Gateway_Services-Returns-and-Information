@@ -3,7 +3,7 @@
 
 # Returns and Information
 
-### [Accounting Income Method Version 2.0 (AIM)](./Service%20-%20AIM/)
+### [Accounting Income Method (AIM)](./Service%20-%20AIM/)
 > AIM is a provisional tax option that uses accounting software to work out how much provisional tax small businesses will have to pay throughout the year.
 ### [Goods and services Tax (GST)](./Service%20-%20GST/)
 > GST is a 15% tax added to the price of most goods and services in New Zealand, including imported goods and services. Anyone registered for GST must file returns.
