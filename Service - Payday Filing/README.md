@@ -3,11 +3,20 @@
 
 # Payday filing through Gateway Services
 
+#### Payday Filing Release Version 2
+
 Payday filing lets employers:
 * file employment information
 * provide details for new and departing employees.
 
 There is currently no gateway method for employer deductions payment.
+
+## What new in version 2
+
+
+
+## Archived Versions 
+* [Payday Filing Version 1](./Archive/v1/)
 
 ## Employment information
 
