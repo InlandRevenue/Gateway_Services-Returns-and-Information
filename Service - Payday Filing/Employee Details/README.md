@@ -11,9 +11,9 @@ Key Documentation:
 	- [view on IR website](https://www.ird.govt.nz/resources/e/2/e2d9e606-76d3-44f7-9127-2584666b5f09/Payday+filing+-+Employee+details+business+use+cases.pdf)
 	
 - Schemas and WSDLs
-	- View and download the [Common XSD](../../Common%20XSD/Common.v1.xsd)
-	- View and download the [Return Service Common XSD](../../Common%20XSD/ReturnCommon.v1.xsd)
-	- View and download the Employee Details (ED) [XSD](Employment.xsd) and [WSDL](EmploymentDevWsdl.wsdl) from this current directory
+	- View and download the [Common XSD](../../Common%20XSD/Common.v2.xsd)
+	- View and download the [Return Service Common XSD](../../Common%20XSD/ReturnCommon.v2.xsd)
+	- View and download the Employee Details (ED) [XSD](Employment.v2.xsd) and [WSDL](EmploymentV2DevWsdl.wsdl) from this current directory
 	
 - Employment Service 
 	- [Download the build pack](Gateway%20Services%20Build%20Pack%20-%20Employment%20Service.pdf) to view data definitions of each operation and response status code definitions
@@ -22,6 +22,41 @@ Key Documentation:
     - [View Message samples for requests and positive responses](#message-samples)
 
 - Find out about [Employee Information SDK, payday filing business rules and calculations](../)
+
+## V2.0 SERVICE UPDATES
+
+The following key changes have been made to the Employment Service Return Service in preparation for the update to V2.0.
+
+* Operations
+	* Updated schema references from ‘Employment.xsd’ to ‘Employment.v2.xsd’
+
+* Create
+	* Updated ‘KiwiSaverStatus’, changedvalid options to: AK, OK, NK, CT, AE(Removed: OT, NM, CH)
+	* Added new field EmployeeExemptIncome
+	* Updated employeeNameOnEILine to allow 255 characters, previously this was 20
+	* Added tax codes table to show valid tax codes. ESS, SLCIR, and SLBOR are no longer valid tax codes
+	* Updated employeeKiwiSaverEligibility to use codes NE, EE, and EA. Add table of codes below fields
+
+* Update
+	* Removed ‘KiwiSaverStatus’ field as it is no longer used for the Update operation
+	* Added new optional field ‘lateOptOutReason’
+	* Added new optional field ‘otherLateOptOutReason’ field
+	* Updated employeeNameOnEILinein updateBody and in employeeIdentifierto allow 255 characters, previously this was 20
+	* Updated employeeKiwiSaverEligibility to use codes NE, EE, and EA. Add table of codes below fields.	
+	
+* RetrieveList
+	* Updated employeeNameOnEILine to allow 255 characters, previously this was 20
+
+* Response codes
+	* Deleted codes 119, 120, 123 as they correspond to web request processing
+	* Added code 124: ‘The start and/or stop date overlaps with multiple other records’
+	* Added code 130: ‘The provided KiwiSaverStatus is not valid’. This response is returned when KiwiSaver Status is not one of the following values: AK, OK, NK, CT, AE. 
+	* Added code 131: ‘The provided Employee Exempt Income type is not valid’. This response is returned when Exempt Income type is not one of the following: BLH, HPT, OES, RTA, TAO, VBS.
+	* Added code 132: ‘The provided KiwiSaver Late Opt-Out Reason is invalid’
+	* Added code 133: ‘Other Late Opt-Out Reason must be provided’
+	* Added code 134: ‘Opt-Out is late, so other reason must be provided’
+	* Added code 135: ‘Opt-Out must be set to true as lateOptOutReason has been provided’
+	* Added code 136: ‘The provided employeeKiwiSaverEligibility status was invalid’
 
 ## Environment Information: 
 
