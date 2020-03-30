@@ -11,8 +11,7 @@
 * XSD Schemas 
     * View and download the [Income Return Common XSD](xsd/IncomeReturnCommon.v1.xsd) from this [XSD](xsd/) directory	
     * View the Income Tax XSD schema files from the [XSD](xsd/) directory
-    * View and download the [return service common XSD](../Service%20-%20Return/Latest/)
-    * View and download the [common XSD](../Common%20XSD/)
+    * View and download the [Common and Return Common XSD](../Common%20XSD/)
 	
 
 * Returns Service 
