@@ -32,7 +32,7 @@ gateway services. It has been REMOVED from form IR215.
 |Excess residential rental deductions brought forward |IR3, IR3NR, IR4, IR6, IR8, IR9 |
 |Residential rental deductions claimed this year |IR3, IR3NR, IR4, IR6, IR8, IR9 |
 |Net residential income | IR3, IR3NR, IR4, IR6, IR8, IR9 |
-|Excess residential rental deductionscarried forward |IR3, IR3NR, IR4, IR6, IR8, IR9 |
+|Excess residential rental deductions carried forward |IR3, IR3NR, IR4, IR6, IR8, IR9 |
 |Current year R&D non-refundable tax incentive credits to use or carry forward |IR3, IR3NR, IR4, IR6, IR8, IR9, IR44 |
 |R&D tax incentive credits to be refunded |IR4 |
 |Profit/loss from sale of property | IR8, IR9, IR44 | 
