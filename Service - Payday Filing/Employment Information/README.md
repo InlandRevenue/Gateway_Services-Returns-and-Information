@@ -9,12 +9,12 @@
 	- [view on IR website](https://www.classic.ird.govt.nz/resources/9/5/95275fd7-967a-4b87-877f-a8968807e45e/Payday+filing+-+Employment+Information+business+use+cases.pdf)
 	
 - Schemas and WSDLs
-	- View and download the [common xsd](../../Schema%20-%20Common/)
-	- View and download the [return service common xsd](../../Service%20-%20Return/Latest/)
+	- View and download the [Common v1 XSD](../../Common%20XSD/Common.v1.xsd)
+	- View and download the [Return Common v1 XSD](../../Common%20XSD/ReturnCommon.v1.xsd)
 	- View and download the Employment Income (EI) return [XSD](ReturnEI.v1.xsd) and [WSDL](ReturnsEIDevWsdl.wsdl) from this current directory
 	
 - Returns Service 
-	- [Download the build pack](../../Service%20-%20Return/Latest/Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20EI.pdf) to view data definitions of each operation and response status code definitions
+	- [Download the build pack](Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20EI.pdf) to view data definitions of each operation and response status code definitions
 
 - Message Samples
     - [View Message samples for requests and positive responses](#message-samples)
@@ -31,8 +31,8 @@
 
 ## Supporting Services:
 
-* Service: Identity and Access – view [How to integrate, OAuth requests and responses message sample and build pack](../../Service%20-%20Identity%20and%20Access/Latest/) 
-* Service: Intermediation [Service - Intermediation](../Service%20-%20Intermediation)	
+* Service: Identity and Access – view [How to integrate, OAuth requests and responses message sample and build pack](https://github.com/InlandRevenue/Gateway_Services-Access/tree/master/Identity%20and%20Access) 
+* Service: Intermediation [Service - Intermediation](https://github.com/InlandRevenue/Gateway_Services-Access/tree/master/Service%20-%20Intermediation)	
 
 ## Message samples:
 -----------------
