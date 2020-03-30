@@ -9,7 +9,7 @@
 	- [view on IR website](https://www.classic.ird.govt.nz/resources/9/5/95275fd7-967a-4b87-877f-a8968807e45e/Payday+filing+-+Employment+Information+business+use+cases.pdf)
 	
 - Schemas and WSDLs
-	- View and download the [Common v1 XSD](../../Common%20XSD/Common.v1.xsd)
+- View and download the [Common v1 XSD](../../Common%20XSD/Common.v1.xsd)
 	- View and download the [Return Common v1 XSD](../../Common%20XSD/ReturnCommon.v1.xsd)
 	- View and download the Employment Income (EI) return [XSD](ReturnEI.v1.xsd) and [WSDL](ReturnsEIDevWsdl.wsdl) from this current directory
 	
@@ -23,7 +23,7 @@
 
 ## Environment Information: 
 
-- [Mock Environment Information - Emulated Serices](#mock-environment-information)
+- [Mock Environment Information - Emulated Services](#mock-environment-information)
 
 - [Test Environment Information - Test Scenarios, mindmap and URL Endpoints](#test-environment-information)
 
