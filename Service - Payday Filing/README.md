@@ -11,10 +11,6 @@ Payday filing lets employers:
 
 There is currently no gateway method for employer deductions payment.
 
-## What new in version 2
-
-
-
 ## Archived Versions 
 * [Payday Filing Version 1](./Archive/v1/)
 
