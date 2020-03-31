@@ -3,18 +3,31 @@
 
 # Donation Tax Credit Software Development Kit (SDK)
 
+#### Release: V1.0   
+
+The donation tax credit gateway service can be used to: 
+
+* submit a new or amended donation tax credit claim form 
+* query the processing status of a previously filed donation tax credit claim form 
+* request a copy of a previously filed donation tax credit claim form. 
+
 ## Key Documentation:
 
 * XSD Schemas 
-    * View the Tax Credit Donation [XSD schema](xsd/ReturREB.v1.xsd) directory
+	* View the Tax Credit Donation [XSD schema](xsd/ReturREB.v1.xsd) directory
     * View and download the [Common and Return Common XSD](../Common%20-%20XSD/)
 	
-* Returns Service 
-	* Download and view the [Return Service Income Tax build pack](Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20INC.pdf) to view data definitions of each operation and response status code definitions		
+* Build pack
+	* Download the [Return Service Income Tax build pack](Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20INC.pdf) to view data definitions of each operation and response status code definitions		
 
 * [Sample request and responses](#Sample-request-and-responses)
 
 ---
+   
+## Environment Information: 
+- [Mock Environment Information - Emulated Services, Mindmap and Test data](test%20details/TestingInfomation.md#mock-environment-information)
+- [Test Environment Information - Test Scenarios Report Template, Mindmap and URL Endpoints](test%20details/TestingInfomation.md#test-environment-information)
+- [Production Environment Information - URL Endpoints](test%20details/TestingInfomation.md#Production-Environment-Information)	
 
 ## Sample request and responses
 
@@ -27,8 +40,3 @@
 - RetrieveReturn
     - [RetrieveStatus request](sample%20messages/retrievestatus_request_ir526.xml)
     - [RetrieveStatus response](sample%20messages/retrievestatus_response_ir526.xml)
-   
-## Environment Information: 
-- [Mock Environment Information - Emulated Services, Mindmap and Test data](test%20details/TestingInfomation.md#mock-environment-information)
-- [Test Environment Information - Test Scenarios Report Template, Mindmap and URL Endpoints](test%20details/TestingInfomation.md#test-environment-information)
-- [Production Environment Information - URL Endpoints](test%20details/TestingInfomation.md#Production-Environment-Information)	

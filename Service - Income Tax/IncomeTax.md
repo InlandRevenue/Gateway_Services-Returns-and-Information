@@ -3,14 +3,67 @@
 
 # Income Tax Software Development Kit (SDK)
 
+#### Latest Release: V1.0  - Annual Return 2020
+
+Archives
+	* [V 1.0 Annual Return 2019](/archive/2019/)
+
+
+	
+	
+Income Tax reporting through gateway services enables organisations to: 
+
+* submit new or amended income tax returns and supplementary forms 
+* request income tax information held by us for a customer 
+* query the processing status of a previously filed income tax return 
+* request a copy of a previously filed income tax return 
+* request the due date of the next expected income tax return. 	
+	
+## New Features: Annual Return 2020   
+
+The following key changes have been made to the Income Tax Return Service build pack 
+to accommodate annual changes for 2020: 
+ 
+*  ‘Shareholder AIM tax paid’ will be returned from a ‘Prepop’ request when 
+applicable. 
+ 
+*  Non-resident foreign sourced income is no longer applicable for tax year 2020 
+and onward. An error message will be returned if it is inadvertently submitted via 
+gateway services. It has been REMOVED from form IR215. 
+ 
+*  The following fields have been ADDED to a number of IR forms for 2020 returns: 
+ 
+|Field | IR forms |
+| --- | --- | 
+|Shareholder AIM tax paid | IR3, IR4S |
+|Residential income indicator  |IR3, IR3NR, IR4, IR6, IR7, IR8, IR9 |
+|Total residential income  |IR3, IR3NR, IR4, IR6, IR7, IR7L/IR7P, IR8, IR9 |
+|Residential rental deductions  |IR3, IR3NR, IR4, IR6, IR7, IR7L/IR7P, IR8, IR9 |
+|Excess residential rental deductions brought forward |IR3, IR3NR, IR4, IR6, IR8, IR9 |
+|Residential rental deductions claimed this year |IR3, IR3NR, IR4, IR6, IR8, IR9 |
+|Net residential income | IR3, IR3NR, IR4, IR6, IR8, IR9 |
+|Excess residential rental deductions carried forward |IR3, IR3NR, IR4, IR6, IR8, IR9 |
+|Current year R&D non-refundable tax incentive credits to use or carry forward |IR3, IR3NR, IR4, IR6, IR8, IR9, IR44 |
+|R&D tax incentive credits to be refunded |IR4 |
+|Profit/loss from sale of property | IR8, IR9, IR44 | 
+ 
+*  The following schemas have also changed for 2020: 
+ 
+	*  ReturnIR3.v1.xsd  
+	*  ReturnIR3NR.v1.xsd  
+	*  ReturnIR4.v1.xsd  
+	*  ReturnIR6.v1.xsd  
+	*  ReturnIR7.v1.xsd  
+	*  ReturnIR8.v1.xsd  
+	*  ReturnIR9.v1.xsd  
+	*  ReturnIR44.v1.xsd  
+	*  IncomeReturnCommon.v1.xsd 
+	
 ## Key Documentation:
 
 * Business use cases
 	* [view on IR website](https://www.classic.ird.govt.nz/software-providers/docs/)
 	
-
-	
-
 * XSD Schemas 
     * View and download the [Income Return Common XSD](xsd/IncomeReturnCommon.v1.xsd) from this [XSD](xsd/) directory	
     * View the Income Tax XSD schema files from the [XSD](xsd/) directory
@@ -34,6 +87,11 @@ This document is intended to support the technical information provided in the b
 * [Sample request and responses](#Sample-request-and-responses)
 
 ---
+
+## Environment Information: 
+- [Mock Environment Information - Emulated Services, Mindmap and Test data](test%20details/TestingInfomation.md#mock-environment-information)
+- [Test Environment Information - Test Scenarios Report Template, Mindmap and URL Endpoints](test%20details/TestingInfomation.md#test-environment-information)
+- [Production Environment Information - URL Endpoints](test%20details/TestingInfomation.md#Production-Environment-Information)	
 
 ## Primary income tax return: 
 
@@ -130,7 +188,6 @@ This document is intended to support the technical information provided in the b
 
 > Note: PTS Individual income tax return RetrieveReturn and RetrieveStatus for income years prior to 2019 
 
-
 ## Sample request and responses
 
 - File
@@ -171,7 +228,4 @@ This document is intended to support the technical information provided in the b
     - [RetrieveFilingObligations response](sample%20messages/retrievefilingobligations_response.xml)
 	
 	
-## Environment Information: 
-- [Mock Environment Information - Emulated Services, Mindmap and Test data](test%20details/TestingInfomation.md#mock-environment-information)
-- [Test Environment Information - Test Scenarios Report Template, Mindmap and URL Endpoints](test%20details/TestingInfomation.md#test-environment-information)
-- [Production Environment Information - URL Endpoints](test%20details/TestingInfomation.md#Production-Environment-Information)		
+	
