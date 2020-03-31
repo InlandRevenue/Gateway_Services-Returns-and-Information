@@ -16,7 +16,7 @@
 ## Key documentation:
 
 - Business use cases
-	- [view on IR website](https://www.ird.govt.nz/digital-service-providers/services-catalogue/returns-and-information/goods-and-services-tax)
+	- [view and download](GST-Business-use-cases.pdf)
 	
 - Schemas and WSDLs
 	- View and download the [common XSD](../Schema%20-%20Common/)
