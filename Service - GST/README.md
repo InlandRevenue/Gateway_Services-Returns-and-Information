@@ -21,7 +21,8 @@
 	- [view and download](GST-Business-use-cases.pdf)
 	
 - Schemas and WSDLs
-	- View and download the [common XSD](../Schema%20-%20Common/)
+	- View and download the [common v1 xsd](../Common%20XSD/Common.v1.xsd)
+	- View and download the [return service common v1 xsd](../Common%20XSD/ReturnCommon.v1.xsd)
 	- View and download the GST return [XSD](ReturnGST.v1.xsd) and [WSDL](ReturnsGSTDevWsdl.v1.wsdl) from this current directory
 
 - Build pack 
