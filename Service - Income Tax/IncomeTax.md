@@ -70,21 +70,25 @@ gateway services. It has been REMOVED from form IR215.
     * View and download the [Common and Return Common XSD](../Common%20XSD/)
 	
 
-* Income Tax Build Pack
-	* Download and view the [Return Service Income Tax build pack](Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20INC.pdf) to view data definitions of each operation and response status code definitions	
-	* Download and view the [Additional Information pack](Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20Additional%20Information%20V1.0.pdf)
+* Build Pack
+	* Download the [Return Service Income Tax build pack](Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20INC.pdf) to view data definitions of each operation and response status code definitions	
+	* Download the [Additional Information pack](Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20Additional%20Information%20V1.0.pdf)
 
 This document is intended to support the technical information provided in the build pack including
 *	the formulae and individual field items to use when calculating the various subtotalled amounts that are required throughout the income tax returns, 
 *	the business rules that apply for the various tax and tax credit calculations (such as IETC), 
 *	the applicable income tax rates used for each return type and income year.
 		
-		
-		
 	
-* [Income Tax Form Types](#Income-Tax-Form-Types) 
+* Income Tax Form Types
+	* [Income Tax Form Types](#Income-Tax-Form-Types) 
+	* [Attachment income tax return forms](#Attachment-income-tax-return) 
 
 * [Sample request and responses](#Sample-request-and-responses)
+
+* Supporting information on IR website 
+	* [Income Tax and Auto calc Business use cases](https://www.ird.govt.nz/digital-service-providers/services-catalogue/returns-and-information/income-tax)
+	* [Income tax assessments (auto calc)](https://www.ird.govt.nz/income-tax/income-tax-for-individuals/what-happens-at-the-end-of-the-tax-year/income-tax-assessments)
 
 ---
 
