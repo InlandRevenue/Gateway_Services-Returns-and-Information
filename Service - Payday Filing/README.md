@@ -7,7 +7,7 @@ Payday filing lets employers:
 * file employment information
 * provide details for new and departing employees.
 
-There is currently no gateway method for employer deductions payment.
+> There is currently no gateway method for employer deductions payment.
 
 ## Employment information
 
