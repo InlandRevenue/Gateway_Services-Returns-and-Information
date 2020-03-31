@@ -3,6 +3,8 @@
 
 # GST Returns Software Development Kit (SDK)
 
+#### Release version 1.0
+
 ## About the service
 
 * Goods and services tax (GST) is a 15% tax added to the price of most goods and services in New Zealand, including imported goods and services.
