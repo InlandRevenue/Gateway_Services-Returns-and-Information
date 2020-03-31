@@ -12,7 +12,12 @@
 ## About the service
 
 * Accounting income method (AIM) is a provisional tax option that uses accounting software to work out how much provisional tax small businesses will have to pay throughout the year.
-* The gateway service used for AIM is the Return service
+* The gateway service used for AIM is the Return service which enables
+	* checking if a customer is eligible to use AIM
+	* filing statements of activity
+	* query losses and residual taxes
+	* query period balances
+	* retrieve statements of activity already filed
 
 ## New features in release Version 2.0
 
@@ -55,9 +60,9 @@
 * Service: Intermediation – view [schemas, WSDLs, and build pack](https://github.com/InlandRevenue/Gateway_Services-Access/tree/master/Service%20-%20Intermediation)
 
 ## Message samples:
------------------o
+-----------------
 
-- Simulating AIM returns Operations:
+- Simulating AIM returns operations:
     - PrePop
         - Positive response
             - [request sample](sample%20messages/body-aim-returnprepop-request.xml)
