@@ -3,26 +3,15 @@
 
 # Income Tax and Donation Tax Credit through Gateway Services
 
-#### Annual Return 2020+
-
-[Archived 2019 Income Tax - XSD](./archive/2019/xsd/)	
-
-
-
----
-
 Income Tax reporting through gateway services enables organisations to:
 * file detailed Income Tax information to Inland Revenue,
 * additionally, if required they can 
 	* amend a previously filed return
 	* retrieve a return status or return data.
 	
-
-
 Return Service ― Income Tax	
 * [Income Tax Software Development Kit (SDK)](IncomeTax.md)  
 * [Donation Tax Credit Software Development Kit (SDK)](DonationTaxCredit.md)  
-
 
 * Returns Service 
 	* Download and view the [Return Service Income Tax build pack](Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20INC.pdf) to view data definitions of each operation and response status code definitions
