@@ -33,7 +33,7 @@
 ## Key documentation
 
 - Business use cases and worked examples
-	- [Download](AIM-business-use-cases-worked-examples.pdf)
+	- [Download and view](AIM-business-use-cases-worked-examples.pdf)
 	
 - Schemas and WSDLs
 	- View and download the [common v2 xsd](../Common%20XSD/Common.v2.xsd)
