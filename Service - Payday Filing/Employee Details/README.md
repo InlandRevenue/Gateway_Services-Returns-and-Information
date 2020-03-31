@@ -8,7 +8,7 @@ Key Documentation:
 -------------
 
 - Business use cases
-	- [view on IR website](https://www.ird.govt.nz/resources/e/2/e2d9e606-76d3-44f7-9127-2584666b5f09/Payday+filing+-+Employee+details+business+use+cases.pdf)
+	- [Download and view](../Payday%20filing%20-%20ED%20and%20EI%20GWS%20business%20use%20cases.pdf)
 	
 - Schemas and WSDLs
 	- View and download the [Common XSD](../../Common%20XSD/Common.v2.xsd)
