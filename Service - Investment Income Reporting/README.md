@@ -15,13 +15,12 @@ Investment income reporting through the gateway services will be available for t
 - Interest pay as you earn (IPS) [View and download the IPS SDK](Product%20-%20IPS)
 - Non-resident withholding tax (NRT) [View and download the NRT SDK](Product%20-%20NRT)
 - Resident withholding tax (RWT) [View and download the RWT SDK](Product%20-%20RWT)
-- Portfolio investment entities (PIE) attributed income - to be provided later 2019
+- Portfolio investment entities (PIE) attributed income tax [View and download the PIE SDK](Product%20-%20PIE)
 
 Find out about: 
-- the key changes for [investment income on the IR website](https://www.ird.govt.nz/investment-income)
-- [investment income reporting on the IR website](https://www.ird.govt.nz/software-providers/explore-products-contents/)
+- the key changes for [investment income on reporting the IR website](https://www.ird.govt.nz/income-tax/withholding-taxes/resident-withholding-tax-rwt/payers-of-resident-withholding-tax-rwt/investment-income-reporting)
 
-## Supporting Services:
+## Supporting services
 
-* Service: Identity and Access – view [How to integrate, OAuth requests and responses message sample and build pack](https://github.com/InlandRevenue/Gateway_Services-Access) 
-* Service: Intermediation [Service - Intermediation](https://github.com/InlandRevenue/Gateway_Services-Access/tree/master/Service%20-%20Intermediation)
+* Service: Identity and Access – view [how to integrate, OAuth requests, message samples and build pack](https://github.com/InlandRevenue/Gateway_Services-Access/tree/master/Identity%20and%20Access)
+* [Service - Intermediation](https://github.com/InlandRevenue/Gateway_Services-Access/tree/master/Service%20-%20Intermediation)
