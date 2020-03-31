@@ -5,7 +5,16 @@
 
 #### Release version 2.0
 
-## New Features:
+#### Archive
+
+* [Release version 1.0](./archive/v1/)
+
+## About the service
+
+* Accounting income method (AIM) is a provisional tax option that uses accounting software to work out how much provisional tax small businesses will have to pay throughout the year.
+* The gateway service used for AIM is the Return service
+
+## New features in release Version 2.0
 
 * Changed to meet new legislation around mid-year entry. 
 * File/prepop now 
@@ -15,10 +24,8 @@
 	* If the company is now earning over $5M 
 	* If the company is deciding to enter AIM mid-year 
 	* Declare any shareholders that the AIM company is paying provisional tax for.
-
-* [Archive Release version 1.0](./archive/v1/)
 	
-## Key Documentation:
+## Key documentation
 
 - Business use cases and worked examples
 	- [view on IR website](https://www.ird.govt.nz/digital-service-providers/services-catalogue/returns-and-information/accounting-income-method)
@@ -28,29 +35,29 @@
 	- View and download the [return service common v2 xsd](../Common%20XSD/ReturnCommon.v2.xsd)
 	- View and download the AIM return [XSD](ReturnAIM.v2.xsd) and [WSDL](ReturnsAIMDevWsdl.v2.wsdl) from this current directory
 	
-- Return Service 
-	- [Download the Return Service AIM v2.0 build pack](../Service%20-%20Return/Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20AIM%20-%20V2.0.pdf) to view data definitions of each operation and response status code definitions
+- Build pack
+	- [Download the Return service AIM v2.0 build pack](../Service%20-%20Return/Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20AIM%20-%20V2.0.pdf) to view data definitions of each operation and response status code definitions
 
-- Message Samples
-    - [View Message samples for requests and positive responses](#message-samples)		
+- Message samples
+    - [View message samples for requests and positive responses](#message-samples)		
 	
-## Environment Information: 
+## Environment information
 
-- [Mock Environment Information - Emulated Services, Mindmap and Test data](#mock-environment-information)
+- [Mock environment information - emulated services, mindmap and test data](#mock-environment-information)
 	
-- [Test Environment Information - Test Scenarios Report Template, Mindmap and URL Endpoints](#test-environment-information)
+- [Test environment information - Test scenarios report template, mindmap and URL endpoints](#test-environment-information)
 
-- [Production Environment Information - URL Endpoints](#Production-Environment-Information)	
+- [Production environment information - URL endpoints](#Production-Environment-Information)	
 	
 ## Supporting services
 
-* Service: Identity and Access – view [How to integrate, OAuth requests and responses message sample and build pack](https://github.com/InlandRevenue/Gateway_Services-Access) 
-* Service: Intermediation – view [Schemas, WSDLs, and build pack](../Service%20-%20Intermediation/)
+* Service: Identity and Access – view [how to integrate, OAuth requests, message samples and build pack](https://github.com/InlandRevenue/Gateway_Services-Access/tree/master/Identity%20and%20Access) 
+* Service: Intermediation – view [schemas, WSDLs, and build pack](https://github.com/InlandRevenue/Gateway_Services-Access/tree/master/Service%20-%20Intermediation)
 
 ## Message samples:
------------------
+-----------------o
 
-- Simulating AIM Returns Operations:
+- Simulating AIM returns Operations:
     - PrePop
         - Positive response
             - [request sample](sample%20messages/body-aim-returnprepop-request.xml)
@@ -72,17 +79,17 @@
             - [request sample](sample%20messages/body-aim-retrievereturn-request.xml)
             - [response sample](sample%20messages/body-aim-retrievereturn-response.xml)
 
-## Mock Environment Information:
+## Mock environment information:
 -----------------
 
-* Mock Emulated Services URL
+* Mock emulated services URL
 	* https://mock-aim.ird.digitalpartner.services
 
-- AIM Mock Scenarios Mindmap
+- AIM mock scenarios mindmap
 	- [View larger image](images/AIM_Mock_Scenarios_Mindmap.png)
 	![Mock Scenarios](images/AIM_Mock_Scenarios_Mindmap.png) 
 
-- Test Data
+- Test data
 	- The following test data can be tested in our Mock Services environment when submitting requests to the service operations
 	- This table shows which scenarios (as per their numbers in the mindmap) require specific data to trigger the expected responses. 
 	- Text in italics represents the name of the XML node in the request.
@@ -103,24 +110,24 @@
 	RetrieveStatus | EMS_AIM034 | Customer IRD (*identifier*): 123090918 (two-monthly even filer)
 	 | | | *periodEndDate*: 2017-11-30 
 
-## Test Environment Information:
+## Test environment information:
 -----------------
 
-* Test Scenarios
+* Test scenarios
 	- [Download test scenarios report template](AIM%20-%20Return%20Sevice%20-%20Test%20Report%20Template.docx)
 	- AIM Test Scenarios Mindmap - [view larger image](images/AIM_v2_Test_Scenarios_Mindmap.png)
 	![Test Scenarios](images/AIM_v2_Test_Scenarios_Mindmap.png)
 
-* Test URL Endpoint
-	* Cloud Gateway Service: https://test3.services.ird.govt.nz:4046/gateway/gws/returns/
-	* Native Desktop Gateway Service: https://test3.services.ird.govt.nz/gateway2/gws/returns/
+* Test URL endpoints
+	* Cloud gateway service: https://test3.services.ird.govt.nz:4046/gateway/gws/returns/
+	* Native desktop gateway service: https://test3.services.ird.govt.nz/gateway2/gws/returns/
 
-## Production Environment Information:
+## Production environment information:
 -----------------
 
-* Production URL Endpoints
+* Production URL endpoints
 
-	- Cloud Gateway Service: https://services.ird.govt.nz:4046/gateway/gws/returns/
-	- Native Desktop Gateway Service: https://services.ird.govt.nz/gateway2/gws/returns/
+	- Cloud gateway service: https://services.ird.govt.nz:4046/gateway/gws/returns/
+	- Native desktop gateway service: https://services.ird.govt.nz/gateway2/gws/returns/
 	- (Cloud) SOAP WSDL: https://services.ird.govt.nz:4046/gateway/gws/returns/?wsdl
-	- (Native Desktop) SOAP WSDL: https://services.ird.govt.nz/gateway2/gws/returns/?wsdl
+	- (Native desktop) SOAP WSDL: https://services.ird.govt.nz/gateway2/gws/returns/?wsdl
