@@ -19,7 +19,7 @@
 
 * Income Tax Build Pack
 	* Download and view the [Return Service Income Tax build pack](Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20INC.pdf) to view data definitions of each operation and response status code definitions	
-	* Download and view the [Additional Information pack ](Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20Additional%20Information V1.0.pdf)
+	* Download and view the [Additional Information pack](Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20Additional%20Information%20V1.0.pdf)
 
 This document is intended to support the technical information provided in the build pack including
 *	the formulae and individual field items to use when calculating the various subtotalled amounts that are required throughout the income tax returns, 
