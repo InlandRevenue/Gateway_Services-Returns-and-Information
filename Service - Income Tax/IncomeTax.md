@@ -7,6 +7,9 @@
 
 * Business use cases
 	* [view on IR website](https://www.classic.ird.govt.nz/software-providers/docs/)
+	
+
+	
 
 * XSD Schemas 
     * View and download the [Income Return Common XSD](xsd/IncomeReturnCommon.v1.xsd) from this [XSD](xsd/) directory	
@@ -14,8 +17,17 @@
     * View and download the [Common and Return Common XSD](../Common%20XSD/)
 	
 
-* Returns Service 
+* Income Tax Build Pack
 	* Download and view the [Return Service Income Tax build pack](Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20INC.pdf) to view data definitions of each operation and response status code definitions	
+	* Download and view the [Additional Information pack ](Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20Additional%20Information V1.0.pdf)
+
+This document is intended to support the technical information provided in the build pack including
+*	the formulae and individual field items to use when calculating the various subtotalled amounts that are required throughout the income tax returns, 
+*	the business rules that apply for the various tax and tax credit calculations (such as IETC), 
+*	the applicable income tax rates used for each return type and income year.
+		
+		
+		
 	
 * [Income Tax Form Types](#Income-Tax-Form-Types) 
 
