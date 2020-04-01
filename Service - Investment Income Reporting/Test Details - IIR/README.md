@@ -4,11 +4,11 @@
 # Investment Income Reporting - Testing Information
 
 - The testing details provided on this page is applicable for all of the following invest income reporting tax types
-	- Approved Issuer Levey (AIL)
-	- Dividend Withholding Tax (DWT)
-	- Interest Pay as you go (IPS)
-	- Non Resident Withholding Tax (NRT) 
-	- Resident Withholding Tax (RWT)
+	- [Approved Issuer Levey (AIL)](../Product%20-%20AIL)
+	- [Dividend Withholding Tax (DWT)](../Product%20-%20DWT)
+	- [Interest Pay as you go (IPS)(../Product%20-%20IPS)
+	- [Non Resident Withholding Tax (NRT)](../Product%20-%20NRT)
+	- [Resident Withholding Tax (RWT)](../Product%20-%20RWT)
 
 - Mock environment information
 	- [Mindmap and test data](#mock-environment-information)
