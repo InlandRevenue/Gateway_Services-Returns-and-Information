@@ -95,7 +95,7 @@ This document is intended to support the technical information provided in the b
 - [Test Environment Information - Test Scenarios Report Template, Mindmap and URL Endpoints](test%20details/TestingInfomation.md#test-environment-information)
 - [Production Environment Information - URL Endpoints](test%20details/TestingInfomation.md#Production-Environment-Information)	
 
-## Primary income tax return: 
+## Income Tax Form Types 
 
 * IR3 - Resident Individual Income Tax Return
 	* IR10 - Financial statements summary 
@@ -172,7 +172,7 @@ This document is intended to support the technical information provided in the b
 * IR215 - Adjust your income 
 	* Does not support attachments	
 	
-## Attachment income tax return:	
+## Attachment-income-tax-return
 
 * IR3F - Farming income
 * IR3B - Schedule of business income
