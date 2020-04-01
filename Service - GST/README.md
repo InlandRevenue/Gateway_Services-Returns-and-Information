@@ -3,38 +3,51 @@
 
 # GST Returns Software Development Kit (SDK)
 
-## Key Documentation:
+#### Release version 1.0
+
+## About the service
+
+* Goods and services tax (GST) is a 15% tax added to the price of most goods and services in New Zealand, including imported goods and services.
+* The gateway service used for GST is the Return service that enables
+	- filing of returns in real time
+	- amending of returns
+	- retrieve a return due date
+	- query a return status
+	- retrieve previously filed returns
+
+## Key documentation:
 
 - Business use cases
-	- [view on IR website](https://www.classic.ird.govt.nz/resources/8/9/89938b0d-09d4-49c9-8e4b-ad30527a9d56/GST+Business+use+cases.pdf)
+	- [view and download](GST-Business-use-cases.pdf)
 	
 - Schemas and WSDLs
-	- View and download the [common XSD](../Schema%20-%20Common/)
+	- View and download the [common v1 xsd](../Common%20XSD/Common.v1.xsd)
+	- View and download the [return service common v1 xsd](../Common%20XSD/ReturnCommon.v1.xsd)
 	- View and download the GST return [XSD](ReturnGST.v1.xsd) and [WSDL](ReturnsGSTDevWsdl.v1.wsdl) from this current directory
 
-- Returns Service 
-	- [Download the Return Service GST build pack](Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20GST.pdf) to view data definitions of each operation and response status code definitions
+- Build pack 
+	- [Download the Return service GST build pack](Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20GST.pdf) to view data definitions of each operation and response status code definitions
 
-- Message Samples
-    - [View Message samples for requests and positive responses](#message-samples)
+- Message samples
+    - [View message samples for requests and positive responses](#message-samples)
 	
-## Environment Information: 
+## Environment information
 
-- [Mock Environment Information - Emulated Services, Mindmap and Test data](#mock-environment-information)
+- [Mock environment information - emulated services, mindmap and test data](#mock-environment-information)
 	
-- [Test Environment Information - Test Scenarios Report Template, Mindmap and URL Endpoints](#test-environment-information)
+- [Test environment information - Test scenarios report template, mindmap and URL endpoints](#test-environment-information)
 
-- [Production Environment Information - URL Endpoints](#Production-Environment-Information)	
+- [Production environment information - URL endpoints](#Production-Environment-Information)	
 
-## Supporting Services:
+## Supporting services
 
-* Service: Identity and Access – view [How to integrate, OAuth requests and responses message sample and build pack](https://github.com/InlandRevenue/Gateway_Services-Access) 
-* Service: Intermediation – view [Schemas, WSDLs, and build pack](https://github.com/InlandRevenue/Gateway_Services-Access/tree/master/Service%20-%20Intermediation)
+* Service: Identity and Access – view [how to integrate, OAuth requests, message samples and build pack](https://github.com/InlandRevenue/Gateway_Services-Access/tree/master/Identity%20and%20Access) 
+* Service: Intermediation – view [schemas, WSDLs, and build pack](https://github.com/InlandRevenue/Gateway_Services-Access/tree/master/Service%20-%20Intermediation)
 
-## Message Samples:
+## Message samples
 -----------------
 
-* Simulating GST Returns Operations:
+* Simulating GST returns operations:
     - PrePop
         - Positive response
             - [request sample](sample%20messages/body-gst-returnprepop-request.xml)
@@ -56,18 +69,18 @@
             - [request sample](sample%20messages/body-gst-retrievereturn-request.xml)
             - [response sample](sample%20messages/body-gst-retrievereturn-response.xml)
 
-## Mock Environment Information:
+## Mock environment information
 -----------------
 
-* Mock Emulated Services URL
+* Mock emulated services URL
 	* https://mock-gst.ird.digitalpartner.services
 
-* Test Scenarios 
-	- GST Test Scenarios Mindmap
+* Test scenarios
+	- GST mock scenarios mindmap
 	
 	![Test Scenarios](images/Emulated_Services_Coverage_Map-Return_GST.png)
 
-* Test Data
+* Test data
 	- The following test data can be tested in our Mock Services environment when submitting requests to the service operations
 	- This table shows which scenarios (as per their numbers in the mindmap) require specific data to trigger the expected responses. 
 	- Text in italics represents the name of the XML node in the request.
@@ -86,25 +99,25 @@
 	|Prepop | EMS_GST033 | Customer IRD (*identifier*): 123084225 |
     |Prepop | EMS_GST034 | Customer IRD (*identifier*): 123080106 |
         
-## Test Environment Information:
+## Test environment information
 -----------------
 
-* Test Scenarios
+* Test scenarios
 	- [Download test scenarios report template](GST%20-%20Return%20Service%20-%20Test%20Report%20Template.docx)
 
-* Test Environment URL Endpoints
+* Test environment URL endpoints
 	
-	* Cloud Gateway Service: https://test3.services.ird.govt.nz:4046/gateway/gws/returns/
-	* Native Desktop Gateway Service: https://test3.services.ird.govt.nz/gateway2/gws/returns/
+	* Cloud gateway service: https://test3.services.ird.govt.nz:4046/gateway/gws/returns/
+	* Native desktop gateway service: https://test3.services.ird.govt.nz/gateway2/gws/returns/
 	* Cloud SOAP WSDL: https://test3.services.ird.govt.nz:4046/gateway/gws/returns/?wsdl
-	* Native Desktop SOAP WSDL: https://test3.services.ird.govt.nz/gateway2/gws/returns/?wsdl
+	* Native desktop SOAP WSDL: https://test3.services.ird.govt.nz/gateway2/gws/returns/?wsdl
             
-## Production Environment Information:
+## Production environment information
 -----------------
 
-* Production URL Endpoints
+* Production URL endpoints
 
-	- Cloud Gateway Service: https://services.ird.govt.nz:4046/gateway/gws/returns/
-	- Native Desktop Gateway Service: https://services.ird.govt.nz/gateway2/gws/returns/
+	- Cloud gateway service: https://services.ird.govt.nz:4046/gateway/gws/returns/
+	- Native desktop gateway service: https://services.ird.govt.nz/gateway2/gws/returns/
 	- (Cloud) SOAP WSDL: https://services.ird.govt.nz:4046/gateway/gws/returns/?wsdl
-	- (Native Desktop) SOAP WSDL: https://services.ird.govt.nz/gateway2/gws/returns/?wsdl
+	- (Native desktop) SOAP WSDL: https://services.ird.govt.nz/gateway2/gws/returns/?wsdl
