@@ -45,7 +45,7 @@ gateway services. It has been REMOVED from form IR215.
 |R&D tax incentive credits to be refunded |IR4 |
 |Profit/loss from sale of property | IR8, IR9, IR44 | 
  
-*  The following schemas have also changed for 2020: 
+The following schemas have also changed for 2020: 
  
 	*  ReturnIR3.v1.xsd  
 	*  ReturnIR3NR.v1.xsd  
@@ -59,9 +59,6 @@ gateway services. It has been REMOVED from form IR215.
 	
 ## Key Documentation:
 
-* Business use cases
-	* [view on IR website](https://www.classic.ird.govt.nz/software-providers/docs/)
-	
 * XSD Schemas 
     * View and download the [Income Return Common XSD](xsd/IncomeReturnCommon.v1.xsd) from this [XSD](xsd/) directory	
     * View the Income Tax XSD schema files from the [XSD](xsd/) directory
@@ -69,17 +66,13 @@ gateway services. It has been REMOVED from form IR215.
 	
 
 * Build Pack
-	* Download the [Return Service Income Tax build pack](Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20INC.pdf) to view data definitions of each operation and response status code definitions	
+	* Download the [Return Service Income Tax build pack](Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20INC.pdf) to view data definitions of each operation and response status code definitions
+		* Supporting information on IR website
 	* Download the [Additional Information pack](Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20Additional%20Information%20V1.0.pdf)
+		* Income tax assessments (auto calc)
 
-This document is intended to support the technical information provided in the build pack including
-*	the formulae and individual field items to use when calculating the various subtotalled amounts that are required throughout the income tax returns, 
-*	the business rules that apply for the various tax and tax credit calculations (such as IETC), 
-*	the applicable income tax rates used for each return type and income year.
-		
-	
 * Income Tax Form Types
-	* [Income Tax Form Types](#Income-Tax-Form-Types) 
+	* [Primary income tax return forms](#Primary-income-tax-return-forms) 
 	* [Attachment income tax return forms](#Attachment-income-tax-return) 
 
 * [Sample request and responses](#Sample-request-and-responses)
@@ -88,14 +81,14 @@ This document is intended to support the technical information provided in the b
 	* [Income Tax and Auto calc Business use cases](https://www.ird.govt.nz/digital-service-providers/services-catalogue/returns-and-information/income-tax)
 	* [Income tax assessments (auto calc)](https://www.ird.govt.nz/income-tax/income-tax-for-individuals/what-happens-at-the-end-of-the-tax-year/income-tax-assessments)
 
----
-
 ## Environment Information: 
 - [Mock Environment Information - Emulated Services, Mindmap and Test data](test%20details/TestingInfomation.md#mock-environment-information)
 - [Test Environment Information - Test Scenarios Report Template, Mindmap and URL Endpoints](test%20details/TestingInfomation.md#test-environment-information)
 - [Production Environment Information - URL Endpoints](test%20details/TestingInfomation.md#Production-Environment-Information)	
 
-## Income Tax Form Types 
+---
+
+## Primary income tax return forms
 
 * IR3 - Resident Individual Income Tax Return
 	* IR10 - Financial statements summary 
@@ -172,7 +165,7 @@ This document is intended to support the technical information provided in the b
 * IR215 - Adjust your income 
 	* Does not support attachments	
 	
-## Attachment-income-tax-return
+## Attachment income tax return
 
 * IR3F - Farming income
 * IR3B - Schedule of business income
