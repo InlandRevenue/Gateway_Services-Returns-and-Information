@@ -3,36 +3,32 @@
 
 # Income Tax and Donation Tax Credit through Gateway Services
 
-Income Tax reporting through gateway services enables organisations to:
-- file detailed Income Tax information to Inland Revenue,
-- additionally, if required they can 
-	- amend a previously filed return
-	- retrieve a return status or return data.
-
-Return Service ― Income Tax	
+## Return Service ― Income Tax	
 * [Income Tax Software Development Kit (SDK)](IncomeTax.md)  
+The income tax gateway service can be used to:
+	*	submit new or amended income tax returns and supplementary forms
+	*	request income tax information held by us for a customer
+	*	query the processing status of a previously filed income tax return
+	*	request a copy of a previously filed income tax return
+	*	request the due date of the next expected income tax return.
+	
+> All income tax returns and supplementary forms are supported by the income tax gateway service
+
+
 * [Donation Tax Credit Software Development Kit (SDK)](DonationTaxCredit.md)  
+The donation tax credit gateway service can be used to:
+	*	submit a new or amended donation tax credit claim form
+	*	query the processing status of a previously filed donation tax credit claim form
+	*	request a copy of a previously filed donation tax credit claim form.
 
-* Returns Service 
-	* Download and view the [Return Service Income Tax build pack](Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20INC.pdf) to view data definitions of each operation and response status code definitions
-
-Find out about: 
-* the key changes for [income tax for individuals on the IR website](https://www.ird.govt.nz/income-tax-for-individuals)
-* the key changes for [income tax for business and organisations on the IR website](https://www.ird.govt.nz/income-tax-for-business)
-* [Explore our products and services](https://www.ird.govt.nz/software-providers/explore-products-contents/)
-
-## Supporting Services:
-
-* Service: Identity and Access – view [How to integrate, OAuth requests and responses message sample and build pack](https://github.com/InlandRevenue/Gateway_Services-Access) 
-* Service: Intermediation – view [Schemas, WSDLs, and build pack](https://github.com/InlandRevenue/Gateway_Services-Access/tree/master/Service%20-%20Intermediation)
-* Service: Return Status Push Notification - view [Schemas and build pack](../Service%20-%20Push%20Notification)
+## Supporting Information
+Find out about:
+*	the key changes for [income tax for individuals on the IR website](https://www.ird.govt.nz/income-tax-for-individuals)
+*	the key changes for [income tax for business and organisations on the IR website](https://www.ird.govt.nz/income-tax-for-business)
 
 
+## Supporting Services
 
-
-
-
-
-
-
-    
+* [Service: Identity and Access]() 
+* [Service: Intermediation](https://github.com/InlandRevenue/Gateway_Services-Access/tree/master/Service%20-%20Intermediation)
+* [Service: Return Status Push Notification](../Servic%20-%20Push%20Notification)

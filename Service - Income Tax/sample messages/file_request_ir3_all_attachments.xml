@@ -85,16 +85,6 @@
                                 <r3:taxCreditSubtotal>3922.00</r3:taxCreditSubtotal>
                                 <r3:totalShareholderEmployeeSalary>0</r3:totalShareholderEmployeeSalary>
                                 <r3:futureShareholderSalary>true</r3:futureShareholderSalary>
-								<r3:shareholderAIMTaxPaid>110.50</r3:shareholderAIMTaxPaid>
-								<r3:residentialRentalIncome>
-                                    <ic:indicator>I</ic:indicator>
-                                    <ic:totalIncome>2100.00</ic:totalIncome>
-                                    <ic:residentialRentalDeductions>1200.50</ic:residentialRentalDeductions>
-                                    <ic:excessDeductionsBroughtForward>0.00</ic:excessDeductionsBroughtForward>
-                                    <ic:deductionsClaimedThisYear>400.56</ic:deductionsClaimedThisYear>
-                                    <ic:netIncome>1699.44</ic:netIncome>
-                                    <ic:excessDeductionsCarriedForward>799.94</ic:excessDeductionsCarriedForward>
-                                </r3:residentialRentalIncome>
                                 <r3:netRentalIncome>0</r3:netRentalIncome>
                                 <r3:selfEmployedIncome>0</r3:selfEmployedIncome>
                                 <r3:otherIncome>0</r3:otherIncome>
@@ -115,9 +105,6 @@
                                 <r3:amountOfIETCClaimed>0</r3:amountOfIETCClaimed>
                                 <r3:imputationBroughtForward>0</r3:imputationBroughtForward>
                                 <r3:taxOnTaxableIncome>2870.00</r3:taxOnTaxableIncome>
-								<r3:researchAndDevelopment>
-                                    <ic:nonrefundableCredit>5.56</ic:nonrefundableCredit>
-                                </r3:researchAndDevelopment>
                                 <r3:residualIncomeTax>-1052.00</r3:residualIncomeTax>
                                 <r3:earlyPaymentDiscountEligibility>false</r3:earlyPaymentDiscountEligibility>
                                 <r3:overpaymentProvisionalTax>0</r3:overpaymentProvisionalTax>
