@@ -10,7 +10,7 @@
 	
 - Schemas and WSDLs
 	- View and download the [Common v2 and Return Common v2 XSD](../../Common%20XSD/)
-	- View and download the Employment Income (EI) return [XSD](ReturnEI.v2.xsd) and [WSDL](ReturnsEIDevWsdl.wsdl) from this current directory
+	- View and download the Employment Income (EI) return [XSD](ReturnEI.v2.xsd) and [WSDL](ReturnsEIDevWsdl.v2.wsdl) from this current directory
 	
 - Returns Service 
 	- [Download the build pack](Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20EI.pdf) to view data definitions of each operation and response status code definitions
