@@ -3,43 +3,41 @@
 
 # Approved issuer levy (AIL) Software Development Kit (SDK) for Investment Income Reporting
 
-## Key Documentation:
+#### Release version 1.0
+
+## Key documentation
 
 - Business use cases
 	- [Download and view](III%20-%20AIL%20-%20GWS%20business%20use%20cases.pdf)
 	
 - Schemas and WSDLS
-	- View and download the [common v2 xsd](../../Schema%20-%20Common/Common.v2.xsd)
-	- View and download the [return service common v2 xsd](../../Service%20-%20Return/Latest/ReturnCommon.v2.xsd)
+	- View and download the [common v2 xsd](../../Common%20XSD/Common.v2.xsd)
+	- View and download the [return service common v2 xsd](../../Common%20XSD/ReturnCommon.v2.xsd)
 	- View and download the AIL return [XSD](ReturnAIL.v1.xsd) and [WSDL](AILDevWsdl.wsdl) from this current directory
 	
-- Return Service - Investment Income Reporting
-	- [Download the build pack](../Service%20-%20Return%20III/Latest/Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20III.pdf) to view data definitions of each operation and response status code definitions
+- Build pack
+	- [Download the Return service - Investment Income Reporting build pack](../Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20III.pdf) to view data definitions of each operation and response status code definitions
 	
-- Message Samples
-    - [View Message samples for requests and positive responses](#message-samples)
+- Message samples
+    - [View message samples for requests and positive responses](#message-samples)
 
-## Environment Information: 
+## Environment information
 
-- Mock Environment Information
-	- [Mindmap and test data](../Test%20Details%20-%20IIR/README.md#mock-environment-information)
-	- [Mock URL Endpoints](../Test%20Details%20-%20IIR/README.md#mock-environment)
+- Mock environment information - [mindmap and test data](../Test%20Details%20-%20IIR/README.md#mock-environment-information), [Mock URL endpoints](../Test%20Details%20-%20IIR/README.md#mock-environment) 
+	
+- Test environment information - [test scenarios report template and mindmap](../Test%20Details%20-%20IIR/README.md#test-environment-information) and [URL endpoints](../Test%20Details%20-%20IIR/README.md#test-environment-information)
 
-- Test Environment Information
-	- [Test scenarios report template and mindmap](../Test%20Details%20-%20IIR/README.md#test-environment-information)
-	- [Test URL Endpoints](../Test%20Details%20-%20IIR/README.md#test-environment-information)
+- Production environment information - [URL endpoints](../Test%20Details%20-%20IIR/README.md#production-environment-information)
 
-- Production Environment Information
-	- [Production URL Endpoints](../Test%20Details%20-%20IIR/README.md#production-environment-information)
+## Supporting services
 
-## Supporting Services:
+* Service: Identity and Access – view [how to integrate, OAuth requests, message samples and build pack](https://github.com/InlandRevenue/Gateway_Services-Access/tree/master/Identity%20and%20Access)
 
-- Service: Identity and Access – view [How to integrate, OAuth requests and responses message sample and build pack](https://github.com/InlandRevenue/Gateway_Services-Access)
-
-## Message Samples:
 -----------------
 
-- Simulating AIL Returns Operations:
+## Message samples
+
+- Simulating AIL returns operations:
     - File
 		- [request sample](sample%20messages/AILFileRequest.xml)
         - [positive response sample](sample%20messages/AILFileResponse.xml)
@@ -55,5 +53,3 @@
 		- [request sample by period end date](sample%20messages/AILRetrieveReturnRequest_PeriodEndDate.xml)
 		- [request sample by submission key](sample%20messages/AILRetrieveReturnRequest_SubmissionKey.xml)
         - [positive response sample](sample%20messages/AILRetrieveReturnResponse.xml)
-
-

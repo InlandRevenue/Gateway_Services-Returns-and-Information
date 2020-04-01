@@ -3,6 +3,8 @@
 
 # Resident withholding tax (RWT) Software Development Kit (SDK) for Investment Income Reporting
 
+#### Release version 1.0
+
 ## Key Documentation:
 
 - Business use cases
@@ -13,10 +15,27 @@
 	- View and download the [Return Service common v2 xsd](../../Common%20XSD/ReturnCommon.v2.xsd)
 	- View and download the RWT return [XSD](ReturnRWT.v1.xsd) and [WSDL](RWTDevWsdl.wsdl) from this current directory
 	
-- Returns Service - Investment Income Information 
-	- [Download the build pack](../Service%20-%20Return%20III/Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20III.pdf) to view data definitions of each operation and response status code definitions
+- Build Pack
+	- [Download the Return service - Investment Income Reporting build pack](../Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20III.pdf) to view data definitions of each operation and response status code definitions
+	
+- Message samples
+    - [View message samples for requests and positive responses](#message-samples)
 
-## Sample Message:
+## Environment information
+
+- Mock environment information - [mindmap and test data](../Test%20Details%20-%20IIR/README.md#mock-environment-information), [Mock URL endpoints](../Test%20Details%20-%20IIR/README.md#mock-environment) 
+	
+- Test environment information - [test scenarios report template and mindmap](../Test%20Details%20-%20IIR/README.md#test-environment-information) and [URL endpoints](../Test%20Details%20-%20IIR/README.md#test-environment-information)
+
+- Production environment information - [URL endpoints](../Test%20Details%20-%20IIR/README.md#production-environment-information) 
+
+## Supporting services
+
+* Service: Identity and Access – view [how to integrate, OAuth requests, message samples and build pack](https://github.com/InlandRevenue/Gateway_Services-Access/tree/master/Identity%20and%20Access)
+
+-----------------
+
+## Message samples
 
 * File
 	* Income Type DIVINT
@@ -57,24 +76,3 @@
 	* Without submission Key
 		* [Request](sample%20messages/RWT_ReturnSatus_Response_without_submission_key.xml)
 		* [Response](sample%20messages/RWT_ReturnSatus_Response_with_submission_key.xml)
-
----
-	
-## Environment Information:
-
-
-	
-- Mock Environment Information
-	- [Mindmap and test data](../Test%20Details%20-%20IIR/README.md#mock-environment-information)
-	- [Mock URL Endpoints](../Test%20Details%20-%20IIR/README.md#mock-environment)
-
-- Test Environment Information
-	- [Test scenarios report template and mindmap](../Test%20Details%20-%20IIR/README.md#test-environment-information)
-	- [Test URL Endpoints](../Test%20Details%20-%20IIR/README.md#test-environment-information)
-
-- Production Environment Information
-	- [Production URL Endpoints](../Test%20Details%20-%20IIR/README.md#production-environment-information)	 
-	
-## Supporting Services: 
-
-* Service - Identity and Access – view [How to integrate, OAuth requests and responses message sample and build pack](https://github.com/InlandRevenue/Gateway_Services-Access)
