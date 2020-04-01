@@ -1,8 +1,9 @@
 ![IRD logo](../../Images/IRlogo.gif)
 ![Software Dev](../../Images/SoftwareDev.png)
 
-Employee Details (ED) Software Development Kit (SDK)
-=======================================
+# Employee Details (ED) Software Development Kit (SDK)
+
+#### Release Version 1.0
 
 Key Documentation:
 -------------
