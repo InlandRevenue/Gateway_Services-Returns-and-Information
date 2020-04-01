@@ -23,20 +23,17 @@
 
 ## Environment information
 
-- Mock environment information
-	- [Mindmap and test data](../Test%20Details%20-%20IIR/README.md#mock-environment-information)
-	- [Mock URL endpoints](../Test%20Details%20-%20IIR/README.md#mock-environment)
+- Mock environment information - [mindmap and test data](../Test%20Details%20-%20IIR/README.md#mock-environment-information), [Mock URL endpoints](../Test%20Details%20-%20IIR/README.md#mock-environment) 
+	
+- Test environment information - [test scenarios report template and mindmap](../Test%20Details%20-%20IIR/README.md#test-environment-information) and [URL endpoints](../Test%20Details%20-%20IIR/README.md#test-environment-information)
 
-- Test environment information
-	- [Test scenarios report template and mindmap](../Test%20Details%20-%20IIR/README.md#test-environment-information)
-	- [Test URL endpoints](../Test%20Details%20-%20IIR/README.md#test-environment-information)
-
-- Production environment information
-	- [Production URL endpoints](../Test%20Details%20-%20IIR/README.md#production-environment-information)	 
+- Production environment information - [URL endpoints](../Test%20Details%20-%20IIR/README.md#production-environment-information) 
 
 ## Supporting services
 
 * Service: Identity and Access – view [how to integrate, OAuth requests, message samples and build pack](https://github.com/InlandRevenue/Gateway_Services-Access/tree/master/Identity%20and%20Access)
+
+-----------------
 
 ## Message samples
 
