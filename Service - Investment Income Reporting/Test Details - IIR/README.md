@@ -3,16 +3,16 @@
 
 # Investment Income Reporting - Testing Information
 
-- The testing details provided on this page is applicable for all of the following invest income reporting tax types
+- The testing details provided on this page is applicable for all of the following investment income reporting tax types
 	- [Approved Issuer Levey (AIL)](../Product%20-%20AIL)
 	- [Dividend Withholding Tax (DWT)](../Product%20-%20DWT)
-	- [Interest Pay as you go (IPS)(../Product%20-%20IPS)
+	- [Interest Pay as you go (IPS)](../Product%20-%20IPS)
 	- [Non Resident Withholding Tax (NRT)](../Product%20-%20NRT)
 	- [Resident Withholding Tax (RWT)](../Product%20-%20RWT)
 
 - Mock environment information
-	- [Mindmap and test data](#mock-environment-information)
-	- [Requests matching logic](#mock-environment-requests-matching-logic)
+	- [Mind map and test data](#mock-environment-information)
+	- [Emulated requests matching logic](#mock-environment-requests-matching-logic)
 	
 - Test environment information
 	- [Test scenarios report template](#test-environment-information)
@@ -31,7 +31,7 @@
 	![Mock Scenarios](images/IIR-mockServiceScope-scenarios.png)
 
 - Test data
-	- The following test data can be tested in our Mock Services environment when submitting requests to the service operations for the following invest income reporting tax types (AIL / DWT/ IPS/ NT / RWT)
+	- The following test data can be tested in our mock services environment when submitting requests to the service operations for the following invest income reporting tax types (AIL / DWT/ IPS/ NT / RWT)
 	
 		- Valid Identifiers per tax type:
 			- AIL: 	[123768566, 132145202]
@@ -81,10 +81,10 @@
 -----------------
 
 - Mock URLs:
-	- Mock Emulated Services	-	https://mock-iir.ird.digitalpartner.services/ 
-	- Mock URL Endpoint			- 	https://mock-iir.ird.digitalpartner.services/gateway/GWS/Returns/
+	- Mock emulated services	-	https://mock-iir.ird.digitalpartner.services/ 
+	- Mock URL endpoint			- 	https://mock-iir.ird.digitalpartner.services/gateway/GWS/Returns/
 
-- Returns Service Mappings - (default) port 443 of path "/gateway/GWS/Returns":
+- Returns service mappings - (default) port 443 of path "/gateway/GWS/Returns":
 	- /gateway/GWS/Returns?wsdl - WSDL is not available, returning HTTP 200 only.
 	
 - WS-addressing ```action``` header value of the incoming request is mapped to an endpoint:
@@ -97,10 +97,10 @@
 	- Incoming requests should include "Authorization" header with the OAuth token value
 	- In case of missing token, emulated service would respond with error statusCode 2
 
-- Schema Validations:
+- Schema validations:
 	- In case of failure XML validation failure response (error code 21)
 
-- Account type value is then verified to asses it is valid III product request.
+- Account type value is then verified to asses it is valid IIR product request.
 	- if not, an invalid account type error is returned.
 
 - Then the service operation specific validations are carried out and returned with appropriate response (per mind map).
@@ -124,8 +124,6 @@
 	- Cloud gateway service: https://test3.services.ird.govt.nz:4046/gateway/gws/returns/?wsdl
     - Native desktop gateway service: https://test3.services.ird.govt.nz/gateway2/gws/returns/?wsdl
 	
-
-
 ## Production environment iInformation
 -----------------  
 
