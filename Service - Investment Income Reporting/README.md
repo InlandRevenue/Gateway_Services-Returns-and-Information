@@ -9,7 +9,7 @@ Investment income reporting through gateway services enables organisations to:
 	- amend a previously filed return
 	- retrieve a return status or return data.
 
-Investment income reporting through the gateway services will be available for the following withholding tax product types: 
+Investment income reporting through the gateway services is available for the following withholding tax product types: 
 - Approved issuer levy (AIL) [View and download the AIL SDK](Product%20-%20AIL)
 - Dividend withholding tax (DWT) [View and download the DWT SDK](Product%20-%20DWT)
 - Interest pay as you earn (IPS) [View and download the IPS SDK](Product%20-%20IPS)
