@@ -10,27 +10,27 @@
 	- Non Resident Withholding Tax (NRT) 
 	- Resident Withholding Tax (RWT)
 
-- Mock Environment Information
+- Mock environment information
 	- [Mindmap and test data](#mock-environment-information)
-	- [Requests Matching Logic](#mock-environment-requests-matching-logic)
+	- [Requests matching logic](#mock-environment-requests-matching-logic)
 	
-- Test Environment Information
+- Test environment information
 	- [Test scenarios report template](#test-environment-information)
-	- [Test Environment URLs](#test-urls)
+	- [Test environment URLs](#test-urls)
 	
-- Production Environment Information
-	- [Production Environment URLs](#production-environment-information)
+- Production environment information
+	- [Production environment URLs](#production-environment-information)
 	
-	
-Mock Environment Information:
 -----------------
+	
+## Mock environment information
 
-- Investment Income Reporting Mock Scenarios Mindmap
+- Investment Income Reporting mock scenarios mind map
 	
 	- [View larger image](images/IIR-mockServiceScope-scenarios.png)
 	![Mock Scenarios](images/IIR-mockServiceScope-scenarios.png)
 
-- Test Data
+- Test data
 	- The following test data can be tested in our Mock Services environment when submitting requests to the service operations for the following invest income reporting tax types (AIL / DWT/ IPS/ NT / RWT)
 	
 		- Valid Identifiers per tax type:
@@ -40,11 +40,11 @@ Mock Environment Information:
 			- NRT: 	[123768973, 132145202]
 			- RWT: [123768736, 132145202]
 
-		- Valid Submission Keys:
+		- Valid submission keys:
 			- these can be used across all IIR tax types and operations:
 			- [294502400, 1333370880, 463962112, 1859829760, 1699905536, 1154154496, 1783480320]
 			
-		- Valid Primary IRD numbers: [123671791, 123769651] 
+		- Valid primary IRD numbers: [123671791, 123769651] 
 		
 	- This following table shows which scenarios (as per their numbers in the mindmap) require specific data to trigger the expected responses.
 	- Text in italics represents the name of the XML node in the request.
@@ -77,7 +77,7 @@ Mock Environment Information:
 
 
 			
-Mock Environment:
+## Mock environment
 -----------------
 
 - Mock URLs:
@@ -106,33 +106,33 @@ Mock Environment:
 - Then the service operation specific validations are carried out and returned with appropriate response (per mind map).
 - Unmatched requests will return an appropriate HTTP response status
 
-Test Environment Information:	
+## Test environment information	
 -----------------  
 
-- Test Scenarios
+- Test scenarios
 	- [Download AIL test scenarios report template](Investment%20Income%20Reporting%20-%20Tax%20Type%20-%20AIL%20-%20%20Test%20Scenarios%20Report%20Template.docx)
 	- [Download DWT test scenarios report template](Investment%20Income%20Reporting%20-%20Tax%20Type%20-%20DWT%20-%20%20Test%20Scenarios%20Report%20Template.docx)
 	- [Download IPS test scenarios report template](Investment%20Income%20Reporting%20-%20Tax%20Type%20-%20IPS%20-%20%20Test%20Scenarios%20Report%20Template.docx)
 	- [Download NRT test scenarios report template](Investment%20Income%20Reporting%20-%20Tax%20Type%20-%20NRT%20-%20%20Test%20Scenarios%20Report%20Template.docx)
 	- [Download RWT test scenarios report template](Investment%20Income%20Reporting%20-%20Tax%20Type%20-%20RWT%20-%20%20Test%20Scenarios%20Report%20Template.docx)
 
-- Test URL Endpoint:
-    - Cloud Gateway Service: https://test3.services.ird.govt.nz:4046/gateway/gws/returns/
-    - Native Desktop Gateway Service: https://test3.services.ird.govt.nz/gateway2/gws/returns/
+- Test URL endpoints
+    - Cloud gateway service: https://test3.services.ird.govt.nz:4046/gateway/gws/returns/
+    - Native desktop gateway service: https://test3.services.ird.govt.nz/gateway2/gws/returns/
 	
-- Test WSDL URL Endpoint:
-	- Cloud Gateway Service: https://test3.services.ird.govt.nz:4046/gateway/gws/returns/?wsdl
-    - Native Desktop Gateway Service: https://test3.services.ird.govt.nz/gateway2/gws/returns/?wsdl
+- Test WSDL URL endpoints
+	- Cloud gateway service: https://test3.services.ird.govt.nz:4046/gateway/gws/returns/?wsdl
+    - Native desktop gateway service: https://test3.services.ird.govt.nz/gateway2/gws/returns/?wsdl
 	
 
 
-Production Environment Information:
+## Production environment iInformation
 -----------------  
 
-- Production URL Endpoint:
-    - Cloud Gateway Service: https://services.ird.govt.nz:4046/gateway/gws/returns/
-    - Native Desktop Gateway Service: https://services.ird.govt.nz/gateway2/gws/returns/
+- Production URL endpoints
+    - Cloud gateway service: https://services.ird.govt.nz:4046/gateway/gws/returns/
+    - Native desktop gateway: service: https://services.ird.govt.nz/gateway2/gws/returns/
 	
-- Production WSDL URL Endpoint:
-	- Cloud Gateway Service: https://services.ird.govt.nz:4046/gateway/gws/returns/?wsdl
-    - Native Desktop Gateway Service: https://services.ird.govt.nz/gateway2/gws/returns/?wsdl	
+- Production WSDL URL endpoints
+	- Cloud gateway service: https://services.ird.govt.nz:4046/gateway/gws/returns/?wsdl
+    - Native desktop gateway service: https://services.ird.govt.nz/gateway2/gws/returns/?wsdl	
