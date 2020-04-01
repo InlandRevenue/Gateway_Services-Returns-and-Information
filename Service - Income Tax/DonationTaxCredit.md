@@ -15,7 +15,7 @@ The donation tax credit gateway service can be used to:
 
 * XSD Schemas 
 	* View the Tax Credit Donation [XSD schema](xsd/ReturnREB.v1.xsd) directory
-    * View and download the [Common v2 and Return Common v2 XSD](../../Common%20-%20XSD/)
+    * View and download the [Common v2 and Return Common v2 XSD](../Common%20XSD/)
 	
 * Build pack
 	* Download the [Return Service Income Tax build pack](Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20INC.pdf) to view data definitions of each operation and response status code definitions		
