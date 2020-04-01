@@ -124,7 +124,7 @@
 	- Cloud gateway service: https://test3.services.ird.govt.nz:4046/gateway/gws/returns/?wsdl
     - Native desktop gateway service: https://test3.services.ird.govt.nz/gateway2/gws/returns/?wsdl
 	
-## Production environment iInformation
+## Production environment information
 -----------------  
 
 - Production URL endpoints
