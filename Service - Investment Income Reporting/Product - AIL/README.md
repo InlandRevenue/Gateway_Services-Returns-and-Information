@@ -16,7 +16,7 @@
 	- View and download the AIL return [XSD](ReturnAIL.v1.xsd) and [WSDL](AILDevWsdl.wsdl) from this current directory
 	
 - Build pack
-	- [Download the Return service - Investment Income Reporting build pack](../Service%20-%20Return%20III/Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20III.pdf) to view data definitions of each operation and response status code definitions
+	- [Download the Return service - Investment Income Reporting build pack](../Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20III.pdf) to view data definitions of each operation and response status code definitions
 	
 - Message samples
     - [View message samples for requests and positive responses](#message-samples)
