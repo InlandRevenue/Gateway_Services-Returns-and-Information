@@ -12,7 +12,7 @@ The Return Status Push Notification is based around a file transfer solution, wh
 - Build pack
 	- Download and view the [Push Notifications build pack](Gateway%20Services%20Build%20Pack%20-%20Push%20Notifications.pdf)
 
-## Return Status Push Notification ZIP/XML Sample Files:
+## Return Status Push Notification ZIP/XML sample files
 
 * [ZIP file:](Sample%20Files/PSN_DAILY_PROVIDER_1500216000_2155445580_2155445927_201909091028315313_NZX.zip) `PSN_DAILY_PROVIDER_1500216000_2155445580_2155445927_201909091028315313_NZX.zip`
     * DAILY AGENT File `PSN_DAILY_AGENT_IRD_132349932_2155445580_2155445927_201909091028315782_NZX.xml`
@@ -21,7 +21,7 @@ The Return Status Push Notification is based around a file transfer solution, wh
 
 > NOTE: The real production and non-production the XML and ZIP files will be PGP encrypted.
 
-## Requirements: 
+## Access information 
 
 * Software Providers needs to provide the following:
 	* IP Address and port number for a SFTP server
