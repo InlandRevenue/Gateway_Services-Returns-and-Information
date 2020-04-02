@@ -8,7 +8,7 @@ Employees can file Employment information (EI) to us each pay cycle using the Re
 ### Latest Release V 2.0 - [view details](#V-2.0-update-details)
 
 ### Archive 
-* [Employment Information V 1](./Archive/V1/Employment%20Information)
+* [Employment Information V 1](../Archive/V1/Employment%20Information)
 
 ## Key documentation
 

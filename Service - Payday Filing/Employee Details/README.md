@@ -6,7 +6,7 @@
 ### Latest Release V 2.0 - [view details](#V-2.0-update-details)
 
 ### Archive 
-* [Employee Details V 1](./Archive/V1/Employee%20Details)
+* [Employee Details V 1](../Archive/V1/Employee%20Details)
 
 ## Key documentation
 
