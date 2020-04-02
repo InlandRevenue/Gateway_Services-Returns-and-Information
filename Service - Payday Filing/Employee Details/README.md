@@ -132,6 +132,8 @@ The following key changes have been made to the Employment Service for the updat
 * Test URL endpoint
     - Cloud gateway service: https://test3.services.ird.govt.nz:4046/gateway/gws/employment/
     - Native desktop gateway service: https://test3.services.ird.govt.nz/gateway2/gws/employment/
+	- Cloud SOAP WSDL: https://test3.services.ird.govt.nz:4046/gateway/gws/employment/?wsdl
+	- Native desktop SOAP WSDL: https://test3.services.ird.govt.nz/gateway2/gws/employment/?wsdl
             
 ## Production environment information
 -----------------
