@@ -28,7 +28,7 @@ Employees can file Employment information (EI) to us each pay cycle using the Re
 
 - Find out about 
 	- [Employee Details SDK](../Employee%20Details)
-	- the defined tax rates and thresholds, tax types business rules, and calculations required for specific tax codes [on the IR website](https://www.ird.govt.nz/software-providers/explore-products-contents/payday-product-api/payroll-calculations-and-business-rules/)
+	- the defined tax rates and thresholds, tax types business rules, and calculations required for specific tax codes [on the IR website](https://www.ird.govt.nz/digital-service-providers/services-catalogue/returns-and-information/payday-filing/payroll-calculations-and-business-rules)
 	- how to make employee deduction payments [on the IR website](https://www.ird.govt.nz/payroll-employers/returns-payments/payday-filing/)
 
 ## Environment information
@@ -156,7 +156,7 @@ The EI version can be identified in the standard header’s majorFormType field:
 -----------------
 
 * Test scenarios
-	- [Download test scenarios report template](Payday%20Filing%20–%20Employment%20Information%20-%20Test%20Report%20Template.docx)
+	- [Download test scenarios report template](Payday%20Filing%20EI%20-%20Test%20Report%20Template.docx)
 
 * Test URL endpoints
 	- Cloud gateway service: https://test3.services.ird.govt.nz:4046/gateway/gws/returns/
