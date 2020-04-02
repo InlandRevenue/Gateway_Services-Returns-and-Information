@@ -3,6 +3,8 @@
 
 # Employee Details (ED) Software Development Kit (SDK)
 
+Employees can send us changes to employee details using the Employment service.
+
 ### Latest Release V 2.0 - [view details](#V-2.0-update-details)
 
 ### Archive 
@@ -126,8 +128,7 @@ The following key changes have been made to the Employment Service for the updat
 -----------------
 
 * Test scenarios
-	- [Download the test scenarios report template](Payday%20Filing%20–%20Employee%20Details%20-%20Test%20Report%20Template.docx)
-
+	- [Download the test scenarios report template](Payday%20Filing%20ED%20-%20Test%20Report%20Template.docx)
 
 * Test URL endpoint
     - Cloud gateway service: https://test3.services.ird.govt.nz:4046/gateway/gws/employment/
