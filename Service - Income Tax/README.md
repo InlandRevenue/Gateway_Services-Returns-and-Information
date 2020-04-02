@@ -23,12 +23,12 @@ The donation tax credit gateway service can be used to:
 
 ## Supporting Information
 Find out about:
-*	the key changes for [income tax for individuals on the IR website](https://www.ird.govt.nz/income-tax-for-individuals)
-*	the key changes for [income tax for business and organisations on the IR website](https://www.ird.govt.nz/income-tax-for-business)
+*	the key changes for [income tax for individuals on the IR website](https://www.ird.govt.nz/income-tax/income-tax-for-individuals)
+*	the key changes for [income tax for business and organisations on the IR website](https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations)
 
 
 ## Supporting Services
 
-* [Service: Identity and Access]() 
+* [Service: Identity and Access](https://github.com/InlandRevenue/Gateway_Services-Access/tree/master/Identity%20and%20Access) 
 * [Service: Intermediation](https://github.com/InlandRevenue/Gateway_Services-Access/tree/master/Service%20-%20Intermediation)
 * [Service: Return Status Push Notification](../Servic%20-%20Push%20Notification)
