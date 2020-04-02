@@ -35,6 +35,7 @@ The Return Status Push Notification is based around a file transfer solution, wh
 ## Supporting services
 
 * [Service: Income Tax](../Service%20-%20Income%20Tax/) - for filing of Income Tax returns
+* [Service: Identity and Access](https://github.com/InlandRevenue/Gateway_Services-Access/tree/master/Identity%20and%20Access) – for additional details on SSH and PGP authentication information.
 * [Service: Intermediation](https://github.com/InlandRevenue/Gateway_Services-Access/tree/master/Service%20-%20Intermediation) – for managing links between business intermediaries and their client lists and their customer accounts.
 * [Service: Software Intermediation](https://github.com/InlandRevenue/Gateway_Services-Access/tree/master/Service%20-%20Software%20Intermediation) – for service providers to manage links to tax intermediary clients or directly to customers through their software
 
