@@ -28,7 +28,7 @@ The employment information application programming interface (API) lets employer
 
 Find out about:
 
-* the defined tax rates and thresholds, tax types business rules, and calculations required for specific tax codes [on the IR website](https://www.ird.govt.nz/software-providers/explore-products-contents/payday-product-api/payroll-calculations-and-business-rules/)
+* the defined tax rates and thresholds, tax types business rules, and calculations required for specific tax codes [on the IR website](https://www.ird.govt.nz/digital-service-providers/services-catalogue/returns-and-information/payday-filing/payroll-calculations-and-business-rules)
 
 * how to make employee deduction payments [on the IR website](https://www.ird.govt.nz/payroll-employers/returns-payments/payday-filing/)
 
