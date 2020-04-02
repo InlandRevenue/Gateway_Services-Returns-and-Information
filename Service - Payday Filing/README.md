@@ -5,7 +5,7 @@
 
 Payday filing through our gateway services lets employers:
 * file employment information (EI) to us each pay cycle instead of monthly using the Return service
-* •	send changes to employee details (ED) using the Employment service.
+* send changes to employee details (ED) using the Employment service.
 
 There is currently no gateway method for employer deductions payment.
 

@@ -5,7 +5,7 @@
 
 Employees can file Employment information (EI) to us each pay cycle using the Return service.
 
-### Latest Release V 2.0 - [view details](#V2.0-update-details)
+### Latest Release V 2.0 - [view details](#V-2.0-update-details)
 
 ### Archive 
 * [Employment Information V 1](./Archive/V1/Employment%20Information)
@@ -16,9 +16,9 @@ Employees can file Employment information (EI) to us each pay cycle using the Re
 	- [Download and view](../Payday%20filing%20-%20ED%20and%20EI%20GWS%20business%20use%20cases.pdf)
 	
 - Schemas and WSDLs
-	- View and download the [Common XSD](../../Common%20XSD/Common.v2.xsd)
-	- View and download the [Return Service Common XSD](../../Common%20XSD/ReturnCommon.v2.xsd)
-	- View and download the Employment Income (EI) return [XSD](ReturnEI.v2.xsd) and [WSDL](ReturnsEIDevWsdl.v2.wsdl) from this directory
+	- View and download the [Common v2 XSD](../../Common%20XSD/Common.v2.xsd)
+	- View and download the [Return Service Common v2 XSD](../../Common%20XSD/ReturnCommon.v2.xsd)
+	- View and download the Employment Income (EI) return [v2 XSD](ReturnEI.v2.xsd) and [v2 WSDL](ReturnsEIDevWsdl.v2.wsdl) from this directory
 	
 - Build pack 
 	- [Download and view the Return Service - EI build pack](Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20EI.pdf) to view data definitions of each operation and response status code definitions
@@ -26,7 +26,10 @@ Employees can file Employment information (EI) to us each pay cycle using the Re
 - Message samples
     - [View message samples for requests and positive responses](#message-samples)
 
-- Find out about [Employee Details SDK, Payday Filing business rules and calculations](../)
+- Find out about 
+	- [Employee Details SDK](../Employee%20Details)
+	- the defined tax rates and thresholds, tax types business rules, and calculations required for specific tax codes [on the IR website](https://www.ird.govt.nz/software-providers/explore-products-contents/payday-product-api/payroll-calculations-and-business-rules/)
+	- how to make employee deduction payments [on the IR website](https://www.ird.govt.nz/payroll-employers/returns-payments/payday-filing/)
 
 ## Environment information
 
@@ -38,10 +41,11 @@ Employees can file Employment information (EI) to us each pay cycle using the Re
 
 ## Supporting services
 
-* Service: Identity and Access – view [how to integrate, OAuth requests and responses message sample and build pack](https://github.com/InlandRevenue/Gateway_Services-Access/tree/master/Identity%20and%20Access) 
+* [Service: Identity and Access](https://github.com/InlandRevenue/Gateway_Services-Access/tree/master/Identity%20and%20Access) – view how to integrate, OAuth requests and responses message samples and build pack
 * [Service: Intermediation](https://github.com/InlandRevenue/Gateway_Services-Access/tree/master/Service%20-%20Intermediation)
 
-## V2.0 update details
+## V 2.0 update details
+-----------------
 
 The following key changes have been made to the Employment Information Return Service for the update to V2.0.
 

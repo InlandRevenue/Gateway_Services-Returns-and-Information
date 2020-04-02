@@ -3,7 +3,7 @@
 
 # Employee Details (ED) Software Development Kit (SDK)
 
-### Latest Release V 2.0 - [view details](#V2.0-update-details)
+### Latest Release V 2.0 - [view details](#V-2.0-update-details)
 
 ### Archive 
 * [Employee Details V 1](./Archive/V1/Employee%20Details)
@@ -14,9 +14,9 @@
 	- [Download and view](../Payday%20filing%20-%20ED%20and%20EI%20GWS%20business%20use%20cases.pdf)
 	
 - Schemas and WSDLs
-	- View and download the [Common XSD](../../Common%20XSD/Common.v2.xsd)
-	- View and download the [Return Service Common XSD](../../Common%20XSD/ReturnCommon.v2.xsd)
-	- View and download the Employee Details (ED) [XSD](Employment.v2.xsd) and [WSDL](EmploymentV2DevWsdl.wsdl) from this current directory
+	- View and download the [Common v2 XSD](../../Common%20XSD/Common.v2.xsd)
+	- View and download the [Return Service Common v2 XSD](../../Common%20XSD/ReturnCommon.v2.xsd)
+	- View and download the Employee Details (ED) [v2 XSD](Employment.v2.xsd) and [v2 WSDL](EmploymentV2DevWsdl.wsdl) from this current directory
 	
 - Build pack 
 	- [Download the Employment Service build pack](Gateway%20Services%20Build%20Pack%20-%20Employment%20Service.pdf) to view data definitions of each operation and response status code definitions
@@ -24,7 +24,7 @@
 - Message samples
     - [View message samples for requests and positive responses](#message-samples)
 	
-- Find out about [Employee Information SDK, payday filing business rules and calculations](../)
+- Find out about [Employment Information SDK](../Employment%20Information)
 
 ## Environment information
 
@@ -36,10 +36,11 @@
 
 ## Supporting services
 
-* Service: Identity and Access – view [how to integrate, OAuth requests and responses message sample and build pack](https://github.com/InlandRevenue/Gateway_Services-Access/tree/master/Identity%20and%20Access) 
+* [Service: Identity and Access](https://github.com/InlandRevenue/Gateway_Services-Access/tree/master/Identity%20and%20Access) – view how to integrate, OAuth requests and responses message samples and build pack
 * [Service: Intermediation](https://github.com/InlandRevenue/Gateway_Services-Access/tree/master/Service%20-%20Intermediation)
 
-## V2.0 update details
+## V 2.0 update details
+-----------------
 
 The following key changes have been made to the Employment Service for the update to V2.0.
 
