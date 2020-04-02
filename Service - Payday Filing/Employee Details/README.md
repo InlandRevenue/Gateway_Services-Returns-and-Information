@@ -1,11 +1,14 @@
 ![IRD logo](../../Images/IRlogo.gif)
 ![Software Dev](../../Images/SoftwareDev.png)
 
-Employee Details (ED) Software Development Kit (SDK)
-=======================================
+# Employee Details (ED) Software Development Kit (SDK)
 
-Key Documentation:
--------------
+### Latest Release V 2.0 - [view details](#V2.0-update-details)
+
+### Archive 
+* [Employee Details V 1](./Archive/V1/Employee%20Details)
+
+## Key documentation
 
 - Business use cases
 	- [Download and view](../Payday%20filing%20-%20ED%20and%20EI%20GWS%20business%20use%20cases.pdf)
@@ -15,17 +18,30 @@ Key Documentation:
 	- View and download the [Return Service Common XSD](../../Common%20XSD/ReturnCommon.v2.xsd)
 	- View and download the Employee Details (ED) [XSD](Employment.v2.xsd) and [WSDL](EmploymentV2DevWsdl.wsdl) from this current directory
 	
-- Employment Service 
-	- [Download the build pack](Gateway%20Services%20Build%20Pack%20-%20Employment%20Service.pdf) to view data definitions of each operation and response status code definitions
+- Build pack 
+	- [Download the Employment Service build pack](Gateway%20Services%20Build%20Pack%20-%20Employment%20Service.pdf) to view data definitions of each operation and response status code definitions
 	
-- Message Samples
-    - [View Message samples for requests and positive responses](#message-samples)
-
+- Message samples
+    - [View message samples for requests and positive responses](#message-samples)
+	
 - Find out about [Employee Information SDK, payday filing business rules and calculations](../)
 
-## V2.0 SERVICE UPDATES
+## Environment information
 
-The following key changes have been made to the Employment Service Return Service in preparation for the update to V2.0.
+- [Mock environment information - emulated services](#mock-environment-information)
+
+- [Test environment information - test scenarios, mind map and URL endpoints](#test-environment-information)
+
+- [Production environment information - URL endpoints](#Production-Environment-Information)	
+
+## Supporting services
+
+* Service: Identity and Access – view [how to integrate, OAuth requests and responses message sample and build pack](https://github.com/InlandRevenue/Gateway_Services-Access/tree/master/Identity%20and%20Access) 
+* [Service: Intermediation](https://github.com/InlandRevenue/Gateway_Services-Access/tree/master/Service%20-%20Intermediation)
+
+## V2.0 update details
+
+The following key changes have been made to the Employment Service for the update to V2.0.
 
 * Operations
 	* Updated schema references from ‘Employment.xsd’ to ‘Employment.v2.xsd’
@@ -58,23 +74,10 @@ The following key changes have been made to the Employment Service Return Servic
 	* Added code 135: ‘Opt-Out must be set to true as lateOptOutReason has been provided’
 	* Added code 136: ‘The provided employeeKiwiSaverEligibility status was invalid’
 
-## Environment Information: 
-
-- [Mock Environment Information - Emulated Services, Mindmap and Test data](#mock-environment-information)
-	
-- [Test Environment Information - Test Scenarios Report Template, Mindmap and URL Endpoints](#test-environment-information)
-
-- [Production Environment Information - URL Endpoints](#Production-Environment-Information)
-
-## Supporting Services:
-
-* [Service: Identity and Access – view how to integrate, OAuth requests and responses message sample and build pack](https://github.com/InlandRevenue/Gateway_Services-Access) 
-* [Service: Intermediation – view schemas, WSDLs, and build pack](../Service%20-%20Intermediation)
-
-Message samples:
+## Message samples
 -----------------
 
-- Simulating Employment Service Operations:
+- Simulating Employment Service operations:
     - Create
         - Positive response
             - [request sample](sample%20messages/body-employment-create-request.xml)
@@ -93,23 +96,23 @@ Message samples:
             - [response sample](sample%20messages/body-employment-retrievelist-response.xml)
 
 
-Mock Environment Information:
+## Mock environment information
 -----------------
 
-* Mock URL Endpoint URL
+- Mock URL endpoint
     - https://mock-es.ird.digitalpartner.services/
 
-* Test Scenarios 
-	- Employee Details Test Scenarios Mindmap
+* Test scenarios 
+	- Employee Details test scenarios mind map
 	
 	![Test Scenarios](images/Employee_Details_Test_Scenarios_Mind_Map.png)
 
-*  Test Data
+*  Test data
 	- The following test data can be tested in our Mock Services environment when submitting requests to the service operations
 	- This table shows which scenarios (as per their numbers in the mindmap) require specific data to trigger the expected responses. 
 	- Text in italics represents the name of the XML node in the request.
-	-
-
+	
+	
 	Operation | Scenario ID | Data
 	--- | --- | ---
 	RetrieveList | EMS_ES081 | Employee IRD (*identifier*): 123114116
@@ -118,23 +121,22 @@ Mock Environment Information:
 	Update | EMS_ES099 | employmentStartDate: today's date
 
 
-Test Environment Information:
+## Test environment information
 -----------------
 
-* Test Scenarios
+* Test scenarios
 	- [Download the test scenarios report template](Payday%20Filing%20–%20Employee%20Details%20-%20Test%20Report%20Template.docx)
 
 
-* Test URL Endpoint
-    - Cloud Gateway Service: https://test3.services.ird.govt.nz:4046/gateway/gws/employment/
-    - Native Desktop Gateway Service: https://test3.services.ird.govt.nz/gateway2/gws/employment/
+* Test URL endpoint
+    - Cloud gateway service: https://test3.services.ird.govt.nz:4046/gateway/gws/employment/
+    - Native desktop gateway service: https://test3.services.ird.govt.nz/gateway2/gws/employment/
             
-Production Environment Information:
+## Production environment information
 -----------------
 
-* Production URL Endpoints
-
-	- Cloud Gateway Service: https://services.ird.govt.nz:4046/gateway/gws/employment/
-	- Native Desktop Gateway Service: https://services.ird.govt.nz/gateway2/gws/employment/
-	- (Cloud) SOAP WSDL: https://services.ird.govt.nz:4046/gateway/gws/employment/?wsdl
-	- (Native Desktop) SOAP WSDL: https://services.ird.govt.nz/gateway2/gws/employment/?wsdl
+* Production URL endpoint
+	- Cloud gateway service: https://services.ird.govt.nz:4046/gateway/gws/employment/
+	- Native desktop gateway service: https://services.ird.govt.nz/gateway2/gws/employment/
+	- Cloud SOAP WSDL: https://services.ird.govt.nz:4046/gateway/gws/employment/?wsdl
+	- Native desktop SOAP WSDL: https://services.ird.govt.nz/gateway2/gws/employment/?wsdl
