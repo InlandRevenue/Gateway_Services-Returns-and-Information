@@ -1,11 +1,13 @@
 ![IRD logo](../../Images/IRlogo.gif)
 ![Software Dev](../../Images/SoftwareDev.png)
 
-Employee Details (ED) Software Development Kit (SDK)
-=======================================
+# Employee Details (ED) Software Development Kit (SDK)
 
-Key Documentation:
--------------
+Employees can send us changes to employee details using the Employment service.
+
+### Release V 1
+
+## Key documentation
 
 - Business use cases
 	- [view on IR website](https://www.ird.govt.nz/resources/e/2/e2d9e606-76d3-44f7-9127-2584666b5f09/Payday+filing+-+Employee+details+business+use+cases.pdf)
