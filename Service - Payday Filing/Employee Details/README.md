@@ -3,25 +3,16 @@
 
 # Employee Details (ED) Software Development Kit (SDK)
 
-
-#### Release Version 1.0
-
 Employees can send us changes to employee details using the Employment service.
 
 ### Latest Release V 2.0 - [view details](#V-2.0-update-details)
 
 ### Archive 
-* [Employee Details V1](../Archive/V1/Employee%20Details)
+* [Employee Details V 1](../Archive/V1/Employee%20Details)
 
 ## Key documentation
 
 - Business use cases
-	- [view on IR website](../Payday%20filing%20-%20ED%20and%20EI%20GWS%20business%20use%20cases.pdf)
-	
-- Schemas and WSDLs
-	- View and download the [Common v1 XSD](../../Common%20XSD/Common.v2.xsd)
-	- View and download the [Return Common v1 XSD](../../Common%20XSD/ReturnCommon.v2.xsd)
-	- View and download the Employee Details (ED) [XSD](Employment.v2.xsd) and [WSDL](EmploymentV2DevWsdl.wsdl) from this current directory
 	- [Download and view](../Payday%20filing%20-%20ED%20and%20EI%20GWS%20business%20use%20cases.pdf)
 	
 - Schemas and WSDLs
