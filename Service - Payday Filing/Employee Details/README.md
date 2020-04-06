@@ -2,30 +2,26 @@
 ![Software Dev](../../Images/SoftwareDev.png)
 
 # Employee Details (ED) Software Development Kit (SDK)
-<<<<<<< HEAD
+
 
 #### Release Version 1.0
-=======
->>>>>>> 19afdaf705bbabf37aa48d5f3ce941105bf4181f
 
 Employees can send us changes to employee details using the Employment service.
 
 ### Latest Release V 2.0 - [view details](#V-2.0-update-details)
 
 ### Archive 
-* [Employee Details V 1](../Archive/V1/Employee%20Details)
+* [Employee Details V1](../Archive/V1/Employee%20Details)
 
 ## Key documentation
 
 - Business use cases
-<<<<<<< HEAD
 	- [view on IR website](../Payday%20filing%20-%20ED%20and%20EI%20GWS%20business%20use%20cases.pdf)
 	
 - Schemas and WSDLs
-	- View and download the [Common v1 XSD](../../Common%20XSD/Common.v1.xsd)
-	- View and download the [Return Common v1 XSD](../../Common%20XSD/ReturnCommon.v1.xsd)
-	- View and download the Employee Details (ED) [XSD](Employment.xsd) and [WSDL](EmploymentDevWsdl.wsdl) from this current directory
-=======
+	- View and download the [Common v1 XSD](../../Common%20XSD/Common.v2.xsd)
+	- View and download the [Return Common v1 XSD](../../Common%20XSD/ReturnCommon.v2.xsd)
+	- View and download the Employee Details (ED) [XSD](Employment.v2.xsd) and [WSDL](EmploymentV2DevWsdl.wsdl) from this current directory
 	- [Download and view](../Payday%20filing%20-%20ED%20and%20EI%20GWS%20business%20use%20cases.pdf)
 	
 - Schemas and WSDLs
@@ -34,8 +30,7 @@ Employees can send us changes to employee details using the Employment service.
 	- View and download the Employee Details (ED) [v2 XSD](Employment.v2.xsd) and [v2 WSDL](EmploymentV2DevWsdl.wsdl) from this current directory
 	
 - Build pack 
-	- [Download the Employment Service build pack](Gateway%20Services%20Build%20Pack%20-%20Employment%20Service.pdf) to view data definitions of each operation and response status code definitions
->>>>>>> 19afdaf705bbabf37aa48d5f3ce941105bf4181f
+	- [Download the Employment Service build pack](Gateway%20Services%20Build%20Pack%20-%20Employment%20Service%20v2.pdf) to view data definitions of each operation and response status code definitions
 	
 - Message samples
     - [View message samples for requests and positive responses](#message-samples)
