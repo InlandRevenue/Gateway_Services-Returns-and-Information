@@ -59,7 +59,7 @@ The following key changes have been made to the Employment Service for the updat
 	* Updated schema references from ‘Employment.xsd’ to ‘Employment.v2.xsd’
 
 * Create
-	* Updated ‘KiwiSaverStatus’, changedvalid options to: AK, OK, NK, CT, AE(Removed: OT, NM, CH)
+	* Updated ‘KiwiSaverStatus’, changed valid options to: AK, OK, NK, CT, AE(Removed: OT, NM, CH)
 	* Added new field EmployeeExemptIncome
 	* Updated employeeNameOnEILine to allow 255 characters, previously this was 20
 	* Added tax codes table to show valid tax codes. ESS, SLCIR, and SLBOR are no longer valid tax codes
