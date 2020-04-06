@@ -1,11 +1,19 @@
 ![IRD logo](../../Images/IRlogo.gif)
 ![Software Dev](../../Images/SoftwareDev.png)
 
-# Employment Information (EI) Returns Software Development Kit (SDK)
+# Employment Information (EI) Software Development Kit (SDK)
 
-## Key Documentation:
+Employees can file Employment information (EI) to us each pay cycle using the Return service.
+
+### Latest Release V 2.0 - [view details](#V-2.0-update-details)
+
+### Archive 
+* [Employment Information V 1](../Archive/V1/Employment%20Information)
+
+## Key documentation
 
 - Business use cases
+<<<<<<< HEAD
 	- [view on IR website](../Payday%20filing%20-%20ED%20and%20EI%20GWS%20business%20use%20cases.pdf)
 	
 - Schemas and WSDLs
@@ -15,29 +23,100 @@
 	
 - Returns Service 
 	- [Download the build pack](Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20EI.pdf) to view data definitions of each operation and response status code definitions
+=======
+	- [Download and view](../Payday%20filing%20-%20ED%20and%20EI%20GWS%20business%20use%20cases.pdf)
+	
+- Schemas and WSDLs
+	- View and download the [Common v2 XSD](../../Common%20XSD/Common.v2.xsd)
+	- View and download the [Return Service Common v2 XSD](../../Common%20XSD/ReturnCommon.v2.xsd)
+	- View and download the Employment Income (EI) return [v2 XSD](ReturnEI.v2.xsd) and [v2 WSDL](ReturnsEIDevWsdl.v2.wsdl) from this directory
+	
+- Build pack 
+	- [Download and view the Return Service - EI build pack](Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20EI.pdf) to view data definitions of each operation and response status code definitions
 
-- Message Samples
-    - [View Message samples for requests and positive responses](#message-samples)
+- Message samples
+    - [View message samples for requests and positive responses](#message-samples)
+>>>>>>> 19afdaf705bbabf37aa48d5f3ce941105bf4181f
 
-- Find out about [Employee Details SDK, payday filing business rules and calculations](../)
+- Find out about 
+	- [Employee Details SDK](../Employee%20Details)
+	- the defined tax rates and thresholds, tax types business rules, and calculations required for specific tax codes [on the IR website](https://www.ird.govt.nz/digital-service-providers/services-catalogue/returns-and-information/payday-filing/payroll-calculations-and-business-rules)
+	- how to make employee deduction payments [on the IR website](https://www.ird.govt.nz/payroll-employers/returns-payments/payday-filing/)
 
-## Environment Information: 
+## Environment information
 
+- [Mock environment information - emulated services](#mock-environment-information)
+
+<<<<<<< HEAD
 - [Mock Environment Information - Emulated Services](#mock-environment-information)
+=======
+- [Test environment information - test scenarios, mind map and URL endpoints](#test-environment-information)
+>>>>>>> 19afdaf705bbabf37aa48d5f3ce941105bf4181f
 
-- [Test Environment Information - Test Scenarios, mindmap and URL Endpoints](#test-environment-information)
+- [Production environment information - URL endpoints](#Production-Environment-Information)	
 
-- [Production Environment Information - URL Endpoints](#Production-Environment-Information)	
+## Supporting services
 
-## Supporting Services:
+* [Service: Identity and Access](https://github.com/InlandRevenue/Gateway_Services-Access/tree/master/Identity%20and%20Access) – view how to integrate, OAuth requests and responses message samples and build pack
+* [Service: Intermediation](https://github.com/InlandRevenue/Gateway_Services-Access/tree/master/Service%20-%20Intermediation)
 
+<<<<<<< HEAD
 * Service: Identity and Access – view [How to integrate, OAuth requests and responses message sample and build pack](https://github.com/InlandRevenue/Gateway_Services-Access/tree/master/Identity%20and%20Access) 
 * Service: Intermediation [Service - Intermediation](https://github.com/InlandRevenue/Gateway_Services-Access/tree/master/Service%20-%20Intermediation)	
-
-## Message samples:
+=======
+## V 2.0 update details
 -----------------
 
-- Simulating EI Returns Operations:
+The following key changes have been made to the Employment Information Return Service for the update to V2.0.
+
+* Operations
+	* Updated schema to use ReturnEI.V2.xsd, Common.v2.xsd, and ReturnCommon.v2.xsd
+* File 	
+	* Added new optional field‘hoursPaid’(EI line item)
+	* Added two new optional fields ‘priorPeriodGrossAdjustment’and ‘priorPeriodPAYEAdjustment’(EI line items)
+	* Added two new optional fields ‘totalPriorPeriodGrossAdjustment’ and ‘totalPriorPeriodPAYEAdjustment’
+	* the employeePayFrequency field has changed from optional to required
+	* Added three new optional fields ‘essEarnings’, ‘slcirDeductions’, ‘slborDeductions’(EI line items)
+	* Updated employeeName to allow 255 characters, previously this was 20
+	* Removed values from TaxCode table: ESS,SLCIR,SLBOR
+	* Added three new optional fields:ototalESSEarningsototalSLCIRDeductionsototalSLBORDeductions.
+	* Added note to clarify use of childSupportCode
+	* There is a behaviour change between EI v1 and EI v2. In EI v1, a return can be filed and then immediately amended after receiving a successful response. AnEI v2, a return must be processed in order to be amended. It can take up to one day for a return to be processed. 
+* Retrieve Return
+	* New optional fields above will also be included in the Retrieve Return response
+	* Added note to Retrieve Return to clarify that it will return all existing fields on the return
+* Prepop
+	* Updated employeeName to allow 255 characters, previously this was 20
+* Retrieve Status
+	* Responses now include minorFormType
+	* SubmissionKey is now optional in the request body
+	* Now supports multiple return statuses(repeating elements)	
+* Employment Information-specific response codes
+	* Added new response code 170: 'The provided tax code is invalid'. Used to detect when tax code supplied is either ESS, SLCIR or SLBOR. 
+	* Added response code 144: Return being submitted
+	* Removed response code 166: EI temporarily locked for processing, not needed in V2	
+
+## Amendment scenarios—differences between EI v1 and v2
+
+Due to the introduction of Employment Information(EI) Gateway Service version 2, there are specific rules that service providers must adhere to when submitting amendments for an existing EI return on a period. These rules apply both to EI returns submitted through Gateway Service version 2, as well as returns that are submitted through EI Gateway Service version 1.In order to support amending prior EI returns, both EI v1 and EI v2 must be supported by service providers. 
+
+The EI version can be identified in the standard header’s majorFormType field:
+* EI version 1 = “EI”
+* EI version 2 = “EI2”
+
+| Original Return | Amended Return (via Gateway) | Result | Action |
+| --- | --- | --- | ---|
+| EI v1 | EI v1 | Success | |
+| | EI v2 | Failure –EI v2 Response Code 169: Submitted incorrect EI version (please refer to EI v2 build pack for more information on this response code).| This action is not allowed. Returns submitted through EI v1 must be amended with EI v1. |
+| EI v2 | EI v1 | Failure –EI v1 Response Code 169: Submitted incorrect EI version (please refer to EI v1 build pack for more information on this response code).  | This action is not allowed. Returns submitted through EI v2 must be amended with EI v2. |
+| | EI v2| Success | | 
+	
+>>>>>>> 19afdaf705bbabf37aa48d5f3ce941105bf4181f
+
+## Message samples
+-----------------
+
+- Simulating EI returns operations:
     - PrePop
         - Positive response
             - [request sample](sample%20messages/body-ei-returnprepop-request.xml)
@@ -59,18 +138,18 @@
             - [request sample](sample%20messages/body-ei-retrievereturn-request.xml)
             - [response sample](sample%20messages/body-ei-retrievereturn-response.xml)
 
-## Mock Environment Information:
+## Mock environment information
 -----------------
 
-- Mock URL Endpoint
+- Mock URL endpoint
     - https://mock-ei.ird.digitalpartner.services/ 
 
-- Test Scenarios
-	- Employment Information Test Scenarios Mindmap
+- Test scenarios
+	- Employment Information test scenarios mind map
 	
 	![Test Scenarios](images/Employment_Information_Test_Scenarios_Mind_Map.png)
 
-- Test Data
+- Test data
 	- The following test data can be tested in our Mock Services environment when submitting requests to the service operations
 	- This table shows which scenarios (as per their numbers in the mindmap) require specific data to trigger the expected responses. 
 	- Text in italics represents the name of the XML node in the request.
@@ -94,23 +173,23 @@
 	| | | | *submissionKey*: 987654321|
 
 
-## Test Environment Information:
+## Test environment information
 -----------------
 
-* Test Scenarios
-	- [Download test scenarios report template](Payday%20Filing%20–%20Employment%20Information%20-%20Test%20Report%20Template.docx)
+* Test scenarios
+	- [Download test scenarios report template](Payday%20Filing%20EI%20-%20Test%20Report%20Template.docx)
 
-* Test URL Endpoints
-	- Cloud Gateway Service: https://test3.services.ird.govt.nz:4046/gateway/gws/returns/
-	- Native Desktop Gateway Service: https://test3.services.ird.govt.nz/gateway2/gws/returns/
+* Test URL endpoints
+	- Cloud gateway service: https://test3.services.ird.govt.nz:4046/gateway/gws/returns/
+	- Native desktop gateway service: https://test3.services.ird.govt.nz/gateway2/gws/returns/
 	- Cloud SOAP WSDL: https://test3.services.ird.govt.nz:4046/gateway/gws/returns/?wsdl
-	- Native Desktop SOAP WSDL: https://test3.services.ird.govt.nz/gateway2/gws/returns/?wsdl
+	- Native desktop SOAP WSDL: https://test3.services.ird.govt.nz/gateway2/gws/returns/?wsdl
             
-## Production Environment Information:
+## Production environment information
 -----------------
 
-* Production URL Endpoints
-	- Cloud Gateway Service: https://services.ird.govt.nz:4046/gateway/gws/returns/
-	- Native Desktop Gateway Service: https://services.ird.govt.nz/gateway2/gws/returns/
+* Production URL endpoint
+	- Cloud gateway service: https://services.ird.govt.nz:4046/gateway/gws/returns/
+	- Native desktop gateway service: https://services.ird.govt.nz/gateway2/gws/returns/
 	- Cloud SOAP WSDL: https://services.ird.govt.nz:4046/gateway/gws/returns/?wsdl
-	- Native Desktop SOAP WSDL https://services.ird.govt.nz/gateway2/gws/returns/?wsdl
+	- Native desktop SOAP WSDL https://services.ird.govt.nz/gateway2/gws/returns/?wsdl

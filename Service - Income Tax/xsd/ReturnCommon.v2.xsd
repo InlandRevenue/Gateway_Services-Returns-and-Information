@@ -2,10 +2,17 @@
 <!-- Documentation
 _______________________________________
 NAME: 	ReturnCommon.v2.xsd
+<<<<<<< HEAD
 VER:	2.1
 ISSUER:	Inland Revenue Department
 DATE:	31/08/2018
 DESC:	This schema defines the ReturnCommon data types used accross the IRD hosted, Gateway Services.
+=======
+VER:	  2.2
+ISSUER:	Inland Revenue Department
+DATE:	  10/01/2020
+DESC:	  This schema defines the ReturnCommon data types used accross the IRD hosted, Gateway Services.
+>>>>>>> 19afdaf705bbabf37aa48d5f3ce941105bf4181f
 _______________________________________
 -->
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:cmn="urn:www.ird.govt.nz/GWS:types/Common.v2" xmlns:rc="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2" xmlns="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2" targetNamespace="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0">
@@ -162,7 +169,7 @@ _______________________________________
 							</xsd:restriction>
 						</xsd:simpleType>
 					</xsd:element>
-					<xsd:element name="submissionKey" type="cmn:QuantityTypePositive" minOccurs="0"/>
+					<xsd:element name="submissionKey" type="cmn:Quantity32TypePositive" minOccurs="0"/>
 				</xsd:sequence>
 			</xsd:extension>
 		</xsd:complexContent>
@@ -273,7 +280,7 @@ _______________________________________
 	<xsd:complexType name="ReturnStatusType">
 		<xsd:sequence>
 			<xsd:element name="status" type="CodeStringType"/>
-			<xsd:element name="submissionKey" type="cmn:QuantityTypePositive" minOccurs="0"/>
+			<xsd:element name="submissionKey" type="cmn:Quantity32TypePositive" minOccurs="0"/>
 			<xsd:element name="majorFormType" minOccurs="0">
 				<xsd:annotation>
 					<xsd:documentation xml:lang="en">The major form type of this return</xsd:documentation>
