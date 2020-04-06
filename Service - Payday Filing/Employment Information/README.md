@@ -13,17 +13,6 @@ Employees can file Employment information (EI) to us each pay cycle using the Re
 ## Key documentation
 
 - Business use cases
-<<<<<<< HEAD
-	- [view on IR website](../Payday%20filing%20-%20ED%20and%20EI%20GWS%20business%20use%20cases.pdf)
-	
-- Schemas and WSDLs
-- View and download the [Common v1 XSD](../../Common%20XSD/Common.v1.xsd)
-	- View and download the [Return Common v1 XSD](../../Common%20XSD/ReturnCommon.v1.xsd)
-	- View and download the Employment Income (EI) return [XSD](ReturnEI.v1.xsd) and [WSDL](ReturnsEIDevWsdl.wsdl) from this current directory
-	
-- Returns Service 
-	- [Download the build pack](Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20EI.pdf) to view data definitions of each operation and response status code definitions
-=======
 	- [Download and view](../Payday%20filing%20-%20ED%20and%20EI%20GWS%20business%20use%20cases.pdf)
 	
 - Schemas and WSDLs
@@ -32,11 +21,10 @@ Employees can file Employment information (EI) to us each pay cycle using the Re
 	- View and download the Employment Income (EI) return [v2 XSD](ReturnEI.v2.xsd) and [v2 WSDL](ReturnsEIDevWsdl.v2.wsdl) from this directory
 	
 - Build pack 
-	- [Download and view the Return Service - EI build pack](Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20EI.pdf) to view data definitions of each operation and response status code definitions
+	- [Download and view the Return Service - EI build pack](Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20EI%20v2.pdf) to view data definitions of each operation and response status code definitions
 
 - Message samples
     - [View message samples for requests and positive responses](#message-samples)
->>>>>>> 19afdaf705bbabf37aa48d5f3ce941105bf4181f
 
 - Find out about 
 	- [Employee Details SDK](../Employee%20Details)
@@ -47,11 +35,7 @@ Employees can file Employment information (EI) to us each pay cycle using the Re
 
 - [Mock environment information - emulated services](#mock-environment-information)
 
-<<<<<<< HEAD
-- [Mock Environment Information - Emulated Services](#mock-environment-information)
-=======
 - [Test environment information - test scenarios, mind map and URL endpoints](#test-environment-information)
->>>>>>> 19afdaf705bbabf37aa48d5f3ce941105bf4181f
 
 - [Production environment information - URL endpoints](#Production-Environment-Information)	
 
@@ -60,10 +44,6 @@ Employees can file Employment information (EI) to us each pay cycle using the Re
 * [Service: Identity and Access](https://github.com/InlandRevenue/Gateway_Services-Access/tree/master/Identity%20and%20Access) – view how to integrate, OAuth requests and responses message samples and build pack
 * [Service: Intermediation](https://github.com/InlandRevenue/Gateway_Services-Access/tree/master/Service%20-%20Intermediation)
 
-<<<<<<< HEAD
-* Service: Identity and Access – view [How to integrate, OAuth requests and responses message sample and build pack](https://github.com/InlandRevenue/Gateway_Services-Access/tree/master/Identity%20and%20Access) 
-* Service: Intermediation [Service - Intermediation](https://github.com/InlandRevenue/Gateway_Services-Access/tree/master/Service%20-%20Intermediation)	
-=======
 ## V 2.0 update details
 -----------------
 
@@ -111,7 +91,6 @@ The EI version can be identified in the standard header’s majorFormType field:
 | EI v2 | EI v1 | Failure –EI v1 Response Code 169: Submitted incorrect EI version (please refer to EI v1 build pack for more information on this response code).  | This action is not allowed. Returns submitted through EI v2 must be amended with EI v2. |
 | | EI v2| Success | | 
 	
->>>>>>> 19afdaf705bbabf37aa48d5f3ce941105bf4181f
 
 ## Message samples
 -----------------
