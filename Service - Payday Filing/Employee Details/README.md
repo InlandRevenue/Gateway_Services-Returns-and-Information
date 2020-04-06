@@ -50,7 +50,7 @@ Employees can send us changes to employee details using the Employment service.
 * [Service: Identity and Access](https://github.com/InlandRevenue/Gateway_Services-Access/tree/master/Identity%20and%20Access) – view how to integrate, OAuth requests and responses message samples and build pack
 * [Service: Intermediation](https://github.com/InlandRevenue/Gateway_Services-Access/tree/master/Service%20-%20Intermediation)
 
-## V 2.0 update details
+## V2.0 update details
 -----------------
 
 The following key changes have been made to the Employment Service for the update to V2.0.
