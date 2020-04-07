@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:i0="https://www.ird.govt.nz/GWS" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="https://services.ird.govt.nz/GWS/Returns/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:ei="urn:www.ird.govt.nz/GWS:types/ReturnEI.v1" xmlns:rc="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v1" name="Return" targetNamespace="https://services.ird.govt.nz/GWS/Returns/">
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:i0="https://www.ird.govt.nz/GWS" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="https://services.ird.govt.nz/GWS/Returns/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:ei="urn:www.ird.govt.nz/GWS:types/ReturnEI.v2" xmlns:rc="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2" name="Return" targetNamespace="https://services.ird.govt.nz/GWS/Returns/">
 	<wsdl:types>
 		<xs:schema elementFormDefault="qualified" targetNamespace="https://services.ird.govt.nz/GWS/Returns/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
 			<xs:element name="File">
@@ -115,7 +115,7 @@
 			<xs:attribute name="Ref" type="xs:IDREF"/>
 		</xs:schema>
 		<xs:schema elementFormDefault="qualified" targetNamespace="https://services.ird.govt.nz/GWS/Returns/:types/FileRequest" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="https://services.ird.govt.nz/GWS/Returns/:types/FileRequest">
-			<xs:import namespace="urn:www.ird.govt.nz/GWS:types/ReturnEI.v1" schemaLocation="ReturnEI.v1.xsd"/>
+			<xs:import namespace="urn:www.ird.govt.nz/GWS:types/ReturnEI.v2" schemaLocation="ReturnEI.v2.xsd"/>
 			<xs:complexType name="FileRequestType">
 				<xs:sequence>
 					<xs:element name="FileRequestWrapper" nillable="true">
@@ -130,7 +130,7 @@
 			<xs:element name="FileRequestType" nillable="true" type="tns:FileRequestType"/>
 		</xs:schema>
 		<xs:schema elementFormDefault="qualified" targetNamespace="https://services.ird.govt.nz/GWS/Returns/:types/FileResponse" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="https://services.ird.govt.nz/GWS/Returns/:types/FileResponse">
-			<xs:import namespace="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v1" schemaLocation="ReturnCommon.v1.xsd"/>
+			<xs:import namespace="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2" schemaLocation="ReturnCommon.v2.xsd"/>
 			<xs:complexType name="FileResponseType">
 				<xs:sequence>
 					<xs:element name="FileResponseWrapper" nillable="true">
@@ -145,7 +145,7 @@
 			<xs:element name="FileResponseType" nillable="true" type="tns:FileResponseType"/>
 		</xs:schema>
 		<xs:schema elementFormDefault="qualified" targetNamespace="https://services.ird.govt.nz/GWS/Returns/:types/PrepopRequest" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="https://services.ird.govt.nz/GWS/Returns/:types/PrepopRequest">
-			<xs:import namespace="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v1" schemaLocation="ReturnCommon.v1.xsd"/>
+			<xs:import namespace="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2" schemaLocation="ReturnCommon.v2.xsd"/>
 			<xs:complexType name="PrepopRequestType">
 				<xs:sequence>
 					<xs:element name="PrepopRequestWrapper" nillable="true">
@@ -160,7 +160,7 @@
 			<xs:element name="PrepopRequestType" nillable="true" type="tns:PrepopRequestType"/>
 		</xs:schema>
 		<xs:schema elementFormDefault="qualified" targetNamespace="https://services.ird.govt.nz/GWS/Returns/:types/PrepopResponse" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="https://services.ird.govt.nz/GWS/Returns/:types/PrepopResponse">
-			<xs:import namespace="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v1" schemaLocation="ReturnCommon.v1.xsd"/>
+			<xs:import namespace="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2" schemaLocation="ReturnCommon.v2.xsd"/>
 			<xs:complexType name="PrepopResponseType">
 				<xs:sequence>
 					<xs:element name="PrepopResponseWrapper" nillable="true">
@@ -175,7 +175,7 @@
 			<xs:element name="PrepopResponseType" nillable="true" type="tns:PrepopResponseType"/>
 		</xs:schema>
 		<xs:schema elementFormDefault="qualified" targetNamespace="https://services.ird.govt.nz/GWS/Returns/:types/RetrieveStatusRequest" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="https://services.ird.govt.nz/GWS/Returns/:types/RetrieveStatusRequest">
-		<xs:import namespace="urn:www.ird.govt.nz/GWS:types/ReturnEI.v1" schemaLocation="ReturnEI.v1.xsd"/>
+		<xs:import namespace="urn:www.ird.govt.nz/GWS:types/ReturnEI.v2" schemaLocation="ReturnEI.v2.xsd"/>
 			<xs:complexType name="RetrieveStatusRequest">
 				<xs:sequence>
 					<xs:element name="RetrieveStatusRequestWrapper" nillable="true">
@@ -190,7 +190,7 @@
 			<xs:element name="RetrieveStatusRequest" nillable="true" type="tns:RetrieveStatusRequest"/>
 		</xs:schema>
 		<xs:schema elementFormDefault="qualified" targetNamespace="https://services.ird.govt.nz/GWS/Returns/:types/RetrieveStatusResponse" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="https://services.ird.govt.nz/GWS/Returns/:types/RetrieveStatusResponse">
-			<xs:import namespace="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v1" schemaLocation="ReturnCommon.v1.xsd"/>
+			<xs:import namespace="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2" schemaLocation="ReturnCommon.v2.xsd"/>
 			<xs:complexType name="RetrieveStatusResponse">
 				<xs:sequence>
 					<xs:element name="RetrieveStatusResponseWrapper" nillable="true">
@@ -205,7 +205,7 @@
 			<xs:element name="RetrieveStatusResponse" nillable="true" type="tns:RetrieveStatusResponse"/>
 		</xs:schema>
 		<xs:schema elementFormDefault="qualified" targetNamespace="https://services.ird.govt.nz/GWS/Returns/:types/RetrieveFilingObligationsRequest" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="https://services.ird.govt.nz/GWS/Returns/:types/RetrieveFilingObligationsRequest">
-			<xs:import namespace="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v1" schemaLocation="ReturnCommon.v1.xsd"/>
+			<xs:import namespace="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2" schemaLocation="ReturnCommon.v2.xsd"/>
 			<xs:complexType name="RetrieveFilingObligationsRequest">
 				<xs:sequence>
 					<xs:element name="RetrieveFilingObligationsRequestWrapper" nillable="true">
@@ -220,7 +220,7 @@
 			<xs:element name="RetrieveFilingObligationsRequest" nillable="true" type="tns:RetrieveFilingObligationsRequest"/>
 		</xs:schema>
 		<xs:schema elementFormDefault="qualified" targetNamespace="https://services.ird.govt.nz/GWS/Returns/:types/RetrieveFilingObligationsResponse" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="https://services.ird.govt.nz/GWS/Returns/:types/RetrieveFilingObligationsResponse">
-			<xs:import namespace="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v1" schemaLocation="ReturnCommon.v1.xsd"/>
+			<xs:import namespace="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2" schemaLocation="ReturnCommon.v2.xsd"/>
 			<xs:complexType name="RetrieveFilingObligationsResponse">
 				<xs:sequence>
 					<xs:element name="RetrieveFilingObligationsResponseWrapper" nillable="true">
@@ -235,7 +235,7 @@
 			<xs:element name="RetrieveFilingObligationsResponse" nillable="true" type="tns:RetrieveFilingObligationsResponse"/>
 		</xs:schema>
 		<xs:schema elementFormDefault="qualified" targetNamespace="https://services.ird.govt.nz/GWS/Returns/:types/RetrieveReturnRequest" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="https://services.ird.govt.nz/GWS/Returns/:types/RetrieveReturnRequest">
-			<xs:import namespace="urn:www.ird.govt.nz/GWS:types/ReturnEI.v1" schemaLocation="ReturnEI.v1.xsd"/>
+			<xs:import namespace="urn:www.ird.govt.nz/GWS:types/ReturnEI.v2" schemaLocation="ReturnEI.v2.xsd"/>
 			<xs:complexType name="RetrieveReturnRequest">
 				<xs:sequence>
 					<xs:element name="RetrieveReturnRequestWrapper" nillable="true">
@@ -250,7 +250,7 @@
 			<xs:element name="RetrieveReturnRequest" nillable="true" type="tns:RetrieveReturnRequest"/>
 		</xs:schema>
 		<xs:schema elementFormDefault="qualified" targetNamespace="https://services.ird.govt.nz/GWS/Returns/:types/RetrieveReturnResponse" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="https://services.ird.govt.nz/GWS/Returns/:types/RetrieveReturnResponse">
-			<xs:import namespace="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v1" schemaLocation="ReturnCommon.v1.xsd"/>
+			<xs:import namespace="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2" schemaLocation="ReturnCommon.v2.xsd"/>
 			<xs:complexType name="RetrieveReturnResponse">
 				<xs:sequence>
 					<xs:element name="RetrieveReturnResponseWrapper" nillable="true">

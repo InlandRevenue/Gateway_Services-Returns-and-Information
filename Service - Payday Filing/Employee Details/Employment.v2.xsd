@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2017 rel. 3 sp1 (x64) (http://www.altova.com) by 17nics (FAST Enterprises) -->
+<!--
+	NAME:		Employment.v2.xsd
+	VER:		2
+	ISSUER:		Inland Revenue Department
+	DATE:		05/11/2019
+	DESC:		This schema defines the elements and related data types required for the Employment Gateway Service Version 2.
+	CHANGE(s):  - Added simple type EmployeeExemptIncomeType.
+				- Added element employeeExemptIncome to CreateBodyType.
+				- Updated employeeNameOnEILine on CreateBodyType, UpdateBodyType, RetrieveListBodyType, and TerminateBodyType to use simple type 'String255', increasing string length to 255. 
+				- Added simple type LateOptOutReasonType.
+				- Added element lateOptOutReasonType to UpdateBodyType with type LateOptOutReasonType.
+				- Added element otherLateOptOutReason to UpdateBodyType with type String255, allowing string length up to 255.
+				- Updated schema reference Common.v1.xsd to Common.v2.xsd
+				- Updated documentation on KiwiSaverStatusType and KiwiSaverEligibilityType 
+-->
+<xsd:schema xmlns="urn:www.ird.govt.nz/GWS:types/Employment.v2" xmlns:cmn="urn:www.ird.govt.nz/GWS:types/Common.v2" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="urn:www.ird.govt.nz/GWS:types/Employment.v2" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0">
+	<!--Imports-->
+	<xsd:import namespace="urn:www.ird.govt.nz/GWS:types/Common.v2" schemaLocation="./Common.v2.xsd">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">Contains common data types.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:import>
+	<!--Root Element Requests/Responses-->
+	<xsd:element name="createRequest" type="CreateRequestType"/>
+	<xsd:element name="terminateRequest" type="TerminateRequestType"/>
+	<xsd:element name="updateRequest" type="UpdateRequestType"/>
+	<xsd:element name="retrieveListRequest" type="RetrieveListRequestType"/>
+	<xsd:element name="retrieveListResponse" type="RetrieveListResponseType"/>
+	<xsd:element name="employmentResponse" type="cmn:StandardResponseType"/>
+	<!--Request Structures-->
+	<xsd:complexType name="CreateRequestType">
+		<xsd:sequence>
+			<xsd:element name="header" type="cmn:HeaderType"/>
+			<xsd:element name="createBody" type="CreateBodyType"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="UpdateRequestType">
+		<xsd:sequence>
+			<xsd:element name="header" type="cmn:HeaderType"/>
+			<xsd:element name="employeeIdentifier" type="EmployeeIdentifierType"/>
+			<xsd:element name="updateBody" type="UpdateBodyType"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="TerminateRequestType">
+		<xsd:sequence>
+			<xsd:element name="header" type="cmn:HeaderType"/>
+			<xsd:element name="employeeIdentifier" type="EmployeeIdentifierType"/>
+			<xsd:element name="terminateBody" type="TerminateBodyType"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="RetrieveListRequestType">
+		<xsd:sequence>
+			<xsd:element name="header" type="cmn:HeaderType"/>
+			<xsd:element name="retrieveListBody" type="RetrieveListBodyType"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<!--Response Structures-->
+	<xsd:complexType name="RetrieveListResponseType">
+		<xsd:complexContent>
+			<xsd:extension base="cmn:StandardResponseType">
+				<xsd:sequence>
+					<xsd:element name="responseBody" type="ResponseBodyType" minOccurs="0"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="ResponseBodyType">
+		<xsd:sequence>
+			<xsd:element name="listResponse" type="ListResponseType" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="ListResponseType">
+		<xsd:sequence>
+			<xsd:element name="employee" type="EmployeeDetailType" maxOccurs="100000"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<!--Complex Types-->
+	<xsd:complexType name="CreateBodyType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">These are the standard fields for creating an employment relation. If not wanting to enroll for Kiwi Saver leave KiwiSaverEligibility blank.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="employeeIRD" type="cmn:IRDNumberType"/>
+			<xsd:element name="employeeName" type="NameMandatoryFirstNameType"/>
+			<xsd:element name="employeeNameOnEILine" type="cmn:String255"/>
+			<xsd:element name="taxCodes" type="TaxCodes"/>
+			<xsd:element name="employmentStartDate" type="cmn:DateType" minOccurs="0"/>
+			<xsd:element name="employmentFinishDate" type="cmn:DateType" minOccurs="0"/>
+			<xsd:element name="employeeDateOfBirth" type="cmn:DateType" minOccurs="0"/>
+			<xsd:element name="employeeAddress" type="cmn:OpenAddressType" minOccurs="0"/>
+			<xsd:element name="employeeEmailAddress" type="cmn:EmailAddressType" minOccurs="0"/>
+			<xsd:element name="employeeMobilePhoneNumber" type="cmn:StructuredPhoneNumberType" minOccurs="0"/>
+			<xsd:element name="employeeDayPhoneNumber" type="cmn:StructuredPhoneNumberType" minOccurs="0"/>
+			<xsd:element name="kiwiSaverStatus" type="KiwiSaverStatusType"/>
+			<xsd:element name="employeeKiwiSaverEligibility" type="KiwiSaverEligibilityType" minOccurs="0"/>
+			<xsd:element name="employeeExemptIncome" type="EmployeeExemptIncomeType" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="UpdateBodyType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">These are the standard fields for updating an employment relation.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="employeeIRD" type="cmn:IRDNumberType"/>
+			<xsd:element name="employeeName" type="NameMandatoryFirstNameType"/>
+			<xsd:element name="employeeNameOnEILine" type="cmn:String255"/>
+			<xsd:element name="employmentStartDate" type="cmn:DateType"/>
+			<xsd:element name="employeeDateOfBirth" type="cmn:DateType" minOccurs="0"/>
+			<xsd:element name="taxCodes" type="TaxCodes"/>
+			<xsd:element name="employeeAddress" type="cmn:OpenAddressType" minOccurs="0"/>
+			<xsd:element name="employeeEmailAddress" type="cmn:EmailAddressType" minOccurs="0"/>
+			<xsd:element name="employeeMobilePhoneNumber" type="cmn:StructuredPhoneNumberType" minOccurs="0"/>
+			<xsd:element name="employeeDayPhoneNumber" type="cmn:StructuredPhoneNumberType" minOccurs="0"/>
+			<xsd:element name="employeeKiwiSaverEligibility" type="KiwiSaverEligibilityType" minOccurs="0"/>
+			<xsd:element name="optedOut" type="xsd:boolean" minOccurs="0"/>
+			<xsd:element name="employeeBankAccountNumber" type="cmn:BankAccountType" minOccurs="0"/>
+			<xsd:element name="accountHolderName" type="cmn:NamePersonType" minOccurs="0"/>
+			<xsd:element name="optedOutSignatureDate" type="cmn:DateType" minOccurs="0"/>
+			<xsd:element name="validRelationship" type="xsd:boolean"/>
+			<xsd:element name="lateOptOutReason" type="LateOptOutReasonType" minOccurs="0"/>
+			<xsd:element name="otherLateOptOutReason" type="cmn:String255" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="TerminateBodyType">
+		<xsd:sequence>
+			<xsd:element name="employmentFinishDate" type="cmn:DateType"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="RetrieveListBodyType">
+		<xsd:sequence>
+			<xsd:element name="employeeIRD" type="cmn:IRDNumberType" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="EmployeeDetailType">
+		<xsd:sequence>
+			<xsd:element name="employeeIRD" type="cmn:IRDNumberType"/>
+			<xsd:element name="employeeName" type="ResponseNamePersonType"/>
+			<xsd:element name="employeeNameOnEILine" type="cmn:String255"/>
+			<xsd:element name="taxCodes" type="TaxCodes" minOccurs="0"/>
+			<xsd:element name="employeeDateOfBirth" type="cmn:DateType" minOccurs="0"/>
+			<xsd:element name="employmentStartDate" type="cmn:DateType" minOccurs="0"/>
+			<xsd:element name="employmentFinishDate" type="cmn:DateType" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="EmployeeIdentifierType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">This type identifies the employment relationship record that is to be updated or terminated. All elements provided will be used to search for the employment relationship.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="employeeIRD" type="cmn:IRDNumberType"/>
+			<xsd:element name="employeeNameOnEILine" type="cmn:String255"/>
+			<xsd:element name="employeeDateOfBirth" type="cmn:DateType" minOccurs="0"/>
+			<xsd:element name="employmentStartDate" type="cmn:DateType" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="TaxCodes">
+		<xsd:sequence>
+			<xsd:element name="taxCode" type="cmn:TaxCodeType" maxOccurs="4"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<!--Simple Types-->
+	<xsd:simpleType name="EmployeeExemptIncomeType">
+		<xsd:restriction base="xsd:normalizedString">
+			<xsd:minLength value="3"/>
+			<xsd:maxLength value="3"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="LateOptOutReasonType">
+		<xsd:annotation>
+			<xsd:documentation>
+				INFO - Employer did not provide a KiwiSaver information pack within seven days of starting employment.
+				IRIS - IR didn’t send an investment statement upon allocation to a default scheme.
+				ERIS - Employer didn’t provide an investment statement (for the employer chosen KiwiSaver scheme).
+				EVNT - Events outside of control meant the opt-out application was unable to be submitted within the eight-week time limit.
+				CRIT - Did not meet the criteria to join KiwiSaver (see Employee information pack (KS3) for criteria)
+				INER - Incorrectly enrolled under the age of 18.
+				OTHR - Other reason (please explain)
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:normalizedString"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="KiwiSaverStatusType">
+		<xsd:annotation>
+			<xsd:documentation>
+				AK - existing kiwisaver member
+				OK - opting into kiwisaver
+				NK - not eligible for kiwisaver			
+				CT - casual/temporary employee
+				AE - auto-enrol			
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:normalizedString">
+			<xsd:minLength value="2"/>
+			<xsd:maxLength value="2"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="KiwiSaverEligibilityType">
+		<xsd:annotation>
+			<xsd:documentation>
+				NE - new employee
+				EE - existing employee
+				EA - existing employee auto-enrolled into kiwisaver
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:normalizedString">
+			<xsd:minLength value="2"/>
+			<xsd:maxLength value="2"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType name="ResponseNamePersonType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">Type used to convey the proper name of an individual.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="nameTitle" type="cmn:NameTitleType" minOccurs="0"/>
+			<xsd:element name="nameFirst" type="cmn:NameFirstType" minOccurs="0"/>
+			<xsd:element name="nameSurname" type="cmn:NameSurnameType" minOccurs="0"/>
+			<xsd:element name="nameMiddle" type="cmn:NameMiddleType" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation xml:lang="en">If an individual has mutliple middle names only the most significant shoudl be used, or all names should be noted up to the character limit.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="NameMandatoryFirstNameType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">Type used to convey the proper name of an individual.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="nameTitle" type="cmn:NameTitleType" minOccurs="0"/>
+			<xsd:element name="nameFirst" type="cmn:NameFirstType"/>
+			<xsd:element name="nameSurname" type="cmn:NameSurnameType" minOccurs="0"/>
+			<xsd:element name="nameMiddle" type="cmn:NameMiddleType" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation xml:lang="en">If an individual has mutliple middle names only the most significant shoudl be used, or all names should be noted up to the character limit.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>
