@@ -85,7 +85,7 @@ The EI version can be identified in the standard header’s majorFormType field:
 * EI version 2 = “EI2”
 
 | Original Return | Amended Return (via Gateway) | Result | Action |
-| --- | --- | --- | ---|
+| --- | --- | --- | --- |
 | EI v1 | EI v1 | Success | |
 | | EI v2 | Failure –EI v2 Response Code 169: Submitted incorrect EI version (please refer to EI v2 build pack for more information on this response code).| This action is not allowed. Returns submitted through EI v1 must be amended with EI v1. |
 | EI v2 | EI v1 | Failure –EI v1 Response Code 169: Submitted incorrect EI version (please refer to EI v1 build pack for more information on this response code).  | This action is not allowed. Returns submitted through EI v2 must be amended with EI v2. |
@@ -134,22 +134,22 @@ The EI version can be identified in the standard header’s majorFormType field:
 	- Text in italics represents the name of the XML node in the request.
 	
 	
-	|Operation | Scenario ID | Data|
-	|--- | --- | ---|
-	|Prepop | EMS_EI001 | Employer IRD (*identifier*): 123041607|
-	| | | | *periodEndDate*: 2018-04-30|
-	| | | | *payDayDate*: 2018-04-10|
-	|Prepop | EMS_EI002 | Employer IRD (*identifier*): 123094018|
-	| | | | *periodEndDate*: 2018-12-31|
-	| | | | *payDayDate*: 2018-12-10|
-	| RetrieveReturn | EMS_EI017 | Employer IRD (*identifier*): 123041607|
-	| | | | *periodEndDate*: 2018-04-30|
-	| | | | *payDayDate*: 2018-04-10|
-	| | | | *submissionKey*: 987654321|
-	RetrieveReturn | EMS_EI017 | Employer IRD (*identifier*): 123094018|
-	| | | | *periodEndDate*: 2018-12-31|
-	| | | | *payDayDate*: 2018-12-10|
-	| | | | *submissionKey*: 987654321|
+|Operation | Scenario ID | Data |
+| --- | --- | --- |
+|Prepop | EMS_EI001 | Employer IRD (*identifier*): 123041607 |
+| | | *periodEndDate*: 2018-04-30 |
+| | | *payDayDate*: 2018-04-10|
+| Prepop | EMS_EI002 | Employer IRD (*identifier*): 123094018|
+| | | *periodEndDate*: 2018-12-31|
+| | | *payDayDate*: 2018-12-10|
+| RetrieveReturn | EMS_EI017 | Employer IRD (*identifier*): 123041607|
+| | | *periodEndDate*: 2018-04-30|
+| | | *payDayDate*: 2018-04-10|
+| | | *submissionKey*: 987654321|
+| RetrieveReturn | EMS_EI017 | Employer IRD (*identifier*): 123094018|
+| | | *periodEndDate*: 2018-12-31|
+| | | *payDayDate*: 2018-12-10|
+| | | *submissionKey*: 987654321|
 
 
 ## Test environment information
