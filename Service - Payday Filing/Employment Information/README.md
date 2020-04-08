@@ -52,16 +52,16 @@ The following key changes have been made to the Employment Information Return Se
 * Operations
 	* Updated schema to use ReturnEI.V2.xsd, Common.v2.xsd, and ReturnCommon.v2.xsd
 * File 	
-	* Added new optional field‘hoursPaid’(EI line item)
+	* Added new optional field ‘hoursPaid’(EI line item)
 	* Added two new optional fields ‘priorPeriodGrossAdjustment’and ‘priorPeriodPAYEAdjustment’(EI line items)
 	* Added two new optional fields ‘totalPriorPeriodGrossAdjustment’ and ‘totalPriorPeriodPAYEAdjustment’
 	* the employeePayFrequency field has changed from optional to required
-	* Added three new optional fields ‘essEarnings’, ‘slcirDeductions’, ‘slborDeductions’(EI line items)
+	* Added three new optional fields ‘essEarnings’, ‘slcirDeductions’ and ‘slborDeductions’(EI line items)
 	* Updated employeeName to allow 255 characters, previously this was 20
-	* Removed values from TaxCode table: ESS,SLCIR,SLBOR
-	* Added three new optional fields:ototalESSEarningsototalSLCIRDeductionsototalSLBORDeductions.
+	* Removed values from TaxCode table: 'ESS', 'SLCIR' and 'SLBOR'
+	* Added three new optional fields:  'totalESSEarnings',  'totalSLCIRDeductions' and  'totalSLBORDeductions'.
 	* Added note to clarify use of childSupportCode
-	* There is a behaviour change between EI v1 and EI v2. In EI v1, a return can be filed and then immediately amended after receiving a successful response. AnEI v2, a return must be processed in order to be amended. It can take up to one day for a return to be processed. 
+	* There is a behaviour change between EI v1 and EI v2. In EI v1, a return can be filed and then immediately amended after receiving a successful response. An EI v2, a return must be processed in order to be amended. It can take up to one day for a return to be processed. 
 * Retrieve Return
 	* New optional fields above will also be included in the Retrieve Return response
 	* Added note to Retrieve Return to clarify that it will return all existing fields on the return
@@ -78,7 +78,7 @@ The following key changes have been made to the Employment Information Return Se
 
 ## Amendment scenarios—differences between EI v1 and v2
 
-Due to the introduction of Employment Information(EI) Gateway Service version 2, there are specific rules that service providers must adhere to when submitting amendments for an existing EI return on a period. These rules apply both to EI returns submitted through Gateway Service version 2, as well as returns that are submitted through EI Gateway Service version 1.In order to support amending prior EI returns, both EI v1 and EI v2 must be supported by service providers. 
+Due to the introduction of Employment Information(EI) Gateway Service version 2, there are specific rules that service providers must adhere to when submitting amendments for an existing EI return on a period. These rules apply both to EI returns submitted through Gateway Service version 2, as well as returns that are submitted through EI Gateway Service version 1. In order to support amending prior EI returns, both EI v1 and EI v2 must be supported by service providers. 
 
 The EI version can be identified in the standard header’s majorFormType field:
 * EI version 1 = “EI”
