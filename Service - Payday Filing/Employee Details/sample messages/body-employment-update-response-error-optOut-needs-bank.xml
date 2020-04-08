@@ -1,0 +1,19 @@
+<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope">
+    <s:Header>
+        <a:Action xmlns:a="http://www.w3.org/2005/08/addressing" s:mustUnderstand="1">https://services.ird.govt.nz/GWS/Employment/v2/Employment/UpdateResponse</a:Action>
+    </s:Header>
+    <s:Body>
+        <UpdateResponse xmlns="https://services.ird.govt.nz/GWS/Employment/v2/">
+            <UpdateResult>
+                <b:UpdateResponseWrapper xmlns:b="https://services.ird.govt.nz/GWS/Employment/v2/:types/UpdateResponse">
+                    <employmentResponse xmlns="urn:www.ird.govt.nz/GWS:types/Employment.v2">
+                        <statusMessage xmlns="urn:www.ird.govt.nz/GWS:types/Common.v2">
+                            <statusCode>111</statusCode>
+                            <errorMessage>A Bank Account is required when a Bank Account Holder Name is provided</errorMessage>
+                        </statusMessage>
+                    </employmentResponse>
+                </b:UpdateResponseWrapper>
+            </UpdateResult>
+        </UpdateResponse>
+    </s:Body>
+</s:Envelope>
