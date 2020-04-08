@@ -1,10 +1,10 @@
 <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
-               xmlns:emp="https://services.ird.govt.nz/GWS/Employment/"
-               xmlns:cre="https://services.ird.govt.nz/GWS/Employment/:types/CreateRequest"
-               xmlns:emp1="urn:www.ird.govt.nz/GWS:types/Employment"
-               xmlns:com="urn:www.ird.govt.nz/GWS:types/Common.v1">
+               xmlns:emp="https://services.ird.govt.nz/GWS/Employment/v2/"
+               xmlns:cre="https://services.ird.govt.nz/GWS/Employment/v2/:types/CreateRequest"
+               xmlns:emp1="urn:www.ird.govt.nz/GWS:types/Employment.v2"
+               xmlns:com="urn:www.ird.govt.nz/GWS:types/Common.v2">
     <soap:Header xmlns:wsa="http://www.w3.org/2005/08/addressing">
-        <wsa:Action>https://services.ird.govt.nz/GWS/Employment/Employment/Create</wsa:Action>
+        <wsa:Action>https://services.ird.govt.nz/GWS/Employment/v2/Employment/Create</wsa:Action>
     </soap:Header>
     <soap:Body>
         <emp:Create>
@@ -82,6 +82,7 @@
                             <emp1:kiwiSaverStatus>AK</emp1:kiwiSaverStatus>
                             <!--Optional:-->
                             <emp1:employeeKiwiSaverEligibility>EE</emp1:employeeKiwiSaverEligibility>
+                            <emp1:employeeExemptIncome>BLH</emp1:employeeExemptIncome>
                         </emp1:createBody>
                     </emp1:createRequest>
                 </cre:CreateRequestWrapper>

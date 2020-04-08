@@ -1,10 +1,10 @@
 <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
-               xmlns:emp="https://services.ird.govt.nz/GWS/Employment/v2/"
-               xmlns:upd="https://services.ird.govt.nz/GWS/Employment/v2/:types/UpdateRequest"
-               xmlns:emp1="urn:www.ird.govt.nz/GWS:types/Employment.v2"
-               xmlns:com="urn:www.ird.govt.nz/GWS:types/Common.v2">
+               xmlns:emp="https://services.ird.govt.nz/GWS/Employment/"
+               xmlns:upd="https://services.ird.govt.nz/GWS/Employment/:types/UpdateRequest"
+               xmlns:emp1="urn:www.ird.govt.nz/GWS:types/Employment"
+               xmlns:com="urn:www.ird.govt.nz/GWS:types/Common.v1">
     <soap:Header xmlns:wsa="http://www.w3.org/2005/08/addressing">
-        <wsa:Action>https://services.ird.govt.nz/GWS/Employment/v2/Employment/Update</wsa:Action>
+        <wsa:Action>https://services.ird.govt.nz/GWS/Employment/Employment/Update</wsa:Action>
     </soap:Header>
     <soap:Body>
         <emp:Update>
@@ -87,7 +87,7 @@
                             <emp1:optedOut>false</emp1:optedOut>
                             <!--Optional:-->
                             <emp1:employeeBankAccountNumber>
-                                <com:nzBankCreditUnion xmlns:com="urn:www.ird.govt.nz/GWS:types/Common.v2">
+                                <com:nzBankCreditUnion xmlns:com="urn:www.ird.govt.nz/GWS:types/Common.v1">
                                     <com:bank>11</com:bank>
                                     <com:branch>1234</com:branch>
                                     <com:account>12345678</com:account>
