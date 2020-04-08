@@ -15,7 +15,7 @@
                             </com:softwareProviderData>
                             <com:identifier xmlns:com="urn:www.ird.govt.nz/GWS:types/Common.v1" IdentifierValueType="ACCIRD">123041607</com:identifier>
                             <com:accountType xmlns:com="urn:www.ird.govt.nz/GWS:types/Common.v1">PSO</com:accountType>
-                            <ret2:periodEndDate>2018-05-31</ret2:periodEndDate>
+                            <ret2:periodEndDate>2018-04-31</ret2:periodEndDate>
                             <ret2:majorFormType>EI</ret2:majorFormType>
                         </ret2:fileHeader>
                         <ret2:fileBody xmlns:ret2="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v1">
