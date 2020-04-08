@@ -52,14 +52,14 @@ The following key changes have been made to the Employment Information Return Se
 * Operations
 	* Updated schema to use ReturnEI.V2.xsd, Common.v2.xsd, and ReturnCommon.v2.xsd
 * File 	
-	* Added new optional field‘hoursPaid’(EI line item)
+	* Added new optional field ‘hoursPaid’(EI line item)
 	* Added two new optional fields ‘priorPeriodGrossAdjustment’and ‘priorPeriodPAYEAdjustment’(EI line items)
 	* Added two new optional fields ‘totalPriorPeriodGrossAdjustment’ and ‘totalPriorPeriodPAYEAdjustment’
 	* the employeePayFrequency field has changed from optional to required
-	* Added three new optional fields ‘essEarnings’, ‘slcirDeductions’, ‘slborDeductions’(EI line items)
+	* Added three new optional fields ‘essEarnings’, ‘slcirDeductions’ and ‘slborDeductions’(EI line items)
 	* Updated employeeName to allow 255 characters, previously this was 20
-	* Removed values from TaxCode table: ESS,SLCIR,SLBOR
-	* Added three new optional fields:ototalESSEarningsototalSLCIRDeductionsototalSLBORDeductions.
+	* Removed values from TaxCode table: 'ESS', 'SLCIR' and 'SLBOR'
+	* Added three new optional fields:  'totalESSEarnings',  'totalSLCIRDeductions' and  'totalSLBORDeductions'.
 	* Added note to clarify use of childSupportCode
 	* There is a behaviour change between EI v1 and EI v2. In EI v1, a return can be filed and then immediately amended after receiving a successful response. AnEI v2, a return must be processed in order to be amended. It can take up to one day for a return to be processed. 
 * Retrieve Return
@@ -85,7 +85,7 @@ The EI version can be identified in the standard header’s majorFormType field:
 * EI version 2 = “EI2”
 
 | Original Return | Amended Return (via Gateway) | Result | Action |
-| --- | --- | --- | ---|
+| --- | --- | --- | --- |
 | EI v1 | EI v1 | Success | |
 | | EI v2 | Failure –EI v2 Response Code 169: Submitted incorrect EI version (please refer to EI v2 build pack for more information on this response code).| This action is not allowed. Returns submitted through EI v1 must be amended with EI v1. |
 | EI v2 | EI v1 | Failure –EI v1 Response Code 169: Submitted incorrect EI version (please refer to EI v1 build pack for more information on this response code).  | This action is not allowed. Returns submitted through EI v2 must be amended with EI v2. |
@@ -134,22 +134,22 @@ The EI version can be identified in the standard header’s majorFormType field:
 	- Text in italics represents the name of the XML node in the request.
 	
 	
-	|Operation | Scenario ID | Data|
-	|--- | --- | ---|
-	|Prepop | EMS_EI001 | Employer IRD (*identifier*): 123041607|
-	| | | | *periodEndDate*: 2018-04-30|
-	| | | | *payDayDate*: 2018-04-10|
-	|Prepop | EMS_EI002 | Employer IRD (*identifier*): 123094018|
-	| | | | *periodEndDate*: 2018-12-31|
-	| | | | *payDayDate*: 2018-12-10|
-	| RetrieveReturn | EMS_EI017 | Employer IRD (*identifier*): 123041607|
-	| | | | *periodEndDate*: 2018-04-30|
-	| | | | *payDayDate*: 2018-04-10|
-	| | | | *submissionKey*: 987654321|
-	RetrieveReturn | EMS_EI017 | Employer IRD (*identifier*): 123094018|
-	| | | | *periodEndDate*: 2018-12-31|
-	| | | | *payDayDate*: 2018-12-10|
-	| | | | *submissionKey*: 987654321|
+|Operation | Scenario ID | Data |
+| --- | --- | --- |
+|Prepop | EMS_EI001 | Employer IRD (*identifier*): 123041607 |
+| | | *periodEndDate*: 2018-04-30 |
+| | | *payDayDate*: 2018-04-10|
+| Prepop | EMS_EI002 | Employer IRD (*identifier*): 123094018|
+| | | *periodEndDate*: 2018-12-31|
+| | | *payDayDate*: 2018-12-10|
+| RetrieveReturn | EMS_EI017 | Employer IRD (*identifier*): 123041607|
+| | | *periodEndDate*: 2018-04-30|
+| | | *payDayDate*: 2018-04-10|
+| | | *submissionKey*: 987654321|
+| RetrieveReturn | EMS_EI017 | Employer IRD (*identifier*): 123094018|
+| | | *periodEndDate*: 2018-12-31|
+| | | *payDayDate*: 2018-12-10|
+| | | *submissionKey*: 987654321|
 
 
 ## Test environment information
