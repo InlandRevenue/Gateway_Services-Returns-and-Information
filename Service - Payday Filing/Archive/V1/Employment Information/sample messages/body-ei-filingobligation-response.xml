@@ -11,8 +11,8 @@
             <!--Optional:-->
             <ret:RetrieveFilingObligationsResult>
                 <ret1:RetrieveFilingObligationsResponseWrapper>
-                    <ret2:retrieveFilingObligationsResponse xmlns:ret2="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2">
-                        <com:statusMessage xmlns:com="urn:www.ird.govt.nz/GWS:types/Common.v2">
+                    <ret2:retrieveFilingObligationsResponse xmlns:ret2="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v1">
+                        <com:statusMessage xmlns:com="urn:www.ird.govt.nz/GWS:types/Common.v1">
                             <com:statusCode>106</com:statusCode>
                             <com:errorMessage>Operation Not Available for Major Form Type</com:errorMessage>
                         </com:statusMessage>

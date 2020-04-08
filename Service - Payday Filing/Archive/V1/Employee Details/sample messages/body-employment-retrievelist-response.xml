@@ -1,15 +1,15 @@
 <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
-               xmlns:emp1="urn:www.ird.govt.nz/GWS:types/Employment.v2"
-               xmlns:com="urn:www.ird.govt.nz/GWS:types/Common.v2"
-               xmlns:emp="https://services.ird.govt.nz/GWS/Employment/v2/"
-               xmlns:cre="https://services.ird.govt.nz/GWS/Employment/v2/:types/RetrieveListResponse">
+               xmlns:emp1="urn:www.ird.govt.nz/GWS:types/Employment"
+               xmlns:com="urn:www.ird.govt.nz/GWS:types/Common.v1"
+               xmlns:emp="https://services.ird.govt.nz/GWS/Employment/"
+               xmlns:cre="https://services.ird.govt.nz/GWS/Employment/:types/RetrieveListResponse">
     <soap:Header/>
     <soap:Body>
         <emp:RetrieveListResponse>
             <emp:RetrieveListResult>
                 <cre:RetrieveListResponseWrapper>
-                    <emp1:retrieveListResponse xmlns:emp1="urn:www.ird.govt.nz/GWS:types/Employment.v2"
-                                               xmlns:com="urn:www.ird.govt.nz/GWS:types/Common.v2">
+                    <emp1:retrieveListResponse xmlns:emp1="urn:www.ird.govt.nz/GWS:types/Employment"
+                                               xmlns:com="urn:www.ird.govt.nz/GWS:types/Common.v1">
                         <com:statusMessage>
                             <com:statusCode>0</com:statusCode>
                             <com:errorMessage></com:errorMessage>

@@ -6,26 +6,26 @@
         <RetrieveReturnResponse xmlns="https://services.ird.govt.nz/GWS/Returns/">
             <RetrieveReturnResult xmlns:b="https://services.ird.govt.nz/GWS/Returns/:types/RetrieveReturnResponse" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
                 <b:RetrieveReturnResponseWrapper>
-                    <retrieveReturnResponse xmlns="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v1">
-                        <statusMessage xmlns="urn:www.ird.govt.nz/GWS:types/Common.v1">
+                    <retrieveReturnResponse xmlns="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2">
+                        <statusMessage xmlns="urn:www.ird.govt.nz/GWS:types/Common.v2">
                             <statusCode>0</statusCode>
                             <errorMessage/>
                         </statusMessage>
-                        <responseBody xsi:type="r:RetrieveReturnResponseBodyType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:r="urn:www.ird.govt.nz/GWS:types/ReturnEI.v1">
+                        <responseBody xsi:type="r:RetrieveReturnResponseBodyType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:r="urn:www.ird.govt.nz/GWS:types/ReturnEI.v2">
                             <standardFields>
-                                <r:isNilReturn xmlns:r="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v1">true</r:isNilReturn>
+                                <r:isNilReturn xmlns:r="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2">true</r:isNilReturn>
                             </standardFields>
                             <r:formFields>
                                 <r:submissionKey>987654321</r:submissionKey>
                                 <r:payDayDate>2018-12-10</r:payDayDate>
-                                <r:piIrdNumber>123456789</r:piIrdNumber>
+                                <r:piIrdNumber>123086147</r:piIrdNumber>
                                 <r:contactName>contactName</r:contactName>
                                 <r:contactPhoneNumber>000555666</r:contactPhoneNumber>
                                 <r:contactEmail>a@b.com</r:contactEmail>
                                 <r:employeeFields>
                                     <r:employee>
                                         <r:lineNumber>1</r:lineNumber>
-                                        <r:irdNumber>123028198</r:irdNumber>
+                                        <r:irdNumber>123110579</r:irdNumber>
                                         <r:employeeName>Keith Kalish</r:employeeName>
                                         <r:taxCode>M</r:taxCode>
                                         <r:payPeriodStartDate>2015-07-31</r:payPeriodStartDate>
@@ -36,18 +36,24 @@
                                         <r:earningsNotLiableACC>1001.00</r:earningsNotLiableACC>
                                         <r:lumpSumIndicator>false</r:lumpSumIndicator>
                                         <r:payeSchedularTaxDeductions>1002.00</r:payeSchedularTaxDeductions>
-                                        <r:childSupportCode>G</r:childSupportCode>
+                                        <r:childSupportCode>C</r:childSupportCode>
                                         <r:childSupportDeductions>1003.00</r:childSupportDeductions>
                                         <r:studentLoansDeductions>1004.00</r:studentLoansDeductions>
                                         <r:kiwisaverEmployerContributions>1005.00</r:kiwisaverEmployerContributions>
                                         <r:kiwisaverDeductions>1006.00</r:kiwisaverDeductions>
+                                        <r:essEarnings>0.00</r:essEarnings>
+                                        <r:slcirDeductions>0.00</r:slcirDeductions>
+                                        <r:slborDeductions>0.00</r:slborDeductions>
                                         <r:taxCreditPayrollDonations>1007.00</r:taxCreditPayrollDonations>
                                         <r:esctDeducted>1008.00</r:esctDeducted>
                                         <r:familyTaxCredits>1009.00</r:familyTaxCredits>
+                                        <r:hoursPaid>5.00</r:hoursPaid>
+                                        <r:priorPeriodGrossAdjustment>0.00</r:priorPeriodGrossAdjustment>
+                                        <r:priorPeriodPAYEAdjustment>0.00</r:priorPeriodPAYEAdjustment>
                                     </r:employee>
                                     <r:employee>
                                         <r:lineNumber>2</r:lineNumber>
-                                        <r:irdNumber>123037155</r:irdNumber>
+                                        <r:irdNumber>123112229</r:irdNumber>
                                         <r:employeeName>Ella James</r:employeeName>
                                         <r:taxCode>M</r:taxCode>
                                         <r:payPeriodStartDate>2015-07-31</r:payPeriodStartDate>
@@ -58,27 +64,38 @@
                                         <r:earningsNotLiableACC>1001.00</r:earningsNotLiableACC>
                                         <r:lumpSumIndicator>false</r:lumpSumIndicator>
                                         <r:payeSchedularTaxDeductions>1002.00</r:payeSchedularTaxDeductions>
-                                        <r:childSupportCode>G</r:childSupportCode>
+                                        <r:childSupportCode>C</r:childSupportCode>
                                         <r:childSupportDeductions>1003.00</r:childSupportDeductions>
                                         <r:studentLoansDeductions>1004.00</r:studentLoansDeductions>
                                         <r:kiwisaverEmployerContributions>1005.00</r:kiwisaverEmployerContributions>
                                         <r:kiwisaverDeductions>1006.00</r:kiwisaverDeductions>
+                                        <r:essEarnings>0.00</r:essEarnings>
+                                        <r:slcirDeductions>0.00</r:slcirDeductions>
+                                        <r:slborDeductions>0.00</r:slborDeductions>
                                         <r:taxCreditPayrollDonations>1007.00</r:taxCreditPayrollDonations>
                                         <r:esctDeducted>1008.00</r:esctDeducted>
                                         <r:familyTaxCredits>1011.00</r:familyTaxCredits>
+                                        <r:hoursPaid>5.00</r:hoursPaid>
+                                        <r:priorPeriodGrossAdjustment>0.00</r:priorPeriodGrossAdjustment>
+                                        <r:priorPeriodPAYEAdjustment>0.00</r:priorPeriodPAYEAdjustment>
                                     </r:employee>
                                 </r:employeeFields>
-                                <r:totalGrossEarnings>1000.00</r:totalGrossEarnings>
-                                <r:totalEarningsNotLiableACC>1001.00</r:totalEarningsNotLiableACC>
-                                <r:totalPAYESchedularTaxDeductions>1002.00</r:totalPAYESchedularTaxDeductions>
-                                <r:totalChildSupportDeductions>1003.00</r:totalChildSupportDeductions>
-                                <r:totalStudentLoansDeductions>1004.00</r:totalStudentLoansDeductions>
-                                <r:totalKiwisaverEmployerContributions>1005.00</r:totalKiwisaverEmployerContributions>
-                                <r:totalKiwisaverDeductions>1006.00</r:totalKiwisaverDeductions>
-                                <r:totalTaxCreditPayrollDonations>1007.00</r:totalTaxCreditPayrollDonations>
-                                <r:totalESCTDeducted>1008.00</r:totalESCTDeducted>
-                                <r:totalFamilyTaxCredits>1009.00</r:totalFamilyTaxCredits>
-                                <r:totalAmountPayable>1010.00</r:totalAmountPayable>
+                                <r:totalGrossEarnings>0.00</r:totalGrossEarnings>
+                                <r:totalEarningsNotLiableACC>0.00</r:totalEarningsNotLiableACC>
+                                <r:totalPAYESchedularTaxDeductions>0.00</r:totalPAYESchedularTaxDeductions>
+                                <r:totalChildSupportDeductions>0.00</r:totalChildSupportDeductions>
+                                <r:totalStudentLoansDeductions>0.00</r:totalStudentLoansDeductions>
+                                <r:totalKiwisaverEmployerContributions>0.00</r:totalKiwisaverEmployerContributions>
+                                <r:totalKiwisaverDeductions>0.00</r:totalKiwisaverDeductions>
+                                <r:totalESSEarnings>0.00</r:totalESSEarnings>
+                                <r:totalSLCIRDeductions>0.00</r:totalSLCIRDeductions>
+                                <r:totalSLBORDeductions>0.00</r:totalSLBORDeductions>
+                                <r:totalTaxCreditPayrollDonations>0.00</r:totalTaxCreditPayrollDonations>
+                                <r:totalESCTDeducted>0.00</r:totalESCTDeducted>
+                                <r:totalFamilyTaxCredits>0.00</r:totalFamilyTaxCredits>
+                                <r:totalAmountPayable>0.00</r:totalAmountPayable>
+                                <r:totalPriorPeriodGrossAdjustment>0.00</r:totalPriorPeriodGrossAdjustment>
+                                <r:totalPriorPeriodPAYEAdjustment>0.00</r:totalPriorPeriodPAYEAdjustment>
                             </r:formFields>
                         </responseBody>
                     </retrieveReturnResponse>

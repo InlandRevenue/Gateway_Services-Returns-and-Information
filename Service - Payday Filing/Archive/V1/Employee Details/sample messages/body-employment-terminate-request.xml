@@ -1,10 +1,10 @@
 <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
-               xmlns:emp="https://services.ird.govt.nz/GWS/Employment/v2/"
-               xmlns:ter="https://services.ird.govt.nz/GWS/Employment/v2/:types/TerminateRequest"
-               xmlns:emp1="urn:www.ird.govt.nz/GWS:types/Employment.v2"
-               xmlns:com="urn:www.ird.govt.nz/GWS:types/Common.v2">
+               xmlns:emp="https://services.ird.govt.nz/GWS/Employment/"
+               xmlns:ter="https://services.ird.govt.nz/GWS/Employment/:types/TerminateRequest"
+               xmlns:emp1="urn:www.ird.govt.nz/GWS:types/Employment"
+               xmlns:com="urn:www.ird.govt.nz/GWS:types/Common.v1">
     <soap:Header xmlns:wsa="http://www.w3.org/2005/08/addressing">
-        <wsa:Action>https://services.ird.govt.nz/GWS/Employment/v2/Employment/Terminate</wsa:Action>
+        <wsa:Action>https://services.ird.govt.nz/GWS/Employment/Employment/Terminate</wsa:Action>
     </soap:Header>
     <soap:Body>
         <emp:Terminate>

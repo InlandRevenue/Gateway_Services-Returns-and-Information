@@ -1,16 +1,16 @@
 <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
-               xmlns:emp="https://services.ird.govt.nz/GWS/Employment/v2/"
-               xmlns:upd="https://services.ird.govt.nz/GWS/Employment/v2/:types/UpdateRequest"
-               xmlns:emp1="urn:www.ird.govt.nz/GWS:types/Employment.v2"
-               xmlns:com="urn:www.ird.govt.nz/GWS:types/Common.v2">
+               xmlns:emp="https://services.ird.govt.nz/GWS/Employment/"
+               xmlns:cre="https://services.ird.govt.nz/GWS/Employment/:types/CreateRequest"
+               xmlns:emp1="urn:www.ird.govt.nz/GWS:types/Employment"
+               xmlns:com="urn:www.ird.govt.nz/GWS:types/Common.v1">
     <soap:Header xmlns:wsa="http://www.w3.org/2005/08/addressing">
-        <wsa:Action>https://services.ird.govt.nz/GWS/Employment/v2/Employment/Update</wsa:Action>
+        <wsa:Action>https://services.ird.govt.nz/GWS/Employment/Employment/Create</wsa:Action>
     </soap:Header>
     <soap:Body>
-        <emp:Update>
-            <emp:UpdateRequestMsg>
-                <upd:UpdateRequestWrapper>
-                    <emp1:updateRequest>
+        <emp:Create>
+            <emp:CreateRequestMsg>
+                <cre:CreateRequestWrapper>
+                    <emp1:createRequest>
                         <emp1:header>
                             <com:softwareProviderData>
                                 <com:softwareProvider>SoftwareProvider</com:softwareProvider>
@@ -20,11 +20,7 @@
                             <com:identifier IdentifierValueType="ACCIRD">123456789</com:identifier>
                             <com:accountType>PSO</com:accountType>
                         </emp1:header>
-                        <emp1:employeeIdentifier>
-                            <emp1:employeeIRD>123456789</emp1:employeeIRD>
-                            <emp1:employeeNameOnEILine>MyNameIsEmployee</emp1:employeeNameOnEILine>
-                        </emp1:employeeIdentifier>
-                        <emp1:updateBody>
+                        <emp1:createBody>
                             <emp1:employeeIRD>123456789</emp1:employeeIRD>
                             <emp1:employeeName>
                                 <!--Optional:-->
@@ -36,13 +32,16 @@
                                 <emp1:nameMiddle>middleName</emp1:nameMiddle>
                             </emp1:employeeName>
                             <emp1:employeeNameOnEILine>MyNameIsEmployee</emp1:employeeNameOnEILine>
-                            <emp1:employmentStartDate>2015-07-31</emp1:employmentStartDate>
-                            <!--Optional:-->
-                            <emp1:employeeDateOfBirth>1990-07-28</emp1:employeeDateOfBirth>
                             <emp1:taxCodes>
                                 <!--1 to 4 repetitions:-->
                                 <emp1:taxCode>M</emp1:taxCode>
                             </emp1:taxCodes>
+                            <!--Optional:-->
+                            <emp1:employmentStartDate>2005-07-20</emp1:employmentStartDate>
+                            <!--Optional:-->
+                            <emp1:employmentFinishDate>2018-07-20</emp1:employmentFinishDate>
+                            <!--Optional:-->
+                            <emp1:employeeDateOfBirth>1990-07-28</emp1:employeeDateOfBirth>
                             <!--Optional:-->
                             <emp1:employeeAddress>
                                 <com:nzPostAddress>
@@ -83,33 +82,10 @@
                             <emp1:kiwiSaverStatus>AK</emp1:kiwiSaverStatus>
                             <!--Optional:-->
                             <emp1:employeeKiwiSaverEligibility>EE</emp1:employeeKiwiSaverEligibility>
-                            <!--Optional:-->
-                            <emp1:optedOut>false</emp1:optedOut>
-                            <!--Optional:-->
-                            <emp1:employeeBankAccountNumber>
-                                <com:nzBankCreditUnion xmlns:com="urn:www.ird.govt.nz/GWS:types/Common.v2">
-                                    <com:bank>11</com:bank>
-                                    <com:branch>1234</com:branch>
-                                    <com:account>12345678</com:account>
-                                    <com:suffix>1234</com:suffix>
-                                </com:nzBankCreditUnion>
-                            </emp1:employeeBankAccountNumber>
-                            <!--Optional:-->
-                            <emp1:accountHolderName>
-                                <!--Optional:-->
-                                <com:nameTitle>Mr</com:nameTitle>
-                                <com:nameFirst>First</com:nameFirst>
-                                <com:nameSurname>Last</com:nameSurname>
-                                <!--Optional:-->
-                                <com:nameMiddle>Middle</com:nameMiddle>
-                            </emp1:accountHolderName>
-                            <!--Optional:-->
-                            <emp1:optedOutSignatureDate>2015-05-25</emp1:optedOutSignatureDate>
-                            <emp1:validRelationship>true</emp1:validRelationship>
-                        </emp1:updateBody>
-                    </emp1:updateRequest>
-                </upd:UpdateRequestWrapper>
-            </emp:UpdateRequestMsg>
-        </emp:Update>
+                        </emp1:createBody>
+                    </emp1:createRequest>
+                </cre:CreateRequestWrapper>
+            </emp:CreateRequestMsg>
+        </emp:Create>
     </soap:Body>
 </soap:Envelope>
