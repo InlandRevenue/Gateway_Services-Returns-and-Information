@@ -59,6 +59,9 @@ The following schemas have also changed for 2020:
 	
 ## Key Documentation:
 
+* Test scenarios
+	* [Download test scenarios report template](INC%202020%20changes%20-%20Return%20Service%20-%20Test%20Report%20Template.docx)
+
 * XSD Schemas 
     * View and download the [Income Return Common XSD](xsd/IncomeReturnCommon.v1.xsd) from this [XSD](xsd/) directory	
     * View the Income Tax XSD schema files from the [XSD](xsd/) directory
