@@ -27,13 +27,6 @@
                                     <ret2:amendReason/>
                                     <ret2:amendDetails/>
                                 </ret2:amendmentRequest>
-                                <ret2:creditTransferRequest>
-                                    <ret2:transferIRD>223456789</ret2:transferIRD>
-                                    <ret2:transferAccountType>PSO</ret2:transferAccountType>
-                                    <ret2:transferFilingPeriod>2017-05-31</ret2:transferFilingPeriod>
-                                    <ret2:associatedCustomer>false</ret2:associatedCustomer>
-                                    <ret2:transferAmount>1000.00</ret2:transferAmount>
-                                </ret2:creditTransferRequest>
                             </ret2:standardFields>
                             <ret2:formFields xsi:type="ret1:FormFieldsType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
                                 <ret1:isReverseReplace>false</ret1:isReverseReplace>
@@ -59,9 +52,15 @@
                                         <ret1:studentLoansDeductions>1004.00</ret1:studentLoansDeductions>
                                         <ret1:kiwisaverEmployerContributions>1005.00</ret1:kiwisaverEmployerContributions>
                                         <ret1:kiwisaverDeductions>1006.00</ret1:kiwisaverDeductions>
+                                        <ret1:essEarnings>0.00</ret1:essEarnings>
+                                        <ret1:slcirDeductions>0.00</ret1:slcirDeductions>
+                                        <ret1:slborDeductions>0.00</ret1:slborDeductions>
                                         <ret1:taxCreditPayrollDonations>1007.00</ret1:taxCreditPayrollDonations>
                                         <ret1:esctDeducted>1008.00</ret1:esctDeducted>
                                         <ret1:familyTaxCredits>1009.00</ret1:familyTaxCredits>
+                                        <ret1:hoursPaid>5</ret1:hoursPaid>
+                                        <ret1:priorPeriodGrossAdjustment>0</ret1:priorPeriodGrossAdjustment>
+                                        <ret1:priorPeriodPAYEAdjustment>0</ret1:priorPeriodPAYEAdjustment>
                                     </ret1:employee>
                                     <ret1:employee>
                                         <ret1:irdNumber>123037155</ret1:irdNumber>
