@@ -4,6 +4,7 @@
 # Returns and Information
 
 Use this repository to access software development kits (SDKs) for returns and information services offered through Inland Revenue's gateway services.
+They all use the Return service.
 
 ## [Accounting Income Method (AIM)](./Service%20-%20AIM/)
 
@@ -13,9 +14,9 @@ AIM is a provisional tax option that uses accounting software to work out how mu
 
 GST is a 15% tax added to the price of most goods and services in New Zealand, including imported goods and services. Anyone registered for GST must file returns.
 
-## [Income Tax](./Service%20-%20Income%20Tax/)
+## [Income Tax and Donation Tax Credits](./Service%20-%20Income%20Tax/)
 
-Organisations can use this service for Income Tax (INC) returns and Donation Tax Credit (DTC) returns through the Return Service including
+Organisations can use this service for Income Tax (INC) returns and Donation Tax Credit (DTC) forms through the Return Service including
 * submit new or amended INC return or DTC form
 * request income tax information held by us for a customer
 * query the processing status of a previously filed INC return or DTC form
