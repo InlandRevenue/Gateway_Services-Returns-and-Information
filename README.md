@@ -26,3 +26,11 @@ Payday filing through our gateway services lets software providers send employme
 ## [Push Notification](./Service%20-%20Push%20Notification/)
 
 The Push Notifications service is a business service which provides notification of change to the status of a return via software packages.
+
+## Related Gateway Services repositories
+
+* Gateway Services - [Customer and Accounts](https://github.com/InlandRevenue/Gateway_Services-Customer-and-Account)
+* Gateway Services - [Communication](https://github.com/InlandRevenue/Gateway_Services-Communication)
+* Gateway Services - [Calculators](https://github.com/InlandRevenue/Gateway_Services-Calculators)
+* Gateway Services - [Access](https://github.com/InlandRevenue/Gateway_Services-Access)
+* Gateway Services - [Transaction Data Services](https://github.com/InlandRevenue/Gateway_Services-Transaction-data-services)
