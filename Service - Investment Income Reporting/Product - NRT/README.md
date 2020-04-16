@@ -3,7 +3,19 @@
 
 # Non-Resident Withholding Tax (NRT) Software Development Kit (SDK) for Investment Income Reporting
 
-#### Release version 1.0
+#### Latest Release V1.0 - 28 February 2020
+
+## Summary of changes
+
+* Description of interestZeroRated modified
+* Description of deductedAmount modified
+* Description of grossAmount modified
+* The following error codes have been removed: 978, 977, 985, 983, 995.
+
+Schema updates
+
+* ReturnNRT.v1.xsd
+* ReturnCommon.v2.xsd
 
 ## Key documentation
 
