@@ -3,6 +3,8 @@
 
 # Returns and Information
 
+Use this repository to access software development kits (SDKs) for returns and information services offered through Inland Revenue's gateway services.
+
 ## [Accounting Income Method (AIM)](./Service%20-%20AIM/)
 
 AIM is a provisional tax option that uses accounting software to work out how much provisional tax small businesses will have to pay throughout the year.
