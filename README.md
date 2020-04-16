@@ -15,19 +15,29 @@ GST is a 15% tax added to the price of most goods and services in New Zealand, i
 
 ## [Income Tax](./Service%20-%20Income%20Tax/)
 
-Everyone in New Zealand needs to pay tax on income they earn, whether they’re an individual, business, or organisation.
+Organisations can use this service for Income Tax (INC) returns and Donation Tax Credit (DTC) returns through the Return Service including
+* submit new or amended INC return or DTC form
+* request income tax information held by us for a customer
+* query the processing status of a previously filed INC return or DTC form
+* request a copy of a previously filed INC return or DTC form
+* request the due date of the next expected income tax return
 
 ## [Investment Income Reporting](./Service%20-%20Investment%20Income%20Reporting/)
 
-Investment income reporting through gateway services lets organisations securely file investment income information to us through defined service operations. Use this service to file investment income information or amend a previously filed return.
+* Investment income reporting through gateway services lets organisations securely file investment income information, amend a previously filed return and retrieve a return status or return data.
+* It is available for the withholding tax product types - Approved issuer levy (AIL), Dividend withholding tax (DWT), Interest pay as you earn (IPS), Non-resident withholding tax (NRT), Resident withholding tax (RWT) and Portfolio investment entities (PIE) attributed income tax
 
 ## [Payday Filing](./Service%20-%20Payday%20Filing/)
 
-Payday filing through our gateway services lets software providers send employment information to us each pay cycle instead of monthly, and to send changes to employees’ details.
+Payday filing through our gateway services lets employers:
+* file employment information (EI) to us each pay cycle instead of monthly using the Return service
+* send changes to employee details (ED) using the Employment service.
 
 ## [Push Notification](./Service%20-%20Push%20Notification/)
 
-The Push Notifications service is a business service which provides notification of change to the status of a return via software packages.
+The Push Notification service 
+* provides notification of change to the status of a return via a secure file transfer service
+* is intended to be used by software providers where large quantities of return status data is required.
 
 ## Related Gateway Services repositories
 
