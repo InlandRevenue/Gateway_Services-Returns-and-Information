@@ -46,6 +46,9 @@ Employees can send us changes to employee details using the Employment service.
 
 The following key changes have been made to the Employment Service for the update to V2.0.
 
+* URL endpoint updated
+	* Version 2 Employment Service has a [new URL endpoint](#Production-environment-information).  
+
 * Operations
 	* Updated schema references from ‘Employment.xsd’ to ‘Employment.v2.xsd’
 
@@ -136,6 +139,12 @@ The following key changes have been made to the Employment Service for the updat
 	- Cloud SOAP WSDL: https://test3.services.ird.govt.nz:4046/gateway/gws/employment/?wsdl
 	- Native desktop SOAP WSDL: https://test3.services.ird.govt.nz/gateway2/gws/employment/?wsdl
             
+* Test URL endpoint **V2**
+    - Cloud gateway service: https://test3.services.ird.govt.nz:4046/gateway/gws/employment/v2/
+    - Native desktop gateway service: https://test3.services.ird.govt.nz/gateway2/gws/employment/v2/
+	- Cloud SOAP WSDL: https://test3.services.ird.govt.nz:4046/gateway/gws/employment/v2/?wsdl
+	- Native desktop SOAP WSDL: https://test3.services.ird.govt.nz/gateway2/gws/employment/v2/?wsdl
+
 ## Production environment information
 -----------------
 
@@ -144,3 +153,9 @@ The following key changes have been made to the Employment Service for the updat
 	- Native desktop gateway service: https://services.ird.govt.nz/gateway2/gws/employment/
 	- Cloud SOAP WSDL: https://services.ird.govt.nz:4046/gateway/gws/employment/?wsdl
 	- Native desktop SOAP WSDL: https://services.ird.govt.nz/gateway2/gws/employment/?wsdl
+	
+* Production URL endpoint **V2**
+	- Cloud gateway service: https://services.ird.govt.nz:4046/gateway/gws/employment/v2/
+	- Native desktop gateway service: https://services.ird.govt.nz/gateway2/gws/employment/v2/
+	- Cloud SOAP WSDL: https://services.ird.govt.nz:4046/gateway/gws/employment/v2/?wsdl
+	- Native desktop SOAP WSDL: https://services.ird.govt.nz/gateway2/gws/employment/v2/?wsdl	
