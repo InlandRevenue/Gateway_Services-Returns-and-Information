@@ -12,6 +12,11 @@ The Return Status Push Notification is based around a file transfer solution, wh
 - Build pack
 	- Download and view the [Push Notifications build pack](Gateway%20Services%20Build%20Pack%20-%20Push%20Notifications.pdf)
 
+- Schemas
+	- View and download the [common v2 xsd](../Common%20XSD/Common.v2.xsd)
+	- View and download the [return service common v2 xsd](../Common%20XSD/ReturnCommon.v2.xsd)
+	- View and download the [Return Status Push Notifications v1 xsd](ReturnStatusPushNotifications.v1.xsd) from this current directory	
+	
 ## Return Status Push Notification ZIP/XML sample files
 
 * [ZIP file:](Sample%20Files/PSN_DAILY_PROVIDER_1500216000_2155445580_2155445927_201909091028315313_NZX.zip) `PSN_DAILY_PROVIDER_1500216000_2155445580_2155445927_201909091028315313_NZX.zip`
