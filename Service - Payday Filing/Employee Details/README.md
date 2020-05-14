@@ -134,16 +134,16 @@ The following key changes have been made to the Employment Service for the updat
 	- [Download the test scenarios report template](Payday%20Filing%20ED%20-%20Test%20Report%20Template.docx)
 
 * Test URL endpoint
-    - Cloud gateway service: https://test3.services.ird.govt.nz:4046/gateway/gws/employment/
-    - Native desktop gateway service: https://test3.services.ird.govt.nz/gateway2/gws/employment/
-	- Cloud SOAP WSDL: https://test3.services.ird.govt.nz:4046/gateway/gws/employment/?wsdl
-	- Native desktop SOAP WSDL: https://test3.services.ird.govt.nz/gateway2/gws/employment/?wsdl
+    - Cloud gateway service: https://test5.services.ird.govt.nz:4046/gateway/gws/employment/
+    - Native desktop gateway service: https://test5.services.ird.govt.nz/gateway2/gws/employment/
+	- Cloud SOAP WSDL: https://test5.services.ird.govt.nz:4046/gateway/gws/employment/?wsdl
+	- Native desktop SOAP WSDL: https://test5.services.ird.govt.nz/gateway2/gws/employment/?wsdl
             
 * Test URL endpoint **V2**
-    - Cloud gateway service: https://test3.services.ird.govt.nz:4046/gateway/gws/employment/v2/
-    - Native desktop gateway service: https://test3.services.ird.govt.nz/gateway2/gws/employment/v2/
-	- Cloud SOAP WSDL: https://test3.services.ird.govt.nz:4046/gateway/gws/employment/v2/?wsdl
-	- Native desktop SOAP WSDL: https://test3.services.ird.govt.nz/gateway2/gws/employment/v2/?wsdl
+    - Cloud gateway service: https://test5.services.ird.govt.nz:4046/gateway/gws/employment/v2/
+    - Native desktop gateway service: https://test5.services.ird.govt.nz/gateway2/gws/employment/v2/
+	- Cloud SOAP WSDL: https://test5.services.ird.govt.nz:4046/gateway/gws/employment/v2/?wsdl
+	- Native desktop SOAP WSDL: https://test5.services.ird.govt.nz/gateway2/gws/employment/v2/?wsdl
 
 ## Production environment information
 -----------------

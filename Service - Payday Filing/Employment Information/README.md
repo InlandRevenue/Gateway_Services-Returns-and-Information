@@ -159,10 +159,10 @@ The EI version can be identified in the standard header’s majorFormType field:
 	- [Download test scenarios report template](Payday%20Filing%20EI%20-%20Test%20Report%20Template.docx)
 
 * Test URL endpoints
-	- Cloud gateway service: https://test3.services.ird.govt.nz:4046/gateway/gws/returns/
-	- Native desktop gateway service: https://test3.services.ird.govt.nz/gateway2/gws/returns/
-	- Cloud SOAP WSDL: https://test3.services.ird.govt.nz:4046/gateway/gws/returns/?wsdl
-	- Native desktop SOAP WSDL: https://test3.services.ird.govt.nz/gateway2/gws/returns/?wsdl
+	- Cloud gateway service: https://test5.services.ird.govt.nz:4046/gateway/gws/returns/
+	- Native desktop gateway service: https://test5.services.ird.govt.nz/gateway2/gws/returns/
+	- Cloud SOAP WSDL: https://test5.services.ird.govt.nz:4046/gateway/gws/returns/?wsdl
+	- Native desktop SOAP WSDL: https://test5.services.ird.govt.nz/gateway2/gws/returns/?wsdl
             
 ## Production environment information
 -----------------
