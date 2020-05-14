@@ -117,12 +117,12 @@
 	- [Download RWT test scenarios report template](Investment%20Income%20Reporting%20-%20Tax%20Type%20-%20RWT%20-%20%20Test%20Scenarios%20Report%20Template.docx)
 
 - Test URL endpoints
-    - Cloud gateway service: https://test3.services.ird.govt.nz:4046/gateway/gws/returns/
-    - Native desktop gateway service: https://test3.services.ird.govt.nz/gateway2/gws/returns/
+    - Cloud gateway service: https://test5.services.ird.govt.nz:4046/gateway/gws/returns/
+    - Native desktop gateway service: https://test5.services.ird.govt.nz/gateway2/gws/returns/
 	
 - Test WSDL URL endpoints
-	- Cloud gateway service: https://test3.services.ird.govt.nz:4046/gateway/gws/returns/?wsdl
-    - Native desktop gateway service: https://test3.services.ird.govt.nz/gateway2/gws/returns/?wsdl
+	- Cloud gateway service: https://test5.services.ird.govt.nz:4046/gateway/gws/returns/?wsdl
+    - Native desktop gateway service: https://test5.services.ird.govt.nz/gateway2/gws/returns/?wsdl
 	
 ## Production environment information
 -----------------  
