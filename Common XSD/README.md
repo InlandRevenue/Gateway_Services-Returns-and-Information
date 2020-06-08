@@ -13,11 +13,15 @@
 
 <table>
     <thead>
-        <th>Date</th> <th>Description</th>
+        <th>Date</th> 
+        <th>Schema</th> 
+        <th>Description</th>
     </thead>
     <tbody>
         <tr>
-            <td>13/05/2020</td>  <td>  EmailAddressType regex updated to allow printable chars <code> ! # $ % &#x26; &#x27; * + - / = ? ^ _ &#x60; { | } ~ ; </code> as specificed by RFC 5322 </td>
+            <td>13/05/2020</td>
+            <td>Common.v2.xsd &amp; Common.v2.xsd </td>
+            <td>  EmailAddressType regex updated to allow printable chars <code> ! # $ % &#x26; &#x27; * + - / = ? ^ _ &#x60; { | } ~ ; </code> as specificed by RFC 5322 </td>
         </tr>
     </tbody>
 </table>
