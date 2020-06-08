@@ -2,10 +2,11 @@
 <!-- Documentation
 _______________________________________
 NAME: 	Common.xsd
-VER:		1.03
+VER:		1.04
 ISSUER:	Inland Revenue Department
-DATE:		20/12/2017
+DATE:		13/05/2020
 DESC:		This schema defines the common data types used accross the IRD hosted, Gateway Services.
+CHANGES:        From 1.03 - EmailAddressType regex updated to allow printable chars ._%+!#$%*+=?^`{|}~()\-\/&amp;&apos;&quot; as specificed by RFC 5322
 _______________________________________
 -->
 <xsd:schema xmlns="urn:www.ird.govt.nz/GWS:types/Common.v1" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="urn:www.ird.govt.nz/GWS:types/Common.v1" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0">
@@ -338,10 +339,10 @@ _______________________________________
 	<!--Contact Types-->
 	<xsd:simpleType name="EmailAddressType">
 		<xsd:annotation>
-			<xsd:documentation xml:lang="en">An email address of the form x@y.z where x and y are alpha-numeric strings, z is an alphabet string, there is an embedded @ and no embedded whitespace or illegal characters.</xsd:documentation>
+			<xsd:documentation xml:lang="en">An email address of the form x@y.z where x and y are alpha-numeric strings with a list of allowed characters, z is an alphabet string, there is an embedded @ and no embedded whitespace or illegal characters.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:restriction base="xsd:string">
-			<xsd:pattern value="([a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]+)"/>
+			<xsd:pattern value="([a-zA-Z0-9._%+!#$%*+=?^`{|}~()\-\/&amp;&apos;&quot;]+@[a-zA-Z0-9._%+!#$%*+=?^`{|}~()\-\/&amp;&apos;&quot;]+\.[a-zA-Z]+)"/>
 		</xsd:restriction>
 	</xsd:simpleType>
 	<xsd:simpleType name="CountryCodeType">
