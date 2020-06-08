@@ -5,10 +5,10 @@
 
 The common XSD is used across a range of IR service types that all use the Return service
 
-| XSDs | Version | Service Types | 
+| Version| XSDs   | Service Types | 
 | --- | --- | --- |
-| * [Common.v1.xsd](Common.v1.xsd) <br/> * [ReturnCommon.v1.xsd](ReturnCommon.v1.xsd) | v1 | * Payday Filing v1 <br/> * GST | 
-| * [Common.v2.xsd](Common.v2.xsd) <br/> * [ReturnCommon.v2.xsd](ReturnCommon.v2.xsd) | v2 | * Payday Filing v2 <br/> * AIM v2 <br/> * Income Tax <br/> * Investment Income Reporting |
+| v1| <ul> <li> [Common.v1.xsd](Common.v1.xsd) </li>  <li> [ReturnCommon.v1.xsd](ReturnCommon.v1.xsd) </li> </ul>|  <ul> <li> Payday Filing v1 </li> <li> GST </li> </ul> | 
+| v2 | <ul> <li>  [Common.v2.xsd](Common.v2.xsd) <br/> <li>  [ReturnCommon.v2.xsd](ReturnCommon.v2.xsd) </li>  </ul>| <ul> <li> Payday Filing v2 </li> <li> AIM v2 </li> <li> Income Tax </li> <li> Investment Income Reporting </li> </ul> |
 
 
 # Release Notes
