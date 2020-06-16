@@ -69,7 +69,7 @@ The following schemas have also changed for 2020:
 	
 
 * Build Pack
-	* Download the [Return Service Income Tax build pack](Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20INC.pdf) to view data definitions of each operation and response status code definitions
+	* Download the [Return Service Income Tax build pack](Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20INC%20v1.1.pdf) to view data definitions of each operation and response status code definitions
 		* Supporting information on IR website
 	* Download the [Additional Information pack](Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20Additional%20Information%20V1.0.pdf)
 		* Income tax assessments (auto calc)
