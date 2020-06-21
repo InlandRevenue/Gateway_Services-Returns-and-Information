@@ -151,7 +151,7 @@
 					<xs:element name="PrepopRequestWrapper" nillable="true">
 						<xs:complexType>
 							<xs:sequence>
-								<xs:element ref="rc:retrieveFormInfoRequest"/>
+								<xs:element ref="ei:retrieveEIRequest"/>
 							</xs:sequence>
 						</xs:complexType>
 					</xs:element>
