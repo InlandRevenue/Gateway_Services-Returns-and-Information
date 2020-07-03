@@ -93,8 +93,10 @@ Test Environment Information:
 
 
 * Test URL Endpoint
-    - Cloud Gateway Service: https://test3.services.ird.govt.nz:4046/gateway/gws/employment/
-    - Native Desktop Gateway Service: https://test3.services.ird.govt.nz/gateway2/gws/employment/
+    - Cloud Gateway Service: https://test5.services.ird.govt.nz:4046/gateway/gws/employment/
+    - Native Desktop Gateway Service: https://test5.services.ird.govt.nz/gateway2/gws/employment/
+	
+>**NOTE:** These endpoints are subject to change due to environment updates in the future. 	
             
 Production Environment Information:
 -----------------
@@ -105,3 +107,4 @@ Production Environment Information:
 	- Native Desktop Gateway Service: https://services.ird.govt.nz/gateway2/gws/employment/
 	- (Cloud) SOAP WSDL: https://services.ird.govt.nz:4046/gateway/gws/employment/?wsdl
 	- (Native Desktop) SOAP WSDL: https://services.ird.govt.nz/gateway2/gws/employment/?wsdl
+	
