@@ -227,10 +227,12 @@
 
 * Test Environment URL Endpoints
 
-	* Cloud Gateway Service: `https://test3.services.ird.govt.nz:4046/gateway/gws/returns/`
-	* Native Desktop Gateway Service: `https://test3.services.ird.govt.nz/gateway2/gws/returns/`
-	* Cloud SOAP WSDL: `https://test3.services.ird.govt.nz:4046/gateway/gws/returns/?wsdl`
-	* Native Desktop SOAP WSDL: `https://test3.services.ird.govt.nz/gateway2/gws/returns/?wsdl`
+	* Cloud Gateway Service: `https://test5.services.ird.govt.nz:4046/gateway/gws/returns/`
+	* Native Desktop Gateway Service: `https://test5.services.ird.govt.nz/gateway2/gws/returns/`
+	* Cloud SOAP WSDL: `https://test5.services.ird.govt.nz:4046/gateway/gws/returns/?wsdl`
+	* Native Desktop SOAP WSDL: `https://test5.services.ird.govt.nz/gateway2/gws/returns/?wsdl`
+	
+>**NOTE:** These endpoints are subject to change due to environment updates in the future. 		
             
 ## Production Environment Information:
 -----------------
