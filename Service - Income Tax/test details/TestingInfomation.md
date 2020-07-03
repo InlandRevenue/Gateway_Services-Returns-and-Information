@@ -10,7 +10,7 @@
 	- [Donation Tax Credit](#Donation_Tax_Credit) (DTC/REB/IR5216)	
 
 * XSD Schemas 
-    * View the Income Tax XSD schema files from the [xsd](../../xsd/) directory
+    * View and download the Income Tax XSD schema files from the [xsd](../xsd/) directory
     * View and download the [return service common v2 xsd](../../Common%20XSD/)
     * View and download the [common v2 xsd](../../Common%20XSD/)	
 	
