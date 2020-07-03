@@ -6,8 +6,8 @@
 ## Key Documentation:
 
 - The testing details provided on this page is applicable for all of the following invest income reporting tax types
-	- [Income Tax Returns (INC)]()
-	- [Donation Tax Credit](#Donation_Tax_Credit) (DTC/REB/IR5216)	
+	- Income Tax Returns (INC)
+	- Donation Tax Credit (DTC/REB/IR5216)	
 
 * XSD Schemas 
     * View and download the Income Tax XSD schema files from the [xsd](../xsd/) directory
