@@ -105,10 +105,12 @@ Employees can file Employment information (EI) to us each pay cycle using the Re
 	- [Download test scenarios report template](Payday%20Filing%20–%20Employment%20Information%20-%20Test%20Report%20Template.docx)
 
 * Test URL Endpoints
-	- Cloud Gateway Service: https://test3.services.ird.govt.nz:4046/gateway/gws/returns/
-	- Native Desktop Gateway Service: https://test3.services.ird.govt.nz/gateway2/gws/returns/
-	- Cloud SOAP WSDL: https://test3.services.ird.govt.nz:4046/gateway/gws/returns/?wsdl
-	- Native Desktop SOAP WSDL: https://test3.services.ird.govt.nz/gateway2/gws/returns/?wsdl
+	- Cloud Gateway Service: https://test5.services.ird.govt.nz:4046/gateway/gws/returns/
+	- Native Desktop Gateway Service: https://test5.services.ird.govt.nz/gateway2/gws/returns/
+	- Cloud SOAP WSDL: https://test5.services.ird.govt.nz:4046/gateway/gws/returns/?wsdl
+	- Native Desktop SOAP WSDL: https://test5.services.ird.govt.nz/gateway2/gws/returns/?wsdl
+	
+>**NOTE:** These endpoints are subject to change due to environment updates in the future. 		
             
 ## Production Environment Information:
 -----------------

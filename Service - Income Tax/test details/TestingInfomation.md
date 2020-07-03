@@ -6,13 +6,13 @@
 ## Key Documentation:
 
 - The testing details provided on this page is applicable for all of the following invest income reporting tax types
-	- [Income Tax Returns (INC)]()
-	- [Donation Tax Credit](#Donation_Tax_Credit) (DTC/REB/IR5216)	
+	- Income Tax Returns (INC)
+	- Donation Tax Credit (DTC/REB/IR5216)	
 
 * XSD Schemas 
-    * View the Income Tax XSD schema files from the [xsd](xsd/) directory
-    * View and download the [return service common v2 xsd](../Service%20-%20Return/Latest/)
-    * View and download the [common v2 xsd](../Schema%20-%20Common/)	
+    * View and download the Income Tax XSD schema files from the [xsd](../xsd/) directory
+    * View and download the [return service common v2 xsd](../../Common%20XSD/)
+    * View and download the [common v2 xsd](../../Common%20XSD/)	
 	
 - Mock Environment Information
 	- [Mindmap and test data](#mock-environment-information)
@@ -227,10 +227,12 @@
 
 * Test Environment URL Endpoints
 
-	* Cloud Gateway Service: `https://test3.services.ird.govt.nz:4046/gateway/gws/returns/`
-	* Native Desktop Gateway Service: `https://test3.services.ird.govt.nz/gateway2/gws/returns/`
-	* Cloud SOAP WSDL: `https://test3.services.ird.govt.nz:4046/gateway/gws/returns/?wsdl`
-	* Native Desktop SOAP WSDL: `https://test3.services.ird.govt.nz/gateway2/gws/returns/?wsdl`
+	* Cloud Gateway Service: `https://test5.services.ird.govt.nz:4046/gateway/gws/returns/`
+	* Native Desktop Gateway Service: `https://test5.services.ird.govt.nz/gateway2/gws/returns/`
+	* Cloud SOAP WSDL: `https://test5.services.ird.govt.nz:4046/gateway/gws/returns/?wsdl`
+	* Native Desktop SOAP WSDL: `https://test5.services.ird.govt.nz/gateway2/gws/returns/?wsdl`
+	
+>**NOTE:** These endpoints are subject to change due to environment updates in the future. 		
             
 ## Production Environment Information:
 -----------------
