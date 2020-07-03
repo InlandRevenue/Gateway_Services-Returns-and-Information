@@ -11,8 +11,8 @@
 
 * XSD Schemas 
     * View the Income Tax XSD schema files from the [xsd](../../xsd/) directory
-    * View and download the [return service common v2 xsd](../../Common%20xsd/)
-    * View and download the [common v2 xsd](../../Common%20xsd/)	
+    * View and download the [return service common v2 xsd](../../Common%20XSD/)
+    * View and download the [common v2 xsd](../../Common%20XSD/)	
 	
 - Mock Environment Information
 	- [Mindmap and test data](#mock-environment-information)
