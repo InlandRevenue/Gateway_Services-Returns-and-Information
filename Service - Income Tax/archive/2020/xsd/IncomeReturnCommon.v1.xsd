@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Documentation
 _______________________________________
-	NAME:       IncomeReturnCommon.v1.xsd
-	VER:        1.1
-	ISSUER:     Inland Revenue Department
-	DATE:       20/11/2019
-	DESC:       This schema defines common fields for all income tax returns submitted through the Gateway Services.
-	CHANGE(s):
-	* residentialRentalIncome added
-	* researchAndDevelopment added
-	* shareholderAIMTaxPaid added to ShareholderListType
-	* shareholderAIMTaxPaid added to ShareholderType
+NAME:       IncomeReturnCommon.v1.xsd
+VER:        1.11
+ISSUER:     Inland Revenue Department
+DESC:       This schema defines common fields for all income tax returns submitted through the Gateway Services.
+	
+' Date  			Change
+' **********		************
+' 2020-07-13		Added new fields to incomeProfile object
+					Added new periodLossCarryBack field
+					Fixed ResidentialMethodType documentation
+' 2019-11-20		residentialRentalIncome added
+					researchAndDevelopment added
+					shareholderAIMTaxPaid added to ShareholderListType
+					shareholderAIMTaxPaid added to ShareholderType
+' 2019-01-28		Initial
 _______________________________________
 -->
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:cmn="urn:www.ird.govt.nz/GWS:types/Common.v2" xmlns:rc="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2" xmlns="urn:www.ird.govt.nz/GWS:types/IncomeReturnCommon.v1" targetNamespace="urn:www.ird.govt.nz/GWS:types/IncomeReturnCommon.v1" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0">
@@ -73,7 +78,8 @@ _______________________________________
 			<xsd:element name="preAdjudication" type="xsd:boolean"/>
 			<xsd:element name="postAdjudication" type="xsd:boolean"/>
 			<xsd:element name="preAdjudicationFiled" type="xsd:boolean"/>
-			<xsd:element name="incomeProfile" type="IncomeProfileListType"/>
+			<xsd:element name="periodLossCarryBack" type="xsd:boolean"/>
+			<xsd:element name="incomeProfile" type="IncomeProfileListType"/>	
 		</xsd:sequence>
 	</xsd:complexType>
 	<xsd:complexType name="NonIndividualType">
@@ -84,6 +90,7 @@ _______________________________________
 			<xsd:element name="balanceDate" type="cmn:DateType"/>
 			<xsd:element name="formExpected" type="cmn:String6"/>
 			<xsd:element name="transitionalYear" type="xsd:boolean"/>
+			<xsd:element name="periodLossCarryBack" type="xsd:boolean"/>
 			<xsd:element name="incomeProfile" type="IncomeProfileListType"/>
 		</xsd:sequence>
 	</xsd:complexType>
@@ -99,6 +106,12 @@ _______________________________________
 			<xsd:element name="incomeType" type="IncomeType"/>
 			<xsd:element name="amount" type="cmn:MoneyType"/>
 			<xsd:element name="deductions" type="cmn:MoneyType"/>
+			<xsd:element name="studentLoan" type="cmn:MoneyType" minOccurs="0"/>
+			<xsd:element name="donation" type="cmn:MoneyType" minOccurs="0"/>
+			<xsd:element name="extinguishedDonation" type="cmn:MoneyType" minOccurs="0"/>
+			<xsd:element name="familyTaxCredit" type="cmn:MoneyType" minOccurs="0"/>
+			<xsd:element name="earningsNotLiableForACC" type="cmn:MoneyType" minOccurs="0"/>
+			<xsd:element name="imputationCreditsForDividend" type="cmn:MoneyType" minOccurs="0"/>
 		</xsd:sequence>
 	</xsd:complexType>
 	<xsd:simpleType name="IncomeTypeType">
@@ -145,7 +158,7 @@ _______________________________________
 		<xsd:sequence>
 			<xsd:element name="irdNumber" type="cmn:IRDNumberType"/>
 			<xsd:element name="remuneration" type="cmn:MoneyTypePositive"/>
-      <xsd:element name="shareholderAIMTaxPaid" type="cmn:MoneyTypePositive" minOccurs="0"/>
+			<xsd:element name="shareholderAIMTaxPaid" type="cmn:MoneyTypePositive" minOccurs="0"/>
 			<xsd:element name="loansFromCompany" type="cmn:MoneyTypePositive"/>
 			<xsd:element name="currentAccountBalance" type="cmn:MoneyType"/>
 			<xsd:element name="shareholderLossOffsets" type="cmn:MoneyType"/>
@@ -362,8 +375,8 @@ _______________________________________
   <xsd:simpleType name="ResidentialMethodType">
     <xsd:annotation>
       <xsd:documentation>
-        I: Combination
-        C: Individual
+        I: Individual
+        C: Combination
         P: Portfolio
       </xsd:documentation>
     </xsd:annotation>
