@@ -18,7 +18,7 @@ Employees can file Employment information (EI) to us each pay cycle using the Re
 	- View and download the Employment Income (EI) return [XSD](ReturnEI.v1.xsd) and [WSDL](ReturnsEIDevWsdl.wsdl) from this current directory
 	
 - Returns Service 
-	- [Download the build pack](Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20EI%20v1.8.pdf) to view data definitions of each operation and response status code definitions
+	- [Download the build pack](Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20EI%20.pdf) to view data definitions of each operation and response status code definitions
 
 - Message Samples
     - [View Message samples for requests and positive responses](#message-samples)
