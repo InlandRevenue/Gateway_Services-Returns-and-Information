@@ -1,5 +1,5 @@
-![IRD logo](../Images/IRlogo.gif)
-![Software Dev](../Images/SoftwareDev.png)
+![IRD logo](../../Images/IRlogo.gif)
+![Software Dev](../../Images/SoftwareDev.png)
 
 # Income Tax and Donation Tax Credit through Gateway Services
 
@@ -21,11 +21,11 @@ Find out about:
 * the key changes for [income tax for business and organisations on the IR website](https://www.ird.govt.nz/income-tax-for-business)
 * [Explore our products and services](https://www.ird.govt.nz/software-providers/explore-products-contents/)
 
-## Supporting Services:
+## Supporting Services
 
-* Service: Identity and Access – view [How to integrate, OAuth requests and responses message sample and build pack](../Service%20-%20Identity%20and%20Access/Latest/) 
-* Service: Intermediation – view [Schemas, WSDLs, and build pack](../Service%20-%20Intermediation/)
-* Service: Return Status Push Notification - view [Schemas and build pack](../Service%20-%20Push%20Notification/)
+* [Service: Identity and Access](https://github.com/InlandRevenue/Gateway_Services-Access/tree/master/Identity%20and%20Access) 
+* [Service: Intermediation](https://github.com/InlandRevenue/Gateway_Services-Access/tree/master/Service%20-%20Intermediation)
+* [Service: Return Status Push Notification](../../Service%20-%20Push%20Notification)
 
 
 
