@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Documentation
 _______________________________________
-NAME: 	ReturnCommon.v2.xsd
-VER:	  2.2
+NAME:	ReturnCommon.v2.xsd
+VER:	2.3
 ISSUER:	Inland Revenue Department
-DATE:	  10/01/2020
-DESC:	  This schema defines the ReturnCommon data types used accross the IRD hosted, Gateway Services.
+DESC:	This schema defines the ReturnCommon data types used accross the IRD hosted, Gateway Services.
+
+' Date  			Change
+' **********		************
+' 2020-07-01		Increase creditTransferRequest maxOccurs from 10 to 20
+' 2020-01-10		Initial
 _______________________________________
 -->
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:cmn="urn:www.ird.govt.nz/GWS:types/Common.v2" xmlns:rc="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2" xmlns="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2" targetNamespace="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0">
@@ -91,7 +95,7 @@ _______________________________________
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="amendmentRequest" type="AmendmentRequestType"/>
-			<xsd:element name="creditTransferRequest" type="TransferRequestType" minOccurs="0" maxOccurs="10">
+			<xsd:element name="creditTransferRequest" type="TransferRequestType" minOccurs="0" maxOccurs="20">
 				<xsd:annotation>
 					<xsd:documentation xml:lang="en">Credit transfers can be requested and the balance split more than one time.</xsd:documentation>
 				</xsd:annotation>
