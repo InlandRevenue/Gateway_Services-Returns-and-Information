@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Documentation
 _______________________________________
-NAME: 	ReturnCommon.v2.xsd
-VER:	2.0
+NAME:	ReturnCommon.v2.xsd
+VER:	2.3
 ISSUER:	Inland Revenue Department
-DATE:	20/12/2018
 DESC:	This schema defines the ReturnCommon data types used accross the IRD hosted, Gateway Services.
+
+' Date  			Change
+' **********		************
+' 2020-07-01		Increase creditTransferRequest maxOccurs from 10 to 20
+' 2020-01-10		Initial
 _______________________________________
 -->
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:cmn="urn:www.ird.govt.nz/GWS:types/Common.v2" xmlns:rc="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2" xmlns="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2" targetNamespace="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0">
@@ -91,7 +95,7 @@ _______________________________________
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="amendmentRequest" type="AmendmentRequestType"/>
-			<xsd:element name="creditTransferRequest" type="TransferRequestType" minOccurs="0" maxOccurs="10">
+			<xsd:element name="creditTransferRequest" type="TransferRequestType" minOccurs="0" maxOccurs="20">
 				<xsd:annotation>
 					<xsd:documentation xml:lang="en">Credit transfers can be requested and the balance split more than one time.</xsd:documentation>
 				</xsd:annotation>
@@ -162,7 +166,7 @@ _______________________________________
 							</xsd:restriction>
 						</xsd:simpleType>
 					</xsd:element>
-					<xsd:element name="submissionKey" type="cmn:QuantityTypePositive" minOccurs="0"/>
+					<xsd:element name="submissionKey" type="cmn:Quantity32TypePositive" minOccurs="0"/>
 				</xsd:sequence>
 			</xsd:extension>
 		</xsd:complexContent>
@@ -273,7 +277,7 @@ _______________________________________
 	<xsd:complexType name="ReturnStatusType">
 		<xsd:sequence>
 			<xsd:element name="status" type="CodeStringType"/>
-			<xsd:element name="submissionKey" type="cmn:QuantityTypePositive" minOccurs="0"/>
+			<xsd:element name="submissionKey" type="cmn:Quantity32TypePositive" minOccurs="0"/>
 			<xsd:element name="majorFormType" minOccurs="0">
 				<xsd:annotation>
 					<xsd:documentation xml:lang="en">The major form type of this return</xsd:documentation>
@@ -388,7 +392,7 @@ _______________________________________
 		<xsd:sequence>
 			<xsd:element name="incomeType" type="cmn:String6" minOccurs="0"/>
 			<xsd:element name="grossAmount" type="cmn:MoneyType"/>
-			<xsd:element name="deductedAmount" type="cmn:MoneyTypePositive" minOccurs="0"/>
+			<xsd:element name="deductedAmount" type="cmn:MoneyType" minOccurs="0"/>
 			<xsd:element name="rate" type="cmn:MoneyType" minOccurs="0"/>
 		</xsd:sequence>
 	</xsd:complexType>
