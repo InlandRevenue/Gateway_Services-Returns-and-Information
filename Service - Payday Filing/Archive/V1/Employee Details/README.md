@@ -1,5 +1,5 @@
-![IRD logo](../../Images/IRlogo.gif)
-![Software Dev](../../Images/SoftwareDev.png)
+![IRD logo](../../../Images/IRlogo.gif)
+![Software Dev](../../../../Images/SoftwareDev.png)
 
 # Employee Details (ED) Software Development Kit (SDK)
 
@@ -18,7 +18,7 @@ Employees can send us changes to employee details using the Employment service.
 	- View and download the Employee Details (ED) [XSD](Employment.xsd) and [WSDL](EmploymentDevWsdl.wsdl) from this current directory
 	
 - Employment Service 
-	- [Download the build pack](Gateway%20Services%20Build%20Pack%20-%20Employment%20Service%20v1.8.pdf) to view data definitions of each operation and response status code definitions
+	- [Download the build pack](Gateway%20Services%20Build%20Pack%20-%20Employment%20Service%20.pdf) to view data definitions of each operation and response status code definitions
 	
 - Message Samples
     - [View Message samples for requests and positive responses](#message-samples)
