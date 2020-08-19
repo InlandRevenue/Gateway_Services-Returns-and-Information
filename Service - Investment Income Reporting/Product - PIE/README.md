@@ -12,12 +12,12 @@
 - Schemas and WSDLs
 	- View and download the [common v2 xsd](../../Common%20XSD/Common.v2.xsd)
 	- View and download the [Return Service common v2 xsd](../../Common%20XSD/ReturnCommon.v2.xsd)
-	- View and download the Annual PIE Reconciliation (ANN) return [XSD](ReturnPIEa.v1.xsd) and [WSDL](PIEaV1DevWsdl.wsdl) from this current directory
-	- View and download the Annual PIE Certificates return [XSD](ReturnPIEc.v1.xsd) and [WSDL](PIEcV1DevWsdl.wsdl) from this current directory
-	- View and download the Periodic PIE Return (without reconciliation) return [XSD](ReturnPIEp.v1.xsd) and [WSDL](PIEpV1DevWsdl.wsdl) from this current directory
+	- View and download the Annual PIE Reconciliation (_ANN_) return [XSD](ReturnPIEa.v1.xsd) and [WSDL](PIEaV1DevWsdl.wsdl) from this current directory
+	- View and download the Annual PIE Certificates return (_CER_) [XSD](ReturnPIEc.v1.xsd) and [WSDL](PIEcV1DevWsdl.wsdl) from this current directory
+	- View and download the Periodic PIE Return (without reconciliation) (_PRD_) return [XSD](ReturnPIEp.v1.xsd) and [WSDL](PIEpV1DevWsdl.wsdl) from this current directory
 	
 - Build Pack
-	- [Download the Return service - Investment Income Reporting build pack](../Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20III.pdf) to view data definitions of each operation and response status code definitions
+	- [Download the Return service - Investment Income Reporting build pack](Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20PIE.pdf) to view data definitions of each operation and response status code definitions
 	
 - Message samples
     - [View message samples for requests and positive responses](#message-samples)
@@ -40,40 +40,40 @@
 
 * File
 	* Income Type DIVINT
-		* [Request](sample%20messages/RWT_File_Request_incomeType_DIVINT.xml)   
-		* [Response](sample%20messages/RWT_File_Response_incomeType_DIVINT.xml)
+		* [Request](sample%20messages/PIE_File_Request_incomeType_DIVINT.xml)   
+		* [Response](sample%20messages/PIE_File_Response_incomeType_DIVINT.xml)
 		
 	* Income Type MAORI
-		* [Request](sample%20messages/RWT_File_Request_incomeType_MAORI.xml)
-		* [Response](sample%20messages/RWT_File_Response_incomeType_MAORI.xml)		
+		* [Request](sample%20messages/PIE_File_Request_incomeType_MAORI.xml)
+		* [Response](sample%20messages/PIE_File_Response_incomeType_MAORI.xml)		
 	
 	* Multiple Income Information
-		* [Request](sample%20messages/RWT_File_Request_with_multiple_income_information.xml)
-		* [Response](sample%20messages/RWT_File_Response_with_multiple_income_information.xml)	
+		* [Request](sample%20messages/PIE_File_Request_with_multiple_income_information.xml)
+		* [Response](sample%20messages/PIE_File_Response_with_multiple_income_information.xml)	
 		
 	* Multiple Joint Account Holders
-		* [Request](sample%20messages/RWT_File_Request_with_multiple_joint_account_holders.xml)
-		* [Response](sample%20messages/RWT_File_Response_with_multiple_joint_account_holders.xml)	
+		* [Request](sample%20messages/PIE_File_Request_with_multiple_joint_account_holders.xml)
+		* [Response](sample%20messages/PIE_File_Response_with_multiple_joint_account_holders.xml)	
 	
 * File Amendment
-	* [File Amendment](sample%20messages/RWT_File_Request_amendment.xml)
+	* [File Amendment](sample%20messages/PIE_File_Request_amendment.xml)
 	
 	* Request Amendment by Reference Id
-		* [Request](sample%20messages/RWT_File_Request_amendment_by_referenceId.xml)
-		* [Response](sample%20messages/RWT_File_Response_amendment_by_referenceId.xml)
+		* [Request](sample%20messages/PIE_File_Request_amendment_by_referenceId.xml)
+		* [Response](sample%20messages/PIE_File_Response_amendment_by_referenceId.xml)
 		
 * RetrieveReturn
 	* Retrieve Return with submission 	
-		* [Request](sample%20messages/RWT_RetrieveReturn_Request_with_submission_key.xml)
-		* [Response](sample%20messages/RWT_RetrieveReturn_Response_with_submission_key.xml)
+		* [Request](sample%20messages/PIE_RetrieveReturn_Request_with_submission_key.xml)
+		* [Response](sample%20messages/PIE_RetrieveReturn_Response_with_submission_key.xml)
 	* Retrieve Return without submission 	
-		* [Request](sample%20messages/RWT_RetrieveReturn_Request_without_submission_key.xml)
-		* [Response](sample%20messages/RWT_RetrieveReturn_Response_without_submission_key.xml)
+		* [Request](sample%20messages/PIE_RetrieveReturn_Request_without_submission_key.xml)
+		* [Response](sample%20messages/PIE_RetrieveReturn_Response_without_submission_key.xml)
 		
 * ReturnSatus	
 	* With submission Key
-		* [Request](sample%20messages/RWT_ReturnSatus_Request_without_submission_key.xml)
-		* [Response](sample%20messages/RWT_ReturnSatus_Request_with_submission_key.xml)
+		* [Request](sample%20messages/PIE_ReturnSatus_Request_without_submission_key.xml)
+		* [Response](sample%20messages/PIE_ReturnSatus_Request_with_submission_key.xml)
 	* Without submission Key
-		* [Request](sample%20messages/RWT_ReturnSatus_Response_without_submission_key.xml)
-		* [Response](sample%20messages/RWT_ReturnSatus_Response_with_submission_key.xml)
+		* [Request](sample%20messages/PIE_ReturnSatus_Response_without_submission_key.xml)
+		* [Response](sample%20messages/PIE_ReturnSatus_Response_with_submission_key.xml)
