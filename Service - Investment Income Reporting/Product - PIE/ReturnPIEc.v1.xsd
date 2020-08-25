@@ -1,33 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	NAME:		ReturnPIEc.v1.xsd
-	VER:		1.22
-	ISSUER:		Inland Revenue Department
-	DATE:		25-02-2020
-	DESC:		This schema defines the elements and related data types required for the Returns PIE Investor Certificates Gateway Service.
-	CHANGE(s):  - The following fields were moved from lineitems to incomeinformation:
-					rateChanged, unitsAtYearEnd, totalTaxCredits, taxableIncomeLowMid, netTaxPaidOnInvestorIncomeLowMid, totalTaxCreditOnInvestorIncomeLowMid
-					zeroRateExitedTaxableIncome, zeroRateTotalForeignTaxCredits, zeroRateTotalOtherTaxCredits, zeroRateTotalICTaxCredits.
-					zeroRateTaxPaymentExitedInvestors. 
-				- Removed the following fields from lineitems:
-					rateAtYearEnd, totalIncomeLoss, totalTaxCreditsOnIncome, netTaxPaidOnIncome.
-				- Removed residentialAddressLine1, residentialAddressLine2, residentialAddressLine3, residentialAddressLine4 from lineitems.
-				- Added contactAddress (takes the place of residentialAddressLine1-4).
-				- Added investorEmail, investorPhone to lineitems.
-				- Added jointInvestor to line items.
-				- Changed the following fields from type 'MoneyTypePositive' to 'MoneyType'.
-					totalTaxCredits, taxableIncomeLowMid, netTaxPaidOnInvestorIncomeLowMid, totalTaxCreditOnInvestorIncomeLowMid, zeroRateExitedTaxableIncome,
-					zeroRateTotalForeignTaxCredits, zeroRateTotalOtherTaxCredits, zeroRateTotalICTaxCredits, zeroRateTotalRWTTaxCredits, zeroRateTaxPaymentExitedInvestors. 
-				- Changed unitsAtYearEnd type to QuantityTypePositive. 
-				- investorName, investorIRD changed to be required.
-				- unitsAtYearEnd changed from QuantityTypePositive to MoneyTypePositive.
-				- updated nfidtaCountry from CountryType to enumeration of values.
-				- updated investorCertID maxLength from 14 to 20.
-				- updated line item country type, and account holder country type to ISO2A.
-				- totalTaxCredits and zeroRateTaxPaymentExitedInvestors type changed from MoneyType to MoneyTypePositive.
-				- removed field accountPercentage from PIEAccountHolderType.
-				- LineItemType referenceId changed from string max length 30 to string max length 20. 
+_______________________________________
+NAME:		ReturnPIEc.v1.xsd
+VER:		1.00
+ISSUER:		Inland Revenue Department
+DESC:		This schema defines the elements and related data types required for the Returns PIE Investor Certificates Gateway Service.
 
+' Date  			Change
+' **********		************
+' 2020-08-26		Version 1.00 release
+_______________________________________
 -->
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:www.ird.govt.nz/GWS:types/ReturnPIEc.v1" xmlns:cmn="urn:www.ird.govt.nz/GWS:types/Common.v2" xmlns:rc="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2" xmlns:r="urn:www.ird.govt.nz/GWS:types/ReturnPIEc.v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="urn:www.ird.govt.nz/GWS:types/ReturnPIEc.v1" elementFormDefault="qualified" attributeFormDefault="unqualified">
 	<!--Import Statement(s)-->
@@ -50,7 +32,7 @@
 				<xsd:sequence>
 					<xsd:element name="submissionKey" type="cmn:Quantity32TypePositive" minOccurs="0"/>
 					<xsd:element name="isReverseReplace" type="xsd:boolean" minOccurs="0"/>
-					<xsd:element name="lineItems" type="LineItemType" minOccurs="1" maxOccurs="5000"/>
+					<xsd:element name="lineItems" type="LineItemType" minOccurs="1" maxOccurs="3000"/>
 				</xsd:sequence>
 			</xsd:extension>
 		</xsd:complexContent>
