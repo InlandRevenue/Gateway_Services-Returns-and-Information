@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	NAME:		ReturnPIEa.v1.xsd
-	VER:		1
-	ISSUER:		Inland Revenue Department
-	DATE:		12-12-2019
-	DESC:		This schema defines the elements and related data types required for the Returns PIE Annual Gateway Service.
-	CHANGE(s):  - Removed fields accountCeaseDate and accountCeaseExplain
-				- Removed field isReverseReplace.
-				- Changed the following fields from type 'MoneyTypePositive' to type 'MoneyType':
-					totalIncomeLoss, totalTaxCreditOnInvestorIncome, netTaxPaidOnInvestorIncome, taxableIncomeLowMid, netTaxPaidOnInvestorIncomeLowMid, 
-					totalTaxCreditOnInvestorIncomeLowMid, zeroExitedTaxableIncome, zeroRateTotalForeignTaxCredits, zeroRateTotalOtherTaxCredits,
-					zeroRateTotalICTaxCredits, zeroRateTotalRWTTaxCredits
-				- Changed field totalCertificates to type QuantityTypePositive. 
-						
+_______________________________________
+NAME:		ReturnPIEa.v1.xsd
+VER:		1.00
+ISSUER:		Inland Revenue Department
+DESC:		This schema defines the elements and related data types required for the Returns PIE Annual Gateway Service.
+
+' Date  			Change
+' **********		************
+' 2020-08-26		Version 1.00 release
+_______________________________________
 -->
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:www.ird.govt.nz/GWS:types/ReturnPIEa.v1" xmlns:cmn="urn:www.ird.govt.nz/GWS:types/Common.v2" xmlns:rc="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2" xmlns:r="urn:www.ird.govt.nz/GWS:types/ReturnPIEa.v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="urn:www.ird.govt.nz/GWS:types/ReturnPIEa.v1" elementFormDefault="qualified" attributeFormDefault="unqualified">
 	<!--Import Statement(s)-->
