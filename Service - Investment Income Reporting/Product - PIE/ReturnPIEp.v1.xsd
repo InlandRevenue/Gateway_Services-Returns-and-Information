@@ -1,20 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	NAME:		  ReturnPIEp.v1.xsd
-	VER:		  1
-	ISSUER:		  Inland Revenue Department
-	DATE:		  2020-01-23
-	DESC:		  This schema defines the elements and related data types required for the Returns PIE Gateway Service.
-	CHANGES:	
-				- Removed field netTaxPayable
-				- Removed field combinedLossIncome
-				- Removed field landLossCarryForward
-				- Updated the following fields from type="MoneyTypePositive" to "MoneyType" in order to allow negative values. 
-					grossIncome, deductibleExpenses, netLossIncome, netLossLandIncome, incomeRetained, incomeExitedInvestors, 
-					investorExpenses, residentWithholdingTax, taxLiability, foreignTaxCredit, imputationCredit, otherTaxCredit,
-					incomeAttributedNFI, taxPaidNFI. 
-				- Re-added field combinedLossIncome
-				- Re-added field landLossCarryForward
+_______________________________________
+NAME:		ReturnPIEp.v1.xsd
+VER:		1.00
+ISSUER:		Inland Revenue Department
+DESC:		This schema defines the elements and related data types required for the Returns PIE Gateway Service.
+
+' Date  			Change
+' **********		************
+' 2020-08-26		Version 1.00 release	
+_______________________________________
 -->
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:www.ird.govt.nz/GWS:types/ReturnPIEp.v1" xmlns:cmn="urn:www.ird.govt.nz/GWS:types/Common.v2" xmlns:rc="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2" xmlns:r="urn:www.ird.govt.nz/GWS:types/ReturnPIEp.v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="urn:www.ird.govt.nz/GWS:types/ReturnPIEp.v1" elementFormDefault="qualified" attributeFormDefault="unqualified">
 	<!--Import Statement(s)-->
