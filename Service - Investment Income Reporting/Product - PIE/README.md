@@ -1,7 +1,8 @@
 ![IRD logo](../../Images/IRlogo.gif)
 ![Software Dev](../../Images/SoftwareDev.png)
 
-# Portfolio investment entities (PIE) attributed income tax Software Development Kit (SDK) for Investment Income Reporting
+# Portfolio investment entities (PIE) attributed income tax for Investment Income Reporting
+
 #### Latest Release V1.0 - August 2020
 
 ## Key Documentation
