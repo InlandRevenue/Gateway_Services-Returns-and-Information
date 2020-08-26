@@ -2,11 +2,15 @@
 <!-- Documentation
 _______________________________________
 NAME: 		Common.v2.xsd
-VER:		2.4
+VER:		2.5
 ISSUER:		Inland Revenue Department
-DATE:		13/05/2020
 DESC:		This schema defines the common data types used accross the IRD hosted, Gateway Services.
-CHANGES:        From 2.3 - EmailAddressType regex updated to allow printable chars ._%+!#$%*+=?^`{|}~()\-\/&amp;&apos;&quot; as specificed by RFC 5322
+
+' Date  			Change
+' **********		************
+' 2020-08-18		Correct account type list in annotation for AccountTypeType
+'					Add "ACC" ID type to IdentifierValueTypeType annotation
+' 2020-05-11		EmailAddressType regex updated to allow printable chars ._%+!#$%*+=?^`{|}~()\-\/&amp;&apos;&quot; as specificed by RFC 5322
 _______________________________________
 -->
 <xsd:schema xmlns="urn:www.ird.govt.nz/GWS:types/Common.v2" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="urn:www.ird.govt.nz/GWS:types/Common.v2" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0">
@@ -231,6 +235,7 @@ _______________________________________
 				IRD: Inland Revenue Dept. Number
 				ACCIRD: Account IRD
 				CST: Customer ID (Software Intermediaries only)
+				ACC: A unique account identifier
 			</xsd:documentation>
 		</xsd:annotation>
 		<xsd:restriction base="xsd:token">
@@ -264,35 +269,43 @@ _______________________________________
 		<xsd:annotation>
 			<xsd:documentation xml:lang="en">
 				Example Account Types:
-					GST: GST
-					GSD: Goods sold in satisfaction of a debt
-					INC: Income tax
 					AIL: Approved issuer levy
-					CPR: Child support - custodian
-					CSE: Child support employer deductions
-					NCP: Child support - paying parent
-					SSC: Employer superannuation contribution tax
-					FBA: Fringe benefit tax - annual
-					FBI: Fringe benefit tax - income year
+					AIP: Account Information Provider
+					BPA: Multi payment option (MPO)
+					CAD: Casino duty
+					CPR: Receiving carer
+					CRS: Common Reporting Standard
+					DWT: Dividend withholding tax
+					EQU: Income Equalisation
+					ERA: Environmental Restoration
+					FAM: Working for Families
+					FAT: FATCA
 					FBT: Fringe benefit tax
-					WPN: Foreign dividend - annual return
-					WPE: Foreign dividend - quarterly return
+					FTR: Foreign trust
 					GMD: Gaming machine duty
-					ICA: Imputation credit account
-					KSE: KiwiSaver employee deductions
-					KSR: KiwiSaver employer contributions
-					KSS: KiwiSaver voluntary contributions
-					MAC: Maori authority credit
-					NRT: NRWT deductions
-					PAY: PAYE employer deductions
-					PIE: Portfolio investment entity tax
-					QCT: Qualifying company election tax
-					DWT: RWT deductions on dividends
-					RWT: RWT deductions on interest
-					IPE: RWT deductions on specified dividends
-					SLS: Student load borrower
-					SLE: Student load employer deductions
-					FAM: Working for Families Tax Credits
+					GSD: GST satisfaction of debt
+					GST: GST
+					INC: Income tax
+					IPS: RWT on interest
+					KSF: KiwiSaver scheme
+					KSS: KiwiSaver Member
+					LOD: Lottery duty
+					NCP: Liable parent
+					NRT: Non-resident withholding tax
+					PIE: Portfolio investment entity
+					PPL: Paid Parental Leave
+					PRS: Payroll subsidy
+					EMP: Payroll
+					RDI: Research and Development Tax Incentive
+					REB: Donation tax credit
+					RLT: Residential land withholding tax
+					RUL: Rulings and determinations
+					RWT: Resident withholding tax
+					SBC: Small Business loan
+					SLS: Student loan
+					TOD: Totalisator duty
+					TPA: Tax Pooling Account
+					UCM: Unclaimed item holder
 			</xsd:documentation>
 		</xsd:annotation>
 		<xsd:restriction base="xsd:token">
