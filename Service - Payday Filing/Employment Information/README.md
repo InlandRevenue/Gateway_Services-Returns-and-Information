@@ -61,7 +61,7 @@ The following key changes have been made to the Employment Information Return Se
 	* Removed values from TaxCode table: 'ESS', 'SLCIR' and 'SLBOR'
 	* Added three new optional fields:  'totalESSEarnings',  'totalSLCIRDeductions' and  'totalSLBORDeductions'.
 	* Added note to clarify use of childSupportCode
-	* There is a behaviour change between EI v1 and EI v2. In EI v1, a return can be filed and then immediately amended after receiving a successful response. An EI v2, a return must be processed in order to be amended. It can take up to one day for a return to be processed. 
+	* There is a behaviour change between EI v1 and EI v2. In EI v1, a return can be filed and then immediately amended after receiving a successful response. An EI v2, a return must be processed in order to be amended. Returns will process within 5 minutes. 
 * Retrieve Return
 	* New optional fields above will also be included in the Retrieve Return response
 	* Added note to Retrieve Return to clarify that it will return all existing fields on the return
