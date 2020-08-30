@@ -37,6 +37,13 @@
 
 -----------------
 
+## Mock environment information
+
+- Portfolio investment entities mock scenarios mind map
+	
+	- [View larger image](images/C121.02%20-%20PIR%20Calculator%20API%20Mock%20Service.png)
+	![Mock Scenarios](images/C121.02%20-%20PIR%20Calculator%20API%20Mock%20Service.png)
+
 ## Message samples
 
 * File
