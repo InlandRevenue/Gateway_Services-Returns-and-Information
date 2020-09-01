@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-	NAME:             ReturnIR215.v1.xsd
-	VER:              1.1
-	ISSUER:           Inland Revenue Department
-	DATE:             20/11/2019
-	DESC:             This schema defines the elements and related data types required for the Adjust Your Income Tax 2020 Gateway Service.
-	CHANGE(s):
-	* nonResidentForeignSourcedIncome removed
+<!-- Documentation
+_______________________________________
+NAME: 	ReturnIR215.v1.xsd
+VER:	1.11
+ISSUER:	Inland Revenue Department
+DESC:	This schema defines the elements and related data types required for the Adjust Your Income Tax Gateway Service.
+
+' Date  			Change
+' **********		************
+' 2020-08-24		Updated datatype of percentageOfSharesHeld to restrict values between 10 and 100.
+' 2019-11-20		Initial
+_______________________________________
 -->
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:www.ird.govt.nz/GWS:types/ReturnIR215.v1" xmlns:cmn="urn:www.ird.govt.nz/GWS:types/Common.v2" xmlns:rc="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2" xmlns:ic="urn:www.ird.govt.nz/GWS:types/IncomeReturnCommon.v1" xmlns:r="urn:www.ird.govt.nz/GWS:types/ReturnIR215.v1" targetNamespace="urn:www.ird.govt.nz/GWS:types/ReturnIR215.v1" elementFormDefault="qualified" attributeFormDefault="unqualified">
 	<!--Begin Imports Statement(s)-->
@@ -93,10 +97,16 @@
 	<xsd:complexType name="CompanyIncomeType">
 		<xsd:sequence>
 			<xsd:element name="netIncomeForCompanyIncomeYear" type="cmn:MoneyType" minOccurs="0"/>
-			<xsd:element name="percentageOfSharesHeld" type="cmn:PercentageType" minOccurs="0"/>
+			<xsd:element name="percentageOfSharesHeld" type="SharePercentageType" minOccurs="0"/>
 			<xsd:element name="totalDividendsPaidByCompany" type="cmn:MoneyType" minOccurs="0"/>
 		</xsd:sequence>
 	</xsd:complexType>
+	<xsd:simpleType name="SharePercentageType">
+		<xsd:restriction base="cmn:PercentageType">
+			<xsd:minInclusive value="10"/>
+			<xsd:maxInclusive value="100"/>
+		</xsd:restriction>
+	</xsd:simpleType>
 	<!--RetrieveReturnRequestType is unique for Indvidual Income Tax-->
 	<xsd:complexType name="RetrieveReturnResponseBodyType">
 		<xsd:complexContent>
