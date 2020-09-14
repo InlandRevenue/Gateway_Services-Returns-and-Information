@@ -32,12 +32,5 @@
 
 * Service: Identity and Access – view [how to integrate, OAuth requests, message samples and build pack](https://github.com/InlandRevenue/Gateway_Services-Access/tree/master/Identity%20and%20Access)
 
------------------
 
-## Mock environment information
-
-- Portfolio investment entities mock scenarios mind map
-	
-	- [View larger image](images/C121.02%20-%20PIR%20Calculator%20API%20Mock%20Service.png)
-	![Mock Scenarios](images/C121.02%20-%20PIR%20Calculator%20API%20Mock%20Service.png)
 
