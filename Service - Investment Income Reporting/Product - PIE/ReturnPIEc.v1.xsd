@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+_______________________________________
+NAME:		ReturnPIEc.v1.xsd
+VER:		1.00
+ISSUER:		Inland Revenue Department
+DESC:		This schema defines the elements and related data types required for the Returns PIE Investor Certificates Gateway Service.
+
+' Date  			Change
+' **********		************
+' 2020-08-26		Version 1.00 release
+_______________________________________
+-->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:www.ird.govt.nz/GWS:types/ReturnPIEc.v1" xmlns:cmn="urn:www.ird.govt.nz/GWS:types/Common.v2" xmlns:rc="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2" xmlns:r="urn:www.ird.govt.nz/GWS:types/ReturnPIEc.v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="urn:www.ird.govt.nz/GWS:types/ReturnPIEc.v1" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<!--Import Statement(s)-->
+	<xsd:import namespace="urn:www.ird.govt.nz/GWS:types/Common.v2" schemaLocation="./Common.v2.xsd">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">Contains common data types.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:import>
+	<xsd:import namespace="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2" schemaLocation="./ReturnCommon.v2.xsd">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">Contains common return data types.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:import>
+	<!--File Element-->
+	<xsd:element name="fileRequest" type="rc:FileRequestType"/>
+	<!--Override FormFieldsType-->
+	<xsd:complexType name="FormFieldsType">
+		<xsd:complexContent>
+			<xsd:extension base="rc:FormFieldsType">
+				<xsd:sequence>
+					<xsd:element name="submissionKey" type="cmn:Quantity32TypePositive" minOccurs="0"/>
+					<xsd:element name="isReverseReplace" type="xsd:boolean" minOccurs="0"/>
+					<xsd:element name="lineItems" type="LineItemType" minOccurs="1" maxOccurs="3000"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="LineItemType">
+		<xsd:sequence>
+			<xsd:element name="referenceId">
+			<xsd:simpleType>
+					<xsd:restriction base="xsd:normalizedString">
+						<xsd:minLength value="1"/>
+						<xsd:maxLength value="20"/>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:element>
+			<xsd:element name="amendType" type="rc:LineItemAmendType" minOccurs="0"/>
+			<xsd:element name="issuerIRD" type="cmn:IRDNumberType"/>
+			<xsd:element name="investorName" type="cmn:String255"/>
+			<xsd:element name="investorIRD" type="cmn:IRDNumberType"/>
+			<xsd:element name="investorDOB" type="cmn:DateType" minOccurs="0"/>
+			<xsd:element name="investorCertID">
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:normalizedString">
+						<xsd:minLength value="1"/>
+						<xsd:maxLength value="20"/>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:element>
+			<xsd:element name="investorEmail" type="cmn:EmailAddressType" minOccurs="0"/>
+			<xsd:element name="investorPhone" type="cmn:UnstructuredPhoneNumberType" minOccurs="0"/>
+			<xsd:element name="jointInvestor" type="xsd:boolean" minOccurs="0"/>
+			<xsd:element name="certPeriodEndDate" type="cmn:DateType"/>
+			<xsd:element name="contactAddress" type="cmn:String255" minOccurs="0"/>
+			<xsd:element name="country" type="cmn:Country2DigitType" minOccurs="0"/>
+			<xsd:element name="homeCountryTaxFilerNumber" minOccurs="0">
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:token">
+						<xsd:minLength value="1"/>
+						<xsd:maxLength value="20"/>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:element>
+			<xsd:element name="nfidtaCountry" minOccurs="0">
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:token">
+						<xsd:enumeration value="NFIDTA"/>
+						<xsd:enumeration value="NFINONDTA"/>
+						<xsd:enumeration value="NFINONE"/>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:element>
+			<xsd:element name="noTaxFileNumber" type="xsd:boolean" minOccurs="0"/>
+			<xsd:element name="accountHolders" type="PIEAccountHolderType" minOccurs="0" maxOccurs="500"/>
+			<xsd:element name="incomeInformation" type="PIEIncomeType" maxOccurs="10"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<!--RetrieveReturn Structure-->
+	<!--RetrieveReturnRequestType is unique to PIE because a return can be filed multiple times during a period.-->
+	<xsd:complexType name="RetrieveReturnResponseBodyType">
+		<xsd:complexContent>
+			<xsd:extension base="rc:RetrieveReturnResponseBodyType">
+				<xsd:sequence>
+					<xsd:element name="formFields" type="FormFieldsType"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="RetrieveReturnPIERequestType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">Defines the request for the RetrieveReturn operation for RWT. This retrieval type allows for a submissionKey to target a specific return in a period where multiple returns are allowed.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="rc:FormInfoRequestType">
+				<xsd:sequence>
+					<xsd:element name="submissionKey" type="cmn:QuantityTypePositive" minOccurs="0"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:element name="retrievePIERequest" type="RetrieveReturnPIERequestType"/>
+	<!--DataTypes-->
+	<xsd:complexType name="PIEAccountHolderType">
+		<xsd:complexContent>
+			<xsd:extension base="rc:Recipient">
+				<xsd:sequence>
+					<xsd:element name="country" type="cmn:Country2DigitType" minOccurs="0"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="PIEIncomeType">
+		<xsd:complexContent>
+			<xsd:extension base="rc:Income">
+				<xsd:sequence>
+					<xsd:element name="rateChanged" type="xsd:boolean" minOccurs="0"/>
+					<xsd:element name="unitsAtYearEnd" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="totalTaxCredits" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="taxableIncomeLowMid" type="cmn:MoneyType" minOccurs="0"/>
+					<xsd:element name="netTaxPaidOnInvestorIncomeLowMid" type="cmn:MoneyType" minOccurs="0"/>
+					<xsd:element name="totalTaxCreditOnInvestorIncomeLowMid" type="cmn:MoneyType" minOccurs="0"/>
+					<xsd:element name="zeroRateExitedTaxableIncome" type="cmn:MoneyType" minOccurs="0"/>
+					<xsd:element name="zeroRateTotalForeignTaxCredits" type="cmn:MoneyType" minOccurs="0"/>
+					<xsd:element name="zeroRateTotalOtherTaxCredits" type="cmn:MoneyType" minOccurs="0"/>
+					<xsd:element name="zeroRateTotalICTaxCredits" type="cmn:MoneyType" minOccurs="0"/>
+					<xsd:element name="zeroRateTotalRWTTaxCredits" type="cmn:MoneyType" minOccurs="0"/>
+					<xsd:element name="zeroRateTaxPaymentExitedInvestors" type="cmn:MoneyTypePositive" minOccurs="0"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+</xsd:schema>

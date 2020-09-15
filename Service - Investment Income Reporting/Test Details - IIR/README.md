@@ -9,6 +9,7 @@
 	- [Interest Pay as you go (IPS)](../Product%20-%20IPS)
 	- [Non Resident Withholding Tax (NRT)](../Product%20-%20NRT)
 	- [Resident Withholding Tax (RWT)](../Product%20-%20RWT)
+	- [Portfolio Investment Entities (PIE)](../Product%20-%20PIE)
 
 - Mock environment information
 	- [Mind map and test data](#mock-environment-information)
@@ -80,9 +81,14 @@
 ## Mock environment
 -----------------
 
-- Mock URLs:
+- Mock URLs IIR:
 	- Mock emulated services	-	https://mock-iir.ird.digitalpartner.services/ 
-	- Mock URL endpoint			- 	https://mock-iir.ird.digitalpartner.services/gateway/GWS/Returns/
+	- Mock URL endpoint			- 	https://mock-iir.ird.digitalpartner.services/secure/gateway/GWS/Returns/
+
+- Mock URLs PIE:
+	- Mock emulated services	-	https://mock-pie.ird.digitalpartner.services/ 
+	- Mock URL endpoint			- 	https://mock-pie.ird.digitalpartner.services/secure/gateway/GWS/Returns/
+
 
 - Returns service mappings - (default) port 443 of path "/gateway/GWS/Returns":
 	- /gateway/GWS/Returns?wsdl - WSDL is not available, returning HTTP 200 only.
@@ -115,6 +121,7 @@
 	- [Download IPS test scenarios report template](Investment%20Income%20Reporting%20-%20Tax%20Type%20-%20IPS%20-%20%20Test%20Scenarios%20Report%20Template.docx)
 	- [Download NRT test scenarios report template](Investment%20Income%20Reporting%20-%20Tax%20Type%20-%20NRT%20-%20%20Test%20Scenarios%20Report%20Template.docx)
 	- [Download RWT test scenarios report template](Investment%20Income%20Reporting%20-%20Tax%20Type%20-%20RWT%20-%20%20Test%20Scenarios%20Report%20Template.docx)
+	- PIE test scenarios report template - Work in progress. 
 
 - Test URL endpoints
     - Cloud gateway service: https://test5.services.ird.govt.nz:4046/gateway/gws/returns/
