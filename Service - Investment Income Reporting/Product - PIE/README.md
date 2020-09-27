@@ -19,7 +19,55 @@
 	
 - Build Pack
 	- [Download the Return service - Investment Income Reporting build pack](Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20PIE.pdf) to view data definitions of each operation and response status code definitions
+
+- Message samples
+    - [View message samples for requests and positive responses](#message-samples)
+
+
+
+## Supporting services
+
+* Service: Identity and Access – view [how to integrate, OAuth requests, message samples and build pack](https://github.com/InlandRevenue/Gateway_Services-Access/tree/master/Identity%20and%20Access)
+
+---
+## Message samples
+
+* File
+	* Income Type ANN
+		* [Request](sample%20messages/ANNFilePayload25092020.xml)   
+		* [Request](sample%20messages/FileSuccessResponse25092020.xml)  
+		
+	* Income Type CER
+		* [Request](sample%20messages/CERFilePayload25092020.xml)
+		* [Request](sample%20messages/FileSuccessResponse25092020.xml)  
 	
+	* Income Type PRD
+		* [Request](sample%20messages/PRDFilePayload25092020.xml)
+		* [Request](sample%20messages/FileSuccessResponse25092020.xml)  
+		
+* RetrieveReturn
+	* Income Type ANN 	
+		* [Request](sample%20messages/ANNRetrieveReturnPayload25092020.xml)
+		* [Response](sample%20messages/ANNRetrieveReturnResponse25092020.xml)
+	* Income Type CER
+		* [Request](sample%20messages/CERRetrieveReturnPayload25092020.xml)
+		* [Response](sample%20messages/CERRetrieveReturnResponse25092020.xml)
+	* Income Type PRD
+		* [Request](sample%20messages/PRDRetrieveReturnPayload25092020.xml)
+		* [Response](sample%20messages/PRDRetrieveReturnResponse25092020.xml)
+
+		
+* ReturnSatus	
+	* Income Type ANN 	
+		* [Request](sample%20messages/ANNRetrieveStatusPayload25092020.xml)
+		* [Response](sample%20messages/ANNRetrieveStatusResponse25092020.xml)
+	* Income Type CER
+		* [Request](sample%20messages/CERRetrieveStatusPayload25092020.xml)
+		* [Response](sample%20messages/CERRetrieveStatusResponse25092020.xml)
+	* Income Type PRD
+		* [Request](sample%20messages/PRDRetrieveStatusPayload25092020.xml)
+		* [Response](sample%20messages/PRDRetrieveStatusResponse25092020.xml)
+
 ## Environment information
 
 - Mock environment information - [mindmap and test data](../Test%20Details%20-%20IIR/README.md#mock-environment-information), [Mock URL endpoints](../Test%20Details%20-%20IIR/README.md#mock-environment) 
