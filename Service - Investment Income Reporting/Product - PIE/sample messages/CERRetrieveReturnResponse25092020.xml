@@ -1,0 +1,70 @@
+A Successful CER Retrieve Return Response
+
+<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">
+    <s:Header>
+        <a:Action s:mustUnderstand="1">https://services.ird.govt.nz/GWS/Returns/Return/RetrieveReturnResponse</a:Action>
+    </s:Header>
+    <s:Body>
+        <RetrieveReturnResponse xmlns="https://services.ird.govt.nz/GWS/Returns/">
+            <RetrieveReturnResult xmlns:b="https://services.ird.govt.nz/GWS/Returns/:types/RetrieveReturnResponse" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+                <b:RetrieveReturnResponseWrapper>
+                    <retrieveReturnResponse xmlns="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2">
+                        <statusMessage xmlns="urn:www.ird.govt.nz/GWS:types/Common.v2">
+                            <statusCode>0</statusCode>
+                            <errorMessage/>
+                        </statusMessage>
+                        <responseBody xsi:type="r:RetrieveReturnResponseBodyType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:r="urn:www.ird.govt.nz/GWS:types/ReturnPIEc.v1" xmlns:rc="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2" xmlns:cmn="urn:www.ird.govt.nz/GWS:types/Common.v2">
+                            <r:formFields>
+                                <r:submissionKey>888073856</r:submissionKey>
+                                <r:lineItems>
+                                    <r:referenceId>CERT-Dizur1</r:referenceId>
+                                    <r:issuerIRD>139125746</r:issuerIRD>
+                                    <r:investorName>Aleksei, Dizur</r:investorName>
+                                    <r:investorIRD>132340307</r:investorIRD>
+                                    <r:investorDOB>1981-09-13</r:investorDOB>
+                                    <r:investorCertID>CERT-Dizur1</r:investorCertID>
+                                    <r:investorEmail>dizur@gmail.com</r:investorEmail>
+                                    <r:investorPhone>0221356587</r:investorPhone>
+                                    <r:jointInvestor>true</r:jointInvestor>
+                                    <r:certPeriodEndDate>2021-03-31</r:certPeriodEndDate>
+                                    <r:contactAddress>32 Rua Road</r:contactAddress>
+                                    <r:country>NZ</r:country>
+                                    <r:homeCountryTaxFilerNumber>132-562-235</r:homeCountryTaxFilerNumber>
+                                    <r:nfidtaCountry>NFIDTA</r:nfidtaCountry>
+                                    <r:noTaxFileNumber>true</r:noTaxFileNumber>
+                                    <r:accountHolders>
+                                        <rc:irdNumber>132340153</rc:irdNumber>
+                                        <rc:dateOfBirth>1981-09-13</rc:dateOfBirth>
+                                        <rc:name>Givins, John</rc:name>
+                                        <rc:address>85 Apata Road RD4 Katikati</rc:address>
+                                        <rc:phone>069409301</rc:phone>
+                                        <rc:email>cambler@marriott.com</rc:email>
+                                        <r:country>NZ</r:country>
+                                    </r:accountHolders>
+                                    <r:incomeInformation>
+                                        <rc:incomeType>PIE</rc:incomeType>
+                                        <rc:grossAmount>300.01</rc:grossAmount>
+                                        <rc:deductedAmount>100.00</rc:deductedAmount>
+                                        <rc:rate>10.50</rc:rate>
+                                        <r:rateChanged>false</r:rateChanged>
+                                        <r:unitsAtYearEnd>2.00</r:unitsAtYearEnd>
+                                        <r:totalTaxCredits>1.00</r:totalTaxCredits>
+                                        <r:taxableIncomeLowMid>200.00</r:taxableIncomeLowMid>
+                                        <r:netTaxPaidOnInvestorIncomeLowMid>50.00</r:netTaxPaidOnInvestorIncomeLowMid>
+                                        <r:totalTaxCreditOnInvestorIncomeLowMid>15.00</r:totalTaxCreditOnInvestorIncomeLowMid>
+                                        <r:zeroRateExitedTaxableIncome>1.00</r:zeroRateExitedTaxableIncome>
+                                        <r:zeroRateTotalForeignTaxCredits>5.00</r:zeroRateTotalForeignTaxCredits>
+                                        <r:zeroRateTotalOtherTaxCredits>2.00</r:zeroRateTotalOtherTaxCredits>
+                                        <r:zeroRateTotalICTaxCredits>3.00</r:zeroRateTotalICTaxCredits>
+                                        <r:zeroRateTotalRWTTaxCredits>4.00</r:zeroRateTotalRWTTaxCredits>
+                                        <r:zeroRateTaxPaymentExitedInvestors>0.00</r:zeroRateTaxPaymentExitedInvestors>
+                                    </r:incomeInformation>
+                                </r:lineItems>
+                            </r:formFields>
+                        </responseBody>
+                    </retrieveReturnResponse>
+                </b:RetrieveReturnResponseWrapper>
+            </RetrieveReturnResult>
+        </RetrieveReturnResponse>
+    </s:Body>
+</s:Envelope>
