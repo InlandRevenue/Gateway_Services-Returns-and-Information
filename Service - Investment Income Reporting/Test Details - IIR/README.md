@@ -31,6 +31,11 @@
 	- [View larger image](images/IIR-mockServiceScope-scenarios.png)
 	![Mock Scenarios](images/IIR-mockServiceScope-scenarios.png)
 
+	- Investment Income Reporting mock scenarios mind map for PIE
+	
+	- [View larger image](images/C42%20-%20PIE%20Emulated%20Service%20ScenariosV1_4.jpg)
+	![Mock Scenarios](images/C42%20-%20PIE%20Emulated%20Service%20ScenariosV1_4.jpg)
+
 - Test data
 	- The following test data can be tested in our mock services environment when submitting requests to the service operations for the following invest income reporting tax types (AIL / DWT/ IPS/ NT / RWT)
 	
