@@ -1,0 +1,28 @@
+CER Retrieve Status
+
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ret="https://services.ird.govt.nz/GWS/Returns/" xmlns:ret1="https://services.ird.govt.nz/GWS/Returns/:types/RetrieveStatusRequest" xmlns:ret2="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2" xmlns:com="urn:www.ird.govt.nz/GWS:types/Common.v2">
+    <soap:Header xmlns:a="http://www.w3.org/2005/08/addressing">
+        <a:Action>https://services.ird.govt.nz/GWS/Returns/Return/RetrieveStatus</a:Action>
+    </soap:Header>
+    <soap:Body>
+        <ret:RetrieveStatus>
+            <ret:ReturnStatusRequestMsg>
+                <ret1:RetrieveStatusRequestWrapper>
+                    <ret2:retrieveFormInfoRequest>
+                        <com:softwareProviderData>
+                            <com:softwareProvider>softwareProvider</com:softwareProvider>
+                            <com:softwarePlatform>softwarePlatform</com:softwarePlatform>
+                            <com:softwareRelease>v1</com:softwareRelease>
+                        </com:softwareProviderData>
+                        <com:identifier IdentifierValueType="IRD">139125193</com:identifier>
+                        <com:accountType>PIE</com:accountType>
+                        <ret2:periodEndDate>2021-03-31</ret2:periodEndDate>
+                        <ret2:majorFormType>PIE</ret2:majorFormType>
+                        <ret2:minorFormType>CER</ret2:minorFormType>
+                        <ret2:submissionKey>461643392</ret2:submissionKey>
+                    </ret2:retrieveFormInfoRequest>
+                </ret1:RetrieveStatusRequestWrapper>
+            </ret:ReturnStatusRequestMsg>
+        </ret:RetrieveStatus>
+    </soap:Body>
+</soap:Envelope>

@@ -1,0 +1,77 @@
+Periodic File Return
+
+
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:r="https://services.ird.govt.nz/GWS/Returns/" xmlns:fil="https://services.ird.govt.nz/GWS/Returns/:types/FileRequest" xmlns:a="http://www.w3.org/2005/08/addressing" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soap:Header xmlns:a="http://www.w3.org/2005/08/addressing">
+        <a:Action>https://services.ird.govt.nz/GWS/Returns/Return/File</a:Action>
+    </soap:Header>
+    <soap:Body>
+        <r:File>
+            <r:ReturnFileRequestMsg>
+                <fil:FileRequestWrapper>
+                    <ret:fileRequest xmlns:ret="urn:www.ird.govt.nz/GWS:types/ReturnPIEp.v1" xmlns:ret1="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2" xmlns:com="urn:www.ird.govt.nz/GWS:types/Common.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                        <ret1:fileHeader>
+                            <com:softwareProviderData>
+                                <com:softwareProvider>softwareProvider</com:softwareProvider>
+                                <com:softwarePlatform>softwarePlatform</com:softwarePlatform>
+                                <com:softwareRelease>v1</com:softwareRelease>
+                            </com:softwareProviderData>
+                            <com:identifier IdentifierValueType="IRD">139125746</com:identifier>
+                            <com:accountType>PIE</com:accountType>
+                            <ret1:periodEndDate>2021-03-31</ret1:periodEndDate>
+                            <ret1:majorFormType>PIE</ret1:majorFormType>
+                            <ret1:minorFormType>PRD</ret1:minorFormType>
+                        </ret1:fileHeader>
+                        <ret1:fileBody xmlns:ret="urn:www.ird.govt.nz/GWS:types/ReturnPIEp.v1" xmlns:ret1="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2">
+                            <ret1:standardFields>
+                                <ret1:isNilReturn>false</ret1:isNilReturn>
+                                <ret1:isFinalReturn>false</ret1:isFinalReturn>
+                                <ret1:amendmentRequest>
+                                    <ret1:isAmended>false</ret1:isAmended>
+                                    <ret1:amendReason/>
+                                    <ret1:amendDetails/>
+                                </ret1:amendmentRequest>
+                            </ret1:standardFields>
+                            <ret1:formFields xsi:type="ret:FormFieldsType">
+                                <ret:includeAprilToFeb>true</ret:includeAprilToFeb>
+                                <ret:totalInvestmentValue>1000.00</ret:totalInvestmentValue>
+                                <ret:grossIncome>1000.00</ret:grossIncome>
+                                <ret:deductibleExpenses>1000.00</ret:deductibleExpenses>
+                                <ret:netLossIncome>1000.00</ret:netLossIncome>
+                                <ret:netLossLandIncome>1000.00</ret:netLossLandIncome>
+                                <ret:combinedLossIncome>1000.00</ret:combinedLossIncome>
+                                <ret:formationLoss>1000.00</ret:formationLoss>
+                                <ret:landLossBroughtForward>1000.00</ret:landLossBroughtForward>
+                                <ret:landLossClaimed>1000.00</ret:landLossClaimed>
+                                <ret:landLossCarryForward>1000.00</ret:landLossCarryForward>
+                                <ret:totalIncome>1000.00</ret:totalIncome>
+                                <ret:totalLoss>1000.00</ret:totalLoss>
+                                <ret:incomeRetained>1000.00</ret:incomeRetained>
+                                <ret:incomeExitedInvestors>1000.00</ret:incomeExitedInvestors>
+                                <ret:investorExpenses>1000.00</ret:investorExpenses>
+                                <ret:totalIncomeToAttribute>1000.00</ret:totalIncomeToAttribute>
+                                <ret:totalLossToAttribute>1000.00</ret:totalLossToAttribute>
+                                <ret:incomeAttributedZero>1000.00</ret:incomeAttributedZero>
+                                <ret:incomeAttributedLow>1000.00</ret:incomeAttributedLow>
+                                <ret:incomeAttributedMid>1000.00</ret:incomeAttributedMid>
+                                <ret:incomeAttributedTop>1000.00</ret:incomeAttributedTop>
+                                <ret:lossAttributedZero>1000.00</ret:lossAttributedZero>
+                                <ret:lossAttributedLow>1000.00</ret:lossAttributedLow>
+                                <ret:lossAttributedMid>1000.00</ret:lossAttributedMid>
+                                <ret:lossAttributedTop>1000.00</ret:lossAttributedTop>
+                                <ret:foreignTaxCredit>1000.00</ret:foreignTaxCredit>
+                                <ret:otherTaxCredit>1000.00</ret:otherTaxCredit>
+                                <ret:imputationCredit>1000.00</ret:imputationCredit>
+                                <ret:residentWithholdingTax>1000.00</ret:residentWithholdingTax>
+                                <ret:taxLiability>1000.00</ret:taxLiability>
+                                <ret:taxPaymentExitedInvestors>1000.00</ret:taxPaymentExitedInvestors>
+                                <ret:incomeAttributedNFI>1000.00</ret:incomeAttributedNFI>
+                                <ret:taxPaidNFI>1000.00</ret:taxPaidNFI>
+                            </ret1:formFields>
+                        </ret1:fileBody>
+                    </ret:fileRequest>
+                </fil:FileRequestWrapper>
+            </r:ReturnFileRequestMsg>
+        </r:File>
+    </soap:Body>
+</soap:Envelope>

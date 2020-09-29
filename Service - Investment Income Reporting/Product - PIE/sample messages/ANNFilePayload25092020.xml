@@ -1,0 +1,56 @@
+ANN File Return
+
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:r="https://services.ird.govt.nz/GWS/Returns/" xmlns:fil="https://services.ird.govt.nz/GWS/Returns/:types/FileRequest" xmlns:a="http://www.w3.org/2005/08/addressing" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soap:Header xmlns:a="http://www.w3.org/2005/08/addressing">
+        <a:Action>https://services.ird.govt.nz/GWS/Returns/Return/File</a:Action>
+    </soap:Header>
+    <soap:Body>
+        <r:File>
+            <r:ReturnFileRequestMsg>
+                <fil:FileRequestWrapper>
+                    <ret:fileRequest xmlns:ret="urn:www.ird.govt.nz/GWS:types/ReturnPIEa.v1" xmlns:ret1="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2" xmlns:com="urn:www.ird.govt.nz/GWS:types/Common.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                        <ret1:fileHeader>
+                            <com:softwareProviderData>
+                                <com:softwareProvider>softwareProvider</com:softwareProvider>
+                                <com:softwarePlatform>softwarePlatform</com:softwarePlatform>
+                                <com:softwareRelease>v1</com:softwareRelease>
+                            </com:softwareProviderData>
+                            <com:identifier IdentifierValueType="IRD">139125150</com:identifier>
+                            <com:accountType>PIE</com:accountType>
+                            <ret1:periodEndDate>2021-03-31</ret1:periodEndDate>
+                            <ret1:majorFormType>PIE</ret1:majorFormType>
+                            <ret1:minorFormType>ANN</ret1:minorFormType>
+                        </ret1:fileHeader>
+                        <ret1:fileBody xmlns:ret="urn:www.ird.govt.nz/GWS:types/ReturnPIEa.v1" xmlns:ret1="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2">
+                            <ret1:standardFields>
+                                <ret1:isNilReturn>false</ret1:isNilReturn>
+                                <ret1:isFinalReturn>false</ret1:isFinalReturn>
+                                <ret1:amendmentRequest>
+                                    <ret1:isAmended>false</ret1:isAmended>
+                                    <ret1:amendReason/>
+                                    <ret1:amendDetails/>
+                                </ret1:amendmentRequest>
+                            </ret1:standardFields>
+                            <ret1:formFields xsi:type="ret:FormFieldsType">
+                                <ret:externalID>testId1</ret:externalID>
+                                <ret:totalCertificates>100</ret:totalCertificates>
+                                <ret:totalIncomeLoss>1000.00</ret:totalIncomeLoss>
+                                <ret:totalTaxCreditOnInvestorIncome>1000.00</ret:totalTaxCreditOnInvestorIncome>
+                                <ret:netTaxPaidOnInvestorIncome>1000.00</ret:netTaxPaidOnInvestorIncome>
+                                <ret:taxableIncomeLowMid>1000.00</ret:taxableIncomeLowMid>
+                                <ret:netTaxPaidOnInvestorIncomeLowMid>1000.00</ret:netTaxPaidOnInvestorIncomeLowMid>
+                                <ret:totalTaxCreditOnInvestorIncomeLowMid>1000.00</ret:totalTaxCreditOnInvestorIncomeLowMid>
+                                <ret:zeroExitedTaxableIncome>1000.00</ret:zeroExitedTaxableIncome>
+                                <ret:zeroRateTotalForeignTaxCredits>1000.00</ret:zeroRateTotalForeignTaxCredits>
+                                <ret:zeroRateTotalOtherTaxCredits>1000.00</ret:zeroRateTotalOtherTaxCredits>
+                                <ret:zeroRateTotalICTaxCredits>1000.00</ret:zeroRateTotalICTaxCredits>
+                                <ret:zeroRateTotalRWTTaxCredits>1000.00</ret:zeroRateTotalRWTTaxCredits>
+                                <ret:zeroRateTaxPaymentExitedInvestors>1000.00</ret:zeroRateTaxPaymentExitedInvestors>
+                            </ret1:formFields>
+                        </ret1:fileBody>
+                    </ret:fileRequest>
+                </fil:FileRequestWrapper>
+            </r:ReturnFileRequestMsg>
+        </r:File>
+    </soap:Body>
+</soap:Envelope>
