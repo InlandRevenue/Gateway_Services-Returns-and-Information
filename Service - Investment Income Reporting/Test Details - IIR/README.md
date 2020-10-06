@@ -33,8 +33,8 @@
 
 	- Investment Income Reporting mock scenarios mind map for PIE
 	
-	- [View larger image](images/C42%20-%20PIE%20Emulated%20Service%20ScenariosV1_4.jpg)
-	![Mock Scenarios](images/C42%20-%20PIE%20Emulated%20Service%20ScenariosV1_4.jpg)
+	- [View larger image](images/C42%20PIE%20Partnership%20Test%20Scenarios.png)
+	![Mock Scenarios](images/C42%20PIE%20Partnership%20Test%20Scenarios.png)
 
 - Test data
 	- The following test data can be tested in our mock services environment when submitting requests to the service operations for the following invest income reporting tax types (AIL / DWT/ IPS/ NT / RWT)
@@ -126,7 +126,8 @@
 	- [Download IPS test scenarios report template](Investment%20Income%20Reporting%20-%20Tax%20Type%20-%20IPS%20-%20%20Test%20Scenarios%20Report%20Template.docx)
 	- [Download NRT test scenarios report template](Investment%20Income%20Reporting%20-%20Tax%20Type%20-%20NRT%20-%20%20Test%20Scenarios%20Report%20Template.docx)
 	- [Download RWT test scenarios report template](Investment%20Income%20Reporting%20-%20Tax%20Type%20-%20RWT%20-%20%20Test%20Scenarios%20Report%20Template.docx)
-	- PIE test scenarios report template - Work in progress. 
+	- [Download RWT test scenarios report template](Investment%20Income%20Reporting%20-%20Tax%20Type%20-%20RWT%20-%20%20Test%20Scenarios%20Report%20Template.docx)
+	- [Download RWT test scenarios report template](PIE%20Returns%20API%20Service%20%20Test%20Report%20Template.docx). 
 
 - Test URL endpoints
     - Cloud gateway service: https://test5.services.ird.govt.nz:4046/gateway/gws/returns/

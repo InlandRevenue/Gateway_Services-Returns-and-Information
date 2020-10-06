@@ -3,7 +3,7 @@
 
 # Portfolio investment entities (PIE) attributed income tax for Investment Income Reporting
 
-#### Latest Release V1.0 - August 2020
+#### Latest Release V1.0 - September 2020
 
 ## Key Documentation
 
