@@ -98,6 +98,9 @@
 	|Prepop | EMS_GST032 | Customer IRD (*identifier*): 123101294|
 	|Prepop | EMS_GST033 | Customer IRD (*identifier*): 123084225 |
     |Prepop | EMS_GST034 | Customer IRD (*identifier*): 123080106 |
+	
+* Test scenarios
+	- [Download mock test scenarios report template](Mock%20-%20GST%20Returns%20Service%20-%20Test%20Report%20Template.docx)	
         
 ## Test environment information
 -----------------

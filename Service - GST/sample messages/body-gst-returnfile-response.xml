@@ -13,6 +13,7 @@
                         </statusMessage>
                         <responseBody>
                             <gatewayId>0000 002G M22W 9</gatewayId>
+							<submissionKey>1108852352</submissionKey>
                         </responseBody>
                     </fileResponse>
                 </b:FileResponseWrapper>
