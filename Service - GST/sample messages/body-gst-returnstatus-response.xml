@@ -13,6 +13,7 @@
                         </statusMessage>
                         <responseBody>
                             <status code="SUB">Submitted</status>
+							<submissionKey>1449557632</submissionKey>
                         </responseBody>
                     </retrieveStatusResponse>
                 </b:RetrieveStatusResponseWrapper>
