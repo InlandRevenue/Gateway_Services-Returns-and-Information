@@ -2,12 +2,14 @@
 <!-- Documentation
 _______________________________________
 NAME: 	ReturnCommon.xsd
-VER:	1.09
+VER:	1.10
 ISSUER:	Inland Revenue Department
 DESC:	This schema defines the ReturnCommon data types used accross the IRD hosted, Gateway Services.
 
 ' Date  			Change
 ' **********		************
+' 2020-08-24		Updated datatype of submissionKey in FileResponseBodyType to Quantity32TypePositive
+					Added submissionKey to StatusResponseBodyType
 ' 2020-07-01		Increase creditTransferRequest maxOccurs from 10 to 20
 ' 2017-12-20		Initial
 _______________________________________
@@ -268,6 +270,7 @@ _______________________________________
 	<xsd:complexType name="StatusResponseBodyType">
 		<xsd:sequence>
 			<xsd:element name="status" type="CodeStringType"/>
+			<xsd:element name="submissionKey" type="cmn:Quantity32TypePositive" minOccurs="0"/>
 		</xsd:sequence>
 	</xsd:complexType>
 	<!--End Status Response Data-->
@@ -292,7 +295,7 @@ _______________________________________
 	<xsd:complexType name="FileResponseBodyType">
 		<xsd:sequence>
 			<xsd:element name="gatewayId" type="xsd:normalizedString"/>
-			<xsd:element name="submissionKey" type="cmn:QuantityTypePositive" minOccurs="0"/>
+			<xsd:element name="submissionKey" type="cmn:Quantity32TypePositive" minOccurs="0"/>
 		</xsd:sequence>
 	</xsd:complexType>
 	<!--Begin retrieveReturn Elements-->
