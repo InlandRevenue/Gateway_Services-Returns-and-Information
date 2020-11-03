@@ -3,7 +3,7 @@
 
 # Employee Details (ED) Software Development Kit (SDK)
 
-Employees can send us changes to employee details using the Employment service.
+Employers can send us changes to employee details using the Employment service.
 
 ### Release V 1
 
