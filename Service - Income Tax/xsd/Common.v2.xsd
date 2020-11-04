@@ -2,12 +2,14 @@
 <!-- Documentation
 _______________________________________
 NAME: 		Common.v2.xsd
-VER:		2.5
+VER:		2.7
 ISSUER:		Inland Revenue Department
 DESC:		This schema defines the common data types used accross the IRD hosted, Gateway Services.
 
 ' Date  			Change
 ' **********		************
+' 2020-10-14		Update EmailAddressType regex to disallow special characters in the domain (after the @ symbol)
+' 2020-09-28		Update EmailAddressType regex to properly escape characters
 ' 2020-08-18		Correct account type list in annotation for AccountTypeType
 '					Add "ACC" ID type to IdentifierValueTypeType annotation
 ' 2020-05-11		EmailAddressType regex updated to allow printable chars ._%+!#$%*+=?^`{|}~()\-\/&amp;&apos;&quot; as specificed by RFC 5322
@@ -452,7 +454,7 @@ _______________________________________
 			<xsd:documentation xml:lang="en">An email address of the form x@y.z where x and y are alpha-numeric strings, z is an alphabet string, there is an embedded @ and no embedded whitespace or illegal characters.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:restriction base="xsd:string">
-			<xsd:pattern value="([a-zA-Z0-9._%+!#$%*+=?^`{|}~()\-\/&amp;&apos;&quot;]+@[a-zA-Z0-9._%+!#$%*+=?^`{|}~()\-\/&amp;&apos;&quot;]+\.[a-zA-Z]+)"/>
+			<xsd:pattern value="([a-zA-Z0-9._!#$%*+=?^`{|}~/&amp;&apos;-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]+)"/>
 		</xsd:restriction>
 	</xsd:simpleType>
 	<xsd:simpleType name="CountryCodeType">
