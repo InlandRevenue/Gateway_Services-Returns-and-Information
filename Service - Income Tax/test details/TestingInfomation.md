@@ -31,7 +31,7 @@
 ---
 - Mock Emulated Services URL
     - Landing page: https://mock-inc.ird.digitalpartner.services
-    - Service endpoint: https://mock-inc.ird.digitalpartner.services/gateway/GWS/Returns/
+    - Service endpoint: https://mock-inc.ird.digitalpartner.services/secure/gateway/GWS/Returns/
 - Test Scenarios
     - Income Tax Mock Scenarios Mind map
     [Mock Scenarios](images/income-tax-test-scenarios.png)
