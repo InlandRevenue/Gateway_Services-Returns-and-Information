@@ -35,15 +35,15 @@
 * File
 	* Income Type ANN
 		* [Request](sample%20messages/ANNFilePayload25092020.xml)   
-		* [Request](sample%20messages/FileSuccessResponse25092020.xml)  
+		* [Response](sample%20messages/FileSuccessResponse25092020.xml)  
 		
 	* Income Type CER
 		* [Request](sample%20messages/CERFilePayload25092020.xml)
-		* [Request](sample%20messages/FileSuccessResponse25092020.xml)  
+		* [Response](sample%20messages/FileSuccessResponse25092020.xml)  
 	
 	* Income Type PRD
 		* [Request](sample%20messages/PRDFilePayload25092020.xml)
-		* [Request](sample%20messages/FileSuccessResponse25092020.xml)  
+		* [Response](sample%20messages/FileSuccessResponse25092020.xml)  
 		
 * RetrieveReturn
 	* Income Type ANN 	
