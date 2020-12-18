@@ -60,7 +60,8 @@ The following schemas have also changed for 2020:
 ## Key Documentation:
 
 * Test scenarios
-	* [Download test scenarios report template](INC%202020%20changes%20-%20Return%20Service%20-%20Test%20Report%20Template.docx)
+	* [Download test scenarios report template **2020**](INC%202020%20changes%20-%20Return%20Service%20-%20Test%20Report%20Template.docx)
+	* [Download test scenarios report template **2019**](Income%20Tax%20Return%20Gateway%20Service%202019%20-%20Test%20Report%20Template%20.docx)
 
 * XSD Schemas 
     * View and download the [Income Return Common XSD](xsd/IncomeReturnCommon.v1.xsd) from this [XSD](xsd/) directory	
@@ -71,7 +72,7 @@ The following schemas have also changed for 2020:
 * Build Pack
 	* Download the [Return Service Income Tax build pack](Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20INC%20v1.1.pdf) to view data definitions of each operation and response status code definitions
 		* Supporting information on IR website
-	* Download the [Additional Information pack](Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20Additional%20Information%20V1.0.pdf)
+	* Download the [Additional Information pack](Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20Additional%20Information%202021%20V1.0.pdf)
 		* Income tax assessments (auto calc)
 
 * Income Tax Form Types
