@@ -1,23 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 	NAME:             ReturnIR3.v1.xsd
-	VER:              1.2
+	VER:              1.1
 	ISSUER:           Inland Revenue Department
+	DATE:             20/11/2019
 	DESC:             This schema defines the elements and related data types required for the Returns Individual Income Tax 2020 Gateway Service.
-    
-Date  		Change
-**********  ************
-2020-11-11	lossCarriedBackPriorYear added
-			governmentSubsidies added
-			pieDebit added
-			pieCredit added
-         
-2019-11-20	residentialRentalIncome added
-			researchAndDevelopment added
-			shareholderAIMTaxPaid added
-             
-2019-02-12	Initial
-_______________________________________      
+    CHANGE(s):
+    * shareholderAIMTaxPaid added
+    * residentialRentalIncome added
+    * researchAndDevelopment added
 -->
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:www.ird.govt.nz/GWS:types/ReturnIR3.v1" xmlns:cmn="urn:www.ird.govt.nz/GWS:types/Common.v2" xmlns:rc="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2" xmlns:ic="urn:www.ird.govt.nz/GWS:types/IncomeReturnCommon.v1" xmlns:r="urn:www.ird.govt.nz/GWS:types/ReturnIR3.v1" targetNamespace="urn:www.ird.govt.nz/GWS:types/ReturnIR3.v1" elementFormDefault="qualified" attributeFormDefault="unqualified">
 	<!--Begin Imports Statement(s)-->
@@ -74,7 +65,6 @@ _______________________________________
 					<xsd:element name="ltcNonAllowableDeductions" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="ltcPriorYearNonAllowableDeductionsClaimed" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="ltcAdjustedIncome" type="cmn:MoneyType" minOccurs="0"/>
-					<xsd:element name="governmentSubsidies" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="taxCreditSubtotal" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="totalShareholderEmployeeSalary" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="futureShareholderSalary" type="xsd:boolean" minOccurs="0"/>
@@ -88,17 +78,14 @@ _______________________________________
 					<xsd:element name="otherExpenses" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="lossesBroughtForward" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="lossesClaimedThisYear" type="cmn:MoneyTypePositive" minOccurs="0"/>
-					<xsd:element name="lossCarriedBackPriorYear" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="totalTaxableIncome" type="cmn:MoneyType" minOccurs="0"/>
 					<xsd:element name="eligibleForIETC" type="xsd:boolean" minOccurs="0"/>
 					<xsd:element name="overseasExclusionDates" type="ic:OverseasExclusionDatesListType" minOccurs="0"/>
 					<xsd:element name="numberOfQualifyingMonths" type="cmn:QuantityTypePositive" minOccurs="0"/>
 					<xsd:element name="amountOfIETCClaimed" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="imputationBroughtForward" type="cmn:MoneyTypePositive" minOccurs="0"/>
-					<xsd:element name="pieDebit" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="taxOnTaxableIncome" type="cmn:MoneyTypePositive" minOccurs="0"/>
-					<xsd:element name="researchAndDevelopment" type="ic:ResearchAndDevelopmentType" minOccurs="0"/>
-					<xsd:element name="pieCredit" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="researchAndDevelopment" type="ic:ResearchAndDevelopmentType" minOccurs="0"/>          
 					<xsd:element name="residualIncomeTax" type="cmn:MoneyType" minOccurs="0"/>
 					<xsd:element name="earlyPaymentDiscountEligibility" type="xsd:boolean" minOccurs="0"/>
 					<xsd:element name="overpaymentProvisionalTax" type="cmn:MoneyTypePositive" minOccurs="0"/>

@@ -1,22 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Documentation
-_______________________________________
-NAME:             ReturnIR44.v1.xsd
-VER:              1.2
-ISSUER:           Inland Revenue Department
-DESC:             This schema defines the elements and related data types required for the Returns IR44 2020 Gateway Service.
-
-Date  		    Change
-**********    ************
-
-2020-10-19    lossCarriedBackPriorYear added
-              residentialRentalIncome added
-
-2019-11-20    saleOfProperty added
-              researchAndDevelopment added
-              
-2019-06-29    Initial
-_______________________________________
+<!--
+	NAME:             ReturnIR44.v1.xsd
+	VER:              1.1
+	ISSUER:           Inland Revenue Department
+	DATE:             20/11/2019
+	DESC:             This schema defines the elements and related data types required for the Returns IR44 2020 Gateway Service.
+	CHANGE(s):
+	* saleOfProperty added
+	* researchAndDevelopment added
 -->
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:www.ird.govt.nz/GWS:types/ReturnIR44.v1" xmlns:cmn="urn:www.ird.govt.nz/GWS:types/Common.v2" xmlns:rc="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2" xmlns:ic="urn:www.ird.govt.nz/GWS:types/IncomeReturnCommon.v1" xmlns:r="urn:www.ird.govt.nz/GWS:types/ReturnIR44.v1" targetNamespace="urn:www.ird.govt.nz/GWS:types/ReturnIR44.v1" elementFormDefault="qualified" attributeFormDefault="unqualified">
 	<!--Begin Imports Statement(s)-->
@@ -45,8 +36,7 @@ _______________________________________
 			<xsd:extension base="rc:FormFieldsType">
 				<xsd:sequence>
 					<xsd:element name="submissionKey" type="cmn:Quantity32TypePositive" minOccurs="0"/>
-          <xsd:element name="residentialRentalIncome" type="ic:ResidentialRentalIncomeType" minOccurs="0"/>
-          <xsd:element name="financialMarketsAuthorityNumber" type="cmn:String30" minOccurs="0"/>
+					<xsd:element name="financialMarketsAuthorityNumber" type="cmn:String30" minOccurs="0"/>
 					<xsd:element name="fundBalanceDate" type="cmn:DateType" minOccurs="0"/>
 					<xsd:element name="assetsIncludeNZLifeOrTransferred" type="xsd:boolean" minOccurs="0"/>
 					<xsd:element name="nzLifeOrTransfersTotalAssets" type="xsd:boolean" minOccurs="0"/>
@@ -62,8 +52,7 @@ _______________________________________
 					<xsd:element name="additionsTreatedAsCapitalOnDisposal" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="additionsTreatedAsRevenueOnDisposal" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="lossesBroughtForward" type="cmn:MoneyType" minOccurs="0"/>
-          <xsd:element name="lossCarriedBackPriorYear" type="cmn:MoneyTypePositive" minOccurs="0"/>
-          <xsd:element name="totalTaxableIncome" type="cmn:MoneyType" minOccurs="0"/>
+					<xsd:element name="totalTaxableIncome" type="cmn:MoneyType" minOccurs="0"/>
 					<xsd:element name="taxOnTaxableIncome" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="trusteeDetails" type="ic:TrusteeListType" minOccurs="0"/>
 					<xsd:element name="fifOrCFCDisclosureRequired" type="xsd:boolean" minOccurs="0"/>

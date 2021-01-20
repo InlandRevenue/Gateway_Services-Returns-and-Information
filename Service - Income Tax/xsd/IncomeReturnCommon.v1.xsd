@@ -2,20 +2,28 @@
 <!-- Documentation
 _______________________________________
 NAME:       IncomeReturnCommon.v1.xsd
-VER:        1.11
+VER:        1.12
 ISSUER:     Inland Revenue Department
 DESC:       This schema defines common fields for all income tax returns submitted through the Gateway Services.
 	
-' Date  			Change
-' **********		************
-' 2020-07-13		Added new fields to incomeProfile object
-					Added new periodLossCarryBack field
-					Fixed ResidentialMethodType documentation
-' 2019-11-20		residentialRentalIncome added
-					researchAndDevelopment added
-					shareholderAIMTaxPaid added to ShareholderListType
-					shareholderAIMTaxPaid added to ShareholderType
-' 2019-01-28		Initial
+Date  		    Change
+**********    ************
+
+2020-15-12    Added new field (creditBroughtForward) to ResearchAndDevelopmentType
+              Added new fields (correctRate, correctRateUsedAllYear) to IncomeWithTaxCreditType.
+              These are intended for pieIncome in IR3 and CALC forms only.
+             
+
+2020-07-13    Added new fields to incomeProfile object
+			        Added new periodLossCarryBack field
+			        Fixed ResidentialMethodType documentation
+
+2019-11-20	  residentialRentalIncome added
+			        researchAndDevelopment added
+			        shareholderAIMTaxPaid added to ShareholderListType
+			        shareholderAIMTaxPaid added to ShareholderType
+              
+2019-01-28    Initial
 _______________________________________
 -->
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:cmn="urn:www.ird.govt.nz/GWS:types/Common.v2" xmlns:rc="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2" xmlns="urn:www.ird.govt.nz/GWS:types/IncomeReturnCommon.v1" targetNamespace="urn:www.ird.govt.nz/GWS:types/IncomeReturnCommon.v1" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0">
@@ -62,6 +70,7 @@ _______________________________________
   </xsd:complexType>
   <xsd:complexType name="ResearchAndDevelopmentType">
     <xsd:sequence>
+      <xsd:element name="creditBroughtForward" type="cmn:MoneyTypePositive" minOccurs="0"/>
       <xsd:element name="nonrefundableCredit" type="cmn:MoneyTypePositive" minOccurs="0"/>
       <xsd:element name="refundableCredit" type="cmn:MoneyTypePositive" minOccurs="0"/>
     </xsd:sequence>
@@ -201,7 +210,9 @@ _______________________________________
 		<xsd:sequence>
 			<xsd:element name="totalTaxCredits" type="cmn:MoneyTypePositive" minOccurs="0"/>
 			<xsd:element name="totalIncome" type="cmn:MoneyType" minOccurs="0"/>
-		</xsd:sequence>
+      <xsd:element name="correctRate" type="cmn:MoneyType" minOccurs="0"/>
+      <xsd:element name="correctRateUsedAllYear" type="xsd:boolean" minOccurs="0"/>
+    </xsd:sequence>
 	</xsd:complexType>
 	<xsd:simpleType name="PartYearReasonType">
 		<xsd:annotation>

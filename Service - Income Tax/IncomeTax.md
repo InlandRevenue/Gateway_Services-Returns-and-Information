@@ -3,10 +3,12 @@
 
 # Income Tax Software Development Kit (SDK)
 
-#### Latest Release: V1.0  - Annual Return 2020
+#### Latest Release: V1.0  - Annual Return 2021
 
 Archives
+* [V1.0 Annual Return 2020](./archive/2020)
 * [V1.0 Annual Return 2019](./archive/2019)
+
 
 	
 Income Tax reporting through gateway services enables organisations to: 
@@ -17,51 +19,48 @@ Income Tax reporting through gateway services enables organisations to:
 * request a copy of a previously filed income tax return 
 * request the due date of the next expected income tax return. 	
 	
-## New Features: Annual Return 2020   
+## New Features: Annual Return 2020-2021   
 
 The following key changes have been made to the Income Tax Return Service build pack 
-to accommodate annual changes for 2020: 
+to accommodate annual changes for 2021: 
  
-*  ‘Shareholder AIM tax paid’ will be returned from a ‘Prepop’ request when 
-applicable. 
- 
-*  Non-resident foreign sourced income is no longer applicable for tax year 2020 
-and onward. An error message will be returned if it is inadvertently submitted via 
-gateway services. It has been REMOVED from form IR215. 
- 
-*  The following fields have been ADDED to a number of IR forms for 2020 returns: 
- 
-|Field | IR forms |
-| --- | --- | 
-|Shareholder AIM tax paid | IR3, IR4S |
-|Residential income indicator  |IR3, IR3NR, IR4, IR6, IR7, IR8, IR9 |
-|Total residential income  |IR3, IR3NR, IR4, IR6, IR7, IR7L/IR7P, IR8, IR9 |
-|Residential rental deductions  |IR3, IR3NR, IR4, IR6, IR7, IR7L/IR7P, IR8, IR9 |
-|Excess residential rental deductions brought forward |IR3, IR3NR, IR4, IR6, IR8, IR9 |
-|Residential rental deductions claimed this year |IR3, IR3NR, IR4, IR6, IR8, IR9 |
-|Net residential income | IR3, IR3NR, IR4, IR6, IR8, IR9 |
-|Excess residential rental deductions carried forward |IR3, IR3NR, IR4, IR6, IR8, IR9 |
-|Current year R&D non-refundable tax incentive credits to use or carry forward |IR3, IR3NR, IR4, IR6, IR8, IR9, IR44 |
-|R&D tax incentive credits to be refunded |IR4 |
-|Profit/loss from sale of property | IR8, IR9, IR44 | 
- 
-The following schemas have also changed for 2020: 
- 
+*  The following fields have been ADDED to a number of IR forms for 2021 returns: 
+	 
+	| Field | IR forms |
+	| --- | --- | 
+	| `pieDebit` <br/> `pieCredit` <br/> `pieIncome` <br/> ➢ `correctRate` <br/> ➢ `correctRateUsedAllYear` | IR3, CALC `(ReturnAUTO.v1.xsd)` |
+	| `lossCarriedBackPriorYear` | IR3, IR3NR, IR4, IR6, IR8, IR9, IR44 |
+	| `researchAndDevelopment` <br/> ➢ `creditBroughtForward` <br/> ➢ `nonrefundableCredit` <br/> ➢ `refundableCredit` | IR3, IR3NR, IR6, IR8, IR9, IR44 |
+	| `researchAndDevelopment` <br/> ➢ `creditBroughtForward` | IR4 |
+	| `governmentSubsidies` | IR3, IR3NR |
+	| `residentialRentalIncome` <br/> ➢ `indicator` <br/> ➢ `totalIncome` <br/> ➢ `residentialRentalDeductions` <br/> ➢ `excessDeductionsBroughtForward` <br/> ➢ `deductionsClaimedThisYear` <br/>➢ `netIncome` <br/> ➢ `excessDeductionsCarriedForward` | IR44 | 
+	 
+* The following **schemas** have also changed for 2021: 
+	*  ReturnAUTO.v1.xsd (Auto-Calc, CALC) 
 	*  ReturnIR3.v1.xsd  
 	*  ReturnIR3NR.v1.xsd  
 	*  ReturnIR4.v1.xsd  
 	*  ReturnIR6.v1.xsd  
-	*  ReturnIR7.v1.xsd  
 	*  ReturnIR8.v1.xsd  
 	*  ReturnIR9.v1.xsd  
 	*  ReturnIR44.v1.xsd  
 	*  IncomeReturnCommon.v1.xsd 
+
+* The following changes have been made to Income Tax-specific **ERROR CODES**:
+
+	| Error code | Status  Description  IR forms affected |
+	|-- | --|
+	|2011 | Changed `pieIncome` `totalTaxCredits` cannot be greater than `taxOnTaxableIncome` less `amountOfIETCClaimed` <br/> **NOTE:** This error code will only be returned for periods up to 2020 | IR3, Auto-Calc |
+	|2228 | Added `lossCarriedBackPriorYear` must be 0 when there is no LCB indicator on the previous income tax period |IR3, IR3NR, IR4, IR6, IR8, IR9, IR44 |
+	|2230 | Added `incomeFromPIE` is not used for the IR215 starting 2021 onwards IR215 |
 	
 ## Key Documentation:
 
 * Test scenarios
+	* [Download test scenarios report template **2021**](Income%20Tax%20Return%20Gateway%20Service%202021%20-%20Test%20Report%20Template%20.docx)
 	* [Download test scenarios report template **2020**](INC%202020%20changes%20-%20Return%20Service%20-%20Test%20Report%20Template.docx)
 	* [Download test scenarios report template **2019**](Income%20Tax%20Return%20Gateway%20Service%202019%20-%20Test%20Report%20Template%20.docx)
+	
 
 * XSD Schemas 
     * View and download the [Income Return Common XSD](xsd/IncomeReturnCommon.v1.xsd) from this [XSD](xsd/) directory	
@@ -70,10 +69,10 @@ The following schemas have also changed for 2020:
 	
 
 * Build Pack
-	* Download the [Return Service Income Tax build pack](Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20INC%20v1.1.pdf) to view data definitions of each operation and response status code definitions
+	* Download the [Return Service Income Tax build pack](Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20Income%20Tax%20TY-2021.pdf) to view data definitions of each operation and response status code definitions
 		* Supporting information on IR website
 	* Download the [Additional Information pack](Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20Additional%20Information%202021%20V1.0.pdf)
-		* Income tax assessments (auto calc)
+		* Income tax assessments (Auto-Calc)
 
 * Income Tax Form Types
 	* [Primary income tax return forms](#Primary-income-tax-return-forms) 
@@ -82,8 +81,8 @@ The following schemas have also changed for 2020:
 * [Sample request and responses](#Sample-request-and-responses)
 
 * Supporting information on IR website 
-	* [Income Tax and Auto calc Business use cases](https://www.ird.govt.nz/digital-service-providers/services-catalogue/returns-and-information/income-tax)
-	* [Income tax assessments (auto calc)](https://www.ird.govt.nz/income-tax/income-tax-for-individuals/what-happens-at-the-end-of-the-tax-year/income-tax-assessments)
+	* [Income Tax and Auto-Calc Business use cases](https://www.ird.govt.nz/digital-service-providers/services-catalogue/returns-and-information/income-tax)
+	* [Income tax assessments (Auto-Calc)](https://www.ird.govt.nz/income-tax/income-tax-for-individuals/what-happens-at-the-end-of-the-tax-year/income-tax-assessments)
 
 ## Environment Information: 
 - [Mock Environment Information - Emulated Services, Mindmap and Test data](test%20details/TestingInfomation.md#mock-environment-information)
