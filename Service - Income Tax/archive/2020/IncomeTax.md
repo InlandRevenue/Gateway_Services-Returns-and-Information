@@ -1,5 +1,6 @@
-![IRD logo](../../../../Images/IRlogo.gif)
-![Software Dev](../../../../Images/SoftwareDev.png)
+![IRD logo](../../../Images/IRlogo.gif)
+![Software Dev](../../../Images/SoftwareDev.png)
+
 
 # Income Tax Software Development Kit (SDK)
 
