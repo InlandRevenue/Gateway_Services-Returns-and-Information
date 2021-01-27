@@ -34,8 +34,8 @@
     - Service endpoint: https://mock-inc.ird.digitalpartner.services/secure/gateway/GWS/Returns/
 - Test Scenarios
     - Income Tax Mock Scenarios Mind map
-    [Mock Scenarios](images/income-tax-test-scenarios.png)
-    ![Mock Scenarios](images/income-tax-test-scenarios.png) 
+    [Mock Scenarios](images/INC%20Emulated%20Service%20-%20Annual%20Change%202021.png)
+    ![Mock Scenarios](images/INC%20Emulated%20Service%20-%20Annual%20Change%202021.png) 
 - Test Data
     - This table shows which scenarios (as per their numbers in the mind map) require specific data to trigger the expected responses.
     - Text in italics represents the name of the XML node in the request.
