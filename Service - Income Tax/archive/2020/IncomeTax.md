@@ -194,7 +194,7 @@ The following schemas have also changed for 2020:
     - [IR3 File request (with all applicable attachments)](sample%20messages/file_request_ir3_all_attachments.xml)
     - [IR3NR File request](sample%20messages/file_request_ir3nr_standalone.xml)
     - [IR4 File request (with all applicable attachments)](sample%20messages/file_request_ir4_all_attachments.xml)
-    - [IR4J File request](sample%20messages/file_request_ir4j_standalone.xml)
+	- [IR4J File request](sample%20messages/file_request_ir4j_standalone.xml)
     - [IR6 File request](sample%20messages/file_request_ir6_standalone.xml)
     - [IR7L File request](sample%20messages/file_request_ir7l_standalone.xml)
     - [IR7P File request](sample%20messages/file_request_ir7p_standalone.xml)
@@ -226,6 +226,4 @@ The following schemas have also changed for 2020:
 - RetrieveFilingObligations
     - [RetrieveFilingObligations request](sample%20messages/retrievefilingobligations_request.xml)
     - [RetrieveFilingObligations response](sample%20messages/retrievefilingobligations_response.xml)
-	
-	
 	

@@ -1,3 +1,6 @@
+Error code 2227
+
+Request
 <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope">
     <soap:Header>
         <add:Action xmlns:add="http://www.w3.org/2005/08/addressing">https://services.ird.govt.nz/GWS/Returns/Return/File</add:Action>
@@ -31,9 +34,7 @@
                             </rc:standardFields>
                             <rc:formFields xsi:type="r44:FormFieldsType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ic="urn:www.ird.govt.nz/GWS:types/IncomeReturnCommon.v1">
                                 <r44:residentialRentalIncome>
-                                    <ic:indicator>I</ic:indicator>
-                                    <ic:totalIncome>2100.00</ic:totalIncome>
-                                    <ic:residentialRentalDeductions>1000.00</ic:residentialRentalDeductions>
+                                    <ic:totalIncome>123.45</ic:totalIncome>
                                     <ic:excessDeductionsBroughtForward>0.00</ic:excessDeductionsBroughtForward>
                                     <ic:deductionsClaimedThisYear>1000.00</ic:deductionsClaimedThisYear>
                                     <ic:netIncome>1100.00</ic:netIncome>
@@ -44,6 +45,7 @@
                                 <r44:assetsIncludeNZLifeOrTransferred>false</r44:assetsIncludeNZLifeOrTransferred>
                                 <r44:nzLifeOrTransfersTotalAssets>false</r44:nzLifeOrTransfersTotalAssets>
                                 <r44:electionRequired>false</r44:electionRequired>
+                                <r44:saleOfProperty>5678.99</r44:saleOfProperty>
                                 <r44:fundIncome>1000.00</r44:fundIncome>
                                 <r44:deductionsFromOtherSchemes>
                                     <ic:deduction>
@@ -85,9 +87,9 @@
                                 <r44:overseasTaxCredit>1000.00</r44:overseasTaxCredit>
                                 <r44:imputationCredits>1000.00</r44:imputationCredits>
                                 <r44:researchAndDevelopment>
-                                    <ic:creditBroughtForward>1000</ic:creditBroughtForward>
-                                    <ic:nonrefundableCredit>1000</ic:nonrefundableCredit>
-                                    <ic:refundableCredit>1000</ic:refundableCredit>
+                                    <ic:creditBroughtForward>0</ic:creditBroughtForward>
+                                    <ic:nonrefundableCredit>0</ic:nonrefundableCredit>
+                                    <ic:refundableCredit>0</ic:refundableCredit>
                                 </r44:researchAndDevelopment>
                                 <r44:rwtAndOtherTaxCredits>1000.00</r44:rwtAndOtherTaxCredits>
                                 <r44:rlwtCredit>0</r44:rlwtCredit>
@@ -106,3 +108,24 @@
         </ret:File>
     </soap:Body>
 </soap:Envelope>
+
+Response
+<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">
+    <s:Header>
+        <a:Action s:mustUnderstand="1">https://services.ird.govt.nz/GWS/Returns/Return/FileResponse</a:Action>
+    </s:Header>
+    <s:Body>
+        <FileResponse xmlns="https://services.ird.govt.nz/GWS/Returns/">
+            <FileResult xmlns:b="https://services.ird.govt.nz/GWS/Returns/:types/FileResponse" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+                <b:FileResponseWrapper>
+                    <fileResponse xmlns="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2">
+                        <statusMessage xmlns="urn:www.ird.govt.nz/GWS:types/Common.v2">
+                            <statusCode>2227</statusCode>
+                            <errorMessage>residentialRentalIncome indicator is required if residentialRentalIncome totalIncome or residentialRentalIncome residentialRentalDeductions are non-zero values</errorMessage>
+                        </statusMessage>
+                    </fileResponse>
+                </b:FileResponseWrapper>
+            </FileResult>
+        </FileResponse>
+    </s:Body>
+</s:Envelope>
