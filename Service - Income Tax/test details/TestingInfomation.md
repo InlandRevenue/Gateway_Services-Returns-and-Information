@@ -31,7 +31,7 @@
 ---
 - Mock Emulated Services URL
     - Landing page: https://mock-inc.ird.digitalpartner.services
-    - Service endpoint: https://mock-inc.ird.digitalpartner.services/secure/gateway/GWS/Returns/
+    - Service endpoint: https://mock-inc.ird.digitalpartner.services/gateway/GWS/Returns/
 - Test Scenarios
     - Income Tax Mock Scenarios Mind map (inc. Annual Changes Tax Year 2021)
     [Mock Scenarios](images/INC%20Emulated%20Service-WithAnnualChanges.png)
