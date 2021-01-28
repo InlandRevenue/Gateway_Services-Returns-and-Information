@@ -33,13 +33,13 @@
     - Landing page: https://mock-inc.ird.digitalpartner.services
     - Service endpoint: https://mock-inc.ird.digitalpartner.services/secure/gateway/GWS/Returns/
 - Test Scenarios
-    - Income Tax Mock Scenarios Mind map
-    [Mock Scenarios](images/INC%20Emulated%20Service%20-%20Annual%20Change%202021.png)
-    ![Mock Scenarios](images/INC%20Emulated%20Service%20-%20Annual%20Change%202021.png) 
+    - Income Tax Mock Scenarios Mind map (inc. Annual Changes Tax Year 2021)
+    [Mock Scenarios](images/INC%20Emulated%20Service-WithAnnualChanges.png)
+    ![Mock Scenarios](images/INC%20Emulated%20Service-WithAnnualChanges.png) 
 - Test Data
     - This table shows which scenarios (as per their numbers in the mind map) require specific data to trigger the expected responses.
     - Text in italics represents the name of the XML node in the request.
-	- **For all retrieve return scenarios, the periodEndDate must be 2019-03-31.**
+	- **For all retrieve return scenarios, the periodEndDate must be 2021-03-31.**
     
 <table>
     <tbody>
