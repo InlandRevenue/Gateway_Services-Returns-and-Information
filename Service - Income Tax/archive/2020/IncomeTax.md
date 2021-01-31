@@ -4,11 +4,10 @@
 
 # Income Tax Software Development Kit (SDK)
 
-#### Latest Release: V1.0  - Annual Return 2020
+#### Archives
+* [V1.0 Annual Return 2019](../2019)
 
-Archives
-* [V1.0 Annual Return 2019](../../2019)
-
+### Latest Release: V1.0  - Annual Return 2020
 	
 Income Tax reporting through gateway services enables organisations to: 
 
