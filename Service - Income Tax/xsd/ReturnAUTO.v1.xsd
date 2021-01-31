@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	NAME:			ReturnAUTO.xsd
-	VER:			1
-	ISSUER:			Inland Revenue Department
-	DATE:			29/06/2019
-	DESC:			This schema defines the elements and related data types required for the Returns Individual Income Tax 2019 Gateway Service.
+NAME:			ReturnAUTO.xsd
+VER:			1
+ISSUER:		Inland Revenue Department	
+DESC:			This schema defines the elements and related data types required for the Returns Individual Income Tax Gateway Service.
+    
+Date  		Change
+**********  ************
+2020-12-02	pieDebit added
+            pieCredit added
+        
+2019-06-29   Initial
+_______________________________________      
 -->
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:www.ird.govt.nz/GWS:types/ReturnAUTO.v1" xmlns:cmn="urn:www.ird.govt.nz/GWS:types/Common.v2" xmlns:rc="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2" xmlns:ic="urn:www.ird.govt.nz/GWS:types/IncomeReturnCommon.v1" xmlns:r="urn:www.ird.govt.nz/GWS:types/ReturnAUTO.v1" targetNamespace="urn:www.ird.govt.nz/GWS:types/ReturnAUTO.v1" elementFormDefault="qualified" attributeFormDefault="unqualified">
 	<!--Begin Imports Statement(s)-->
@@ -84,7 +91,9 @@
 			<xsd:element name="eligibleForIETC" type="xsd:boolean" minOccurs="0"/>
 			<xsd:element name="numberOfQualifyingMonths" type="cmn:QuantityTypePositive" minOccurs="0"/>
 			<xsd:element name="amountOfIETCClaimed" type="cmn:MoneyTypePositive" minOccurs="0"/>
+			<xsd:element name="pieDebit" type="cmn:MoneyTypePositive" minOccurs="0"/>
 			<xsd:element name="taxOnTaxableIncome" type="cmn:MoneyTypePositive" minOccurs="0"/>
+			<xsd:element name="pieCredit" type="cmn:MoneyTypePositive" minOccurs="0"/>
 			<xsd:element name="residualIncomeTax" type="cmn:MoneyType" minOccurs="0"/>
 		</xsd:sequence>
 	</xsd:complexType>

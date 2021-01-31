@@ -13,9 +13,9 @@
                                 <cmn:softwarePlatform>SoftwarePlatform</cmn:softwarePlatform>
                                 <cmn:softwareRelease>1</cmn:softwareRelease>
                             </cmn:softwareProviderData>
-                            <cmn:identifier IdentifierValueType="IRD">052120330</cmn:identifier>
+                            <cmn:identifier IdentifierValueType="IRD">018027631</cmn:identifier>
                             <cmn:accountType>INC</cmn:accountType>
-                            <rc:periodEndDate>2019-03-31</rc:periodEndDate>
+                            <rc:periodEndDate>2021-03-31</rc:periodEndDate>
                             <rc:majorFormType>INC</rc:majorFormType>
                             <rc:minorFormType>44</rc:minorFormType>
                         </rc:fileHeader>
@@ -30,7 +30,16 @@
                                 </rc:amendmentRequest>
                             </rc:standardFields>
                             <rc:formFields xsi:type="r44:FormFieldsType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ic="urn:www.ird.govt.nz/GWS:types/IncomeReturnCommon.v1">
-                                <r44:financialMarketsAuthorityNumber>AS/3980</r44:financialMarketsAuthorityNumber>
+                                <r44:residentialRentalIncome>
+                                    <ic:indicator>I</ic:indicator>
+                                    <ic:totalIncome>2100.00</ic:totalIncome>
+                                    <ic:residentialRentalDeductions>1000.00</ic:residentialRentalDeductions>
+                                    <ic:excessDeductionsBroughtForward>0.00</ic:excessDeductionsBroughtForward>
+                                    <ic:deductionsClaimedThisYear>1000.00</ic:deductionsClaimedThisYear>
+                                    <ic:netIncome>1100.00</ic:netIncome>
+                                    <ic:excessDeductionsCarriedForward>0.00</ic:excessDeductionsCarriedForward>
+                                </r44:residentialRentalIncome>
+                                <r44:financialMarketsAuthorityNumber>1234</r44:financialMarketsAuthorityNumber>
                                 <r44:fundBalanceDate>2019-03-31</r44:fundBalanceDate>
                                 <r44:assetsIncludeNZLifeOrTransferred>false</r44:assetsIncludeNZLifeOrTransferred>
                                 <r44:nzLifeOrTransfersTotalAssets>false</r44:nzLifeOrTransfersTotalAssets>
@@ -57,8 +66,9 @@
                                 <r44:additionsTreatedAsCapitalOnDisposal>0</r44:additionsTreatedAsCapitalOnDisposal>
                                 <r44:additionsTreatedAsRevenueOnDisposal>0</r44:additionsTreatedAsRevenueOnDisposal>
                                 <r44:lossesBroughtForward>0</r44:lossesBroughtForward>
-                                <r44:totalTaxableIncome>1000.00</r44:totalTaxableIncome>
-                                <r44:taxOnTaxableIncome>280.00</r44:taxOnTaxableIncome>
+                                <r44:lossCarriedBackPriorYear>0</r44:lossCarriedBackPriorYear>
+                                <r44:totalTaxableIncome>8100.00</r44:totalTaxableIncome>
+                                <r44:taxOnTaxableIncome>588.00</r44:taxOnTaxableIncome>
                                 <r44:trusteeDetails>
                                     <ic:trustee>
                                         <ic:fullName>BoJack Horseman</ic:fullName>
@@ -74,6 +84,11 @@
                                 <r44:investmentsTreatedAsTradingStock>false</r44:investmentsTreatedAsTradingStock>
                                 <r44:overseasTaxCredit>1000.00</r44:overseasTaxCredit>
                                 <r44:imputationCredits>1000.00</r44:imputationCredits>
+                                <r44:researchAndDevelopment>
+                                    <ic:creditBroughtForward>1000</ic:creditBroughtForward>
+                                    <ic:nonrefundableCredit>1000</ic:nonrefundableCredit>
+                                    <ic:refundableCredit>1000</ic:refundableCredit>
+                                </r44:researchAndDevelopment>
                                 <r44:rwtAndOtherTaxCredits>1000.00</r44:rwtAndOtherTaxCredits>
                                 <r44:rlwtCredit>0</r44:rlwtCredit>
                                 <r44:residualIncomeTax>-1000.00</r44:residualIncomeTax>

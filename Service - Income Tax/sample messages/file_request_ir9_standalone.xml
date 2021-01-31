@@ -15,7 +15,7 @@
                             </cmn:softwareProviderData>
                             <cmn:identifier IdentifierValueType="IRD">056632778</cmn:identifier>
                             <cmn:accountType>INC</cmn:accountType>
-                            <rc:periodEndDate>2019-03-31</rc:periodEndDate>
+                            <rc:periodEndDate>2021-03-31</rc:periodEndDate>
                             <rc:majorFormType>INC</rc:majorFormType>
                             <rc:minorFormType>9</rc:minorFormType>
                         </rc:fileHeader>
@@ -32,6 +32,15 @@
                             <rc:formFields xsi:type="r9:FormFieldsType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ic="urn:www.ird.govt.nz/GWS:types/IncomeReturnCommon.v1">
                                 <r9:incorporatedBody>true</r9:incorporatedBody>
                                 <r9:typeOfClubOrSociety>F</r9:typeOfClubOrSociety>
+                                <r9:residentialRentalIncome>
+                                    <ic:indicator>I</ic:indicator>
+                                    <ic:totalIncome>2100.00</ic:totalIncome>
+                                    <ic:residentialRentalDeductions>1000.00</ic:residentialRentalDeductions>
+                                    <ic:excessDeductionsBroughtForward>0.00</ic:excessDeductionsBroughtForward>
+                                    <ic:deductionsClaimedThisYear>1000.00</ic:deductionsClaimedThisYear>
+                                    <ic:netIncome>1100.00</ic:netIncome>
+                                    <ic:excessDeductionsCarriedForward>0.00</ic:excessDeductionsCarriedForward>
+                                </r9:residentialRentalIncome>
                                 <r9:friendlyNetIncome>10000.00</r9:friendlyNetIncome>
                                 <r9:interest>0.00</r9:interest>
                                 <r9:dividends>0.00</r9:dividends>
@@ -41,11 +50,17 @@
                                 <r9:donationsDeduction>1000.00</r9:donationsDeduction>
                                 <r9:netIncome>9000.00</r9:netIncome>
                                 <r9:lossesBroughtForward>0.00</r9:lossesBroughtForward>
+                                <r9:lossCarriedBackPriorYear>0</r9:lossCarriedBackPriorYear>
                                 <r9:totalTaxableIncome>9000.00</r9:totalTaxableIncome>
                                 <r9:taxOnTaxableIncome>2520.00</r9:taxOnTaxableIncome>
                                 <r9:overseasTaxPaid>1800.00</r9:overseasTaxPaid>
                                 <r9:imputationCreditsReceived>1000.00</r9:imputationCreditsReceived>
                                 <r9:imputationBroughtForward>0.00</r9:imputationBroughtForward>
+                                <r9:researchAndDevelopment>
+                                    <ic:creditBroughtForward>1000</ic:creditBroughtForward>
+                                    <ic:nonrefundableCredit>1000</ic:nonrefundableCredit>
+                                    <ic:refundableCredit>1000</ic:refundableCredit>
+                                </r9:researchAndDevelopment>
                                 <r9:totalRWTWithheld>1000.00</r9:totalRWTWithheld>
                                 <r9:rlwtCredit>0.00</r9:rlwtCredit>
                                 <r9:otherTaxCredits>1000.00</r9:otherTaxCredits>
