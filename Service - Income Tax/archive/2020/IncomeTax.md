@@ -5,7 +5,7 @@
 # Income Tax Software Development Kit (SDK)
 
 #### Archives
-* [V1.0 Annual Return 2019](../../2019/)
+* [V1.0 Annual Return 2019](../2019/)
 
 ### Latest Release: V1.0  - Annual Return 2020
 	
