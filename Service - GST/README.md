@@ -54,7 +54,13 @@
             - [response sample](sample%20messages/body-gst-returnprepop-response.xml)
     - File
         - Positive response
-            - [request sample](sample%20messages/body-gst-returnfile-request.xml)
+            - [request sample 101A](sample%20messages/body-gst-returnfile-request-GST101A.xml)
+			- [request sample 103C](sample%20messages/body-gst-returnfile-request-GST103C.xml)
+			- [request sample 103D](sample%20messages/body-gst-returnfile-request-GST103D.xml)
+			- [request sample 103E](sample%20messages/body-gst-returnfile-request-GST103E.xml)
+			- [request sample 103F](sample%20messages/body-gst-returnfile-request-GST103F.xml)
+			- [request sample 103G](sample%20messages/body-gst-returnfile-request-GST103G.xml)
+			- [request sample 103H](sample%20messages/body-gst-returnfile-request-GST103H.xml)
             - [response sample](sample%20messages/body-gst-returnfile-response.xml)
     - RetrieveStatus
         - Positive response
