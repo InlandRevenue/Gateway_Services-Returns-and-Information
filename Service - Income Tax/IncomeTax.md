@@ -73,7 +73,7 @@ to accommodate annual changes for 2021:
 	* Download the [Return Service Income Tax build pack FY 2021](Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20Income%20Tax%20TY-2021.pdf) to view data definitions of each operation and response status code definitions
 	* Download the [Return Service Income Tax build pack FY 2020](Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20Income%20Tax%20TY-2020.pdf) to view data definitions of each operation and response status code definitions
 		* Supporting information on IR website
-	* Download the [Additional Information pack](Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20Additional%20Information%202021%20V1.0.pdf)
+	* Download the [Additional Information pack](Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20Additional%20Information%202021%20V1.1.pdf)
 		* Income tax assessments (Auto-Calc)
 
 * Income Tax Form Types
