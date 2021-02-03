@@ -28,6 +28,9 @@
 - Build pack 
 	- [Download the Return service GST build pack](Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20GST.pdf) to view data definitions of each operation and response status code definitions
 
+- GST Forms 
+    - [Standard GST Returns](#Standard-GST-Returns)
+
 - Message samples
     - [View message samples for requests and positive responses](#message-samples)
 	
@@ -44,6 +47,20 @@
 * Service: Identity and Access – view [how to integrate, OAuth requests, message samples and build pack](https://github.com/InlandRevenue/Gateway_Services-Access/tree/master/Identity%20and%20Access) 
 * Service: Intermediation – view [schemas, WSDLs, and build pack](https://github.com/InlandRevenue/Gateway_Services-Access/tree/master/Service%20-%20Intermediation)
 
+## Standard GST Returns
+
+| Form Type| Return Type | Description |
+| :--: | -- | -- |
+| GST 101A  | Goods and Services Tax return | For customers to file a GST return according to their filing frequency. |
+| GST 103B | GST and provional Tax Return - **Available internet only** | For customers who have lost their paper returns or cannot access online filing, this is also referred to as the disaster recover return **Web PDF only.** | 
+| GST 103C | GST and provional Tax Return | Ratio option, one monthly, single location filer - compulsory payment period. | 
+| GST 103D | GST and provional Tax Return | Ratio option, two monthly, single location filer - compulsory payment period.|
+| GST 103E | GST and provional Tax Return | Ratio option, one monthly, multi-location filer - compulsory payment period. |
+| GST 103F | GST and provional Tax Return | Ratio option, two monthly, multi-location filer - compulsory payment period. |
+| GST 103G | GST and provional Tax Return | Standard and estimate (Non-Ratio) filers - compulsory payment period. |
+| GST 103H | GST and provional Tax Return | Ratio Standard and estimate filers - voluntary payment period. |
+
+
 ## Message samples
 -----------------
 
@@ -54,7 +71,13 @@
             - [response sample](sample%20messages/body-gst-returnprepop-response.xml)
     - File
         - Positive response
-            - [request sample](sample%20messages/body-gst-returnfile-request.xml)
+            - [request sample GST 101A](sample%20messages/body-gst-returnfile-request-GST101A.xml)
+			- [request sample GST 103C](sample%20messages/body-gst-returnfile-request-GST103C.xml)
+			- [request sample GST 103D](sample%20messages/body-gst-returnfile-request-GST103D.xml)
+			- [request sample GST 103E](sample%20messages/body-gst-returnfile-request-GST103E.xml)
+			- [request sample GST 103F](sample%20messages/body-gst-returnfile-request-GST103F.xml)
+			- [request sample GST 103G](sample%20messages/body-gst-returnfile-request-GST103G.xml)
+			- [request sample GST 103H](sample%20messages/body-gst-returnfile-request-GST103H.xml)
             - [response sample](sample%20messages/body-gst-returnfile-response.xml)
     - RetrieveStatus
         - Positive response
