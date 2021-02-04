@@ -162,7 +162,7 @@
             <td>Customer IRD (<em>identifier</em>): 111001111</td>
         </tr>
         <tr>
-            <th rowspan="5">Error Scenarios</th>
+            <th rowspan="9">Error Scenarios</th>
             <td>INC-ES-52</td>
             <td>File</td>
             <td>Return with multiple IR10 attachments</td>
@@ -191,6 +191,40 @@
             <td>RetrieveFilingObligations</td>
             <td>Customer IRD (<em>identifier</em>): 078650362</td>
         </tr>
+        <tr>
+            <td>INC-ES-58</td>
+            <td>File</td>
+            <td>IR215 standalone or attachment with:<br>
+                <em>periodEndDate</em>: 2021-03-31 or later<br>
+                <em>incomeFromPie</em>: value > 0
+            </td>
+        </tr>
+        <tr>
+            <td>INC-ES-59</td>
+            <td>File</td>
+            <td>IR3 return with:<br>
+                <em>periodEndDate</em>: 2020-03-31 or earlier<br>
+                <em>pieIncome.totalTaxCredits</em> &gt; (<em>taxOnTaxableIncome / totalTaxableIncome</em>) * <em>pieIncome.totalIncome</em>
+            </td>
+        </tr>
+        <tr>
+            <td>INC-ES-60</td>
+            <td>File</td>
+            <td>IR3 return with:<br>
+                <em>periodEndDate</em>: 2021-03-31 or later<br>
+                <em>lossCarriedBackPriorYear</em>: value > 0<br>
+                Customer IRD (<em>identifier</em>): 132057273
+            </td>
+        </tr>
+        <tr>
+            <td>INC-ES-62</td>
+            <td>File</td>
+            <td>IR44 return with:<br>
+                <em>periodEndDate</em>: 2021-03-31 or later<br>
+                <em>residentialRentalIncome.indicator</em>: missing<br>
+                <em>residentialRentalIncome.totalIncome</em>: value > 0
+            </td>
+        </tr>
     </tbody>
 </table>
 
@@ -213,6 +247,7 @@
 	 
 - Authentication: 
 	- Authentication is based on the outcome of OAuth token validation (using new [OAuth emulator](https://mock-oauth.ird.digitalpartner.services/))
+	- Access delegation/restriction is not emulated, and any authenticated user has access to the test data
 	- Incoming requests should include "Authorization" header with the OAuth token value
 	- In case of missing token, emulated service would respond with error statusCode 2
 
