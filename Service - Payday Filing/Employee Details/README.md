@@ -22,6 +22,7 @@ Employers can send us changes to employee details using the Employment service.
 	
 - Build pack 
 	- [Download the Employment Service build pack](Gateway%20Services%20Build%20Pack%20-%20Employment%20Service%20v2.pdf) to view data definitions of each operation and response status code definitions
+		
 	
 - Message samples
     - [View message samples for requests and positive responses](#message-samples)
@@ -132,6 +133,9 @@ The following key changes have been made to the Employment Service for the updat
 
 * Test scenarios
 	- [Download the test scenarios report template](Payday%20Filing%20ED%20-%20Test%20Report%20Template.docx)
+	- [Download the test scenarios report template for 2021 new Tax Codes](ES%20V2%20-%20Employee%20Details%20-%20New%20Tax%20Codes%20-%20Test%20Report%20Template.docx)
+	
+	
 
 * Test URL endpoint
     - Cloud gateway service: https://test5.services.ird.govt.nz:4046/gateway/gws/employment/
