@@ -157,6 +157,8 @@ The EI version can be identified in the standard header’s majorFormType field:
 
 * Test scenarios
 	- [Download test scenarios report template](Payday%20Filing%20EI%20-%20Test%20Report%20Template.docx)
+	- [Download test scenarios report template for 2021 new Tax Codes](EI%20V2%20-%20Return%20Service%20-%20New%20Tax%20Code%20-%20Test%20Report%20Template.docx)
+	
 
 * Test URL endpoints
 	- Cloud gateway service: https://test5.services.ird.govt.nz:4046/gateway/gws/returns/
