@@ -132,8 +132,8 @@ The following key changes have been made to the Employment Service for the updat
 -----------------
 
 * Test scenarios
-	- [Download the test scenarios report template](Payday%20Filing%20ED%20-%20Test%20Report%20Template.docx)
-	- [Download the test scenarios report template for 2021 new Tax Codes](ES%20V2%20-%20Employee%20Details%20-%20New%20Tax%20Codes%20-%20Test%20Report%20Template.docx)
+	- [Download the test scenarios report template](Payday%20Filing%20ED%20v2%20%28Including%20Tax%20Code%20Changes%29-%20Test%20Report%20Template.docx)
+
 	
 	
 
