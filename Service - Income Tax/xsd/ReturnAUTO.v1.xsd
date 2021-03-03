@@ -7,8 +7,10 @@ DESC:			This schema defines the elements and related data types required for the
     
 Date  		Change
 **********  ************
-2020-12-02	pieDebit added
+2021-02-03	pieDebit added
             pieCredit added
+			totalTCPDs changed to cmn type MoneyTypePositive
+			totalExtinguishedTCPDs changed to cmn type MoneyTypePositive
         
 2019-06-29   Initial
 _______________________________________      
@@ -44,8 +46,8 @@ _______________________________________
 					<xsd:element name="totalPAYEDeducted" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="totalGrossIncome" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="totalIncomeNotLiableForACCLevy" type="cmn:MoneyTypePositive" minOccurs="0"/>
-					<xsd:element name="totalTCPDs" type="cmn:MoneyType" minOccurs="0"/>
-					<xsd:element name="totalExtinguishedTCPDs" type="cmn:MoneyType" minOccurs="0"/>
+					<xsd:element name="totalTCPDs" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="totalExtinguishedTCPDs" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="payeDeductedOnESSIncome" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="totalESSIncome" type="cmn:MoneyType" minOccurs="0"/>
 					<xsd:element name="taxDeductedFromACCPayment" type="cmn:MoneyType" minOccurs="0"/>

@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 	NAME:             ReturnIR3.v1.xsd
-	VER:              1.2
+	VER:              1.25
 	ISSUER:           Inland Revenue Department
 	DESC:             This schema defines the elements and related data types required for the Returns Individual Income Tax 2020 Gateway Service.
     
 Date  		Change
 **********  ************
-2020-11-11	lossCarriedBackPriorYear added
+2021-01-26	lossCarriedBackPriorYear added
 			governmentSubsidies added
 			pieDebit added
 			pieCredit added
+			totalTCPDs changed to cmn type MoneyTypePositive
+			totalExtinguishedTCPDs changed to cmn type MoneyTypePositive
          
 2019-11-20	residentialRentalIncome added
 			researchAndDevelopment added
@@ -51,8 +53,8 @@ _______________________________________
 					<xsd:element name="totalPAYEDeducted" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="totalGrossIncome" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="totalIncomeNotLiableForACCLevy" type="cmn:MoneyTypePositive" minOccurs="0"/>
-					<xsd:element name="totalTCPDs" type="cmn:MoneyType" minOccurs="0"/>
-					<xsd:element name="totalExtinguishedTCPDs" type="cmn:MoneyType" minOccurs="0"/>
+					<xsd:element name="totalTCPDs" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="totalExtinguishedTCPDs" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="totalTaxDeducted" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="taxDeductedFromSchedularPayments" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="grossSchedularPayments" type="cmn:MoneyTypePositive" minOccurs="0"/>
