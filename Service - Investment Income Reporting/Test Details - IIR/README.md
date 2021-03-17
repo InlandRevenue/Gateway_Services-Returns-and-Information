@@ -126,7 +126,7 @@
 	- [Download IPS test scenarios report template](Investment%20Income%20Reporting%20-%20Tax%20Type%20-%20IPS%20-%20%20Test%20Scenarios%20Report%20Template.docx)
 	- [Download NRT test scenarios report template](Investment%20Income%20Reporting%20-%20Tax%20Type%20-%20NRT%20-%20%20Test%20Scenarios%20Report%20Template.docx)
 	- [Download RWT test scenarios report template](Investment%20Income%20Reporting%20-%20Tax%20Type%20-%20RWT%20-%20%20Test%20Scenarios%20Report%20Template.docx)
-	- [Download PIE test scenarios report template](PIE%20Returns%20API%20Service%20%20Test%20Report%20Template.docx) 
+	- [Download PIE test scenarios report template](PIE%20Returns%20API%20Service%20-%20Test%20Report%20Template.docx) 
 
 - Test URL endpoints
     - Cloud gateway service: https://test5.services.ird.govt.nz:4046/gateway/gws/returns/
