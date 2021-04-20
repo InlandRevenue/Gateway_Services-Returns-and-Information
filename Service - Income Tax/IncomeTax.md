@@ -43,7 +43,8 @@ to accommodate annual changes for 2021:
 	*  ReturnIR6.v1.xsd  
 	*  ReturnIR8.v1.xsd  
 	*  ReturnIR9.v1.xsd  
-	*  ReturnIR44.v1.xsd  
+	*  ReturnIR44.v1.xsd 
+	*  ReturnIR1215.v1.xsd ***(added 21/04/2021)***
 	*  IncomeReturnCommon.v1.xsd 
 
 * The following changes have been made to Income Tax-specific **ERROR CODES**:
@@ -53,14 +54,20 @@ to accommodate annual changes for 2021:
 	|2011 | Changed `pieIncome` `totalTaxCredits` cannot be greater than `taxOnTaxableIncome` less `amountOfIETCClaimed` <br/> **NOTE:** This error code will only be returned for periods up to 2020 | IR3, Auto-Calc |
 	|2228 | Added `lossCarriedBackPriorYear` must be 0 when there is no LCB indicator on the previous income tax period |IR3, IR3NR, IR4, IR6, IR8, IR9, IR44 |
 	|2230 | Added `incomeFromPIE` is not used for the IR215 starting 2021 onwards IR215 |
+	|2330 | The value of totalGeneralInsurancePremiums must match the sum of paymentsToGeneralInsurers `grossPremiums`   |
+	|2331 | The value of `totalGuarantorFees` must match the sum of guarantors grossFees   |
+	|2332 | The value of `totalGrossPremiumsFees` must match the sum of `totalGeneralInsurancePremiums`, `totalLifeInsurancePremiums`, `totalGuarantorFees`  |
+	|2333 | The value of `totalSwissGrossPremiums` must match the sum of `paymentsToSwissInsurers` `swissGrossPremiums`  |
+	|2334 | generalPayment `taxResidenceCountry`: non-resident insurer cannot be a New Zealand tax resident   |
+	|2335 | generalPayment `taxResidenceCountry`: non-resident insurer cannot be a New Zealand tax resident   |
+	|2335 |  generalPayment `taxResidenceCountry`: payments to insurers resident in Switzerland are not taxable and should be recorded in `paymentsToSwissInsurers`    |
+	|2336 | guarantor `taxResidenceCountry`: non-resident guarantors cannot be New Zealand tax resident   |
+
 	
 ## Key Documentation:
 
 * Test scenarios
-	* [Download test scenarios report template **2021**](INC%202021%20changes%20-%20Return%20Service%20-%20Test%20Report%20Template.docx)
-	* [Download test scenarios report template **2020**](INC%202020%20changes%20-%20Return%20Service%20-%20Test%20Report%20Template.docx)
-
-	
+	* [Download test scenarios report template](Income%20Tax%20-%20Return%20Service%20-%20Test%20Report%20Template.docx)
 
 * XSD Schemas 
     * View and download the [Income Return Common XSD](xsd/IncomeReturnCommon.v1.xsd) from this [XSD](xsd/) directory	
@@ -167,6 +174,8 @@ to accommodate annual changes for 2021:
 	* IR833 - Property sale information 
 	* CFC  - Controlled foreign investment
 	
+* IR1215 - As agent income tax return	
+	
 * IR215 - Adjust your income 
 	* Does not support attachments	
 	
@@ -204,6 +213,7 @@ to accommodate annual changes for 2021:
     - [IR8J File request](sample%20messages/file_request_ir8j_standalone.xml)
     - [IR9 File request](sample%20messages/file_request_ir9_standalone.xml) _(inc. Annual Changes 2021)_
     - [IR44 File request](sample%20messages/file_request_ir44_standalone.xml) _(inc. Annual Changes 2021)_
+	- [IR1215 File request](sample%20messages/file_request_ir215.xml)
     - [File Response](sample%20messages/file_response.xml) 
 - RetrieveReturn
     - [RetrieveReturn request](sample%20messages/retrievereturn_request.xml)
@@ -218,9 +228,11 @@ to accommodate annual changes for 2021:
     - [IR8J RetrieveReturn response](sample%20messages/retrievereturn_response_ir8j.xml)
     - [IR9 RetrieveReturn response](sample%20messages/retrievereturn_response_ir9.xml) _(inc. Annual Changes 2021)_
     - [IR44 RetrieveReturn response](sample%20messages/retrievereturn_response_ir44.xml) _(inc. Annual Changes 2021)_
-- RetrieveReturn
+	- [IR1215 RetrieveReturn response](sample%20messages/retrievereturn_response_ir1215.xml) 
+- RetrieveStatus
     - [RetrieveStatus request](sample%20messages/retrievestatus_request.xml)
     - [RetrieveStatus response](sample%20messages/retrievestatus_response.xml)
+	- [RetrieveStatus response](sample%20messages/retrievestatus_response.xml)
 - Prepop
     - [Prepop request](sample%20messages/prepop_request.xml)
     - [Prepop response (Individual customer)](sample%20messages/prepop_response_individual.xml)
@@ -233,6 +245,13 @@ to accommodate annual changes for 2021:
 	- [Error Code 2227](sample%20messages/ErrorCode2227.txt)
 	- [Error Code 2228](sample%20messages/ErrorCode2228.txt)
 	- [Error Code 2230](sample%20messages/ErrorCode2230.txt)
+	- [Error Code 2330](sample%20messages/ErrorCode2330.txt)
+	- [Error Code 2331](sample%20messages/ErrorCode2331.txt)
+	- [Error Code 2332](sample%20messages/ErrorCode2332.txt)
+	- [Error Code 2333](sample%20messages/ErrorCode2333.txt)
+	- [Error Code 2334](sample%20messages/ErrorCode2334.txt)
+	- [Error Code 2335](sample%20messages/ErrorCode2335.txt)
+	- [Error Code 2336](sample%20messages/ErrorCode2336.txt)
 
 
 

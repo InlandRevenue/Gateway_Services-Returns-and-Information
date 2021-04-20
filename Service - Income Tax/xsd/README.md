@@ -49,6 +49,7 @@ to be submitted on amendment.
 | Clubs and Societies | Clubs or societies income tax return| [ReturnIR9.v1.xsd](ReturnIR9.v1.xsd)| `9` | Primary | Single |1 | 2015+ | <ul><li>IR10</li><li>IR833</li></ul> |
 | Group investment fund | Superannuation funds income tax return |[ReturnIR44.v1.xsd](ReturnIR44.v1.xsd)| `44` | Primary | Single |1 | 2015+ | <ul><li>IR833</li></ul>|
 | Group investment fund| Group investment fund return |[ReturnIR44E.v1.xsd](ReturnIR44E.v1.xsd)| `44E` | Attachment | Single |1 | 2013+ | |
+| Company | As agent return |[ReturnIR1215.v1.xsd](ReturnIR1215.v1.xsd)| `1215` | Primary | Single | 1 | 2019+ | |
 | Individual| Farming income |[ReturnIR3F.v1.xsd](ReturnIR3F.v1.xsd)| `3F` | Attachment | Single |1 | 2013+ | | 
 | Individual| Schedule of business income |[ReturnIR3B.v1.xsd](ReturnIR3B.v1.xsd)| `3B` | Attachment | Single |1 | 2013+ | 
 |Individual | Rental income schedule| [ReturnIR3R.v1.xsd](ReturnIR3R.v1.xsd)| `3R` | Attachment | Multiple |1 | 2013+ | |
