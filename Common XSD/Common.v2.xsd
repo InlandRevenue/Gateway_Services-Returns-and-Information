@@ -2,12 +2,13 @@
 <!-- Documentation
 _______________________________________
 NAME: 		Common.v2.xsd
-VER:		2.7
+VER:		2.8
 ISSUER:		Inland Revenue Department
 DESC:		This schema defines the common data types used accross the IRD hosted, Gateway Services.
 
 ' Date  			Change
 ' **********		************
+' 2021-04-21		Added 'RSP' to annotation of AccountTypeType element
 ' 2020-10-14		Update EmailAddressType regex to disallow special characters in the domain (after the @ symbol)
 ' 2020-09-28		Update EmailAddressType regex to properly escape characters
 ' 2020-08-18		Correct account type list in annotation for AccountTypeType
@@ -301,6 +302,7 @@ _______________________________________
 					RDI: Research and Development Tax Incentive
 					REB: Donation tax credit
 					RLT: Residential land withholding tax
+					RSP: Resurgence Support Payment
 					RUL: Rulings and determinations
 					RWT: Resident withholding tax
 					SBC: Small Business loan
