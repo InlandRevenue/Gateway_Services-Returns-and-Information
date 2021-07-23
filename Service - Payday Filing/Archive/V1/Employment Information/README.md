@@ -67,7 +67,7 @@ Employees can file Employment information (EI) to us each pay cycle using the Re
 -----------------
 
 - Mock URL Endpoint
-    - https://mock-ei.ird.digitalpartner.services/ 
+    -  https://empinfo.test.services.ird.govt.nz/ 
 
 - Test Scenarios
 	- Employment Information Test Scenarios Mindmap

@@ -107,7 +107,7 @@ The following key changes have been made to the Employment Service for the updat
 -----------------
 
 - Mock URL endpoint
-    - https://mock-es.ird.digitalpartner.services/
+    -  https://empservice.test.services.ird.govt.nz/
 
 * Test scenarios 
 	- Employee Details test scenarios mind map

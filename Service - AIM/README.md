@@ -88,7 +88,7 @@
 -----------------
 
 * Mock emulated services URL
-	* https://mock-aim.ird.digitalpartner.services
+	* https://aim.test.services.ird.govt.nz/
 
 - AIM mock scenarios mindmap
 	- [View larger image](images/AIM_Mock_Scenarios_Mindmap.png)

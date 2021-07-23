@@ -87,12 +87,12 @@
 -----------------
 
 - Mock URLs IIR:
-	- Mock emulated services	-	https://mock-iir.ird.digitalpartner.services/ 
-	- Mock URL endpoint			- 	https://mock-iir.ird.digitalpartner.services/secure/gateway/GWS/Returns/
+	- Mock emulated services	-	 https://iir.test.services.ird.govt.nz/ 
+	- Mock URL endpoint			- 	 https://iir.test.services.ird.govt.nz/gateway/GWS/Returns/
 
 - Mock URLs PIE:
-	- Mock emulated services	-	https://mock-pie.ird.digitalpartner.services/ 
-	- Mock URL endpoint			- 	https://mock-pie.ird.digitalpartner.services/secure/gateway/GWS/Returns/
+	- Mock emulated services	- https://pie.test.services.ird.govt.nz/ 
+	- Mock URL endpoint			- https://pie.test.services.ird.govt.nz/gateway/GWS/Returns/
 
 
 - Returns service mappings - (default) port 443 of path "/gateway/GWS/Returns":
