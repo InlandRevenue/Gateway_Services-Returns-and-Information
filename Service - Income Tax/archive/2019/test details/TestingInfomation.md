@@ -30,8 +30,8 @@
 ## Mock Environment Information
 ---
 - Mock Emulated Services URL
-    - Landing page: https://mock-inc.ird.digitalpartner.services/
-    - Service endpoint: https://mock-inc.ird.digitalpartner.services/gateway/GWS/Returns/
+    - Landing page:  https://incometax.test.services.ird.govt.nz
+    - Service endpoint:  https://incometax.test.services.ird.govt.nz/gateway/GWS/Returns/
 - Test Scenarios
     - Income Tax Mock Scenarios Mind map
     [Mock Scenarios](images/income-tax-test-scenarios.png)
