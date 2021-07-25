@@ -232,7 +232,7 @@
 -----------------
 
 - Mock URLs:
-    - Mock Emulated Services	-	https://https://incometax.test.services.ird.govt.nz
+    - Mock Emulated Services	-	https://incometax.test.services.ird.govt.nz
  	- Mock URL Endpoint			- 	https://incometax.test.services.ird.govt.nz/gateway/GWS/Returns/
 
 - Returns Service Mappings - (default) port 443 of path "/gateway/GWS/Returns":
