@@ -30,7 +30,7 @@
 ## Mock Environment Information
 ---
 - Mock Emulated Services URL
-    - Landing page: https://mock-inc.ird.digitalpartner.services
+    - Landing page: https://mock-inc.ird.digitalpartner.services/
     - Service endpoint: https://mock-inc.ird.digitalpartner.services/gateway/GWS/Returns/
 - Test Scenarios
     - Income Tax Mock Scenarios Mind map
@@ -197,8 +197,8 @@
 -----------------
 
 - Mock URLs:
-	- Mock Emulated Services	-	https://mock-inc.ird.digitalpartner.services/ 
-	- Mock URL Endpoint			- 	https://mock-inc.ird.digitalpartner.services/gateway/GWS/Returns/
+	- Mock Emulated Services	-	 https://incometax.test.services.ird.govt.nz/
+ 	- Mock URL Endpoint			- 	 https://incometax.test.services.ird.govt.nz/gateway/GWS/Returns/
 
 - Returns Service Mappings - (default) port 443 of path "/gateway/GWS/Returns":
 	- /gateway/GWS/Returns?wsdl - WSDL is not available, returning HTTP 200 only.
