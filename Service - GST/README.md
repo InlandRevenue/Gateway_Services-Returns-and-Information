@@ -96,7 +96,7 @@
 -----------------
 
 * Mock emulated services URL
-	* https://mock-gst.ird.digitalpartner.services
+	*  https://gst.test.services.ird.govt.nz
 
 * Test scenarios
 	- GST mock scenarios mindmap

@@ -121,7 +121,7 @@ The EI version can be identified in the standard header’s majorFormType field:
 -----------------
 
 - Mock URL endpoint
-    - https://mock-ei.ird.digitalpartner.services/ 
+    -  https://empinfo.test.services.ird.govt.nz/ 
 
 - Test scenarios
 	- Employment Information test scenarios mind map

@@ -64,7 +64,7 @@ Mock Environment Information:
 -----------------
 
 * Mock URL Endpoint URL
-    - https://mock-es.ird.digitalpartner.services/
+    -  https://empservice.test.services.ird.govt.nz/
 
 * Test Scenarios 
 	- Employee Details Test Scenarios Mindmap
