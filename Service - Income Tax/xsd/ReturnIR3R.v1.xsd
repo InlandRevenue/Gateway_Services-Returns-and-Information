@@ -3,8 +3,14 @@
 	NAME:			ReturnIR3R.xsd
 	VER:			1.0
 	ISSUER:			Inland Revenue Department
-	DATE:			29/06/2019
+	DATE:			24/06/2021
 	DESC:			This schema defines the elements and related data types required for the Returns IR3R Gateway Service.
+	
+	CHANGE LOG
+	DATE			CHANGE
+	******			******
+	2021-07-30		Added new elements (availableMonths, propertyAddress1 and propertyAddress2) for Rental form
+	2019-02-12		Initial development
 -->
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:www.ird.govt.nz/GWS:types/ReturnIR3R.v1" xmlns:cmn="urn:www.ird.govt.nz/GWS:types/Common.v2" xmlns:rc="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2" xmlns:r="urn:www.ird.govt.nz/GWS:types/ReturnIR3R.v1" targetNamespace="urn:www.ird.govt.nz/GWS:types/ReturnIR3R.v1" elementFormDefault="qualified" attributeFormDefault="unqualified">
 	<!--Begin Imports Statement(s)-->
@@ -27,7 +33,7 @@
 		<xsd:complexContent>
 			<xsd:extension base="rc:FormFieldsType">
 				<xsd:sequence>
-					<xsd:element name="submissionKey" type="cmn:Quantity32TypePositive" minOccurs="0"/>
+					<xsd:element name="submissionKey" type="cmn:Quantity32TypePositive" minOccurs="0"/>				
 					<xsd:element name="totalRents" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="otherIncomeDescription" type="xsd:string" minOccurs="0"/>
 					<xsd:element name="otherIncomeAmount" type="cmn:MoneyTypePositive" minOccurs="0"/>
@@ -53,6 +59,9 @@
 					<xsd:element name="diminishingValueClaimed" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="diminishingValueClosing" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="depreciationAssetsDetails" type="depreciationListType" minOccurs="0"/>
+					<xsd:element name="propertyAddress1" type="cmn:String255" minOccurs="0"/>
+					<xsd:element name="propertyAddress2" type="cmn:String255" minOccurs="0"/>
+					<xsd:element name="availableMonths" type="cmn:MonthType" minOccurs="0"/>
 				</xsd:sequence>
 			</xsd:extension>
 		</xsd:complexContent>
