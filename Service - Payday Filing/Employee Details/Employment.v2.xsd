@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- edited with XMLSpy v2017 rel. 3 sp1 (x64) (http://www.altova.com) by 17nics (FAST Enterprises) -->
 <!--
-	NAME:		Employment.v2.xsd
-	VER:		2
-	ISSUER:		Inland Revenue Department
-	DATE:		05/11/2019
-	DESC:		This schema defines the elements and related data types required for the Employment Gateway Service Version 2.
-	CHANGE(s):  - Added simple type EmployeeExemptIncomeType.
-				- Added element employeeExemptIncome to CreateBodyType.
-				- Updated employeeNameOnEILine on CreateBodyType, UpdateBodyType, RetrieveListBodyType, and TerminateBodyType to use simple type 'String255', increasing string length to 255. 
-				- Added simple type LateOptOutReasonType.
-				- Added element lateOptOutReasonType to UpdateBodyType with type LateOptOutReasonType.
-				- Added element otherLateOptOutReason to UpdateBodyType with type String255, allowing string length up to 255.
-				- Updated schema reference Common.v1.xsd to Common.v2.xsd
-				- Updated documentation on KiwiSaverStatusType and KiwiSaverEligibilityType 
+_______________________________________
+NAME:	Employment.v2.xsd
+VER:	2
+ISSUER:	Inland Revenue Department
+DESC:	This schema defines the elements and related data types required for the Employment Gateway Service Version 2.
+
+' Date  			Change
+' **********		************
+' 2020-12-11		- Add eventRequest and eventResponse for the new Event operation
+					- Add Events, Event, EventType, PayFrequency, and KiwiSaverReasonType types for supporting new Event operation
+' 2019-11-05		- Added simple type EmployeeExemptIncomeType.
+					- Added element employeeExemptIncome to CreateBodyType.
+					- Updated employeeNameOnEILine on CreateBodyType, UpdateBodyType, RetrieveListBodyType, and TerminateBodyType to use simple type 'String255', increasing string length to 255. 
+					- Added simple type LateOptOutReasonType.
+					- Added element lateOptOutReasonType to UpdateBodyType with type LateOptOutReasonType.
+					- Added element otherLateOptOutReason to UpdateBodyType with type String255, allowing string length up to 255.
+					- Updated schema reference Common.v1.xsd to Common.v2.xsd
+					- Updated documentation on KiwiSaverStatusType and KiwiSaverEligibilityType 
+_______________________________________
 -->
 <xsd:schema xmlns="urn:www.ird.govt.nz/GWS:types/Employment.v2" xmlns:cmn="urn:www.ird.govt.nz/GWS:types/Common.v2" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="urn:www.ird.govt.nz/GWS:types/Employment.v2" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0">
 	<!--Imports-->
@@ -28,6 +33,8 @@
 	<xsd:element name="updateRequest" type="UpdateRequestType"/>
 	<xsd:element name="retrieveListRequest" type="RetrieveListRequestType"/>
 	<xsd:element name="retrieveListResponse" type="RetrieveListResponseType"/>
+	<xsd:element name="eventRequest" type="EventRequestType"/>
+	<xsd:element name="eventResponse" type="EventResponseType"/>
 	<xsd:element name="employmentResponse" type="cmn:StandardResponseType"/>
 	<!--Request Structures-->
 	<xsd:complexType name="CreateRequestType">
@@ -56,6 +63,12 @@
 			<xsd:element name="retrieveListBody" type="RetrieveListBodyType"/>
 		</xsd:sequence>
 	</xsd:complexType>
+	<xsd:complexType name="EventRequestType">
+		<xsd:sequence>
+			<xsd:element name="header" type="cmn:HeaderType"/>
+			<xsd:element name="eventBody" type="EventBodyType"/>
+		</xsd:sequence>
+	</xsd:complexType>
 	<!--Response Structures-->
 	<xsd:complexType name="RetrieveListResponseType">
 		<xsd:complexContent>
@@ -75,6 +88,15 @@
 		<xsd:sequence>
 			<xsd:element name="employee" type="EmployeeDetailType" maxOccurs="100000"/>
 		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="EventResponseType">
+		<xsd:complexContent>
+			<xsd:extension base="cmn:StandardResponseType">
+				<xsd:sequence>
+					<xsd:element name="events" type="Events" minOccurs="0" maxOccurs="1"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
 	</xsd:complexType>
 	<!--Complex Types-->
 	<xsd:complexType name="CreateBodyType">
@@ -160,6 +182,75 @@
 			<xsd:element name="taxCode" type="cmn:TaxCodeType" maxOccurs="4"/>
 		</xsd:sequence>
 	</xsd:complexType>
+	<xsd:complexType name="ResponseNamePersonType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">Type used to convey the proper name of an individual.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="nameTitle" type="cmn:NameTitleType" minOccurs="0"/>
+			<xsd:element name="nameFirst" type="cmn:NameFirstType" minOccurs="0"/>
+			<xsd:element name="nameSurname" type="cmn:NameSurnameType" minOccurs="0"/>
+			<xsd:element name="nameMiddle" type="cmn:NameMiddleType" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation xml:lang="en">If an individual has mutliple middle names only the most significant should be used, or all names should be noted up to the character limit.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="NameMandatoryFirstNameType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">Type used to convey the proper name of an individual.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="nameTitle" type="cmn:NameTitleType" minOccurs="0"/>
+			<xsd:element name="nameFirst" type="cmn:NameFirstType"/>
+			<xsd:element name="nameSurname" type="cmn:NameSurnameType" minOccurs="0"/>
+			<xsd:element name="nameMiddle" type="cmn:NameMiddleType" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation xml:lang="en">If an individual has mutliple middle names only the most significant should be used, or all names should be noted up to the character limit.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="EventBodyType">
+		<xsd:sequence>
+			<xsd:element name="employeeIRD" type="cmn:IRDNumberType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="eventFrom" type="cmn:DateType" maxOccurs="1"/>
+			<xsd:element name="eventTo" type="cmn:DateType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="eventType" type="EventType" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="Events">
+		<xsd:choice>
+			<xsd:element name="event" type="Event" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="Event">
+		<xsd:annotation>
+			<xsd:documentation>
+				An event for an employer. This may include events such as deduction notices for Child Support,
+				Student Loans, KiwiSaver, or others.
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="eventID" type="xsd:integer"/>
+			<xsd:element name="type" type="EventType"/>
+			<xsd:element name="payDate" type="cmn:DateType" minOccurs="0"/>
+			<xsd:element name="employeeIRD" type="cmn:IRDNumberType" minOccurs="0"/>
+			<xsd:element name="employeeName" type="cmn:String255" minOccurs="0"/>
+			<xsd:element name="startDate" type="cmn:DateType" minOccurs="0"/>
+			<xsd:element name="stopDate" type="cmn:DateType" minOccurs="0"/>
+			<xsd:element name="reason" type="KiwiSaverReasonType" minOccurs="0"/>
+			<xsd:element name="currentDeductionRate" type="cmn:PercentageType" minOccurs="0"/>
+			<xsd:element name="expectedDeductionRate" type="cmn:PercentageType" minOccurs="0"/>
+			<xsd:element name="currentAmount" type="cmn:MoneyType" minOccurs="0"/>
+			<xsd:element name="expectedAmount" type="cmn:MoneyType" minOccurs="0"/>
+			<xsd:element name="currentTaxCode" type="cmn:TaxCodeType" minOccurs="0"/>
+			<xsd:element name="expectedTaxCode" type="cmn:TaxCodeType" minOccurs="0"/>
+			<xsd:element name="frequency" type="PayFrequency" minOccurs="0"/>
+			<xsd:element name="created" type="cmn:DateTimeType" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
 	<!--Simple Types-->
 	<xsd:simpleType name="EmployeeExemptIncomeType">
 		<xsd:restriction base="xsd:normalizedString">
@@ -186,9 +277,9 @@
 			<xsd:documentation>
 				AK - existing kiwisaver member
 				OK - opting into kiwisaver
-				NK - not eligible for kiwisaver			
+				NK - not eligible for kiwisaver
 				CT - casual/temporary employee
-				AE - auto-enrol			
+				AE - auto-enrol
 			</xsd:documentation>
 		</xsd:annotation>
 		<xsd:restriction base="xsd:normalizedString">
@@ -209,34 +300,73 @@
 			<xsd:maxLength value="2"/>
 		</xsd:restriction>
 	</xsd:simpleType>
-	<xsd:complexType name="ResponseNamePersonType">
+	<xsd:simpleType name="EventType">
 		<xsd:annotation>
-			<xsd:documentation xml:lang="en">Type used to convey the proper name of an individual.</xsd:documentation>
+			<xsd:documentation>
+				CSDEDC - Child Support Deduction Change
+				CSDEDE - Child Support Deduction End
+				CSDEDS - Child Support Deduction Start
+				ICIDEN - Student loan incorrect deductions have been identified for an employee
+				INCTAXCHG - Change to income tax deductions for employee
+				KSCTRINC - Employer KiwiSaver contribution amount incorrect
+				KSDEDINC - Employee KiwiSaver deduction amount incorrect
+				KSECNOTC - KiwiSaver employer contributions not compulsory
+				KSECNOTR - KiwiSaver employer contributions not compulsory
+				RDESTART - Stop making SL deductions for employee due to having a Repayment deduction exemption
+				RDRCNL - Reduced Deduction Rate Cancelled
+				RDREND - Reduced deduction rate is ending for an employee
+				SDRSTART - Change SL deductions for employee due to having a student loan special deduction rate
+				SLCEDAMD - Student loan compulsory extra deduction - amount due amended
+				STOPALLKS - Stop KiwiSaver deductions and compulsory employer deductions
+				STOPSLCED - Stop student loan compulsory extra deductions
+				STRTALLKS - Start making KiwiSaver deductions and Compulsory Employer Contributions
+				STRTKSDED - Start KiwiSaver deductions
+				STRTNNR - Start deducting at the no-notification rate
+				STRTSLCED - Start student loan compulsory extra deductions
+				TAXCODECHG - Tax code changes required
+			</xsd:documentation>
 		</xsd:annotation>
-		<xsd:sequence>
-			<xsd:element name="nameTitle" type="cmn:NameTitleType" minOccurs="0"/>
-			<xsd:element name="nameFirst" type="cmn:NameFirstType" minOccurs="0"/>
-			<xsd:element name="nameSurname" type="cmn:NameSurnameType" minOccurs="0"/>
-			<xsd:element name="nameMiddle" type="cmn:NameMiddleType" minOccurs="0">
-				<xsd:annotation>
-					<xsd:documentation xml:lang="en">If an individual has mutliple middle names only the most significant shoudl be used, or all names should be noted up to the character limit.</xsd:documentation>
-				</xsd:annotation>
-			</xsd:element>
-		</xsd:sequence>
-	</xsd:complexType>
-	<xsd:complexType name="NameMandatoryFirstNameType">
+		<xsd:restriction base="xsd:normalizedString">
+			<xsd:minLength value="1"/>
+			<xsd:maxLength value="10"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="PayFrequency">
 		<xsd:annotation>
-			<xsd:documentation xml:lang="en">Type used to convey the proper name of an individual.</xsd:documentation>
+			<xsd:documentation>
+				The pay frequency for this employee, as held by Inland Revenue
+				4W - 4 weekly
+				AH - Irregular/Ad-hoc
+				DA - Daily
+				FT - Fortnightly
+				HM - Half Monthly
+				MT - Monthly
+				WK - Weekly
+			</xsd:documentation>
 		</xsd:annotation>
-		<xsd:sequence>
-			<xsd:element name="nameTitle" type="cmn:NameTitleType" minOccurs="0"/>
-			<xsd:element name="nameFirst" type="cmn:NameFirstType"/>
-			<xsd:element name="nameSurname" type="cmn:NameSurnameType" minOccurs="0"/>
-			<xsd:element name="nameMiddle" type="cmn:NameMiddleType" minOccurs="0">
-				<xsd:annotation>
-					<xsd:documentation xml:lang="en">If an individual has mutliple middle names only the most significant shoudl be used, or all names should be noted up to the character limit.</xsd:documentation>
-				</xsd:annotation>
-			</xsd:element>
-		</xsd:sequence>
-	</xsd:complexType>
+		<xsd:restriction base="xsd:normalizedString">
+			<xsd:minLength value="1"/>
+			<xsd:maxLength value="2"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="KiwiSaverReasonType">
+		<xsd:annotation>
+			<xsd:documentation>
+				IRINIT - Inland Revenue initiated request
+				NOELIG - This employee is not eligible for automatic enrolment into KiwiSaver
+				STPCLS - KiwiSaver account closed
+				STPINV - Invalid enrolment
+				STPOPT - Opt-out approved
+				STPSSX - Saving suspension
+				STPXRQ - Not required to enrol
+				STROPT - New member opt-in
+				STROPX - Opt-out declined
+				STRSSE - Saving suspension ending
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:normalizedString">
+			<xsd:minLength value="1"/>
+			<xsd:maxLength value="6"/>
+		</xsd:restriction>
+	</xsd:simpleType>
 </xsd:schema>
