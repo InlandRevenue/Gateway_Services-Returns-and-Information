@@ -101,6 +101,10 @@ The following key changes have been made to the Employment Service for the updat
         - Positive response
             - [request sample](sample%20messages/body-employment-retrievelist-request.xml)
             - [response sample](sample%20messages/body-employment-retrievelist-response.xml)
+    - Event
+        - [ES-Events-Sample-Payloads](sample%20messages/ES-Events-Sample-Payloads.xlsx)
+		    
+			
 
 
 ## Mock environment information
@@ -112,7 +116,7 @@ The following key changes have been made to the Employment Service for the updat
 * Test scenarios 
 	- Employee Details test scenarios mind map
 	
-	![Test Scenarios](images/Employee_Details_Test_Scenarios_Mind_Map.png)
+	![Test Scenarios](images/Emulated_Services_Employment_Service_Coverage.png)
 
 *  Test data
 	- The following test data can be tested in our Mock Services environment when submitting requests to the service operations

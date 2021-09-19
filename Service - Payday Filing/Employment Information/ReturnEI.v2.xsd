@@ -1,28 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	NAME:		ReturnEI.v2.xsd
-	VER:		2.0
-	ISSUER:		Inland Revenue Department
-	DATE:		28/11/19
-	DESC:		This schema defines the elements and related data types required for the Returns EI Gateway Service.
-	CHANGE(s):	- Updated filename to ReturnEI.v2 and version number to 2.0 in header.
-				- Added new element hoursPaid to EmployeeInfoType.
-				- Added new element additionalPrescRateDeduction to EmployeeInfoType.
-				- Added new element priorPeriodGrossAdjustment to EmployeeInfoType.
-				- Added new element priorPeriodPAYEAdjustment to EmployeeInfoType.
-				- Added new element essEarnings to EmployeeInfoType.
-				- Added new element slcirDeductions to EmployeeInfoType.
-				- Added new element slborDeductions to EmployeeInfoType.
-				- Updated existing element employeeName in EmployeeInfoType and EmployeePrepopInfoType to have max length = 255.
-				- Added new element totalAdditionalPrescRateDeduction to FormFieldsType.
-				- Added new element totalPriorPeriodGrossAdjustment to FormFieldsType.
-				- Added new element totalPriorPeriodPAYEAdjustment to FormFieldsType.
-				- Updated schema references Common.v1.xsd to Common.v2.xsd.
-				- Updated schema references ReturnCommon.v1.xsd to ReturnCommon.v2.xsd.
-				- Added new elements totalEssEarnings, totalSLCIRDeductions, totalSLBORDeductions to FormFieldsType. 
-				- Removed new element additionalPrescRateDeduction from EmployeeInfoType.
-				- Removed new element totalAdditionalPrescRateDeduction from FormFieldsType.
-				- Updated existing element employeePayFrequency from optional to required. 
+_______________________________________
+NAME:	ReturnEI.v2.xsd
+VER:	2
+ISSUER:	Inland Revenue Department
+DESC:	This schema defines the elements and related data types required for the Returns EI Gateway Service.
+
+' Date  			Change
+' **********		************
+' 2021-02-23		- Update totalPriorPeriodGrossAdjustment and totalPriorPeriodPAYEAdjustment to be of type MoneyType to allow for negative adjustments.
+
+' 2019-11-19		- Updated filename to ReturnEI.v2 and version number to 2.0 in header.
+					- Added new element hoursPaid to EmployeeInfoType.
+					- Added new element additionalPrescRateDeduction to EmployeeInfoType.
+					- Added new element priorPeriodGrossAdjustment to EmployeeInfoType.
+					- Added new element priorPeriodPAYEAdjustment to EmployeeInfoType.
+					- Added new element essEarnings to EmployeeInfoType.
+					- Added new element slcirDeductions to EmployeeInfoType.
+					- Added new element slborDeductions to EmployeeInfoType.
+					- Updated existing element employeeName in EmployeeInfoType and EmployeePrepopInfoType to have max length = 255.
+					- Added new element totalAdditionalPrescRateDeduction to FormFieldsType.
+					- Added new element totalPriorPeriodGrossAdjustment to FormFieldsType.
+					- Added new element totalPriorPeriodPAYEAdjustment to FormFieldsType.
+					- Updated schema references Common.v1.xsd to Common.v2.xsd.
+					- Updated schema references ReturnCommon.v1.xsd to ReturnCommon.v2.xsd.
+					- Added new elements totalEssEarnings, totalSLCIRDeductions, totalSLBORDeductions to FormFieldsType. 
+					- Removed new element additionalPrescRateDeduction from EmployeeInfoType.
+					- Removed new element totalAdditionalPrescRateDeduction from FormFieldsType.
+					- Updated existing element employeePayFrequency from optional to required. 
+_______________________________________
 -->
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:www.ird.govt.nz/GWS:types/ReturnEI.v2" xmlns:cmn="urn:www.ird.govt.nz/GWS:types/Common.v2" xmlns:rc="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2" xmlns:r="urn:www.ird.govt.nz/GWS:types/ReturnEI.v2" targetNamespace="urn:www.ird.govt.nz/GWS:types/ReturnEI.v2" elementFormDefault="qualified" attributeFormDefault="unqualified">
 	<!--Begin Imports Statement(s)-->
@@ -67,8 +73,8 @@
 					<xsd:element name="totalESCTDeducted" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="totalFamilyTaxCredits" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="totalAmountPayable" type="cmn:MoneyTypePositive" minOccurs="0"/>
-					<xsd:element name="totalPriorPeriodGrossAdjustment" type="cmn:MoneyTypePositive" minOccurs="0"/>
-					<xsd:element name="totalPriorPeriodPAYEAdjustment" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="totalPriorPeriodGrossAdjustment" type="cmn:MoneyType" minOccurs="0"/>
+					<xsd:element name="totalPriorPeriodPAYEAdjustment" type="cmn:MoneyType" minOccurs="0"/>
 				</xsd:sequence>
 			</xsd:extension>
 		</xsd:complexContent>
@@ -137,8 +143,8 @@
 			<xsd:element name="esctDeducted" type="cmn:MoneyTypePositive" minOccurs="0"/>
 			<xsd:element name="familyTaxCredits" type="cmn:MoneyTypePositive" minOccurs="0"/>
 			<xsd:element name="hoursPaid" type="cmn:MoneyTypePositive" minOccurs="0"/>
-			<xsd:element name="priorPeriodGrossAdjustment" type="cmn:MoneyTypePositive" minOccurs="0"/>
-			<xsd:element name="priorPeriodPAYEAdjustment" type="cmn:MoneyTypePositive" minOccurs="0"/>
+			<xsd:element name="priorPeriodGrossAdjustment" type="cmn:MoneyType" minOccurs="0"/>
+			<xsd:element name="priorPeriodPAYEAdjustment" type="cmn:MoneyType" minOccurs="0"/>
 		</xsd:sequence>
 	</xsd:complexType>
 	<xsd:simpleType name="PSONameType">

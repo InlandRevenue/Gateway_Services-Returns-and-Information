@@ -86,10 +86,11 @@
     - RetrieveFilingObligations
         - Positive response
             - [request sample](sample%20messages/body-gst-filingobligation-request.xml)
-            - [response sample](sample%20messages/body-gst-filingobligation-response.xml)
+			- [response sample](sample%20messages/body-gst-filingobligation-response.xml)
     - RetrieveReturn
         - Positive response
             - [request sample](sample%20messages/body-gst-retrievereturn-request.xml)
+			- [request sample](sample%20messages/body-gst-retrievereturn-ACC-Identifer.xml) ACC Identifer
             - [response sample](sample%20messages/body-gst-retrievereturn-response.xml)
 
 ## Mock environment information

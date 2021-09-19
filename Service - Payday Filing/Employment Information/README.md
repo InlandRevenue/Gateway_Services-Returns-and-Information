@@ -103,7 +103,7 @@ The EI version can be identified in the standard header’s majorFormType field:
     - File
         - Positive response
             - [request sample](sample%20messages/body-ei-returnfile-request.xml)
-            - [response sample](sample%20messages/body-ei-returnfile-response.xml)
+			- [response sample](sample%20messages/body-ei-returnfile-response.xml)
     - RetrieveStatus
         - Positive response
             - [request sample](sample%20messages/body-ei-returnstatus-request.xml)
@@ -115,6 +115,7 @@ The EI version can be identified in the standard header’s majorFormType field:
     - RetrieveReturn
         - Positive response
             - [request sample](sample%20messages/body-ei-retrievereturn-request.xml)
+			- [request sample](sample%20messages/body-eiv2-retrieve-return-ACC-Identifer-request.xml) ACC-Identifer
             - [response sample](sample%20messages/body-ei-retrievereturn-response.xml)
 
 ## Mock environment information
@@ -126,7 +127,7 @@ The EI version can be identified in the standard header’s majorFormType field:
 - Test scenarios
 	- Employment Information test scenarios mind map
 	
-	![Test Scenarios](images/Employment_Information_Test_Scenarios_Mind_Map.png)
+	![Test Scenarios](images/Emulated_Service_Employment_Information_Coverage.png)
 
 - Test data
 	- The following test data can be tested in our Mock Services environment when submitting requests to the service operations
