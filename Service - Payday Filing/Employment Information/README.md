@@ -135,22 +135,24 @@ The EI version can be identified in the standard header’s majorFormType field:
 	- Text in italics represents the name of the XML node in the request.
 	
 	
-|Operation | Scenario ID | Data |
-| --- | --- | --- |
-|Prepop | EMS_EI001 | Employer IRD (*identifier*): 123041607 |
-| | | *periodEndDate*: 2018-04-30 |
-| | | *payDayDate*: 2018-04-10|
-| Prepop | EMS_EI002 | Employer IRD (*identifier*): 123094018|
-| | | *periodEndDate*: 2018-12-31|
-| | | *payDayDate*: 2018-12-10|
-| RetrieveReturn | EMS_EI017 | Employer IRD (*identifier*): 123041607|
-| | | *periodEndDate*: 2018-04-30|
-| | | *payDayDate*: 2018-04-10|
-| | | *submissionKey*: 987654321|
-| RetrieveReturn | EMS_EI017 | Employer IRD (*identifier*): 123094018|
-| | | *periodEndDate*: 2018-12-31|
-| | | *payDayDate*: 2018-12-10|
-| | | *submissionKey*: 987654321|
+| Operation      | Scenario ID | Data                                 |
+|----------------|-------------|--------------------------------------|
+| Prepop         | ES-08       | Employer IRD (identifier): 123041607 |
+|                |             | periodEndDate: 2018-04-30            |
+|                |             | payDayDate: 2018-04-10               |
+|                |             |                                      |
+| Prepop         | ES-10       | Employer IRD (identifier): 123094018 |
+|                |             | periodEndDate: 2018-12-31            |
+|                |             | payDayDate: 2018-12-10               |
+|                |             |                                      |
+| RetrieveReturn | ES-042      | Employer IRD (identifier): 123041607 |
+|                |             | payDayDate: 2018-04-10               |
+|                |             | submissionKey: 987654321             |
+|                |             |                                      |
+| RetrieveReturn | ES-043      | Employer IRD (identifier): 123094018 |
+|                |             | periodEndDate: 2018-12-31            |
+|                |             | payDayDate: 2018-12-10               |
+|                |             | submissionKey: 987654321             |
 
 
 ## Test environment information
