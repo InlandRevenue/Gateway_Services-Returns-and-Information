@@ -1,4 +1,4 @@
-![IRD logo](../../Images/IRlogo.gif)
+![IRD logo](../../Images/IRlogo.gif)<br/>
 ![Software Dev](../../Images/SoftwareDev.png)
 
 # Income Tax - Testing Information
@@ -34,240 +34,62 @@
     - Service endpoint:  https://incometax.test.services.ird.govt.nz/gateway/GWS/Returns/
 - Test Scenarios
     - Income Tax Mock Scenarios Mind map 
-    [Mock Scenarios](images/INC_Emulated_Service_Coverage.png)
-    ![Mock Scenarios](images/INC_Emulated_Service_Coverage.png) 
+    [Mock Scenarios](images/Emulated_Services_IncomeTax_Coverage.png)
+    ![Mock Scenarios](images/Emulated_Services_IncomeTax_Coverage.png) 
 - Test Data
     - This table shows which scenarios (as per their numbers in the mind map) require specific data to trigger the expected responses.
     - Text in italics represents the name of the XML node in the request.
 	- **For all retrieve return scenarios, the periodEndDate must be 2021-03-31.**
     
-<table>
-    <tbody>
-        <tr>
-            <th></th>
-            <th>Scenario ID</th>
-            <th>Operation</th>
-            <th>Data</th>
-        </tr>
-        <tr>
-            <th rowspan="5">IR3</th>
-            <td>INC-ES-08</td>
-            <td>RetrieveReturn</td>
-            <td>Customer IRD (<em>identifier</em>): 132310297</td>
-        </tr>
-        <tr>
-            <td>INC-ES-12</td>
-            <td>RetrieveStatus</td>
-            <td>Customer IRD (<em>identifier</em>): 132310297</td>
-        </tr>
-        <tr>
-            <td>INC-ES-13</td>
-            <td>RetrieveStatus</td>
-            <td>Customer IRD (<em>identifier</em>): 070876272</td>
-        </tr>
-        <tr>
-            <td>INC-ES-15</td>
-            <td>Prepop</td>
-            <td>Customer IRD (<em>identifier</em>): 015679840</td>
-        </tr>
-        <tr>
-            <td colspan="2">All other scenarios</td>
-            <td>Customer IRD (<em>identifier</em>): 132306907</td>
-        </tr>
-        <tr>
-            <th>IR3NR</th>
-            <td colspan="2">All scenarios</td>
-            <td>Customer IRD (<em>identifier</em>): 093989910</td>
-        </tr>
-        <tr>
-            <th rowspan="4">IR4</th>
-            <td>INC-ES-24</td>
-            <td>RetrieveReturn</td>
-            <td>Customer IRD (<em>identifier</em>): 132329362</td>
-        </tr>
-        <tr>
-            <td>INC-ES-28</td>
-            <td>RetrieveStatus</td>
-            <td>Customer IRD (<em>identifier</em>): 132329362</td>
-        </tr>
-        <tr>
-            <td>INC-ES-29</td>
-            <td>RetrieveStatus</td>
-            <td>Customer IRD (<em>identifier</em>): 107031227</td>
-        </tr>
-        <tr>
-            <td colspan="2">All other scenarios</td>
-            <td>Customer IRD (<em>identifier</em>): 096062311</td>
-        </tr>
-        <tr>
-            <th>IR4J</th>
-            <td colspan="2">All scenarios</td>
-            <td>Customer IRD (<em>identifier</em>): 078445386</td>
-        </tr>
-        <tr>
-            <th>IR6</th>
-            <td colspan="2">All scenarios</td>
-            <td>Customer IRD (<em>identifier</em>): 079945793</td>
-        </tr>
-        <tr>
-            <th rowspan="4">IR7</th>
-            <td>INC-ES-36</td>
-            <td>File</td>
-            <td>Customer IRD (<em>identifier</em>): 019515842</td>
-        </tr>
-        <tr>
-            <td>INC-ES-37</td>
-            <td>File</td>
-            <td>Customer IRD (<em>identifier</em>): 105493711</td>
-        </tr>
-        <tr>
-            <td>INC-ES-38</td>
-            <td>RetrieveReturn</td>
-            <td>Customer IRD (<em>identifier</em>): 019515842</td>
-        </tr>
-        <tr>
-            <td>INC-ES-39</td>
-            <td>RetrieveReturn</td>
-            <td>Customer IRD (<em>identifier</em>): 105493711</td>
-        </tr>
-        <tr>
-            <th>IR8</th>
-            <td colspan="2">All scenarios</td>
-            <td>Customer IRD (<em>identifier</em>): 050700461</td>
-        </tr>
-        <tr>
-            <th>IR8J</th>
-            <td colspan="2">All scenarios</td>
-            <td>Customer IRD (<em>identifier</em>): 113613831</td>
-        </tr>
-        <tr>
-            <th>IR9</th>
-            <td colspan="2">All scenarios</td>
-            <td>Customer IRD (<em>identifier</em>): 056632778</td>
-        </tr>
-        <tr>
-            <th>IR44</th>
-            <td colspan="2">All scenarios</td>
-            <td>Customer IRD (<em>identifier</em>): 052120330</td>
-        </tr>
-        <tr>
-		    <th>IR526</th>
-            <td colspan="2">All scenarios</td>
-            <td>Customer IRD (<em>identifier</em>): 055786372</td>
-        </tr>
-		<tr>
-            <th rowspan="8">IR1215</th>
-            <td>INC-ES-51</td>
-            <td>File</td>
-            <td>Customer IRD (<em>identifier</em>): 139445236</td>
-        </tr>		
-		<tr>
-            <td>INC-ES-52</td>
-            <td>File</td>
-            <td>Customer IRD (<em>identifier</em>): 139445236</td>
-        </tr>
-        <tr>
-            <td>INC-ES-53</td>
-            <td>File Amend</td>
-            <td>Customer IRD (<em>identifier</em>): 139445236</td>
-        </tr>
-        <tr>
-            <td>INC-ES-54</td>
-            <td>RetrieveReturn</td>
-            <td>Customer IRD (<em>identifier</em>): 139445236<br/>Submission Key: 1263943680</td>
-        </tr>
-        <tr>
-            <td>INC-ES-55</td>
-            <td>RetrieveStatus</td>
-            <td>Customer IRD (<em>identifier</em>): 139445236<br/>Submission Key: 1263943680</td>
-        </tr>        
-        <tr>
-            <td>INC-ES-56</td>
-            <td>RetrieveFilingObligations</td>
-            <td>Customer IRD (<em>identifier</em>): 139444183</td>
-        </tr>       
-         <tr>
-            <td>INC-ES-57</td>
-            <td>RetrieveFilingObligations</td>
-            <td>Customer IRD (<em>identifier</em>): 139445236</td>
-        </tr>            
-         <tr>
-            <td>INC-ES-58</td>
-            <td>Prepop</td>
-            <td>Customer IRD (<em>identifier</em>): 139445236 or <br/> Customer IRD (<em>identifier</em>): 139444302</td>
-        </tr>                     
-		<tr>
-            <th>Authorisation</th>
-            <td>INC-ES-01</td>
-            <td>All</td>
-            <td>Customer IRD (<em>identifier</em>): 139445236</td>
-        </tr>
-        <tr>
-            <th rowspan="9">Error Scenarios</th>
-            <td>INC-ES-52</td>
-            <td>File</td>
-            <td>Return with multiple IR10 attachments</td>
-        </tr>
-        <tr>
-            <td>INC-ES-53</td>
-            <td>RetrieveReturn</td>
-            <td>Customer IRD (<em>identifier</em>): 107031227</td>
-        </tr>
-        <tr>
-            <td>INC-ES-54</td>
-            <td>File</td>
-            <td>IR9 return with IR307 attachment</td>
-        </tr>
-        <tr>
-            <td>INC-ES-55</td>
-            <td>File</td>
-            <td>IR3 return with:<br>
-                <em>totalPAYEDeducted</em> &gt; <em>totalGrossIncome</em><br>
-                <em>totalIncomeNotLiableForACCLevy</em> &gt; <em>totalGrossIncome</em><br>
-                <em>totalExtinguishedTCPDs</em> &gt; <em>totalTCPDs</em>
-            </td>
-        </tr>
-        <tr>
-            <td>INC-ES-56</td>
-            <td>RetrieveFilingObligations</td>
-            <td>Customer IRD (<em>identifier</em>): 078650362</td>
-        </tr>
-        <tr>
-            <td>INC-ES-58</td>
-            <td>File</td>
-            <td>IR215 standalone or attachment with:<br>
-                <em>periodEndDate</em>: 2021-03-31 or later<br>
-                <em>incomeFromPie</em>: value > 0
-            </td>
-        </tr>
-        <tr>
-            <td>INC-ES-59</td>
-            <td>File</td>
-            <td>IR3 return with:<br>
-                <em>periodEndDate</em>: 2020-03-31 or earlier<br>
-                <em>pieIncome.totalTaxCredits</em> &gt; (<em>taxOnTaxableIncome / totalTaxableIncome</em>) * <em>pieIncome.totalIncome</em>
-            </td>
-        </tr>
-        <tr>
-            <td>INC-ES-60</td>
-            <td>File</td>
-            <td>IR3 return with:<br>
-                <em>periodEndDate</em>: 2021-03-31 or later<br>
-                <em>lossCarriedBackPriorYear</em>: value > 0<br>
-                Customer IRD (<em>identifier</em>): 132057273
-            </td>
-        </tr>
-        <tr>
-            <td>INC-ES-62</td>
-            <td>File</td>
-            <td>IR44 return with:<br>
-                <em>periodEndDate</em>: 2021-03-31 or later<br>
-                <em>residentialRentalIncome.indicator</em>: missing<br>
-                <em>residentialRentalIncome.totalIncome</em>: value > 0
-            </td>
-        </tr>
-    </tbody>
-</table>
+
+
+| Form Type       | Scenario ID         | Operation                 | Data                                                                                          |
+|-----------------|---------------------|---------------------------|-----------------------------------------------------------------------------------------------|
+| IR3             | INC-ES-08           | RetrieveReturn            | Customer IRD (_identifier_): 132310297                                                          |
+|                 | INC-ES-11           | RetrieveReturn            | Customer ACC (_identifier_): 139562127INC003                                                    |
+|                 | INC-ES-14           | RetrieveStatus            | Customer IRD (_identifier_): 132310297                                                          |
+|                 | INC-ES-15           | RetrieveStatus            | Customer IRD (_identifier_): 070876272                                                          |
+|                 | INC-ES-17           | Prepop                    | Customer IRD (_identifier_): 015679840                                                          |
+|                 | All other scenarios |                           | Customer IRD (_identifier_): 132306907                                                          |
+| IR3NR           | All scenarios       |                           | Customer IRD (_identifier_): 093989910                                                          |
+| IR4             | INC-ES-28           | RetrieveReturn            | Customer IRD (_identifier_): 132329362                                                          |
+|                 | INC-ES-32           | RetrieveStatus            | Customer IRD (_identifier_): 132329362                                                          |
+|                 | INC-ES-33           | RetrieveStatus            | Customer IRD (_identifier_): 107031227                                                          |
+|                 | All other scenarios |                           | Customer IRD (_identifier_): 096062311                                                          |
+| IR4J            | All scenarios       |                           | Customer IRD (_identifier_): 078445386                                                          |
+| IR6             | All scenarios       |                           | Customer IRD (_identifier_): 079945793                                                          |
+| IR7             | INC-ES-40           | File                      | Customer IRD (_identifier_): 019515842                                                          |
+|                 | INC-ES-41           | File                      | Customer IRD (_identifier_): 105493711                                                          |
+|                 | INC-ES-40           | RetrieveReturn            | Customer IRD (_identifier_): 019515842                                                          |
+|                 | INC-ES-42           | RetrieveReturn            | Customer IRD (_identifier_): 105493711                                                          |
+| IR8             | All scenarios       |                           | Customer IRD (_identifier_): 050700461                                                          |
+| IR8J            | All scenarios       |                           | Customer IRD (_identifier_): 113613831                                                          |
+| IR9             | All scenarios       |                           | Customer IRD (_identifier_): 056632778                                                          |
+| IR44            | All scenarios       |                           | Customer IRD (_identifier_): 052120330                                                          |
+| IR526           | All scenarios       |                           | Customer IRD (_identifier_): 055786372                                                          |
+| Authorisation   | INC-ES-01           | All                       | Customer IRD (_identifier_): 111001111                                                          |
+| Error Scenarios | INC-ES-63           | File                      | IR9 Return with multiple IR10 attachments                                                     |
+|                 | INC-ES-64           | RetrieveReturn            | IR4 Customer IRD (_identifier_): 107031227                                                      |
+|                 | INC-ES-65           | File                      | IR9 return with IR307 attachment                                                              |
+|                 | INC-ES-66           | File                      | IR3 return with:                                                                              |
+|                 |                     |                           | totalPAYEDeducted > totalGrossIncome                                                          |
+|                 |                     |                           | totalIncomeNotLiableForACCLevy > totalGrossIncome                                             |
+|                 |                     |                           | totalExtinguishedTCPDs > totalTCPDs                                                           |
+|                 | INC-ES-67           | RetrieveFilingObligations | IR4 Customer IRD (_identifier_): 078650362                                                      |
+|                 | INC-ES-68           | File                      | IR215 standalone or attachment with:                                                          |
+|                 |                     |                           | _periodEndDate_: 2021-03-31 or later                                                            |
+|                 |                     |                           | _incomeFromPie_: value > 0                                                                      |
+|                 | INC-ES-78           | File                      | IR3 return with:                                                                              |
+|                 |                     |                           | _periodEndDate_: 2020-03-31 or earlier                                                          |
+|                 |                     |                           | _pieIncome.totalTaxCredits_ > (_taxOnTaxableIncome_ / _totalTaxableIncome_) * _pieIncome.totalIncome_ |
+|                 | INC-ES-66           | File                      | IR3 return with:                                                                              |
+|                 |                     |                           | _periodEndDate_: 2021-03-31 or later                                                            |
+|                 |                     |                           | _lossCarriedBackPriorYear_: value > 0                                                           |
+|                 |                     |                           | Customer IRD (_identifier_): 132057273                                                          |
+|                 | INC-ES-67           | File                      | IR44 return with:                                                                             |
+|                 |                     |                           | _periodEndDate_: 2021-03-31 or later                                                            |
+|                 |                     |                           | _residentialRentalIncome.indicator_: missing                                                    |
+|                 |                     |                           | _residentialRentalIncome.totalIncome_: value > 0                                                |
 
 ## Mock Environment Information:
 -----------------
