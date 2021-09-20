@@ -1,4 +1,4 @@
-![IRD logo](../../Images/IRlogo.gif)
+![IRD logo](../../Images/IRlogo.gif)<br/>
 ![Software Dev](../../Images/SoftwareDev.png)
 
 # Employment Information (EI) Software Development Kit (SDK)
@@ -137,22 +137,19 @@ The EI version can be identified in the standard header’s majorFormType field:
 	
 | Operation      | Scenario ID | Data                                 |
 |----------------|-------------|--------------------------------------|
-| Prepop         | ES-08       | Employer IRD (identifier): 123041607 |
-|                |             | periodEndDate: 2018-04-30            |
-|                |             | payDayDate: 2018-04-10               |
-|                |             |                                      |
-| Prepop         | ES-10       | Employer IRD (identifier): 123094018 |
-|                |             | periodEndDate: 2018-12-31            |
-|                |             | payDayDate: 2018-12-10               |
-|                |             |                                      |
-| RetrieveReturn | ES-042      | Employer IRD (identifier): 123041607 |
-|                |             | payDayDate: 2018-04-10               |
-|                |             | submissionKey: 987654321             |
-|                |             |                                      |
-| RetrieveReturn | ES-043      | Employer IRD (identifier): 123094018 |
-|                |             | periodEndDate: 2018-12-31            |
-|                |             | payDayDate: 2018-12-10               |
-|                |             | submissionKey: 987654321             |
+| Prepop         | ES-08       | Employer IRD (_identifier_): 123041607 |
+|                |             | _periodEndDate_: 2018-04-30            |
+|                |             | _payDayDate_: 2018-04-10               |
+| Prepop         | ES-10       | Employer IRD (_identifier_): 123094018 |
+|                |             | _periodEndDate_: 2018-12-31            |
+|                |             | _payDayDate_: 2018-12-10               |
+| RetrieveReturn | ES-042      | Employer IRD (_identifier_): 123041607 |
+|                |             | _payDayDate_: 2018-04-10               |
+|                |             | _submissionKey_: 987654321             |
+| RetrieveReturn | ES-043      | Employer IRD (_identifier_): 123094018 |
+|                |             | _periodEndDate_: 2018-12-31            |
+|                |             | _payDayDate_: 2018-12-10               |
+|                |             | _submissionKey_: 987654321             |
 
 
 ## Test environment information
