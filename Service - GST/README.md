@@ -86,10 +86,11 @@
     - RetrieveFilingObligations
         - Positive response
             - [request sample](sample%20messages/body-gst-filingobligation-request.xml)
-            - [response sample](sample%20messages/body-gst-filingobligation-response.xml)
+			- [response sample](sample%20messages/body-gst-filingobligation-response.xml)
     - RetrieveReturn
         - Positive response
             - [request sample](sample%20messages/body-gst-retrievereturn-request.xml)
+			- [request sample](sample%20messages/body-gst-retrievereturn-ACC-Identifer.xml) ACC Identifer
             - [response sample](sample%20messages/body-gst-retrievereturn-response.xml)
 
 ## Mock environment information
@@ -109,18 +110,28 @@
 	- Text in italics represents the name of the XML node in the request.
 	
 	    
-	|Operation | Scenario ID | Data|
-	|-|-|-|
-	|File | EMS_GST013 | Customer IRD (*identifier*): 123090918|
-	|File | EMS_GST012 | Customer IRD (*identifier*): 123039456|
-	|Prepop | EMS_GST027 | Customer IRD (*identifier*): 123039858 |
-	|Prepop | EMS_GST028 | Customer IRD (*identifier*): 123084226 |
-	|Prepop | EMS_GST029 | Customer IRD (*identifier*): 123084217|
-	|Prepop | EMS_GST030 | Customer IRD (*identifier*): 123088077|
-	|Prepop | EMS_GST031 | Customer IRD (*identifier*): 123070054 |
-	|Prepop | EMS_GST032 | Customer IRD (*identifier*): 123101294|
-	|Prepop | EMS_GST033 | Customer IRD (*identifier*): 123084225 |
-    |Prepop | EMS_GST034 | Customer IRD (*identifier*): 123080106 |
+| Operation | Scenario ID | Data                                 |
+|-----------|-------------|--------------------------------------|
+| File      | EMS_GST101  | Customer IRD (_identifier_): 123090918 |
+|           |             | 123-039-858                          |
+| File      | EMS_GST012  | Customer IRD (_identifier_): 123039456 |
+|           |             |                                      |
+| Prepop    | EMS_GST024  | Customer IRD (_identifier_): 123039858 |
+|           |             |                                      |
+| Prepop    | EMS_GST025  | Customer IRD (_identifier_): 123084226 |
+|           |             |                                      |
+| Prepop    | EMS_GST026  | Customer IRD (_identifier_): 123084217 |
+|           |             |                                      |
+| Prepop    | EMS_GST027  | Customer IRD (_identifier_): 123088077 |
+|           |             |                                      |
+| Prepop    | EMS_GST028  | Customer IRD (_identifier_): 123070054 |
+|           |             |                                      |
+| Prepop    | EMS_GST029  | Customer IRD (_identifier_): 123101294 |
+|           |             |                                      |
+| Prepop    | EMS_GST030  | Customer IRD (_identifier_): 123084225 |
+|           |             |                                      |
+| Prepop    | EMS_GST031  | Customer IRD (_identifier_): 123080106 |
+|           |             |                                      |
 	
 * Test scenarios
 	- [Download mock test scenarios report template](Mock%20-%20GST%20Returns%20Service%20-%20Test%20Report%20Template.docx)	

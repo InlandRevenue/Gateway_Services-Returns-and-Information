@@ -28,9 +28,9 @@ The donation tax credit gateway service can be used to:
 
    
 ## Environment Information: 
-- [Mock Environment Information - Emulated Services, Mindmap and Test data](test%20details/TestingInfomation.md#mock-environment-information)
-- [Test Environment Information - Test Scenarios Report Template, Mindmap and URL Endpoints](test%20details/TestingInfomation.md#test-environment-information)
-- [Production Environment Information - URL Endpoints](test%20details/TestingInfomation.md#Production-Environment-Information)	
+- [Mock Environment Information - Emulated Services, Mindmap and Test data](test%20details/README.md#mock-environment-information)
+- [Test Environment Information - Test Scenarios Report Template, Mindmap and URL Endpoints](test%20details/README.md#test-environment-information)
+- [Production Environment Information - URL Endpoints](test%20details/README.md#Production-Environment-Information)	
 
 ---
 

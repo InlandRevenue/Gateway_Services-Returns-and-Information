@@ -101,6 +101,10 @@ The following key changes have been made to the Employment Service for the updat
         - Positive response
             - [request sample](sample%20messages/body-employment-retrievelist-request.xml)
             - [response sample](sample%20messages/body-employment-retrievelist-response.xml)
+    - Event
+        - [ES-Events-Sample-Payloads](sample%20messages/ES-Events-Sample-Payloads.xlsx)
+		    
+			
 
 
 ## Mock environment information
@@ -112,7 +116,7 @@ The following key changes have been made to the Employment Service for the updat
 * Test scenarios 
 	- Employee Details test scenarios mind map
 	
-	![Test Scenarios](images/Employee_Details_Test_Scenarios_Mind_Map.png)
+	![Test Scenarios](images/Emulated_Services_Employment_Service_Coverage.png)
 
 *  Test data
 	- The following test data can be tested in our Mock Services environment when submitting requests to the service operations
@@ -120,12 +124,14 @@ The following key changes have been made to the Employment Service for the updat
 	- Text in italics represents the name of the XML node in the request.
 	
 	
-	Operation | Scenario ID | Data
-	--- | --- | ---
-	RetrieveList | EMS_ES081 | Employee IRD (*identifier*): 123114116
-	Update | EMS_ES096 | Employee IRD (*identifier*): 123183711
-	Create | EMS_ES095 | Employee IRD (*identifier*): 123183711
-	Update | EMS_ES099 | employmentStartDate: today's date
+| Operation    | Scenario ID | Data                                 |
+|--------------|-------------|--------------------------------------|
+| RetrieveList | ES-30       | Employee IRD (_identifier_): 123114116 |
+| Update       | ES-044      | Employee IRD (_identifier_): 123183711 |
+| Create       | ES-19       | Employee IRD (_identifier_): 123183711 |
+| Update       | ES-36       | Employee IRD (_identifier_): 123068858 |
+|              |             | _employmentStartDate_: today's date    |
+| Event        | ES-01       | Employee IRD (_identifier_):123068858  |
 
 
 ## Test environment information

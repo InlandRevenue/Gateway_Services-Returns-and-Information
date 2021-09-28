@@ -1,4 +1,4 @@
-![IRD logo](../../Images/IRlogo.gif)
+![IRD logo](../../Images/IRlogo.gif)<br/>
 ![Software Dev](../../Images/SoftwareDev.png)
 
 # Employment Information (EI) Software Development Kit (SDK)
@@ -103,7 +103,7 @@ The EI version can be identified in the standard header’s majorFormType field:
     - File
         - Positive response
             - [request sample](sample%20messages/body-ei-returnfile-request.xml)
-            - [response sample](sample%20messages/body-ei-returnfile-response.xml)
+			- [response sample](sample%20messages/body-ei-returnfile-response.xml)
     - RetrieveStatus
         - Positive response
             - [request sample](sample%20messages/body-ei-returnstatus-request.xml)
@@ -115,6 +115,7 @@ The EI version can be identified in the standard header’s majorFormType field:
     - RetrieveReturn
         - Positive response
             - [request sample](sample%20messages/body-ei-retrievereturn-request.xml)
+			- [request sample](sample%20messages/body-eiv2-retrieve-return-ACC-Identifer-request.xml) ACC-Identifer
             - [response sample](sample%20messages/body-ei-retrievereturn-response.xml)
 
 ## Mock environment information
@@ -126,7 +127,7 @@ The EI version can be identified in the standard header’s majorFormType field:
 - Test scenarios
 	- Employment Information test scenarios mind map
 	
-	![Test Scenarios](images/Employment_Information_Test_Scenarios_Mind_Map.png)
+	![Test Scenarios](images/Emulated_Service_Employment_Information_Coverage.png)
 
 - Test data
 	- The following test data can be tested in our Mock Services environment when submitting requests to the service operations
@@ -134,22 +135,21 @@ The EI version can be identified in the standard header’s majorFormType field:
 	- Text in italics represents the name of the XML node in the request.
 	
 	
-|Operation | Scenario ID | Data |
-| --- | --- | --- |
-|Prepop | EMS_EI001 | Employer IRD (*identifier*): 123041607 |
-| | | *periodEndDate*: 2018-04-30 |
-| | | *payDayDate*: 2018-04-10|
-| Prepop | EMS_EI002 | Employer IRD (*identifier*): 123094018|
-| | | *periodEndDate*: 2018-12-31|
-| | | *payDayDate*: 2018-12-10|
-| RetrieveReturn | EMS_EI017 | Employer IRD (*identifier*): 123041607|
-| | | *periodEndDate*: 2018-04-30|
-| | | *payDayDate*: 2018-04-10|
-| | | *submissionKey*: 987654321|
-| RetrieveReturn | EMS_EI017 | Employer IRD (*identifier*): 123094018|
-| | | *periodEndDate*: 2018-12-31|
-| | | *payDayDate*: 2018-12-10|
-| | | *submissionKey*: 987654321|
+| Operation      | Scenario ID | Data                                 |
+|----------------|-------------|--------------------------------------|
+| Prepop         | ES-08       | Employer IRD (_identifier_): 123041607 |
+|                |             | _periodEndDate_: 2018-04-30            |
+|                |             | _payDayDate_: 2018-04-10               |
+| Prepop         | ES-10       | Employer IRD (_identifier_): 123094018 |
+|                |             | _periodEndDate_: 2018-12-31            |
+|                |             | _payDayDate_: 2018-12-10               |
+| RetrieveReturn | ES-042      | Employer IRD (_identifier_): 123041607 |
+|                |             | _payDayDate_: 2018-04-10               |
+|                |             | _submissionKey_: 987654321             |
+| RetrieveReturn | ES-043      | Employer IRD (_identifier_): 123094018 |
+|                |             | _periodEndDate_: 2018-12-31            |
+|                |             | _payDayDate_: 2018-12-10               |
+|                |             | _submissionKey_: 987654321             |
 
 
 ## Test environment information
