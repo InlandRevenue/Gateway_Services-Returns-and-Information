@@ -1,0 +1,78 @@
+EMS_GST020: Agent retrieves previously filed GST return for bankrupt customer using account identifier (ACC)
+
+Request:
+
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope">
+    <soap:Header>
+        <wsa:Action xmlns:wsa="http://www.w3.org/2005/08/addressing">https://services.ird.govt.nz/GWS/Returns/Return/RetrieveReturn</wsa:Action>
+    </soap:Header>
+    <soap:Body>
+        <ret:RetrieveReturn xmlns:ret="https://services.ird.govt.nz/GWS/Returns/">
+            <ret:RetrieveReturnRequestMsg>
+                <ret1:RetrieveReturnRequestWrapper xmlns:ret1="https://services.ird.govt.nz/GWS/Returns/:types/RetrieveReturnRequest">
+                    <ret2:retrieveFormInfoRequest xmlns:ret2="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v1">
+                        <com:softwareProviderData xmlns:com="urn:www.ird.govt.nz/GWS:types/Common.v1">
+                            <com:softwareProvider>SoftwareProvider</com:softwareProvider>
+                            <com:softwarePlatform>SoftwarePlatform</com:softwarePlatform>
+                            <com:softwareRelease>1.0</com:softwareRelease>
+                        </com:softwareProviderData>
+                        <com:identifier xmlns:com="urn:www.ird.govt.nz/GWS:types/Common.v1" IdentifierValueType="ACC">139519167GST005</com:identifier>
+                        <com:accountType xmlns:com="urn:www.ird.govt.nz/GWS:types/Common.v1">GST</com:accountType>
+                        <ret2:periodEndDate>2021-07-31</ret2:periodEndDate>
+                        <ret2:majorFormType>GST</ret2:majorFormType>
+                    </ret2:retrieveFormInfoRequest>
+                </ret1:RetrieveReturnRequestWrapper>
+            </ret:RetrieveReturnRequestMsg>
+        </ret:RetrieveReturn>
+    </soap:Body>
+</soap:Envelope>
+
+
+Response:
+
+       <RetrieveReturnResponse xmlns="https://services.ird.govt.nz/GWS/Returns/">
+            <RetrieveReturnResult>
+                <b:RetrieveReturnResponseWrapper xmlns:b="https://services.ird.govt.nz/GWS/Returns/:types/RetrieveReturnResponse">
+                    <retrieveReturnResponse xmlns="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v1">
+                        <statusMessage xmlns="urn:www.ird.govt.nz/GWS:types/Common.v1">
+                            <statusCode>0</statusCode>
+                            <errorMessage/>
+                        </statusMessage>
+                        <responseBody xsi:type="r:RetrieveReturnResponseBodyType" xmlns:r="urn:www.ird.govt.nz/GWS:types/ReturnGST.v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                            <standardFields>
+                                <isNilReturn>false</isNilReturn>
+                            </standardFields>
+                            <formFields xmlns="urn:www.ird.govt.nz/GWS:types/ReturnGST.v1">
+                                <gstSpecificFields>
+                                    <r:totalSales xmlns:r="urn:www.ird.govt.nz/GWS:types/ReturnGST.v1">1000.00</r:totalSales>
+                                    <r:totalSalesRestHomes xmlns:r="urn:www.ird.govt.nz/GWS:types/ReturnGST.v1">1000.00</r:totalSalesRestHomes>
+                                    <r:totalSalesHospitals xmlns:r="urn:www.ird.govt.nz/GWS:types/ReturnGST.v1">1000.00</r:totalSalesHospitals>
+                                    <r:zeroRatedSupplies xmlns:r="urn:www.ird.govt.nz/GWS:types/ReturnGST.v1">1000.00</r:zeroRatedSupplies>
+                                    <r:debitAdjustments xmlns:r="urn:www.ird.govt.nz/GWS:types/ReturnGST.v1">
+                                        <r:privateUsePeriodAdjustment>1000.00</r:privateUsePeriodAdjustment>
+                                        <r:privateUseOneOff>1000.00</r:privateUseOneOff>
+                                        <r:assetsAfterCease>1000.00</r:assetsAfterCease>
+                                        <r:entertainment>1000.00</r:entertainment>
+                                        <r:changeAccountingBasis>1000.00</r:changeAccountingBasis>
+                                        <r:exemptSupplies>1000.00</r:exemptSupplies>
+                                        <r:currentRateGSTAdjustments>1000.00</r:currentRateGSTAdjustments>
+                                        <r:other>1000.00</r:other>
+                                    </r:debitAdjustments>
+                                    <r:totalExpenses xmlns:r="urn:www.ird.govt.nz/GWS:types/ReturnGST.v1">1000.00</r:totalExpenses>
+                                    <r:creditAdjustments xmlns:r="urn:www.ird.govt.nz/GWS:types/ReturnGST.v1">
+                                        <r:useOfPrivateGoods>1000.00</r:useOfPrivateGoods>
+                                        <r:privateAssetsForBusiness>1000.00</r:privateAssetsForBusiness>
+                                        <r:changeAccountingBasis>1000.00</r:changeAccountingBasis>
+                                        <r:currentRateGSTCredits>1000.00</r:currentRateGSTCredits>
+                                        <r:other>1000.00</r:other>
+                                    </r:creditAdjustments>
+                                    <r:totalGST xmlns:r="urn:www.ird.govt.nz/GWS:types/ReturnGST.v1">3093.36</r:totalGST>
+                                </gstSpecificFields>
+                            </formFields>
+                        </responseBody>
+                    </retrieveReturnResponse>
+                </b:RetrieveReturnResponseWrapper>
+            </RetrieveReturnResult>
+        </RetrieveReturnResponse>
+    </s:Body>
+</s:Envelope>
