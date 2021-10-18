@@ -12,8 +12,10 @@ Employers can send us changes to employee details using the Employment service.
 
 ## Key documentation
 
-- Business use cases
-	- [Download and view](../Payday%20filing%20-%20ED%20and%20EI%20GWS%20business%20use%20cases.pdf)
+- Business documentation
+	- [Business use cases](../Payday%20filing%20-%20Employee%20details%20and%20employment%20information%20-%20GWS%20business%20use%20cases.pdf)
+	- [Employer event table](Employer%20events%20table.pdf)
+	- [Payday filing KiwiSaver scenarios](Payday%20filing%20-%20KiwiSaver%20scenarios.pdf)
 	
 - Schemas and WSDLs
 	- View and download the [Common v2 XSD](../../Common%20XSD/Common.v2.xsd)
