@@ -13,7 +13,7 @@ Employees can file Employment information (EI) to us each pay cycle using the Re
 ## Key documentation
 
 - Business use cases
-	- [Download and view](../Payday%20filing%20-%20ED%20and%20EI%20GWS%20business%20use%20cases.pdf)
+	- [Download and view](../Payday%20filing%20-%20Employee%20details%20and%20employment%20information%20-%20GWS%20business%20use%20cases.pdf)
 	
 - Schemas and WSDLs
 	- View and download the [Common v2 XSD](../../Common%20XSD/Common.v2.xsd)
