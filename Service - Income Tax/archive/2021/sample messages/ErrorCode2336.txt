@@ -1,0 +1,93 @@
+Error code 2336
+Request
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope">
+    <soap:Header>
+        <add:Action xmlns:add="http://www.w3.org/2005/08/addressing">https://services.ird.govt.nz/GWS/Returns/Return/File</add:Action>
+    </soap:Header>
+    <soap:Body>
+        <ret:File xmlns:ret="https://services.ird.govt.nz/GWS/Returns/">
+            <ret:ReturnFileRequestMsg>
+                <fil:FileRequestWrapper xmlns:fil="https://services.ird.govt.nz/GWS/Returns/:types/FileRequest">
+                    <r1215:fileRequest xmlns:r1215="urn:www.ird.govt.nz/GWS:types/ReturnIR1215.v1" xmlns:rc="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2">
+                        <rc:fileHeader xmlns:cmn="urn:www.ird.govt.nz/GWS:types/Common.v2">
+                            <cmn:softwareProviderData>
+                                <cmn:softwareProvider>SoftwareProvider</cmn:softwareProvider>
+                                <cmn:softwarePlatform>SoftwarePlatform</cmn:softwarePlatform>
+                                <cmn:softwareRelease>1</cmn:softwareRelease>
+                            </cmn:softwareProviderData>
+                            <cmn:identifier IdentifierValueType="IRD">139445236</cmn:identifier>
+                            <cmn:accountType>INC</cmn:accountType>
+                            <rc:periodEndDate>2021-03-31</rc:periodEndDate>
+                            <rc:majorFormType>INC</rc:majorFormType>
+                            <rc:minorFormType>1215</rc:minorFormType>
+                        </rc:fileHeader>
+                        <rc:fileBody>
+                            <rc:standardFields>
+                                <rc:isNilReturn>false</rc:isNilReturn>
+                                <rc:isFinalReturn>false</rc:isFinalReturn>
+                                <rc:amendmentRequest>
+                                    <rc:isAmended>false</rc:isAmended>
+                                    <rc:amendReason/>
+                                    <rc:amendDetails/>
+                                </rc:amendmentRequest>
+                            </rc:standardFields>
+                            <rc:formFields xsi:type="r1215:FormFieldsType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ic="urn:www.ird.govt.nz/GWS:types/IncomeReturnCommon.v1">
+                                <r1215:totalGeneralInsurancePremiums>130.00</r1215:totalGeneralInsurancePremiums>
+                                <r1215:totalLifeInsurancePremiums>290.00</r1215:totalLifeInsurancePremiums>
+                                <r1215:totalGuarantorFees>170.00</r1215:totalGuarantorFees>
+                                <r1215:totalGrossPremiumsFees>590.00</r1215:totalGrossPremiumsFees>
+                                <r1215:totalTaxableIncome>59.00</r1215:totalTaxableIncome>
+                                <r1215:totalTaxLiability>16.52</r1215:totalTaxLiability>
+                                <r1215:totalSwissGrossPremiums>230.00</r1215:totalSwissGrossPremiums>
+                                <r1215:paymentsToGeneralInsurers>
+                                    <r1215:generalPayment>
+                                        <r1215:insurerName>Insurer A</r1215:insurerName>
+                                        <r1215:taxResidenceCountry>CH</r1215:taxResidenceCountry>
+                                        <r1215:grossPremiums>130.00</r1215:grossPremiums>
+                                    </r1215:generalPayment>
+                                </r1215:paymentsToGeneralInsurers>
+                                <r1215:guarantors>
+                                    <r1215:guarantor>
+                                        <r1215:guarantorName>Guarantor A</r1215:guarantorName>
+                                        <r1215:taxResidenceCountry>KY</r1215:taxResidenceCountry>
+                                        <r1215:grossFees>170.00</r1215:grossFees>
+                                    </r1215:guarantor>
+                                </r1215:guarantors>
+                                <r1215:paymentsToSwissInsurers>
+                                    <r1215:swissPayment>
+                                        <r1215:swissInsurerName>Swiss Insurer A</r1215:swissInsurerName>
+                                        <r1215:swissGrossPremiums>230.00</r1215:swissGrossPremiums>
+                                    </r1215:swissPayment>
+                                </r1215:paymentsToSwissInsurers>
+                            </rc:formFields>
+                        </rc:fileBody>
+                    </r1215:fileRequest>
+                </fil:FileRequestWrapper>
+            </ret:ReturnFileRequestMsg>
+        </ret:File>
+    </soap:Body>
+</soap:Envelope>
+
+
+Response
+<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">
+    <s:Header>
+        <a:Action s:mustUnderstand="1">https://services.ird.govt.nz/GWS/Returns/Return/FileResponse</a:Action>
+    </s:Header>
+    <s:Body>
+        <FileResponse xmlns="https://services.ird.govt.nz/GWS/Returns/">
+            <FileResult xmlns:b="https://services.ird.govt.nz/GWS/Returns/:types/FileResponse" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+                <b:FileResponseWrapper>
+                    <fileResponse xmlns="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2">
+                        <statusMessage xmlns="urn:www.ird.govt.nz/GWS:types/Common.v2">
+                            <statusCode>2336</statusCode>
+                            <errorMessage>guarantor taxResidenceCountry: non-resident guarantors cannot be New Zealand tax resident</errorMessage>
+                            <errorDescription>guarantor guarantorName: Guarantor A</errorDescription>
+                        </statusMessage>
+                    </fileResponse>
+                </b:FileResponseWrapper>
+            </FileResult>
+        </FileResponse>
+    </s:Body>
+</s:Envelope>
+

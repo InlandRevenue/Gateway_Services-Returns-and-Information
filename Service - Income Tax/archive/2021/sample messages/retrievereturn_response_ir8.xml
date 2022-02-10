@@ -1,0 +1,67 @@
+<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">
+    <s:Header>
+        <a:Action s:mustUnderstand="1">https://services.ird.govt.nz/GWS/Returns/Return/RetrieveReturnResponse</a:Action>
+    </s:Header>
+    <s:Body>
+        <RetrieveReturnResponse xmlns="https://services.ird.govt.nz/GWS/Returns/">
+            <RetrieveReturnResult xmlns:b="https://services.ird.govt.nz/GWS/Returns/:types/RetrieveReturnResponse" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+                <b:RetrieveReturnResponseWrapper>
+                    <retrieveReturnResponse xmlns="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                        <statusMessage xmlns="urn:www.ird.govt.nz/GWS:types/Common.v2">
+                            <statusCode>0</statusCode>
+                            <errorMessage/>
+                        </statusMessage>
+                        <responseBody xsi:type="r:RetrieveReturnResponseBodyType" xmlns:r="urn:www.ird.govt.nz/GWS:types/ReturnIR8.v1" xmlns:ic="urn:www.ird.govt.nz/GWS:types/IncomeReturnCommon.v1" xmlns:rc="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2" xmlns:cmn="urn:www.ird.govt.nz/GWS:types/Common.v2">
+                            <rc:standardFields>
+                                <rc:isNilReturn>false</rc:isNilReturn>
+                            </rc:standardFields>
+                            <r:formFields>
+                                <r:submissionKey>1726611840</r:submissionKey>
+                                <r:residentialRentalIncome>
+                                    <ic:indicator>I</ic:indicator>
+                                    <ic:totalIncome>2100.00</ic:totalIncome>
+                                    <ic:residentialRentalDeductions>1000.00</ic:residentialRentalDeductions>
+                                    <ic:excessDeductionsBroughtForward>0.00</ic:excessDeductionsBroughtForward>
+                                    <ic:deductionsClaimedThisYear>1000.00</ic:deductionsClaimedThisYear>
+                                    <ic:netIncome>1100.00</ic:netIncome>
+                                    <ic:excessDeductionsCarriedForward>0.00</ic:excessDeductionsCarriedForward>
+                                </r:residentialRentalIncome>
+                                <r:saleOfProperty>0.00</r:saleOfProperty>
+                                <r:grossInterest>1000.00</r:grossInterest>
+                                <r:grossDividends>1000.00</r:grossDividends>
+                                <r:maoriAuthorityDistributions>1000.00</r:maoriAuthorityDistributions>
+                                <r:netRentalIncome>1000.00</r:netRentalIncome>
+                                <r:netTradingIncome>1000.00</r:netTradingIncome>
+                                <r:otherIncome>1000.00</r:otherIncome>
+                                <r:adjustmentsOutsideFinancialAccounts>1000.00</r:adjustmentsOutsideFinancialAccounts>
+                                <r:donationDeductions>1000.00</r:donationDeductions>
+                                <r:lossesBroughtForward>0.00</r:lossesBroughtForward>
+                                <r:lossCarriedBackPriorYear>0.00</r:lossCarriedBackPriorYear>
+                                <r:totalTaxableIncome>7100.00</r:totalTaxableIncome>
+                                <r:taxOnTaxableIncome>1242.50</r:taxOnTaxableIncome>
+                                <r:overseasTaxPaid>875.00</r:overseasTaxPaid>
+                                <r:dividendImputationCredits>1000.00</r:dividendImputationCredits>
+                                <r:researchAndDevelopment>
+                                    <ic:creditBroughtForward>0.00</ic:creditBroughtForward>
+                                    <ic:nonrefundableCredit>0.00</ic:nonrefundableCredit>
+                                    <ic:refundableCredit>0.00</ic:refundableCredit>
+                                </r:researchAndDevelopment>
+                                <r:totalRWTDeducted>1000.00</r:totalRWTDeducted>
+                                <r:rlwtCredit>0.00</r:rlwtCredit>
+                                <r:otherTaxCredits>1000.00</r:otherTaxCredits>
+                                <r:residualIncomeTax>-2000.00</r:residualIncomeTax>
+                                <r:overpaymentProvisionalTax>1000.00</r:overpaymentProvisionalTax>
+                                <r:provisionalTax>
+                                    <ic:provisionalTaxOption>STD</ic:provisionalTaxOption>
+                                    <ic:provisionalTaxPayable>1000.00</ic:provisionalTaxPayable>
+                                    <ic:provisionalTaxStartDate>2019-03-01</ic:provisionalTaxStartDate>
+                                </r:provisionalTax>
+                                <r:disclosureOfForeignInterestRequired>true</r:disclosureOfForeignInterestRequired>
+                            </r:formFields>
+                        </responseBody>
+                    </retrieveReturnResponse>
+                </b:RetrieveReturnResponseWrapper>
+            </RetrieveReturnResult>
+        </RetrieveReturnResponse>
+    </s:Body>
+</s:Envelope>

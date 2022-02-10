@@ -1,0 +1,54 @@
+<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">
+    <s:Header>
+        <a:Action s:mustUnderstand="1">https://services.ird.govt.nz/GWS/Returns/Return/RetrieveReturnResponse</a:Action>
+    </s:Header>
+    <s:Body>
+        <RetrieveReturnResponse xmlns="https://services.ird.govt.nz/GWS/Returns/">
+            <RetrieveReturnResult xmlns:b="https://services.ird.govt.nz/GWS/Returns/:types/RetrieveReturnResponse" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+                <b:RetrieveReturnResponseWrapper>
+                    <retrieveReturnResponse xmlns="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                        <statusMessage xmlns="urn:www.ird.govt.nz/GWS:types/Common.v2">
+                            <statusCode>0</statusCode>
+                            <errorMessage/>
+                        </statusMessage>
+                        <responseBody xsi:type="r:RetrieveReturnResponseBodyType" xmlns:r="urn:www.ird.govt.nz/GWS:types/ReturnIR1215.v1" xmlns:rc="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2" xmlns:cmn="urn:www.ird.govt.nz/GWS:types/Common.v2">
+                            <rc:standardFields>
+                                <rc:isNilReturn>false</rc:isNilReturn>
+                            </rc:standardFields>
+                            <r:formFields>
+                                <r:submissionKey>1904746880</r:submissionKey>
+                                <r:totalGeneralInsurancePremiums>130.00</r:totalGeneralInsurancePremiums>
+                                <r:totalLifeInsurancePremiums>290.00</r:totalLifeInsurancePremiums>
+                                <r:totalGuarantorFees>170.00</r:totalGuarantorFees>
+                                <r:totalGrossPremiumsFees>590.00</r:totalGrossPremiumsFees>
+                                <r:totalTaxableIncome>59.00</r:totalTaxableIncome>
+                                <r:totalTaxLiability>16.52</r:totalTaxLiability>
+                                <r:totalSwissGrossPremiums>230.00</r:totalSwissGrossPremiums>
+                                <r:paymentsToGeneralInsurers>
+                                    <r:generalPayment>
+                                        <r:insurerName>Insurer A</r:insurerName>
+                                        <r:taxResidenceCountry>KY</r:taxResidenceCountry>
+                                        <r:grossPremiums>130.00</r:grossPremiums>
+                                    </r:generalPayment>
+                                </r:paymentsToGeneralInsurers>
+                                <r:guarantors>
+                                    <r:guarantor>
+                                        <r:guarantorName>Guarantor A</r:guarantorName>
+                                        <r:taxResidenceCountry>KY</r:taxResidenceCountry>
+                                        <r:grossFees>170.00</r:grossFees>
+                                    </r:guarantor>
+                                </r:guarantors>
+                                <r:paymentsToSwissInsurers>
+                                    <r:swissPayment>
+                                        <r:swissInsurerName>Swiss Insurer A</r:swissInsurerName>
+                                        <r:swissGrossPremiums>230.00</r:swissGrossPremiums>
+                                    </r:swissPayment>
+                                </r:paymentsToSwissInsurers>
+                            </r:formFields>
+                        </responseBody>
+                    </retrieveReturnResponse>
+                </b:RetrieveReturnResponseWrapper>
+            </RetrieveReturnResult>
+        </RetrieveReturnResponse>
+    </s:Body>
+</s:Envelope>

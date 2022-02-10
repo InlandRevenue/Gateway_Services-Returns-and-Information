@@ -1,0 +1,109 @@
+Error code 2230
+Request
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope">
+    <soap:Header>
+        <add:Action xmlns:add="http://www.w3.org/2005/08/addressing">https://services.ird.govt.nz/GWS/Returns/Return/File</add:Action>
+    </soap:Header>
+    <soap:Body>
+        <ret:File xmlns:ret="https://services.ird.govt.nz/GWS/Returns/">
+            <ret:ReturnFileRequestMsg>
+                <fil:FileRequestWrapper xmlns:fil="https://services.ird.govt.nz/GWS/Returns/:types/FileRequest">
+                    <r215:fileRequest xmlns:r215="urn:www.ird.govt.nz/GWS:types/ReturnIR215.v1" xmlns:rc="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2">
+                        <rc:fileHeader xmlns:cmn="urn:www.ird.govt.nz/GWS:types/Common.v2">
+                            <cmn:softwareProviderData>
+                                <cmn:softwareProvider>SoftwareProvider</cmn:softwareProvider>
+                                <cmn:softwarePlatform>SoftwarePlatform</cmn:softwarePlatform>
+                                <cmn:softwareRelease>1</cmn:softwareRelease>
+                            </cmn:softwareProviderData>
+                            <cmn:identifier IdentifierValueType="IRD">132306907</cmn:identifier>
+                            <cmn:accountType>INC</cmn:accountType>
+                            <rc:periodEndDate>2021-03-31</rc:periodEndDate>
+                            <rc:majorFormType>INC</rc:majorFormType>
+                            <rc:minorFormType>215</rc:minorFormType>
+                        </rc:fileHeader>
+                        <rc:fileBody>
+                            <rc:standardFields>
+                                <rc:isNilReturn>false</rc:isNilReturn>
+                                <rc:isFinalReturn>false</rc:isFinalReturn>
+                                <rc:amendmentRequest>
+                                    <rc:isAmended>false</rc:isAmended>
+                                    <rc:amendReason/>
+                                    <rc:amendDetails/>
+                                </rc:amendmentRequest>
+                            </rc:standardFields>
+                            <rc:formFields xsi:type="r215:FormFieldsType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ic="urn:www.ird.govt.nz/GWS:types/IncomeReturnCommon.v1">
+                                <r215:childIncomeDetails>
+                                    <r215:childIncome>
+                                        <r215:childName>string</r215:childName>
+                                        <r215:sharedCareIndicator>true</r215:sharedCareIndicator>
+                                        <r215:childIrdNumber>111111111</r215:childIrdNumber>
+                                        <r215:passiveIncome>1000.00</r215:passiveIncome>
+                                    </r215:childIncome>
+                                </r215:childIncomeDetails>
+                                <r215:partnersName>string</r215:partnersName>
+                                <r215:partnersIrdNumber>111111111</r215:partnersIrdNumber>
+                                <r215:partnersCountry>NZL</r215:partnersCountry>
+                                <r215:partnersPassiveIncome>1000.00</r215:partnersPassiveIncome>
+                                <r215:otherPaymentDetails>
+                                    <r215:otherPayment>
+                                        <r215:paymentType>string</r215:paymentType>
+                                        <r215:paymentAmount>1000.00</r215:paymentAmount>
+                                    </r215:otherPayment>
+                                </r215:otherPaymentDetails>
+                                <r215:retirementContributions>1000.00</r215:retirementContributions>
+                                <r215:depreciationRecovered>1000.00</r215:depreciationRecovered>
+                                <r215:nonResidentForeignSourcedIncome>0</r215:nonResidentForeignSourcedIncome>
+                                <r215:distributionFromTrusts>1000.00</r215:distributionFromTrusts>
+                                <r215:employerProvidedVehicle>1000.00</r215:employerProvidedVehicle>
+                                <r215:voucherAndOtherSTCF>1000.00</r215:voucherAndOtherSTCF>
+                                <r215:nonLockedInPIEIncome>1000.00</r215:nonLockedInPIEIncome>
+                                <r215:pensionsAndAnnuities>1000.00</r215:pensionsAndAnnuities>
+                                <r215:distributionsFromRetirementSavings>1000.00</r215:distributionsFromRetirementSavings>
+                                <r215:taxExemptOverseasPensions>1000.00</r215:taxExemptOverseasPensions>
+                                <r215:taxExemptIncome>1000.00</r215:taxExemptIncome>
+                                <r215:incomeFromPIE>123.45</r215:incomeFromPIE>
+                                <r215:attributableTrusteeIncome>1000.00</r215:attributableTrusteeIncome>
+                                <r215:attributableFringeBenefits>1000.00</r215:attributableFringeBenefits>
+                                <r215:amountOfLosses>1000.00</r215:amountOfLosses>
+                                <r215:incomeEqualisationMainSchemeDeposits>1000.00</r215:incomeEqualisationMainSchemeDeposits>
+                                <r215:incomeEqualisationMainSchemeRefunds>1000.00</r215:incomeEqualisationMainSchemeRefunds>
+                                <r215:slIncomeEqualisationMainSchemeRefunds>1000.00</r215:slIncomeEqualisationMainSchemeRefunds>
+                                <r215:attributedIncomeMajorShareholderCC>
+                                    <r215:netIncomeForCompanyIncomeYear>1000.00</r215:netIncomeForCompanyIncomeYear>
+                                    <r215:percentageOfSharesHeld>100.00</r215:percentageOfSharesHeld>
+                                    <r215:totalDividendsPaidByCompany>1000.00</r215:totalDividendsPaidByCompany>
+                                </r215:attributedIncomeMajorShareholderCC>
+                                <r215:attributedDependentIncomeMajorShareholderCC>
+                                    <r215:netIncomeForCompanyIncomeYear>1000.00</r215:netIncomeForCompanyIncomeYear>
+                                    <r215:percentageOfSharesHeld>100.00</r215:percentageOfSharesHeld>
+                                    <r215:totalDividendsPaidByCompany>1000.00</r215:totalDividendsPaidByCompany>
+                                </r215:attributedDependentIncomeMajorShareholderCC>
+                            </rc:formFields>
+                        </rc:fileBody>
+                    </r215:fileRequest>
+                </fil:FileRequestWrapper>
+            </ret:ReturnFileRequestMsg>
+        </ret:File>
+    </soap:Body>
+</soap:Envelope>
+
+Response
+<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">
+    <s:Header>
+        <a:Action s:mustUnderstand="1">https://services.ird.govt.nz/GWS/Returns/Return/FileResponse</a:Action>
+    </s:Header>
+    <s:Body>
+        <FileResponse xmlns="https://services.ird.govt.nz/GWS/Returns/">
+            <FileResult xmlns:b="https://services.ird.govt.nz/GWS/Returns/:types/FileResponse" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+                <b:FileResponseWrapper>
+                    <fileResponse xmlns="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2">
+                        <statusMessage xmlns="urn:www.ird.govt.nz/GWS:types/Common.v2">
+                            <statusCode>2230</statusCode>
+                            <errorMessage>incomeFromPIE is not used for the IR215 starting 2021 onwards</errorMessage>
+                        </statusMessage>
+                    </fileResponse>
+                </b:FileResponseWrapper>
+            </FileResult>
+        </FileResponse>
+    </s:Body>
+</s:Envelope>
