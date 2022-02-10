@@ -6,18 +6,18 @@
         <ret:File xmlns:ret="https://services.ird.govt.nz/GWS/Returns/">
             <ret:ReturnFileRequestMsg>
                 <fil:FileRequestWrapper xmlns:fil="https://services.ird.govt.nz/GWS/Returns/:types/FileRequest">
-                    <r4:fileRequest xmlns:r4="urn:www.ird.govt.nz/GWS:types/ReturnIR4.v1" xmlns:rc="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2">
+                    <r44:fileRequest xmlns:r44="urn:www.ird.govt.nz/GWS:types/ReturnIR44.v1" xmlns:rc="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2">
                         <rc:fileHeader xmlns:cmn="urn:www.ird.govt.nz/GWS:types/Common.v2">
                             <cmn:softwareProviderData>
                                 <cmn:softwareProvider>SoftwareProvider</cmn:softwareProvider>
                                 <cmn:softwarePlatform>SoftwarePlatform</cmn:softwarePlatform>
                                 <cmn:softwareRelease>1</cmn:softwareRelease>
                             </cmn:softwareProviderData>
-                            <cmn:identifier IdentifierValueType="IRD">096062311</cmn:identifier>
+                            <cmn:identifier IdentifierValueType="IRD">052120330</cmn:identifier>
                             <cmn:accountType>INC</cmn:accountType>
-                            <rc:periodEndDate>2019-03-31</rc:periodEndDate>
+                            <rc:periodEndDate>2022-03-31</rc:periodEndDate>
                             <rc:majorFormType>INC</rc:majorFormType>
-                            <rc:minorFormType>4</rc:minorFormType>
+                            <rc:minorFormType>44</rc:minorFormType>
                         </rc:fileHeader>
                         <rc:fileBody>
                             <rc:standardFields>
@@ -29,77 +29,89 @@
                                     <rc:amendDetails/>
                                 </rc:amendmentRequest>
                             </rc:standardFields>
-                            <rc:formFields xsi:type="r4:FormFieldsType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ic="urn:www.ird.govt.nz/GWS:types/IncomeReturnCommon.v1">
-                                <r4:nonResidentIndicator>false</r4:nonResidentIndicator>
-                                <r4:schedularPayments>
-                                    <ic:withholdingTaxDeducted>1000.00</ic:withholdingTaxDeducted>
-                                    <ic:totalIncome>1000.00</ic:totalIncome>
-                                </r4:schedularPayments>
-                                <r4:interestIncome>
-                                    <ic:totalTaxPaid>1000.00</ic:totalTaxPaid>
-                                    <ic:totalIncome>1000.00</ic:totalIncome>
-                                </r4:interestIncome>
-                                <r4:pieIncome>
-                                    <ic:totalTaxCredits>1000.00</ic:totalTaxCredits>
-                                    <ic:totalIncome>1000.00</ic:totalIncome>
-                                </r4:pieIncome>
-                                <r4:dividendIncome>
-                                    <ic:totalImputationCredits>280.00</ic:totalImputationCredits>
-                                    <ic:totalRWTCredits>0.00</ic:totalRWTCredits>
-                                    <ic:totalGrossDividends>1000.00</ic:totalGrossDividends>
-                                </r4:dividendIncome>
-                                <r4:maoriAuthorityDistributions>
-                                    <ic:totalMACredits>1000.00</ic:totalMACredits>
-                                    <ic:totalMADistributions>1000.00</ic:totalMADistributions>
-                                </r4:maoriAuthorityDistributions>
-                                <r4:partnershipEstateTrustIncome>
-                                    <ic:totalTaxCredits>1000.00</ic:totalTaxCredits>
-                                    <ic:totalIncome>1000.00</ic:totalIncome>
-                                </r4:partnershipEstateTrustIncome>
-                                <r4:totalTaxCredits>5000.00</r4:totalTaxCredits>
-                                <r4:overseasIncome>
-                                    <ic:totalTaxPaid>0.00</ic:totalTaxPaid>
-                                    <ic:totalIncome>1000.00</ic:totalIncome>
-                                </r4:overseasIncome>
-                                <r4:businessOrRentalIncome>1000.00</r4:businessOrRentalIncome>
-                                <r4:totalGrossPremium>0.00</r4:totalGrossPremium>
-                                <r4:totalGrossPremiumPaidToSwitzerland>0.00</r4:totalGrossPremiumPaidToSwitzerland>
-                                <r4:totalTaxablePremium>0.00</r4:totalTaxablePremium>
-                                <r4:otherIncome>1000.00</r4:otherIncome>
-                                <r4:rlwtCredit>0.00</r4:rlwtCredit>
-                                <r4:saleOfProperty>1000.00</r4:saleOfProperty>
-                                <r4:donationsMade>1000.00</r4:donationsMade>
-                                <r4:lossesBroughtForward>0.00</r4:lossesBroughtForward>
-                                <r4:lossesClaimedThisYear>0.00</r4:lossesClaimedThisYear>
-                                <r4:netLossesToFrom>0.00</r4:netLossesToFrom>
-                                <r4:subventionPaymentsToFrom>0.00</r4:subventionPaymentsToFrom>
-                                <r4:totalTaxableIncome>9000.00</r4:totalTaxableIncome>
-                                <r4:taxOnTaxableIncome>2520.00</r4:taxOnTaxableIncome>
-                                <r4:foreignInvestorTaxCredit>1000.00</r4:foreignInvestorTaxCredit>
-                                <r4:residualIncomeTax>-3760.00</r4:residualIncomeTax>
-                                <r4:provisionalTax>
+                            <rc:formFields xsi:type="r44:FormFieldsType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ic="urn:www.ird.govt.nz/GWS:types/IncomeReturnCommon.v1">
+                                <r44:residentialRentalIncome>
+                                    <ic:indicator>I</ic:indicator>
+                                    <ic:totalIncome>2100.00</ic:totalIncome>
+                                    <ic:residentialRentalDeductions>1000.00</ic:residentialRentalDeductions>
+                                    <ic:excessDeductionsBroughtForward>0.00</ic:excessDeductionsBroughtForward>
+                                    <ic:deductionsClaimedThisYear>1000.00</ic:deductionsClaimedThisYear>
+                                    <ic:netIncome>1100.00</ic:netIncome>
+                                    <ic:excessDeductionsCarriedForward>0.00</ic:excessDeductionsCarriedForward>
+                                </r44:residentialRentalIncome>
+                                <r44:propertyInterestLimitation>
+                                    <ic:totalInterest>1000</ic:totalInterest>
+                                    <ic:interestExpenseClaimed>1000</ic:interestExpenseClaimed>
+                                    <ic:interestExpenseClaimedReason>
+                                        <ic:notResidentialOrMaoriExempt>true</ic:notResidentialOrMaoriExempt>
+                                        <ic:propertyNotInNz>true</ic:propertyNotInNz>
+                                        <ic:loansDrawnDown>true</ic:loansDrawnDown>
+                                        <ic:newBuildExemption>true</ic:newBuildExemption>
+                                        <ic:developmentExemption>true</ic:developmentExemption>
+                                        <ic:emergencyTransitionalSocialCouncil>true</ic:emergencyTransitionalSocialCouncil>
+                                    </ic:interestExpenseClaimedReason>
+                                </r44:propertyInterestLimitation>
+                                <r44:financialMarketsAuthorityNumber>AS/3980</r44:financialMarketsAuthorityNumber>
+                                <r44:fundBalanceDate>2019-03-31</r44:fundBalanceDate>
+                                <r44:assetsIncludeNZLifeOrTransferred>true</r44:assetsIncludeNZLifeOrTransferred>
+                                <r44:nzLifeOrTransfersTotalAssets>false</r44:nzLifeOrTransfersTotalAssets>
+                                <r44:electionRequired>true</r44:electionRequired>
+                                <r44:saleOfProperty>0.00</r44:saleOfProperty>
+                                <r44:fundIncome>1000.00</r44:fundIncome>
+                                <r44:deductionsFromOtherSchemes>
+                                    <ic:deduction>
+                                        <ic:name>Johnny Bravo</ic:name>
+                                        <ic:irdNumber>074407102</ic:irdNumber>
+                                        <ic:amount>1000.00</ic:amount>
+                                    </ic:deduction>
+                                </r44:deductionsFromOtherSchemes>
+                                <r44:totalDeductionsFromOtherSchemes>1000.00</r44:totalDeductionsFromOtherSchemes>
+                                <r44:deductionsTreatedAsCapitalOnDisposal>0</r44:deductionsTreatedAsCapitalOnDisposal>
+                                <r44:deductionsTreatedAsRevenueOnDisposal>0</r44:deductionsTreatedAsRevenueOnDisposal>
+                                <r44:deductionsToOtherSchemes>
+                                    <ic:deduction>
+                                        <ic:name>Homer Simpson</ic:name>
+                                        <ic:irdNumber>081734402</ic:irdNumber>
+                                        <ic:amount>1000.00</ic:amount>
+                                    </ic:deduction>
+                                </r44:deductionsToOtherSchemes>
+                                <r44:totalDeductionsToOtherSchemes>1000</r44:totalDeductionsToOtherSchemes>
+                                <r44:additionsTreatedAsCapitalOnDisposal>0</r44:additionsTreatedAsCapitalOnDisposal>
+                                <r44:additionsTreatedAsRevenueOnDisposal>0</r44:additionsTreatedAsRevenueOnDisposal>
+                                <r44:lossesBroughtForward>0</r44:lossesBroughtForward>
+                                <r44:lossCarriedBackPriorYear>0.00</r44:lossCarriedBackPriorYear>
+                                <r44:totalTaxableIncome>8100.00</r44:totalTaxableIncome>
+                                <r44:taxOnTaxableIncome>588.00</r44:taxOnTaxableIncome>
+                                <r44:trusteeDetails>
+                                    <ic:trustee>
+                                        <ic:fullName>BoJack Horseman</ic:fullName>
+                                        <ic:irdNumber>093612547</ic:irdNumber>
+                                    </ic:trustee>
+                                </r44:trusteeDetails>
+                                <r44:fifOrCFCDisclosureRequired>false</r44:fifOrCFCDisclosureRequired>
+                                <r44:investmentsDisposedOfDuringYear>false</r44:investmentsDisposedOfDuringYear>
+                                <r44:investmentsDisposedOfDuringYearAmount>1000.00</r44:investmentsDisposedOfDuringYearAmount>
+                                <r44:gainsOrLossesTreatedAsNonTaxable>false</r44:gainsOrLossesTreatedAsNonTaxable>
+                                <r44:gainsOrLossesTreatedAsNonTaxableReason>string</r44:gainsOrLossesTreatedAsNonTaxableReason>
+                                <r44:preApril1988InvestmentsDisposedOf>false</r44:preApril1988InvestmentsDisposedOf>
+                                <r44:investmentsTreatedAsTradingStock>false</r44:investmentsTreatedAsTradingStock>
+                                <r44:overseasTaxCredit>1000.00</r44:overseasTaxCredit>
+                                <r44:imputationCredits>1000.00</r44:imputationCredits>
+                                <r44:researchAndDevelopment>
+                                    <ic:creditBroughtForward>0.00</ic:creditBroughtForward>
+                                    <ic:nonrefundableCredit>0.00</ic:nonrefundableCredit>
+                                    <ic:refundableCredit>0.00</ic:refundableCredit>
+                                </r44:researchAndDevelopment>
+                                <r44:rwtAndOtherTaxCredits>1000.00</r44:rwtAndOtherTaxCredits>
+                                <r44:rlwtCredit>0</r44:rlwtCredit>
+                                <r44:residualIncomeTax>-1000.00</r44:residualIncomeTax>
+                                <r44:overpaymentProvisionalTax>1000.00</r44:overpaymentProvisionalTax>
+                                <r44:provisionalTax>
                                     <ic:provisionalTaxOption>STD</ic:provisionalTaxOption>
                                     <ic:provisionalTaxPayable>1000</ic:provisionalTaxPayable>
-                                    <ic:provisionalTaxStartDate>2017-01-01</ic:provisionalTaxStartDate>
-                                </r4:provisionalTax>
-                                <r4:paymentsMadeToNonResidents>false</r4:paymentsMadeToNonResidents>
-                                <r4:withholdingTaxDeducted>false</r4:withholdingTaxDeducted>
-                                <r4:foreignIncomeDisclosure>false</r4:foreignIncomeDisclosure>
-                                <r4:repurchasedRedeemedCancelledShares>1000.00</r4:repurchasedRedeemedCancelledShares>
-                                <r4:foreignSourcedDividends>false</r4:foreignSourcedDividends>
-                                <r4:foreignControlIndicator>false</r4:foreignControlIndicator>
-                                <r4:lowestEconomicShareholderInterest>1000.00</r4:lowestEconomicShareholderInterest>
-                                <r4:shareholderDetails>
-                                    <ic:shareholder>
-                                        <ic:irdNumber>132311501</ic:irdNumber>
-                                        <ic:remuneration>0</ic:remuneration>
-                                        <ic:loansFromCompany>1000.00</ic:loansFromCompany>
-                                        <ic:currentAccountBalance>1000.00</ic:currentAccountBalance>
-                                        <ic:shareholderLossOffsets>0.00</ic:shareholderLossOffsets>
-                                        <ic:subventionPayments>0</ic:subventionPayments>
-                                    </ic:shareholder>
-                                </r4:shareholderDetails>
-                                <r4:attachmentForms>
+                                    <ic:provisionalTaxStartDate>2018-08-01</ic:provisionalTaxStartDate>
+                                </r44:provisionalTax>
+                                <r44:attachmentForms>
                                     <ic:attachment>
                                         <ic:formType>10</ic:formType>
                                         <ic:formFields xsi:type="r10:FormFieldsType" xmlns:r10="urn:www.ird.govt.nz/GWS:types/ReturnIR10.v1">
@@ -186,51 +198,6 @@
                                         </ic:formFields>
                                     </ic:attachment>
                                     <ic:attachment>
-                                        <ic:formType>44E</ic:formType>
-                                        <ic:formFields xsi:type="r44E:FormFieldsType" xmlns:r44E="urn:www.ird.govt.nz/GWS:types/ReturnIR44E.v1">
-                                            <r44E:currentValueOfFunds>1000</r44E:currentValueOfFunds>
-                                            <r44E:currentValueOfDesignatedSources>1000</r44E:currentValueOfDesignatedSources>
-                                            <r44E:investmentBefore1983>1000</r44E:investmentBefore1983>
-                                            <r44E:totalNetIncomeOfFund>1000</r44E:totalNetIncomeOfFund>
-                                            <r44E:previousLosses>1000.00</r44E:previousLosses>
-                                            <r44E:otherAdjustments>1000.00</r44E:otherAdjustments>
-                                            <r44E:undistributedCategoryBIncome>1000.00</r44E:undistributedCategoryBIncome>
-                                            <r44E:distributedCategoryBIncome>1000.00</r44E:distributedCategoryBIncome>
-                                            <r44E:lossesBroughtForward>false</r44E:lossesBroughtForward>
-                                            <r44E:authorisedPersonName>string</r44E:authorisedPersonName>
-                                            <r44E:authorisedPersonTitle>string</r44E:authorisedPersonTitle>
-                                        </ic:formFields>
-                                    </ic:attachment>
-                                    <ic:attachment>
-                                        <ic:formType>4J</ic:formType>
-                                        <ic:formFields xsi:type="r4J:FormFieldsType" xmlns:r4J="urn:www.ird.govt.nz/GWS:types/ReturnIR4J.v1">
-                                            <r4J:openingBalance>0.00</r4J:openingBalance>
-                                            <r4J:incomeTaxPaid>1120.00</r4J:incomeTaxPaid>
-                                            <r4J:totalFDPPaid>0.00</r4J:totalFDPPaid>
-                                            <r4J:totalRWTOnInterest>1140.00</r4J:totalRWTOnInterest>
-                                            <r4J:imputationAndFDPCredits>1150.00</r4J:imputationAndFDPCredits>
-                                            <r4J:otherCredits>1160.00</r4J:otherCredits>
-                                            <r4J:incomeTaxRefunded>1120.00</r4J:incomeTaxRefunded>
-                                            <r4J:totalFDPRefunds>0.00</r4J:totalFDPRefunds>
-                                            <r4J:imputationCreditsAttached>1140.00</r4J:imputationCreditsAttached>
-                                            <r4J:otherDebits>1294.93</r4J:otherDebits>
-                                            <r4J:closingBalance>-1015.07</r4J:closingBalance>
-                                            <r4J:adjustments>0.00</r4J:adjustments>
-                                            <r4J:furtherIncomeTaxPayable>0.00</r4J:furtherIncomeTaxPayable>
-                                            <r4J:fdpReturn>
-                                                <r4J:fdpOpeningBalance>0.00</r4J:fdpOpeningBalance>
-                                                <r4J:fdpPaid>300.00</r4J:fdpPaid>
-                                                <r4J:fdpCreditsAttachedReceived>200.00</r4J:fdpCreditsAttachedReceived>
-                                                <r4J:fdpCreditsAttachedPaid>300.00</r4J:fdpCreditsAttachedPaid>
-                                                <r4J:fdpRefunded>200.00</r4J:fdpRefunded>
-                                                <r4J:fdpOtherDebits>0.00</r4J:fdpOtherDebits>
-                                                <r4J:fdpTotalBalance>0.00</r4J:fdpTotalBalance>
-                                                <r4J:fdpTransfer>0.00</r4J:fdpTransfer>
-                                                <r4J:fdpClosingBalance>0.00</r4J:fdpClosingBalance>
-                                            </r4J:fdpReturn>
-                                        </ic:formFields>
-                                    </ic:attachment>
-                                    <ic:attachment>
                                         <ic:formType>CFC</ic:formType>
                                         <ic:formFields xsi:type="rCFC:FormFieldsType" xmlns:rCFC="urn:www.ird.govt.nz/GWS:types/ReturnCFC.v1">
                                             <rCFC:cfcDisclosures>
@@ -274,10 +241,10 @@
                                             </rCFC:fifDisclosures>
                                         </ic:formFields>
                                     </ic:attachment>
-                                </r4:attachmentForms>
+                                </r44:attachmentForms>
                             </rc:formFields>
                         </rc:fileBody>
-                    </r4:fileRequest>
+                    </r44:fileRequest>
                 </fil:FileRequestWrapper>
             </ret:ReturnFileRequestMsg>
         </ret:File>

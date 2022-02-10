@@ -1,3 +1,6 @@
+Error code 2359
+
+Request
 <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope">
     <soap:Header>
         <add:Action xmlns:add="http://www.w3.org/2005/08/addressing">https://services.ird.govt.nz/GWS/Returns/Return/File</add:Action>
@@ -74,15 +77,15 @@
                                     <ic:excessDeductionsCarriedForward>0.00</ic:excessDeductionsCarriedForward>
                                 </r6:residentialRentalIncome>
                                 <r6:propertyInterestLimitation>
-                                    <ic:totalInterest>1000</ic:totalInterest>
-                                    <ic:interestExpenseClaimed>1000</ic:interestExpenseClaimed>
+                                    <ic:totalInterest>0.00</ic:totalInterest>
+                                    <ic:interestExpenseClaimed>0.00</ic:interestExpenseClaimed>
                                     <ic:interestExpenseClaimedReason>
-                                        <ic:notResidentialOrMaoriExempt>true</ic:notResidentialOrMaoriExempt>
-                                        <ic:propertyNotInNz>true</ic:propertyNotInNz>
-                                        <ic:loansDrawnDown>true</ic:loansDrawnDown>
-                                        <ic:newBuildExemption>true</ic:newBuildExemption>
-                                        <ic:developmentExemption>true</ic:developmentExemption>
-                                        <ic:emergencyTransitionalSocialCouncil>true</ic:emergencyTransitionalSocialCouncil>
+                                        <ic:notResidentialOrMaoriExempt>false</ic:notResidentialOrMaoriExempt>
+                                        <ic:propertyNotInNz>false</ic:propertyNotInNz>
+                                        <ic:loansDrawnDown>false</ic:loansDrawnDown>
+                                        <ic:newBuildExemption>false</ic:newBuildExemption>
+                                        <ic:developmentExemption>false</ic:developmentExemption>
+                                        <ic:emergencyTransitionalSocialCouncil>false</ic:emergencyTransitionalSocialCouncil>
                                     </ic:interestExpenseClaimedReason>
                                 </r6:propertyInterestLimitation>
                                 <r6:businessOrRentalIncome>1000.00</r6:businessOrRentalIncome>
@@ -169,13 +172,13 @@
                                         <ic:taxIdNumber>123123123</ic:taxIdNumber>
                                         <ic:noJurisdictionTin>false</ic:noJurisdictionTin>
                                         <ic:tinNotRequired>false</ic:tinNotRequired>
-                                        <ic:cash>10.00</ic:cash>
-                                        <ic:financialArrangements>10.00</ic:financialArrangements>
-                                        <ic:land>10.00</ic:land>
-                                        <ic:buildings>10.00</ic:buildings>
-                                        <ic:shares>10.00</ic:shares>
-                                        <ic:services>10.00</ic:services>
-                                        <ic:other>10.00</ic:other>
+                                        <ic:cash>0.00</ic:cash>
+                                        <ic:financialArrangements>0.00</ic:financialArrangements>
+                                        <ic:land>0.00</ic:land>
+                                        <ic:buildings>0.00</ic:buildings>
+                                        <ic:shares>0.00</ic:shares>
+                                        <ic:services>0.00</ic:services>
+                                        <ic:other>0.00</ic:other>
                                         <ic:otherDescription>Other Description</ic:otherDescription>
                                         <ic:settlementZeroValue>false</ic:settlementZeroValue>
                                     </ic:settlement>
@@ -184,7 +187,7 @@
                                 <r6:netProfitLossBeforeTax>-10.00</r6:netProfitLossBeforeTax>
                                 <r6:taxAdjustments>10.00</r6:taxAdjustments>
                                 <r6:unTaxedRealisedGainsAndReceipts>20.00</r6:unTaxedRealisedGainsAndReceipts>
-                                <r6:financialArrangements>10.00</r6:financialArrangements>
+                                <r6:financialArrangements>0.00</r6:financialArrangements>
                                 <r6:assetsLand>40.00</r6:assetsLand>
                                 <r6:assetsLandValuation>H</r6:assetsLandValuation>
                                 <r6:assetsBuildings>50.00</r6:assetsBuildings>
@@ -205,3 +208,24 @@
         </ret:File>
     </soap:Body>
 </soap:Envelope>
+
+Response
+<env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope">
+    <env:Header xmlns:wsa="http://www.w3.org/2005/08/addressing">
+        <wsa:Action env:mustUnderstand="1">https://services.ird.govt.nz/GWS/Returns/Return/FileResponse</wsa:Action>
+    </env:Header>
+    <env:Body>
+        <FileResponse xmlns="https://services.ird.govt.nz/GWS/Returns/">
+            <FileResult>
+                <b:FileResponseWrapper xmlns:b="https://services.ird.govt.nz/GWS/Returns/:types/FileResponse">
+                    <fileResponse xmlns="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2">
+                        <statusMessage xmlns="urn:www.ird.govt.nz/GWS:types/Common.v2">
+                            <statusCode>2359</statusCode>
+                            <errorMessage>value of at least one of the following fields must be non-zero: cash, financialArrangements, land, buildings, shares, services, other</errorMessage>
+                        </statusMessage>
+                    </fileResponse>
+                </b:FileResponseWrapper>
+            </FileResult>
+        </FileResponse>
+    </env:Body>
+</env:Envelope>

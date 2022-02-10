@@ -1,3 +1,6 @@
+Error code 2348
+
+Request
 <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope">
     <soap:Header>
         <add:Action xmlns:add="http://www.w3.org/2005/08/addressing">https://services.ird.govt.nz/GWS/Returns/Return/File</add:Action>
@@ -74,15 +77,15 @@
                                     <ic:excessDeductionsCarriedForward>0.00</ic:excessDeductionsCarriedForward>
                                 </r6:residentialRentalIncome>
                                 <r6:propertyInterestLimitation>
-                                    <ic:totalInterest>1000</ic:totalInterest>
-                                    <ic:interestExpenseClaimed>1000</ic:interestExpenseClaimed>
+                                    <ic:totalInterest>0.00</ic:totalInterest>
+                                    <ic:interestExpenseClaimed>0.00</ic:interestExpenseClaimed>
                                     <ic:interestExpenseClaimedReason>
-                                        <ic:notResidentialOrMaoriExempt>true</ic:notResidentialOrMaoriExempt>
-                                        <ic:propertyNotInNz>true</ic:propertyNotInNz>
-                                        <ic:loansDrawnDown>true</ic:loansDrawnDown>
-                                        <ic:newBuildExemption>true</ic:newBuildExemption>
-                                        <ic:developmentExemption>true</ic:developmentExemption>
-                                        <ic:emergencyTransitionalSocialCouncil>true</ic:emergencyTransitionalSocialCouncil>
+                                        <ic:notResidentialOrMaoriExempt>false</ic:notResidentialOrMaoriExempt>
+                                        <ic:propertyNotInNz>false</ic:propertyNotInNz>
+                                        <ic:loansDrawnDown>false</ic:loansDrawnDown>
+                                        <ic:newBuildExemption>false</ic:newBuildExemption>
+                                        <ic:developmentExemption>false</ic:developmentExemption>
+                                        <ic:emergencyTransitionalSocialCouncil>false</ic:emergencyTransitionalSocialCouncil>
                                     </ic:interestExpenseClaimedReason>
                                 </r6:propertyInterestLimitation>
                                 <r6:businessOrRentalIncome>1000.00</r6:businessOrRentalIncome>
@@ -125,7 +128,6 @@
                                         <ic:beneficiaryIrdNumber>111111111</ic:beneficiaryIrdNumber>
                                         <ic:taxIdNumber>123123123</ic:taxIdNumber>
                                         <ic:beneficiaryName>Joe Bloggs</ic:beneficiaryName>
-                                        <ic:beneficiaryDOB>1985-09-01</ic:beneficiaryDOB>
                                         <ic:taxJurisdiction>AZ</ic:taxJurisdiction>
                                         <ic:noJurisdictionTin>false</ic:noJurisdictionTin>
                                         <ic:tinNotRequired>false</ic:tinNotRequired>
@@ -205,3 +207,24 @@
         </ret:File>
     </soap:Body>
 </soap:Envelope>
+
+Response
+<env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope">
+    <env:Header xmlns:wsa="http://www.w3.org/2005/08/addressing">
+        <wsa:Action env:mustUnderstand="1">https://services.ird.govt.nz/GWS/Returns/Return/FileResponse</wsa:Action>
+    </env:Header>
+    <env:Body>
+        <FileResponse xmlns="https://services.ird.govt.nz/GWS/Returns/">
+            <FileResult>
+                <b:FileResponseWrapper xmlns:b="https://services.ird.govt.nz/GWS/Returns/:types/FileResponse">
+                    <fileResponse xmlns="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2">
+                        <statusMessage xmlns="urn:www.ird.govt.nz/GWS:types/Common.v2">
+                            <statusCode>2348</statusCode>
+                            <errorMessage>no value provided for beneficiaryDOB</errorMessage>
+                        </statusMessage>
+                    </fileResponse>
+                </b:FileResponseWrapper>
+            </FileResult>
+        </FileResponse>
+    </env:Body>
+</env:Envelope>

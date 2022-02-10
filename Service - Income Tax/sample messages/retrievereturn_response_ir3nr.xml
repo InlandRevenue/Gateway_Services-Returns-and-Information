@@ -1,8 +1,8 @@
-<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">
-    <s:Header>
-        <a:Action s:mustUnderstand="1">https://services.ird.govt.nz/GWS/Returns/Return/RetrieveReturnResponse</a:Action>
-    </s:Header>
-    <s:Body>
+<env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope">
+    <env:Header xmlns:wsa="http://www.w3.org/2005/08/addressing">
+        <wsa:Action env:mustUnderstand="1">https://services.ird.govt.nz/GWS/Returns/Return/RetrieveReturnResponse</wsa:Action>
+    </env:Header>
+    <env:Body>
         <RetrieveReturnResponse xmlns="https://services.ird.govt.nz/GWS/Returns/">
             <RetrieveReturnResult xmlns:b="https://services.ird.govt.nz/GWS/Returns/:types/RetrieveReturnResponse" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
                 <b:RetrieveReturnResponseWrapper>
@@ -11,54 +11,54 @@
                             <statusCode>0</statusCode>
                             <errorMessage/>
                         </statusMessage>
-                        <responseBody xsi:type="r:RetrieveReturnResponseBodyType" xmlns:r="urn:www.ird.govt.nz/GWS:types/ReturnIR3NR.v1" xmlns:ic="urn:www.ird.govt.nz/GWS:types/IncomeReturnCommon.v1" xmlns:rc="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2" xmlns:cmn="urn:www.ird.govt.nz/GWS:types/Common.v2">
+                        <responseBody xmlns:cmn="urn:www.ird.govt.nz/GWS:types/Common.v2" xmlns:ic="urn:www.ird.govt.nz/GWS:types/IncomeReturnCommon.v1" xmlns:r3NR="urn:www.ird.govt.nz/GWS:types/ReturnIR3NR.v1" xmlns:rc="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2" xsi:type="r3NR:RetrieveReturnResponseBodyType">
                             <rc:standardFields>
                                 <rc:isNilReturn>false</rc:isNilReturn>
                             </rc:standardFields>
-                            <r:formFields>
-                                <r:submissionKey>1894384000</r:submissionKey>
-                                <r:nzSuperIndicator>false</r:nzSuperIndicator>
-                                <r:totalInterestRWT>0.00</r:totalInterestRWT>
-                                <r:totalInterest>0.00</r:totalInterest>
-                                <r:nrwtOnTotalInterest>0.00</r:nrwtOnTotalInterest>
-                                <r:totalDividendCredits>0.00</r:totalDividendCredits>
-                                <r:totalDividends>0.00</r:totalDividends>
-                                <r:nrwtOnTotalDividends>0.00</r:nrwtOnTotalDividends>
-                                <r:totalWithholdingTaxOnRoyalties>0.00</r:totalWithholdingTaxOnRoyalties>
-                                <r:totalRoyalties>0.00</r:totalRoyalties>
-                                <r:nrwtOnTotalRoyalties>0.00</r:nrwtOnTotalRoyalties>
-                                <r:totalTaxCredits>0.00</r:totalTaxCredits>
-                                <r:totalNRWT>0.00</r:totalNRWT>
-                                <r:nzIncomeWithTaxDeducted>
-                                    <ic:totalTaxPaid>0.00</ic:totalTaxPaid>
-                                    <ic:totalIncome>0.00</ic:totalIncome>
-                                </r:nzIncomeWithTaxDeducted>
-                                <r:maoriAuthorityDistributions>
+                            <r3NR:formFields>
+                                <r3NR:submissionKey>1263943680</r3NR:submissionKey>
+                                <r3NR:nzSuperIndicator>false</r3NR:nzSuperIndicator>
+                                <r3NR:totalInterestRWT>0</r3NR:totalInterestRWT>
+                                <r3NR:totalInterest>1000.00</r3NR:totalInterest>
+                                <r3NR:nrwtOnTotalInterest>0</r3NR:nrwtOnTotalInterest>
+                                <r3NR:totalDividendCredits>0</r3NR:totalDividendCredits>
+                                <r3NR:totalDividends>0</r3NR:totalDividends>
+                                <r3NR:nrwtOnTotalDividends>0</r3NR:nrwtOnTotalDividends>
+                                <r3NR:totalWithholdingTaxOnRoyalties>0</r3NR:totalWithholdingTaxOnRoyalties>
+                                <r3NR:totalRoyalties>0</r3NR:totalRoyalties>
+                                <r3NR:nrwtOnTotalRoyalties>0</r3NR:nrwtOnTotalRoyalties>
+                                <r3NR:totalTaxCredits>0</r3NR:totalTaxCredits>
+                                <r3NR:totalNRWT>0</r3NR:totalNRWT>
+                                <r3NR:nzIncomeWithTaxDeducted>
+                                    <ic:totalTaxPaid>0</ic:totalTaxPaid>
+                                    <ic:totalIncome>0</ic:totalIncome>
+                                </r3NR:nzIncomeWithTaxDeducted>
+                                <r3NR:maoriAuthorityDistributions>
                                     <ic:totalMACredits>1000.00</ic:totalMACredits>
                                     <ic:totalMADistributions>1000.00</ic:totalMADistributions>
-                                </r:maoriAuthorityDistributions>
-                                <r:pieIncome>
-                                    <ic:totalTaxCredits>0.00</ic:totalTaxCredits>
+                                </r3NR:maoriAuthorityDistributions>
+                                <r3NR:pieIncome>
+                                    <ic:totalTaxCredits>0</ic:totalTaxCredits>
                                     <ic:totalIncome>1000.00</ic:totalIncome>
-                                </r:pieIncome>
-                                <r:partnershipIncome>
+                                </r3NR:pieIncome>
+                                <r3NR:partnershipIncome>
                                     <ic:totalTaxCredits>1000.00</ic:totalTaxCredits>
                                     <ic:totalIncome>1000.00</ic:totalIncome>
-                                </r:partnershipIncome>
-                                <r:estateTrustIncome>
+                                </r3NR:partnershipIncome>
+                                <r3NR:estateTrustIncome>
                                     <ic:totalTaxCredits>1000.00</ic:totalTaxCredits>
                                     <ic:totalIncome>1000.00</ic:totalIncome>
-                                </r:estateTrustIncome>
-                                <r:ltcIncome>
+                                </r3NR:estateTrustIncome>
+                                <r3NR:ltcIncome>
                                     <ic:totalTaxCredits>1000.00</ic:totalTaxCredits>
                                     <ic:totalIncome>1000.00</ic:totalIncome>
-                                </r:ltcIncome>
-                                <r:ltcNonAllowableDeductions>0.00</r:ltcNonAllowableDeductions>
-                                <r:ltcPriorYearNonAllowableDeductionsClaimed>0.00</r:ltcPriorYearNonAllowableDeductionsClaimed>
-                                <r:ltcAdjustedIncome>1000.00</r:ltcAdjustedIncome>
-                                <r:governmentSubsidies>0.00</r:governmentSubsidies>
-                                <r:otherCredits>4000.00</r:otherCredits>
-                                <r:residentialRentalIncome>
+                                </r3NR:ltcIncome>
+                                <r3NR:ltcNonAllowableDeductions>0</r3NR:ltcNonAllowableDeductions>
+                                <r3NR:ltcPriorYearNonAllowableDeductionsClaimed>0</r3NR:ltcPriorYearNonAllowableDeductionsClaimed>
+                                <r3NR:ltcAdjustedIncome>1000.00</r3NR:ltcAdjustedIncome>
+                                <r3NR:governmentSubsidies>0.00</r3NR:governmentSubsidies>
+                                <r3NR:otherCredits>4000.00</r3NR:otherCredits>
+                                <r3NR:residentialRentalIncome>
                                     <ic:indicator>I</ic:indicator>
                                     <ic:totalIncome>2100.00</ic:totalIncome>
                                     <ic:residentialRentalDeductions>1000.00</ic:residentialRentalDeductions>
@@ -66,46 +66,58 @@
                                     <ic:deductionsClaimedThisYear>1000.00</ic:deductionsClaimedThisYear>
                                     <ic:netIncome>1100.00</ic:netIncome>
                                     <ic:excessDeductionsCarriedForward>0.00</ic:excessDeductionsCarriedForward>
-                                </r:residentialRentalIncome>
-                                <r:netRentalIncome>1000.00</r:netRentalIncome>
-                                <r:selfEmployedIncome>1000.00</r:selfEmployedIncome>
-                                <r:otherIncome>1000.00</r:otherIncome>
-                                <r:saleOfProperty>0.00</r:saleOfProperty>
-                                <r:rlwtCredit>0.00</r:rlwtCredit>
-                                <r:otherExpenses>1000.00</r:otherExpenses>
-                                <r:lossesBroughtForward>0.00</r:lossesBroughtForward>
-                                <r:lossesClaimedThisYear>0.00</r:lossesClaimedThisYear>
-                                <r:lossCarriedBackPriorYear>0.00</r:lossCarriedBackPriorYear>
-                                <r:totalTaxableIncome>8100.00</r:totalTaxableIncome>
-                                <r:workedInNZ>true</r:workedInNZ>
-                                <r:incomeEarned>1000.00</r:incomeEarned>
-                                <r:weeksWorked>3</r:weeksWorked>
-                                <r:daysWorked>21</r:daysWorked> 
-                                <r:arrivalDate>2018-05-01</r:arrivalDate>
-                                <r:departureDate>2018-05-21</r:departureDate>
-                                <r:imputationBroughtForward>0.00</r:imputationBroughtForward>
-                                <r:taxOnTaxableIncome>850.50</r:taxOnTaxableIncome>
-                                <r:researchAndDevelopment>
+                                </r3NR:residentialRentalIncome>
+                                <r3NR:propertyInterestLimitation>
+                                    <ic:totalInterest>1000.00</ic:totalInterest>
+                                    <ic:interestExpenseClaimed>1000.00</ic:interestExpenseClaimed>
+                                    <ic:interestExpenseClaimedReason>
+                                        <ic:notResidentialOrMaoriExempt>true</ic:notResidentialOrMaoriExempt>
+                                        <ic:propertyNotInNz>true</ic:propertyNotInNz>
+                                        <ic:loansDrawnDown>true</ic:loansDrawnDown>
+                                        <ic:newBuildExemption>true</ic:newBuildExemption>
+                                        <ic:developmentExemption>true</ic:developmentExemption>
+                                        <ic:emergencyTransitionalSocialCouncil>true</ic:emergencyTransitionalSocialCouncil>
+                                    </ic:interestExpenseClaimedReason>
+                                </r3NR:propertyInterestLimitation>
+                                <r3NR:netRentalIncome>1000.00</r3NR:netRentalIncome>
+                                <r3NR:selfEmployedIncome>1000</r3NR:selfEmployedIncome>
+                                <r3NR:otherIncome>1000.00</r3NR:otherIncome>
+                                <r3NR:saleOfProperty>0</r3NR:saleOfProperty>
+                                <r3NR:rlwtCredit>0</r3NR:rlwtCredit>
+                                <r3NR:otherExpenses>1000.00</r3NR:otherExpenses>
+                                <r3NR:lossesBroughtForward>0</r3NR:lossesBroughtForward>
+                                <r3NR:lossesClaimedThisYear>0</r3NR:lossesClaimedThisYear>
+                                <r3NR:lossCarriedBackPriorYear>0.00</r3NR:lossCarriedBackPriorYear>
+                                <r3NR:totalTaxableIncome>8100.00</r3NR:totalTaxableIncome>
+                                <r3NR:workedInNZ>true</r3NR:workedInNZ>
+                                <r3NR:incomeEarned>1000.00</r3NR:incomeEarned>
+                                <r3NR:weeksWorked>3</r3NR:weeksWorked>
+                                <r3NR:daysWorked>21</r3NR:daysWorked>
+                                <r3NR:arrivalDate>2018-05-01</r3NR:arrivalDate>
+                                <r3NR:departureDate>2018-05-21</r3NR:departureDate>
+                                <r3NR:imputationBroughtForward>0.00</r3NR:imputationBroughtForward>
+                                <r3NR:taxOnTaxableIncome>850.50</r3NR:taxOnTaxableIncome>
+                                <r3NR:researchAndDevelopment>
                                     <ic:creditBroughtForward>0.00</ic:creditBroughtForward>
                                     <ic:nonrefundableCredit>0.00</ic:nonrefundableCredit>
                                     <ic:refundableCredit>0.00</ic:refundableCredit>
-                                </r:researchAndDevelopment>
-                                <r:residualIncomeTax>-3149.50</r:residualIncomeTax>
-                                <r:earlyPaymentDiscountEligibility>false</r:earlyPaymentDiscountEligibility>
-                                <r:overpaymentProvisionalTax>1000.00</r:overpaymentProvisionalTax>
-                                <r:provisionalTax>
+                                </r3NR:researchAndDevelopment>
+                                <r3NR:residualIncomeTax>-3149.50</r3NR:residualIncomeTax>
+                                <r3NR:earlyPaymentDiscountEligibility>false</r3NR:earlyPaymentDiscountEligibility>
+                                <r3NR:overpaymentProvisionalTax>1000.00</r3NR:overpaymentProvisionalTax>
+                                <r3NR:provisionalTax>
                                     <ic:provisionalTaxOption>STD</ic:provisionalTaxOption>
-                                    <ic:provisionalTaxPayable>1000.00</ic:provisionalTaxPayable>
+                                    <ic:provisionalTaxPayable>1000</ic:provisionalTaxPayable>
                                     <ic:provisionalTaxStartDate>2019-01-01</ic:provisionalTaxStartDate>
-                                </r:provisionalTax>
-                                <r:partYearReturnIndicator>false</r:partYearReturnIndicator>
-                                <r:dateLeftNZ>2019-12-01</r:dateLeftNZ>
-                                <r:timePlannedToBeAway>string</r:timePlannedToBeAway>
-                            </r:formFields>
+                                </r3NR:provisionalTax>
+                                <r3NR:partYearReturnIndicator>false</r3NR:partYearReturnIndicator>
+                                <r3NR:dateLeftNZ>2019-12-01</r3NR:dateLeftNZ>
+                                <r3NR:timePlannedToBeAway>string</r3NR:timePlannedToBeAway>
+                            </r3NR:formFields>
                         </responseBody>
                     </retrieveReturnResponse>
                 </b:RetrieveReturnResponseWrapper>
             </RetrieveReturnResult>
         </RetrieveReturnResponse>
-    </s:Body>
-</s:Envelope>
+    </env:Body>
+</env:Envelope>

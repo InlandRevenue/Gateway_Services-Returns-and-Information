@@ -13,10 +13,10 @@
                         </statusMessage>
                         <responseBody xmlns:ic="urn:www.ird.govt.nz/GWS:types/IncomeReturnCommon.v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ic:PrepopResponseBodyType">
                             <ic:individual>
-                                <ic:periodBegin>2018-04-01</ic:periodBegin>
-                                <ic:periodEnd>2019-03-31</ic:periodEnd>
+                                <ic:periodBegin>2021-04-01</ic:periodBegin>
+                                <ic:periodEnd>2022-03-31</ic:periodEnd>
                                 <ic:filingFrequency type="IIT03I">Annual - March</ic:filingFrequency>
-                                <ic:balanceDate>2019-03-31</ic:balanceDate>
+                                <ic:balanceDate>2022-03-31</ic:balanceDate>
                                 <ic:formExpected>3</ic:formExpected>
                                 <ic:transitionalYear>false</ic:transitionalYear>
                                 <ic:bankruptPeriod>false</ic:bankruptPeriod>
@@ -62,6 +62,20 @@
                                         <ic:imputationCreditsForDividend>0.00</ic:imputationCreditsForDividend>
                                     </ic:income>
                                 </ic:incomeProfile>
+                                <ic:propertySaleDetails>
+                                    <ic:propertySale>
+                                        <ic:propertyTitle>PT2</ic:propertyTitle>
+                                        <ic:propertyAddress1>PA1</ic:propertyAddress1>
+                                        <ic:propertyAddress2>PA2</ic:propertyAddress2>
+                                        <ic:propertySuburb>PS</ic:propertySuburb>
+                                        <ic:propertyCity>PC</ic:propertyCity>
+                                        <ic:propertyPostCode>PPC</ic:propertyPostCode>
+                                        <ic:dateOfPurchase>2022-01-31</ic:dateOfPurchase>
+                                        <ic:dateOfSale>2022-03-31</ic:dateOfSale>
+                                        <ic:salePrice>222222.00</ic:salePrice>
+                                        <ic:purchasePrice>90000.00</ic:purchasePrice>
+                                    </ic:propertySale>
+                                </ic:propertySaleDetails>
                             </ic:individual>
                         </responseBody>
                     </prepopResponse>

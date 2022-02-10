@@ -15,7 +15,7 @@
                             </cmn:softwareProviderData>
                             <cmn:identifier IdentifierValueType="IRD">105493711</cmn:identifier>
                             <cmn:accountType>INC</cmn:accountType>
-                            <rc:periodEndDate>2019-03-31</rc:periodEndDate>
+                            <rc:periodEndDate>2022-03-31</rc:periodEndDate>
                             <rc:majorFormType>INC</rc:majorFormType>
                             <rc:minorFormType>7</rc:minorFormType>
                         </rc:fileHeader>
@@ -62,6 +62,23 @@
                                     <ic:totalTaxPaid>20</ic:totalTaxPaid>
                                     <ic:totalIncome>700.00</ic:totalIncome>
                                 </r7:overseasIncome>
+                                <r7:residentialRentalIncome>
+                                    <ic:indicator>I</ic:indicator>
+                                    <ic:totalIncome>2100.00</ic:totalIncome>
+                                    <ic:residentialRentalDeductions>1000.00</ic:residentialRentalDeductions>
+                                </r7:residentialRentalIncome>
+                                <r7:propertyInterestLimitation>
+                                    <ic:totalInterest>1000</ic:totalInterest>
+                                    <ic:interestExpenseClaimed>1000</ic:interestExpenseClaimed>
+                                    <ic:interestExpenseClaimedReason>
+                                        <ic:notResidentialOrMaoriExempt>true</ic:notResidentialOrMaoriExempt>
+                                        <ic:propertyNotInNz>true</ic:propertyNotInNz>
+                                        <ic:loansDrawnDown>true</ic:loansDrawnDown>
+                                        <ic:newBuildExemption>true</ic:newBuildExemption>
+                                        <ic:developmentExemption>true</ic:developmentExemption>
+                                        <ic:emergencyTransitionalSocialCouncil>true</ic:emergencyTransitionalSocialCouncil>
+                                    </ic:interestExpenseClaimedReason>
+                                </r7:propertyInterestLimitation>
                                 <r7:pieIncome>
                                     <ic:totalTaxCredits>15</ic:totalTaxCredits>
                                     <ic:totalIncome>800</ic:totalIncome>
@@ -87,11 +104,13 @@
                                         <ic:shareOfDividendIncome>0.00</ic:shareOfDividendIncome>
                                         <ic:shareOfMADistributions>0.00</ic:shareOfMADistributions>
                                         <ic:shareOfOverseasIncome>0.00</ic:shareOfOverseasIncome>
+                                        <ic:shareOfResidentialRentalIncome>0.00</ic:shareOfResidentialRentalIncome>
                                         <ic:shareOfRentalIncome>0.00</ic:shareOfRentalIncome>
                                         <ic:shareOfPassiveIncome>0.00</ic:shareOfPassiveIncome>
                                         <ic:shareOfOtherIncome>0.00</ic:shareOfOtherIncome>
                                         <ic:totalIncome>6400</ic:totalIncome>
                                         <ic:deductionForExtinguishedLoss>0.00</ic:deductionForExtinguishedLoss>
+                                        <ic:shareOfResidentialRentalDeductions>0.00</ic:shareOfResidentialRentalDeductions>
                                         <ic:shareOfOverseasTaxPaid>20</ic:shareOfOverseasTaxPaid>
                                         <ic:shareOfImputationCredits>45</ic:shareOfImputationCredits>
                                         <ic:shareOfOtherTaxCredits>395</ic:shareOfOtherTaxCredits>
