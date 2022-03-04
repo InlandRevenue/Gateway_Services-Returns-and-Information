@@ -34,8 +34,8 @@
     - Service endpoint:  https://incometax.test.services.ird.govt.nz/gateway/GWS/Returns/
 - Test Scenarios
     - Income Tax Mock Scenarios Mind map 
-    [Mock Scenarios](images/Emulated_Services_IncomeTax_Coverage.png)
-    ![Mock Scenarios](images/Emulated_Services_IncomeTax_Coverage.png) 
+    [Mock Scenarios](images/Emulated_Service_IncomeTax_Coverage_with_AC_2022.png)
+    ![Mock Scenarios](images/Emulated_Service_IncomeTax_Coverage_with_AC_2022.png) 
 - Test Data
     - This table shows which scenarios (as per their numbers in the mind map) require specific data to trigger the expected responses.
     - Text in italics represents the name of the XML node in the request.
@@ -109,7 +109,7 @@
 	- RetrieveFilingObligations   	-	https://services.ird.govt.nz/GWS/Returns/Return/RetrieveFilingObligations
 	 
 - Authentication: 
-	- Authentication is based on the outcome of OAuth token validation (using new [OAuth emulator](https://mock-oauth.ird.digitalpartner.services/))
+	- Authentication is based on the outcome of OAuth token validation (using [OAuth emulator](https://oauth.test.services.ird.govt.nz/))
 	- Access delegation/restriction is not emulated, and any authenticated user has access to the test data
 	- Incoming requests should include "Authorization" header with the OAuth token value
 	- In case of missing token, emulated service would respond with error statusCode 2
