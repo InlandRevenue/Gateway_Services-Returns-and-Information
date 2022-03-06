@@ -1,19 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Documentation
 _______________________________________
-NAME:             ReturnIR6.v1.xsd
-VER:              1.2
-ISSUER:           Inland Revenue Department
-DESC:             This schema defines the elements and related data types required for the Returns Estate/Trust Income Tax Gateway Service.
+NAME:       ReturnIR6.v1.xsd
+VER:        1.4
+ISSUER:     Inland Revenue Department
+DESC:      	This schema defines the elements and related data types required for the Returns Estate/Trust Income Tax Gateway Service.
 	
-Date  		    Change
-**********    ************
-2020-10-19    lossCarriedBackPriorYear added
+Date  		Change
+**********  ************
+2021-11-04	settlementDetails added
+			propertyInterestLimitation added
+			exemptFromCompliance added
+			netProfitLossBeforeTax added
+			taxAdjustments added
+			unTaxedRealisedGainsAndReceipts added
+			financialArrangements added
+			assetsLand added
+			assetsLandValuation added
+			assetsBuildings added
+			assetsBuildingsValuation added
+			assetsShares added
+			assetsSharesValuation added
+			assetsTotal added
+			financialArrangementsLiable added
+			liabilitiesTotal added
+			equityOwners added
+			equityDrawings added
+			equityYearEndBalances added
 
-2019-11-20    residentialRentalIncome added
-              researchAndDevelopment added
+2020-10-19  lossCarriedBackPriorYear added
 
-2019-06-26    Initial
+2019-11-20  residentialRentalIncome added
+            researchAndDevelopment added
+
+2019-06-26  Initial
 _______________________________________
 -->
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:www.ird.govt.nz/GWS:types/ReturnIR6.v1" xmlns:cmn="urn:www.ird.govt.nz/GWS:types/Common.v2" xmlns:rc="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2" xmlns:ic="urn:www.ird.govt.nz/GWS:types/IncomeReturnCommon.v1" xmlns:r="urn:www.ird.govt.nz/GWS:types/ReturnIR6.v1" targetNamespace="urn:www.ird.govt.nz/GWS:types/ReturnIR6.v1" elementFormDefault="qualified" attributeFormDefault="unqualified">
@@ -56,6 +76,7 @@ _______________________________________
 					<xsd:element name="ltcPriorYearNonAllowableDeductionsClaimed" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="ltcAdjustedIncome" type="cmn:MoneyType" minOccurs="0"/>
 					<xsd:element name="residentialRentalIncome" type="ic:ResidentialRentalIncomeType" minOccurs="0"/>
+					<xsd:element name="propertyInterestLimitation" type="ic:PropertyInterestLimitationType" minOccurs="0"/>
 					<xsd:element name="businessOrRentalIncome" type="cmn:MoneyType" minOccurs="0"/>
 					<xsd:element name="otherIncome" type="ic:IncomeWithTaxCreditType" minOccurs="0"/>
 					<xsd:element name="saleOfProperty" type="cmn:MoneyType" minOccurs="0"/>
@@ -66,7 +87,7 @@ _______________________________________
 					<xsd:element name="totalExpensesClaimed" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="lossesBroughtForward" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="lossesClaimedThisYear" type="cmn:MoneyTypePositive" minOccurs="0"/>
-          <xsd:element name="lossCarriedBackPriorYear" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="lossCarriedBackPriorYear" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="totalDistributions" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="totalTaxableDistributions" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="disclosureRequiredCFCorFIF" type="xsd:boolean" minOccurs="0"/>
@@ -81,6 +102,24 @@ _______________________________________
 					<xsd:element name="residualIncomeTax" type="cmn:MoneyType" minOccurs="0"/>
 					<xsd:element name="provisionalTax" type="ic:ProvisionalTaxType" minOccurs="0"/>
 					<xsd:element name="beneficiaryDetails" type="ic:BeneficiaryListType" minOccurs="0"/>
+					<xsd:element name="settlementDetails" type="ic:SettlementListType" minOccurs="0"/>
+					<xsd:element name="exemptFromCompliance" type="xsd:boolean" minOccurs="0"/>
+					<xsd:element name="netProfitLossBeforeTax" type="cmn:MoneyType" minOccurs="0"/>
+					<xsd:element name="taxAdjustments" type="cmn:MoneyType" minOccurs="0"/>
+					<xsd:element name="unTaxedRealisedGainsAndReceipts" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="financialArrangements" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="assetsLand" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="assetsLandValuation" type="ic:AssetValuationType" minOccurs="0"/>
+					<xsd:element name="assetsBuildings" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="assetsBuildingsValuation" type="ic:AssetValuationType" minOccurs="0"/>
+					<xsd:element name="assetsShares" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="assetsSharesValuation" type="ic:AssetValuationType" minOccurs="0"/>
+					<xsd:element name="assetsTotal" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="financialArrangementsLiable" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="liabilitiesTotal" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="equityOwners" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="equityDrawings" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="equityYearEndBalances" type="cmn:MoneyType" minOccurs="0"/>
 					<xsd:element name="attachmentForms" type="ic:AttachmentListType" minOccurs="0"/>
 				</xsd:sequence>
 			</xsd:extension>

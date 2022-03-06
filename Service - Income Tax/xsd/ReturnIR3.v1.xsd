@@ -7,6 +7,8 @@
     
 Date  		Change
 **********  ************
+2021-10-20	propertyInterestLimitation added
+
 2021-01-26	lossCarriedBackPriorYear added
 			governmentSubsidies added
 			pieDebit added
@@ -81,7 +83,8 @@ _______________________________________
 					<xsd:element name="totalShareholderEmployeeSalary" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="futureShareholderSalary" type="xsd:boolean" minOccurs="0"/>
 					<xsd:element name="shareholderAIMTaxPaid" type="cmn:MoneyTypePositive" minOccurs="0"/>
-					<xsd:element name="residentialRentalIncome" type="ic:ResidentialRentalIncomeType" minOccurs="0"/>          
+					<xsd:element name="residentialRentalIncome" type="ic:ResidentialRentalIncomeType" minOccurs="0"/>
+					<xsd:element name="propertyInterestLimitation" type="ic:PropertyInterestLimitationType" minOccurs="0"/>       
 					<xsd:element name="netRentalIncome" type="cmn:MoneyType" minOccurs="0"/>
 					<xsd:element name="selfEmployedIncome" type="cmn:MoneyType" minOccurs="0"/>
 					<xsd:element name="otherIncome" type="cmn:MoneyType" minOccurs="0"/>
