@@ -69,7 +69,7 @@ The following key changes have been made to the Income Tax Return Service build 
 	|2350 | invalid value provided for noJurisdictionTin ||
 	| 2351 | no value provided for beneficiaryIrdNumber || 
 	| 2352 | invalid value provided for beneficiaryIrdNumber ||
-	| 2353 | no value provided for taxIdNumber||
+	| 2353 | no value provided for taxIdNumber ||
 	|2339 | settlorCommence cannot be in the future IR6S| IR6S |
 	| 2340 | taxJurisdiction has invalid/unrecognised ISO-2A country code value ||
 	| 2341 | settlorIrdNumber is provided, but failed IRD number check ||
