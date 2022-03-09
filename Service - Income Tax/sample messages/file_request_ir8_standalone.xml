@@ -15,7 +15,7 @@
                             </cmn:softwareProviderData>
                             <cmn:identifier IdentifierValueType="IRD">050700461</cmn:identifier>
                             <cmn:accountType>INC</cmn:accountType>
-                            <rc:periodEndDate>2021-03-31</rc:periodEndDate>
+                            <rc:periodEndDate>2022-03-31</rc:periodEndDate>
                             <rc:majorFormType>INC</rc:majorFormType>
                             <rc:minorFormType>8</rc:minorFormType>
                         </rc:fileHeader>
@@ -39,6 +39,19 @@
                                     <ic:netIncome>1100.00</ic:netIncome>
                                     <ic:excessDeductionsCarriedForward>0.00</ic:excessDeductionsCarriedForward>
                                 </r8:residentialRentalIncome>
+                                <r8:propertyInterestLimitation>
+                                    <ic:totalInterest>1000</ic:totalInterest>
+                                    <ic:interestExpenseClaimed>1000</ic:interestExpenseClaimed>
+                                    <ic:interestExpenseClaimedReason>
+                                        <ic:notResidentialOrMaoriExempt>true</ic:notResidentialOrMaoriExempt>
+                                        <ic:propertyNotInNz>true</ic:propertyNotInNz>
+                                        <ic:loansDrawnDown>true</ic:loansDrawnDown>
+                                        <ic:newBuildExemption>true</ic:newBuildExemption>
+                                        <ic:developmentExemption>true</ic:developmentExemption>
+                                        <ic:emergencyTransitionalSocialCouncil>true</ic:emergencyTransitionalSocialCouncil>
+                                    </ic:interestExpenseClaimedReason>
+                                </r8:propertyInterestLimitation>
+                                <r8:saleOfProperty>0.00</r8:saleOfProperty>
                                 <r8:grossInterest>1000.00</r8:grossInterest>
                                 <r8:grossDividends>1000.00</r8:grossDividends>
                                 <r8:maoriAuthorityDistributions>1000.00</r8:maoriAuthorityDistributions>
@@ -48,15 +61,15 @@
                                 <r8:adjustmentsOutsideFinancialAccounts>1000.00</r8:adjustmentsOutsideFinancialAccounts>
                                 <r8:donationDeductions>1000.00</r8:donationDeductions>
                                 <r8:lossesBroughtForward>0.00</r8:lossesBroughtForward>
-                                <r8:lossCarriedBackPriorYear>0</r8:lossCarriedBackPriorYear>
+                                <r8:lossCarriedBackPriorYear>0.00</r8:lossCarriedBackPriorYear>
                                 <r8:totalTaxableIncome>6000.00</r8:totalTaxableIncome>
                                 <r8:taxOnTaxableIncome>1050.00</r8:taxOnTaxableIncome>
                                 <r8:overseasTaxPaid>875.00</r8:overseasTaxPaid>
                                 <r8:dividendImputationCredits>1000.00</r8:dividendImputationCredits>
                                 <r8:researchAndDevelopment>
-                                    <ic:creditBroughtForward>1000</ic:creditBroughtForward>
-                                    <ic:nonrefundableCredit>1000</ic:nonrefundableCredit>
-                                    <ic:refundableCredit>1000</ic:refundableCredit>
+                                    <ic:creditBroughtForward>0.00</ic:creditBroughtForward>
+                                    <ic:nonrefundableCredit>0.00</ic:nonrefundableCredit>
+                                    <ic:refundableCredit>0.00</ic:refundableCredit>
                                 </r8:researchAndDevelopment>
                                 <r8:totalRWTDeducted>1000.00</r8:totalRWTDeducted>
                                 <r8:rlwtCredit>0.00</r8:rlwtCredit>

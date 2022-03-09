@@ -15,7 +15,7 @@
                             </cmn:softwareProviderData>
                             <cmn:identifier IdentifierValueType="IRD">093989910</cmn:identifier>
                             <cmn:accountType>INC</cmn:accountType>
-                            <rc:periodEndDate>2019-03-31</rc:periodEndDate>
+                            <rc:periodEndDate>2022-03-31</rc:periodEndDate>
                             <rc:majorFormType>INC</rc:majorFormType>
                             <rc:minorFormType>3NR</rc:minorFormType>
                         </rc:fileHeader>
@@ -28,18 +28,11 @@
                                     <rc:amendReason/>
                                     <rc:amendDetails/>
                                 </rc:amendmentRequest>
-                                <rc:creditTransferRequest>
-                                    <rc:transferIRD>123081420</rc:transferIRD>
-                                    <rc:transferAccountType>INC</rc:transferAccountType>
-                                    <rc:transferFilingPeriod>2019-08-31</rc:transferFilingPeriod>
-                                    <rc:associatedCustomer>false</rc:associatedCustomer>
-                                    <rc:transferAmount>100</rc:transferAmount>
-                                </rc:creditTransferRequest>
                             </rc:standardFields>
                             <rc:formFields xsi:type="r3NR:FormFieldsType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ic="urn:www.ird.govt.nz/GWS:types/IncomeReturnCommon.v1">
                                 <r3NR:nzSuperIndicator>false</r3NR:nzSuperIndicator>
                                 <r3NR:totalInterestRWT>0</r3NR:totalInterestRWT>
-                                <r3NR:totalInterest>0</r3NR:totalInterest>
+                                <r3NR:totalInterest>1000</r3NR:totalInterest>
                                 <r3NR:nrwtOnTotalInterest>0</r3NR:nrwtOnTotalInterest>
                                 <r3NR:totalDividendCredits>0</r3NR:totalDividendCredits>
                                 <r3NR:totalDividends>0</r3NR:totalDividends>
@@ -76,16 +69,39 @@
                                 <r3NR:ltcNonAllowableDeductions>0</r3NR:ltcNonAllowableDeductions>
                                 <r3NR:ltcPriorYearNonAllowableDeductionsClaimed>0</r3NR:ltcPriorYearNonAllowableDeductionsClaimed>
                                 <r3NR:ltcAdjustedIncome>1000.00</r3NR:ltcAdjustedIncome>
+                                <r3NR:governmentSubsidies>0.00</r3NR:governmentSubsidies>
                                 <r3NR:otherCredits>4000.00</r3NR:otherCredits>
+                                <r3NR:residentialRentalIncome>
+                                    <ic:indicator>I</ic:indicator>
+                                    <ic:totalIncome>2100.00</ic:totalIncome>
+                                    <ic:residentialRentalDeductions>1000.00</ic:residentialRentalDeductions>
+                                    <ic:excessDeductionsBroughtForward>0.00</ic:excessDeductionsBroughtForward>
+                                    <ic:deductionsClaimedThisYear>1000.00</ic:deductionsClaimedThisYear>
+                                    <ic:netIncome>1100.00</ic:netIncome>
+                                    <ic:excessDeductionsCarriedForward>0.00</ic:excessDeductionsCarriedForward>
+                                </r3NR:residentialRentalIncome>
+                                <r3NR:propertyInterestLimitation>
+                                    <ic:totalInterest>1000</ic:totalInterest>
+                                    <ic:interestExpenseClaimed>1000</ic:interestExpenseClaimed>
+                                    <ic:interestExpenseClaimedReason>
+                                        <ic:notResidentialOrMaoriExempt>true</ic:notResidentialOrMaoriExempt>
+                                        <ic:propertyNotInNz>true</ic:propertyNotInNz>
+                                        <ic:loansDrawnDown>true</ic:loansDrawnDown>
+                                        <ic:newBuildExemption>true</ic:newBuildExemption>
+                                        <ic:developmentExemption>true</ic:developmentExemption>
+                                        <ic:emergencyTransitionalSocialCouncil>true</ic:emergencyTransitionalSocialCouncil>
+                                    </ic:interestExpenseClaimedReason>
+                                </r3NR:propertyInterestLimitation>
                                 <r3NR:netRentalIncome>1000.00</r3NR:netRentalIncome>
-                                <r3NR:selfEmployedIncome>1000.00</r3NR:selfEmployedIncome>
+                                <r3NR:selfEmployedIncome>1000</r3NR:selfEmployedIncome>
                                 <r3NR:otherIncome>1000.00</r3NR:otherIncome>
                                 <r3NR:saleOfProperty>0</r3NR:saleOfProperty>
                                 <r3NR:rlwtCredit>0</r3NR:rlwtCredit>
                                 <r3NR:otherExpenses>1000.00</r3NR:otherExpenses>
                                 <r3NR:lossesBroughtForward>0</r3NR:lossesBroughtForward>
                                 <r3NR:lossesClaimedThisYear>0</r3NR:lossesClaimedThisYear>
-                                <r3NR:totalTaxableIncome>7000</r3NR:totalTaxableIncome>
+                                <r3NR:lossCarriedBackPriorYear>0.00</r3NR:lossCarriedBackPriorYear>
+                                <r3NR:totalTaxableIncome>8100.00</r3NR:totalTaxableIncome>
                                 <r3NR:workedInNZ>true</r3NR:workedInNZ>
                                 <r3NR:incomeEarned>1000.00</r3NR:incomeEarned>
                                 <r3NR:weeksWorked>3</r3NR:weeksWorked>
@@ -93,8 +109,13 @@
                                 <r3NR:arrivalDate>2018-05-01</r3NR:arrivalDate>
                                 <r3NR:departureDate>2018-05-21</r3NR:departureDate>
                                 <r3NR:imputationBroughtForward>0.00</r3NR:imputationBroughtForward>
-                                <r3NR:taxOnTaxableIncome>735.00</r3NR:taxOnTaxableIncome>
-                                <r3NR:residualIncomeTax>-3265.00</r3NR:residualIncomeTax>
+                                <r3NR:taxOnTaxableIncome>850.50</r3NR:taxOnTaxableIncome>
+                                <r3NR:researchAndDevelopment>
+                                    <ic:creditBroughtForward>0.00</ic:creditBroughtForward>
+                                    <ic:nonrefundableCredit>0.00</ic:nonrefundableCredit>
+                                    <ic:refundableCredit>0.00</ic:refundableCredit>
+                                </r3NR:researchAndDevelopment>
+                                <r3NR:residualIncomeTax>-3149.50</r3NR:residualIncomeTax>
                                 <r3NR:earlyPaymentDiscountEligibility>false</r3NR:earlyPaymentDiscountEligibility>
                                 <r3NR:overpaymentProvisionalTax>1000.00</r3NR:overpaymentProvisionalTax>
                                 <r3NR:provisionalTax>

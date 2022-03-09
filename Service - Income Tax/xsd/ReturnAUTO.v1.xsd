@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-NAME:			ReturnAUTO.xsd
+NAME:		ReturnAUTO.xsd
 VER:			1
 ISSUER:		Inland Revenue Department	
-DESC:			This schema defines the elements and related data types required for the Returns Individual Income Tax Gateway Service.
+DESC:		This schema defines the elements and related data types required for the Returns Individual Income Tax Gateway Service.
     
 Date  		Change
 **********  ************
+2021-11-08	governmentSubsidies added
+
 2021-02-03	pieDebit added
             pieCredit added
 			totalTCPDs changed to cmn type MoneyTypePositive
@@ -62,6 +64,7 @@ _______________________________________
 					<xsd:element name="dividendsAsInterestIncome" type="ic:DividendIncomeType" minOccurs="0"/>
 					<xsd:element name="maoriAuthorityDistributions" type="MADistributionCalcType" minOccurs="0"/>
 					<xsd:element name="pieIncome" type="ic:IncomeWithTaxCreditType" minOccurs="0"/>
+					<xsd:element name="governmentSubsidies" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="nonBusinessExpenses" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="imputationBroughtForward" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="partYearReturnIndicator" type="xsd:boolean" minOccurs="0"/>

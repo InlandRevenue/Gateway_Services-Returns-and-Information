@@ -6,20 +6,19 @@ VER:              1.3
 ISSUER:           Inland Revenue Department
 DESC:             This schema defines the elements and related data types required for the Returns Clubs and Societies Income Tax 2020 Gateway Service.
 
-Date  		    Change	
-**********    ************	
-2021-10-07	  changed data type of fields dividends, taxableMADistributions from MoneyType to MoneyTypePositive
+Date  		Change
+**********  ************
+2021-10-20	changed data type of fields dividends, taxableMADistributions from MoneyType to MoneyTypePositive
+			propertyInterestLimitation added
 
+2020-10-19  lossCarriedBackPriorYear added
 
-
-2020-10-19    lossCarriedBackPriorYear added
- 
-2020-11-20    residentialRentalIncome added
-              saleOfProperty added
-              researchAndDevelopment added
-              typeOfClubOrSociety required
- 
-2019-06-29    Initial
+2020-11-20  residentialRentalIncome added
+            saleOfProperty added
+            researchAndDevelopment added
+            typeOfClubOrSociety required
+              
+2019-06-29  Initial
 _______________________________________
 -->
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:www.ird.govt.nz/GWS:types/ReturnIR9.v1" xmlns:cmn="urn:www.ird.govt.nz/GWS:types/Common.v2" xmlns:rc="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2" xmlns:ic="urn:www.ird.govt.nz/GWS:types/IncomeReturnCommon.v1" xmlns:r="urn:www.ird.govt.nz/GWS:types/ReturnIR9.v1" targetNamespace="urn:www.ird.govt.nz/GWS:types/ReturnIR9.v1" elementFormDefault="qualified" attributeFormDefault="unqualified">
@@ -52,7 +51,7 @@ _______________________________________
 					<xsd:element name="incorporatedBody" type="xsd:boolean" minOccurs="0"/>
 					<xsd:element name="typeOfClubOrSociety" type="ic:SocietyType"/>
 					<xsd:element name="residentialRentalIncome" type="ic:ResidentialRentalIncomeType" minOccurs="0"/>
- 
+					<xsd:element name="propertyInterestLimitation" type="ic:PropertyInterestLimitationType" minOccurs="0"/>
 					<xsd:element name="saleOfProperty" type="cmn:MoneyType" minOccurs="0"/>
 					<xsd:element name="friendlyNetIncome" type="cmn:MoneyType" minOccurs="0"/>
 					<xsd:element name="interest" type="cmn:MoneyType" minOccurs="0"/>
@@ -63,7 +62,7 @@ _______________________________________
 					<xsd:element name="donationsDeduction" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="netIncome" type="cmn:MoneyType" minOccurs="0"/>
 					<xsd:element name="lossesBroughtForward" type="cmn:MoneyTypePositive" minOccurs="0"/>
-          <xsd:element name="lossCarriedBackPriorYear" type="cmn:MoneyTypePositive" minOccurs="0"/>          
+					<xsd:element name="lossCarriedBackPriorYear" type="cmn:MoneyTypePositive" minOccurs="0"/>          
 					<xsd:element name="totalTaxableIncome" type="cmn:MoneyType" minOccurs="0"/>
 					<xsd:element name="taxOnTaxableIncome" type="cmn:MoneyType" minOccurs="0"/>
 					<xsd:element name="overseasTaxPaid" type="cmn:MoneyTypePositive" minOccurs="0"/>

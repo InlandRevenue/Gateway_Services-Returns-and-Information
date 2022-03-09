@@ -56,6 +56,7 @@
                                     <ic:totalTaxCredits>1000.00</ic:totalTaxCredits>
                                     <ic:totalIncome>1000.00</ic:totalIncome>
                                 </r4:partnershipEstateTrustIncome>
+                                <r4:totalTaxCredits>5000.00</r4:totalTaxCredits>
                                 <r4:overseasIncome>
                                     <ic:totalTaxPaid>0.00</ic:totalTaxPaid>
                                     <ic:totalIncome>1000.00</ic:totalIncome>
@@ -91,11 +92,11 @@
                                 <r4:shareholderDetails>
                                     <ic:shareholder>
                                         <ic:irdNumber>132311501</ic:irdNumber>
-                                        <ic:remuneration>0.00</ic:remuneration>
+                                        <ic:remuneration>0</ic:remuneration>
                                         <ic:loansFromCompany>1000.00</ic:loansFromCompany>
                                         <ic:currentAccountBalance>1000.00</ic:currentAccountBalance>
-                                        <ic:shareholderLossOffsets>1000.00</ic:shareholderLossOffsets>
-                                        <ic:subventionPayments>1000.00</ic:subventionPayments>
+                                        <ic:shareholderLossOffsets>0.00</ic:shareholderLossOffsets>
+                                        <ic:subventionPayments>0</ic:subventionPayments>
                                     </ic:shareholder>
                                 </r4:shareholderDetails>
                                 <r4:attachmentForms>

@@ -13,9 +13,9 @@
                                 <cmn:softwarePlatform>SoftwarePlatform</cmn:softwarePlatform>
                                 <cmn:softwareRelease>1</cmn:softwareRelease>
                             </cmn:softwareProviderData>
-                            <cmn:identifier IdentifierValueType="IRD">018027631</cmn:identifier>
+                            <cmn:identifier IdentifierValueType="IRD">052120330</cmn:identifier>
                             <cmn:accountType>INC</cmn:accountType>
-                            <rc:periodEndDate>2021-03-31</rc:periodEndDate>
+                            <rc:periodEndDate>2022-03-31</rc:periodEndDate>
                             <rc:majorFormType>INC</rc:majorFormType>
                             <rc:minorFormType>44</rc:minorFormType>
                         </rc:fileHeader>
@@ -39,11 +39,24 @@
                                     <ic:netIncome>1100.00</ic:netIncome>
                                     <ic:excessDeductionsCarriedForward>0.00</ic:excessDeductionsCarriedForward>
                                 </r44:residentialRentalIncome>
-                                <r44:financialMarketsAuthorityNumber>1234</r44:financialMarketsAuthorityNumber>
+                                <r44:propertyInterestLimitation>
+                                    <ic:totalInterest>1000</ic:totalInterest>
+                                    <ic:interestExpenseClaimed>1000</ic:interestExpenseClaimed>
+                                    <ic:interestExpenseClaimedReason>
+                                        <ic:notResidentialOrMaoriExempt>true</ic:notResidentialOrMaoriExempt>
+                                        <ic:propertyNotInNz>true</ic:propertyNotInNz>
+                                        <ic:loansDrawnDown>true</ic:loansDrawnDown>
+                                        <ic:newBuildExemption>true</ic:newBuildExemption>
+                                        <ic:developmentExemption>true</ic:developmentExemption>
+                                        <ic:emergencyTransitionalSocialCouncil>true</ic:emergencyTransitionalSocialCouncil>
+                                    </ic:interestExpenseClaimedReason>
+                                </r44:propertyInterestLimitation>
+                                <r44:financialMarketsAuthorityNumber>AS/3980</r44:financialMarketsAuthorityNumber>
                                 <r44:fundBalanceDate>2019-03-31</r44:fundBalanceDate>
-                                <r44:assetsIncludeNZLifeOrTransferred>false</r44:assetsIncludeNZLifeOrTransferred>
+                                <r44:assetsIncludeNZLifeOrTransferred>true</r44:assetsIncludeNZLifeOrTransferred>
                                 <r44:nzLifeOrTransfersTotalAssets>false</r44:nzLifeOrTransfersTotalAssets>
-                                <r44:electionRequired>false</r44:electionRequired>
+                                <r44:electionRequired>true</r44:electionRequired>
+                                <r44:saleOfProperty>0.00</r44:saleOfProperty>
                                 <r44:fundIncome>1000.00</r44:fundIncome>
                                 <r44:deductionsFromOtherSchemes>
                                     <ic:deduction>
@@ -66,7 +79,7 @@
                                 <r44:additionsTreatedAsCapitalOnDisposal>0</r44:additionsTreatedAsCapitalOnDisposal>
                                 <r44:additionsTreatedAsRevenueOnDisposal>0</r44:additionsTreatedAsRevenueOnDisposal>
                                 <r44:lossesBroughtForward>0</r44:lossesBroughtForward>
-                                <r44:lossCarriedBackPriorYear>0</r44:lossCarriedBackPriorYear>
+                                <r44:lossCarriedBackPriorYear>0.00</r44:lossCarriedBackPriorYear>
                                 <r44:totalTaxableIncome>8100.00</r44:totalTaxableIncome>
                                 <r44:taxOnTaxableIncome>588.00</r44:taxOnTaxableIncome>
                                 <r44:trusteeDetails>
@@ -85,9 +98,9 @@
                                 <r44:overseasTaxCredit>1000.00</r44:overseasTaxCredit>
                                 <r44:imputationCredits>1000.00</r44:imputationCredits>
                                 <r44:researchAndDevelopment>
-                                    <ic:creditBroughtForward>1000</ic:creditBroughtForward>
-                                    <ic:nonrefundableCredit>1000</ic:nonrefundableCredit>
-                                    <ic:refundableCredit>1000</ic:refundableCredit>
+                                    <ic:creditBroughtForward>0.00</ic:creditBroughtForward>
+                                    <ic:nonrefundableCredit>0.00</ic:nonrefundableCredit>
+                                    <ic:refundableCredit>0.00</ic:refundableCredit>
                                 </r44:researchAndDevelopment>
                                 <r44:rwtAndOtherTaxCredits>1000.00</r44:rwtAndOtherTaxCredits>
                                 <r44:rlwtCredit>0</r44:rlwtCredit>
