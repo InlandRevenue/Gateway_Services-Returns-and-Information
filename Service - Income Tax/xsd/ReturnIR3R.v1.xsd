@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	NAME:			ReturnIR3R.xsd
-	VER:			1.0
-	ISSUER:			Inland Revenue Department
-	DATE:			24/06/2021
-	DESC:			This schema defines the elements and related data types required for the Returns IR3R Gateway Service.
-	
-	CHANGE LOG
-	DATE			CHANGE
-	******			******
-	2021-07-30		Added new elements (availableMonths, propertyAddress1 and propertyAddress2) for Rental form
-	2019-02-12		Initial development
+NAME:	ReturnIR3R.xsd
+VER:		1.0
+ISSUER:	Inland Revenue Department
+DESC:	This schema defines the elements and related data types required for the Returns IR3R Gateway Service.
+
+CHANGE LOG
+DATE			CHANGE
+******		***********
+2021-10-20	Added new element propertyInterestLimitation
+
+2021-07-30	Added new elements (availableMonths, propertyAddress1 and propertyAddress2) for Rental form
+
+2019-02-12	Initial development
 -->
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:www.ird.govt.nz/GWS:types/ReturnIR3R.v1" xmlns:cmn="urn:www.ird.govt.nz/GWS:types/Common.v2" xmlns:rc="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2" xmlns:r="urn:www.ird.govt.nz/GWS:types/ReturnIR3R.v1" targetNamespace="urn:www.ird.govt.nz/GWS:types/ReturnIR3R.v1" elementFormDefault="qualified" attributeFormDefault="unqualified">
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:www.ird.govt.nz/GWS:types/ReturnIR3R.v1" xmlns:cmn="urn:www.ird.govt.nz/GWS:types/Common.v2" xmlns:rc="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2" xmlns:ic="urn:www.ird.govt.nz/GWS:types/IncomeReturnCommon.v1" xmlns:r="urn:www.ird.govt.nz/GWS:types/ReturnIR3R.v1" targetNamespace="urn:www.ird.govt.nz/GWS:types/ReturnIR3R.v1" elementFormDefault="qualified" attributeFormDefault="unqualified">
 	<!--Begin Imports Statement(s)-->
 	<xsd:import namespace="urn:www.ird.govt.nz/GWS:types/Common.v2" schemaLocation="./Common.v2.xsd">
 		<xsd:annotation>
@@ -22,6 +24,11 @@
 	<xsd:import namespace="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2" schemaLocation="./ReturnCommon.v2.xsd">
 		<xsd:annotation>
 			<xsd:documentation xml:lang="en">Contains common return data types.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:import>
+		<xsd:import namespace="urn:www.ird.govt.nz/GWS:types/IncomeReturnCommon.v1" schemaLocation="./IncomeReturnCommon.v1.xsd">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">Contains income tax return common data types.</xsd:documentation>
 		</xsd:annotation>
 	</xsd:import>
 	<!--End Import Statements-->
@@ -41,7 +48,10 @@
 					<xsd:element name="totalIncome" type="cmn:MoneyType" minOccurs="0"/>
 					<xsd:element name="ratesAmount" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="insuranceAmount" type="cmn:MoneyTypePositive" minOccurs="0"/>
-					<xsd:element name="interestAmount" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="interestAmount" type="cmn:MoneyTypePositive" minOccurs="0">
+						<xsd:annotation><xsd:documentation xml:lang="en">Deprecated for income tax years 2022+, use propertyInterestLimitation's totalInterest instead</xsd:documentation></xsd:annotation>
+					</xsd:element>
+					<xsd:element name="propertyInterestLimitation" type="ic:PropertyInterestLimitationType" minOccurs="0"/>
 					<xsd:element name="agentFeesAmount" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="repairsAndMaintenanceDetails" type="OtherListType" minOccurs="0"/>
 					<xsd:element name="otherExpensesDetails" type="OtherListType" minOccurs="0"/>

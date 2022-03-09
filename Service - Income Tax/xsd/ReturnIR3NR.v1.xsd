@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 	NAME:             ReturnIR3NR.v1.xsd
-	VER:              1.2
+	VER:              1.25
 	ISSUER:           Inland Revenue Department
 	DESC:             This schema defines the elements and related data types required for the Returns IR3NR 2020 Gateway Service.
 
 ' Date  			Change
-' **********  ************
-' 2020-11-11	lossCarriedBackPriorYear added
-					    governmentSubsidies added
+' **********  	************
+' 2021-11-25		propertyInterestLimitation added
+' 2020-11-11		lossCarriedBackPriorYear added
+				governmentSubsidies added
           
-' 2019-11-20	residentialRentalIncome added
-					    researchAndDevelopment added
+' 2019-11-20		residentialRentalIncome added
+				researchAndDevelopment added
               
 ' 2019-03-19	Initial
 _______________________________________ 
@@ -64,9 +65,10 @@ _______________________________________
 					<xsd:element name="ltcNonAllowableDeductions" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="ltcPriorYearNonAllowableDeductionsClaimed" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="ltcAdjustedIncome" type="cmn:MoneyType" minOccurs="0"/>
-          <xsd:element name="governmentSubsidies" type="cmn:MoneyTypePositive" minOccurs="0"/>
+				    <xsd:element name="governmentSubsidies" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="otherCredits" type="cmn:MoneyType" minOccurs="0"/>
 					<xsd:element name="residentialRentalIncome" type="ic:ResidentialRentalIncomeType" minOccurs="0"/>
+					<xsd:element name="propertyInterestLimitation" type="ic:PropertyInterestLimitationType" minOccurs="0"/>
 					<xsd:element name="netRentalIncome" type="cmn:MoneyType" minOccurs="0"/>
 					<xsd:element name="selfEmployedIncome" type="cmn:MoneyType" minOccurs="0"/>
 					<xsd:element name="otherIncome" type="cmn:MoneyType" minOccurs="0"/>
@@ -75,7 +77,7 @@ _______________________________________
 					<xsd:element name="otherExpenses" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="lossesBroughtForward" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="lossesClaimedThisYear" type="cmn:MoneyTypePositive" minOccurs="0"/>
-          <xsd:element name="lossCarriedBackPriorYear" type="cmn:MoneyTypePositive" minOccurs="0"/>
+				    <xsd:element name="lossCarriedBackPriorYear" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="totalTaxableIncome" type="cmn:MoneyType" minOccurs="0"/>
 					<xsd:element name="workedInNZ" type="xsd:boolean" minOccurs="0"/>
 					<xsd:element name="incomeEarned" type="cmn:MoneyTypePositive" minOccurs="0"/>

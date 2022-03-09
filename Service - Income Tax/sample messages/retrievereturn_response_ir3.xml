@@ -1,8 +1,8 @@
-<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">
-    <s:Header>
-        <a:Action s:mustUnderstand="1">https://services.ird.govt.nz/GWS/Returns/Return/RetrieveReturnResponse</a:Action>
-    </s:Header>
-    <s:Body>
+<env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope">
+    <env:Header xmlns:wsa="http://www.w3.org/2005/08/addressing">
+        <wsa:Action env:mustUnderstand="1">https://services.ird.govt.nz/GWS/Returns/Return/RetrieveReturnResponse</wsa:Action>
+    </env:Header>
+    <env:Body>
         <RetrieveReturnResponse xmlns="https://services.ird.govt.nz/GWS/Returns/">
             <RetrieveReturnResult xmlns:b="https://services.ird.govt.nz/GWS/Returns/:types/RetrieveReturnResponse" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
                 <b:RetrieveReturnResponseWrapper>
@@ -11,70 +11,70 @@
                             <statusCode>0</statusCode>
                             <errorMessage/>
                         </statusMessage>
-                        <responseBody xsi:type="r:RetrieveReturnResponseBodyType" xmlns:r="urn:www.ird.govt.nz/GWS:types/ReturnIR3.v1" xmlns:ic="urn:www.ird.govt.nz/GWS:types/IncomeReturnCommon.v1" xmlns:rc="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2" xmlns:cmn="urn:www.ird.govt.nz/GWS:types/Common.v2">
+                        <responseBody xmlns:cmn="urn:www.ird.govt.nz/GWS:types/Common.v2" xmlns:ic="urn:www.ird.govt.nz/GWS:types/IncomeReturnCommon.v1" xmlns:r3="urn:www.ird.govt.nz/GWS:types/ReturnIR3.v1" xmlns:rc="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2" xsi:type="r3:RetrieveReturnResponseBodyType">
                             <rc:standardFields>
                                 <rc:isNilReturn>false</rc:isNilReturn>
                             </rc:standardFields>
-                            <r:formFields>
-                                <r:submissionKey>749142400</r:submissionKey>
-                                <r:ir215Attached>false</r:ir215Attached>
-                                <r:totalFTCFromWINZ>0.00</r:totalFTCFromWINZ>
-                                <r:totalPAYEDeducted>2200.00</r:totalPAYEDeducted>
-                                <r:totalGrossIncome>20000.00</r:totalGrossIncome>
-                                <r:totalIncomeNotLiableForACCLevy>0.00</r:totalIncomeNotLiableForACCLevy>
-                                <r:totalTCPDs>0.00</r:totalTCPDs>
-                                <r:totalExtinguishedTCPDs>0.00</r:totalExtinguishedTCPDs>
-                                <r:totalTaxDeducted>1922.00</r:totalTaxDeducted>
-<r:taxDeductedFromSchedularPayments>0.00</r:taxDeductedFromSchedularPayments>
-                                <r:grossSchedularPayments>0.00</r:grossSchedularPayments>
-                                <r:schedularExpenses>0.00</r:schedularExpenses>
-                                <r:netSchedularPayments>0.00</r:netSchedularPayments>
-                                <r:interestIncome>
+                            <r3:formFields>
+                                <r3:submissionKey>1263943680</r3:submissionKey>
+                                <r3:ir215Attached>false</r3:ir215Attached>
+                                <r3:totalFTCFromWINZ>0.00</r3:totalFTCFromWINZ>
+                                <r3:totalPAYEDeducted>2200.00</r3:totalPAYEDeducted>
+                                <r3:totalGrossIncome>20000.00</r3:totalGrossIncome>
+                                <r3:totalIncomeNotLiableForACCLevy>0.00</r3:totalIncomeNotLiableForACCLevy>
+                                <r3:totalTCPDs>0.00</r3:totalTCPDs>
+                                <r3:totalExtinguishedTCPDs>0.00</r3:totalExtinguishedTCPDs>
+                                <r3:totalTaxDeducted>1922.00</r3:totalTaxDeducted>
+                                <r3:taxDeductedFromSchedularPayments>0.00</r3:taxDeductedFromSchedularPayments>
+                                <r3:grossSchedularPayments>0.00</r3:grossSchedularPayments>
+                                <r3:schedularExpenses>0.00</r3:schedularExpenses>
+                                <r3:netSchedularPayments>0.00</r3:netSchedularPayments>
+                                <r3:interestIncome>
                                     <ic:totalTaxPaid>0.00</ic:totalTaxPaid>
                                     <ic:totalIncome>0.00</ic:totalIncome>
-                                </r:interestIncome>
-                                <r:interestFromPShipEstTrustOrLTC>false</r:interestFromPShipEstTrustOrLTC>
-                                <r:dividendIncome>
+                                </r3:interestIncome>
+                                <r3:interestFromPShipEstTrustOrLTC>false</r3:interestFromPShipEstTrustOrLTC>
+                                <r3:dividendIncome>
                                     <ic:totalImputationCredits>0.00</ic:totalImputationCredits>
                                     <ic:totalRWTCredits>0.00</ic:totalRWTCredits>
                                     <ic:totalGrossDividends>0.00</ic:totalGrossDividends>
-                                </r:dividendIncome>
-                                <r:dividendsFromPShipEstTrustOrLTC>false</r:dividendsFromPShipEstTrustOrLTC>
-                                <r:maoriAuthorityDistributions>
+                                </r3:dividendIncome>
+                                <r3:dividendsFromPShipEstTrustOrLTC>false</r3:dividendsFromPShipEstTrustOrLTC>
+                                <r3:maoriAuthorityDistributions>
                                     <ic:totalMACredits>0.00</ic:totalMACredits>
                                     <ic:totalMADistributions>0.00</ic:totalMADistributions>
-                                </r:maoriAuthorityDistributions>
-                                <r:totalTaxPaidByTrustees>0.00</r:totalTaxPaidByTrustees>
-                                <r:totalEstateOrTrustIncome>0.00</r:totalEstateOrTrustIncome>
-                                <r:totalTaxableDistributionFromNCTrusts>0.00</r:totalTaxableDistributionFromNCTrusts>
-                                <r:overseasIncome>
+                                </r3:maoriAuthorityDistributions>
+                                <r3:totalTaxPaidByTrustees>0.00</r3:totalTaxPaidByTrustees>
+                                <r3:totalEstateOrTrustIncome>0.00</r3:totalEstateOrTrustIncome>
+                                <r3:totalTaxableDistributionFromNCTrusts>0.00</r3:totalTaxableDistributionFromNCTrusts>
+                                <r3:overseasIncome>
                                     <ic:totalTaxPaid>0.00</ic:totalTaxPaid>
                                     <ic:totalIncome>0.00</ic:totalIncome>
-                                </r:overseasIncome>
-                                <r:overseasSuperLumpSums>false</r:overseasSuperLumpSums>
-                                <r:pieIncome>
+                                </r3:overseasIncome>
+                                <r3:overseasSuperLumpSums>false</r3:overseasSuperLumpSums>
+                                <r3:pieIncome>
                                     <ic:totalTaxCredits>0.00</ic:totalTaxCredits>
                                     <ic:totalIncome>0.00</ic:totalIncome>
                                     <ic:correctRate>10.50</ic:correctRate>
                                     <ic:correctRateUsedAllYear>false</ic:correctRateUsedAllYear>
-                                </r:pieIncome>
-                                <r:partnershipIncome>
+                                </r3:pieIncome>
+                                <r3:partnershipIncome>
                                     <ic:totalTaxCredits>0.00</ic:totalTaxCredits>
                                     <ic:totalIncome>0.00</ic:totalIncome>
-                                </r:partnershipIncome>
-                                <r:ltcIncome>
+                                </r3:partnershipIncome>
+                                <r3:ltcIncome>
                                     <ic:totalTaxCredits>2000.00</ic:totalTaxCredits>
                                     <ic:totalIncome>2000.00</ic:totalIncome>
-                                </r:ltcIncome>
-                                <r:ltcNonAllowableDeductions>0.00</r:ltcNonAllowableDeductions>
-                                <r:ltcPriorYearNonAllowableDeductionsClaimed>0.00</r:ltcPriorYearNonAllowableDeductionsClaimed>
-                                <r:ltcAdjustedIncome>2000.00</r:ltcAdjustedIncome>
-                                <r:governmentSubsidies>0.00</r:governmentSubsidies>
-                                <r:taxCreditSubtotal>3922.00</r:taxCreditSubtotal>
-                                <r:totalShareholderEmployeeSalary>0.00</r:totalShareholderEmployeeSalary>
-                                <r:futureShareholderSalary>true</r:futureShareholderSalary>
-                                <r:shareholderAIMTaxPaid>0.00</r:shareholderAIMTaxPaid>
-                                <r:residentialRentalIncome>
+                                </r3:ltcIncome>
+                                <r3:ltcNonAllowableDeductions>0.00</r3:ltcNonAllowableDeductions>
+                                <r3:ltcPriorYearNonAllowableDeductionsClaimed>0.00</r3:ltcPriorYearNonAllowableDeductionsClaimed>
+                                <r3:ltcAdjustedIncome>2000.00</r3:ltcAdjustedIncome>
+                                <r3:governmentSubsidies>0.00</r3:governmentSubsidies>
+                                <r3:taxCreditSubtotal>3922.00</r3:taxCreditSubtotal>
+                                <r3:totalShareholderEmployeeSalary>0.00</r3:totalShareholderEmployeeSalary>
+                                <r3:futureShareholderSalary>true</r3:futureShareholderSalary>
+                                <r3:shareholderAIMTaxPaid>0.00</r3:shareholderAIMTaxPaid>
+                                <r3:residentialRentalIncome>
                                     <ic:indicator>I</ic:indicator>
                                     <ic:totalIncome>2100.00</ic:totalIncome>
                                     <ic:residentialRentalDeductions>1000.00</ic:residentialRentalDeductions>
@@ -82,53 +82,65 @@
                                     <ic:deductionsClaimedThisYear>1000.00</ic:deductionsClaimedThisYear>
                                     <ic:netIncome>1100.00</ic:netIncome>
                                     <ic:excessDeductionsCarriedForward>0.00</ic:excessDeductionsCarriedForward>
-                                </r:residentialRentalIncome>
-                                <r:netRentalIncome>0.00</r:netRentalIncome>
-                                <r:selfEmployedIncome>0.00</r:selfEmployedIncome>
-                                <r:otherIncome>0.00</r:otherIncome>
-                                <r:rlwtCredit>0.00</r:rlwtCredit>
-                                <r:saleOfProperty>0.00</r:saleOfProperty>
-                                <r:otherExpenses>0.00</r:otherExpenses>
-                                <r:lossesBroughtForward>0.00</r:lossesBroughtForward>
-                                <r:lossesClaimedThisYear>0.00</r:lossesClaimedThisYear>
-                                <r:lossCarriedBackPriorYear>0.00</r:lossCarriedBackPriorYear>
-                                <r:totalTaxableIncome>23100.00</r:totalTaxableIncome>
-                                <r:eligibleForIETC>false</r:eligibleForIETC>
-                                <r:overseasExclusionDates>
+                                </r3:residentialRentalIncome>
+                                <r3:propertyInterestLimitation>
+                                    <ic:totalInterest>1000.00</ic:totalInterest>
+                                    <ic:interestExpenseClaimed>1000.00</ic:interestExpenseClaimed>
+                                    <ic:interestExpenseClaimedReason>
+                                        <ic:notResidentialOrMaoriExempt>true</ic:notResidentialOrMaoriExempt>
+                                        <ic:propertyNotInNz>true</ic:propertyNotInNz>
+                                        <ic:loansDrawnDown>true</ic:loansDrawnDown>
+                                        <ic:newBuildExemption>true</ic:newBuildExemption>
+                                        <ic:developmentExemption>true</ic:developmentExemption>
+                                        <ic:emergencyTransitionalSocialCouncil>true</ic:emergencyTransitionalSocialCouncil>
+                                    </ic:interestExpenseClaimedReason>
+                                </r3:propertyInterestLimitation>
+                                <r3:netRentalIncome>0.00</r3:netRentalIncome>
+                                <r3:selfEmployedIncome>0.00</r3:selfEmployedIncome>
+                                <r3:otherIncome>0.00</r3:otherIncome>
+                                <r3:rlwtCredit>0.00</r3:rlwtCredit>
+                                <r3:saleOfProperty>0.00</r3:saleOfProperty>
+                                <r3:otherExpenses>0.00</r3:otherExpenses>
+                                <r3:lossesBroughtForward>0.00</r3:lossesBroughtForward>
+                                <r3:lossesClaimedThisYear>0.00</r3:lossesClaimedThisYear>
+                                <r3:lossCarriedBackPriorYear>0.00</r3:lossCarriedBackPriorYear>
+                                <r3:totalTaxableIncome>8100.00</r3:totalTaxableIncome>
+                                <r3:eligibleForIETC>false</r3:eligibleForIETC>
+                                <r3:overseasExclusionDates>
                                     <ic:exclusionDateRange>
                                         <ic:excludedOverseasIncomeStartDate>2015-01-01</ic:excludedOverseasIncomeStartDate>
                                         <ic:excludedOverseasIncomeEndDate>2016-01-01</ic:excludedOverseasIncomeEndDate>
                                     </ic:exclusionDateRange>
-                                </r:overseasExclusionDates>
-                                <r:numberOfQualifyingMonths>0</r:numberOfQualifyingMonths>
-                                <r:amountOfIETCClaimed>0.00</r:amountOfIETCClaimed>
-                                <r:imputationBroughtForward>0.00</r:imputationBroughtForward>
-                                <r:pieDebit>0.00</r:pieDebit>
-                                <r:taxOnTaxableIncome>3062.50</r:taxOnTaxableIncome>
-                                <r:researchAndDevelopment>
+                                </r3:overseasExclusionDates>
+                                <r3:numberOfQualifyingMonths>0</r3:numberOfQualifyingMonths>
+                                <r3:amountOfIETCClaimed>0.00</r3:amountOfIETCClaimed>
+                                <r3:imputationBroughtForward>0.00</r3:imputationBroughtForward>
+                                <r3:pieDebit>0.00</r3:pieDebit>
+                                <r3:taxOnTaxableIncome>850.50</r3:taxOnTaxableIncome>
+                                <r3:researchAndDevelopment>
                                     <ic:creditBroughtForward>0.00</ic:creditBroughtForward>
                                     <ic:nonrefundableCredit>0.00</ic:nonrefundableCredit>
                                     <ic:refundableCredit>0.00</ic:refundableCredit>
-                                </r:researchAndDevelopment>
-                                <r:pieCredit>0.00</r:pieCredit>
-                                <r:residualIncomeTax>-859.50</r:residualIncomeTax>
-                                <r:earlyPaymentDiscountEligibility>false</r:earlyPaymentDiscountEligibility>
-                                <r:overpaymentProvisionalTax>0.00</r:overpaymentProvisionalTax>
-                                <r:provisionalTax>
+                                </r3:researchAndDevelopment>
+                                <r3:pieCredit>0.00</r3:pieCredit>
+                                <r3:residualIncomeTax>-3149.50</r3:residualIncomeTax>
+                                <r3:earlyPaymentDiscountEligibility>false</r3:earlyPaymentDiscountEligibility>
+                                <r3:overpaymentProvisionalTax>0.00</r3:overpaymentProvisionalTax>
+                                <r3:provisionalTax>
                                     <ic:provisionalTaxOption>STD</ic:provisionalTaxOption>
                                     <ic:provisionalTaxPayable>100.00</ic:provisionalTaxPayable>
                                     <ic:provisionalTaxStartDate>2016-01-01</ic:provisionalTaxStartDate>
-                                </r:provisionalTax>
-                                <r:foreignInterestDisclosure>false</r:foreignInterestDisclosure>
-                                <r:partYearReturnIndicator>true</r:partYearReturnIndicator>
-                                <r:partYearReason>ARRIVE</r:partYearReason>
-                                <r:partYearStartDate>2020-08-01</r:partYearStartDate>
-                                <r:partYearEndDate>2020-12-31</r:partYearEndDate>
-                            </r:formFields>
+                                </r3:provisionalTax>
+                                <r3:foreignInterestDisclosure>false</r3:foreignInterestDisclosure>
+                                <r3:partYearReturnIndicator>true</r3:partYearReturnIndicator>
+                                <r3:partYearReason>ARRIVE</r3:partYearReason>
+                                <r3:partYearStartDate>2021-08-01</r3:partYearStartDate>
+                                <r3:partYearEndDate>2021-12-31</r3:partYearEndDate>
+                            </r3:formFields>
                         </responseBody>
                     </retrieveReturnResponse>
                 </b:RetrieveReturnResponseWrapper>
             </RetrieveReturnResult>
         </RetrieveReturnResponse>
-    </s:Body>
-</s:Envelope>
+    </env:Body>
+</env:Envelope>

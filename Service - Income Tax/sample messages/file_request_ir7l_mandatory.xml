@@ -1,0 +1,39 @@
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope">
+    <soap:Header>
+        <add:Action xmlns:add="http://www.w3.org/2005/08/addressing">https://services.ird.govt.nz/GWS/Returns/Return/File</add:Action>
+    </soap:Header>
+    <soap:Body>
+        <ret:File xmlns:ret="https://services.ird.govt.nz/GWS/Returns/">
+            <ret:ReturnFileRequestMsg>
+                <fil:FileRequestWrapper xmlns:fil="https://services.ird.govt.nz/GWS/Returns/:types/FileRequest">
+                    <r7:fileRequest xmlns:r7="urn:www.ird.govt.nz/GWS:types/ReturnIR7.v1" xmlns:rc="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2">
+                        <rc:fileHeader xmlns:cmn="urn:www.ird.govt.nz/GWS:types/Common.v2">
+                            <cmn:softwareProviderData>
+                                <cmn:softwareProvider>SoftwareProvider</cmn:softwareProvider>
+                                <cmn:softwarePlatform>SoftwarePlatform</cmn:softwarePlatform>
+                                <cmn:softwareRelease>1</cmn:softwareRelease>
+                            </cmn:softwareProviderData>
+                            <cmn:identifier IdentifierValueType="IRD">105493711</cmn:identifier>
+                            <cmn:accountType>INC</cmn:accountType>
+                            <rc:periodEndDate>2022-03-31</rc:periodEndDate>
+                            <rc:majorFormType>INC</rc:majorFormType>
+                            <rc:minorFormType>7</rc:minorFormType>
+                        </rc:fileHeader>
+                        <rc:fileBody>
+                            <rc:standardFields>
+                                <rc:isNilReturn>false</rc:isNilReturn>
+                                <rc:isFinalReturn>false</rc:isFinalReturn>
+                                <rc:amendmentRequest>
+                                    <rc:isAmended>false</rc:isAmended>
+                                    <rc:amendReason/>
+                                    <rc:amendDetails/>
+                                </rc:amendmentRequest>
+                            </rc:standardFields>
+                            <rc:formFields xsi:type="r7:FormFieldsType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ic="urn:www.ird.govt.nz/GWS:types/IncomeReturnCommon.v1"/>
+                        </rc:fileBody>
+                    </r7:fileRequest>
+                </fil:FileRequestWrapper>
+            </ret:ReturnFileRequestMsg>
+        </ret:File>
+    </soap:Body>
+</soap:Envelope>

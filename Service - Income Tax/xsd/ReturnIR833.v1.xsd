@@ -5,12 +5,17 @@
 	ISSUER:			Inland Revenue Department
 	DATE:			29/06/2019
 	DESC:			This schema defines the elements and related data types required for the Returns IR833 Gateway Service.
- 
+
 	Date  			Change
 	**********		************
-	2019-06-29		Initial
+	2021-11-25		Updated propertyAddress1 type to cmn:String255
+							propertyAddress2 type to cmn:String60
+							propertySuburb type to cmn:String50
+							propertyCity type to cmn:String50
+							propertyPostCode type to cmn:String50
+
 	2021-10-05		Updated propertyTitle type to cmn:String50 (string of up to 50 characters)
- 
+	2019-06-29		Initial
 -->
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:www.ird.govt.nz/GWS:types/ReturnIR833.v1" xmlns:cmn="urn:www.ird.govt.nz/GWS:types/Common.v2" xmlns:rc="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2" xmlns:r="urn:www.ird.govt.nz/GWS:types/ReturnIR833.v1" targetNamespace="urn:www.ird.govt.nz/GWS:types/ReturnIR833.v1" elementFormDefault="qualified" attributeFormDefault="unqualified">
 	<!--Begin Imports Statement(s)-->
@@ -36,11 +41,11 @@
 					<xsd:element name="submissionKey" type="cmn:Quantity32TypePositive" minOccurs="0"/>
 					<xsd:element name="brightLine" type="xsd:boolean" minOccurs="0"/>
 					<xsd:element name="propertyTitle" type="cmn:String50" minOccurs="0"/>
-					<xsd:element name="propertyAddress1" type="xsd:string" minOccurs="0"/>
-					<xsd:element name="propertyAddress2" type="xsd:string" minOccurs="0"/>
-					<xsd:element name="propertySuburb" type="xsd:string" minOccurs="0"/>
-					<xsd:element name="propertyCity" type="xsd:string" minOccurs="0"/>
-					<xsd:element name="propertyPostCode" type="xsd:string" minOccurs="0"/>
+					<xsd:element name="propertyAddress1" type="cmn:String255" minOccurs="0"/>
+					<xsd:element name="propertyAddress2" type="cmn:String60" minOccurs="0"/>
+					<xsd:element name="propertySuburb" type="cmn:String50" minOccurs="0"/>
+					<xsd:element name="propertyCity" type="cmn:String50" minOccurs="0"/>
+					<xsd:element name="propertyPostCode" type="cmn:String50" minOccurs="0"/>
 					<xsd:element name="dateOfPurchase" type="xsd:date"/>
 					<xsd:element name="dateOfSale" type="xsd:date"/>
 					<xsd:element name="salePrice" type="cmn:MoneyTypePositive" minOccurs="0"/>

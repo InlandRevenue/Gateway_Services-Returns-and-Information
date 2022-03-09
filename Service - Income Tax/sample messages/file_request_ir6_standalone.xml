@@ -13,9 +13,9 @@
                                 <cmn:softwarePlatform>SoftwarePlatform</cmn:softwarePlatform>
                                 <cmn:softwareRelease>1</cmn:softwareRelease>
                             </cmn:softwareProviderData>
-                            <cmn:identifier IdentifierValueType="IRD">099159782</cmn:identifier>
+                            <cmn:identifier IdentifierValueType="IRD">079945793</cmn:identifier>
                             <cmn:accountType>INC</cmn:accountType>
-                            <rc:periodEndDate>2021-03-31</rc:periodEndDate>
+                            <rc:periodEndDate>2022-03-31</rc:periodEndDate>
                             <rc:majorFormType>INC</rc:majorFormType>
                             <rc:minorFormType>6</rc:minorFormType>
                         </rc:fileHeader>
@@ -37,7 +37,7 @@
                                     <ic:totalIncome>0</ic:totalIncome>
                                 </r6:interestIncome>
                                 <r6:dividendIncome>
-                                    <ic:totalImputationCredits>0</ic:totalImputationCredits>
+                                    <ic:totalImputationCredits>10.00</ic:totalImputationCredits>
                                     <ic:totalRWTCredits>1000.00</ic:totalRWTCredits>
                                     <ic:totalGrossDividends>4000.00</ic:totalGrossDividends>
                                 </r6:dividendIncome>
@@ -73,6 +73,18 @@
                                     <ic:netIncome>1100.00</ic:netIncome>
                                     <ic:excessDeductionsCarriedForward>0.00</ic:excessDeductionsCarriedForward>
                                 </r6:residentialRentalIncome>
+                                <r6:propertyInterestLimitation>
+                                    <ic:totalInterest>1000</ic:totalInterest>
+                                    <ic:interestExpenseClaimed>1000</ic:interestExpenseClaimed>
+                                    <ic:interestExpenseClaimedReason>
+                                        <ic:notResidentialOrMaoriExempt>true</ic:notResidentialOrMaoriExempt>
+                                        <ic:propertyNotInNz>true</ic:propertyNotInNz>
+                                        <ic:loansDrawnDown>true</ic:loansDrawnDown>
+                                        <ic:newBuildExemption>true</ic:newBuildExemption>
+                                        <ic:developmentExemption>true</ic:developmentExemption>
+                                        <ic:emergencyTransitionalSocialCouncil>true</ic:emergencyTransitionalSocialCouncil>
+                                    </ic:interestExpenseClaimedReason>
+                                </r6:propertyInterestLimitation>
                                 <r6:businessOrRentalIncome>1000.00</r6:businessOrRentalIncome>
                                 <r6:otherIncome>
                                     <ic:totalTaxCredits>1000.00</ic:totalTaxCredits>
@@ -86,7 +98,7 @@
                                 <r6:totalExpensesClaimed>0</r6:totalExpensesClaimed>
                                 <r6:lossesBroughtForward>0</r6:lossesBroughtForward>
                                 <r6:lossesClaimedThisYear>0</r6:lossesClaimedThisYear>
-                                <r6:lossCarriedBackPriorYear>0</r6:lossCarriedBackPriorYear>
+                                <r6:lossCarriedBackPriorYear>0.00</r6:lossCarriedBackPriorYear>
                                 <r6:totalDistributions>1000.00</r6:totalDistributions>
                                 <r6:totalTaxableDistributions>0</r6:totalTaxableDistributions>
                                 <r6:disclosureRequiredCFCorFIF>false</r6:disclosureRequiredCFCorFIF>
@@ -96,9 +108,9 @@
                                 <r6:trusteeShareOfOverseasTaxPaid>0</r6:trusteeShareOfOverseasTaxPaid>
                                 <r6:trusteeShareOfDivImpCredits>0</r6:trusteeShareOfDivImpCredits>
                                 <r6:researchAndDevelopment>
-                                    <ic:creditBroughtForward>1000</ic:creditBroughtForward>
-                                    <ic:nonrefundableCredit>1000</ic:nonrefundableCredit>
-                                    <ic:refundableCredit>1000</ic:refundableCredit>
+                                    <ic:creditBroughtForward>0.00</ic:creditBroughtForward>
+                                    <ic:nonrefundableCredit>0.00</ic:nonrefundableCredit>
+                                    <ic:refundableCredit>0.00</ic:refundableCredit>
                                 </r6:researchAndDevelopment>
                                 <r6:trusteeShareOfTaxCredits>11000.00</r6:trusteeShareOfTaxCredits>
                                 <r6:taxOnTrusteeIncomeLessCredits>-8690.00</r6:taxOnTrusteeIncomeLessCredits>
@@ -111,8 +123,12 @@
                                 <r6:beneficiaryDetails>
                                     <ic:beneficiary>
                                         <ic:beneficiaryIrdNumber>111111111</ic:beneficiaryIrdNumber>
+                                        <ic:taxIdNumber>123123123</ic:taxIdNumber>
                                         <ic:beneficiaryName>Joe Bloggs</ic:beneficiaryName>
                                         <ic:beneficiaryDOB>1985-09-01</ic:beneficiaryDOB>
+                                        <ic:taxJurisdiction>AZ</ic:taxJurisdiction>
+                                        <ic:noJurisdictionTin>false</ic:noJurisdictionTin>
+                                        <ic:tinNotRequired>false</ic:tinNotRequired>
                                         <ic:beneficiaryAddress>1 Bloggs Way</ic:beneficiaryAddress>
                                         <ic:beneficiaryIsNonResident>true</ic:beneficiaryIsNonResident>
                                         <ic:shareOfInterestIncome>1000.00</ic:shareOfInterestIncome>
@@ -122,18 +138,65 @@
                                         <ic:shareOfOtherIncome>1000.00</ic:shareOfOtherIncome>
                                         <ic:taxableIncome>5000.00</ic:taxableIncome>
                                         <ic:taxPaidByTrust>true</ic:taxPaidByTrust>
-                                        <ic:distributionByNonComplyingtrust>0</ic:distributionByNonComplyingtrust>
+                                        <ic:distributionByNonComplyingtrust>10.00</ic:distributionByNonComplyingtrust>
                                         <ic:taxOnTaxableIncome>850.50</ic:taxOnTaxableIncome>
-                                        <ic:overseasTaxPaid>0</ic:overseasTaxPaid>
-                                        <ic:taxLessOverseasTaxPaid>0</ic:taxLessOverseasTaxPaid>
-                                        <ic:dividendImputationCredit>0</ic:dividendImputationCredit>
-                                        <ic:taxLessDividendImputationCredit>0</ic:taxLessDividendImputationCredit>
-                                        <ic:otherPaidTaxCredits>0</ic:otherPaidTaxCredits>
-                                        <ic:taxLessOtherPaidTaxCredits>0</ic:taxLessOtherPaidTaxCredits>
-                                        <ic:taxOnDistributionByNonComplyingTrust>0</ic:taxOnDistributionByNonComplyingTrust>
-                                        <ic:beneficiaryTaxPayable>0</ic:beneficiaryTaxPayable>
+                                        <ic:overseasTaxPaid>10.00</ic:overseasTaxPaid>
+                                        <ic:taxLessOverseasTaxPaid>10.00</ic:taxLessOverseasTaxPaid>
+                                        <ic:dividendImputationCredit>10.00</ic:dividendImputationCredit>
+                                        <ic:taxLessDividendImputationCredit>10.00</ic:taxLessDividendImputationCredit>
+                                        <ic:otherPaidTaxCredits>10.00</ic:otherPaidTaxCredits>
+                                        <ic:taxLessOtherPaidTaxCredits>10.00</ic:taxLessOtherPaidTaxCredits>
+                                        <ic:taxOnDistributionByNonComplyingTrust>10.00</ic:taxOnDistributionByNonComplyingTrust>
+                                        <ic:beneficiaryTaxPayable>10.00</ic:beneficiaryTaxPayable>
+                                        <ic:openingBalance>10.00</ic:openingBalance>
+                                        <ic:accountingIncomeAllocated>10.00</ic:accountingIncomeAllocated>
+                                        <ic:corpus>10.00</ic:corpus>
+                                        <ic:capital>10.00</ic:capital>
+                                        <ic:useOfTrustProperty>10.00</ic:useOfTrustProperty>
+                                        <ic:distributionTrustAssets>10.00</ic:distributionTrustAssets>
+                                        <ic:forgivenessOfDebt>10.00</ic:forgivenessOfDebt>
+                                        <ic:withdrawnFromTrust>10.00</ic:withdrawnFromTrust>
+                                        <ic:closingBalance>10.00</ic:closingBalance>
                                     </ic:beneficiary>
                                 </r6:beneficiaryDetails>
+                                <r6:settlementDetails>
+                                    <ic:settlement>
+                                        <ic:settlorFullName>First1 Settler</ic:settlorFullName>
+                                        <ic:noSettlementThisYear>false</ic:noSettlementThisYear>
+                                        <ic:settlorCommence>1985-09-01</ic:settlorCommence>
+                                        <ic:taxJurisdiction>AZ</ic:taxJurisdiction>
+                                        <ic:settlorIrdNumber>111111111</ic:settlorIrdNumber>
+                                        <ic:taxIdNumber>123123123</ic:taxIdNumber>
+                                        <ic:noJurisdictionTin>false</ic:noJurisdictionTin>
+                                        <ic:tinNotRequired>false</ic:tinNotRequired>
+                                        <ic:cash>10.00</ic:cash>
+                                        <ic:financialArrangements>10.00</ic:financialArrangements>
+                                        <ic:land>10.00</ic:land>
+                                        <ic:buildings>10.00</ic:buildings>
+                                        <ic:shares>10.00</ic:shares>
+                                        <ic:services>10.00</ic:services>
+                                        <ic:other>10.00</ic:other>
+                                        <ic:otherDescription>Other Description</ic:otherDescription>
+                                        <ic:settlementZeroValue>false</ic:settlementZeroValue>
+                                    </ic:settlement>
+                                </r6:settlementDetails>
+                                <r6:exemptFromCompliance>false</r6:exemptFromCompliance>
+                                <r6:netProfitLossBeforeTax>-10.00</r6:netProfitLossBeforeTax>
+                                <r6:taxAdjustments>10.00</r6:taxAdjustments>
+                                <r6:unTaxedRealisedGainsAndReceipts>20.00</r6:unTaxedRealisedGainsAndReceipts>
+                                <r6:financialArrangements>10.00</r6:financialArrangements>
+                                <r6:assetsLand>40.00</r6:assetsLand>
+                                <r6:assetsLandValuation>H</r6:assetsLandValuation>
+                                <r6:assetsBuildings>50.00</r6:assetsBuildings>
+                                <r6:assetsBuildingsValuation>M</r6:assetsBuildingsValuation>
+                                <r6:assetsShares>60.00</r6:assetsShares>
+                                <r6:assetsSharesValuation>T</r6:assetsSharesValuation>
+                                <r6:assetsTotal>150.00</r6:assetsTotal>
+                                <r6:financialArrangementsLiable>10.00</r6:financialArrangementsLiable>
+                                <r6:liabilitiesTotal>10.00</r6:liabilitiesTotal>
+                                <r6:equityOwners>20.00</r6:equityOwners>
+                                <r6:equityDrawings>20.00</r6:equityDrawings>
+                                <r6:equityYearEndBalances>150.00</r6:equityYearEndBalances>
                             </rc:formFields>
                         </rc:fileBody>
                     </r6:fileRequest>

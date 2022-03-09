@@ -15,7 +15,7 @@
                             </cmn:softwareProviderData>
                             <cmn:identifier IdentifierValueType="IRD">096062311</cmn:identifier>
                             <cmn:accountType>INC</cmn:accountType>
-                            <rc:periodEndDate>2021-03-31</rc:periodEndDate>
+                            <rc:periodEndDate>2022-03-31</rc:periodEndDate>
                             <rc:majorFormType>INC</rc:majorFormType>
                             <rc:minorFormType>4</rc:minorFormType>
                         </rc:fileHeader>
@@ -70,6 +70,18 @@
                                     <ic:netIncome>1100.00</ic:netIncome>
                                     <ic:excessDeductionsCarriedForward>0.00</ic:excessDeductionsCarriedForward>
                                 </r4:residentialRentalIncome>
+                                <r4:propertyInterestLimitation>
+                                    <ic:totalInterest>0.00</ic:totalInterest>
+                                    <ic:interestExpenseClaimed>0.00</ic:interestExpenseClaimed>
+                                    <ic:interestExpenseClaimedReason>
+                                        <ic:notResidentialOrMaoriExempt>false</ic:notResidentialOrMaoriExempt>
+                                        <ic:propertyNotInNz>false</ic:propertyNotInNz>
+                                        <ic:loansDrawnDown>false</ic:loansDrawnDown>
+                                        <ic:newBuildExemption>false</ic:newBuildExemption>
+                                        <ic:developmentExemption>false</ic:developmentExemption>
+                                        <ic:emergencyTransitionalSocialCouncil>false</ic:emergencyTransitionalSocialCouncil>
+                                    </ic:interestExpenseClaimedReason>
+                                </r4:propertyInterestLimitation>
                                 <r4:businessOrRentalIncome>1000.00</r4:businessOrRentalIncome>
                                 <r4:totalGrossPremium>0.00</r4:totalGrossPremium>
                                 <r4:totalGrossPremiumPaidToSwitzerland>0.00</r4:totalGrossPremiumPaidToSwitzerland>
@@ -78,17 +90,18 @@
                                 <r4:rlwtCredit>0.00</r4:rlwtCredit>
                                 <r4:saleOfProperty>1000.00</r4:saleOfProperty>
                                 <r4:donationsMade>1000.00</r4:donationsMade>
-                                <r4:lossesBroughtForward>0.00</r4:lossesBroughtForward>
-                                <r4:lossesClaimedThisYear>0.00</r4:lossesClaimedThisYear>
-                                <r4:lossCarriedBackPriorYear>0</r4:lossCarriedBackPriorYear>
+                                <r4:lossesBroughtForward>5000</r4:lossesBroughtForward>
+                                <r4:lossesClaimedThisYear>5000</r4:lossesClaimedThisYear>
+                                <r4:lossContinuity>true</r4:lossContinuity>
+                                <r4:lossCarriedBackPriorYear>0.00</r4:lossCarriedBackPriorYear>
                                 <r4:netLossesToFrom>0.00</r4:netLossesToFrom>
                                 <r4:subventionPaymentsToFrom>0.00</r4:subventionPaymentsToFrom>
                                 <r4:totalTaxableIncome>9000.00</r4:totalTaxableIncome>
                                 <r4:taxOnTaxableIncome>2520.00</r4:taxOnTaxableIncome>
                                 <r4:researchAndDevelopment>
-                                    <ic:creditBroughtForward>1000</ic:creditBroughtForward>
-                                    <ic:nonrefundableCredit>0</ic:nonrefundableCredit>
-                                    <ic:refundableCredit>0</ic:refundableCredit>
+                                    <ic:creditBroughtForward>0.00</ic:creditBroughtForward>
+                                    <ic:nonrefundableCredit>0.00</ic:nonrefundableCredit>
+                                    <ic:refundableCredit>0.00</ic:refundableCredit>
                                 </r4:researchAndDevelopment>
                                 <r4:foreignInvestorTaxCredit>1000.00</r4:foreignInvestorTaxCredit>
                                 <r4:residualIncomeTax>-3760.00</r4:residualIncomeTax>

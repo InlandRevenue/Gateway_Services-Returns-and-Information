@@ -15,7 +15,7 @@
                             </cmn:softwareProviderData>
                             <cmn:identifier IdentifierValueType="IRD">056632778</cmn:identifier>
                             <cmn:accountType>INC</cmn:accountType>
-                            <rc:periodEndDate>2021-03-31</rc:periodEndDate>
+                            <rc:periodEndDate>2022-03-31</rc:periodEndDate>
                             <rc:majorFormType>INC</rc:majorFormType>
                             <rc:minorFormType>9</rc:minorFormType>
                         </rc:fileHeader>
@@ -41,6 +41,19 @@
                                     <ic:netIncome>1100.00</ic:netIncome>
                                     <ic:excessDeductionsCarriedForward>0.00</ic:excessDeductionsCarriedForward>
                                 </r9:residentialRentalIncome>
+                                <r9:propertyInterestLimitation>
+                                    <ic:totalInterest>1000</ic:totalInterest>
+                                    <ic:interestExpenseClaimed>1000</ic:interestExpenseClaimed>
+                                    <ic:interestExpenseClaimedReason>
+                                        <ic:notResidentialOrMaoriExempt>true</ic:notResidentialOrMaoriExempt>
+                                        <ic:propertyNotInNz>true</ic:propertyNotInNz>
+                                        <ic:loansDrawnDown>true</ic:loansDrawnDown>
+                                        <ic:newBuildExemption>true</ic:newBuildExemption>
+                                        <ic:developmentExemption>true</ic:developmentExemption>
+                                        <ic:emergencyTransitionalSocialCouncil>true</ic:emergencyTransitionalSocialCouncil>
+                                    </ic:interestExpenseClaimedReason>
+                                </r9:propertyInterestLimitation>
+                                <r9:saleOfProperty>0.00</r9:saleOfProperty>
                                 <r9:friendlyNetIncome>10000.00</r9:friendlyNetIncome>
                                 <r9:interest>0.00</r9:interest>
                                 <r9:dividends>0.00</r9:dividends>
@@ -50,16 +63,16 @@
                                 <r9:donationsDeduction>1000.00</r9:donationsDeduction>
                                 <r9:netIncome>9000.00</r9:netIncome>
                                 <r9:lossesBroughtForward>0.00</r9:lossesBroughtForward>
-                                <r9:lossCarriedBackPriorYear>0</r9:lossCarriedBackPriorYear>
+                                <r9:lossCarriedBackPriorYear>0.00</r9:lossCarriedBackPriorYear>
                                 <r9:totalTaxableIncome>9000.00</r9:totalTaxableIncome>
                                 <r9:taxOnTaxableIncome>2520.00</r9:taxOnTaxableIncome>
                                 <r9:overseasTaxPaid>1800.00</r9:overseasTaxPaid>
                                 <r9:imputationCreditsReceived>1000.00</r9:imputationCreditsReceived>
                                 <r9:imputationBroughtForward>0.00</r9:imputationBroughtForward>
                                 <r9:researchAndDevelopment>
-                                    <ic:creditBroughtForward>1000</ic:creditBroughtForward>
-                                    <ic:nonrefundableCredit>1000</ic:nonrefundableCredit>
-                                    <ic:refundableCredit>1000</ic:refundableCredit>
+                                    <ic:creditBroughtForward>0.00</ic:creditBroughtForward>
+                                    <ic:nonrefundableCredit>0.00</ic:nonrefundableCredit>
+                                    <ic:refundableCredit>0.00</ic:refundableCredit>
                                 </r9:researchAndDevelopment>
                                 <r9:totalRWTWithheld>1000.00</r9:totalRWTWithheld>
                                 <r9:rlwtCredit>0.00</r9:rlwtCredit>
