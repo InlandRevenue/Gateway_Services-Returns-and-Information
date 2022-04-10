@@ -115,7 +115,7 @@ _______________________________________
 			<xsd:element name="employeeEmailAddress" type="cmn:EmailAddressType" minOccurs="0"/>
 			<xsd:element name="employeeMobilePhoneNumber" type="cmn:StructuredPhoneNumberType" minOccurs="0"/>
 			<xsd:element name="employeeDayPhoneNumber" type="cmn:StructuredPhoneNumberType" minOccurs="0"/>
-			<xsd:element name="kiwiSaverStatus" type="KiwiSaverStatusType"/>
+			<xsd:element name="kiwiSaverStatus" type="KiwiSaverStatusType" minOccurs="0"/>
 			<xsd:element name="employeeKiwiSaverEligibility" type="KiwiSaverEligibilityType" minOccurs="0"/>
 			<xsd:element name="employeeExemptIncome" type="EmployeeExemptIncomeType" minOccurs="0"/>
 		</xsd:sequence>
