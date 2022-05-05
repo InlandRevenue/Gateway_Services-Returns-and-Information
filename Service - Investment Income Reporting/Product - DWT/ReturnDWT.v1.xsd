@@ -4,8 +4,12 @@
 	NAME:		ReturnDWT.xsd
 	VER:		1.1
 	ISSUER:		Inland Revenue Department
-	DATE:		2019-10-31
 	DESC:		This schema defines the elements and related data types required for the Returns DWT Gateway Service.
+	
+	Date		Change
+	******		******
+	2021-06-29	Update the data type for AustralianExchangeRate
+	2019-10-31	Initial development
 -->
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:www.ird.govt.nz/GWS:types/ReturnDWT.v1" xmlns:cmn="urn:www.ird.govt.nz/GWS:types/Common.v2" xmlns:rc="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2" xmlns:r="urn:www.ird.govt.nz/GWS:types/ReturnDWT.v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="urn:www.ird.govt.nz/GWS:types/ReturnDWT.v1" elementFormDefault="qualified" attributeFormDefault="unqualified">
 	<!--Import Statement(s)-->
@@ -68,7 +72,7 @@
 					<xsd:element name="imputationCredits" type="cmn:MoneyType" minOccurs="0"/>
 					<xsd:element name="creditRatio" type="cmn:PercentageType" minOccurs="0"/>
 					<xsd:element name="australianDividendsPaid" type="xsd:boolean"/>
-					<xsd:element name="australianExchangeRate" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="australianExchangeRate" type="rc:FourDecimalRate" minOccurs="0"/>
 				</xsd:sequence>
 			</xsd:extension>
 		</xsd:complexContent>
@@ -85,3 +89,4 @@
 		</xsd:complexContent>
 	</xsd:complexType>
 </xsd:schema>
+
