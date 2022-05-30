@@ -8,6 +8,9 @@ DESC:      	This schema defines the elements and related data types required for
 	
 Date  		Change
 **********  ************
+
+2022-05-30	equityOwners now accepts negative values
+	
 2021-11-04	settlementDetails added
 			propertyInterestLimitation added
 			exemptFromCompliance added
@@ -117,7 +120,7 @@ _______________________________________
 					<xsd:element name="assetsTotal" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="financialArrangementsLiable" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="liabilitiesTotal" type="cmn:MoneyTypePositive" minOccurs="0"/>
-					<xsd:element name="equityOwners" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="equityOwners" type="cmn:MoneyType" minOccurs="0"/>
 					<xsd:element name="equityDrawings" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="equityYearEndBalances" type="cmn:MoneyType" minOccurs="0"/>
 					<xsd:element name="attachmentForms" type="ic:AttachmentListType" minOccurs="0"/>
