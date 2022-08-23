@@ -8,6 +8,8 @@ DESC:	This schema defines the elements and related data types required for the R
 CHANGE LOG
 DATE			CHANGE
 ******		***********
+2022-08-22  Updated description for element DepreciationMethodType
+
 2021-10-20	Added new element propertyInterestLimitation
 
 2021-07-30	Added new elements (availableMonths, propertyAddress1 and propertyAddress2) for Rental form
@@ -109,8 +111,8 @@ DATE			CHANGE
 	<xsd:simpleType name="DepreciationMethodType">
 		<xsd:annotation>
 			<xsd:documentation>
-        DV: Accounting Income Method
-        SL: Estimation
+        DV: Diminishing Value Method
+        SL: Straight Line Method
       </xsd:documentation>
 		</xsd:annotation>
 		<xsd:restriction base="xsd:token">
