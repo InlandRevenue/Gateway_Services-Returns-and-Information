@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation
+_______________________________________
+NAME:       ReturnIR6.v1.xsd
+VER:        1.4
+ISSUER:     Inland Revenue Department
+DESC:      	This schema defines the elements and related data types required for the Returns Estate/Trust Income Tax Gateway Service.
+	
+Date  		Change
+**********  ************
+2022-10-06	interestIncome changed from IncomeWithTaxPaidType to IncomeWithTaxPaidType3	
+			overseasIncome changed from IncomeWithTaxPaidType to IncomeWithTaxPaidType3
+
+2022-05-30	equityOwners now accepts negative values
+	
+2021-11-04	settlementDetails added
+			propertyInterestLimitation added
+			exemptFromCompliance added
+			netProfitLossBeforeTax added
+			taxAdjustments added
+			unTaxedRealisedGainsAndReceipts added
+			financialArrangements added
+			assetsLand added
+			assetsLandValuation added
+			assetsBuildings added
+			assetsBuildingsValuation added
+			assetsShares added
+			assetsSharesValuation added
+			assetsTotal added
+			financialArrangementsLiable added
+			liabilitiesTotal added
+			equityOwners added
+			equityDrawings added
+			equityYearEndBalances added
+
+2020-10-19  lossCarriedBackPriorYear added
+
+2019-11-20  residentialRentalIncome added
+            researchAndDevelopment added
+
+2019-06-26  Initial
+_______________________________________
+-->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:www.ird.govt.nz/GWS:types/ReturnIR6.v1" xmlns:cmn="urn:www.ird.govt.nz/GWS:types/Common.v2" xmlns:rc="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2" xmlns:ic="urn:www.ird.govt.nz/GWS:types/IncomeReturnCommon.v1" xmlns:r="urn:www.ird.govt.nz/GWS:types/ReturnIR6.v1" targetNamespace="urn:www.ird.govt.nz/GWS:types/ReturnIR6.v1" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<!--Begin Imports Statement(s)-->
+	<xsd:import namespace="urn:www.ird.govt.nz/GWS:types/Common.v2" schemaLocation="./Common.v2.xsd">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">Contains common data types.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:import>
+	<xsd:import namespace="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2" schemaLocation="./ReturnCommon.v2.xsd">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">Contains common return data types.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:import>
+	<xsd:import namespace="urn:www.ird.govt.nz/GWS:types/IncomeReturnCommon.v1" schemaLocation="./IncomeReturnCommon.v1.xsd">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">Contains income tax return common data types.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:import>
+	<!--End Import Statements-->
+	<!--Begin File Elements-->
+	<xsd:element name="fileRequest" type="rc:FileRequestType"/>
+	<!--End File Elements-->
+	<!--Begin Override FormFieldsType-->
+	<xsd:complexType name="FormFieldsType">
+		<xsd:complexContent>
+			<xsd:extension base="rc:FormFieldsType">
+				<xsd:sequence>
+					<xsd:element name="submissionKey" type="cmn:Quantity32TypePositive" minOccurs="0"/>
+					<xsd:element name="firstReturnEstateTrustStartDate" type="cmn:DateType" minOccurs="0"/>
+					<xsd:element name="estateTrustType" type="ic:TrustType" minOccurs="0"/>
+					<xsd:element name="interestIncome" type="ic:IncomeWithTaxPaidType3" minOccurs="0"/>
+					<xsd:element name="dividendIncome" type="ic:DividendIncomeType" minOccurs="0"/>
+					<xsd:element name="maoriAuthorityDistributions" type="ic:MADistributionIncomeType" minOccurs="0"/>
+					<xsd:element name="partnershipEstateTrustIncome" type="ic:IncomeWithTaxCreditType" minOccurs="0"/>
+					<xsd:element name="overseasIncome" type="ic:IncomeWithTaxPaidType3" minOccurs="0"/>
+					<xsd:element name="pieIncome" type="ic:IncomeWithTaxCreditType" minOccurs="0"/>
+					<xsd:element name="ltcIncome" type="ic:IncomeWithTaxCreditType" minOccurs="0"/>
+					<xsd:element name="ltcNonAllowableDeductions" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="ltcPriorYearNonAllowableDeductionsClaimed" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="ltcAdjustedIncome" type="cmn:MoneyType" minOccurs="0"/>
+					<xsd:element name="residentialRentalIncome" type="ic:ResidentialRentalIncomeType" minOccurs="0"/>
+					<xsd:element name="propertyInterestLimitation" type="ic:PropertyInterestLimitationType" minOccurs="0"/>
+					<xsd:element name="businessOrRentalIncome" type="cmn:MoneyType" minOccurs="0"/>
+					<xsd:element name="otherIncome" type="ic:IncomeWithTaxCreditType" minOccurs="0"/>
+					<xsd:element name="saleOfProperty" type="cmn:MoneyType" minOccurs="0"/>
+					<xsd:element name="rlwtCredit" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="totalTaxCredits" type="cmn:MoneyType" minOccurs="0"/>
+					<xsd:element name="beneficiaryIncome" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="trusteeIncome" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="totalExpensesClaimed" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="lossesBroughtForward" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="lossesClaimedThisYear" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="lossCarriedBackPriorYear" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="totalDistributions" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="totalTaxableDistributions" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="disclosureRequiredCFCorFIF" type="xsd:boolean" minOccurs="0"/>
+					<xsd:element name="totalBeneficiaryTax" type="cmn:MoneyType" minOccurs="0"/>
+					<xsd:element name="totalTrusteeIncome" type="cmn:MoneyType" minOccurs="0"/>
+					<xsd:element name="taxOnTrusteeIncome" type="cmn:MoneyType" minOccurs="0"/>
+					<xsd:element name="trusteeShareOfOverseasTaxPaid" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="trusteeShareOfDivImpCredits" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="researchAndDevelopment" type="ic:ResearchAndDevelopmentType" minOccurs="0"/>
+					<xsd:element name="trusteeShareOfTaxCredits" type="cmn:MoneyType" minOccurs="0"/>
+					<xsd:element name="taxOnTrusteeIncomeLessCredits" type="cmn:MoneyType" minOccurs="0"/>
+					<xsd:element name="residualIncomeTax" type="cmn:MoneyType" minOccurs="0"/>
+					<xsd:element name="provisionalTax" type="ic:ProvisionalTaxType" minOccurs="0"/>
+					<xsd:element name="beneficiaryDetails" type="ic:BeneficiaryListType" minOccurs="0"/>
+					<xsd:element name="settlementDetails" type="ic:SettlementListType" minOccurs="0"/>
+					<xsd:element name="exemptFromCompliance" type="xsd:boolean" minOccurs="0"/>
+					<xsd:element name="netProfitLossBeforeTax" type="cmn:MoneyType" minOccurs="0"/>
+					<xsd:element name="taxAdjustments" type="cmn:MoneyType" minOccurs="0"/>
+					<xsd:element name="unTaxedRealisedGainsAndReceipts" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="financialArrangements" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="assetsLand" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="assetsLandValuation" type="ic:AssetValuationType" minOccurs="0"/>
+					<xsd:element name="assetsBuildings" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="assetsBuildingsValuation" type="ic:AssetValuationType" minOccurs="0"/>
+					<xsd:element name="assetsShares" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="assetsSharesValuation" type="ic:AssetValuationType" minOccurs="0"/>
+					<xsd:element name="assetsTotal" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="financialArrangementsLiable" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="liabilitiesTotal" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="equityOwners" type="cmn:MoneyType" minOccurs="0"/>
+					<xsd:element name="equityDrawings" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="equityYearEndBalances" type="cmn:MoneyType" minOccurs="0"/>
+					<xsd:element name="attachmentForms" type="ic:AttachmentListType" minOccurs="0"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<!--End Override FormFieldsType-->
+	<!--RetrieveReturnRequestType is unique for Indvidual Income Tax-->
+	<xsd:complexType name="RetrieveReturnResponseBodyType">
+		<xsd:complexContent>
+			<xsd:extension base="rc:RetrieveReturnResponseBodyType">
+				<xsd:sequence>
+					<xsd:element name="formFields" type="FormFieldsType"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<!--End RetrieveReturnRequestType-->
+</xsd:schema>
