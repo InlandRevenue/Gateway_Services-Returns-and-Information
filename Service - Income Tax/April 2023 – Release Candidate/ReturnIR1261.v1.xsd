@@ -3,14 +3,14 @@
 NAME:			ReturnIR1261.v1.xsd
 VER:				1
 ISSUER:			Inland Revenue Department	
-DESC:			This schema defines the elements and related data types required for the IR3O form for Returns API
+DESC:			This schema defines the elements and related data types required for the IR1261 form for Returns API
     
 Date  		Change
 **********	************
-2022-10-14	Initial
+2022-10-20	Initial
 _______________________________________      
 -->
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:www.ird.govt.nz/GWS:types/ReturnIR3O.v1" xmlns:cmn="urn:www.ird.govt.nz/GWS:types/Common.v2" xmlns:rc="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2" xmlns:r="urn:www.ird.govt.nz/GWS:types/ReturnIR3O.v1" targetNamespace="urn:www.ird.govt.nz/GWS:types/ReturnIR3O.v1" elementFormDefault="qualified" attributeFormDefault="unqualified">
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:www.ird.govt.nz/GWS:types/ReturnIR1261.v1" xmlns:cmn="urn:www.ird.govt.nz/GWS:types/Common.v2" xmlns:rc="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2" xmlns:r="urn:www.ird.govt.nz/GWS:types/ReturnIR1261.v1" targetNamespace="urn:www.ird.govt.nz/GWS:types/ReturnIR1261.v1" elementFormDefault="qualified" attributeFormDefault="unqualified">
 	<!--Begin Imports Statement(s)-->
 	<xsd:import namespace="urn:www.ird.govt.nz/GWS:types/Common.v2" schemaLocation="./Common.v2.xsd">
 		<xsd:annotation>
@@ -47,7 +47,7 @@ _______________________________________
 	<xsd:complexType name="OverseasIncomeType">
 		<xsd:sequence>
 			<xsd:element name="incomeType" type="cmn:String12" minOccurs="1" maxOccurs="1"/>
-			<xsd:element name="taxResidence" type="cmn:Country2DigitType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="taxJurisdiction" type="cmn:Country2DigitType" minOccurs="1" maxOccurs="1"/>
 			<xsd:element name="grossAmount" type="cmn:MoneyType" minOccurs="1" maxOccurs="1"/>
 			<xsd:element name="taxCredit" type="cmn:MoneyTypePositive" minOccurs="1" maxOccurs="1"/>
 		</xsd:sequence>
