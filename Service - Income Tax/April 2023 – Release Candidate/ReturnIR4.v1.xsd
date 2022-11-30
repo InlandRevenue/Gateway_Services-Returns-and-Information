@@ -10,6 +10,8 @@ Date  		    Change
 **********    	************
 2022-10-06		interestIncome changed from IncomeWithTaxPaidType to IncomeWithTaxPaidType3
 				overseasIncome changed from IncomeWithTaxPaidType to IncomeWithTaxPaidType3
+				decomExpenditure added
+				decomTaxCredit added
 
 2021-10-20		lossContinuity added
 				propertyInterestLimitation added
@@ -89,6 +91,8 @@ _______________________________________
 					<xsd:element name="foreignSourcedDividends" type="xsd:boolean" minOccurs="0"/>
 					<xsd:element name="foreignControlIndicator" type="xsd:boolean" minOccurs="0"/>
 					<xsd:element name="lowestEconomicShareholderInterest" type="xsd:decimal" minOccurs="0"/>
+					<xsd:element name="decomExpenditure" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="decomTaxCredit" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="shareholderDetails" type="ic:ShareholderListType" minOccurs="0"/>
 					<xsd:element name="attachmentForms" type="ic:AttachmentListType" minOccurs="0"/>
 				</xsd:sequence>
