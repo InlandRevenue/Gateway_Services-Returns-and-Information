@@ -9,7 +9,7 @@ Date  		Change
 **********  ************
 2022-10-06	pieIncome changed from IncomeWithTaxCreditType to PieIncomeWithTaxCreditType
 
-			interestIncome changed from IncomeWithTaxPaidType to IncomeWithTaxPaidType2 
+			interestIncome changed from IncomeWithTaxPaidType to IncomeWithTaxPaidType3
 
 2021-11-08	governmentSubsidies added
 
@@ -63,7 +63,7 @@ _______________________________________
 					<xsd:element name="taxDeductedFromSchedularPayments" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="grossSchedularPayments" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="schedularExpenses" type="cmn:MoneyTypePositive" minOccurs="0"/>
-					<xsd:element name="interestIncome" type="ic:IncomeWithTaxPaidType2" minOccurs="0"/>
+					<xsd:element name="interestIncome" type="ic:IncomeWithTaxPaidType3" minOccurs="0"/>
 					<xsd:element name="dividendIncome" type="ic:DividendIncomeType" minOccurs="0"/>
 					<xsd:element name="dividendsAsInterestIncome" type="ic:DividendIncomeType" minOccurs="0"/>
 					<xsd:element name="maoriAuthorityDistributions" type="MADistributionCalcType" minOccurs="0"/>
