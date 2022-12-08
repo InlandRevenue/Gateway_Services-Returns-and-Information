@@ -4,7 +4,7 @@
 # Income Tax Software Development Kit (SDK)
 
 #### Archives
-* [V1.0 Annual Return 2020](./archive/2021)
+* [V1.0 Annual Return 2021](./archive/2021)
 * [V1.0 Annual Return 2020](./archive/2020)
 * [V1.0 Annual Return 2019](./archive/2019)
 
@@ -122,100 +122,190 @@ The following key changes have been made to the Income Tax Return Service build 
 
 ---
 
-## Primary income tax return forms
+## Primary income tax return forms and accociated attachments
+
+* IR10 - Financial statements summary
+	* _Does not support attachments_
+* IR1215 - As agent income tax return
+	* _Does not support attachments_
+* IR1261 - ***NEW*** 
+	* _Does not support attachments_
+* IR 215 - Adjust your income
+	* _Does not support attachments_
 
 * IR3 - Resident Individual Income Tax Return
-	* IR10 - Financial statements summary 
-	* IR833 - Property sale information  
-	* IR3F - arming income 
-	* IR3B - Schedule of business income
-	* IR3R - Rental income schedule
-	* IR3K - Sale or disposal of financial arrangements
+    * CFC - Controlled foreign investment
+    * IR10 - Financial statements summary 
+    * 1261  - ***NEW*** 
+    * IR215 - Adjust your income 
 	* IR307 - Schedule of beneficiary’s estate or trust income
-	* IR308 - Branch equivalent tax account return
-	* IR215 - Adjust your income 
-	* CFC - Controlled foreign investment
+    * IR308 - Branch equivalent tax account return
+    * IR3B - Schedule of business income
+    * IR3F - arming income 
+    * IR3K - Sale or disposal of financial arrangements
+    * IR3NR – Non-Resident Individual Income Tax Return
+    * IR3R - Rental income schedule
+    * IR44E - Group investment fund return 
+	* IR4J - Annual imputation return	
+	* IR833 - Property sale information
+	* IR8J - Māori authorities credit account return 
 	
+* IR307 - Schedule of beneficiary’s estate or trust income
+	* _Does not support attachments_
+* IR308 - Branch equivalent tax account return
+	* _Does not support attachments_
+* IR3B - Schedule of business income
+	* _Does not support attachments_
+* IR3F - arming income
+	* _Does not support attachments_
+* IR3K - Sale or disposal of financial arrangements
+	* _Does not support attachments_
+
 * IR3NR – Non-Resident Individual Income Tax Return
-	* IR10 - Financial statements summary 
-	* IR833 - Property sale information  
-	* IR3F - arming income 
-	* IR3B - Schedule of business income
+    * CFC - Controlled foreign investment
+    * IR10 - Financial statements summary 
+    * IR215 - Adjust your income 
+	* IR307 - Schedule of beneficiary’s estate or trust income
+    * IR308 - Branch equivalent tax account return
+    * IR3B - Schedule of business income
+    * IR3F - arming income 
+    * IR3K - Sale or disposal of financial arrangements
+    * IR3R - Rental income schedule
+    * IR44E - Group investment fund return 
+	* IR4J - Annual imputation return	
+	* IR833 - Property sale information
+	* IR8J - Māori authorities credit account return 
+
+* IR3R - Rental income schedule
+	* _Does not support attachments_
+
+* IR4 - Companies Income Tax Return  
+    * CFC - Controlled foreign investment
+    * IR10 - Financial statements summary 
+    * IR215 - Adjust your income 
+	* IR307 - Schedule of beneficiary’s estate or trust income
+    * IR308 - Branch equivalent tax account return
+    * IR3B - Schedule of business income
+    * IR3F - arming income 
+    * IR3K - Sale or disposal of financial arrangements
 	* IR3R - Rental income schedule
-	* IR3K - Sale or disposal of financial arrangements
-	
-* IR4/S - Companies Income Tax Return  
-	* IR10 - Financial statements summary
-	* IR833 - Property sale information  
-	* IR44E - Group investment fund return 
-	* IR4J - Annual imputation return  
-	* CFC - Controlled foreign investment  
+    * IR44E - Group investment fund return 
+	* IR4J - Annual imputation return	
+	* IR833 - Property sale information
+	* IR8J - Māori authorities credit account return  
+
+* IR44E - Group investment fund return
+
+* IR44 - Superannuation funds income tax return
+    * CFC - Controlled foreign investment
+    * IR10 - Financial statements summary 
+    * IR215 - Adjust your income 
+	* IR307 - Schedule of beneficiary’s estate or trust income
+    * IR308 - Branch equivalent tax account return
+    * IR3B - Schedule of business income
+    * IR3F - arming income 
+    * IR3K - Sale or disposal of financial arrangements
+	* IR3R - Rental income schedule
+    * IR44E - Group investment fund return 
+	* IR4J - Annual imputation return	
+	* IR833 - Property sale information
+	* IR8J - Māori authorities credit account return  
 
 * IR6 - Estate or Trust Income Tax Return
-	* IR10 - Financial statements summary  
-	* IR833 - Property sale information  
-	* IR3F - Farming income 
-	* IR3B - Schedule of business income 
-	* IR3R - Rental income schedule 
-	* IR44E - Group investment fund return 
-	* IR308 - Branch equivalent tax account return 
-	* CFC - Controlled foreign investment
+    * CFC - Controlled foreign investment
+    * IR10 - Financial statements summary 
+    * IR215 - Adjust your income 
+	* IR307 - Schedule of beneficiary’s estate or trust income
+    * IR308 - Branch equivalent tax account return
+    * IR3B - Schedule of business income
+    * IR3F - arming income 
+    * IR3K - Sale or disposal of financial arrangements
+	* IR3R - Rental income schedule
+    * IR44E - Group investment fund return 
+	* IR4J - Annual imputation return	
+	* IR833 - Property sale information
+	* IR8J - Māori authorities credit account return  
 	
 * IR7 - Partnership and LTCs income tax return 
-	* IR10 - Financial statements summary
-	* IR833 - Property sale information 
-	* IR3F - Farming income 
-	* IR3B - Schedule of business income 
+    * CFC - Controlled foreign investment
+    * IR10 - Financial statements summary 
+    * IR215 - Adjust your income 
+	* IR307 - Schedule of beneficiary’s estate or trust income
+    * IR308 - Branch equivalent tax account return
+    * IR3B - Schedule of business income
+    * IR3F - arming income 
+    * IR3K - Sale or disposal of financial arrangements
 	* IR3R - Rental income schedule
-	* IR44E - Group investment fund return
-	* CFC - Controlled foreign investment
+    * IR44E - Group investment fund return 
+	* IR4J - Annual imputation return	
+	* IR833 - Property sale information
+	* IR8J - Māori authorities credit account return
 	
 * IR8 - Māori authorities income tax return 
-	* IR10 - Financial statements summary 
-	* IR833 - Property sale information  
-	* IR3B - Schedule of business income
+    * CFC - Controlled foreign investment
+    * IR10 - Financial statements summary 
+    * IR215 - Adjust your income 
+	* IR307 - Schedule of beneficiary’s estate or trust income
+    * IR308 - Branch equivalent tax account return
+    * IR3B - Schedule of business income
+    * IR3F - arming income 
+    * IR3K - Sale or disposal of financial arrangements
 	* IR3R - Rental income schedule
-	* IR8J - Property sale information 
-	* CFC - Controlled foreign investment 
+    * IR44E - Group investment fund return 
+	* IR4J - Annual imputation return	
+	* IR833 - Property sale information
+	* IR8J - Māori authorities credit account return
 	
+* IR833 - Property sale information
+
 * IR8J - Māori authorities credit account return 
-	* IR10 - Financial statements summary  
-	* IR833 - Property sale information  
-	* IR3B - Schedule of business income 
-	* IR3R - Rental income schedule 
-	* IR8J - Property sale information  
-	* CFC - Controlled foreign investment 
+    * CFC - Controlled foreign investment
+    * IR10 - Financial statements summary 
+    * IR215 - Adjust your income 
+	* IR307 - Schedule of beneficiary’s estate or trust income
+    * IR308 - Branch equivalent tax account return
+    * IR3B - Schedule of business income
+    * IR3F - arming income 
+    * IR3K - Sale or disposal of financial arrangements
+	* IR3R - Rental income schedule
+    * IR44E - Group investment fund return 
+	* IR4J - Annual imputation return	
+	* IR833 - Property sale information
+	
 
 * IR9 - Clubs or societies income tax return 
-	* IR10 - Financial statements summary  
-	* IR833 - Property sale information  
-	* CFC - Controlled foreign investment 
+    * CFC - Controlled foreign investment
+    * IR10 - Financial statements summary 
+    * IR215 - Adjust your income 
+	* IR307 - Schedule of beneficiary’s estate or trust income
+    * IR308 - Branch equivalent tax account return
+    * IR3B - Schedule of business income
+    * IR3F - arming income 
+    * IR3K - Sale or disposal of financial arrangements
+	* IR3R - Rental income schedule
+    * IR44E - Group investment fund return 
+	* IR4J - Annual imputation return	
+	* IR833 - Property sale information
+	* IR8J - Māori authorities credit account return
 	
-* IR44 - Superannuation funds income tax return
-	* IR10 - Financial statements summary
-	* IR833 - Property sale information 
-	* CFC  - Controlled foreign investment
-	
-* IR1215 - As agent income tax return	
-	
-* IR215 - Adjust your income 
-	* Does not support attachments	
-	
-## Attachment income tax return
+* AUTO/CALC
+    * CFC - Controlled foreign investment
+    * IR10 - Financial statements summary 
+    * IR215 - Adjust your income 
+	* IR307 - Schedule of beneficiary’s estate or trust income
+    * IR308 - Branch equivalent tax account return
+    * IR3B - Schedule of business income
+    * IR3F - arming income 
+    * IR3K - Sale or disposal of financial arrangements
+	* IR3NR - Non-Resident Individual Income Tax Return
+	* IR3R - Rental income schedule
+    * IR44E - Group investment fund return 
+	* IR4J - Annual imputation return	
+	* IR833 - Property sale information
+	* IR8J - Māori authorities credit account return	
 
-* IR3F - Farming income
-* IR3B - Schedule of business income
-* IR3R - Rental income schedule
-* IR3K - Sale or disposal of financial arrangements 
-* IR4J - Annual imputation return 
-* IR44E - Group investment fund return
-* IR10 - Financial statements summary 
-* IR215 - Adjust your income
-* IR307 - Schedule of beneficiary’s estate or trust income
-* IR833 - Property sale information
-* IR308 - Branch equivalent tax account return  
-* CFC - Controlled foreign investment  
-* PTS - Individual income tax return   
+* CFC - Controlled foreign investment
+* PTS - Individual income tax return	
 
 > Note: PTS Individual income tax return RetrieveReturn and RetrieveStatus for income years prior to 2019 
 

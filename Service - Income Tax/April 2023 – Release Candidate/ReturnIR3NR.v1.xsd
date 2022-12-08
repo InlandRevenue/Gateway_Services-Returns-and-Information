@@ -9,9 +9,6 @@
  **********  	************
  
  2022-10-13		rlwtCredit changed from MoneyType to MoneyTypePositive
-				totalInterestRWT changed from MoneyTypePositive to MoneyType
-				nrwtOnTotalInterest changed from MoneyTypePositive to MoneyType
-				totalNRWT changed from MoneyTypePositive to MoneyType
 				totalTaxCredits changed from MoneyTypePositive to MoneyType
 				nzIncomeWithTaxDeducted changed from IncomeWithTaxPaidType to IncomeWithTaxPaidType1
 				taxJurisdiction added
@@ -57,9 +54,9 @@ _______________________________________
 				<xsd:sequence>
 					<xsd:element name="submissionKey" type="cmn:Quantity32TypePositive" minOccurs="0"/>
 					<xsd:element name="nzSuperIndicator" type="xsd:boolean" minOccurs="0"/>
-					<xsd:element name="totalInterestRWT" type="cmn:MoneyType" minOccurs="0"/>
+					<xsd:element name="totalInterestRWT" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="totalInterest" type="cmn:MoneyType" minOccurs="0"/>
-					<xsd:element name="nrwtOnTotalInterest" type="cmn:MoneyType" minOccurs="0"/>
+					<xsd:element name="nrwtOnTotalInterest" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="totalDividendCredits" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="totalDividends" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="nrwtOnTotalDividends" type="cmn:MoneyTypePositive" minOccurs="0"/>
@@ -67,7 +64,7 @@ _______________________________________
 					<xsd:element name="totalRoyalties" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="nrwtOnTotalRoyalties" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="totalTaxCredits" type="cmn:MoneyType" minOccurs="0"/>
-					<xsd:element name="totalNRWT" type="cmn:MoneyType" minOccurs="0"/>
+					<xsd:element name="totalNRWT" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="nzIncomeWithTaxDeducted" type="ic:IncomeWithTaxPaidType1" minOccurs="0"/>
 					<xsd:element name="maoriAuthorityDistributions" type="ic:MADistributionIncomeType" minOccurs="0"/>
 					<xsd:element name="pieIncome" type="ic:IncomeWithTaxCreditType" minOccurs="0"/>
