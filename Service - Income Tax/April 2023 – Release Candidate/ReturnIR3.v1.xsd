@@ -13,7 +13,7 @@ Date  		Change
 			
 			pieIncome changed from IncomeWithTaxCreditType to PieIncomeWithTaxCreditType
 			
-			interestIncome changed from IncomeWithTaxPaidType to IncomeWithTaxPaidType2 
+			interestIncome changed from IncomeWithTaxPaidType to IncomeWithTaxPaidType3 
 			
 			overseasIncome changed from IncomeWithTaxPaidType to IncomeWithTaxPaidType3
 
@@ -72,7 +72,7 @@ _______________________________________
 					<xsd:element name="grossSchedularPayments" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="schedularExpenses" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="netSchedularPayments" type="cmn:MoneyType" minOccurs="0"/>
-					<xsd:element name="interestIncome" type="ic:IncomeWithTaxPaidType2" minOccurs="0"/>
+					<xsd:element name="interestIncome" type="ic:IncomeWithTaxPaidType3" minOccurs="0"/>
 					<xsd:element name="interestFromPShipEstTrustOrLTC" type="xsd:boolean" minOccurs="0"/>
 					<xsd:element name="dividendIncome" type="ic:DividendIncomeType" minOccurs="0"/>
 					<xsd:element name="dividendsFromPShipEstTrustOrLTC" type="xsd:boolean" minOccurs="0"/>
