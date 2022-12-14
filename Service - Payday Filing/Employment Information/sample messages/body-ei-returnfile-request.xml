@@ -36,6 +36,7 @@
                                 <ret1:contactEmail>a@b.com</ret1:contactEmail>
                                 <ret1:employeeFields>
                                     <ret1:employee>
+                                        <ret1:referenceId>9ea0bb55-db0c-465e-9644-28c7be7a752a</ret1:referenceId>
                                         <ret1:irdNumber>123028198</ret1:irdNumber>
                                         <ret1:employeeName>Keith Kalish</ret1:employeeName>
                                         <ret1:taxCode>M</ret1:taxCode>
@@ -63,6 +64,7 @@
                                         <ret1:priorPeriodPAYEAdjustment>0</ret1:priorPeriodPAYEAdjustment>
                                     </ret1:employee>
                                     <ret1:employee>
+                                        <ret1:referenceId>a3390445-fa7a-44cf-a8c7-1b5490bcbe46</ret1:referenceId>
                                         <ret1:irdNumber>123037155</ret1:irdNumber>
                                         <ret1:employeeName>Ella James</ret1:employeeName>
                                         <ret1:taxCode>M</ret1:taxCode>
