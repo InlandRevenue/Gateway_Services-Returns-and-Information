@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+NAME:			ReturnIR1215.xsd
+VER:			1
+ISSUER:			Inland Revenue Department	
+DESC:			This schema defines the elements and related data types required for the Returns Individual Income Tax Gateway Service.
+    
+Date  		Change
+**********  ************
+2021-02-09  Initial
+_______________________________________      
+-->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:www.ird.govt.nz/GWS:types/ReturnIR1215.v1" xmlns:cmn="urn:www.ird.govt.nz/GWS:types/Common.v2" xmlns:rc="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2" xmlns:r="urn:www.ird.govt.nz/GWS:types/ReturnIR1215.v1" targetNamespace="urn:www.ird.govt.nz/GWS:types/ReturnIR1215.v1" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<!--Begin Imports Statement(s)-->
+	<xsd:import namespace="urn:www.ird.govt.nz/GWS:types/Common.v2" schemaLocation="./Common.v2.xsd">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">Contains common data types.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:import>
+	<xsd:import namespace="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2" schemaLocation="./ReturnCommon.v2.xsd">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">Contains common return data types.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:import>
+	<!--End Import Statements--> 
+	<!--Begin File Elements-->
+	<xsd:element name="fileRequest" type="rc:FileRequestType"/>
+	<!--End File Elements-->
+	<!--Begin Override FormFieldsType-->
+	<xsd:complexType name="FormFieldsType">
+		<xsd:complexContent>
+			<xsd:extension base="rc:FormFieldsType">
+				<xsd:sequence>
+					<xsd:element name="submissionKey" type="cmn:Quantity32TypePositive" minOccurs="0"/>
+					<xsd:element name="totalGeneralInsurancePremiums" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="totalLifeInsurancePremiums" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="totalGuarantorFees" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="totalGrossPremiumsFees" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="totalTaxableIncome" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="totalTaxLiability" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="totalSwissGrossPremiums" type="cmn:MoneyType" minOccurs="0"/>
+					<xsd:element name="paymentsToGeneralInsurers" type="PaymentsToGeneralInsurersListType" minOccurs="0"/>
+					<xsd:element name="guarantors" type="GuarantorsListType" minOccurs="0"/>
+					<xsd:element name="paymentsToSwissInsurers" type="PaymentsToSwissInsurersListType" minOccurs="0"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<!--End Override FormFieldsType-->
+	<!--Begin Specific File Data Types-->
+	<xsd:complexType name="PaymentsToGeneralInsurersListType">
+		<xsd:sequence>
+			<xsd:element name="generalPayment" type="PaymentsToGeneralInsurersType" minOccurs="0" maxOccurs="10000"/>
+		</xsd:sequence>
+	</xsd:complexType>
+  <xsd:complexType name="PaymentsToGeneralInsurersType">
+    <xsd:sequence>
+      <xsd:element name="insurerName" type="cmn:FormattedNameType" minOccurs="1" maxOccurs="1"/>
+      <xsd:element name="taxResidenceCountry" type="cmn:Country2DigitType" minOccurs="1" maxOccurs="1"/>
+      <xsd:element name="grossPremiums" type="cmn:MoneyTypePositive" minOccurs="1" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  	<xsd:complexType name="GuarantorsListType">
+		<xsd:sequence>
+			<xsd:element name="guarantor" type="GuarantorsType" minOccurs="0" maxOccurs="10000"/>
+		</xsd:sequence>
+	</xsd:complexType>
+  <xsd:complexType name="GuarantorsType">
+    <xsd:sequence>
+      <xsd:element name="guarantorName" type="cmn:FormattedNameType" minOccurs="1" maxOccurs="1"/>
+      <xsd:element name="taxResidenceCountry" type="cmn:Country2DigitType" minOccurs="1" maxOccurs="1"/>
+      <xsd:element name="grossFees" type="cmn:MoneyTypePositive" minOccurs="1" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+	<xsd:complexType name="PaymentsToSwissInsurersListType">
+		<xsd:sequence>
+			<xsd:element name="swissPayment" type="PaymentsToSwissInsurersType" minOccurs="0" maxOccurs="10000"/>
+		</xsd:sequence>
+	</xsd:complexType>
+  <xsd:complexType name="PaymentsToSwissInsurersType">
+    <xsd:sequence>
+      <xsd:element name="swissInsurerName" type="cmn:FormattedNameType" minOccurs="1" maxOccurs="1"/>
+	  <xsd:element name="swissGrossPremiums" type="cmn:MoneyType" minOccurs="1" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+	<!--End Specific File Data Types-->
+	<!--RetrieveReturnRequestType is unique for Indvidual Income Tax-->
+	<xsd:complexType name="RetrieveReturnResponseBodyType">
+		<xsd:complexContent>
+			<xsd:extension base="rc:RetrieveReturnResponseBodyType">
+				<xsd:sequence>
+					<xsd:element name="formFields" type="FormFieldsType"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<!--End RetrieveReturnRequestType-->
+</xsd:schema>
