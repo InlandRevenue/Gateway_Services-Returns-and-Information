@@ -15,7 +15,7 @@
                             </cmn:softwareProviderData>
                             <cmn:identifier IdentifierValueType="IRD">132306907</cmn:identifier>
                             <cmn:accountType>INC</cmn:accountType>
-                            <rc:periodEndDate>2022-03-31</rc:periodEndDate>
+                            <rc:periodEndDate>2023-03-31</rc:periodEndDate>
                             <rc:majorFormType>INC</rc:majorFormType>
                             <rc:minorFormType>3</rc:minorFormType>
                         </rc:fileHeader>
@@ -32,19 +32,19 @@
                             <rc:formFields xsi:type="r3:FormFieldsType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ic="urn:www.ird.govt.nz/GWS:types/IncomeReturnCommon.v1">
                                 <r3:ir215Attached>false</r3:ir215Attached>
                                 <r3:totalFTCFromWINZ>0.00</r3:totalFTCFromWINZ>
-                                <r3:totalPAYEDeducted>2200.00</r3:totalPAYEDeducted>
+                                <r3:totalPAYEDeducted>2150.00</r3:totalPAYEDeducted>
                                 <r3:totalGrossIncome>20000.00</r3:totalGrossIncome>
                                 <r3:totalIncomeNotLiableForACCLevy>0.00</r3:totalIncomeNotLiableForACCLevy>
                                 <r3:totalTCPDs>0.00</r3:totalTCPDs>
                                 <r3:totalExtinguishedTCPDs>0.00</r3:totalExtinguishedTCPDs>
-                                <r3:totalTaxDeducted>1922.00</r3:totalTaxDeducted>
+                                <r3:totalTaxDeducted>-500.00</r3:totalTaxDeducted>
                                 <r3:taxDeductedFromSchedularPayments>0.00</r3:taxDeductedFromSchedularPayments>
                                 <r3:grossSchedularPayments>0.00</r3:grossSchedularPayments>
                                 <r3:schedularExpenses>0.00</r3:schedularExpenses>
                                 <r3:netSchedularPayments>0.00</r3:netSchedularPayments>
                                 <r3:interestIncome>
-                                    <ic:totalTaxPaid>0.00</ic:totalTaxPaid>
-                                    <ic:totalIncome>0.00</ic:totalIncome>
+                                    <ic:totalTaxPaid>10.00</ic:totalTaxPaid>
+                                    <ic:totalIncome>100.00</ic:totalIncome>
                                 </r3:interestIncome>
                                 <r3:interestFromPShipEstTrustOrLTC>false</r3:interestFromPShipEstTrustOrLTC>
                                 <r3:dividendIncome>
@@ -61,17 +61,19 @@
                                 <r3:totalEstateOrTrustIncome>0.00</r3:totalEstateOrTrustIncome>
                                 <r3:totalTaxableDistributionFromNCTrusts>0.00</r3:totalTaxableDistributionFromNCTrusts>
                                 <r3:overseasIncome>
-                                    <ic:totalTaxPaid>0.00</ic:totalTaxPaid>
-                                    <ic:totalIncome>0.00</ic:totalIncome>
+                                    <ic:totalTaxPaid>65.00</ic:totalTaxPaid>
+                                    <ic:totalIncome>800.00</ic:totalIncome>
                                 </r3:overseasIncome>
                                 <r3:overseasSuperLumpSums>false</r3:overseasSuperLumpSums>
                                 <r3:pieIncome>
-                                    <ic:totalTaxCredits>0.00</ic:totalTaxCredits>
-                                    <ic:totalIncome>0.00</ic:totalIncome>
+                                    <ic:totalTaxCredits>10.00</ic:totalTaxCredits>
+                                    <ic:totalIncome>100.00</ic:totalIncome>
+                                    <ic:correctRateOverride>true</ic:correctRateOverride>
+                                    <ic:correctRate>28.00</ic:correctRate>
                                 </r3:pieIncome>
                                 <r3:partnershipIncome>
-                                    <ic:totalTaxCredits>0.00</ic:totalTaxCredits>
-                                    <ic:totalIncome>0.00</ic:totalIncome>
+                                    <ic:totalTaxCredits>10.00</ic:totalTaxCredits>
+                                    <ic:totalIncome>-100.00</ic:totalIncome>
                                 </r3:partnershipIncome>
                                 <r3:ltcIncome>
                                     <ic:totalTaxCredits>2000.00</ic:totalTaxCredits>
@@ -87,6 +89,9 @@
                                 <r3:shareholderAIMTaxPaid>0.00</r3:shareholderAIMTaxPaid>
                                 <r3:residentialRentalIncome>
                                     <ic:indicator>I</ic:indicator>
+                                    <ic:grossResRentalIncome>600.00</ic:grossResRentalIncome>
+                                    <ic:netBrightlineProfits>750.00</ic:netBrightlineProfits>
+                                    <ic:otherResIncome>750.00</ic:otherResIncome>
                                     <ic:totalIncome>2100.00</ic:totalIncome>
                                     <ic:residentialRentalDeductions>1000.00</ic:residentialRentalDeductions>
                                     <ic:excessDeductionsBroughtForward>0.00</ic:excessDeductionsBroughtForward>
@@ -95,8 +100,8 @@
                                     <ic:excessDeductionsCarriedForward>0.00</ic:excessDeductionsCarriedForward>
                                 </r3:residentialRentalIncome>
                                 <r3:propertyInterestLimitation>
-                                    <ic:totalInterest>1000</ic:totalInterest>
-                                    <ic:interestExpenseClaimed>1000</ic:interestExpenseClaimed>
+                                    <ic:totalInterest>1000.00</ic:totalInterest>
+                                    <ic:interestExpenseClaimed>1000.00</ic:interestExpenseClaimed>
                                     <ic:interestExpenseClaimedReason>
                                         <ic:notResidentialOrMaoriExempt>true</ic:notResidentialOrMaoriExempt>
                                         <ic:propertyNotInNz>true</ic:propertyNotInNz>
@@ -104,6 +109,7 @@
                                         <ic:newBuildExemption>true</ic:newBuildExemption>
                                         <ic:developmentExemption>true</ic:developmentExemption>
                                         <ic:emergencyTransitionalSocialCouncil>true</ic:emergencyTransitionalSocialCouncil>
+                                        <ic:buildToRentExclusion>false</ic:buildToRentExclusion>
                                     </ic:interestExpenseClaimedReason>
                                 </r3:propertyInterestLimitation>
                                 <r3:netRentalIncome>0.00</r3:netRentalIncome>
@@ -141,10 +147,10 @@
                                     <ic:provisionalTaxStartDate>2016-01-01</ic:provisionalTaxStartDate>
                                 </r3:provisionalTax>
                                 <r3:foreignInterestDisclosure>false</r3:foreignInterestDisclosure>
-                                <r3:partYearReturnIndicator>true</r3:partYearReturnIndicator>
+                                <r3:partYearReturnIndicator>false</r3:partYearReturnIndicator>
                                 <r3:partYearReason>ARRIVE</r3:partYearReason>
-                                <r3:partYearStartDate>2021-08-01</r3:partYearStartDate>
-                                <r3:partYearEndDate>2021-12-31</r3:partYearEndDate>
+                                <r3:partYearStartDate>2022-08-01</r3:partYearStartDate>
+                                <r3:partYearEndDate>2022-12-31</r3:partYearEndDate>
                                 <r3:attachmentForms>
                                     <ic:attachment>
                                         <ic:formType>10</ic:formType>
@@ -375,8 +381,8 @@
                                             <r3R:insuranceAmount>1000.00</r3R:insuranceAmount>
                                             <r3R:interestAmount>1000.00</r3R:interestAmount>
                                             <r3R:propertyInterestLimitation>
-                                                <ic:totalInterest>1000</ic:totalInterest>
-                                                <ic:interestExpenseClaimed>1000</ic:interestExpenseClaimed>
+                                                <ic:totalInterest>1000.00</ic:totalInterest>
+                                                <ic:interestExpenseClaimed>1000.00</ic:interestExpenseClaimed>
                                                 <ic:interestExpenseClaimedReason>
                                                     <ic:notResidentialOrMaoriExempt>true</ic:notResidentialOrMaoriExempt>
                                                     <ic:propertyNotInNz>true</ic:propertyNotInNz>
@@ -384,6 +390,7 @@
                                                     <ic:newBuildExemption>true</ic:newBuildExemption>
                                                     <ic:developmentExemption>true</ic:developmentExemption>
                                                     <ic:emergencyTransitionalSocialCouncil>true</ic:emergencyTransitionalSocialCouncil>
+                                                    <ic:buildToRentExclusion>false</ic:buildToRentExclusion>
                                                 </ic:interestExpenseClaimedReason>
                                             </r3R:propertyInterestLimitation>
                                             <r3R:agentFeesAmount>1000.00</r3R:agentFeesAmount>
@@ -426,7 +433,7 @@
                                             </r3R:depreciationAssetsDetails>
                                             <r3R:propertyAddress1>PA1</r3R:propertyAddress1>
                                             <r3R:propertyAddress2>PA2</r3R:propertyAddress2>
-                                            <r3R:availableMonths>03</r3R:availableMonths>
+                                            <r3R:availableMonths>3</r3R:availableMonths>
                                         </ic:formFields>
                                     </ic:attachment>
                                     <ic:attachment>
@@ -525,6 +532,31 @@
                                                 <r215:percentageOfSharesHeld>100.00</r215:percentageOfSharesHeld>
                                                 <r215:totalDividendsPaidByCompany>1000.00</r215:totalDividendsPaidByCompany>
                                             </r215:attributedDependentIncomeMajorShareholderCC>
+                                        </ic:formFields>
+                                    </ic:attachment>
+                                    <ic:attachment>
+                                        <ic:formType>1261</ic:formType>
+                                        <ic:formFields xsi:type="r1261:FormFieldsType" xmlns:r1261="urn:www.ird.govt.nz/GWS:types/ReturnIR1261.v1">
+                                            <r1261:overseasIncomeDetails>
+                                                <r1261:overseasIncome>
+                                                    <r1261:incomeType>CFC</r1261:incomeType>
+                                                    <r1261:taxJurisdiction>KZ</r1261:taxJurisdiction>
+                                                    <r1261:grossAmount>300.25</r1261:grossAmount>
+                                                    <r1261:taxCredit>25.00</r1261:taxCredit>
+                                                </r1261:overseasIncome>
+                                                <r1261:overseasIncome>
+                                                    <r1261:incomeType>Div</r1261:incomeType>
+                                                    <r1261:taxJurisdiction>RU</r1261:taxJurisdiction>
+                                                    <r1261:grossAmount>299.75</r1261:grossAmount>
+                                                    <r1261:taxCredit>25.00</r1261:taxCredit>
+                                                </r1261:overseasIncome>
+                                                <r1261:overseasIncome>
+                                                    <r1261:incomeType>Fin</r1261:incomeType>
+                                                    <r1261:taxJurisdiction>BO</r1261:taxJurisdiction>
+                                                    <r1261:grossAmount>200.00</r1261:grossAmount>
+                                                    <r1261:taxCredit>15.00</r1261:taxCredit>
+                                                </r1261:overseasIncome>
+                                            </r1261:overseasIncomeDetails>
                                         </ic:formFields>
                                     </ic:attachment>
                                     <ic:attachment>

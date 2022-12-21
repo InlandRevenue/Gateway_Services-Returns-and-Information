@@ -45,12 +45,15 @@
                                 </r4:partnershipEstateTrustIncome>
                                 <r4:totalTaxCredits>5000.00</r4:totalTaxCredits>
                                 <r4:overseasIncome>
-                                    <ic:totalTaxPaid>0.00</ic:totalTaxPaid>
-                                    <ic:totalIncome>1000.00</ic:totalIncome>
+                                    <ic:totalTaxPaid>65.00</ic:totalTaxPaid>
+                                    <ic:totalIncome>800.00</ic:totalIncome>
                                 </r4:overseasIncome>
                                 <r4:residentialRentalIncome>
                                     <ic:indicator>I</ic:indicator>
-                                    <ic:totalIncome>1100.00</ic:totalIncome>
+                                    <ic:grossResRentalIncome>600.00</ic:grossResRentalIncome>
+                                    <ic:netBrightlineProfits>750.00</ic:netBrightlineProfits>
+                                    <ic:otherResIncome>750.00</ic:otherResIncome>
+                                    <ic:totalIncome>2100.00</ic:totalIncome>
                                     <ic:residentialRentalDeductions>1000.00</ic:residentialRentalDeductions>
                                     <ic:excessDeductionsBroughtForward>0.00</ic:excessDeductionsBroughtForward>
                                     <ic:deductionsClaimedThisYear>1000.00</ic:deductionsClaimedThisYear>
@@ -67,6 +70,7 @@
                                         <ic:newBuildExemption>true</ic:newBuildExemption>
                                         <ic:developmentExemption>true</ic:developmentExemption>
                                         <ic:emergencyTransitionalSocialCouncil>true</ic:emergencyTransitionalSocialCouncil>
+                                        <ic:buildToRentExclusion>true</ic:buildToRentExclusion>
                                     </ic:interestExpenseClaimedReason>
                                 </r4:propertyInterestLimitation>
                                 <r4:businessOrRentalIncome>1000.00</r4:businessOrRentalIncome>
@@ -104,6 +108,8 @@
                                 <r4:foreignSourcedDividends>false</r4:foreignSourcedDividends>
                                 <r4:foreignControlIndicator>false</r4:foreignControlIndicator>
                                 <r4:lowestEconomicShareholderInterest>1000.00</r4:lowestEconomicShareholderInterest>
+                                <r4:decomExpenditure>50.50</r4:decomExpenditure>
+                                <r4:decomTaxCredit>50</r4:decomTaxCredit>
                                 <r4:shareholderDetails>
                                     <ic:shareholder>
                                         <ic:irdNumber>132311501</ic:irdNumber>

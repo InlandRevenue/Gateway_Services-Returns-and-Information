@@ -1,4 +1,4 @@
-Error code 2340
+Error code 2363
 
 Request
 <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope">
@@ -43,7 +43,7 @@ Request
                                 <r3NR:totalWithholdingTaxOnRoyalties>0</r3NR:totalWithholdingTaxOnRoyalties>
                                 <r3NR:totalRoyalties>0</r3NR:totalRoyalties>
                                 <r3NR:nrwtOnTotalRoyalties>0</r3NR:nrwtOnTotalRoyalties>
-                                <r3NR:totalTaxCredits>0</r3NR:totalTaxCredits>
+                                <r3NR:totalTaxCredits>10</r3NR:totalTaxCredits>
                                 <r3NR:totalNRWT>0</r3NR:totalNRWT>
                                 <r3NR:nzIncomeWithTaxDeducted>
                                     <ic:totalTaxPaid>0</ic:totalTaxPaid>
@@ -133,7 +133,7 @@ Request
                                 <r3NR:partYearReturnIndicator>false</r3NR:partYearReturnIndicator>
                                 <r3NR:dateLeftNZ>2019-12-01</r3NR:dateLeftNZ>
                                 <r3NR:timePlannedToBeAway>string</r3NR:timePlannedToBeAway>
-                                <r3NR:taxJurisdiction>TP</r3NR:taxJurisdiction>
+                                <r3NR:taxJurisdiction>NZ</r3NR:taxJurisdiction>
                                 <r3NR:taxIdNumber>111111111</r3NR:taxIdNumber>
                                 <r3NR:noJurisdictionTin>true</r3NR:noJurisdictionTin>
                                 <r3NR:tinNotRequired>true</r3NR:tinNotRequired>
@@ -157,8 +157,8 @@ Response
                 <b:FileResponseWrapper xmlns:b="https://services.ird.govt.nz/GWS/Returns/:types/FileResponse">
                     <fileResponse xmlns="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2">
                         <statusMessage xmlns="urn:www.ird.govt.nz/GWS:types/Common.v2">
-                            <statusCode>2340</statusCode>
-                            <errorMessage>invalid value provided for taxJurisdiction</errorMessage>
+                            <statusCode>2363</statusCode>
+                            <errorMessage>taxJurisdiction cannot be New Zealand for non-resident</errorMessage>
                         </statusMessage>
                     </fileResponse>
                 </b:FileResponseWrapper>

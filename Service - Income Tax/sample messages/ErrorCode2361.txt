@@ -1,4 +1,4 @@
-Error code 2346
+Error code 2361
 
 Request
 <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope">
@@ -16,7 +16,7 @@ Request
                                 <cmn:softwarePlatform>SoftwarePlatform</cmn:softwarePlatform>
                                 <cmn:softwareRelease>1</cmn:softwareRelease>
                             </cmn:softwareProviderData>
-                            <cmn:identifier IdentifierValueType="IRD">132306907</cmn:identifier>
+                            <cmn:identifier IdentifierValueType="IRD">139450116</cmn:identifier>
                             <cmn:accountType>INC</cmn:accountType>
                             <rc:periodEndDate>2023-03-31</rc:periodEndDate>
                             <rc:majorFormType>INC</rc:majorFormType>
@@ -72,7 +72,7 @@ Request
                                     <ic:totalTaxCredits>10.00</ic:totalTaxCredits>
                                     <ic:totalIncome>100.00</ic:totalIncome>
                                     <ic:correctRateOverride>true</ic:correctRateOverride>
-                                    <ic:correctRate>28.00</ic:correctRate>
+                                    <ic:correctRate>10.50</ic:correctRate>
                                 </r3:pieIncome>
                                 <r3:partnershipIncome>
                                     <ic:totalTaxCredits>10.00</ic:totalTaxCredits>
@@ -103,8 +103,8 @@ Request
                                     <ic:excessDeductionsCarriedForward>0.00</ic:excessDeductionsCarriedForward>
                                 </r3:residentialRentalIncome>
                                 <r3:propertyInterestLimitation>
-                                    <ic:totalInterest>1000.00</ic:totalInterest>
-                                    <ic:interestExpenseClaimed>1000.00</ic:interestExpenseClaimed>
+                                    <ic:totalInterest>0.00</ic:totalInterest>
+                                    <ic:interestExpenseClaimed>0.00</ic:interestExpenseClaimed>
                                     <ic:interestExpenseClaimedReason>
                                         <ic:notResidentialOrMaoriExempt>false</ic:notResidentialOrMaoriExempt>
                                         <ic:propertyNotInNz>false</ic:propertyNotInNz>
@@ -163,7 +163,6 @@ Request
     </soap:Body>
 </soap:Envelope>
 
-
 Response
 <env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope">
     <env:Header xmlns:wsa="http://www.w3.org/2005/08/addressing">
@@ -175,8 +174,8 @@ Response
                 <b:FileResponseWrapper xmlns:b="https://services.ird.govt.nz/GWS/Returns/:types/FileResponse">
                     <fileResponse xmlns="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2">
                         <statusMessage xmlns="urn:www.ird.govt.nz/GWS:types/Common.v2">
-                            <statusCode>2346</statusCode>
-                            <errorMessage>interestExpenseClaimedReason must be provided when interestExpenseClaimed is non-zero</errorMessage>
+                            <statusCode>2361</statusCode>
+                            <errorMessage>pieIncome correctRateOverride can only be used by tax preparers</errorMessage>
                         </statusMessage>
                     </fileResponse>
                 </b:FileResponseWrapper>
