@@ -72,16 +72,16 @@
 |                 | INC-ES-64           | RetrieveReturn            | IR4 Customer IRD (_identifier_): 107031227                                                      |
 |                 | INC-ES-65           | File                      | IR9 return with IR307 attachment                                                              |
 |                 | INC-ES-66           | File                      | IR3 return with:                                                                              |
-|                 |                     |                           | totalPAYEDeducted > totalGrossIncome                                                          |
-|                 |                     |                           | totalIncomeNotLiableForACCLevy > totalGrossIncome                                             |
-|                 |                     |                           | totalExtinguishedTCPDs > totalTCPDs                                                           |
+|                 |                     |                           | totalPAYEDeducted > totalGrossIncome                                                          |
+|                 |                     |                           | totalIncomeNotLiableForACCLevy > totalGrossIncome                                             |
+|                 |                     |                           | totalExtinguishedTCPDs > totalTCPDs                                                           |
 |                 | INC-ES-67           | RetrieveFilingObligations | IR4 Customer IRD (_identifier_): 078650362                                                      |
 |                 | INC-ES-68           | File                      | IR215 standalone or attachment with:                                                          |
 |                 |                     |                           | _periodEndDate_: 2021-03-31 or later                                                            |
 |                 |                     |                           | _incomeFromPie_: value > 0                                                                      |
 |                 | INC-ES-78           | File                      | IR3 return with:                                                                              |
 |                 |                     |                           | _periodEndDate_: 2020-03-31 or earlier                                                          |
-|                 |                     |                           | _pieIncome.totalTaxCredits_ > (_taxOnTaxableIncome_ / _totalTaxableIncome_) * _pieIncome.totalIncome_ |
+|                 |                     |                           | _pieIncome.totalTaxCredits_ > (_taxOnTaxableIncome_ / _totalTaxableIncome_) * _pieIncome.totalIncome_ |
 |                 | INC-ES-66           | File                      | IR3 return with:                                                                              |
 |                 |                     |                           | _periodEndDate_: 2021-03-31 or later                                                            |
 |                 |                     |                           | _lossCarriedBackPriorYear_: value > 0                                                           |
