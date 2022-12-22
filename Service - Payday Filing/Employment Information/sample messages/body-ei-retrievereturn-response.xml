@@ -24,6 +24,7 @@
                                 <r:employeeFields>
                                     <r:employee>
                                         <r:lineNumber>1</r:lineNumber>
+                                        <r:referenceId>9ea0bb55-db0c-465e-9644-28c7be7a752a</r:referenceId>
                                         <r:irdNumber>123110579</r:irdNumber>
                                         <r:employeeName>Keith Kalish</r:employeeName>
                                         <r:taxCode>M</r:taxCode>
@@ -52,6 +53,7 @@
                                     </r:employee>
                                     <r:employee>
                                         <r:lineNumber>2</r:lineNumber>
+                                        <r:referenceId>a3390445-fa7a-44cf-a8c7-1b5490bcbe46</r:referenceId>
                                         <r:irdNumber>123112229</r:irdNumber>
                                         <r:employeeName>Ella James</r:employeeName>
                                         <r:taxCode>M</r:taxCode>
