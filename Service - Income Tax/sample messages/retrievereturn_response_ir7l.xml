@@ -46,11 +46,14 @@
                                 <r7:ltcPriorYearNonAllowableDeductionsClaimed>0</r7:ltcPriorYearNonAllowableDeductionsClaimed>
                                 <r7:ltcAdjustedIncome>600</r7:ltcAdjustedIncome>
                                 <r7:overseasIncome>
-                                    <ic:totalTaxPaid>20</ic:totalTaxPaid>
+                                    <ic:totalTaxPaid>20.00</ic:totalTaxPaid>
                                     <ic:totalIncome>700.00</ic:totalIncome>
                                 </r7:overseasIncome>
                                 <r7:residentialRentalIncome>
                                     <ic:indicator>I</ic:indicator>
+                                    <ic:grossResRentalIncome>600.00</ic:grossResRentalIncome>
+                                    <ic:netBrightlineProfits>750.00</ic:netBrightlineProfits>
+                                    <ic:otherResIncome>750.00</ic:otherResIncome>
                                     <ic:totalIncome>2100.00</ic:totalIncome>
                                     <ic:residentialRentalDeductions>1000.00</ic:residentialRentalDeductions>
                                 </r7:residentialRentalIncome>
@@ -64,6 +67,7 @@
                                         <ic:newBuildExemption>true</ic:newBuildExemption>
                                         <ic:developmentExemption>true</ic:developmentExemption>
                                         <ic:emergencyTransitionalSocialCouncil>true</ic:emergencyTransitionalSocialCouncil>
+                                        <ic:buildToRentExclusion>true</ic:buildToRentExclusion>
                                     </ic:interestExpenseClaimedReason>
                                 </r7:propertyInterestLimitation>
                                 <r7:pieIncome>
