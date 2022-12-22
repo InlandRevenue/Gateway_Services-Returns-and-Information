@@ -15,7 +15,7 @@
                             </cmn:softwareProviderData>
                             <cmn:identifier IdentifierValueType="IRD">096062311</cmn:identifier>
                             <cmn:accountType>INC</cmn:accountType>
-                            <rc:periodEndDate>2019-03-31</rc:periodEndDate>
+                            <rc:periodEndDate>2023-03-31</rc:periodEndDate>
                             <rc:majorFormType>INC</rc:majorFormType>
                             <rc:minorFormType>4</rc:minorFormType>
                         </rc:fileHeader>
@@ -58,9 +58,34 @@
                                 </r4:partnershipEstateTrustIncome>
                                 <r4:totalTaxCredits>5000.00</r4:totalTaxCredits>
                                 <r4:overseasIncome>
-                                    <ic:totalTaxPaid>0.00</ic:totalTaxPaid>
-                                    <ic:totalIncome>1000.00</ic:totalIncome>
+                                    <ic:totalTaxPaid>65.00</ic:totalTaxPaid>
+                                    <ic:totalIncome>800.00</ic:totalIncome>
                                 </r4:overseasIncome>
+                                <r4:residentialRentalIncome>
+                                    <ic:indicator>I</ic:indicator>
+                                    <ic:grossResRentalIncome>600.00</ic:grossResRentalIncome>
+                                    <ic:netBrightlineProfits>750.00</ic:netBrightlineProfits>
+                                    <ic:otherResIncome>750.00</ic:otherResIncome>
+                                    <ic:totalIncome>2100.00</ic:totalIncome>
+                                    <ic:residentialRentalDeductions>1000.00</ic:residentialRentalDeductions>
+                                    <ic:excessDeductionsBroughtForward>0.00</ic:excessDeductionsBroughtForward>
+                                    <ic:deductionsClaimedThisYear>1000.00</ic:deductionsClaimedThisYear>
+                                    <ic:netIncome>1100.00</ic:netIncome>
+                                    <ic:excessDeductionsCarriedForward>0.00</ic:excessDeductionsCarriedForward>
+                                </r4:residentialRentalIncome>
+                                <r4:propertyInterestLimitation>
+                                    <ic:totalInterest>1000.00</ic:totalInterest>
+                                    <ic:interestExpenseClaimed>1000.00</ic:interestExpenseClaimed>
+                                    <ic:interestExpenseClaimedReason>
+                                        <ic:notResidentialOrMaoriExempt>true</ic:notResidentialOrMaoriExempt>
+                                        <ic:propertyNotInNz>true</ic:propertyNotInNz>
+                                        <ic:loansDrawnDown>true</ic:loansDrawnDown>
+                                        <ic:newBuildExemption>true</ic:newBuildExemption>
+                                        <ic:developmentExemption>true</ic:developmentExemption>
+                                        <ic:emergencyTransitionalSocialCouncil>true</ic:emergencyTransitionalSocialCouncil>
+                                        <ic:buildToRentExclusion>false</ic:buildToRentExclusion>
+                                    </ic:interestExpenseClaimedReason>
+                                </r4:propertyInterestLimitation>
                                 <r4:businessOrRentalIncome>1000.00</r4:businessOrRentalIncome>
                                 <r4:totalGrossPremium>0.00</r4:totalGrossPremium>
                                 <r4:totalGrossPremiumPaidToSwitzerland>0.00</r4:totalGrossPremiumPaidToSwitzerland>
@@ -71,10 +96,17 @@
                                 <r4:donationsMade>1000.00</r4:donationsMade>
                                 <r4:lossesBroughtForward>0.00</r4:lossesBroughtForward>
                                 <r4:lossesClaimedThisYear>0.00</r4:lossesClaimedThisYear>
+                                <r4:lossContinuity>false</r4:lossContinuity>
+                                <r4:lossCarriedBackPriorYear>0.00</r4:lossCarriedBackPriorYear>
                                 <r4:netLossesToFrom>0.00</r4:netLossesToFrom>
                                 <r4:subventionPaymentsToFrom>0.00</r4:subventionPaymentsToFrom>
                                 <r4:totalTaxableIncome>9000.00</r4:totalTaxableIncome>
                                 <r4:taxOnTaxableIncome>2520.00</r4:taxOnTaxableIncome>
+                                <r4:researchAndDevelopment>
+                                    <ic:creditBroughtForward>0.00</ic:creditBroughtForward>
+                                    <ic:nonrefundableCredit>0.00</ic:nonrefundableCredit>
+                                    <ic:refundableCredit>0.00</ic:refundableCredit>
+                                </r4:researchAndDevelopment>
                                 <r4:foreignInvestorTaxCredit>1000.00</r4:foreignInvestorTaxCredit>
                                 <r4:residualIncomeTax>-3760.00</r4:residualIncomeTax>
                                 <r4:provisionalTax>
@@ -89,6 +121,8 @@
                                 <r4:foreignSourcedDividends>false</r4:foreignSourcedDividends>
                                 <r4:foreignControlIndicator>false</r4:foreignControlIndicator>
                                 <r4:lowestEconomicShareholderInterest>1000.00</r4:lowestEconomicShareholderInterest>
+                                <r4:decomExpenditure>50.50</r4:decomExpenditure>
+                                <r4:decomTaxCredit>50</r4:decomTaxCredit>
                                 <r4:shareholderDetails>
                                     <ic:shareholder>
                                         <ic:irdNumber>132311501</ic:irdNumber>

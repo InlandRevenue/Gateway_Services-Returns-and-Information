@@ -15,7 +15,7 @@
                             </cmn:softwareProviderData>
                             <cmn:identifier IdentifierValueType="IRD">093989910</cmn:identifier>
                             <cmn:accountType>INC</cmn:accountType>
-                            <rc:periodEndDate>2022-03-31</rc:periodEndDate>
+                            <rc:periodEndDate>2023-03-31</rc:periodEndDate>
                             <rc:majorFormType>INC</rc:majorFormType>
                             <rc:minorFormType>3NR</rc:minorFormType>
                         </rc:fileHeader>
@@ -29,7 +29,10 @@
                                     <rc:amendDetails/>
                                 </rc:amendmentRequest>
                             </rc:standardFields>
-                            <rc:formFields xsi:type="r3NR:FormFieldsType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ic="urn:www.ird.govt.nz/GWS:types/IncomeReturnCommon.v1"/>
+                            <rc:formFields xsi:type="r3NR:FormFieldsType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ic="urn:www.ird.govt.nz/GWS:types/IncomeReturnCommon.v1">
+                                <r3NR:taxJurisdiction>PH</r3NR:taxJurisdiction>
+                                <r3NR:taxIdNumber>111111111</r3NR:taxIdNumber>
+                            </rc:formFields>
                         </rc:fileBody>
                     </r3NR:fileRequest>
                 </fil:FileRequestWrapper>

@@ -9,18 +9,18 @@ Request
         <ret:File xmlns:ret="https://services.ird.govt.nz/GWS/Returns/">
             <ret:ReturnFileRequestMsg>
                 <fil:FileRequestWrapper xmlns:fil="https://services.ird.govt.nz/GWS/Returns/:types/FileRequest">
-                    <r6:fileRequest xmlns:r6="urn:www.ird.govt.nz/GWS:types/ReturnIR6.v1" xmlns:rc="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2">
+                    <r3NR:fileRequest xmlns:r3NR="urn:www.ird.govt.nz/GWS:types/ReturnIR3NR.v1" xmlns:rc="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2">
                         <rc:fileHeader xmlns:cmn="urn:www.ird.govt.nz/GWS:types/Common.v2">
                             <cmn:softwareProviderData>
                                 <cmn:softwareProvider>SoftwareProvider</cmn:softwareProvider>
                                 <cmn:softwarePlatform>SoftwarePlatform</cmn:softwarePlatform>
                                 <cmn:softwareRelease>1</cmn:softwareRelease>
                             </cmn:softwareProviderData>
-                            <cmn:identifier IdentifierValueType="IRD">079945793</cmn:identifier>
+                            <cmn:identifier IdentifierValueType="IRD">093989910</cmn:identifier>
                             <cmn:accountType>INC</cmn:accountType>
-                            <rc:periodEndDate>2022-03-31</rc:periodEndDate>
+                            <rc:periodEndDate>2023-03-31</rc:periodEndDate>
                             <rc:majorFormType>INC</rc:majorFormType>
-                            <rc:minorFormType>6</rc:minorFormType>
+                            <rc:minorFormType>3NR</rc:minorFormType>
                         </rc:fileHeader>
                         <rc:fileBody>
                             <rc:standardFields>
@@ -32,52 +32,62 @@ Request
                                     <rc:amendDetails/>
                                 </rc:amendmentRequest>
                             </rc:standardFields>
-                            <rc:formFields xsi:type="r6:FormFieldsType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ic="urn:www.ird.govt.nz/GWS:types/IncomeReturnCommon.v1">
-                                <r6:firstReturnEstateTrustStartDate>2018-05-28</r6:firstReturnEstateTrustStartDate>
-                                <r6:estateTrustType>C</r6:estateTrustType>
-                                <r6:interestIncome>
+                            <rc:formFields xsi:type="r3NR:FormFieldsType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ic="urn:www.ird.govt.nz/GWS:types/IncomeReturnCommon.v1">
+                                <r3NR:nzSuperIndicator>false</r3NR:nzSuperIndicator>
+                                <r3NR:totalInterestRWT>0</r3NR:totalInterestRWT>
+                                <r3NR:totalInterest>0</r3NR:totalInterest>
+                                <r3NR:nrwtOnTotalInterest>0</r3NR:nrwtOnTotalInterest>
+                                <r3NR:totalDividendCredits>0</r3NR:totalDividendCredits>
+                                <r3NR:totalDividends>0</r3NR:totalDividends>
+                                <r3NR:nrwtOnTotalDividends>0</r3NR:nrwtOnTotalDividends>
+                                <r3NR:totalWithholdingTaxOnRoyalties>0</r3NR:totalWithholdingTaxOnRoyalties>
+                                <r3NR:totalRoyalties>0</r3NR:totalRoyalties>
+                                <r3NR:nrwtOnTotalRoyalties>0</r3NR:nrwtOnTotalRoyalties>
+                                <r3NR:totalTaxCredits>10</r3NR:totalTaxCredits>
+                                <r3NR:totalNRWT>0</r3NR:totalNRWT>
+                                <r3NR:nzIncomeWithTaxDeducted>
                                     <ic:totalTaxPaid>0</ic:totalTaxPaid>
                                     <ic:totalIncome>0</ic:totalIncome>
-                                </r6:interestIncome>
-                                <r6:dividendIncome>
-                                    <ic:totalImputationCredits>10.00</ic:totalImputationCredits>
-                                    <ic:totalRWTCredits>1000.00</ic:totalRWTCredits>
-                                    <ic:totalGrossDividends>4000.00</ic:totalGrossDividends>
-                                </r6:dividendIncome>
-                                <r6:maoriAuthorityDistributions>
+                                </r3NR:nzIncomeWithTaxDeducted>
+                                <r3NR:maoriAuthorityDistributions>
                                     <ic:totalMACredits>1000.00</ic:totalMACredits>
                                     <ic:totalMADistributions>1000.00</ic:totalMADistributions>
-                                </r6:maoriAuthorityDistributions>
-                                <r6:partnershipEstateTrustIncome>
-                                    <ic:totalTaxCredits>6000.00</ic:totalTaxCredits>
+                                </r3NR:maoriAuthorityDistributions>
+                                <r3NR:pieIncome>
+                                    <ic:totalTaxCredits>0</ic:totalTaxCredits>
                                     <ic:totalIncome>1000.00</ic:totalIncome>
-                                </r6:partnershipEstateTrustIncome>
-                                <r6:overseasIncome>
-                                    <ic:totalTaxPaid>0</ic:totalTaxPaid>
-                                    <ic:totalIncome>1000</ic:totalIncome>
-                                </r6:overseasIncome>
-                                <r6:pieIncome>
+                                </r3NR:pieIncome>
+                                <r3NR:partnershipIncome>
                                     <ic:totalTaxCredits>1000.00</ic:totalTaxCredits>
                                     <ic:totalIncome>1000.00</ic:totalIncome>
-                                </r6:pieIncome>
-                                <r6:ltcIncome>
+                                </r3NR:partnershipIncome>
+                                <r3NR:estateTrustIncome>
                                     <ic:totalTaxCredits>1000.00</ic:totalTaxCredits>
                                     <ic:totalIncome>1000.00</ic:totalIncome>
-                                </r6:ltcIncome>
-                                <r6:ltcNonAllowableDeductions>0</r6:ltcNonAllowableDeductions>
-                                <r6:ltcPriorYearNonAllowableDeductionsClaimed>0</r6:ltcPriorYearNonAllowableDeductionsClaimed>
-                                <r6:ltcAdjustedIncome>1000.00</r6:ltcAdjustedIncome>
-                                <r6:residentialRentalIncome>
+                                </r3NR:estateTrustIncome>
+                                <r3NR:ltcIncome>
+                                    <ic:totalTaxCredits>1000.00</ic:totalTaxCredits>
+                                    <ic:totalIncome>1000.00</ic:totalIncome>
+                                </r3NR:ltcIncome>
+                                <r3NR:ltcNonAllowableDeductions>0</r3NR:ltcNonAllowableDeductions>
+                                <r3NR:ltcPriorYearNonAllowableDeductionsClaimed>0</r3NR:ltcPriorYearNonAllowableDeductionsClaimed>
+                                <r3NR:ltcAdjustedIncome>1000.00</r3NR:ltcAdjustedIncome>
+                                <r3NR:governmentSubsidies>0.00</r3NR:governmentSubsidies>
+                                <r3NR:otherCredits>4000.00</r3NR:otherCredits>
+                                <r3NR:residentialRentalIncome>
                                     <ic:indicator>I</ic:indicator>
+                                    <ic:grossResRentalIncome>600.00</ic:grossResRentalIncome>
+                                    <ic:netBrightlineProfits>750.00</ic:netBrightlineProfits>
+                                    <ic:otherResIncome>750.00</ic:otherResIncome>
                                     <ic:totalIncome>2100.00</ic:totalIncome>
                                     <ic:residentialRentalDeductions>1000.00</ic:residentialRentalDeductions>
                                     <ic:excessDeductionsBroughtForward>0.00</ic:excessDeductionsBroughtForward>
                                     <ic:deductionsClaimedThisYear>1000.00</ic:deductionsClaimedThisYear>
                                     <ic:netIncome>1100.00</ic:netIncome>
                                     <ic:excessDeductionsCarriedForward>0.00</ic:excessDeductionsCarriedForward>
-                                </r6:residentialRentalIncome>
-                                <r6:propertyInterestLimitation>
-                                    <ic:totalInterest>0.00</ic:totalInterest>
+                                </r3NR:residentialRentalIncome>
+                                <r3NR:propertyInterestLimitation>
+                                    <ic:totalInterest>0</ic:totalInterest>
                                     <ic:interestExpenseClaimed>0.00</ic:interestExpenseClaimed>
                                     <ic:interestExpenseClaimedReason>
                                         <ic:notResidentialOrMaoriExempt>false</ic:notResidentialOrMaoriExempt>
@@ -86,122 +96,49 @@ Request
                                         <ic:newBuildExemption>false</ic:newBuildExemption>
                                         <ic:developmentExemption>false</ic:developmentExemption>
                                         <ic:emergencyTransitionalSocialCouncil>false</ic:emergencyTransitionalSocialCouncil>
+                                        <ic:buildToRentExclusion>false</ic:buildToRentExclusion>
                                     </ic:interestExpenseClaimedReason>
-                                </r6:propertyInterestLimitation>
-                                <r6:businessOrRentalIncome>1000.00</r6:businessOrRentalIncome>
-                                <r6:otherIncome>
-                                    <ic:totalTaxCredits>1000.00</ic:totalTaxCredits>
-                                    <ic:totalIncome>1000.00</ic:totalIncome>
-                                </r6:otherIncome>
-                                <r6:saleOfProperty>1000.00</r6:saleOfProperty>
-                                <r6:rlwtCredit>0</r6:rlwtCredit>
-                                <r6:totalTaxCredits>11000.00</r6:totalTaxCredits>
-                                <r6:beneficiaryIncome>5000.00</r6:beneficiaryIncome>
-                                <r6:trusteeIncome>7000.00</r6:trusteeIncome>
-                                <r6:totalExpensesClaimed>0</r6:totalExpensesClaimed>
-                                <r6:lossesBroughtForward>0</r6:lossesBroughtForward>
-                                <r6:lossesClaimedThisYear>0</r6:lossesClaimedThisYear>
-                                <r6:lossCarriedBackPriorYear>0.00</r6:lossCarriedBackPriorYear>
-                                <r6:totalDistributions>1000.00</r6:totalDistributions>
-                                <r6:totalTaxableDistributions>0</r6:totalTaxableDistributions>
-                                <r6:disclosureRequiredCFCorFIF>false</r6:disclosureRequiredCFCorFIF>
-                                <r6:totalBeneficiaryTax>0</r6:totalBeneficiaryTax>
-                                <r6:totalTrusteeIncome>7000</r6:totalTrusteeIncome>
-                                <r6:taxOnTrusteeIncome>2310.00</r6:taxOnTrusteeIncome>
-                                <r6:trusteeShareOfOverseasTaxPaid>0</r6:trusteeShareOfOverseasTaxPaid>
-                                <r6:trusteeShareOfDivImpCredits>0</r6:trusteeShareOfDivImpCredits>
-                                <r6:researchAndDevelopment>
+                                </r3NR:propertyInterestLimitation>
+                                <r3NR:netRentalIncome>1000.00</r3NR:netRentalIncome>
+                                <r3NR:selfEmployedIncome>1000</r3NR:selfEmployedIncome>
+                                <r3NR:otherIncome>1000.00</r3NR:otherIncome>
+                                <r3NR:saleOfProperty>0</r3NR:saleOfProperty>
+                                <r3NR:rlwtCredit>0</r3NR:rlwtCredit>
+                                <r3NR:otherExpenses>1000.00</r3NR:otherExpenses>
+                                <r3NR:lossesBroughtForward>0</r3NR:lossesBroughtForward>
+                                <r3NR:lossesClaimedThisYear>0</r3NR:lossesClaimedThisYear>
+                                <r3NR:lossCarriedBackPriorYear>0.00</r3NR:lossCarriedBackPriorYear>
+                                <r3NR:totalTaxableIncome>8100.00</r3NR:totalTaxableIncome>
+                                <r3NR:workedInNZ>true</r3NR:workedInNZ>
+                                <r3NR:incomeEarned>1000.00</r3NR:incomeEarned>
+                                <r3NR:weeksWorked>3</r3NR:weeksWorked>
+                                <r3NR:daysWorked>21</r3NR:daysWorked>
+                                <r3NR:arrivalDate>2018-05-01</r3NR:arrivalDate>
+                                <r3NR:departureDate>2018-05-21</r3NR:departureDate>
+                                <r3NR:imputationBroughtForward>0.00</r3NR:imputationBroughtForward>
+                                <r3NR:taxOnTaxableIncome>850.50</r3NR:taxOnTaxableIncome>
+                                <r3NR:researchAndDevelopment>
                                     <ic:creditBroughtForward>0.00</ic:creditBroughtForward>
                                     <ic:nonrefundableCredit>0.00</ic:nonrefundableCredit>
                                     <ic:refundableCredit>0.00</ic:refundableCredit>
-                                </r6:researchAndDevelopment>
-                                <r6:trusteeShareOfTaxCredits>11000.00</r6:trusteeShareOfTaxCredits>
-                                <r6:taxOnTrusteeIncomeLessCredits>-8690.00</r6:taxOnTrusteeIncomeLessCredits>
-                                <r6:residualIncomeTax>-8690.00</r6:residualIncomeTax>
-                                <r6:provisionalTax>
-                                    <ic:provisionalTaxOption>EST</ic:provisionalTaxOption>
+                                </r3NR:researchAndDevelopment>
+                                <r3NR:residualIncomeTax>-3149.50</r3NR:residualIncomeTax>
+                                <r3NR:earlyPaymentDiscountEligibility>false</r3NR:earlyPaymentDiscountEligibility>
+                                <r3NR:overpaymentProvisionalTax>0.00</r3NR:overpaymentProvisionalTax>
+                                <r3NR:provisionalTax>
+                                    <ic:provisionalTaxOption>STD</ic:provisionalTaxOption>
                                     <ic:provisionalTaxPayable>1000</ic:provisionalTaxPayable>
                                     <ic:provisionalTaxStartDate>2019-01-01</ic:provisionalTaxStartDate>
-                                </r6:provisionalTax>
-                                <r6:beneficiaryDetails>
-                                    <ic:beneficiary>
-                                        <ic:beneficiaryIrdNumber>111111111</ic:beneficiaryIrdNumber>
-                                        <ic:taxIdNumber>123123123</ic:taxIdNumber>
-                                        <ic:beneficiaryName>Joe Bloggs</ic:beneficiaryName>
-                                        <ic:beneficiaryDOB>1985-09-01</ic:beneficiaryDOB>
-                                        <ic:taxJurisdiction>AZ</ic:taxJurisdiction>
-                                        <ic:noJurisdictionTin>false</ic:noJurisdictionTin>
-                                        <ic:tinNotRequired>false</ic:tinNotRequired>
-                                        <ic:beneficiaryAddress>1 Bloggs Way</ic:beneficiaryAddress>
-                                        <ic:beneficiaryIsNonResident>true</ic:beneficiaryIsNonResident>
-                                        <ic:shareOfInterestIncome>1000.00</ic:shareOfInterestIncome>
-                                        <ic:shareOfDividendsIncome>1000.00</ic:shareOfDividendsIncome>
-                                        <ic:shareOfMADistributionsIncome>1000.00</ic:shareOfMADistributionsIncome>
-                                        <ic:shareOfOverseasIncome>1000.00</ic:shareOfOverseasIncome>
-                                        <ic:shareOfOtherIncome>1000.00</ic:shareOfOtherIncome>
-                                        <ic:taxableIncome>5000.00</ic:taxableIncome>
-                                        <ic:taxPaidByTrust>true</ic:taxPaidByTrust>
-                                        <ic:distributionByNonComplyingtrust>10.00</ic:distributionByNonComplyingtrust>
-                                        <ic:taxOnTaxableIncome>850.50</ic:taxOnTaxableIncome>
-                                        <ic:overseasTaxPaid>10.00</ic:overseasTaxPaid>
-                                        <ic:taxLessOverseasTaxPaid>10.00</ic:taxLessOverseasTaxPaid>
-                                        <ic:dividendImputationCredit>10.00</ic:dividendImputationCredit>
-                                        <ic:taxLessDividendImputationCredit>10.00</ic:taxLessDividendImputationCredit>
-                                        <ic:otherPaidTaxCredits>10.00</ic:otherPaidTaxCredits>
-                                        <ic:taxLessOtherPaidTaxCredits>10.00</ic:taxLessOtherPaidTaxCredits>
-                                        <ic:taxOnDistributionByNonComplyingTrust>10.00</ic:taxOnDistributionByNonComplyingTrust>
-                                        <ic:beneficiaryTaxPayable>10.00</ic:beneficiaryTaxPayable>
-                                        <ic:openingBalance>10.00</ic:openingBalance>
-                                        <ic:accountingIncomeAllocated>10.00</ic:accountingIncomeAllocated>
-                                        <ic:corpus>10.00</ic:corpus>
-                                        <ic:capital>10.00</ic:capital>
-                                        <ic:useOfTrustProperty>10.00</ic:useOfTrustProperty>
-                                        <ic:distributionTrustAssets>10.00</ic:distributionTrustAssets>
-                                        <ic:forgivenessOfDebt>10.00</ic:forgivenessOfDebt>
-                                        <ic:withdrawnFromTrust>10.00</ic:withdrawnFromTrust>
-                                        <ic:closingBalance>10.00</ic:closingBalance>
-                                    </ic:beneficiary>
-                                </r6:beneficiaryDetails>
-                                <r6:settlementDetails>
-                                    <ic:settlement>
-                                        <ic:settlorFullName>First1 Settler</ic:settlorFullName>
-                                        <ic:noSettlementThisYear>false</ic:noSettlementThisYear>
-                                        <ic:settlorCommence>1985-09-01</ic:settlorCommence>
-                                        <ic:settlorIrdNumber>111111111</ic:settlorIrdNumber>
-                                        <ic:taxIdNumber>123123123</ic:taxIdNumber>
-                                        <ic:noJurisdictionTin>false</ic:noJurisdictionTin>
-                                        <ic:tinNotRequired>false</ic:tinNotRequired>
-                                        <ic:cash>10.00</ic:cash>
-                                        <ic:financialArrangements>10.00</ic:financialArrangements>
-                                        <ic:land>10.00</ic:land>
-                                        <ic:buildings>10.00</ic:buildings>
-                                        <ic:shares>10.00</ic:shares>
-                                        <ic:services>10.00</ic:services>
-                                        <ic:other>10.00</ic:other>
-                                        <ic:otherDescription>Other Description</ic:otherDescription>
-                                        <ic:settlementZeroValue>false</ic:settlementZeroValue>
-                                    </ic:settlement>
-                                </r6:settlementDetails>
-                                <r6:exemptFromCompliance>false</r6:exemptFromCompliance>
-                                <r6:netProfitLossBeforeTax>-10.00</r6:netProfitLossBeforeTax>
-                                <r6:taxAdjustments>10.00</r6:taxAdjustments>
-                                <r6:unTaxedRealisedGainsAndReceipts>20.00</r6:unTaxedRealisedGainsAndReceipts>
-                                <r6:financialArrangements>10.00</r6:financialArrangements>
-                                <r6:assetsLand>40.00</r6:assetsLand>
-                                <r6:assetsLandValuation>H</r6:assetsLandValuation>
-                                <r6:assetsBuildings>50.00</r6:assetsBuildings>
-                                <r6:assetsBuildingsValuation>M</r6:assetsBuildingsValuation>
-                                <r6:assetsShares>60.00</r6:assetsShares>
-                                <r6:assetsSharesValuation>T</r6:assetsSharesValuation>
-                                <r6:assetsTotal>150.00</r6:assetsTotal>
-                                <r6:financialArrangementsLiable>10.00</r6:financialArrangementsLiable>
-                                <r6:liabilitiesTotal>10.00</r6:liabilitiesTotal>
-                                <r6:equityOwners>20.00</r6:equityOwners>
-                                <r6:equityDrawings>20.00</r6:equityDrawings>
-                                <r6:equityYearEndBalances>150.00</r6:equityYearEndBalances>
+                                </r3NR:provisionalTax>
+                                <r3NR:partYearReturnIndicator>false</r3NR:partYearReturnIndicator>
+                                <r3NR:dateLeftNZ>2019-12-01</r3NR:dateLeftNZ>
+                                <r3NR:timePlannedToBeAway>string</r3NR:timePlannedToBeAway>
+                                <r3NR:taxIdNumber>111111111</r3NR:taxIdNumber>
+                                <r3NR:noJurisdictionTin>true</r3NR:noJurisdictionTin>
+                                <r3NR:tinNotRequired>true</r3NR:tinNotRequired>
                             </rc:formFields>
                         </rc:fileBody>
-                    </r6:fileRequest>
+                    </r3NR:fileRequest>
                 </fil:FileRequestWrapper>
             </ret:ReturnFileRequestMsg>
         </ret:File>
