@@ -127,7 +127,7 @@ The EI version can be identified in the standard header’s majorFormType field:
 - Test scenarios
 	- Employment Information test scenarios mind map
 	
-	![Test Scenarios](images/Emulated_Service_Employment_Information_Coverage.png)
+	![Test Scenarios](images/Employment%20Information%20Mock%20MindMap.png)
 
 - Test data
 	- The following test data can be tested in our Mock Services environment when submitting requests to the service operations
@@ -137,18 +137,17 @@ The EI version can be identified in the standard header’s majorFormType field:
 	
 | Operation      | Scenario ID | Data                                 |
 |----------------|-------------|--------------------------------------|
-| Prepop         | ES-08       | Employer IRD (_identifier_): 123041607 |
+| Prepop         | ES-PP-1     | Employer IRD (_identifier_): 123041607 |
 |                |             | _periodEndDate_: 2018-04-30            |
 |                |             | _payDayDate_: 2018-04-10               |
-| Prepop         | ES-10       | Employer IRD (_identifier_): 123094018 |
+| Prepop         | ES-PP-2     | Employer IRD (_identifier_): 123094018 |
 |                |             | _periodEndDate_: 2018-12-31            |
 |                |             | _payDayDate_: 2018-12-10               |
-| RetrieveReturn | ES-042      | Employer IRD (_identifier_): 123041607 |
+| RetrieveReturn | ES-RR-1     | Employer IRD (_identifier_): 123041607 |
 |                |             | _payDayDate_: 2018-04-10               |
 |                |             | _submissionKey_: 987654321             |
-| RetrieveReturn | ES-043      | Employer IRD (_identifier_): 123094018 |
-|                |             | _periodEndDate_: 2018-12-31            |
-|                |             | _payDayDate_: 2018-12-10               |
+| RetrieveReturn | ES-RR-9     | Employer IRD (_identifier_): 123094018 |
+|                |             | _payDayDate_: 2021-07-31               |
 |                |             | _submissionKey_: 987654321             |
 
 

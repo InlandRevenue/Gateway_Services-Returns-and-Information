@@ -8,6 +8,8 @@ DESC:	This schema defines the elements and related data types required for the R
 
 ' Date  			Change
 ' **********		************
+' 2023-03-10        - Update referenceID maxLength from 20 to 50.
+
 ' 2021-02-23		- Update totalPriorPeriodGrossAdjustment and totalPriorPeriodPAYEAdjustment to be of type MoneyType to allow for negative adjustments.
 
 ' 2019-11-19		- Updated filename to ReturnEI.v2 and version number to 2.0 in header.
@@ -93,7 +95,7 @@ _______________________________________
 				<xsd:simpleType>
 					<xsd:restriction base="xsd:normalizedString">
 						<xsd:minLength value="1"/>
-						<xsd:maxLength value="20"/>
+						<xsd:maxLength value="50"/>
 					</xsd:restriction>
 				</xsd:simpleType>
 			</xsd:element>
