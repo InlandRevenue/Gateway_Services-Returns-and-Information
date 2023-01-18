@@ -19,6 +19,9 @@
                                 <r8:submissionKey>1263943680</r8:submissionKey>
                                 <r8:residentialRentalIncome>
                                     <ic:indicator>I</ic:indicator>
+                                    <ic:grossResRentalIncome>600.00</ic:grossResRentalIncome>
+                                    <ic:netBrightlineProfits>750.00</ic:netBrightlineProfits>
+                                    <ic:otherResIncome>750.00</ic:otherResIncome>
                                     <ic:totalIncome>2100.00</ic:totalIncome>
                                     <ic:residentialRentalDeductions>1000.00</ic:residentialRentalDeductions>
                                     <ic:excessDeductionsBroughtForward>0.00</ic:excessDeductionsBroughtForward>
@@ -36,6 +39,7 @@
                                         <ic:newBuildExemption>true</ic:newBuildExemption>
                                         <ic:developmentExemption>true</ic:developmentExemption>
                                         <ic:emergencyTransitionalSocialCouncil>true</ic:emergencyTransitionalSocialCouncil>
+                                        <ic:buildToRentExclusion>true</ic:buildToRentExclusion>
                                     </ic:interestExpenseClaimedReason>
                                 </r8:propertyInterestLimitation>
                                 <r8:saleOfProperty>0.00</r8:saleOfProperty>
@@ -62,7 +66,7 @@
                                 <r8:rlwtCredit>0.00</r8:rlwtCredit>
                                 <r8:otherTaxCredits>1000.00</r8:otherTaxCredits>
                                 <r8:residualIncomeTax>-2000.00</r8:residualIncomeTax>
-                                <r8:overpaymentProvisionalTax>1000.00</r8:overpaymentProvisionalTax>
+                                <r8:overpaymentProvisionalTax>0.00</r8:overpaymentProvisionalTax>
                                 <r8:provisionalTax>
                                     <ic:provisionalTaxOption>STD</ic:provisionalTaxOption>
                                     <ic:provisionalTaxPayable>1000</ic:provisionalTaxPayable>

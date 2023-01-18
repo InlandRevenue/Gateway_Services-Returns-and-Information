@@ -15,7 +15,7 @@
                             </cmn:softwareProviderData>
                             <cmn:identifier IdentifierValueType="IRD">079945793</cmn:identifier>
                             <cmn:accountType>INC</cmn:accountType>
-                            <rc:periodEndDate>2022-03-31</rc:periodEndDate>
+                            <rc:periodEndDate>2023-03-31</rc:periodEndDate>
                             <rc:majorFormType>INC</rc:majorFormType>
                             <rc:minorFormType>6</rc:minorFormType>
                         </rc:fileHeader>
@@ -33,8 +33,8 @@
                                 <r6:firstReturnEstateTrustStartDate>2018-05-28</r6:firstReturnEstateTrustStartDate>
                                 <r6:estateTrustType>C</r6:estateTrustType>
                                 <r6:interestIncome>
-                                    <ic:totalTaxPaid>0</ic:totalTaxPaid>
-                                    <ic:totalIncome>0</ic:totalIncome>
+                                    <ic:totalTaxPaid>2000</ic:totalTaxPaid>
+                                    <ic:totalIncome>-2000</ic:totalIncome>
                                 </r6:interestIncome>
                                 <r6:dividendIncome>
                                     <ic:totalImputationCredits>10.00</ic:totalImputationCredits>
@@ -50,8 +50,8 @@
                                     <ic:totalIncome>1000.00</ic:totalIncome>
                                 </r6:partnershipEstateTrustIncome>
                                 <r6:overseasIncome>
-                                    <ic:totalTaxPaid>0</ic:totalTaxPaid>
-                                    <ic:totalIncome>1000</ic:totalIncome>
+                                    <ic:totalTaxPaid>65.00</ic:totalTaxPaid>
+                                    <ic:totalIncome>800.00</ic:totalIncome>
                                 </r6:overseasIncome>
                                 <r6:pieIncome>
                                     <ic:totalTaxCredits>1000.00</ic:totalTaxCredits>
@@ -66,6 +66,9 @@
                                 <r6:ltcAdjustedIncome>1000.00</r6:ltcAdjustedIncome>
                                 <r6:residentialRentalIncome>
                                     <ic:indicator>I</ic:indicator>
+                                    <ic:grossResRentalIncome>700.00</ic:grossResRentalIncome>
+                                    <ic:netBrightlineProfits>700.00</ic:netBrightlineProfits>
+                                    <ic:otherResIncome>700.00</ic:otherResIncome>
                                     <ic:totalIncome>2100.00</ic:totalIncome>
                                     <ic:residentialRentalDeductions>1000.00</ic:residentialRentalDeductions>
                                     <ic:excessDeductionsBroughtForward>0.00</ic:excessDeductionsBroughtForward>
@@ -74,15 +77,16 @@
                                     <ic:excessDeductionsCarriedForward>0.00</ic:excessDeductionsCarriedForward>
                                 </r6:residentialRentalIncome>
                                 <r6:propertyInterestLimitation>
-                                    <ic:totalInterest>1000</ic:totalInterest>
-                                    <ic:interestExpenseClaimed>1000</ic:interestExpenseClaimed>
+                                    <ic:totalInterest>1000.00</ic:totalInterest>
+                                    <ic:interestExpenseClaimed>1000.00</ic:interestExpenseClaimed>
                                     <ic:interestExpenseClaimedReason>
-                                        <ic:notResidentialOrMaoriExempt>true</ic:notResidentialOrMaoriExempt>
-                                        <ic:propertyNotInNz>true</ic:propertyNotInNz>
-                                        <ic:loansDrawnDown>true</ic:loansDrawnDown>
-                                        <ic:newBuildExemption>true</ic:newBuildExemption>
-                                        <ic:developmentExemption>true</ic:developmentExemption>
-                                        <ic:emergencyTransitionalSocialCouncil>true</ic:emergencyTransitionalSocialCouncil>
+                                        <ic:notResidentialOrMaoriExempt>false</ic:notResidentialOrMaoriExempt>
+                                        <ic:propertyNotInNz>false</ic:propertyNotInNz>
+                                        <ic:loansDrawnDown>false</ic:loansDrawnDown>
+                                        <ic:newBuildExemption>false</ic:newBuildExemption>
+                                        <ic:developmentExemption>false</ic:developmentExemption>
+                                        <ic:emergencyTransitionalSocialCouncil>false</ic:emergencyTransitionalSocialCouncil>
+                                        <ic:buildToRentExclusion>true</ic:buildToRentExclusion>
                                     </ic:interestExpenseClaimedReason>
                                 </r6:propertyInterestLimitation>
                                 <r6:businessOrRentalIncome>1000.00</r6:businessOrRentalIncome>

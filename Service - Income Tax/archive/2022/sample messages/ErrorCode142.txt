@@ -1,0 +1,80 @@
+Error code 142
+
+Request
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope">
+    <soap:Header>
+        <add:Action xmlns:add="http://www.w3.org/2005/08/addressing">https://services.ird.govt.nz/GWS/Returns/Return/File</add:Action>
+    </soap:Header>
+    <soap:Body>
+        <ret:File xmlns:ret="https://services.ird.govt.nz/GWS/Returns/">
+            <ret:ReturnFileRequestMsg>
+                <fil:FileRequestWrapper xmlns:fil="https://services.ird.govt.nz/GWS/Returns/:types/FileRequest">
+                    <r833:fileRequest xmlns:r833="urn:www.ird.govt.nz/GWS:types/ReturnIR833.v1" xmlns:rc="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2">
+                        <rc:fileHeader xmlns:cmn="urn:www.ird.govt.nz/GWS:types/Common.v2">
+                            <cmn:softwareProviderData>
+                                <cmn:softwareProvider>SoftwareProvider</cmn:softwareProvider>
+                                <cmn:softwarePlatform>SoftwarePlatform</cmn:softwarePlatform>
+                                <cmn:softwareRelease>1</cmn:softwareRelease>
+                            </cmn:softwareProviderData>
+                            <cmn:identifier IdentifierValueType="IRD">132243050</cmn:identifier>
+                            <cmn:accountType>INC</cmn:accountType>
+                            <rc:periodEndDate>2022-03-31</rc:periodEndDate>
+                            <rc:majorFormType>INC</rc:majorFormType>
+                            <rc:minorFormType>833</rc:minorFormType>
+                        </rc:fileHeader>
+                        <rc:fileBody>
+                            <rc:standardFields>
+                                <rc:isNilReturn>false</rc:isNilReturn>
+                                <rc:isFinalReturn>false</rc:isFinalReturn>
+                                <rc:amendmentRequest>
+                                    <rc:isAmended>false</rc:isAmended>
+                                    <rc:amendReason/>
+                                    <rc:amendDetails/>
+                                </rc:amendmentRequest>
+                            </rc:standardFields>
+                            <rc:formFields xsi:type="r833:FormFieldsType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ic="urn:www.ird.govt.nz/GWS:types/IncomeReturnCommon.v1">
+                                <r833:brightLine>true</r833:brightLine>
+                                <r833:propertyTitle>PT2</r833:propertyTitle>
+                                <r833:propertyAddress1>PA1</r833:propertyAddress1>
+                                <r833:propertyAddress2>PA2</r833:propertyAddress2>
+                                <r833:propertySuburb>PS</r833:propertySuburb>
+                                <r833:propertyCity>PC</r833:propertyCity>
+                                <r833:propertyPostCode>PPC</r833:propertyPostCode>
+                                <r833:dateOfPurchase>2019-01-01</r833:dateOfPurchase>
+                                <r833:dateOfSale>2019-02-02</r833:dateOfSale>
+                                <r833:salePrice>222222</r833:salePrice>
+                                <r833:purchasePrice>90000</r833:purchasePrice>
+                                <r833:deductibleCosts>10000</r833:deductibleCosts>
+                                <r833:totalCosts>100000</r833:totalCosts>
+                                <r833:netProfitLoss>122222.00</r833:netProfitLoss>
+                                <r833:shareOfOwnership>0.00</r833:shareOfOwnership>
+                                <r833:shareOfNetProfit>122222.00</r833:shareOfNetProfit>
+                            </rc:formFields>
+                        </rc:fileBody>
+                    </r833:fileRequest>
+                </fil:FileRequestWrapper>
+            </ret:ReturnFileRequestMsg>
+        </ret:File>
+    </soap:Body>
+</soap:Envelope>
+
+Response
+<env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope">
+    <env:Header xmlns:wsa="http://www.w3.org/2005/08/addressing">
+        <wsa:Action env:mustUnderstand="1">https://services.ird.govt.nz/GWS/Returns/Return/FileResponse</wsa:Action>
+    </env:Header>
+    <env:Body>
+        <FileResponse xmlns="https://services.ird.govt.nz/GWS/Returns/">
+            <FileResult>
+                <b:FileResponseWrapper xmlns:b="https://services.ird.govt.nz/GWS/Returns/:types/FileResponse">
+                    <fileResponse xmlns="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2">
+                        <statusMessage xmlns="urn:www.ird.govt.nz/GWS:types/Common.v2">
+                            <statusCode>142</statusCode>
+                            <errorMessage>Filing obligation not met</errorMessage>
+                        </statusMessage>
+                    </fileResponse>
+                </b:FileResponseWrapper>
+            </FileResult>
+        </FileResponse>
+    </env:Body>
+</env:Envelope>

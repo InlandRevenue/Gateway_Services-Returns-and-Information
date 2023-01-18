@@ -27,7 +27,7 @@
                                 <r3NR:totalWithholdingTaxOnRoyalties>0</r3NR:totalWithholdingTaxOnRoyalties>
                                 <r3NR:totalRoyalties>0</r3NR:totalRoyalties>
                                 <r3NR:nrwtOnTotalRoyalties>0</r3NR:nrwtOnTotalRoyalties>
-                                <r3NR:totalTaxCredits>0</r3NR:totalTaxCredits>
+                                <r3NR:totalTaxCredits>10</r3NR:totalTaxCredits>
                                 <r3NR:totalNRWT>0</r3NR:totalNRWT>
                                 <r3NR:nzIncomeWithTaxDeducted>
                                     <ic:totalTaxPaid>0</ic:totalTaxPaid>
@@ -60,6 +60,9 @@
                                 <r3NR:otherCredits>4000.00</r3NR:otherCredits>
                                 <r3NR:residentialRentalIncome>
                                     <ic:indicator>I</ic:indicator>
+                                    <ic:grossResRentalIncome>600.00</ic:grossResRentalIncome>
+                                    <ic:netBrightlineProfits>750.00</ic:netBrightlineProfits>
+                                    <ic:otherResIncome>750.00</ic:otherResIncome>
                                     <ic:totalIncome>2100.00</ic:totalIncome>
                                     <ic:residentialRentalDeductions>1000.00</ic:residentialRentalDeductions>
                                     <ic:excessDeductionsBroughtForward>0.00</ic:excessDeductionsBroughtForward>
@@ -77,6 +80,7 @@
                                         <ic:newBuildExemption>true</ic:newBuildExemption>
                                         <ic:developmentExemption>true</ic:developmentExemption>
                                         <ic:emergencyTransitionalSocialCouncil>true</ic:emergencyTransitionalSocialCouncil>
+                                        <ic:buildToRentExclusion>true</ic:buildToRentExclusion>
                                     </ic:interestExpenseClaimedReason>
                                 </r3NR:propertyInterestLimitation>
                                 <r3NR:netRentalIncome>1000.00</r3NR:netRentalIncome>
@@ -104,7 +108,7 @@
                                 </r3NR:researchAndDevelopment>
                                 <r3NR:residualIncomeTax>-3149.50</r3NR:residualIncomeTax>
                                 <r3NR:earlyPaymentDiscountEligibility>false</r3NR:earlyPaymentDiscountEligibility>
-                                <r3NR:overpaymentProvisionalTax>1000.00</r3NR:overpaymentProvisionalTax>
+                                <r3NR:overpaymentProvisionalTax>0.00</r3NR:overpaymentProvisionalTax>
                                 <r3NR:provisionalTax>
                                     <ic:provisionalTaxOption>STD</ic:provisionalTaxOption>
                                     <ic:provisionalTaxPayable>1000</ic:provisionalTaxPayable>
@@ -113,6 +117,10 @@
                                 <r3NR:partYearReturnIndicator>false</r3NR:partYearReturnIndicator>
                                 <r3NR:dateLeftNZ>2019-12-01</r3NR:dateLeftNZ>
                                 <r3NR:timePlannedToBeAway>string</r3NR:timePlannedToBeAway>
+                                <r3NR:taxJurisdiction>PH</r3NR:taxJurisdiction>
+                                <r3NR:taxIdNumber>111111111</r3NR:taxIdNumber>
+                                <r3NR:noJurisdictionTin>true</r3NR:noJurisdictionTin>
+                                <r3NR:tinNotRequired>true</r3NR:tinNotRequired>
                             </r3NR:formFields>
                         </responseBody>
                     </retrieveReturnResponse>
