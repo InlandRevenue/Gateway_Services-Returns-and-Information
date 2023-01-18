@@ -43,6 +43,55 @@
     
 
 
+<<<<<<< HEAD
+| Form Type       | Scenario ID         | Operation                 | Data                                                                                          |
+|-----------------|---------------------|---------------------------|-----------------------------------------------------------------------------------------------|
+| IR3             | INC-ES-08           | RetrieveReturn            | Customer IRD (_identifier_): 132310297                                                          |
+|                 | INC-ES-11           | RetrieveReturn            | Customer ACC (_identifier_): 139562127INC003                                                    |
+|                 | INC-ES-14           | RetrieveStatus            | Customer IRD (_identifier_): 132310297                                                          |
+|                 | INC-ES-15           | RetrieveStatus            | Customer IRD (_identifier_): 070876272                                                          |
+|                 | INC-ES-17           | Prepop                    | Customer IRD (_identifier_): 015679840                                                          |
+|                 | All other scenarios |                           | Customer IRD (_identifier_): 132306907                                                          |
+| IR3NR           | All scenarios       |                           | Customer IRD (_identifier_): 093989910                                                          |
+| IR4             | INC-ES-28           | RetrieveReturn            | Customer IRD (_identifier_): 132329362                                                          |
+|                 | INC-ES-32           | RetrieveStatus            | Customer IRD (_identifier_): 132329362                                                          |
+|                 | INC-ES-33           | RetrieveStatus            | Customer IRD (_identifier_): 107031227                                                          |
+|                 | All other scenarios |                           | Customer IRD (_identifier_): 096062311                                                          |
+| IR4J            | All scenarios       |                           | Customer IRD (_identifier_): 078445386                                                          |
+| IR6             | All scenarios       |                           | Customer IRD (_identifier_): 079945793                                                          |
+| IR7             | INC-ES-40           | File                      | Customer IRD (_identifier_): 019515842                                                          |
+|                 | INC-ES-41           | File                      | Customer IRD (_identifier_): 105493711                                                          |
+|                 | INC-ES-40           | RetrieveReturn            | Customer IRD (_identifier_): 019515842                                                          |
+|                 | INC-ES-42           | RetrieveReturn            | Customer IRD (_identifier_): 105493711                                                          |
+| IR8             | All scenarios       |                           | Customer IRD (_identifier_): 050700461                                                          |
+| IR8J            | All scenarios       |                           | Customer IRD (_identifier_): 113613831                                                          |
+| IR9             | All scenarios       |                           | Customer IRD (_identifier_): 056632778                                                          |
+| IR44            | All scenarios       |                           | Customer IRD (_identifier_): 052120330                                                          |
+| IR526           | All scenarios       |                           | Customer IRD (_identifier_): 055786372                                                          |
+| Authorisation   | INC-ES-01           | All                       | Customer IRD (_identifier_): 111001111                                                          |
+| Error Scenarios | INC-ES-63           | File                      | IR9 Return with multiple IR10 attachments                                                     |
+|                 | INC-ES-64           | RetrieveReturn            | IR4 Customer IRD (_identifier_): 107031227                                                      |
+|                 | INC-ES-65           | File                      | IR9 return with IR307 attachment                                                              |
+|                 | INC-ES-66           | File                      | IR3 return with:                                                                              |
+|                 |                     |                           | totalPAYEDeducted > totalGrossIncome                                                          |
+|                 |                     |                           | totalIncomeNotLiableForACCLevy > totalGrossIncome                                             |
+|                 |                     |                           | totalExtinguishedTCPDs > totalTCPDs                                                           |
+|                 | INC-ES-67           | RetrieveFilingObligations | IR4 Customer IRD (_identifier_): 078650362                                                      |
+|                 | INC-ES-68           | File                      | IR215 standalone or attachment with:                                                          |
+|                 |                     |                           | _periodEndDate_: 2021-03-31 or later                                                            |
+|                 |                     |                           | _incomeFromPie_: value > 0                                                                      |
+|                 | INC-ES-78           | File                      | IR3 return with:                                                                              |
+|                 |                     |                           | _periodEndDate_: 2020-03-31 or earlier                                                          |
+|                 |                     |                           | _pieIncome.totalTaxCredits_ > (_taxOnTaxableIncome_ / _totalTaxableIncome_) * _pieIncome.totalIncome_ |
+|                 | INC-ES-66           | File                      | IR3 return with:                                                                              |
+|                 |                     |                           | _periodEndDate_: 2021-03-31 or later                                                            |
+|                 |                     |                           | _lossCarriedBackPriorYear_: value > 0                                                           |
+|                 |                     |                           | Customer IRD (_identifier_): 132057273                                                          |
+|                 | INC-ES-67           | File                      | IR44 return with:                                                                             |
+|                 |                     |                           | _periodEndDate_: 2021-03-31 or later                                                            |
+|                 |                     |                           | _residentialRentalIncome.indicator_: missing                                                    |
+|                 |                     |                           | _residentialRentalIncome.totalIncome_: value > 0                                                |
+=======
 |     Form Type            	|     New Scenario ID          	|     Operation                    	|     Data                                                                                               	|
 |--------------------------	|------------------------------	|----------------------------------	|--------------------------------------------------------------------------------------------------------	|
 |     IR3                  	|     INC-IR3-ES   8           	|     RetrieveReturn               	|     Customer   IRD (identifier): 132310297                                                             	|
@@ -90,6 +139,7 @@
 |                          	|                              	|                                  	|     periodEndDate: 2021-03-31 or later                                                                 	|
 |                          	|                              	|                                  	|     residentialRentalIncome.indicator: missing                                                         	|
 |                          	|                              	|                                  	|     residentialRentalIncome.totalIncome: value > 0                                                     	|
+>>>>>>> a80add8437d0ac2150918e74c7c01db83371b80c
 
 ## Mock Environment Information:
 -----------------
