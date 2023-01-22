@@ -8,7 +8,7 @@ DESC:		This schema defines the common data types used accross the IRD hosted, Ga
 
 ' Date  			Change
 ' **********		************
-' 2023-03-10		Added Quantity18DigitTypePositive for positive integers up to 999,999,999,999,999,999
+' 2023-03-10		Added Quantity15DigitTypePositive for positive integers up to 999,999,999,999,999
 ' 2021-11-25		Added String60, string of up to 60 characters
 ' 2020-10-14		Update EmailAddressType regex to disallow special characters in the domain (after the @ symbol)
 ' 2020-09-28		Update EmailAddressType regex to properly escape characters
@@ -96,13 +96,13 @@ _______________________________________
 			<xsd:maxInclusive value="0"/>
 		</xsd:restriction>
 	</xsd:simpleType>
-	<xsd:simpleType name="Quantity18DigitTypePositive">
+	<xsd:simpleType name="Quantity15DigitTypePositive">
 		<xsd:annotation>
-			<xsd:documentation xml:lang="en">Positive integer limited to 18 digits.</xsd:documentation>
+			<xsd:documentation xml:lang="en">Positive integer limited to 15 digits.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:restriction base="xsd:integer">
 			<xsd:minInclusive value="0"/>
-			<xsd:maxInclusive value="999999999999999999"/>
+			<xsd:maxInclusive value="999999999999999"/>
 		</xsd:restriction>
 	</xsd:simpleType>
 	<!--Date/Time Types-->
