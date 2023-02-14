@@ -9,6 +9,7 @@
  **********  	************
  
  2022-10-13		rlwtCredit changed from MoneyType to MoneyTypePositive
+				totalTaxCredits changed from MoneyTypePositive to MoneyType
 				nzIncomeWithTaxDeducted changed from IncomeWithTaxPaidType to IncomeWithTaxPaidType1
 				taxJurisdiction added
 				taxIdNumber added
@@ -62,7 +63,7 @@ _______________________________________
 					<xsd:element name="totalWithholdingTaxOnRoyalties" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="totalRoyalties" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="nrwtOnTotalRoyalties" type="cmn:MoneyTypePositive" minOccurs="0"/>
-					<xsd:element name="totalTaxCredits" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="totalTaxCredits" type="cmn:MoneyType" minOccurs="0"/>
 					<xsd:element name="totalNRWT" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="nzIncomeWithTaxDeducted" type="ic:IncomeWithTaxPaidType1" minOccurs="0"/>
 					<xsd:element name="maoriAuthorityDistributions" type="ic:MADistributionIncomeType" minOccurs="0"/>
