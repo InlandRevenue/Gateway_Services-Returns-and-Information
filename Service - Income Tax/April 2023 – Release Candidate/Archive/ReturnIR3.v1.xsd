@@ -10,7 +10,6 @@ Date  		Change
 2022-10-04	rlwtCredit changed from MoneyType to MoneyTypePositive
 				
 			totalTaxDeducted changed from MoneyTypePositive to MoneyType
-			taxCreditSubtotal changed from MoneyTypePositive to MoneyType
 			
 			pieIncome changed from IncomeWithTaxCreditType to PieIncomeWithTaxCreditType
 			
@@ -90,7 +89,7 @@ _______________________________________
 					<xsd:element name="ltcPriorYearNonAllowableDeductionsClaimed" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="ltcAdjustedIncome" type="cmn:MoneyType" minOccurs="0"/>
 					<xsd:element name="governmentSubsidies" type="cmn:MoneyTypePositive" minOccurs="0"/>
-					<xsd:element name="taxCreditSubtotal" type="cmn:MoneyType" minOccurs="0"/>
+					<xsd:element name="taxCreditSubtotal" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="totalShareholderEmployeeSalary" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="futureShareholderSalary" type="xsd:boolean" minOccurs="0"/>
 					<xsd:element name="shareholderAIMTaxPaid" type="cmn:MoneyTypePositive" minOccurs="0"/>
