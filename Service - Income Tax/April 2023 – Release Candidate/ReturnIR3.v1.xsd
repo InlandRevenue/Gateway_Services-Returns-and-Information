@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 	NAME:             ReturnIR3.v1.xsd
-	VER:              1.25
+	VER:              1.25 as of 27/02/2023
 	ISSUER:           Inland Revenue Department
 	DESC:             This schema defines the elements and related data types required for the Returns Individual Income Tax 2020 Gateway Service.
     
 Date  		Change
 **********  ************
+2023-02-23  taxCreditSubtotal changed from MoneyTypePositive to MoneyType
+
 2022-10-04	rlwtCredit changed from MoneyType to MoneyTypePositive
 				
 			totalTaxDeducted changed from MoneyTypePositive to MoneyType
-			taxCreditSubtotal changed from MoneyTypePositive to MoneyType
-			
+						
 			pieIncome changed from IncomeWithTaxCreditType to PieIncomeWithTaxCreditType
 			
 			interestIncome changed from IncomeWithTaxPaidType to IncomeWithTaxPaidType3 
