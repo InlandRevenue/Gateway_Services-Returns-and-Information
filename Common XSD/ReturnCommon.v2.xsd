@@ -8,19 +8,20 @@ DESC:	This schema defines the ReturnCommon data types used accross the IRD hoste
 
 ' Date  			Change
 ' **********		************
+' 2022-08-10		Adding receivedDate to RetrieveStatus
 ' 2021-06-11		Add new data type FourDecimalRate to support exchange rates.
 ' 2020-07-01		Increase creditTransferRequest maxOccurs from 10 to 20
 ' 2020-01-10		Initial
 _______________________________________
 -->
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-          	xmlns:cmn="urn:www.ird.govt.nz/GWS:types/Common.v2"
-          	xmlns:rc="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2"
-          	xmlns="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2"
-          	targetNamespace="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2"
-          	elementFormDefault="qualified"
-          	attributeFormDefault="unqualified"
-          	version="1.0">
+            xmlns:cmn="urn:www.ird.govt.nz/GWS:types/Common.v2"
+            xmlns:rc="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2"
+            xmlns="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2"
+            targetNamespace="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2"
+            elementFormDefault="qualified"
+            attributeFormDefault="unqualified"
+            version="1.0">
 	<xsd:annotation>
 		<xsd:documentation xml:lang="en">
 			This is a schema meant to be a common ground for defining tax type agnostic returns operations.
@@ -29,7 +30,7 @@ _______________________________________
 	</xsd:annotation>
 	<!--Imports Statement(s)-->
 	<xsd:import namespace="urn:www.ird.govt.nz/GWS:types/Common.v2"
-          		schemaLocation="./Common.v2.xsd">
+	            schemaLocation="./Common.v2.xsd">
 		<xsd:annotation>
 			<xsd:documentation xml:lang="en">Contains common data types.</xsd:documentation>
 		</xsd:annotation>
@@ -42,10 +43,10 @@ _______________________________________
 		</xsd:annotation>
 		<xsd:sequence>
 			<xsd:element name="fileHeader"
-           				type="FileHeaderType"/>
+			             type="FileHeaderType"/>
 			<!--This should be the same across all returns.-->
 			<xsd:element name="fileBody"
-           				type="FileBodyType"/>
+			             type="FileBodyType"/>
 		</xsd:sequence>
 	</xsd:complexType>
 	<xsd:complexType name="FileHeaderType">
@@ -56,7 +57,7 @@ _______________________________________
 			<xsd:extension base="cmn:HeaderType">
 				<xsd:sequence>
 					<xsd:element name="periodEndDate"
-           						type="cmn:DateType">
+					             type="cmn:DateType">
 						<xsd:annotation>
 							<xsd:documentation xml:lang="en">The filing period for which the return is applicable.</xsd:documentation>
 						</xsd:annotation>
@@ -73,7 +74,7 @@ _______________________________________
 						</xsd:simpleType>
 					</xsd:element>
 					<xsd:element name="minorFormType"
-           						minOccurs="0">
+					             minOccurs="0">
 						<xsd:annotation>
 							<xsd:documentation xml:lang="en">The minor form type of this return. (ex: 101A)</xsd:documentation>
 						</xsd:annotation>
@@ -91,10 +92,10 @@ _______________________________________
 	<xsd:complexType name="FileBodyType">
 		<xsd:sequence>
 			<xsd:element name="standardFields"
-           				type="StandardFieldsType"/>
+			             type="StandardFieldsType"/>
 			<!--Data fields common to all return ABOVE.-->
 			<xsd:element name="formFields"
-           				type="FormFieldsType">
+			             type="FormFieldsType">
 				<xsd:annotation>
 					<xsd:documentation xml:lang="en">returnData element will encapsulate data specific to each return. This element will be populated in importing schemas.</xsd:documentation>
 				</xsd:annotation>
@@ -104,21 +105,21 @@ _______________________________________
 	<xsd:complexType name="StandardFieldsType">
 		<xsd:sequence>
 			<xsd:element name="isNilReturn"
-           				type="xsd:boolean"
-           				minOccurs="0"/>
+			             type="xsd:boolean"
+			             minOccurs="0"/>
 			<xsd:element name="isFinalReturn"
-           				type="xsd:boolean"
-           				minOccurs="0">
+			             type="xsd:boolean"
+			             minOccurs="0">
 				<xsd:annotation>
 					<xsd:documentation xml:lang="en">There is no concept of a final return for AIM, for every other return this element should be included with true/false</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="amendmentRequest"
-           				type="AmendmentRequestType"/>
+			             type="AmendmentRequestType"/>
 			<xsd:element name="creditTransferRequest"
-           				type="TransferRequestType"
-           				minOccurs="0"
-           				maxOccurs="20">
+			             type="TransferRequestType"
+			             minOccurs="0"
+			             maxOccurs="20">
 				<xsd:annotation>
 					<xsd:documentation xml:lang="en">Credit transfers can be requested and the balance split more than one time.</xsd:documentation>
 				</xsd:annotation>
@@ -126,7 +127,7 @@ _______________________________________
 		</xsd:sequence>
 	</xsd:complexType>
 	<xsd:complexType name="FormFieldsType"
-               		abstract="true">
+	                 abstract="true">
 		<xsd:annotation>
 			<xsd:documentation xml:lang="en">This complex type is used in order to prevent using an element of an anonymous type. Type must be extended.</xsd:documentation>
 		</xsd:annotation>
@@ -139,8 +140,8 @@ _______________________________________
 			<xsd:extension base="cmn:StandardResponseType">
 				<xsd:sequence>
 					<xsd:element name="responseBody"
-           						type="FileResponseBodyType"
-           						minOccurs="0"/>
+					             type="FileResponseBodyType"
+					             minOccurs="0"/>
 				</xsd:sequence>
 			</xsd:extension>
 		</xsd:complexContent>
@@ -148,14 +149,14 @@ _______________________________________
 	<xsd:complexType name="FileResponseBodyType">
 		<xsd:sequence>
 			<xsd:element name="gatewayId"
-           				type="xsd:normalizedString"/>
+			             type="xsd:normalizedString"/>
 			<xsd:element name="submissionKey"
-           				type="cmn:Quantity32TypePositive"
-           				minOccurs="0"/>
+			             type="cmn:Quantity32TypePositive"
+			             minOccurs="0"/>
 		</xsd:sequence>
 	</xsd:complexType>
 	<xsd:element name="fileResponse"
-           		type="FileResponseType">
+	             type="FileResponseType">
 		<xsd:annotation>
 			<xsd:documentation xml:lang="en">Defines the response for the File operation.</xsd:documentation>
 		</xsd:annotation>
@@ -170,13 +171,13 @@ _______________________________________
 			<xsd:extension base="cmn:HeaderType">
 				<xsd:sequence>
 					<xsd:element name="periodEndDate"
-           						type="cmn:DateType">
+					             type="cmn:DateType">
 						<xsd:annotation>
 							<xsd:documentation xml:lang="en">The filing period for which the return is applicable.</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
 					<xsd:element name="majorFormType"
-           						minOccurs="0">
+					             minOccurs="0">
 						<xsd:annotation>
 							<xsd:documentation xml:lang="en">The major form type of this return. (ex: GST)</xsd:documentation>
 						</xsd:annotation>
@@ -188,7 +189,7 @@ _______________________________________
 						</xsd:simpleType>
 					</xsd:element>
 					<xsd:element name="minorFormType"
-           						minOccurs="0">
+					             minOccurs="0">
 						<xsd:annotation>
 							<xsd:documentation xml:lang="en">The minor form type of this return. (ex. ANN)</xsd:documentation>
 						</xsd:annotation>
@@ -200,8 +201,8 @@ _______________________________________
 						</xsd:simpleType>
 					</xsd:element>
 					<xsd:element name="submissionKey"
-           						type="cmn:Quantity32TypePositive"
-           						minOccurs="0"/>
+					             type="cmn:Quantity32TypePositive"
+					             minOccurs="0"/>
 				</xsd:sequence>
 			</xsd:extension>
 		</xsd:complexContent>
@@ -209,16 +210,16 @@ _______________________________________
 	<xsd:complexType name="RetrieveStandardFieldsType">
 		<xsd:sequence>
 			<xsd:element name="isNilReturn"
-           				type="xsd:boolean"
-           				minOccurs="0"/>
+			             type="xsd:boolean"
+			             minOccurs="0"/>
 		</xsd:sequence>
 	</xsd:complexType>
 	<xsd:complexType name="RetrieveReturnResponseBodyType"
-               		abstract="true">
+	                 abstract="true">
 		<xsd:sequence>
 			<xsd:element name="standardFields"
-           				type="RetrieveStandardFieldsType"
-           				minOccurs="0"/>
+			             type="RetrieveStandardFieldsType"
+			             minOccurs="0"/>
 		</xsd:sequence>
 	</xsd:complexType>
 	<xsd:complexType name="RetrieveReturnResponseType">
@@ -229,33 +230,33 @@ _______________________________________
 			<xsd:extension base="cmn:StandardResponseType">
 				<xsd:sequence>
 					<xsd:element name="responseBody"
-           						type="RetrieveReturnResponseBodyType"
-           						minOccurs="0"
-           						maxOccurs="100"/>
+					             type="RetrieveReturnResponseBodyType"
+					             minOccurs="0"
+					             maxOccurs="100"/>
 				</xsd:sequence>
 			</xsd:extension>
 		</xsd:complexContent>
 	</xsd:complexType>
 	<xsd:element name="retrieveReturnResponse"
-           		type="RetrieveReturnResponseType"/>
+	             type="RetrieveReturnResponseType"/>
 	<!--FilingObligations-->
 	<!--FilingObligations Structures-->
 	<xsd:complexType name="ResponseBodyType">
 		<xsd:sequence>
 			<xsd:element name="filingObligation"
-           				type="FilingObligationsType"
-           				minOccurs="0"
-           				maxOccurs="unbounded"/>
+			             type="FilingObligationsType"
+			             minOccurs="0"
+			             maxOccurs="unbounded"/>
 		</xsd:sequence>
 	</xsd:complexType>
 	<xsd:complexType name="FilingObligationsType">
 		<xsd:sequence>
 			<xsd:element name="periodEndDate"
-           				type="cmn:DateType"/>
+			             type="cmn:DateType"/>
 			<xsd:element name="status"
-           				type="CodeStringType"/>
+			             type="CodeStringType"/>
 			<xsd:element name="dueDate"
-           				type="cmn:DateType"/>
+			             type="cmn:DateType"/>
 		</xsd:sequence>
 	</xsd:complexType>
 	<xsd:complexType name="ObligationsRequestType">
@@ -277,7 +278,7 @@ _______________________________________
 						</xsd:simpleType>
 					</xsd:element>
 					<xsd:element name="minorFormType"
-           						minOccurs="0">
+					             minOccurs="0">
 						<xsd:annotation>
 							<xsd:documentation xml:lang="en">The minor form type of this return. (ex. ANN)</xsd:documentation>
 						</xsd:annotation>
@@ -300,16 +301,16 @@ _______________________________________
 			<xsd:extension base="cmn:StandardResponseType">
 				<xsd:sequence>
 					<xsd:element name="responseBody"
-           						type="ResponseBodyType"
-           						minOccurs="0"/>
+					             type="ResponseBodyType"
+					             minOccurs="0"/>
 				</xsd:sequence>
 			</xsd:extension>
 		</xsd:complexContent>
 	</xsd:complexType>
 	<xsd:element name="retrieveFilingObligationsRequest"
-           		type="ObligationsRequestType"/>
+	             type="ObligationsRequestType"/>
 	<xsd:element name="retrieveFilingObligationsResponse"
-           		type="ObligationsResponseType"/>
+	             type="ObligationsResponseType"/>
 	<!--RetrieveStatus-->
 	<!--RetrieveStatus Structures-->
 	<xsd:complexType name="RetrieveStatusResponseType">
@@ -320,8 +321,8 @@ _______________________________________
 			<xsd:extension base="cmn:StandardResponseType">
 				<xsd:sequence>
 					<xsd:element name="responseBody"
-           						type="StatusResponseBodyType"
-           						minOccurs="0"/>
+					             type="StatusResponseBodyType"
+					             minOccurs="0"/>
 				</xsd:sequence>
 			</xsd:extension>
 		</xsd:complexContent>
@@ -329,19 +330,26 @@ _______________________________________
 	<xsd:complexType name="StatusResponseBodyType">
 		<xsd:sequence>
 			<xsd:element name="returnStatus"
-           				type="ReturnStatusType"
-           				maxOccurs="unbounded"/>
+			             type="ReturnStatusType"
+			             maxOccurs="unbounded"/>
 		</xsd:sequence>
 	</xsd:complexType>
 	<xsd:complexType name="ReturnStatusType">
 		<xsd:sequence>
 			<xsd:element name="status"
-           				type="CodeStringType"/>
+			             type="CodeStringType"/>
+			<xsd:element name="receivedDate"
+			             type="cmn:DateType"
+			             minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation xml:lang="en">The received date of the return</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
 			<xsd:element name="submissionKey"
-           				type="cmn:Quantity32TypePositive"
-           				minOccurs="0"/>
+			             type="cmn:Quantity32TypePositive"
+			             minOccurs="0"/>
 			<xsd:element name="majorFormType"
-           				minOccurs="0">
+			             minOccurs="0">
 				<xsd:annotation>
 					<xsd:documentation xml:lang="en">The major form type of this return</xsd:documentation>
 				</xsd:annotation>
@@ -353,7 +361,7 @@ _______________________________________
 				</xsd:simpleType>
 			</xsd:element>
 			<xsd:element name="minorFormType"
-           				minOccurs="0">
+			             minOccurs="0">
 				<xsd:annotation>
 					<xsd:documentation xml:lang="en">The minor form type of this return. (ex: ANN)</xsd:documentation>
 				</xsd:annotation>
@@ -365,8 +373,8 @@ _______________________________________
 				</xsd:simpleType>
 			</xsd:element>
 			<xsd:element name="additionalInfo"
-           				type="CodeStringType"
-           				minOccurs="0">
+			             type="CodeStringType"
+			             minOccurs="0">
 				<xsd:annotation>
 					<xsd:documentation xml:lang="en">Additional information on the status of the form</xsd:documentation>
 				</xsd:annotation>
@@ -374,9 +382,9 @@ _______________________________________
 		</xsd:sequence>
 	</xsd:complexType>
 	<xsd:element name="retrieveFormInfoRequest"
-           		type="FormInfoRequestType"/>
+	             type="FormInfoRequestType"/>
 	<xsd:element name="retrieveStatusResponse"
-           		type="RetrieveStatusResponseType"/>
+	             type="RetrieveStatusResponseType"/>
 	<!--Prepop-->
 	<!--Prepop Structures-->
 	<xsd:complexType name="PrepopResponseType">
@@ -387,46 +395,46 @@ _______________________________________
 			<xsd:extension base="cmn:StandardResponseType">
 				<xsd:sequence>
 					<xsd:element name="responseBody"
-           						type="PrepopResponseBodyType"
-           						minOccurs="0"/>
+					             type="PrepopResponseBodyType"
+					             minOccurs="0"/>
 				</xsd:sequence>
 			</xsd:extension>
 		</xsd:complexContent>
 	</xsd:complexType>
 	<xsd:complexType name="PrepopResponseBodyType"
-               		abstract="true"/>
+	                 abstract="true"/>
 	<xsd:element name="prepopResponse"
-           		type="PrepopResponseType"/>
+	             type="PrepopResponseType"/>
 	<!--DataTypes-->
 	<!--ReturnCommon Data Types-->
 	<xsd:complexType name="TransferRequestType">
 		<xsd:sequence>
 			<xsd:element name="transferIRD"
-           				type="cmn:IRDNumberType"/>
+			             type="cmn:IRDNumberType"/>
 			<xsd:element name="transferAccountType"
-           				type="cmn:AccountTypeType"/>
+			             type="cmn:AccountTypeType"/>
 			<xsd:element name="transferFilingPeriod"
-           				type="cmn:DateType"/>
+			             type="cmn:DateType"/>
 			<xsd:element name="associatedCustomer"
-           				type="xsd:boolean"/>
+			             type="xsd:boolean"/>
 			<xsd:element name="transferAmount"
-           				type="cmn:MoneyTypePositive"/>
+			             type="cmn:MoneyTypePositive"/>
 		</xsd:sequence>
 	</xsd:complexType>
 	<xsd:complexType name="AmendmentRequestType">
 		<xsd:sequence>
 			<xsd:element name="isAmended"
-           				type="xsd:boolean">
+			             type="xsd:boolean">
 				<xsd:annotation>
 					<xsd:documentation xml:lang="en">If this return is being amended this isAmended field should be true and amendmentReason should be filled out.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="amendReason"
-           				type="AmendReasonType"
-           				nillable="true"/>
+			             type="AmendReasonType"
+			             nillable="true"/>
 			<xsd:element name="amendDetails"
-           				type="AmendDetailsType"
-           				nillable="true"/>
+			             type="AmendDetailsType"
+			             nillable="true"/>
 		</xsd:sequence>
 	</xsd:complexType>
 	<xsd:simpleType name="AmendReasonType">
@@ -457,46 +465,46 @@ _______________________________________
 		<xsd:simpleContent>
 			<xsd:extension base="xsd:normalizedString">
 				<xsd:attribute name="code"
-             					type="xsd:normalizedString"
-             					use="optional"/>
+				               type="xsd:normalizedString"
+				               use="optional"/>
 			</xsd:extension>
 		</xsd:simpleContent>
 	</xsd:complexType>
 	<xsd:complexType name="Recipient">
 		<xsd:sequence>
 			<xsd:element name="irdNumber"
-           				type="cmn:IRDNumberType"
-           				minOccurs="0"/>
+			             type="cmn:IRDNumberType"
+			             minOccurs="0"/>
 			<xsd:element name="dateOfBirth"
-           				type="cmn:DateType"
-           				minOccurs="0"/>
+			             type="cmn:DateType"
+			             minOccurs="0"/>
 			<xsd:element name="name"
-           				type="cmn:FormattedNameType"
-           				minOccurs="0"/>
+			             type="cmn:FormattedNameType"
+			             minOccurs="0"/>
 			<xsd:element name="address"
-           				type="cmn:FormattedAddressType"
-           				minOccurs="0"/>
+			             type="cmn:FormattedAddressType"
+			             minOccurs="0"/>
 			<xsd:element name="phone"
-           				type="cmn:UnstructuredPhoneNumberType"
-           				minOccurs="0"/>
+			             type="cmn:UnstructuredPhoneNumberType"
+			             minOccurs="0"/>
 			<xsd:element name="email"
-           				type="cmn:EmailAddressType"
-           				minOccurs="0"/>
+			             type="cmn:EmailAddressType"
+			             minOccurs="0"/>
 		</xsd:sequence>
 	</xsd:complexType>
 	<xsd:complexType name="Income">
 		<xsd:sequence>
 			<xsd:element name="incomeType"
-           				type="cmn:String6"
-           				minOccurs="0"/>
+			             type="cmn:String6"
+			             minOccurs="0"/>
 			<xsd:element name="grossAmount"
-           				type="cmn:MoneyType"/>
+			             type="cmn:MoneyType"/>
 			<xsd:element name="deductedAmount"
-           				type="cmn:MoneyType"
-           				minOccurs="0"/>
+			             type="cmn:MoneyType"
+			             minOccurs="0"/>
 			<xsd:element name="rate"
-           				type="cmn:MoneyType"
-           				minOccurs="0"/>
+			             type="cmn:MoneyType"
+			             minOccurs="0"/>
 		</xsd:sequence>
 	</xsd:complexType>
 	<xsd:simpleType name="LineItemAmendType">

@@ -8,6 +8,8 @@ DESC:             This schema defines the elements and related data types requir
 
 Date  		Change
 **********  ************
+2022-11-11	overpaymentProvisionalTax changed from MoneyType to MoneyTypePositive
+
 2021-10-20	changed data type of fields dividends, taxableMADistributions from MoneyType to MoneyTypePositive
 			propertyInterestLimitation added
 
@@ -73,7 +75,7 @@ _______________________________________
 					<xsd:element name="rlwtCredit" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="otherTaxCredits" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="residualIncomeTax" type="cmn:MoneyType" minOccurs="0"/>
-					<xsd:element name="overpaymentProvisionalTax" type="cmn:MoneyType" minOccurs="0"/>
+					<xsd:element name="overpaymentProvisionalTax" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="provisionalTax" type="ic:ProvisionalTaxType" minOccurs="0"/>
 					<xsd:element name="attachmentForms" type="ic:AttachmentListType" minOccurs="0"/>
 				</xsd:sequence>

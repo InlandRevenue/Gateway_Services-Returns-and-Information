@@ -8,7 +8,9 @@ DESC:             This schema defines the elements and related data types requir
 
 Date  		Change
 **********  ************
-2021-10-20	propertyInterestLimitation added
+2022-11-11	overpaymentProvisionalTax changed from MoneyType to MoneyTypePositive
+
+2020	-10-20	propertyInterestLimitation added
 
 2020-10-19  lossCarriedBackPriorYear added
             residentialRentalIncome added
@@ -81,7 +83,7 @@ _______________________________________
           <xsd:element name="rwtAndOtherTaxCredits" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="rlwtCredit" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="residualIncomeTax" type="cmn:MoneyType" minOccurs="0"/>
-					<xsd:element name="overpaymentProvisionalTax" type="cmn:MoneyType" minOccurs="0"/>
+					<xsd:element name="overpaymentProvisionalTax" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="provisionalTax" type="ic:ProvisionalTaxType" minOccurs="0"/>
 					<xsd:element name="attachmentForms" type="ic:AttachmentListType" minOccurs="0"/>
 				</xsd:sequence>
