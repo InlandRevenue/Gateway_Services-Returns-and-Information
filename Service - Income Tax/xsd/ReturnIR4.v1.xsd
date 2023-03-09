@@ -8,6 +8,11 @@ DESC:           This schema defines the elements and related data types required
 	
 Date  		    Change
 **********    	************
+2022-10-06		interestIncome changed from IncomeWithTaxPaidType to IncomeWithTaxPaidType3
+				overseasIncome changed from IncomeWithTaxPaidType to IncomeWithTaxPaidType3
+				decomExpenditure added
+				decomTaxCredit added
+
 2021-10-20		lossContinuity added
 				propertyInterestLimitation added
 
@@ -50,13 +55,13 @@ _______________________________________
 					<xsd:element name="submissionKey" type="cmn:Quantity32TypePositive" minOccurs="0"/>
 					<xsd:element name="nonResidentIndicator" type="xsd:boolean" minOccurs="0"/>
 					<xsd:element name="schedularPayments" type="ic:SchedularPaymentsType" minOccurs="0"/>
-					<xsd:element name="interestIncome" type="ic:IncomeWithTaxPaidType" minOccurs="0"/>
+					<xsd:element name="interestIncome" type="ic:IncomeWithTaxPaidType3" minOccurs="0"/>
 					<xsd:element name="pieIncome" type="ic:IncomeWithTaxCreditType" minOccurs="0"/>
 					<xsd:element name="dividendIncome" type="ic:DividendIncomeType" minOccurs="0"/>
 					<xsd:element name="maoriAuthorityDistributions" type="ic:MADistributionIncomeType" minOccurs="0"/>
 					<xsd:element name="partnershipEstateTrustIncome" type="ic:IncomeWithTaxCreditType" minOccurs="0"/>
 					<xsd:element name="totalTaxCredits" type="cmn:MoneyTypePositive" minOccurs="0"/>
-					<xsd:element name="overseasIncome" type="ic:IncomeWithTaxPaidType" minOccurs="0"/>
+					<xsd:element name="overseasIncome" type="ic:IncomeWithTaxPaidType3" minOccurs="0"/>
 					<xsd:element name="residentialRentalIncome" type="ic:ResidentialRentalIncomeType" minOccurs="0"/>
 					<xsd:element name="propertyInterestLimitation" type="ic:PropertyInterestLimitationType" minOccurs="0"/>
 					<xsd:element name="businessOrRentalIncome" type="cmn:MoneyType" minOccurs="0"/>
@@ -86,6 +91,8 @@ _______________________________________
 					<xsd:element name="foreignSourcedDividends" type="xsd:boolean" minOccurs="0"/>
 					<xsd:element name="foreignControlIndicator" type="xsd:boolean" minOccurs="0"/>
 					<xsd:element name="lowestEconomicShareholderInterest" type="xsd:decimal" minOccurs="0"/>
+					<xsd:element name="decomExpenditure" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="decomTaxCredit" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="shareholderDetails" type="ic:ShareholderListType" minOccurs="0"/>
 					<xsd:element name="attachmentForms" type="ic:AttachmentListType" minOccurs="0"/>
 				</xsd:sequence>

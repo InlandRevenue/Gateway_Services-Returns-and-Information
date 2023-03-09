@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 NAME:		ReturnAUTO.xsd
-VER:			1
+VER:		1.25
 ISSUER:		Inland Revenue Department	
 DESC:		This schema defines the elements and related data types required for the Returns Individual Income Tax Gateway Service.
     
 Date  		Change
 **********  ************
+2022-10-06	pieIncome changed from IncomeWithTaxCreditType to PieIncomeWithTaxCreditType
+
+			interestIncome changed from IncomeWithTaxPaidType to IncomeWithTaxPaidType3
+
 2021-11-08	governmentSubsidies added
 
 2021-02-03	pieDebit added
@@ -59,11 +63,11 @@ _______________________________________
 					<xsd:element name="taxDeductedFromSchedularPayments" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="grossSchedularPayments" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="schedularExpenses" type="cmn:MoneyTypePositive" minOccurs="0"/>
-					<xsd:element name="interestIncome" type="ic:IncomeWithTaxPaidType" minOccurs="0"/>
+					<xsd:element name="interestIncome" type="ic:IncomeWithTaxPaidType3" minOccurs="0"/>
 					<xsd:element name="dividendIncome" type="ic:DividendIncomeType" minOccurs="0"/>
 					<xsd:element name="dividendsAsInterestIncome" type="ic:DividendIncomeType" minOccurs="0"/>
 					<xsd:element name="maoriAuthorityDistributions" type="MADistributionCalcType" minOccurs="0"/>
-					<xsd:element name="pieIncome" type="ic:IncomeWithTaxCreditType" minOccurs="0"/>
+					<xsd:element name="pieIncome" type="ic:PieIncomeWithTaxCreditType" minOccurs="0"/>
 					<xsd:element name="governmentSubsidies" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="nonBusinessExpenses" type="cmn:MoneyTypePositive" minOccurs="0"/>
 					<xsd:element name="imputationBroughtForward" type="cmn:MoneyTypePositive" minOccurs="0"/>
