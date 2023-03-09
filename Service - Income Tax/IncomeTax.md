@@ -4,85 +4,67 @@
 # Income Tax Software Development Kit (SDK)
 
 #### Archives
+* [V1.0 Annual Return 2022](./archive/2022)
 * [V1.0 Annual Return 2021](./archive/2021)
 * [V1.0 Annual Return 2020](./archive/2020)
-* [V1.0 Annual Return 2019](./archive/2019)
 
-### Latest Release: V1.0  - Annual Return 2022
-
-Income Tax reporting through gateway services enables organisations to: 
+### Latest Release: V1.0  - Annual Return 2023
 
 * submit new or amended income tax returns and supplementary forms 
 * request income tax information held by us for a customer 
 * query the processing status of a previously filed income tax return 
 * request a copy of a previously filed income tax return 
-* request the due date of the next expected income tax return. 	
+* request the due date of the next expected income tax return. 
 
-## New Features: Annual Return 2022-2023   
+## New Features: Annual Return 2023-2024 
 
-The following key changes have been made to the Income Tax Return Service build pack to accommodate annual changes for 2022: 
+The following key changes have been made to the Income Tax Return Service build pack to accommodate annual changes for 2023: 
 
-*  The following fields have been ADDED to a number of IR forms for 2022 returns: 
+| Field | IR forms |
+| --- | --- | 
+|ResidentialRentalIncomeType <br/> ➢ grossResRentalIncome <br/> ➢ netBrightlineProfits <br/> ➢ otherResIncome | IR3, IR3NR, IR4, IR6, IR7, IR8, IR9, IR44 |
+|decomExpenditure <br/>  	decomTaxCredit | IR4 (Retrieve Return for 2019+ and only if value greater than 0.00) |
+|InterestExpenseClaimedReason <br/> ➢ buildToRentExclusion| IR3, IR3NR, IR4, IR6, IR7, IR8, IR9, IR44, IR3R |
+|PieIncomeWithTaxCreditType <br/> ➢ totalTaxCredits <br> totalIncome <br/> ➢ correctRateOverride <br/> ➢ correctRate <br/> ➢ correctRateUsedAllYear | IR3, CALC |
+|taxJurisdiction <br>	taxIdNumber <br>	noJurisdictionTin <br>	tinNotRequired| IR3NR |
 
-	| Field | IR forms |
-	| --- | --- | 
-	| propertyInterestLimitation<br/> ➢ totalInterest <br/> ➢ interestExpenseClaimed <br/> ➢ interestExpenseClaimedReason <br/> interestExpenseClaimedReason <br/> ➢ notResidentialOrMaoriExempt <br/> ➢ propertyNotInNz <br/> ➢ loansDrawnDown <br/> ➢ newBuildExemption <br/> ➢ developmentExemption <br/> ➢ emergencyTransitionalSocialCouncil | IR3, IR3NR, IR3R, IR4¸ IR44, IR6, IR7, IR8, IR9 |
-    |lossContinuity | IR4|
-	| governmentSubsidies | CALC |
-	| netProfitLossBeforeTax <br/> taxAdjustments <br/> unTaxedRealisedGainsAndReceipts| IR6 |
-	| settlementDetails <br/> ➢ settlement <br/> settlement <br/> ➢ settlorFullName <br/> ➢ noSettlementThisYear <br/> ➢ settlorCommence <br/> ➢ taxJurisdiction <br/> ➢ settlorIrdNumber <br/> ➢ taxIdNumber <br/> ➢ noJurisdictionTin <br/> ➢ tinNotRequired <br/> ➢ cash <br/> ➢ financialArrangements <br/> ➢ land <br/> ➢ buildings <br/> ➢ shares <br/> ➢ services <br/> ➢ other <br/> ➢ otherDescription <br/> ➢ settlementZeroValue | IR6 |
-	| beneficiary <br/> ➢ taxIdNumber <br/> ➢ taxJurisdiction <br/> ➢ noJurisdictionTin <br/> ➢ tinNotRequired <br/> ➢ openingBalance <br/> ➢ accountingIncomeAllocated <br/> ➢ corpus <br/> ➢ capital <br/> ➢ useOfTrustProperty <br/> ➢ distributionTrustAssets <br/> ➢ forgivenessOfDebt <br/> ➢ withdrawnFromTrust <br/> ➢ closingBalance | IR6 | 
-    | exemptFromCompliance <br/> netProfitLossBeforeTax <br/> taxAdjustments <br/> unTaxedRealisedGainsAndReceipts <br/> financialArrangements  <br/> assetsLand <br/> assetsLandValuation assetsBuildings <br/>  assetsBuildingsValuation <br/> assetsShares <br/> assetsSharesValuation <br/> assetsTotal <br/> financialArrangementsLiable <br/> liabilitiesTotal <br/> equityOwners <br/> equityDrawings <br/> equityYearEndBalances| IR6 |  	
-	| propertySaleDetails <br/> ➢ propertySale| Prepop values for IR833 form |
-	| propertySale <br/> ➢ propertyTitle <br/> ➢ propertyAddress1  <br/> ➢ propertyAddress2 <br/> ➢ propertySuburb <br/> ➢ propertyCity <br/> ➢ propertyPostCode <br/> ➢ dateOfPurchase <br/> ➢ dateOfSale <br/> ➢ salePrice <br/> ➢ purchasePrice| Prepop values for IR833 form |
-	| income <br/> ➢ subsidyType| Prepop values for IR833 form |
-	
-* The following **schemas** have also changed for 2022: 
-	*  ReturnAUTO.v1.xsd (Auto-Calc, CALC) 
-	* ReturnIR3.v1.xsd
-	* ReturnIR3NR.v1.xsd
-	* ReturnIR3R.v1.xsd
-	* ReturnIR4.v1.xsd
-	* ReturnIR6.v1.xsd
-	* ReturnIR7.v1.xsd
-	* ReturnIR8.v1.xsd
-	* ReturnIR9.v1.xsd
-	* ReturnIR44.v1.xsd
-	* ReturnIR833.v1.xsd	
+* The following **schemas** have also changed for 2023: 
+	* Common.v2.xsd
 	* IncomeReturnCommon.v1.xsd 
-	* Common.v2.xsd 
-	
-> The removal of 000-000-000 IRD number only applies to the IR6B and IR6S from 2022  onwards. You can still submit 000-000-000 IRD number for IR6B for 2021 and prior. There are no changes to the IR4S so 000-000-000 can still be submitted in 2022.	
-	
+	* ReturnAUTO.xsd 
+	* ReturnIR3.v1.xsd 
+	* ReturnIR3NR.v1.xsd 
+	* ReturnIR3R.xsd 
+	* ReturnIR4.v1.xsd 
+	* ReturnIR6.v1.xsd 
+	* ReturnIR7.v1.xsd 
+	* ReturnIR8.v1.xsd 
+	* ReturnIR9.v1.xsd 
+	* ReturnIR44.v1.xsd 
+
+* The following **schemas** are new for 2023:
+    * ReturnIR1261.v1.xsd 
+
 * The following changes have been made to Income Tax-specific **ERROR CODES**:
 
-	| Error code | Status  Description | IR forms affected |
-	|-- | --| -- |
-	| 2346 | interestExpenseClaimed has non-nil value, but no interestExpenseClaimedReason is provided | IR3, IR3NR,IR3R, IR4, IR6, IR7, IR8, IR9 and IR44 |
-	| 2337 | returned when no value is provided for lossContinuity, but lossesBroughtForward is not nil | IR4 | 
-	| 2354 | no value provided for assetsLandValuation | IR6 |
-	| 2355 | no value provided for assetsBuildingsValuation || 
-	| 2356 | no value provided for assetsSharesValuation ||
-	| 2347 | no value provided for beneficiaryName  |IR6B|
-	| 2348 | no value provided for beneficiaryDOB || 
-	| 2349 | invalid or no value provided for taxJurisdiction ||
-	|2350 | invalid value provided for noJurisdictionTin ||
-	| 2351 | no value provided for beneficiaryIrdNumber || 
-	| 2352 | invalid value provided for beneficiaryIrdNumber ||
-	| 2353 | no value provided for taxIdNumber ||
-	|2339 | settlorCommence cannot be in the future IR6S| IR6S |
-	| 2340 | taxJurisdiction has invalid/unrecognised ISO-2A country code value ||
-	| 2341 | settlorIrdNumber is provided, but failed IRD number check ||
-	| 2342 | settlorIrdNumber not provided when it is required ||
-	| 2343 | taxIdNumber not provided when it is required || 
-	| 2344 | noJurisdictionTin has invalid value (true when taxJurisdiction is New Zealand) ||
-	| 2345 | otherDescription not provided when other has non-nil value ||
-	| 2357 | no value provided for settlorCommence ||
-	| 2358 | no value provided for taxJurisdiction || 
-	| 2359 | value of at least one of the following fields must be non-zero: cash, financialArrangements, land, buildings, shares, services, othe ||
-	
-	
-	
+| Error code | Status | Description | IR forms affected |
+|-- | --| -- | -- |
+|2361|Added|Attempting to use correctRateOverride not as a tax agent <br/> <br/>Error message: "pieIncome correctRateOverride can only be used by tax preparers" |CALC, (auto-calc) IR3|
+|2360|Added|If overpaymentProvisionalTax is provided with a non-zero value for 2023 period onwards<br/><br/>Error message: "overpaymentProvisionalTax is no longer available for this filing period"|IR3,IR3NR,IR8,IR9 and IR44|
+|2046|Removed|Error message: totalInterestRWT cannot be greater than totalInterest	|IR3NR|
+|2049|Removed|Error message: nrwtOnTotalInterest cannot be greater than totalInterest	|IR3NR|
+|2050|Removed|Error message: nrwtOntotalInterest cannot be 0 when totalInterestRWT is not 0	|IR3NR|
+|2368|Added|IR3 overseasIncome information provided without supplying the IR1261 attachment for years 2023+ <br/> Error message: "overseasIncome information provided without overseas income attachment"|	IR3|
+|2369|Added|IR1261 grossAmount totals do not match the values provided in IR3's overseasIncome <br/> Error message: "overseasIncome totalTaxPaid or totalIncome do not match sum on overseas income attachment"	|IR3|
+|2346|	Updated |	updated error code validation to take into account new field buildToRentExclusion for 2023+ <br/> Error message: "interestExpenseClaimedReason must be provided when interestExpenseClaimed is non-zero"|IR3,IR3NR,IR4,IR6,IR7,IR8,IR9,IR44 and IR3R|
+|2358|	Updated|	if taxJurisdiction is not provided for years 2023+ <br/> Error message: "no value provided for taxJurisdiction"|IR3NR|
+|2340|	Updated|	if taxJurisdiction is not a recognised ISO-2A country code <br/> Error message: "invalid value provided for taxJurisdiction"| IR3NR|
+|2363|	Added| 	if "New Zealand" is provided for taxJurisdiction <br/> Error message: "taxJurisdiction cannot be New Zealand for non-resident"|	IR3NR|
+|2343|	Updated| if taxIdNumber value is not provided for 2023+ AND both noJurisdictionTin and tinNotRequired are false <br>Error message: "taxJurisdiction cannot be New Zealand for non-resident"	|IR3NR|
+|2366|	Added|	taxJurisdiction value is not a recognised two-letter country code<br/>Error message: "overseasIncome taxJurisdiction invalid"|	IR1261|
+|2367|	Added|	if "New Zealand" is provided for taxJurisdiction (note: same as 2363 for IR3NR) <br/> Error message: "overseasIncome taxJurisdiction is New Zealand"|	IR1261|
+|2370|	Added|	grossAmount and taxCredit cannot both be nil (on a single IR1261 line)<br/>Error message: "overseasIncome grossAmount and taxCredit cannot be nil"|	IR1261|
+|2371|	Added|	overseasIncome contains multiple elements with the same incomeType and taxJurisdiction<br/>Error message: "overseasIncome contains duplicate incomeType and taxJurisdiction"|	IR1261|
 
 	
 ## Key Documentation:
@@ -98,11 +80,13 @@ The following key changes have been made to the Income Tax Return Service build 
 
 * Build Pack
 
-	* Download the [Return Service Income Tax build pack FY 2022](Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20Income%20Tax%20TY-2022.pdf) to view data definitions of each operation and response status code definitions
-	* Download the [Return Service Income Tax build pack FY 2021](Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20Income%20Tax%20TY-2021.pdf) to view data definitions of each operation and response status code definitions
-		* Supporting information on IR website
+    * Download the [Return Service Income Tax build pack TY 2023](Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20Income%20Tax%20TY-2023.pdf) to view data definitions of each operation and response status code definitions
+	* Download the [Return Service Income Tax build pack TY 2022](Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20Income%20Tax%20TY-2022.pdf) to view data definitions of each operation and response status code definitions
+	
+* Supporting information on IR website
+	* Download the [Additional Information pack 2023](Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20Additional%20Information%202023%20V1.0.pdf)		
 	* Download the [Additional Information pack 2022](Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20Additional%20Information%202022%20V1.3.pdf)	
-	* Download the [Additional Information pack 2021](Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20Additional%20Information%202021%20V1.1.pdf)
+	
 		* Income tax assessments (Auto-Calc)
 
 * Income Tax Form Types
@@ -313,34 +297,34 @@ The following key changes have been made to the Income Tax Return Service build 
 
 - File
     - [IR3 File request (with all applicable attachments)](sample%20messages/file_request_ir3_all_attachments.xml)
-	- [IR3 File request](sample%20messages/file_request_ir3_standalone.xml) _(inc. Annual Changes 2021)_
-    - [IR3NR File request](sample%20messages/file_request_ir3nr_standalone.xml) _(inc. Annual Changes 2021)_
+	- [IR3 File request](sample%20messages/file_request_ir3_standalone.xml) 
+    - [IR3NR File request](sample%20messages/file_request_ir3nr_standalone.xml) 
     - [IR4 File request (with all applicable attachments)](sample%20messages/file_request_ir4_all_attachments.xml)
-	- [IR4 File request](sample%20messages/file_request_ir4_standalone.xml) _(inc. Annual Changes 2021)_
+	- [IR4 File request](sample%20messages/file_request_ir4_standalone.xml) 
     - [IR4J File request](sample%20messages/file_request_ir4j_standalone.xml)
-    - [IR6 File request](sample%20messages/file_request_ir6_standalone.xml) _(inc. Annual Changes 2021)_
+    - [IR6 File request](sample%20messages/file_request_ir6_standalone.xml) 
     - [IR7L File request](sample%20messages/file_request_ir7l_standalone.xml)
     - [IR7P File request](sample%20messages/file_request_ir7p_standalone.xml)
-    - [IR8 File request](sample%20messages/file_request_ir8_standalone.xml) _(inc. Annual Changes 2021)_
+    - [IR8 File request](sample%20messages/file_request_ir8_standalone.xml) 
     - [IR8J File request](sample%20messages/file_request_ir8j_standalone.xml)
-    - [IR9 File request](sample%20messages/file_request_ir9_standalone.xml) _(inc. Annual Changes 2021)_
-    - [IR44 File request](sample%20messages/file_request_ir44_standalone.xml) _(inc. Annual Changes 2021)_
+    - [IR9 File request](sample%20messages/file_request_ir9_standalone.xml) 
+    - [IR44 File request](sample%20messages/file_request_ir44_standalone.xml) 
 	- [IR1215 File request](sample%20messages/file_request_ir215.xml)
     - [File Response](sample%20messages/file_response.xml) 
 - RetrieveReturn
     - [RetrieveReturn request](sample%20messages/retrievereturn_request.xml)
     - [IR3 RetrieveReturn request](sample%20messages/file_request_ir3_Retrieve_Return_ACC_Identifier.xml) ACC_Identifier  
-	- [IR3 RetrieveReturn response](sample%20messages/retrievereturn_response_ir3.xml) _(inc. Annual Changes 2021)_
-	- [IR3NR RetrieveReturn response](sample%20messages/retrievereturn_response_ir3nr.xml) _(inc. Annual Changes 2021)_
-    - [IR4 RetrieveReturn response](sample%20messages/retrievereturn_response_ir4.xml) _(inc. Annual Changes 2021)_
+	- [IR3 RetrieveReturn response](sample%20messages/retrievereturn_response_ir3.xml) 
+	- [IR3NR RetrieveReturn response](sample%20messages/retrievereturn_response_ir3nr.xml) 
+    - [IR4 RetrieveReturn response](sample%20messages/retrievereturn_response_ir4.xml) 
     - [IR4J RetrieveReturn response](sample%20messages/retrievereturn_response_ir4j.xml)
-    - [IR6 RetrieveReturn response](sample%20messages/retrievereturn_response_ir6.xml) _(inc. Annual Changes 2021)_
+    - [IR6 RetrieveReturn response](sample%20messages/retrievereturn_response_ir6.xml) 
     - [IR7L RetrieveReturn response](sample%20messages/retrievereturn_response_ir7l.xml)
     - [IR7P RetrieveReturn response](sample%20messages/retrievereturn_response_ir7p.xml)
-    - [IR8 RetrieveReturn response](sample%20messages/retrievereturn_response_ir8.xml) _(inc. Annual Changes 2021)_
+    - [IR8 RetrieveReturn response](sample%20messages/retrievereturn_response_ir8.xml) 
     - [IR8J RetrieveReturn response](sample%20messages/retrievereturn_response_ir8j.xml)
-    - [IR9 RetrieveReturn response](sample%20messages/retrievereturn_response_ir9.xml) _(inc. Annual Changes 2021)_
-    - [IR44 RetrieveReturn response](sample%20messages/retrievereturn_response_ir44.xml) _(inc. Annual Changes 2021)_
+    - [IR9 RetrieveReturn response](sample%20messages/retrievereturn_response_ir9.xml) 
+    - [IR44 RetrieveReturn response](sample%20messages/retrievereturn_response_ir44.xml)
 	- [IR1215 RetrieveReturn response](sample%20messages/retrievereturn_response_ir1215.xml) 
 	
 	
@@ -367,7 +351,6 @@ The following key changes have been made to the Income Tax Return Service build 
 	- [Error Code 2334](sample%20messages/ErrorCode2334.txt)
 	- [Error Code 2335](sample%20messages/ErrorCode2335.txt)
 	- [Error Code 2336](sample%20messages/ErrorCode2336.txt)
-- Error codes _(New for Annual Changes 2022)_	
 	- [Error Code 2339](sample%20messages/ErrorCode2339.txt)
 	- [Error Code 2340](sample%20messages/ErrorCode2340.txt)
 	- [Error Code 2341](sample%20messages/ErrorCode2341.txt)
@@ -389,8 +372,16 @@ The following key changes have been made to the Income Tax Return Service build 
 	- [Error Code 2336](sample%20messages/ErrorCode2357.txt)
 	- [Error Code 2358](sample%20messages/ErrorCode2358.txt)
 	- [Error Code 2359](sample%20messages/ErrorCode2359.txt)
-
-
+- Error codes _(New for Annual Changes 2023)_
+	
+	- [Error Code 2360](sample%20messages/ErrorCode2360.txt)
+	- [Error Code 2361](sample%20messages/ErrorCode2361.txt)
+	- [Error Code 2363](sample%20messages/ErrorCode2363.txt)
+	- [Error Code 2366](sample%20messages/ErrorCode2366.txt)
+	- [Error Code 2367](sample%20messages/ErrorCode2367.txt)
+	- [Error Code 2368](sample%20messages/ErrorCode2368.txt)	
+	- [Error Code 2370](sample%20messages/ErrorCode2370.txt)
+	- [Error Code 2371](sample%20messages/ErrorCode2371.txt)
 
 	
 	
