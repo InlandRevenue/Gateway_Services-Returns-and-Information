@@ -5,13 +5,6 @@
 
 Income Tax and Donation Tax Credit filing through our gateway services uses the Return Service
 
-#### Archive 
-* [V1 Annual Return 2021](archive/2021/)
-* [V1 Annual Return 2020](archive/2020/)
-* [V1 Annual Return 2019](archive/2019/)
-
-### Latest Release V1.0 - Annual Return 2022
-
 ## [Income Tax Software Development Kit (SDK)](IncomeTax.md)
 The income tax gateway service can be used to:
 

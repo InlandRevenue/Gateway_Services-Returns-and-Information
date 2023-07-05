@@ -172,3 +172,4 @@ The EI version can be identified in the standard header’s majorFormType field:
 	- Native desktop gateway service: https://services.ird.govt.nz/gateway2/gws/returns/
 	- Cloud SOAP WSDL: https://services.ird.govt.nz:4046/gateway/gws/returns/?wsdl
 	- Native desktop SOAP WSDL https://services.ird.govt.nz/gateway2/gws/returns/?wsdl
+	
