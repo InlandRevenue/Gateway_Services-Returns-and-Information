@@ -84,7 +84,7 @@ The following key changes have been made to the Income Tax Return Service build 
 	* Download the [Return Service Income Tax build pack TY 2022](Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20Income%20Tax%20TY-2022.pdf) to view data definitions of each operation and response status code definitions
 	
 * Supporting information on IR website
-	* Download the [Additional Information pack 2023](Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20Additional%20Information%202023%20V1.0.pdf)		
+	* Download the [Additional Information pack 2023](Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20Additional%20Information%202023.pdf)		
 	* Download the [Additional Information pack 2022](Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20Additional%20Information%202022%20V1.3.pdf)	
 	
 		* Income tax assessments (Auto-Calc)
