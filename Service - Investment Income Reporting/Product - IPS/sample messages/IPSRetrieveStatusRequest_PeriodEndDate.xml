@@ -1,20 +1,19 @@
-<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">
-    <soap:Header>
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ret="https://services.ird.govt.nz/GWS/Returns/" xmlns:ret1="https://services.ird.govt.nz/GWS/Returns/:types/RetrieveStatusRequest">
+    <soap:Header xmlns:a="http://www.w3.org/2005/08/addressing">
         <a:Action>https://services.ird.govt.nz/GWS/Returns/Return/RetrieveStatus</a:Action>
     </soap:Header>
-    <soap:Body xmlns:ret="https://services.ird.govt.nz/GWS/Returns/" xmlns:ret1="https://services.ird.govt.nz/GWS/Returns/:types/RetrieveStatusRequest" xmlns:rc="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2"
-    xmlns:com="urn:www.ird.govt.nz/GWS:types/Common.v2">
+    <soap:Body>
         <ret:RetrieveStatus>
             <ret:ReturnStatusRequestMsg>
                 <ret1:RetrieveStatusRequestWrapper>
-                    <rc:retrieveFormInfoRequest>
-                        <com:softwareProviderData>
-                            <com:softwareProvider>SoftwareProvider Company Ltd</com:softwareProvider>
-                            <com:softwarePlatform>SoftwarePlatform</com:softwarePlatform>
-                            <com:softwareRelease>1.0</com:softwareRelease>
-                        </com:softwareProviderData>
-                        <com:identifier IdentifierValueType="IRD">012501250</com:identifier>
-                        <com:accountType>IPS</com:accountType>
+                    <rc:retrieveFormInfoRequest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cmn="urn:www.ird.govt.nz/GWS:types/Common.v2" xmlns:rc="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2">
+                        <cmn:softwareProviderData>
+                            <cmn:softwareProvider>softwareProvider</cmn:softwareProvider>
+                            <cmn:softwarePlatform>softwarePlatform</cmn:softwarePlatform>
+                            <cmn:softwareRelease>v1</cmn:softwareRelease>
+                        </cmn:softwareProviderData>
+                        <cmn:identifier IdentifierValueType="IRD">132145202</cmn:identifier>
+                        <cmn:accountType>IPS</cmn:accountType>
                         <rc:periodEndDate>2019-04-30</rc:periodEndDate>
                         <rc:majorFormType>IPS</rc:majorFormType>
                         <rc:minorFormType>IPS</rc:minorFormType>

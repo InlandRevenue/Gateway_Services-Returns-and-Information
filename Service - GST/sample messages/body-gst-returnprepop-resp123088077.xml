@@ -1,42 +1,32 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
-               xmlns:a="http://www.w3.org/2005/08/addressing"
-               xmlns:ret="https://services.ird.govt.nz/GWS/Returns/"
-               xmlns:prep="https://services.ird.govt.nz/GWS/Returns/:types/PrepopResponse"
-               xmlns:r="urn:www.ird.govt.nz/GWS:types/ReturnGST.v1"
-               xmlns:com="urn:www.ird.govt.nz/GWS:types/Common.v1"
-               xmlns:ret2="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v1">
-    <soap:Header>
-        <a:Action soap:mustUnderstand="1">https://services.ird.govt.nz/GWS/Return/ReturnPrepop</a:Action>
-    </soap:Header>
-    <soap:Body>
-        <ret:PrepopResponse>
-            <!--Optional:-->
-            <ret:PrepopResult>
-                <prep:PrepopResponseWrapper>
+<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns="http://www.w3.org/2005/08/addressing">
+    <s:Header>
+        <Action s:mustUnderstand="1">https://services.ird.govt.nz/GWS/Returns/Return/PrepopResponse</Action>
+    </s:Header>
+    <s:Body>
+        <PrepopResponse xmlns="https://services.ird.govt.nz/GWS/Returns/">
+            <PrepopResult>
+                <d4p1:PrepopResponseWrapper xmlns:d4p1="https://services.ird.govt.nz/GWS/Returns/:types/PrepopResponse">
                     <prepopResponse xmlns="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v1">
-                        <com:statusMessage xmlns:com="urn:www.ird.govt.nz/GWS:types/Common.v1">
-                            <com:statusCode>0</com:statusCode>
-                            <com:errorMessage/>
-                        </com:statusMessage>
-                        <!--Optional:-->
-                        <responseBody xsi:type="r:PrepopResponseBodyType" xmlns:r="urn:www.ird.govt.nz/GWS:types/ReturnGST.v1"
-                                      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-							<r:accountId>123088077</r:accountId>
-							<r:periodEndDate>2017-05-31</r:periodEndDate>
-							<r:filingFrequency code="GSTMO">Monthly</r:filingFrequency>
-							<r:dueDate>2017-06-28</r:dueDate>
-							<r:expectedMinorFormType>103E</r:expectedMinorFormType>
-							<r:multiBranch>true</r:multiBranch>
-							<r:provFiler>true</r:provFiler>
-							<r:provOption>RATIO</r:provOption>
-							<r:compulsory>true</r:compulsory>
-							<r:ratioTaxPercent>0.1</r:ratioTaxPercent>
-							<r:hospiceFiler>false</r:hospiceFiler>
+                        <statusMessage xmlns="urn:www.ird.govt.nz/GWS:types/Common.v1">
+                            <statusCode>0</statusCode>
+                            <errorMessage/>
+                        </statusMessage>
+                        <responseBody xsi:type="r:PrepopResponseBodyType" xmlns:r="urn:www.ird.govt.nz/GWS:types/ReturnGST.v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                            <r:accountId>123088077</r:accountId>
+                            <r:periodEndDate>2017-05-31</r:periodEndDate>
+                            <r:filingFrequency code="GSTMO">Monthly</r:filingFrequency>
+                            <r:dueDate>2017-06-28</r:dueDate>
+                            <r:expectedMinorFormType>103E</r:expectedMinorFormType>
+                            <r:multiBranch>true</r:multiBranch>
+                            <r:provFiler>true</r:provFiler>
+                            <r:provOption>RATIO</r:provOption>
+                            <r:compulsory>true</r:compulsory>
+                            <r:ratioTaxPercent>0.1</r:ratioTaxPercent>
+                            <r:hospiceFiler>false</r:hospiceFiler>
                         </responseBody>
                     </prepopResponse>
-                </prep:PrepopResponseWrapper>
-            </ret:PrepopResult>
-        </ret:PrepopResponse>
-    </soap:Body>
-</soap:Envelope>
+                </d4p1:PrepopResponseWrapper>
+            </PrepopResult>
+        </PrepopResponse>
+    </s:Body>
+</s:Envelope>

@@ -52,22 +52,18 @@ Schema updates
 - File  
 	- Request
 		- [NRT on Interest](sample%20messages/File_Request_NRT_NRINT.xml) (NRINT)
-		- [NRT on Dividends](sample%20messages/File_Request_NRT_NRDIV.xml) (NRDIV)
-		- [NRT on Copyright](sample%20messages/File_Request_NRT_COPYRT.xml) (COPYRT)
-		- [NRT other royalties](sample%20messages/File_Request_NRT_ROYALT.xml) (ROYALT)
 	- Response
 		- [NRT positive response sample](sample%20messages/File_Response_Generic.xml)
 	
 - File (Amendments)
 	- Request
-		- [Submission Key Method](sample%20messages/ile_Request_NRT_NRINT_amendment_with_submission_key.xml) (NRINT)
-	    - [Submission Key Reverse Replace](sample%20messages/File_Request_NRT_NRINT_amendment_ReverseReplace.xml)
+		- [Submission Key Method](sample%20messages/File_Request_NRT_NRINT_amendment_with_submission_key.xml) (NRINT)
     - Response		
 		- [NRT positive response sample](sample%20messages/File_Response_Generic.xml)
 	
 - RetrieveReturn
 	- [Request](sample%20messages/RetreveReturn_Request_NRT.xml)  (Casual Supplemental)
-	- [Response](sample%20messages/RetreveReturn_Response_NRT.xml)  (NRINT, NRDIV & ROYALT)
+	- [Response](sample%20messages/RetreveReturn_Response_NRT.xml)  
 
 - RetrieveStatus
 	- With Submission Key

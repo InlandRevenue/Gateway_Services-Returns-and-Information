@@ -1,175 +1,183 @@
-<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
-               xmlns:emp1="urn:www.ird.govt.nz/GWS:types/Employment.v2"
-               xmlns:com="urn:www.ird.govt.nz/GWS:types/Common.v2"
-               xmlns:emp="https://services.ird.govt.nz/GWS/Employment/v2/"
-               xmlns:cre="https://services.ird.govt.nz/GWS/Employment/v2/:types/RetrieveListResponse">
-    <soap:Header/>
-    <soap:Body>
-        <emp:RetrieveListResponse>
-            <emp:RetrieveListResult>
-                <cre:RetrieveListResponseWrapper>
-                    <emp1:retrieveListResponse xmlns:emp1="urn:www.ird.govt.nz/GWS:types/Employment.v2"
-                                               xmlns:com="urn:www.ird.govt.nz/GWS:types/Common.v2">
-                        <com:statusMessage>
-                            <com:statusCode>0</com:statusCode>
-                            <com:errorMessage></com:errorMessage>
-                        </com:statusMessage>
-                        <emp1:responseBody>
-                            <emp1:listResponse>
-                                <emp1:employee>
-                                    <emp1:employeeIRD>123114116</emp1:employeeIRD>
-                                    <emp1:employeeName>
-                                        <emp1:nameFirst>Test</emp1:nameFirst>
-                                        <emp1:nameSurname>Retrieve Linked</emp1:nameSurname>
-                                    </emp1:employeeName>
-                                    <emp1:employeeNameOnEILine>Marie Billou</emp1:employeeNameOnEILine>
-                                    <emp1:taxCodes>
-                                        <emp1:taxCode>MSL</emp1:taxCode>
-                                        <emp1:taxCode>SLBOR</emp1:taxCode>
-                                    </emp1:taxCodes>
-                                </emp1:employee>
-                                <emp1:employee>
-                                    <emp1:employeeIRD>123059638</emp1:employeeIRD>
-                                    <emp1:employeeName>
-                                        <emp1:nameFirst>Test</emp1:nameFirst>
-                                        <emp1:nameSurname>Retrieve Linked Two</emp1:nameSurname>
-                                    </emp1:employeeName>
-                                    <emp1:employeeNameOnEILine>Pierre Bon</emp1:employeeNameOnEILine>
-                                    <emp1:taxCodes>
-                                        <emp1:taxCode>ME</emp1:taxCode>
-                                    </emp1:taxCodes>
-                                    <emp1:employmentStartDate>2015-05-25</emp1:employmentStartDate>
-                                </emp1:employee>
-                                <emp1:employee>
-                                    <emp1:employeeIRD>123084551</emp1:employeeIRD>
-                                    <emp1:employeeName>
-                                        <emp1:nameFirst>Test</emp1:nameFirst>
-                                        <emp1:nameSurname>Creation Termination</emp1:nameSurname>
-                                    </emp1:employeeName>
-                                    <emp1:employeeNameOnEILine>Jean Paul</emp1:employeeNameOnEILine>
-                                    <emp1:taxCodes>
-                                        <emp1:taxCode>M</emp1:taxCode>
-                                    </emp1:taxCodes>
-                                </emp1:employee>
-                                <emp1:employee>
-                                    <emp1:employeeIRD>123094018</emp1:employeeIRD>
-                                    <emp1:employeeName>
-                                        <emp1:nameFirst>Test</emp1:nameFirst>
-                                        <emp1:nameSurname>Update KiwiSaver Start Date Past</emp1:nameSurname>
-                                    </emp1:employeeName>
-                                    <emp1:employeeNameOnEILine>Rafa Nadal</emp1:employeeNameOnEILine>
-                                    <emp1:taxCodes>
-                                        <emp1:taxCode>S</emp1:taxCode>
-                                    </emp1:taxCodes>
-                                </emp1:employee>
-                                <emp1:employee>
-                                    <emp1:employeeIRD>123074750</emp1:employeeIRD>
-                                    <emp1:employeeName>
-                                        <emp1:nameFirst>Test</emp1:nameFirst>
-                                        <emp1:nameSurname>Update KiwiSaver Today's Date</emp1:nameSurname>
-                                    </emp1:employeeName>
-                                    <emp1:employeeNameOnEILine>Roger Federer</emp1:employeeNameOnEILine>
-                                    <emp1:taxCodes>
-                                        <emp1:taxCode>SSL</emp1:taxCode>
-                                    </emp1:taxCodes>
-                                </emp1:employee>
-                                <emp1:employee>
-                                    <emp1:employeeIRD>123028376</emp1:employeeIRD>
-                                    <emp1:employeeName>
-                                        <emp1:nameFirst>Test</emp1:nameFirst>
-                                        <emp1:nameSurname>Update No KiwiSaver</emp1:nameSurname>
-                                    </emp1:employeeName>
-                                    <emp1:employeeNameOnEILine>Josh Hornett</emp1:employeeNameOnEILine>
-                                    <emp1:taxCodes>
-                                        <emp1:taxCode>SBSL</emp1:taxCode>
-                                        <emp1:taxCode>SLBOR</emp1:taxCode>
-                                        <emp1:taxCode>SLCIR</emp1:taxCode>
-                                    </emp1:taxCodes>
-                                    <emp1:employmentStartDate>2016-06-03</emp1:employmentStartDate>
-                                </emp1:employee>
-                                <emp1:employee>
-                                    <emp1:employeeIRD>123097386</emp1:employeeIRD>
-                                    <emp1:employeeName>
-                                        <emp1:nameFirst>Test</emp1:nameFirst>
-                                        <emp1:nameSurname>Update KS Negative</emp1:nameSurname>
-                                    </emp1:employeeName>
-                                    <emp1:employeeNameOnEILine>Nicolas Dupont</emp1:employeeNameOnEILine>
-                                    <emp1:taxCodes>
-                                        <emp1:taxCode>SB</emp1:taxCode>
-                                    </emp1:taxCodes>
-                                    <emp1:employeeDateOfBirth>1990-09-01</emp1:employeeDateOfBirth>
-                                    <emp1:employmentStartDate>2009-10-01</emp1:employmentStartDate>
-                                </emp1:employee>
-                                <emp1:employee>
-                                    <emp1:employeeIRD>123075031</emp1:employeeIRD>
-                                    <emp1:employeeName>
-                                        <emp1:nameFirst>Test</emp1:nameFirst>
-                                        <emp1:nameSurname>User Incorrect Details</emp1:nameSurname>
-                                    </emp1:employeeName>
-                                    <emp1:employeeNameOnEILine>Kev Adams</emp1:employeeNameOnEILine>
-                                    <emp1:taxCodes>
-                                        <emp1:taxCode>SB</emp1:taxCode>
-                                    </emp1:taxCodes>
-                                </emp1:employee>
-                                <emp1:employee>
-                                    <emp1:employeeIRD>123097394</emp1:employeeIRD>
-                                    <emp1:employeeName>
-                                        <emp1:nameFirst>Test</emp1:nameFirst>
-                                        <emp1:nameSurname>Terminate Employee One</emp1:nameSurname>
-                                    </emp1:employeeName>
-                                    <emp1:employeeNameOnEILine>Marc Just</emp1:employeeNameOnEILine>
-                                    <emp1:taxCodes>
-                                        <emp1:taxCode>ND</emp1:taxCode>
-                                    </emp1:taxCodes>
-                                    <emp1:employeeDateOfBirth>1990-09-01</emp1:employeeDateOfBirth>
-                                    <emp1:employmentStartDate>2016-07-04</emp1:employmentStartDate>
-                                </emp1:employee>
-                                <emp1:employee>
-                                    <emp1:employeeIRD>123081641</emp1:employeeIRD>
-                                    <emp1:employeeName>
-                                        <emp1:nameFirst>Test</emp1:nameFirst>
-                                        <emp1:nameSurname>Terminate Employee Two</emp1:nameSurname>
-                                    </emp1:employeeName>
-                                    <emp1:employeeNameOnEILine>Justine Henin</emp1:employeeNameOnEILine>
-                                    <emp1:taxCodes>
-                                        <emp1:taxCode>M</emp1:taxCode>
-                                    </emp1:taxCodes>
-                                    <emp1:employeeDateOfBirth>1990-09-01</emp1:employeeDateOfBirth>
-                                    <emp1:employmentStartDate>2016-07-04</emp1:employmentStartDate>
-                                    <emp1:employmentFinishDate>2018-11-09</emp1:employmentFinishDate>
-                                </emp1:employee>
-                                <emp1:employee>
-                                    <emp1:employeeIRD>123097408</emp1:employeeIRD>
-                                    <emp1:employeeName>
-                                        <emp1:nameFirst>Test</emp1:nameFirst>
-                                        <emp1:nameSurname>Terminate Employee Three</emp1:nameSurname>
-                                    </emp1:employeeName>
-                                    <emp1:employeeNameOnEILine>Venus Williams</emp1:employeeNameOnEILine>
-                                    <emp1:taxCodes>
-                                        <emp1:taxCode>NSW</emp1:taxCode>
-                                    </emp1:taxCodes>
-                                    <emp1:employeeDateOfBirth>1990-09-01</emp1:employeeDateOfBirth>
-                                    <emp1:employmentStartDate>2016-07-04</emp1:employmentStartDate>
-                                </emp1:employee>
-                                <emp1:employee>
-                                    <emp1:employeeIRD>123075056</emp1:employeeIRD>
-                                    <emp1:employeeName>
-                                        <emp1:nameTitle>MS</emp1:nameTitle>
-                                        <emp1:nameFirst>Test</emp1:nameFirst>
-                                        <emp1:nameSurname>Terminate Employee Negative</emp1:nameSurname>
-                                    </emp1:employeeName>
-                                    <emp1:employeeNameOnEILine>Luc Mele</emp1:employeeNameOnEILine>
-                                    <emp1:taxCodes>
-                                        <emp1:taxCode>MESL</emp1:taxCode>
-                                    </emp1:taxCodes>
-                                    <emp1:employeeDateOfBirth>1990-09-01</emp1:employeeDateOfBirth>
-                                    <emp1:employmentStartDate>2016-07-04</emp1:employmentStartDate>
-                                </emp1:employee>
-                            </emp1:listResponse>
-                        </emp1:responseBody>
-                    </emp1:retrieveListResponse>
-                </cre:RetrieveListResponseWrapper>
-            </emp:RetrieveListResult>
-        </emp:RetrieveListResponse>
-    </soap:Body>
-</soap:Envelope>
+<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope">
+    <s:Header>
+        <Action xmlns="http://www.w3.org/2005/08/addressing" s:mustUnderstand="1">https://services.ird.govt.nz/GWS/Employment/v2/Employment/RetrieveListResponse</Action>
+    </s:Header>
+    <s:Body>
+        <RetrieveListResponse xmlns="https://services.ird.govt.nz/GWS/Employment/v2/">
+            <RetrieveListResult>
+                <d4p1:RetrieveListResponseWrapper xmlns:d4p1="https://services.ird.govt.nz/GWS/Employment/v2/:types/RetrieveListResponse">
+                    <retrieveListResponse xmlns="urn:www.ird.govt.nz/GWS:types/Employment.v2">
+                        <statusMessage xmlns="urn:www.ird.govt.nz/GWS:types/Common.v2">
+                            <statusCode>0</statusCode>
+                            <errorMessage/>
+                        </statusMessage>
+                        <responseBody>
+                            <listResponse>
+                                <employee>
+                                    <employeeIRD>000000000</employeeIRD>
+                                    <employeeName>
+                                        <nameFirst>Test</nameFirst>
+                                        <nameSurname>Employee Zero IRD</nameSurname>
+                                    </employeeName>
+                                    <employeeNameOnEILine>Steffi Graf</employeeNameOnEILine>
+                                    <taxCodes>
+                                        <taxCode>ND</taxCode>
+                                    </taxCodes>
+                                    <employeeDateOfBirth>1990-07-28</employeeDateOfBirth>
+                                    <employmentStartDate>2005-07-20</employmentStartDate>
+                                </employee>
+                                <employee>
+                                    <employeeIRD>123114116</employeeIRD>
+                                    <employeeName>
+                                        <nameFirst>Test</nameFirst>
+                                        <nameSurname>Retrieve Linked</nameSurname>
+                                    </employeeName>
+                                    <employeeNameOnEILine>Marie Billou</employeeNameOnEILine>
+                                    <taxCodes>
+                                        <taxCode>MSL</taxCode>
+                                        <taxCode>SBSL</taxCode>
+                                    </taxCodes>
+                                </employee>
+                                <employee>
+                                    <employeeIRD>123059638</employeeIRD>
+                                    <employeeName>
+                                        <nameFirst>Test</nameFirst>
+                                        <nameSurname>Retrieve Linked Two</nameSurname>
+                                    </employeeName>
+                                    <employeeNameOnEILine>Pierre Bon</employeeNameOnEILine>
+                                    <taxCodes>
+                                        <taxCode>ME</taxCode>
+                                    </taxCodes>
+                                    <employmentStartDate>2015-05-25</employmentStartDate>
+                                </employee>
+                                <employee>
+                                    <employeeIRD>123084551</employeeIRD>
+                                    <employeeName>
+                                        <nameFirst>Test</nameFirst>
+                                        <nameSurname>Creation Termination</nameSurname>
+                                    </employeeName>
+                                    <employeeNameOnEILine>Jean Paul</employeeNameOnEILine>
+                                    <taxCodes>
+                                        <taxCode>M</taxCode>
+                                    </taxCodes>
+                                </employee>
+                                <employee>
+                                    <employeeIRD>123094018</employeeIRD>
+                                    <employeeName>
+                                        <nameFirst>Test</nameFirst>
+                                        <nameSurname>Update KiwiSaver Start Date Past</nameSurname>
+                                    </employeeName>
+                                    <employeeNameOnEILine>Rafa Nadal</employeeNameOnEILine>
+                                    <taxCodes>
+                                        <taxCode>S</taxCode>
+                                    </taxCodes>
+                                </employee>
+                                <employee>
+                                    <employeeIRD>123074750</employeeIRD>
+                                    <employeeName>
+                                        <nameFirst>Test</nameFirst>
+                                        <nameSurname>Update KiwiSaver Today's Date</nameSurname>
+                                    </employeeName>
+                                    <employeeNameOnEILine>Roger Federer</employeeNameOnEILine>
+                                    <taxCodes>
+                                        <taxCode>SSL</taxCode>
+                                    </taxCodes>
+                                </employee>
+                                <employee>
+                                    <employeeIRD>123028376</employeeIRD>
+                                    <employeeName>
+                                        <nameFirst>Test</nameFirst>
+                                        <nameSurname>Update No KiwiSaver</nameSurname>
+                                    </employeeName>
+                                    <employeeNameOnEILine>Josh Hornett</employeeNameOnEILine>
+                                    <taxCodes>
+                                        <taxCode>SBSL</taxCode>
+                                    </taxCodes>
+                                    <employmentStartDate>2016-06-03</employmentStartDate>
+                                </employee>
+                                <employee>
+                                    <employeeIRD>123097386</employeeIRD>
+                                    <employeeName>
+                                        <nameFirst>Test</nameFirst>
+                                        <nameSurname>Update KS Negative</nameSurname>
+                                    </employeeName>
+                                    <employeeNameOnEILine>Nicolas Dupont</employeeNameOnEILine>
+                                    <taxCodes>
+                                        <taxCode>SB</taxCode>
+                                    </taxCodes>
+                                    <employeeDateOfBirth>1990-09-01</employeeDateOfBirth>
+                                    <employmentStartDate>2009-10-01</employmentStartDate>
+                                </employee>
+                                <employee>
+                                    <employeeIRD>123075031</employeeIRD>
+                                    <employeeName>
+                                        <nameFirst>Test</nameFirst>
+                                        <nameSurname>User Incorrect Details</nameSurname>
+                                    </employeeName>
+                                    <employeeNameOnEILine>Kev Adams</employeeNameOnEILine>
+                                    <taxCodes>
+                                        <taxCode>SB</taxCode>
+                                    </taxCodes>
+                                </employee>
+                                <employee>
+                                    <employeeIRD>123097394</employeeIRD>
+                                    <employeeName>
+                                        <nameFirst>Test</nameFirst>
+                                        <nameSurname>Terminate Employee One</nameSurname>
+                                    </employeeName>
+                                    <employeeNameOnEILine>Marc Just</employeeNameOnEILine>
+                                    <taxCodes>
+                                        <taxCode>ND</taxCode>
+                                    </taxCodes>
+                                    <employeeDateOfBirth>1990-09-01</employeeDateOfBirth>
+                                    <employmentStartDate>2016-07-04</employmentStartDate>
+                                </employee>
+                                <employee>
+                                    <employeeIRD>123081641</employeeIRD>
+                                    <employeeName>
+                                        <nameFirst>Test</nameFirst>
+                                        <nameSurname>Terminate Employee Two</nameSurname>
+                                    </employeeName>
+                                    <employeeNameOnEILine>Justine Henin</employeeNameOnEILine>
+                                    <taxCodes>
+                                        <taxCode>M</taxCode>
+                                    </taxCodes>
+                                    <employeeDateOfBirth>1990-09-01</employeeDateOfBirth>
+                                    <employmentStartDate>2016-07-04</employmentStartDate>
+                                    <employmentFinishDate>2018-11-09</employmentFinishDate>
+                                </employee>
+                                <employee>
+                                    <employeeIRD>123097408</employeeIRD>
+                                    <employeeName>
+                                        <nameFirst>Test</nameFirst>
+                                        <nameSurname>Terminate Employee Three</nameSurname>
+                                    </employeeName>
+                                    <employeeNameOnEILine>Venus Williams</employeeNameOnEILine>
+                                    <taxCodes>
+                                        <taxCode>NSW</taxCode>
+                                    </taxCodes>
+                                    <employeeDateOfBirth>1990-09-01</employeeDateOfBirth>
+                                    <employmentStartDate>2016-07-04</employmentStartDate>
+                                </employee>
+                                <employee>
+                                    <employeeIRD>123075056</employeeIRD>
+                                    <employeeName>
+                                        <nameTitle>MS</nameTitle>
+                                        <nameFirst>Test</nameFirst>
+                                        <nameSurname>Terminate Employee Negative</nameSurname>
+                                    </employeeName>
+                                    <employeeNameOnEILine>Luc Mele</employeeNameOnEILine>
+                                    <taxCodes>
+                                        <taxCode>MESL</taxCode>
+                                    </taxCodes>
+                                    <employeeDateOfBirth>1990-09-01</employeeDateOfBirth>
+                                    <employmentStartDate>2016-07-04</employmentStartDate>
+                                </employee>
+                            </listResponse>
+                        </responseBody>
+                    </retrieveListResponse>
+                </d4p1:RetrieveListResponseWrapper>
+            </RetrieveListResult>
+        </RetrieveListResponse>
+    </s:Body>
+</s:Envelope>

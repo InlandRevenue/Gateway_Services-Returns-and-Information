@@ -54,7 +54,6 @@ Schema updates
 		- [request sample](sample%20messages/AILFileRequest.xml)
         - [positive response sample](sample%20messages/AILFileResponse.xml)
 	- File Amendment
-		- [request sample by period end date](sample%20messages/AILFileRequestUpdate_PeriodEndDate.xml)
 		- [request sample by submission key](sample%20messages/AILFileRequestUpdate_SubmissionKey.xml)
         - [positive response sample](sample%20messages/AILFileResponse.xml)
     - RetrieveStatus
@@ -62,6 +61,5 @@ Schema updates
 		- [request sample by submission key](sample%20messages/AILRetrieveStatusRequest_SubmissionKey.xml)
         - [positive response sample](sample%20messages/AILRetriveStatusResponse.xml)
     - RetrieveReturn
-		- [request sample by period end date](sample%20messages/AILRetrieveReturnRequest_PeriodEndDate.xml)
 		- [request sample by submission key](sample%20messages/AILRetrieveReturnRequest_SubmissionKey.xml)
         - [positive response sample](sample%20messages/AILRetrieveReturnResponse.xml)

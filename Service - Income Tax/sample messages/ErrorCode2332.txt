@@ -70,21 +70,21 @@ Request
 
 
 Response
-<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">
-    <s:Header>
-        <a:Action s:mustUnderstand="1">https://services.ird.govt.nz/GWS/Returns/Return/FileResponse</a:Action>
+<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope">
+    <s:Header xmlns:wsa="http://www.w3.org/2005/08/addressing">
+        <wsa:Action xmlns:env="http://www.w3.org/2003/05/soap-envelope" env:mustUnderstand="1">https://services.ird.govt.nz/GWS/Returns/Return/FileResponse</wsa:Action>
     </s:Header>
     <s:Body>
         <FileResponse xmlns="https://services.ird.govt.nz/GWS/Returns/">
-            <FileResult xmlns:b="https://services.ird.govt.nz/GWS/Returns/:types/FileResponse" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
-                <b:FileResponseWrapper>
+            <FileResult xmlns:d4p1="https://services.ird.govt.nz/GWS/Returns/:types/FileResponse" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+                <d4p1:FileResponseWrapper>
                     <fileResponse xmlns="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2">
                         <statusMessage xmlns="urn:www.ird.govt.nz/GWS:types/Common.v2">
                             <statusCode>2332</statusCode>
                             <errorMessage>The value of totalGrossPremiumsFees must match the sum of totalGeneralInsurancePremiums, totalLifeInsurancePremiums, totalGuarantorFees</errorMessage>
                         </statusMessage>
                     </fileResponse>
-                </b:FileResponseWrapper>
+                </d4p1:FileResponseWrapper>
             </FileResult>
         </FileResponse>
     </s:Body>

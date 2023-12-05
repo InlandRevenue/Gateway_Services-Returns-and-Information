@@ -30,15 +30,14 @@ Request:
 
 
 Response:
-
-<env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope">
-    <env:Header xmlns:wsa="http://www.w3.org/2005/08/addressing">
-        <wsa:Action env:mustUnderstand="1">https://services.ird.govt.nz/GWS/Returns/Return/RetrieveReturnResponse</wsa:Action>
-    </env:Header>
-    <env:Body>
+<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope">
+    <s:Header xmlns:wsa="http://www.w3.org/2005/08/addressing">
+        <wsa:Action xmlns:env="http://www.w3.org/2003/05/soap-envelope" env:mustUnderstand="1">https://services.ird.govt.nz/GWS/Returns/Return/RetrieveReturnResponse</wsa:Action>
+    </s:Header>
+    <s:Body>
         <RetrieveReturnResponse xmlns="https://services.ird.govt.nz/GWS/Returns/">
-            <RetrieveReturnResult xmlns:b="https://services.ird.govt.nz/GWS/Returns/:types/RetrieveReturnResponse" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
-                <b:RetrieveReturnResponseWrapper>
+            <RetrieveReturnResult xmlns:d4p1="https://services.ird.govt.nz/GWS/Returns/:types/RetrieveReturnResponse" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+                <d4p1:RetrieveReturnResponseWrapper>
                     <retrieveReturnResponse xmlns="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
                         <statusMessage xmlns="urn:www.ird.govt.nz/GWS:types/Common.v2">
                             <statusCode>0</statusCode>
@@ -121,6 +120,7 @@ Response:
                                 <r3:otherExpenses>0.00</r3:otherExpenses>
                                 <r3:lossesBroughtForward>0.00</r3:lossesBroughtForward>
                                 <r3:lossesClaimedThisYear>0.00</r3:lossesClaimedThisYear>
+                                <r3:lossCarriedBackPriorYear>0.00</r3:lossCarriedBackPriorYear>
                                 <r3:totalTaxableIncome>22000.00</r3:totalTaxableIncome>
                                 <r3:eligibleForIETC>false</r3:eligibleForIETC>
                                 <r3:overseasExclusionDates>
@@ -149,9 +149,8 @@ Response:
                             </r3:formFields>
                         </responseBody>
                     </retrieveReturnResponse>
-                </b:RetrieveReturnResponseWrapper>
+                </d4p1:RetrieveReturnResponseWrapper>
             </RetrieveReturnResult>
         </RetrieveReturnResponse>
-    </env:Body>
-</env:Envelope>
-
+    </s:Body>
+</s:Envelope>

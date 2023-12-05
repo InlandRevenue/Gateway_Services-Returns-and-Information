@@ -1,11 +1,11 @@
-<env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope">
-    <env:Header xmlns:wsa="http://www.w3.org/2005/08/addressing">
-        <wsa:Action env:mustUnderstand="1">https://services.ird.govt.nz/GWS/Returns/Return/RetrieveReturnResponse</wsa:Action>
-    </env:Header>
-    <env:Body>
+<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope">
+    <s:Header xmlns:wsa="http://www.w3.org/2005/08/addressing">
+        <wsa:Action xmlns:env="http://www.w3.org/2003/05/soap-envelope" env:mustUnderstand="1">https://services.ird.govt.nz/GWS/Returns/Return/RetrieveReturnResponse</wsa:Action>
+    </s:Header>
+    <s:Body>
         <RetrieveReturnResponse xmlns="https://services.ird.govt.nz/GWS/Returns/">
-            <RetrieveReturnResult xmlns:b="https://services.ird.govt.nz/GWS/Returns/:types/RetrieveReturnResponse" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
-                <b:RetrieveReturnResponseWrapper>
+            <RetrieveReturnResult xmlns:d4p1="https://services.ird.govt.nz/GWS/Returns/:types/RetrieveReturnResponse" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+                <d4p1:RetrieveReturnResponseWrapper>
                     <retrieveReturnResponse xmlns="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
                         <statusMessage xmlns="urn:www.ird.govt.nz/GWS:types/Common.v2">
                             <statusCode>0</statusCode>
@@ -49,27 +49,6 @@
                                     <ic:totalTaxPaid>20.00</ic:totalTaxPaid>
                                     <ic:totalIncome>700.00</ic:totalIncome>
                                 </r7:overseasIncome>
-                                <r7:residentialRentalIncome>
-                                    <ic:indicator>I</ic:indicator>
-                                    <ic:grossResRentalIncome>600.00</ic:grossResRentalIncome>
-                                    <ic:netBrightlineProfits>750.00</ic:netBrightlineProfits>
-                                    <ic:otherResIncome>750.00</ic:otherResIncome>
-                                    <ic:totalIncome>2100.00</ic:totalIncome>
-                                    <ic:residentialRentalDeductions>1000.00</ic:residentialRentalDeductions>
-                                </r7:residentialRentalIncome>
-                                <r7:propertyInterestLimitation>
-                                    <ic:totalInterest>1000.00</ic:totalInterest>
-                                    <ic:interestExpenseClaimed>1000.00</ic:interestExpenseClaimed>
-                                    <ic:interestExpenseClaimedReason>
-                                        <ic:notResidentialOrMaoriExempt>true</ic:notResidentialOrMaoriExempt>
-                                        <ic:propertyNotInNz>true</ic:propertyNotInNz>
-                                        <ic:loansDrawnDown>true</ic:loansDrawnDown>
-                                        <ic:newBuildExemption>true</ic:newBuildExemption>
-                                        <ic:developmentExemption>true</ic:developmentExemption>
-                                        <ic:emergencyTransitionalSocialCouncil>true</ic:emergencyTransitionalSocialCouncil>
-                                        <ic:buildToRentExclusion>true</ic:buildToRentExclusion>
-                                    </ic:interestExpenseClaimedReason>
-                                </r7:propertyInterestLimitation>
                                 <r7:pieIncome>
                                     <ic:totalTaxCredits>15</ic:totalTaxCredits>
                                     <ic:totalIncome>800</ic:totalIncome>
@@ -79,9 +58,9 @@
                                 <r7:otherIncome>0.00</r7:otherIncome>
                                 <r7:rlwtCredit>0</r7:rlwtCredit>
                                 <r7:saleOfProperty>0.00</r7:saleOfProperty>
-                                <r7:totalIncome>6400</r7:totalIncome>
+                                <r7:totalIncome>6400.00</r7:totalIncome>
                                 <r7:totalExpenses>0.00</r7:totalExpenses>
-                                <r7:totalIncomeLossAfterExpenses>6400</r7:totalIncomeLossAfterExpenses>
+                                <r7:totalIncomeLossAfterExpenses>6400.00</r7:totalIncomeLossAfterExpenses>
                                 <r7:extinguishedLosses>0.00</r7:extinguishedLosses>
                                 <r7:priorYearsDeductions>0.00</r7:priorYearsDeductions>
                                 <r7:deductionsClaimedThisYear>0.00</r7:deductionsClaimedThisYear>
@@ -91,17 +70,15 @@
                                 <r7:incomeAttributionDetails>
                                     <ic:incomeAttribution>
                                         <ic:irdNumber>045161595</ic:irdNumber>
-                                        <ic:shareOfInterestIncome>6400</ic:shareOfInterestIncome>
+                                        <ic:shareOfInterestIncome>6400.00</ic:shareOfInterestIncome>
                                         <ic:shareOfDividendIncome>0.00</ic:shareOfDividendIncome>
                                         <ic:shareOfMADistributions>0.00</ic:shareOfMADistributions>
                                         <ic:shareOfOverseasIncome>0.00</ic:shareOfOverseasIncome>
-                                        <ic:shareOfResidentialRentalIncome>0.00</ic:shareOfResidentialRentalIncome>
                                         <ic:shareOfRentalIncome>0.00</ic:shareOfRentalIncome>
                                         <ic:shareOfPassiveIncome>0.00</ic:shareOfPassiveIncome>
                                         <ic:shareOfOtherIncome>0.00</ic:shareOfOtherIncome>
                                         <ic:totalIncome>6400</ic:totalIncome>
                                         <ic:deductionForExtinguishedLoss>0.00</ic:deductionForExtinguishedLoss>
-                                        <ic:shareOfResidentialRentalDeductions>0.00</ic:shareOfResidentialRentalDeductions>
                                         <ic:shareOfOverseasTaxPaid>20</ic:shareOfOverseasTaxPaid>
                                         <ic:shareOfImputationCredits>45</ic:shareOfImputationCredits>
                                         <ic:shareOfOtherTaxCredits>395</ic:shareOfOtherTaxCredits>
@@ -115,8 +92,8 @@
                             </r7:formFields>
                         </responseBody>
                     </retrieveReturnResponse>
-                </b:RetrieveReturnResponseWrapper>
+                </d4p1:RetrieveReturnResponseWrapper>
             </RetrieveReturnResult>
         </RetrieveReturnResponse>
-    </env:Body>
-</env:Envelope>
+    </s:Body>
+</s:Envelope>

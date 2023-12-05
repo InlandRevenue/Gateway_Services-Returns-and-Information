@@ -32,7 +32,7 @@ Response:
 
        <RetrieveReturnResponse xmlns="https://services.ird.govt.nz/GWS/Returns/">
             <RetrieveReturnResult>
-                <b:RetrieveReturnResponseWrapper xmlns:b="https://services.ird.govt.nz/GWS/Returns/:types/RetrieveReturnResponse">
+                <d4p1:RetrieveReturnResponseWrapper xmlns:d4p1="https://services.ird.govt.nz/GWS/Returns/:types/RetrieveReturnResponse">
                     <retrieveReturnResponse xmlns="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v1">
                         <statusMessage xmlns="urn:www.ird.govt.nz/GWS:types/Common.v1">
                             <statusCode>0</statusCode>
@@ -71,7 +71,7 @@ Response:
                             </formFields>
                         </responseBody>
                     </retrieveReturnResponse>
-                </b:RetrieveReturnResponseWrapper>
+                </d4p1:RetrieveReturnResponseWrapper>
             </RetrieveReturnResult>
         </RetrieveReturnResponse>
     </s:Body>

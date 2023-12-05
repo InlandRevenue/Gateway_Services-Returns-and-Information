@@ -1,22 +1,22 @@
-<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope">
-    <soap:Header>
-        <a:Action xmlns:a="http://www.w3.org/2005/08/addressing">https://services.ird.govt.nz/GWS/Returns/Return/RetrieveStatus</a:Action>
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ret="https://services.ird.govt.nz/GWS/Returns/" xmlns:ret1="https://services.ird.govt.nz/GWS/Returns/:types/RetrieveStatusRequest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soap:Header xmlns:a="http://www.w3.org/2005/08/addressing">
+        <a:Action>https://services.ird.govt.nz/GWS/Returns/Return/RetrieveStatus</a:Action>
     </soap:Header>
     <soap:Body>
-        <ret:RetrieveStatus xmlns:ret="https://services.ird.govt.nz/GWS/Returns/">
+        <ret:RetrieveStatus>
             <ret:ReturnStatusRequestMsg>
-                <ret1:RetrieveStatusRequestWrapper xmlns:ret1="https://services.ird.govt.nz/GWS/Returns/:types/RetrieveStatusRequest">
-                    <ret2:retrieveFormInfoRequest xmlns:ret2="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2">
-                        <com:softwareProviderData xmlns:com="urn:www.ird.govt.nz/GWS:types/Common.v2">
+                <ret1:RetrieveStatusRequestWrapper>
+                    <ret2:retrieveFormInfoRequest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ret2="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2" xmlns:com="urn:www.ird.govt.nz/GWS:types/Common.v2">
+                        <com:softwareProviderData>
                             <com:softwareProvider>softwareProvider</com:softwareProvider>
                             <com:softwarePlatform>softwarePlatform</com:softwarePlatform>
                             <com:softwareRelease>v1</com:softwareRelease>
                         </com:softwareProviderData>
-                        <com:identifier xmlns:com="urn:www.ird.govt.nz/GWS:types/Common.v2" IdentifierValueType="ACCIRD">123768973</com:identifier>
-                        <com:accountType xmlns:com="urn:www.ird.govt.nz/GWS:types/Common.v2">NRT</com:accountType>
+                        <com:identifier IdentifierValueType="ACCIRD">132145202</com:identifier>
+                        <com:accountType>NRT</com:accountType>
                         <ret2:periodEndDate>2019-04-30</ret2:periodEndDate>
                         <ret2:majorFormType>NRT</ret2:majorFormType>
-                        <ret2:submissionKey>555555</ret2:submissionKey>
+                        <ret2:submissionKey>1859829760</ret2:submissionKey>
                     </ret2:retrieveFormInfoRequest>
                 </ret1:RetrieveStatusRequestWrapper>
             </ret:ReturnStatusRequestMsg>

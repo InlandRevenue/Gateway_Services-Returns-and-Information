@@ -54,7 +54,6 @@ Schema updates
 		- [request sample](sample%20messages/DWTFileRequest.xml)
         - [positive response sample](sample%20messages/DWTFileResponse.xml)
 	- File Amendment
-		- [request sample by period end date](sample%20messages/DWTFileRequestUpdate_PeriodEndDate.xml)
 		- [request sample by submission key](sample%20messages/DWTFileRequestUpdate_SubmissionKey.xml)
         - [positive response sample](sample%20messages/DWTFileResponse.xml)
     - RetrieveStatus
@@ -62,6 +61,5 @@ Schema updates
 		- [request sample by submission key](sample%20messages/DWTRetrieveStatusRequest_SubmissionKey.xml)
         - [positive response sample](sample%20messages/DWTRetriveStatusResponse.xml)
     - RetrieveReturn
-		- [request sample by period end date](sample%20messages/DWTRetrieveReturnRequest_PeriodEndDate.xml)
 		- [request sample by submission key](sample%20messages/DWTRetrieveReturnRequest_SubmissionKey.xml)
         - [positive response sample](sample%20messages/DWTRetrieveReturnResponse.xml)

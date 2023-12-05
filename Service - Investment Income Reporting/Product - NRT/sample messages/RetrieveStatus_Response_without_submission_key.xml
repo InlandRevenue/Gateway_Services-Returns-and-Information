@@ -1,11 +1,11 @@
 <s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope">
-    <s:Header>
-        <a:Action xmlns:a="http://www.w3.org/2005/08/addressing" s:mustUnderstand="1">https://services.ird.govt.nz/GWS/Returns/Return/RetrieveStatusResponse</a:Action>
+    <s:Header xmlns:wsa="http://www.w3.org/2005/08/addressing">
+        <wsa:Action xmlns:env="http://www.w3.org/2003/05/soap-envelope" env:mustUnderstand="1">https://services.ird.govt.nz/GWS/Returns/Return/RetrieveStatusResponse</wsa:Action>
     </s:Header>
     <s:Body>
         <RetrieveStatusResponse xmlns="https://services.ird.govt.nz/GWS/Returns/">
-            <RetrieveStatusResult>
-                <b:RetrieveStatusResponseWrapper xmlns:b="https://services.ird.govt.nz/GWS/Returns/:types/RetrieveStatusResponse">
+            <RetrieveStatusResult xmlns:d4p1="https://services.ird.govt.nz/GWS/Returns/:types/RetrieveStatusResponse" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+                <d4p1:RetrieveStatusResponseWrapper>
                     <retrieveStatusResponse xmlns="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2">
                         <statusMessage xmlns="urn:www.ird.govt.nz/GWS:types/Common.v2">
                             <statusCode>0</statusCode>
@@ -13,11 +13,16 @@
                         </statusMessage>
                         <responseBody>
                             <returnStatus>
-                                <status code="EXP">Expected</status>
+                                <status code="OPRCG">Ontime-processing</status>
+                                <submissionKey>625328128</submissionKey>
+                            </returnStatus>
+                            <returnStatus>
+                                <status code="OPRCG">Ontime-processing</status>
+                                <submissionKey>1175814144</submissionKey>
                             </returnStatus>
                         </responseBody>
                     </retrieveStatusResponse>
-                </b:RetrieveStatusResponseWrapper>
+                </d4p1:RetrieveStatusResponseWrapper>
             </RetrieveStatusResult>
         </RetrieveStatusResponse>
     </s:Body>

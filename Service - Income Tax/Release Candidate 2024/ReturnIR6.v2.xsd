@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation
+_______________________________________
+NAME:       ReturnIR6.v2.xsd
+VER:        1.1
+ISSUER:     Inland Revenue Department
+DESC:      	This schema defines the elements and related data types required for the Returns Estate/Trust Income Tax Gateway Service for 2024 and on.
+	
+Date  		Change
+**********  ************
+2023-11-02  Initial
+_______________________________________
+-->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:www.ird.govt.nz/GWS:types/ReturnIR6.v2" xmlns:cmn="urn:www.ird.govt.nz/GWS:types/Common.v2" xmlns:rc="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2" xmlns:ic="urn:www.ird.govt.nz/GWS:types/IncomeReturnCommon.v1" xmlns:r="urn:www.ird.govt.nz/GWS:types/ReturnIR6.v2" targetNamespace="urn:www.ird.govt.nz/GWS:types/ReturnIR6.v2" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<!--Begin Imports Statement(s)-->
+	<xsd:import namespace="urn:www.ird.govt.nz/GWS:types/Common.v2" schemaLocation="./Common.v2.xsd">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">Contains common data types.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:import>
+	<xsd:import namespace="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2" schemaLocation="./ReturnCommon.v2.xsd">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">Contains common return data types.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:import>
+	<xsd:import namespace="urn:www.ird.govt.nz/GWS:types/IncomeReturnCommon.v1" schemaLocation="./IncomeReturnCommon.v1.xsd">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">Contains income tax return common data types.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:import>
+	<!--End Import Statements-->
+	<!--Begin File Elements-->
+	<xsd:element name="fileRequest" type="rc:FileRequestType"/>
+	<!--End File Elements-->
+	<!--Begin Override FormFieldsType-->
+	<xsd:complexType name="FormFieldsType">
+		<xsd:complexContent>
+			<xsd:extension base="rc:FormFieldsType">
+				<xsd:sequence>
+					<xsd:element name="submissionKey" type="cmn:Quantity32TypePositive" minOccurs="0"/>
+					<xsd:element name="firstReturnEstateTrustStartDate" type="cmn:DateType" minOccurs="0"/>
+					<xsd:element name="estateTrustType" type="ic:TrustType" minOccurs="0"/>
+					<xsd:element name="interestIncome" type="ic:IncomeWithTaxPaidType3" minOccurs="0"/>
+					<xsd:element name="dividendIncome" type="ic:DividendIncomeType" minOccurs="0"/>
+					<xsd:element name="maoriAuthorityDistributions" type="ic:MADistributionIncomeType" minOccurs="0"/>
+					<xsd:element name="partnershipEstateTrustIncome" type="ic:IncomeWithTaxCreditType" minOccurs="0"/>
+					<xsd:element name="overseasIncome" type="ic:IncomeWithTaxPaidType3" minOccurs="0"/>
+					<xsd:element name="pieIncome" type="ic:IncomeWithTaxCreditType" minOccurs="0"/>
+					<xsd:element name="ltcIncome" type="ic:IncomeWithTaxCreditType" minOccurs="0"/>
+					<xsd:element name="ltcNonAllowableDeductions" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="ltcPriorYearNonAllowableDeductionsClaimed" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="ltcAdjustedIncome" type="cmn:MoneyType" minOccurs="0"/>
+					<xsd:element name="residentialRentalIncome" type="ic:ResidentialRentalIncomeType" minOccurs="0"/>
+					<xsd:element name="propertyInterestLimitation" type="ic:PropertyInterestLimitationType" minOccurs="0"/>
+					<xsd:element name="businessOrRentalIncome" type="cmn:MoneyType" minOccurs="0"/>
+					<xsd:element name="otherIncome" type="ic:IncomeWithTaxCreditType" minOccurs="0"/>
+					<xsd:element name="saleOfProperty" type="cmn:MoneyType" minOccurs="0"/>
+					<xsd:element name="rlwtCredit" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="totalTaxCredits" type="cmn:MoneyType" minOccurs="0"/>
+					<xsd:element name="beneficiaryIncome" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="trusteeIncome" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="totalExpensesClaimed" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="lossesBroughtForward" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="lossesClaimedThisYear" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="totalDistributions" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="totalTaxableDistributions" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="disclosureRequiredCFCorFIF" type="xsd:boolean" minOccurs="0"/>
+					<xsd:element name="totalBeneficiaryTax" type="cmn:MoneyType" minOccurs="0"/>
+					<xsd:element name="totalTrusteeIncome" type="cmn:MoneyType" minOccurs="0"/>
+					<xsd:element name="taxOnTrusteeIncome" type="cmn:MoneyType" minOccurs="0"/>
+					<xsd:element name="trusteeShareOfOverseasTaxPaid" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="trusteeShareOfDivImpCredits" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="researchAndDevelopment" type="ic:ResearchAndDevelopmentType" minOccurs="0"/>
+					<xsd:element name="trusteeShareOfTaxCredits" type="cmn:MoneyType" minOccurs="0"/>
+					<xsd:element name="taxOnTrusteeIncomeLessCredits" type="cmn:MoneyType" minOccurs="0"/>
+					<xsd:element name="residualIncomeTax" type="cmn:MoneyType" minOccurs="0"/>
+					<xsd:element name="provisionalTax" type="ic:ProvisionalTaxType" minOccurs="0"/>
+					<xsd:element name="beneficiaryDetails" type="r:BeneficiaryListType" minOccurs="0"/>
+					<xsd:element name="settlementDetails" type="r:SettlementListType" minOccurs="0"/>
+					<xsd:element name="exemptFromCompliance" type="xsd:boolean" minOccurs="0"/>
+					<xsd:element name="netProfitLossBeforeTax" type="cmn:MoneyType" minOccurs="0"/>
+					<xsd:element name="taxAdjustments" type="cmn:MoneyType" minOccurs="0"/>
+					<xsd:element name="financialArrangements" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="assetsLand" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="assetsLandValuation" type="ic:AssetValuationType" minOccurs="0"/>
+					<xsd:element name="assetsBuildings" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="assetsBuildingsValuation" type="ic:AssetValuationType" minOccurs="0"/>
+					<xsd:element name="assetsShares" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="assetsSharesValuation" type="ic:AssetValuationType" minOccurs="0"/>
+					<xsd:element name="assetsBeneficiaryCurrentAccountBalance" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="assetsOther" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="assetsTotal" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="financialArrangementsLiable" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="liabilitiesBeneficiaryCurrentAccountBalance" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="liabilitiesOther" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="liabilitiesTotal" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="accumulatedTrustFunds" type="cmn:MoneyType" minOccurs="0"/>
+					<xsd:element name="unTaxedRealisedGainsAndReceipts" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="amountsWithdrawnByBeneficiaries" type="cmn:MoneyTypePositive" minOccurs="0"/>
+					<xsd:element name="attachmentForms" type="ic:AttachmentListType" minOccurs="0"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<!--End Override FormFieldsType-->
+	<!--Return Specific Elements-->
+	<xsd:complexType name="RetrieveReturnResponseBodyType">
+		<xsd:complexContent>
+			<xsd:extension base="rc:RetrieveReturnResponseBodyType">
+				<xsd:sequence>
+					<xsd:element name="formFields" type="FormFieldsType"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="BeneficiaryListType">
+		<xsd:sequence>
+			<xsd:element name="beneficiary" type="BeneficiaryType" minOccurs="0" maxOccurs="200000"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="BeneficiaryType">
+		<xsd:sequence>
+			<xsd:element name="beneficiaryIrdNumber" type="cmn:IRDNumberType" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>This field is optional on schema level, but may be required in File payloads.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="taxIdNumber" type="cmn:String50" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>This field is optional on schema level, but may be required in File payloads.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="beneficiaryName" type="cmn:String255" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>This field is optional on schema level, but is required in File payloads.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="beneficiaryDOB" type="cmn:DateType" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>This field is optional on schema level, but is required in File payloads.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="taxJurisdiction" type="cmn:Country2DigitType" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>This field is optional on schema level, but is required in File payloads.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="noJurisdictionTin" type="xsd:boolean" minOccurs="0"/>
+			<xsd:element name="tinNotRequired" type="xsd:boolean" minOccurs="0"/>
+			<xsd:element name="beneficiaryAddress" type="cmn:String255" minOccurs="0"/>
+			<xsd:element name="shareOfInterestIncome" type="cmn:MoneyType" minOccurs="0"/>
+			<xsd:element name="shareOfDividendsIncome" type="cmn:MoneyTypePositive" minOccurs="0"/>
+			<xsd:element name="shareOfMADistributionsIncome" type="cmn:MoneyTypePositive" minOccurs="0"/>
+			<xsd:element name="shareOfOverseasIncome" type="cmn:MoneyType" minOccurs="0"/>
+			<xsd:element name="shareOfOtherIncome" type="cmn:MoneyType" minOccurs="0"/>
+			<xsd:element name="taxableIncome" type="cmn:MoneyType" minOccurs="0"/>
+			<xsd:element name="taxPaidByTrust" type="xsd:boolean" minOccurs="0"/>
+			<xsd:element name="distributionByNonComplyingtrust" type="cmn:MoneyType" minOccurs="0"/>
+			<xsd:element name="taxOnTaxableIncome" type="cmn:MoneyTypePositive" minOccurs="0"/>
+			<xsd:element name="overseasTaxPaid" type="cmn:MoneyTypePositive" minOccurs="0"/>
+			<xsd:element name="taxLessOverseasTaxPaid" type="cmn:MoneyTypePositive" minOccurs="0"/>
+			<xsd:element name="dividendImputationCredit" type="cmn:MoneyTypePositive" minOccurs="0"/>
+			<xsd:element name="taxLessDividendImputationCredit" type="cmn:MoneyTypePositive" minOccurs="0"/>
+			<xsd:element name="otherPaidTaxCredits" type="cmn:MoneyTypePositive" minOccurs="0"/>
+			<xsd:element name="taxLessOtherPaidTaxCredits" type="cmn:MoneyType" minOccurs="0"/>
+			<xsd:element name="taxOnDistributionByNonComplyingTrust" type="cmn:MoneyType" minOccurs="0"/>
+			<xsd:element name="beneficiaryTaxPayable" type="cmn:MoneyType" minOccurs="0"/>
+			<xsd:element name="nilDistribution" type="xsd:boolean" minOccurs="0"/>
+			<xsd:element name="openingBalance" type="cmn:MoneyType" minOccurs="0"/>
+			<xsd:element name="accountingIncomeAllocated" type="cmn:MoneyTypePositive" minOccurs="0"/>
+			<xsd:element name="corpus" type="cmn:MoneyTypePositive" minOccurs="0"/>
+			<xsd:element name="capital" type="cmn:MoneyTypePositive" minOccurs="0"/>
+			<xsd:element name="useOfTrustProperty" type="cmn:MoneyTypePositive" minOccurs="0"/>
+			<xsd:element name="distributionTrustAssets" type="cmn:MoneyTypePositive" minOccurs="0"/>
+			<xsd:element name="forgivenessOfDebt" type="cmn:MoneyTypePositive" minOccurs="0"/>
+			<xsd:element name="withdrawnFromTrust" type="cmn:MoneyType" minOccurs="0"/>
+			<xsd:element name="closingBalance" type="cmn:MoneyType" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="SettlementListType">
+		<xsd:sequence>
+			<xsd:element name="settlement" type="SettlementType" minOccurs="0" maxOccurs="200000"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="SettlementType">
+		<xsd:sequence>
+			<xsd:element name="settlorFullName" type="cmn:String255" minOccurs="1"/>
+			<xsd:element name="noSettlementThisYear" type="xsd:boolean" minOccurs="0"/>
+			<xsd:element name="settlorCommence" type="cmn:DateType" minOccurs="0"/>
+			<xsd:element name="taxJurisdiction" type="cmn:Country2DigitType" minOccurs="0"/>
+			<xsd:element name="settlorIrdNumber" type="cmn:IRDNumberType" minOccurs="0"/>
+			<xsd:element name="taxIdNumber" type="cmn:String50" minOccurs="0"/>
+			<xsd:element name="noJurisdictionTin" type="xsd:boolean" minOccurs="0"/>
+			<xsd:element name="tinNotRequired" type="xsd:boolean" minOccurs="0"/>
+			<xsd:element name="cash" type="cmn:MoneyTypePositive" minOccurs="0"/>
+			<xsd:element name="financialArrangements" type="cmn:MoneyTypePositive" minOccurs="0"/>
+			<xsd:element name="land" type="cmn:MoneyTypePositive" minOccurs="0"/>
+			<xsd:element name="buildings" type="cmn:MoneyTypePositive" minOccurs="0"/>
+			<xsd:element name="shares" type="cmn:MoneyTypePositive" minOccurs="0"/>
+			<xsd:element name="services" type="cmn:MoneyTypePositive" minOccurs="0"/>
+			<xsd:element name="other" type="cmn:MoneyTypePositive" minOccurs="0"/>
+			<xsd:element name="otherDescription" type="cmn:String255" minOccurs="0"/>
+			<xsd:element name="settlementZeroValue" type="xsd:boolean" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<!--End Return Specific Elements-->
+</xsd:schema>

@@ -54,24 +54,9 @@ Schema updates
 		* [Request](sample%20messages/RWT_File_Request_incomeType_DIVINT.xml)   
 		* [Response](sample%20messages/RWT_File_Response_incomeType_DIVINT.xml)
 		
-	* Income Type MAORI
-		* [Request](sample%20messages/RWT_File_Request_incomeType_MAORI.xml)
-		* [Response](sample%20messages/RWT_File_Response_incomeType_MAORI.xml)		
-	
-	* Multiple Income Information
-		* [Request](sample%20messages/RWT_File_Request_with_multiple_income_information.xml)
-		* [Response](sample%20messages/RWT_File_Response_with_multiple_income_information.xml)	
-		
-	* Multiple Joint Account Holders
-		* [Request](sample%20messages/RWT_File_Request_with_multiple_joint_account_holders.xml)
-		* [Response](sample%20messages/RWT_File_Response_with_multiple_joint_account_holders.xml)	
-	
 * File Amendment
-	* [File Amendment](sample%20messages/RWT_File_Request_amendment.xml)
-	
-	* Request Amendment by Reference Id
-		* [Request](sample%20messages/RWT_File_Request_amendment_by_referenceId.xml)
-		* [Response](sample%20messages/RWT_File_Response_amendment_by_referenceId.xml)
+	    * [Request](sample%20messages/RWT_File_Request_amendment.xml)
+ 	    * [Response](sample%20messages/RWT_File_Response_amendment.xml)
 		
 * RetrieveReturn
 	* Retrieve Return with submission 	

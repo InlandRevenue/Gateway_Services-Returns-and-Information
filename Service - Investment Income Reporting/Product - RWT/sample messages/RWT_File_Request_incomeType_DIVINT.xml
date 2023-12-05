@@ -1,25 +1,25 @@
-<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope">
-    <soap:Header>
-        <a:Action xmlns:a="http://www.w3.org/2005/08/addressing">https://services.ird.govt.nz/GWS/Returns/Return/File</a:Action>
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:r="https://services.ird.govt.nz/GWS/Returns/" xmlns:fil="https://services.ird.govt.nz/GWS/Returns/:types/FileRequest">
+    <soap:Header xmlns:a="http://www.w3.org/2005/08/addressing">
+        <a:Action>https://services.ird.govt.nz/GWS/Returns/Return/File</a:Action>
     </soap:Header>
     <soap:Body>
-        <r:File xmlns:r="https://services.ird.govt.nz/GWS/Returns/">
+        <r:File>
             <r:ReturnFileRequestMsg>
-                <fil:FileRequestWrapper xmlns:fil="https://services.ird.govt.nz/GWS/Returns/:types/FileRequest">
-                    <ret:fileRequest xmlns:ret="urn:www.ird.govt.nz/GWS:types/ReturnRWT.v1">
-                        <ret1:fileHeader xmlns:ret1="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2">
-                            <com:softwareProviderData xmlns:com="urn:www.ird.govt.nz/GWS:types/Common.v2">
+                <fil:FileRequestWrapper>
+                    <ret:fileRequest xmlns:ret="urn:www.ird.govt.nz/GWS:types/ReturnRWT.v1" xmlns:ret1="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2" xmlns:com="urn:www.ird.govt.nz/GWS:types/Common.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                        <ret1:fileHeader>
+                            <com:softwareProviderData>
                                 <com:softwareProvider>softwareProvider</com:softwareProvider>
                                 <com:softwarePlatform>softwarePlatform</com:softwarePlatform>
                                 <com:softwareRelease>v1</com:softwareRelease>
                             </com:softwareProviderData>
-                            <com:identifier xmlns:com="urn:www.ird.govt.nz/GWS:types/Common.v2" IdentifierValueType="IRD">123768736</com:identifier>
-                            <com:accountType xmlns:com="urn:www.ird.govt.nz/GWS:types/Common.v2">RWT</com:accountType>
+                            <com:identifier IdentifierValueType="IRD">123768736</com:identifier>
+                            <com:accountType>RWT</com:accountType>
                             <ret1:periodEndDate>2019-09-30</ret1:periodEndDate>
                             <ret1:majorFormType>RWT</ret1:majorFormType>
                             <ret1:minorFormType>RWT</ret1:minorFormType>
                         </ret1:fileHeader>
-                        <ret1:fileBody xmlns:ret1="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2">
+                        <ret1:fileBody xmlns:ret="urn:www.ird.govt.nz/GWS:types/ReturnRWT.v1" xmlns:ret1="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2">
                             <ret1:standardFields>
                                 <ret1:isNilReturn>false</ret1:isNilReturn>
                                 <ret1:isFinalReturn>false</ret1:isFinalReturn>
@@ -29,24 +29,38 @@
                                     <ret1:amendDetails/>
                                 </ret1:amendmentRequest>
                             </ret1:standardFields>
-                            <ret1:formFields xsi:type="ret:FormFieldsType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                            <ret1:formFields xsi:type="ret:FormFieldsType">
                                 <ret:isReverseReplace>false</ret:isReverseReplace>
                                 <ret:lineItems>
                                     <ret:referenceId>11</ret:referenceId>
-                                    <ret:externalID>123</ret:externalID>
-                                    <ret:primaryIRD>123671791</ret:primaryIRD>
-                                    <ret:primaryDateOfBirth>1970-05-05</ret:primaryDateOfBirth>
-                                    <ret:primaryName>Rachel Lawrence</ret:primaryName>
+                                    <ret:externalID>abc</ret:externalID>
+                                    <ret:primaryIRD>123769651</ret:primaryIRD>
+                                    <ret:primaryDateOfBirth>1973-06-07</ret:primaryDateOfBirth>
+                                    <ret:primaryName>Jehan Peterson</ret:primaryName>
                                     <ret:primaryPhone>2323231321213</ret:primaryPhone>
-                                    <ret:primaryEmail>RachelLawrence@IIITest.com</ret:primaryEmail>
+                                    <ret:primaryEmail>dsfd@IIItest.com</ret:primaryEmail>
                                     <ret:primaryCountry>NZ</ret:primaryCountry>
-                                    <ret:primaryAddress>test</ret:primaryAddress>
+                                    <ret:primaryAddress>test address</ret:primaryAddress>
+                                    <ret:accountHolders>
+                                        <ret1:irdNumber>123769732</ret1:irdNumber>
+                                        <ret1:dateOfBirth>1987-08-07</ret1:dateOfBirth>
+                                        <ret1:name>Veronika Anderson</ret1:name>
+                                        <ret1:address>test address 1</ret1:address>
+                                    </ret:accountHolders>
+                                    <ret:accountHolders>
+                                        <ret1:irdNumber>123769708</ret1:irdNumber>
+                                        <ret1:dateOfBirth>1966-04-03</ret1:dateOfBirth>
+                                        <ret1:name>Steven Robinson</ret1:name>
+                                        <ret1:address>test address 2</ret1:address>
+                                    </ret:accountHolders>
                                     <ret:incomeInformation>
                                         <ret1:incomeType>DIVINT</ret1:incomeType>
-                                        <ret1:grossAmount>5054.25</ret1:grossAmount>
-                                        <ret1:deductedAmount>1667.90</ret1:deductedAmount>
-                                        <ret1:rate>33.0</ret1:rate>
-                                        <ret:imputationCredits>0.00</ret:imputationCredits>
+                                        <ret1:grossAmount>5005</ret1:grossAmount>
+                                        <ret1:deductedAmount>53</ret1:deductedAmount>
+                                        <ret1:rate>10.5</ret1:rate>
+                                        <ret:imputationCredits>18.78</ret:imputationCredits>
+                                        <ret:maoriAuthorityCredits>20.22</ret:maoriAuthorityCredits>
+                                        <ret:creditRatio>100.0</ret:creditRatio>
                                     </ret:incomeInformation>
                                 </ret:lineItems>
                             </ret1:formFields>

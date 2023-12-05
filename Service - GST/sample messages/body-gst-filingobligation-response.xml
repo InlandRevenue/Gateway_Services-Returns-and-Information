@@ -1,11 +1,11 @@
-<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">
+<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope">
     <s:Header>
-        <a:Action s:mustUnderstand="1">https://services.ird.govt.nz/GWS/Returns/Return/RetrieveFilingObligationsResponse</a:Action>
+        <Action xmlns="http://www.w3.org/2005/08/addressing" s:mustUnderstand="1">https://services.ird.govt.nz/GWS/Returns/Return/RetrieveFilingObligationsResponse</Action>
     </s:Header>
     <s:Body>
         <RetrieveFilingObligationsResponse xmlns="https://services.ird.govt.nz/GWS/Returns/">
-            <RetrieveFilingObligationsResult xmlns:b="https://services.ird.govt.nz/GWS/Returns/:types/RetrieveFilingObligationsResponse" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
-                <b:RetrieveFilingObligationsResponseWrapper>
+            <RetrieveFilingObligationsResult>
+                <d4p1:RetrieveFilingObligationsResponseWrapper xmlns:d4p1="https://services.ird.govt.nz/GWS/Returns/:types/RetrieveFilingObligationsResponse">
                     <retrieveFilingObligationsResponse xmlns="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v1">
                         <statusMessage xmlns="urn:www.ird.govt.nz/GWS:types/Common.v1">
                             <statusCode>0</statusCode>
@@ -24,7 +24,7 @@
                             </filingObligation>
                         </responseBody>
                     </retrieveFilingObligationsResponse>
-                </b:RetrieveFilingObligationsResponseWrapper>
+                </d4p1:RetrieveFilingObligationsResponseWrapper>
             </RetrieveFilingObligationsResult>
         </RetrieveFilingObligationsResponse>
     </s:Body>

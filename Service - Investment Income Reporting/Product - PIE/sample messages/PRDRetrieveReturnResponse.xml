@@ -1,0 +1,61 @@
+<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope">
+    <s:Header xmlns:wsa="http://www.w3.org/2005/08/addressing">
+        <wsa:Action xmlns:env="http://www.w3.org/2003/05/soap-envelope" env:mustUnderstand="1">https://services.ird.govt.nz/GWS/Returns/Return/RetrieveReturnResponse</wsa:Action>
+    </s:Header>
+    <s:Body>
+        <RetrieveReturnResponse xmlns="https://services.ird.govt.nz/GWS/Returns/">
+            <RetrieveReturnResult xmlns:d4p1="https://services.ird.govt.nz/GWS/Returns/:types/RetrieveReturnResponse" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+                <d4p1:RetrieveReturnResponseWrapper>
+                    <retrieveReturnResponse xmlns="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2">
+                        <statusMessage xmlns="urn:www.ird.govt.nz/GWS:types/Common.v2">
+                            <statusCode>0</statusCode>
+                            <errorMessage/>
+                        </statusMessage>
+                        <responseBody xmlns:cmn="urn:www.ird.govt.nz/GWS:types/Common.v1" xmlns:r="urn:www.ird.govt.nz/GWS:types/ReturnPIEp.v1" xmlns:rc="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="r:RetrieveReturnResponseBodyType">
+                            <rc:standardFields xmlns:rc="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2">
+                                <rc:isNilReturn>false</rc:isNilReturn>
+                            </rc:standardFields>
+                            <r:formFields>
+                                <r:submissionKey>757722752</r:submissionKey>
+                                <r:includeAprilToFeb>false</r:includeAprilToFeb>
+                                <r:totalInvestmentValue>525600000.01</r:totalInvestmentValue>
+                                <r:grossIncome>525600.02</r:grossIncome>
+                                <r:deductibleExpenses>525.03</r:deductibleExpenses>
+                                <r:netLossIncome>525600.02</r:netLossIncome>
+                                <r:netLossLandIncome>52.04</r:netLossLandIncome>
+                                <r:combinedLossIncome>525652.06</r:combinedLossIncome>
+                                <r:formationLoss>525.05</r:formationLoss>
+                                <r:landLossBroughtForward>25.06</r:landLossBroughtForward>
+                                <r:landLossClaimed>25.06</r:landLossClaimed>
+                                <r:landLossCarryForward>0.00</r:landLossCarryForward>
+                                <r:totalIncome>525101.97</r:totalIncome>
+                                <r:totalLoss>25.06</r:totalLoss>
+                                <r:incomeRetained>525101.97</r:incomeRetained>
+                                <r:incomeExitedInvestors>0.00</r:incomeExitedInvestors>
+                                <r:investorExpenses>254.03</r:investorExpenses>
+                                <r:totalIncomeToAttribute>525101.97</r:totalIncomeToAttribute>
+                                <r:totalLossToAttribute>763.06</r:totalLossToAttribute>
+                                <r:incomeAttributedZero>131275.51</r:incomeAttributedZero>
+                                <r:incomeAttributedLow>131275.49</r:incomeAttributedLow>
+                                <r:incomeAttributedMid>131275.48</r:incomeAttributedMid>
+                                <r:incomeAttributedTop>131275.49</r:incomeAttributedTop>
+                                <r:lossAttributedZero>190.77</r:lossAttributedZero>
+                                <r:lossAttributedLow>190.71</r:lossAttributedLow>
+                                <r:lossAttributedMid>190.72</r:lossAttributedMid>
+                                <r:lossAttributedTop>190.86</r:lossAttributedTop>
+                                <r:foreignTaxCredit>252.01</r:foreignTaxCredit>
+                                <r:otherTaxCredit>252.03</r:otherTaxCredit>
+                                <r:imputationCredit>252.04</r:imputationCredit>
+                                <r:residentWithholdingTax>252.05</r:residentWithholdingTax>
+                                <r:taxLiability>72470.70</r:taxLiability>
+                                <r:taxPaymentExitedInvestors>7270.01</r:taxPaymentExitedInvestors>
+                                <r:incomeAttributedNFI>0.00</r:incomeAttributedNFI>
+                                <r:taxPaidNFI>0.00</r:taxPaidNFI>
+                            </r:formFields>
+                        </responseBody>
+                    </retrieveReturnResponse>
+                </d4p1:RetrieveReturnResponseWrapper>
+            </RetrieveReturnResult>
+        </RetrieveReturnResponse>
+    </s:Body>
+</s:Envelope>

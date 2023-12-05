@@ -1,17 +1,17 @@
-<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">
+<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns="http://www.w3.org/2005/08/addressing">
 	<s:Header>
-		<a:Action s:mustUnderstand="1">https://services.ird.govt.nz/GWS/Returns/Return/PrepopResponse</a:Action>
+		<Action s:mustUnderstand="1">https://services.ird.govt.nz/GWS/Returns/Return/PrepopResponse</Action>
 	</s:Header>
 	<s:Body>
 		<PrepopResponse xmlns="https://services.ird.govt.nz/GWS/Returns/">
-			<PrepopResult xmlns:b="https://services.ird.govt.nz/GWS/Returns/:types/PrepopResponse" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
-				<b:PrepopResponseWrapper>
+			<PrepopResult>
+				<d4p1:PrepopResponseWrapper xmlns:d4p1="https://services.ird.govt.nz/GWS/Returns/:types/PrepopResponse">
 					<prepopResponse xmlns="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v1">
 						<statusMessage xmlns="urn:www.ird.govt.nz/GWS:types/Common.v1">
 							<statusCode>0</statusCode>
 							<errorMessage/>
 						</statusMessage>
-						<responseBody xsi:type="r:PrepopResponseBodyType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:r="urn:www.ird.govt.nz/GWS:types/ReturnGST.v1">
+						<responseBody xsi:type="r:PrepopResponseBodyType" xmlns:r="urn:www.ird.govt.nz/GWS:types/ReturnGST.v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 							<r:accountId>123080106</r:accountId>
 							<r:periodEndDate>2017-07-31</r:periodEndDate>
 							<r:filingFrequency code="GST2M1">Two monthly - periods ending odd months</r:filingFrequency>
@@ -22,7 +22,7 @@
 							<r:hospiceFiler>false</r:hospiceFiler>
 						</responseBody>
 					</prepopResponse>
-				</b:PrepopResponseWrapper>
+				</d4p1:PrepopResponseWrapper>
 			</PrepopResult>
 		</PrepopResponse>
 	</s:Body>

@@ -1,22 +1,19 @@
-<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
-               xmlns:emp1="urn:www.ird.govt.nz/GWS:types/Employment.v2"
-               xmlns:emp="https://services.ird.govt.nz/GWS/Employment/v2/"
-               xmlns:cre="https://services.ird.govt.nz/GWS/Employment/v2/:types/CreateResponse"
-               xmlns:com="urn:www.ird.govt.nz/GWS:types/Common.v2">
-    <soap:Header/>
-    <soap:Body>
-        <emp:CreateResponse>
-            <emp:CreateResult>
-                <cre:CreateResponseWrapper>
-                    <emp1:employmentResponse xmlns:emp1="urn:www.ird.govt.nz/GWS:types/Employment.v2"
-                                             xmlns:com="urn:www.ird.govt.nz/GWS:types/Common.v2">
-                        <com:statusMessage>
-                            <com:statusCode>0</com:statusCode>
-                            <com:errorMessage></com:errorMessage>
-                        </com:statusMessage>
-                    </emp1:employmentResponse>
-                </cre:CreateResponseWrapper>
-            </emp:CreateResult>
-        </emp:CreateResponse>
-    </soap:Body>
-</soap:Envelope>
+<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope">
+    <s:Header>
+        <Action xmlns="http://www.w3.org/2005/08/addressing" s:mustUnderstand="1">https://services.ird.govt.nz/GWS/Employment/v2/Employment/CreateResponse</Action>
+    </s:Header>
+    <s:Body>
+        <CreateResponse xmlns="https://services.ird.govt.nz/GWS/Employment/v2/">
+            <CreateResult>
+                <d4p1:CreateResponseWrapper xmlns:d4p1="https://services.ird.govt.nz/GWS/Employment/v2/:types/CreateResponse">
+                    <employmentResponse xmlns="urn:www.ird.govt.nz/GWS:types/Employment.v2">
+                        <statusMessage xmlns="urn:www.ird.govt.nz/GWS:types/Common.v2">
+                            <statusCode>0</statusCode>
+                            <errorMessage/>
+                        </statusMessage>
+                    </employmentResponse>
+                </d4p1:CreateResponseWrapper>
+            </CreateResult>
+        </CreateResponse>
+    </s:Body>
+</s:Envelope>

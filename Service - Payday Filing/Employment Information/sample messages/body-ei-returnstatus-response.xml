@@ -1,11 +1,11 @@
-<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">
+<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns="http://www.w3.org/2005/08/addressing">
     <s:Header>
-        <a:Action s:mustUnderstand="1">https://services.ird.govt.nz/GWS/Returns/Return/RetrieveStatusResponse</a:Action>
+        <Action s:mustUnderstand="1">https://services.ird.govt.nz/GWS/Returns/Return/RetrieveStatusResponse</Action>
     </s:Header>
     <s:Body>
         <RetrieveStatusResponse xmlns="https://services.ird.govt.nz/GWS/Returns/">
-            <RetrieveStatusResult xmlns:b="https://services.ird.govt.nz/GWS/Returns/:types/RetrieveStatusResponse" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
-                <b:RetrieveStatusResponseWrapper>
+            <RetrieveStatusResult>
+                <d4p1:RetrieveStatusResponseWrapper xmlns:d4p1="https://services.ird.govt.nz/GWS/Returns/:types/RetrieveStatusResponse">
                     <retrieveStatusResponse xmlns="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2">
                         <statusMessage xmlns="urn:www.ird.govt.nz/GWS:types/Common.v2">
                             <statusCode>0</statusCode>
@@ -19,7 +19,7 @@
                             </returnStatus>
                         </responseBody>
                     </retrieveStatusResponse>
-                </b:RetrieveStatusResponseWrapper>
+                </d4p1:RetrieveStatusResponseWrapper>
             </RetrieveStatusResult>
         </RetrieveStatusResponse>
     </s:Body>

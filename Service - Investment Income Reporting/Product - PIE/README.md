@@ -34,39 +34,39 @@
 
 * File
 	* Income Type ANN
-		* [Request](sample%20messages/ANNFilePayload25092020.xml)   
-		* [Response](sample%20messages/FileSuccessResponse25092020.xml)  
+		* [Request](sample%20messages/ANNFilePayload.xml)   
+		* [Response](sample%20messages/ANNFileSuccessResponse.xml)  
 		
 	* Income Type CER
-		* [Request](sample%20messages/CERFilePayload25092020.xml)
-		* [Response](sample%20messages/FileSuccessResponse25092020.xml)  
+		* [Request](sample%20messages/CERFilePayload.xml)
+		* [Response](sample%20messages/CERFileSuccessResponse.xml)  
 	
 	* Income Type PRD
-		* [Request](sample%20messages/PRDFilePayload25092020.xml)
-		* [Response](sample%20messages/FileSuccessResponse25092020.xml)  
+		* [Request](sample%20messages/PRDFilePayload.xml)
+		* [Response](sample%20messages/PRDFileSuccessResponse.xml)  
 		
 * RetrieveReturn
 	* Income Type ANN 	
-		* [Request](sample%20messages/ANNRetrieveReturnPayload25092020.xml)
-		* [Response](sample%20messages/ANNRetrieveReturnResponse25092020.xml)
+		* [Request](sample%20messages/ANNRetrieveReturnPayload.xml)
+		* [Response](sample%20messages/ANNRetrieveReturnResponse.xml)
 	* Income Type CER
-		* [Request](sample%20messages/CERRetrieveReturnPayload25092020.xml)
-		* [Response](sample%20messages/CERRetrieveReturnResponse25092020.xml)
+		* [Request](sample%20messages/CERRetrieveReturnPayload.xml)
+		* [Response](sample%20messages/CERRetrieveReturnResponse.xml)
 	* Income Type PRD
-		* [Request](sample%20messages/PRDRetrieveReturnPayload25092020.xml)
-		* [Response](sample%20messages/PRDRetrieveReturnResponse25092020.xml)
+		* [Request](sample%20messages/PRDRetrieveReturnPayload.xml)
+		* [Response](sample%20messages/PRDRetrieveReturnResponse.xml)
 
 		
 * ReturnSatus	
 	* Income Type ANN 	
-		* [Request](sample%20messages/ANNRetrieveStatusPayload25092020.xml)
-		* [Response](sample%20messages/ANNRetrieveStatusResponse25092020.xml)
+		* [Request](sample%20messages/ANNRetrieveStatusPayload.xml)
+		* [Response](sample%20messages/ANNRetrieveStatusResponse.xml)
 	* Income Type CER
-		* [Request](sample%20messages/CERRetrieveStatusPayload25092020.xml)
-		* [Response](sample%20messages/CERRetrieveStatusResponse25092020.xml)
+		* [Request](sample%20messages/CERRetrieveStatusPayload.xml)
+		* [Response](sample%20messages/CERRetrieveStatusResponse.xml)
 	* Income Type PRD
-		* [Request](sample%20messages/PRDRetrieveStatusPayload25092020.xml)
-		* [Response](sample%20messages/PRDRetrieveStatusResponse25092020.xml)
+		* [Request](sample%20messages/PRDRetrieveStatusPayload.xml)
+		* [Response](sample%20messages/PRDRetrieveStatusResponse.xml)
 
 ## Environment information
 
