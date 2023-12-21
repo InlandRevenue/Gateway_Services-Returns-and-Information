@@ -37,8 +37,8 @@
                            <ret:primaryAddress>test</ret:primaryAddress>
                            <ret:incomeInformation>
                               <ret1:grossAmount>5005</ret1:grossAmount>
-                              <ret1:deductedAmount>53</ret1:deductedAmount>
                               <ret:interestZeroRated>50</ret:interestZeroRated>
+                              <ret:deductedAilAmount>53</ret:deductedAilAmount>
                            </ret:incomeInformation>
                         </ret:lineItems>
                      </ret1:formFields>

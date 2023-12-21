@@ -39,10 +39,12 @@
                                     <r:incomeInformation>
                                         <rc:grossAmount xmlns:rc="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2">17856.58</rc:grossAmount>
                                         <r:interestZeroRated>8558.58</r:interestZeroRated>
+                                        <r:deductedAilAmount>53.00</r:deductedAilAmount>
                                     </r:incomeInformation>
                                     <r:incomeInformation>
                                         <rc:grossAmount xmlns:rc="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2">13836.58</rc:grossAmount>
                                         <r:interestZeroRated>658.68</r:interestZeroRated>
+                                        <r:deductedAilAmount>53.00</r:deductedAilAmount>
                                     </r:incomeInformation>
                                 </r:lineItems>
                             </r:formFields>

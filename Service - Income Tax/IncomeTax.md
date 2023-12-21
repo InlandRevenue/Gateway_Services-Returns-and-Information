@@ -303,6 +303,7 @@ The following key changes have been made to the Income Tax Return Service build 
 	- [IR4 File request](sample%20messages/file_request_ir4_standalone.xml) 
     - [IR4J File request](sample%20messages/file_request_ir4j_standalone.xml)
     - [IR6 File request](sample%20messages/file_request_ir6_standalone.xml) 
+    - [IR6 v2 File request (with all applicable attachments)](sample%20messages/file_request_ir6_v2_all_attachments.xml)
     - [IR7L File request](sample%20messages/file_request_ir7l_standalone.xml)
     - [IR7P File request](sample%20messages/file_request_ir7p_standalone.xml)
     - [IR8 File request](sample%20messages/file_request_ir8_standalone.xml) 
@@ -319,6 +320,7 @@ The following key changes have been made to the Income Tax Return Service build 
     - [IR4 RetrieveReturn response](sample%20messages/retrievereturn_response_ir4.xml) 
     - [IR4J RetrieveReturn response](sample%20messages/retrievereturn_response_ir4j.xml)
     - [IR6 RetrieveReturn response](sample%20messages/retrievereturn_response_ir6.xml) 
+    - [IR6 v2 RetrieveReturn response](sample%20messages/retrievereturn_response_ir6_v2.xml)
     - [IR7L RetrieveReturn response](sample%20messages/retrievereturn_response_ir7l.xml)
     - [IR7P RetrieveReturn response](sample%20messages/retrievereturn_response_ir7p.xml)
     - [IR8 RetrieveReturn response](sample%20messages/retrievereturn_response_ir8.xml) 
@@ -372,8 +374,7 @@ The following key changes have been made to the Income Tax Return Service build 
 	- [Error Code 2336](sample%20messages/ErrorCode2357.txt)
 	- [Error Code 2358](sample%20messages/ErrorCode2358.txt)
 	- [Error Code 2359](sample%20messages/ErrorCode2359.txt)
-- Error codes _(New for Annual Changes 2023)_
-	
+- Error codes _(New for Annual Changes 2023)_	
 	- [Error Code 2360](sample%20messages/ErrorCode2360.txt)
 	- [Error Code 2361](sample%20messages/ErrorCode2361.txt)
 	- [Error Code 2363](sample%20messages/ErrorCode2363.txt)
@@ -382,7 +383,8 @@ The following key changes have been made to the Income Tax Return Service build 
 	- [Error Code 2368](sample%20messages/ErrorCode2368.txt)	
 	- [Error Code 2370](sample%20messages/ErrorCode2370.txt)
 	- [Error Code 2371](sample%20messages/ErrorCode2371.txt)
-
-	
+- Error codes _(New for Annual Changes 2024)_
+	- [Error Code 23](sample%20messages/ErrorCode23.txt)
+	- [Error Code 2372](sample%20messages/ErrorCode2372.txt)
 	
 	

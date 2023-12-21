@@ -46,9 +46,9 @@
                                     <ret:incomeInformation>
                                         <ret1:incomeType>NZINT</ret1:incomeType>
                                         <ret1:grossAmount>5005</ret1:grossAmount>
-                                        <ret1:deductedAmount>53</ret1:deductedAmount>
                                         <ret1:rate>10.5</ret1:rate>
                                         <ret:interestZeroRated>75</ret:interestZeroRated>
+                                        <ret:deductedAilAmount>53</ret:deductedAilAmount>
                                     </ret:incomeInformation>
                                 </ret:lineItems>
                             </ret1:formFields>

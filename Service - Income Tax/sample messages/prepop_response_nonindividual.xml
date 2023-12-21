@@ -13,10 +13,10 @@
                         </statusMessage>
                         <responseBody xmlns:ic="urn:www.ird.govt.nz/GWS:types/IncomeReturnCommon.v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ic:PrepopResponseBodyType">
                             <ic:nonIndividual>
-                                <ic:periodBegin>2018-04-01</ic:periodBegin>
-                                <ic:periodEnd>2019-03-31</ic:periodEnd>
+                                <ic:periodBegin>2023-04-01</ic:periodBegin>
+                                <ic:periodEnd>2024-03-31</ic:periodEnd>
                                 <ic:filingFrequency type="ITN03C">Annual - Companies</ic:filingFrequency>
-                                <ic:balanceDate>2019-03-31</ic:balanceDate>
+                                <ic:balanceDate>2024-03-31</ic:balanceDate>
                                 <ic:formExpected>4,4J</ic:formExpected>
                                 <ic:transitionalYear>false</ic:transitionalYear>
                                 <ic:periodLossCarryBack>false</ic:periodLossCarryBack>
@@ -26,20 +26,53 @@
                                         <ic:incomeType type="NZINT">New Zealand interest received</ic:incomeType>
                                         <ic:amount>8794.33</ic:amount>
                                         <ic:deductions>3525.00</ic:deductions>
+                                        <ic:studentLoan>0.00</ic:studentLoan>
+                                        <ic:donation>0.00</ic:donation>
+                                        <ic:extinguishedDonation>0.00</ic:extinguishedDonation>
+                                        <ic:familyTaxCredit>0.00</ic:familyTaxCredit>
+                                        <ic:earningsNotLiableForACC>0.00</ic:earningsNotLiableForACC>
+                                        <ic:imputationCreditsForDividend>0.00</ic:imputationCreditsForDividend>
                                     </ic:income>
                                     <ic:income>
                                         <ic:incomeSource>Schedular Payments Test</ic:incomeSource>
                                         <ic:incomeType type="WT">Schedular payments</ic:incomeType>
                                         <ic:amount>3000.00</ic:amount>
                                         <ic:deductions>300.00</ic:deductions>
+                                        <ic:studentLoan>0.00</ic:studentLoan>
+                                        <ic:donation>0.00</ic:donation>
+                                        <ic:extinguishedDonation>0.00</ic:extinguishedDonation>
+                                        <ic:familyTaxCredit>0.00</ic:familyTaxCredit>
+                                        <ic:earningsNotLiableForACC>0.00</ic:earningsNotLiableForACC>
+                                        <ic:imputationCreditsForDividend>0.00</ic:imputationCreditsForDividend>
                                     </ic:income>
                                     <ic:income>
                                         <ic:incomeSource>Dividends</ic:incomeSource>
                                         <ic:incomeType type="DIVIDN">New Zealand dividends</ic:incomeType>
                                         <ic:amount>1000.00</ic:amount>
                                         <ic:deductions>100.00</ic:deductions>
+                                        <ic:studentLoan>0.00</ic:studentLoan>
+                                        <ic:donation>0.00</ic:donation>
+                                        <ic:extinguishedDonation>0.00</ic:extinguishedDonation>
+                                        <ic:familyTaxCredit>0.00</ic:familyTaxCredit>
+                                        <ic:earningsNotLiableForACC>0.00</ic:earningsNotLiableForACC>
+                                        <ic:imputationCreditsForDividend>0.00</ic:imputationCreditsForDividend>
                                     </ic:income>
                                 </ic:incomeProfile>
+                                <ic:propertySaleDetails>
+                                    <ic:propertySale>
+                                        <ic:propertyTitle>PT2</ic:propertyTitle>
+                                        <ic:propertyAddress1>PA1</ic:propertyAddress1>
+                                        <ic:propertyAddress2>PA2</ic:propertyAddress2>
+                                        <ic:propertySuburb>PS</ic:propertySuburb>
+                                        <ic:propertyCity>PC</ic:propertyCity>
+                                        <ic:propertyPostCode>PPC</ic:propertyPostCode>
+                                        <ic:dateOfPurchase>2024-01-31</ic:dateOfPurchase>
+                                        <ic:dateOfSale>2024-03-31</ic:dateOfSale>
+                                        <ic:salePrice>222222.00</ic:salePrice>
+                                        <ic:purchasePrice>90000.00</ic:purchasePrice>
+                                    </ic:propertySale>
+                                </ic:propertySaleDetails>
+                                <ic:creditAccountOpeningBalance>1000.00</ic:creditAccountOpeningBalance>
                             </ic:nonIndividual>
                         </responseBody>
                     </prepopResponse>
