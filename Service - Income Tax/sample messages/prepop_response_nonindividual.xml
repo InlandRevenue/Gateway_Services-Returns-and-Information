@@ -20,6 +20,7 @@
                                 <ic:formExpected>4,4J</ic:formExpected>
                                 <ic:transitionalYear>false</ic:transitionalYear>
                                 <ic:periodLossCarryBack>false</ic:periodLossCarryBack>
+                                <ic:creditAccountOpeningBalance>1000.00</ic:creditAccountOpeningBalance>
                                 <ic:incomeProfile>
                                     <ic:income>
                                         <ic:incomeSource>Cool Beans Coffee Company</ic:incomeSource>
@@ -72,7 +73,6 @@
                                         <ic:purchasePrice>90000.00</ic:purchasePrice>
                                     </ic:propertySale>
                                 </ic:propertySaleDetails>
-                                <ic:creditAccountOpeningBalance>1000.00</ic:creditAccountOpeningBalance>
                             </ic:nonIndividual>
                         </responseBody>
                     </prepopResponse>
