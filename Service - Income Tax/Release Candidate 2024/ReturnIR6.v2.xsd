@@ -2,12 +2,14 @@
 <!-- Documentation
 _______________________________________
 NAME:       ReturnIR6.v2.xsd
-VER:        1.1
+VER:        1.2
 ISSUER:     Inland Revenue Department
 DESC:      	This schema defines the elements and related data types required for the Returns Estate/Trust Income Tax Gateway Service for 2024 and on.
 	
 Date  		Change
 **********  ************
+2024-02-09	Updated field to type MoneyTypePositive: taxOnDistributionByNonComplyingTrust
+2024-02-02	Updated fields to type MoneyTypePositive: shareOfInterestIncome, shareOfOverseasIncome, shareOfOtherIncome, taxableIncome, distributionByNonComplyingtrust
 2023-11-02  Initial
 _______________________________________
 -->
@@ -148,14 +150,14 @@ _______________________________________
 			<xsd:element name="noJurisdictionTin" type="xsd:boolean" minOccurs="0"/>
 			<xsd:element name="tinNotRequired" type="xsd:boolean" minOccurs="0"/>
 			<xsd:element name="beneficiaryAddress" type="cmn:String255" minOccurs="0"/>
-			<xsd:element name="shareOfInterestIncome" type="cmn:MoneyType" minOccurs="0"/>
+			<xsd:element name="shareOfInterestIncome" type="cmn:MoneyTypePositive" minOccurs="0"/>
 			<xsd:element name="shareOfDividendsIncome" type="cmn:MoneyTypePositive" minOccurs="0"/>
 			<xsd:element name="shareOfMADistributionsIncome" type="cmn:MoneyTypePositive" minOccurs="0"/>
-			<xsd:element name="shareOfOverseasIncome" type="cmn:MoneyType" minOccurs="0"/>
-			<xsd:element name="shareOfOtherIncome" type="cmn:MoneyType" minOccurs="0"/>
-			<xsd:element name="taxableIncome" type="cmn:MoneyType" minOccurs="0"/>
+			<xsd:element name="shareOfOverseasIncome" type="cmn:MoneyTypePositive" minOccurs="0"/>
+			<xsd:element name="shareOfOtherIncome" type="cmn:MoneyTypePositive" minOccurs="0"/>
+			<xsd:element name="taxableIncome" type="cmn:MoneyTypePositive" minOccurs="0"/>
 			<xsd:element name="taxPaidByTrust" type="xsd:boolean" minOccurs="0"/>
-			<xsd:element name="distributionByNonComplyingtrust" type="cmn:MoneyType" minOccurs="0"/>
+			<xsd:element name="distributionByNonComplyingtrust" type="cmn:MoneyTypePositive" minOccurs="0"/>
 			<xsd:element name="taxOnTaxableIncome" type="cmn:MoneyTypePositive" minOccurs="0"/>
 			<xsd:element name="overseasTaxPaid" type="cmn:MoneyTypePositive" minOccurs="0"/>
 			<xsd:element name="taxLessOverseasTaxPaid" type="cmn:MoneyTypePositive" minOccurs="0"/>
@@ -163,7 +165,7 @@ _______________________________________
 			<xsd:element name="taxLessDividendImputationCredit" type="cmn:MoneyTypePositive" minOccurs="0"/>
 			<xsd:element name="otherPaidTaxCredits" type="cmn:MoneyTypePositive" minOccurs="0"/>
 			<xsd:element name="taxLessOtherPaidTaxCredits" type="cmn:MoneyType" minOccurs="0"/>
-			<xsd:element name="taxOnDistributionByNonComplyingTrust" type="cmn:MoneyType" minOccurs="0"/>
+			<xsd:element name="taxOnDistributionByNonComplyingTrust" type="cmn:MoneyTypePositive" minOccurs="0"/>
 			<xsd:element name="beneficiaryTaxPayable" type="cmn:MoneyType" minOccurs="0"/>
 			<xsd:element name="nilDistribution" type="xsd:boolean" minOccurs="0"/>
 			<xsd:element name="openingBalance" type="cmn:MoneyType" minOccurs="0"/>
