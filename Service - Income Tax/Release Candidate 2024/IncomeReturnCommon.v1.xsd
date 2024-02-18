@@ -8,6 +8,7 @@ DESC:       This schema defines common fields for all income tax returns submitt
 	
 Date  		Change
 **********  ************
+2024-02-16	corrected typo in documentation for SocietyType
 2023-11-16	added creditAccountOpeningBalance to NonIndividualType
 
 2023-01-04	added buildToRentExclusion to InterestExpenseClaimedReasonType
@@ -541,7 +542,7 @@ _______________________________________
 		<xsd:annotation>
 			<xsd:documentation>
 				F: Friendly society
-				X: Income except club or society
+				X: Income exempt club or society
 				A: All other clubs and societies 
 			</xsd:documentation>
 		</xsd:annotation>
