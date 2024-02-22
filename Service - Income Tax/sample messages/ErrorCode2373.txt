@@ -1,4 +1,4 @@
-Error code 2372
+Error code 2373
 
 Request
 <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope">
@@ -128,7 +128,44 @@ Request
                                 </r6:provisionalTax>
                                 <r6:beneficiaryDetails>
                                     <r6:beneficiary>
-                                        <r6:beneficiaryIrdNumber>079945793</r6:beneficiaryIrdNumber>
+                                        <r6:beneficiaryIrdNumber>111111111</r6:beneficiaryIrdNumber>
+                                        <r6:taxIdNumber>123123123</r6:taxIdNumber>
+                                        <r6:beneficiaryName>Joe Bloggs</r6:beneficiaryName>
+                                        <r6:beneficiaryDOB>1985-09-01</r6:beneficiaryDOB>
+                                        <r6:taxJurisdiction>AZ</r6:taxJurisdiction>
+                                        <r6:noJurisdictionTin>false</r6:noJurisdictionTin>
+                                        <r6:tinNotRequired>false</r6:tinNotRequired>
+                                        <r6:beneficiaryAddress>1 Bloggs Way</r6:beneficiaryAddress>
+                                        <r6:shareOfInterestIncome>1000.00</r6:shareOfInterestIncome>
+                                        <r6:shareOfDividendsIncome>1000.00</r6:shareOfDividendsIncome>
+                                        <r6:shareOfMADistributionsIncome>1000.00</r6:shareOfMADistributionsIncome>
+                                        <r6:shareOfOverseasIncome>1000.00</r6:shareOfOverseasIncome>
+                                        <r6:shareOfOtherIncome>1000.00</r6:shareOfOtherIncome>
+                                        <r6:taxableIncome>5000.00</r6:taxableIncome>
+                                        <r6:taxPaidByTrust>true</r6:taxPaidByTrust>
+                                        <r6:distributionByNonComplyingtrust>10.00</r6:distributionByNonComplyingtrust>
+                                        <r6:taxOnTaxableIncome>850.50</r6:taxOnTaxableIncome>
+                                        <r6:overseasTaxPaid>10.00</r6:overseasTaxPaid>
+                                        <r6:taxLessOverseasTaxPaid>10.00</r6:taxLessOverseasTaxPaid>
+                                        <r6:dividendImputationCredit>10.00</r6:dividendImputationCredit>
+                                        <r6:taxLessDividendImputationCredit>10.00</r6:taxLessDividendImputationCredit>
+                                        <r6:otherPaidTaxCredits>10.00</r6:otherPaidTaxCredits>
+                                        <r6:taxLessOtherPaidTaxCredits>10.00</r6:taxLessOtherPaidTaxCredits>
+                                        <r6:taxOnDistributionByNonComplyingTrust>10.00</r6:taxOnDistributionByNonComplyingTrust>
+                                        <r6:beneficiaryTaxPayable>10.00</r6:beneficiaryTaxPayable>
+                                        <r6:nilDistribution>false</r6:nilDistribution>
+                                        <r6:openingBalance>10.00</r6:openingBalance>
+                                        <r6:accountingIncomeAllocated>10.00</r6:accountingIncomeAllocated>
+                                        <r6:corpus>10.00</r6:corpus>
+                                        <r6:capital>10.00</r6:capital>
+                                        <r6:useOfTrustProperty>10.00</r6:useOfTrustProperty>
+                                        <r6:distributionTrustAssets>10.00</r6:distributionTrustAssets>
+                                        <r6:forgivenessOfDebt>10.00</r6:forgivenessOfDebt>
+                                        <r6:withdrawnFromTrust>10.00</r6:withdrawnFromTrust>
+                                        <r6:closingBalance>10.00</r6:closingBalance>
+                                    </r6:beneficiary>
+                                    <r6:beneficiary>
+                                        <r6:beneficiaryIrdNumber>111111111</r6:beneficiaryIrdNumber>
                                         <r6:taxIdNumber>123123123</r6:taxIdNumber>
                                         <r6:beneficiaryName>Joe Bloggs</r6:beneficiaryName>
                                         <r6:beneficiaryDOB>1985-09-01</r6:beneficiaryDOB>
@@ -227,9 +264,14 @@ Response
                 <d4p1:FileResponseWrapper>
                     <fileResponse xmlns="urn:www.ird.govt.nz/GWS:types/ReturnCommon.v2">
                         <statusMessage xmlns="urn:www.ird.govt.nz/GWS:types/Common.v2">
-                            <statusCode>2372</statusCode>
-                            <errorMessage>beneficiaryIrdNumber and/or settlorIrdNumber is the same as trust IRD number</errorMessage>
-                            <errorDescription>B1: The IRD number for the beneficiary or settlor is the same as the trust.</errorDescription>
+                            <statusCode>2373</statusCode>
+                            <errorMessage>beneficiaryIrdNumber and/or settlorIrdNumber is a duplicate</errorMessage>
+                            <errorDescription>B1: The IRD number for the beneficiary or settlor is a duplicate.</errorDescription>
+                        </statusMessage>
+                        <statusMessage xmlns="urn:www.ird.govt.nz/GWS:types/Common.v2">
+                            <statusCode>2373</statusCode>
+                            <errorMessage>beneficiaryIrdNumber and/or settlorIrdNumber is a duplicate</errorMessage>
+                            <errorDescription>B2: The IRD number for the beneficiary or settlor is a duplicate.</errorDescription>
                         </statusMessage>
                     </fileResponse>
                 </d4p1:FileResponseWrapper>

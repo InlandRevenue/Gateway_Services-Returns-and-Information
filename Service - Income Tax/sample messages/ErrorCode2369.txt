@@ -204,6 +204,7 @@ Response
                         <statusMessage xmlns="urn:www.ird.govt.nz/GWS:types/Common.v2">
                             <statusCode>2369</statusCode>
                             <errorMessage>overseasIncome totalTaxPaid or totalIncome do not match sum on overseas income attachment</errorMessage>
+                            <errorDescription>overseasIncome totals on IR 3 do not match information provided on IR 1261 attachment</errorDescription>
                         </statusMessage>
                     </fileResponse>
                 </d4p1:FileResponseWrapper>

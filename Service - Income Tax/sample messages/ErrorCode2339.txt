@@ -222,6 +222,7 @@ Response
                         <statusMessage xmlns="urn:www.ird.govt.nz/GWS:types/Common.v2">
                             <statusCode>2339</statusCode>
                             <errorMessage>invalid value provided for settlorCommence</errorMessage>
+                            <errorDescription>S1: cannot commence in the future; maximum value of settlorCommence is today's date</errorDescription>
                         </statusMessage>
                     </fileResponse>
                 </d4p1:FileResponseWrapper>

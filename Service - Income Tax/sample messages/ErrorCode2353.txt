@@ -54,7 +54,7 @@ Request
                                 </r6:partnershipEstateTrustIncome>
                                 <r6:overseasIncome>
                                     <ic:totalTaxPaid>0</ic:totalTaxPaid>
-                                    <ic:totalIncome>1000</ic:totalIncome>
+                                    <ic:totalIncome>1000.00</ic:totalIncome>
                                 </r6:overseasIncome>
                                 <r6:pieIncome>
                                     <ic:totalTaxCredits>1000.00</ic:totalTaxCredits>
@@ -220,6 +220,7 @@ Response
                         <statusMessage xmlns="urn:www.ird.govt.nz/GWS:types/Common.v2">
                             <statusCode>2353</statusCode>
                             <errorMessage>no value provided for taxIdNumber</errorMessage>
+                            <errorDescription>B1: taxIdNumber is required for beneficiaries whose taxJurisdiction (residence) is outside of New Zealand, unless 'tinNotRequired' or 'noJurisdictionTin' are 'true'</errorDescription>
                         </statusMessage>
                     </fileResponse>
                 </d4p1:FileResponseWrapper>

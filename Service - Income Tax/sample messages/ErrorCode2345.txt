@@ -1,7 +1,6 @@
 Error code 2345
 
 Request
-<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope">
     <soap:Header>
         <add:Action xmlns:add="http://www.w3.org/2005/08/addressing">https://services.ird.govt.nz/GWS/Returns/Return/File</add:Action>
     </soap:Header>
@@ -54,7 +53,7 @@ Request
                                 </r6:partnershipEstateTrustIncome>
                                 <r6:overseasIncome>
                                     <ic:totalTaxPaid>0</ic:totalTaxPaid>
-                                    <ic:totalIncome>1000</ic:totalIncome>
+                                    <ic:totalIncome>1000.00</ic:totalIncome>
                                 </r6:overseasIncome>
                                 <r6:pieIncome>
                                     <ic:totalTaxCredits>1000.00</ic:totalTaxCredits>
@@ -221,6 +220,7 @@ Response
                         <statusMessage xmlns="urn:www.ird.govt.nz/GWS:types/Common.v2">
                             <statusCode>2345</statusCode>
                             <errorMessage>otherDescription not provided</errorMessage>
+                            <errorDescription>S1: value for 'otherDescription' is required when 'other' has a non-zero value</errorDescription>
                         </statusMessage>
                     </fileResponse>
                 </d4p1:FileResponseWrapper>

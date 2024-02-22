@@ -54,7 +54,7 @@ Request
                                 </r6:partnershipEstateTrustIncome>
                                 <r6:overseasIncome>
                                     <ic:totalTaxPaid>0</ic:totalTaxPaid>
-                                    <ic:totalIncome>1000</ic:totalIncome>
+                                    <ic:totalIncome>1000.00</ic:totalIncome>
                                 </r6:overseasIncome>
                                 <r6:pieIncome>
                                     <ic:totalTaxCredits>1000.00</ic:totalTaxCredits>
@@ -221,6 +221,7 @@ Response
                         <statusMessage xmlns="urn:www.ird.govt.nz/GWS:types/Common.v2">
                             <statusCode>2342</statusCode>
                             <errorMessage>no value provided for settlorIrdNumber</errorMessage>
+                            <errorDescription>S1: a valid IRD number is required for settlors whose taxJurisdiction (residence) is New Zealand, unless 'tinNotRequired' is 'true'</errorDescription>
                         </statusMessage>
                     </fileResponse>
                 </d4p1:FileResponseWrapper>

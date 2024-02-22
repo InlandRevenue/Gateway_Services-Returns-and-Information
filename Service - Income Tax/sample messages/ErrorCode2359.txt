@@ -54,7 +54,7 @@ Request
                                 </r6:partnershipEstateTrustIncome>
                                 <r6:overseasIncome>
                                     <ic:totalTaxPaid>0</ic:totalTaxPaid>
-                                    <ic:totalIncome>1000</ic:totalIncome>
+                                    <ic:totalIncome>1000.00</ic:totalIncome>
                                 </r6:overseasIncome>
                                 <r6:pieIncome>
                                     <ic:totalTaxCredits>1000.00</ic:totalTaxCredits>
@@ -222,6 +222,7 @@ Response
                         <statusMessage xmlns="urn:www.ird.govt.nz/GWS:types/Common.v2">
                             <statusCode>2359</statusCode>
                             <errorMessage>value of at least one of the following fields must be non-zero: cash, financialArrangements, land, buildings, shares, services, other</errorMessage>
+                            <errorDescription>S1: this rule is enforced unless one of the following field values are true: exemptFromCompliance, noSettlementThisYear, or settlementZeroValue</errorDescription>
                         </statusMessage>
                     </fileResponse>
                 </d4p1:FileResponseWrapper>
