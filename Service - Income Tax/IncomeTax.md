@@ -4,69 +4,11 @@
 # Income Tax Software Development Kit (SDK)
 
 #### Archives
+* [V1.0 Annual Return 2023](./archive/2023)
 * [V1.0 Annual Return 2022](./archive/2022)
 * [V1.0 Annual Return 2021](./archive/2021)
 * [V1.0 Annual Return 2020](./archive/2020)
 
-### Latest Release: V1.0  - Annual Return 2023
-
-* submit new or amended income tax returns and supplementary forms 
-* request income tax information held by us for a customer 
-* query the processing status of a previously filed income tax return 
-* request a copy of a previously filed income tax return 
-* request the due date of the next expected income tax return. 
-
-## New Features: Annual Return 2023-2024 
-
-The following key changes have been made to the Income Tax Return Service build pack to accommodate annual changes for 2023: 
-
-| Field | IR forms |
-| --- | --- | 
-|ResidentialRentalIncomeType <br/> ➢ grossResRentalIncome <br/> ➢ netBrightlineProfits <br/> ➢ otherResIncome | IR3, IR3NR, IR4, IR6, IR7, IR8, IR9, IR44 |
-|decomExpenditure <br/>  	decomTaxCredit | IR4 (Retrieve Return for 2019+ and only if value greater than 0.00) |
-|InterestExpenseClaimedReason <br/> ➢ buildToRentExclusion| IR3, IR3NR, IR4, IR6, IR7, IR8, IR9, IR44, IR3R |
-|PieIncomeWithTaxCreditType <br/> ➢ totalTaxCredits <br> totalIncome <br/> ➢ correctRateOverride <br/> ➢ correctRate <br/> ➢ correctRateUsedAllYear | IR3, CALC |
-|taxJurisdiction <br>	taxIdNumber <br>	noJurisdictionTin <br>	tinNotRequired| IR3NR |
-
-* The following **schemas** have also changed for 2023: 
-	* Common.v2.xsd
-	* IncomeReturnCommon.v1.xsd 
-	* ReturnAUTO.xsd 
-	* ReturnIR3.v1.xsd 
-	* ReturnIR3NR.v1.xsd 
-	* ReturnIR3R.xsd 
-	* ReturnIR4.v1.xsd 
-	* ReturnIR6.v1.xsd 
-	* ReturnIR7.v1.xsd 
-	* ReturnIR8.v1.xsd 
-	* ReturnIR9.v1.xsd 
-	* ReturnIR44.v1.xsd 
-
-* The following **schemas** are new for 2023:
-    * ReturnIR1261.v1.xsd 
-
-* The following changes have been made to Income Tax-specific **ERROR CODES**:
-
-| Error code | Status | Description | IR forms affected |
-|-- | --| -- | -- |
-|2361|Added|Attempting to use correctRateOverride not as a tax agent <br/> <br/>Error message: "pieIncome correctRateOverride can only be used by tax preparers" |CALC, (auto-calc) IR3|
-|2360|Added|If overpaymentProvisionalTax is provided with a non-zero value for 2023 period onwards<br/><br/>Error message: "overpaymentProvisionalTax is no longer available for this filing period"|IR3,IR3NR,IR8,IR9 and IR44|
-|2046|Removed|Error message: totalInterestRWT cannot be greater than totalInterest	|IR3NR|
-|2049|Removed|Error message: nrwtOnTotalInterest cannot be greater than totalInterest	|IR3NR|
-|2050|Removed|Error message: nrwtOntotalInterest cannot be 0 when totalInterestRWT is not 0	|IR3NR|
-|2368|Added|IR3 overseasIncome information provided without supplying the IR1261 attachment for years 2023+ <br/> Error message: "overseasIncome information provided without overseas income attachment"|	IR3|
-|2369|Added|IR1261 grossAmount totals do not match the values provided in IR3's overseasIncome <br/> Error message: "overseasIncome totalTaxPaid or totalIncome do not match sum on overseas income attachment"	|IR3|
-|2346|	Updated |	updated error code validation to take into account new field buildToRentExclusion for 2023+ <br/> Error message: "interestExpenseClaimedReason must be provided when interestExpenseClaimed is non-zero"|IR3,IR3NR,IR4,IR6,IR7,IR8,IR9,IR44 and IR3R|
-|2358|	Updated|	if taxJurisdiction is not provided for years 2023+ <br/> Error message: "no value provided for taxJurisdiction"|IR3NR|
-|2340|	Updated|	if taxJurisdiction is not a recognised ISO-2A country code <br/> Error message: "invalid value provided for taxJurisdiction"| IR3NR|
-|2363|	Added| 	if "New Zealand" is provided for taxJurisdiction <br/> Error message: "taxJurisdiction cannot be New Zealand for non-resident"|	IR3NR|
-|2343|	Updated| if taxIdNumber value is not provided for 2023+ AND both noJurisdictionTin and tinNotRequired are false <br>Error message: "taxJurisdiction cannot be New Zealand for non-resident"	|IR3NR|
-|2366|	Added|	taxJurisdiction value is not a recognised two-letter country code<br/>Error message: "overseasIncome taxJurisdiction invalid"|	IR1261|
-|2367|	Added|	if "New Zealand" is provided for taxJurisdiction (note: same as 2363 for IR3NR) <br/> Error message: "overseasIncome taxJurisdiction is New Zealand"|	IR1261|
-|2370|	Added|	grossAmount and taxCredit cannot both be nil (on a single IR1261 line)<br/>Error message: "overseasIncome grossAmount and taxCredit cannot be nil"|	IR1261|
-|2371|	Added|	overseasIncome contains multiple elements with the same incomeType and taxJurisdiction<br/>Error message: "overseasIncome contains duplicate incomeType and taxJurisdiction"|	IR1261|
-
-	
 ## Key Documentation:
 
 * Test scenarios
@@ -76,19 +18,17 @@ The following key changes have been made to the Income Tax Return Service build 
     * View and download the [Income Return Common XSD](xsd/IncomeReturnCommon.v1.xsd) from this [XSD](xsd/) directory	
     * View the Income Tax XSD schema files from the [XSD](xsd/) directory
     * View and download the [Common and Return Common XSD](../Common%20XSD/)
-	
 
 * Build Pack
 
-    * Download the [Return Service Income Tax build pack TY 2023](Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20Income%20Tax%20TY-2023.pdf) to view data definitions of each operation and response status code definitions
-	* Download the [Return Service Income Tax build pack TY 2022](Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20Income%20Tax%20TY-2022.pdf) to view data definitions of each operation and response status code definitions
+    * Download the [Return Service Income Tax build pack TY 2024](Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20Income%20Tax%20TY-2024.pdf) to view data definitions of each operation and response status code definitions
+	* Download the [Return Service Income Tax build pack TY 2023](Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20Income%20Tax%20TY-2023.pdf) to view data definitions of each operation and response status code definitions
+
 	
 * Supporting information on IR website
+    * Download the [Additional Information pack 2024](Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20Additional%20Information%202024.pdf)		
 	* Download the [Additional Information pack 2023](Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20Additional%20Information%202023.pdf)		
-	* Download the [Additional Information pack 2022](Gateway%20Services%20Build%20Pack%20-%20Return%20Service%20-%20Additional%20Information%202022%20V1.3.pdf)	
 	
-		* Income tax assessments (Auto-Calc)
-
 * Income Tax Form Types
 	* [Primary income tax return forms](#Primary-income-tax-return-forms) 
 	* [Attachment income tax return forms](#Attachment-income-tax-return) 
