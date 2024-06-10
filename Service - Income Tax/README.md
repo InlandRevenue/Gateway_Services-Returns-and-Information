@@ -28,6 +28,8 @@ The donation tax credit gateway service can be used to:
 Find out about:
 *	the key changes for [income tax for individuals on the IR website](https://www.ird.govt.nz/income-tax/income-tax-for-individuals)
 *	the key changes for [income tax for business and organisations on the IR website](https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations)
+*  July 2024 changes [Personal Income Tax Additional Information](Personal%20Income%20Tax%20Additional%20Information%20July%202024%20changes%20V1.0.pdf)
+
 
 ## Supporting Services
 
