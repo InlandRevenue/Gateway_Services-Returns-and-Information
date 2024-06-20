@@ -211,7 +211,7 @@
 	- RetrieveFilingObligations   	-	https://services.ird.govt.nz/GWS/Returns/Return/RetrieveFilingObligations
 	 
 - Authentication: 
-	- Authentication is based on the outcome of OAuth token validation (using new [OAuth emulator](https://mock-oauth.ird.digitalpartner.services/))
+	- Authentication is based on the outcome of OAuth token validation (using new [OAuth emulator](https://oauth.test.services.ird.govt.nz/))
 	- Incoming requests should include "Authorization" header with the OAuth token value
 	- In case of missing token, emulated service would respond with error statusCode 2
 
